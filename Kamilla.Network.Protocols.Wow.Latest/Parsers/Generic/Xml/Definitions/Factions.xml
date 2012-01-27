@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions>
+  <Packet Opcode="SMSG_SET_FACTION_STANDING">
+    <Simple>
+      <Name>Refer-A-Friend Bonus Rep</Name>
+      <Type>Float</Type>
+    </Simple>
+    <Simple>
+      <Name>UnkByte</Name>
+      <Type>Byte</Type>
+    </Simple>
+    <List>
+      <Name>Factions</Name>
+      <Type>UInt</Type>
+      <Simple>
+        <Name>Faction</Name>
+        <Type>UInt</Type>
+      </Simple>
+      <Simple>
+        <Name>Value</Name>
+        <Type>Int</Type>
+      </Simple>
+    </List>
+  </Packet>
+
+  <Packet Opcode="SMSG_INITIALIZE_FACTIONS">
+    <List>
+      <Name>Factions</Name>
+      <Type>Int</Type>
+      
+      <Simple>
+        <Name>Flags</Name>
+        <Type>Byte</Type>
+        <SegmentType>ReputationFlags</SegmentType>
+      </Simple>
+      <Simple>
+        <Name>Value</Name>
+        <Type>UInt</Type>
+      </Simple>
+    </List>
+  </Packet>
+  
+</Definitions>

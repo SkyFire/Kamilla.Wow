@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions>
+
+  <Packet Opcode="CMSG_PAGE_TEXT_QUERY" Group="Queries">
+    <Simple>
+      <Name>Page Id</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Entity Id</Name>
+      <Type>Guid</Type>
+    </Simple>
+  </Packet>
+  
+  <Packet Opcode="CMSG_NPC_TEXT_QUERY" Group="Queries">
+    <Simple>
+      <Name>Text Id</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Entity Id</Name>
+      <Type>Guid</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_CREATURE_QUERY" Group="Queries">
+    <Simple>
+      <Name>Entry</Name>
+      <Type>Int</Type>
+    </Simple>
+    <Simple>
+      <Name>Creature Causing Query</Name>
+      <Type>Guid</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_GAMEOBJECT_QUERY" Group="Queries">
+    <Simple>
+      <Name>Entry</Name>
+      <Type>Int</Type>
+    </Simple>
+    <Simple>
+      <Name>GameObject Causing Query</Name>
+      <Type>Guid</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_QUERY_TIME" Group="Queries"/>
+
+  <Packet Opcode="SMSG_QUERY_TIME_RESPONSE" Group="Queries">
+    <Simple>
+      <Name>Server Time</Name>
+      <Type>UnixTime</Type>
+    </Simple>
+    <Simple>
+      <Name>Next Daily Quests Reset Time</Name>
+      <Type>UnixTime</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_ARENA_TEAM_QUERY" Group="Queries">
+    <Simple>
+      <Name>Id</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_REQUEST_RAID_INFO" Group="Queries"/>
+
+  <Packet Opcode="SMSG_RAID_INSTANCE_INFO" Group="Queries">
+    <List>
+      <Name>Locks</Name>
+      <Type>UInt</Type>
+      <Simple>
+        <Name>Map</Name>
+        <Type>Int</Type>
+        <SegmentType>Maps</SegmentType>
+      </Simple>
+      <Simple>
+        <Name>Difficulty</Name>
+        <Type>Int</Type>
+        <SegmentType>RaidDifficulty</SegmentType>
+      </Simple>
+      <Simple>
+        <Name>Unk</Name>
+        <Type>Int</Type>
+      </Simple>
+      <Simple>
+        <Name>Instance</Name>
+        <Type>Guid</Type>
+      </Simple>
+      <Simple>
+        <Name>Expired</Name>
+        <Type>Byte</Type>
+      </Simple>
+      <Simple>
+        <Name>Extended</Name>
+        <Type>Byte</Type>
+      </Simple>
+      <Simple>
+        <Name>Reset In</Name>
+        <Type>TimeSpanUntil</Type>
+      </Simple>
+      <Simple>
+        <Name>Unk</Name>
+        <Type>Int</Type>
+      </Simple>
+    </List>
+  </Packet>
+
+</Definitions>

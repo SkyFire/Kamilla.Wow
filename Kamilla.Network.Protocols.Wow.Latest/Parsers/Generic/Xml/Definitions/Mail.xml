@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Definitions>
+  <Packet Opcode="CMSG_SEND_MAIL" Group="Mail">
+    <Simple>
+      <Name>Mailbox</Name>
+      <Type>Guid</Type>
+    </Simple>
+    <Simple>
+      <Name>Receiver</Name>
+      <Type>CString</Type>
+    </Simple>
+    <Simple>
+      <Name>Subject</Name>
+      <Type>CString</Type>
+    </Simple>
+    <Simple>
+      <Name>Body</Name>
+      <Type>CString</Type>
+    </Simple>
+    <Simple>
+      <Name>Stationary</Name>
+      <Type>UInt</Type>
+      <SegmentType>MailStationary</SegmentType>
+    </Simple>
+    <Simple>
+      <Name>Unknown1</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <List>
+      <Name>Items</Name>
+      <Type>Byte</Type>
+      <Simple>
+        <Name>Slot</Name>
+        <Type>Byte</Type>
+      </Simple>
+      <Simple>
+        <Name>ItemId</Name>
+        <Type>Guid</Type>
+      </Simple>
+    </List>
+    <Simple>
+      <Name>Money</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>CoD</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Unknown2</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Unknown3</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_GET_MAIL_LIST" Group="Mail">
+    <Simple>
+      <Name>Mailbox EntityId</Name>
+      <Type>Guid</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_MAIL_TAKE_MONEY" Group="Mail">
+    <Simple>
+      <Name>Mailbox EntityId</Name>
+      <Type>Guid</Type>
+    </Simple>
+    <Simple>
+      <Name>Mail MessageId</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Amount</Name>
+      <Type>Money64</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_MAIL_TAKE_ITEM" Group="Mail">
+    <Simple>
+      <Name>Mailbox EntityId</Name>
+      <Type>Guid</Type>
+    </Simple>
+    <Simple>
+      <Name>Mail MessageId</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Item EntityLowId</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_MAIL_MARK_AS_READ" Group="Mail">
+    <Simple>
+      <Name>Mailbox EntityId</Name>
+      <Type>Guid</Type>
+    </Simple>
+    <Simple>
+      <Name>Mail MessageId</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_MAIL_RETURN_TO_SENDER" Group="Mail">
+    <Simple>
+      <Name>Mailbox EntityId</Name>
+      <Type>Guid</Type>
+    </Simple>
+    <Simple>
+      <Name>Mail MessageId</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_MAIL_DELETE" Group="Mail">
+    <Simple>
+      <Name>Mailbox EntityId</Name>
+      <Type>Guid</Type>
+    </Simple>
+    <Simple>
+      <Name>Mail MessageId</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Unknown</Name>
+      <Type>Int</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_MAIL_CREATE_TEXT_ITEM" Group="Mail">
+    <Simple>
+      <Name>Mailbox EntityId</Name>
+      <Type>Guid</Type>
+    </Simple>
+    <Simple>
+      <Name>Mail MessageId</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_RECEIVED_MAIL" Group="Mail"/>
+
+  <Packet Sender="Client" Opcode="MSG_QUERY_NEXT_MAIL_TIME" Group="Mail"/>
+
+  <Packet Sender="Server" Opcode="MSG_QUERY_NEXT_MAIL_TIME" Group="Mail">
+    <Simple>
+      <Name>UnkFloat</Name>
+      <Type>Float</Type>
+    </Simple>
+    <List>
+      <Name>MessagesCount</Name>
+      <Type>UInt</Type>
+      <Simple>
+        <Name>SenderEntityId</Name>
+        <Type>Guid</Type>
+      </Simple>
+      <Simple>
+        <Name>UnknownUInt_1 (2 for auction, 0 else)</Name>
+        <Type>UInt</Type>
+      </Simple>
+      <Simple>
+        <Name>UnknownUInt_2 (2 for auction, 0 else)</Name>
+        <Type>UInt</Type>
+      </Simple>
+      <Simple>
+        <Name>MessageStationary</Name>
+        <Type>UInt</Type>
+      </Simple>
+      <Simple>
+        <Name>UnkownFloat</Name>
+        <Type>Float</Type>
+      </Simple>
+    </List>
+  </Packet>
+
+  <Packet Opcode="CMSG_ITEM_TEXT_QUERY" Group="Queries">
+    <Simple>
+      <Name>ItemTextId</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>MailOrItemEntityLowId</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Unknown</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_ITEM_TEXT_QUERY_RESPONSE" Group="Queries">
+    <Simple>
+      <Name>ItemTextId</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Text</Name>
+      <Type>CString</Type>
+    </Simple>
+  </Packet>
+</Definitions>

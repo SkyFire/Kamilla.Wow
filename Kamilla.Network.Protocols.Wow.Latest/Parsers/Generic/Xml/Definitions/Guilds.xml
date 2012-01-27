@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions>
+
+  <Packet Opcode="CMSG_GUILD_QUERY" Group="Queries">
+    <Simple>
+      <Name>Guild</Name>
+      <Type>Guid</Type>
+    </Simple>
+    <Simple>
+      <Name>Entity caused query</Name>
+      <Type>Guid</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_GUILD_QUERY_RESPONSE" Group="Queries">
+    <Simple>
+      <Name>Guild</Name>
+      <Type>Guid</Type>
+    </Simple>
+    <Simple>
+      <Name>GuildName</Name>
+      <Type>CString</Type>
+    </Simple>
+    <StaticList Length="10">
+      <Name>Ranks</Name>
+      <Simple>
+        <Name>RankName</Name>
+        <Type>CString</Type>
+      </Simple>
+    </StaticList>
+    <StaticList Length="10">
+      <Name>Rank Indexes</Name>
+      <Simple>
+        <Name>Rank Index</Name>
+        <Type>UInt</Type>
+      </Simple>
+    </StaticList>
+    <StaticList Length="10">
+      <Name>Rank Order</Name>
+      <Simple>
+        <Name>Order</Name>
+        <Type>UInt</Type>
+      </Simple>
+    </StaticList>
+    <Simple>
+      <Name>EmblemStyle</Name>
+      <Type>Int</Type>
+    </Simple>
+    <Simple>
+      <Name>EmblemColor</Name>
+      <Type>Int</Type>
+    </Simple>
+    <Simple>
+      <Name>BorderStyle</Name>
+      <Type>Int</Type>
+    </Simple>
+    <Simple>
+      <Name>BorderColor</Name>
+      <Type>Int</Type>
+    </Simple>
+    <Simple>
+      <Name>BackgroundColor</Name>
+      <Type>Int</Type>
+    </Simple>
+    <Simple>
+      <Name>Unknown</Name>
+      <Type>Int</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_GUILD_GET_ROSTER" Group="Queries">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>GuildRosterRequest</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_GUILD_INVITE">
+    <Simple>
+      <Name>InviteeName</Name>
+      <Type>CString</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_GUILD_INVITE">
+    <Simple>
+      <Name>InviterName</Name>
+      <Type>CString</Type>
+    </Simple>
+    <Simple>
+      <Name>GuildName</Name>
+      <Type>CString</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_ACCEPT_GUILD_INVITE" />
+
+  <Packet Opcode="CMSG_GUILD_DECLINE_INVITATION" />
+
+  <Packet Opcode="SMSG_GUILD_DECLINE">
+    <Simple>
+      <Name>DeclinerName</Name>
+      <Type>CString</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_GUILD_LEAVE" />
+
+  <Packet Opcode="CMSG_GUILD_OFFICER_REMOVE_MEMBER">
+    <Simple>
+      <Name>TargetName</Name>
+      <Type>CString</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_GUILD_UPDATE_INFO_TEXT">
+    <Simple>
+      <Name>NewInfoText</Name>
+      <Type>CString</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_GUILD_INFO" Group="Queries" />
+
+  <Packet Opcode="SMSG_GUILD_INFO" Group="Queries">
+    <Simple>
+      <Name>GuildName</Name>
+      <Type>CString</Type>
+    </Simple>
+    <Simple>
+      <Name>Created</Name>
+      <Type>PackedDate</Type>
+    </Simple>
+    <Simple>
+      <Name>MembersCount</Name>
+      <Type>Int</Type>
+    </Simple>
+    <Simple>
+      <Name>AccountsCount</Name>
+      <Type>Int</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_GUILD_UPDATE_MOTD_TEXT">
+    <Simple>
+      <Name>NewMOTD</Name>
+      <Type>CString</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_GUILD_SET_MEMBER_NOTE">
+    <Simple>
+      <Name>TargetName</Name>
+      <Type>CString</Type>
+    </Simple>
+    <Simple>
+      <Name>NewNote</Name>
+      <Type>CString</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_GUILD_SET_OFFICER_NOTE">
+    <Simple>
+      <Name>TargetName</Name>
+      <Type>CString</Type>
+    </Simple>
+    <Simple>
+      <Name>NewNote</Name>
+      <Type>CString</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_GUILD_ADD_RANK">
+    <Simple>
+      <Name>RankName</Name>
+      <Type>CString</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_GUILD_DELETE_RANK" />
+
+  <Packet Opcode="CMSG_GUILD_SET_RANK_PERMISSIONS">
+    <Simple>
+      <Name>RankId</Name>
+      <Type>Int</Type>
+    </Simple>
+    <Simple>
+      <Name>NewPrivs</Name>
+      <Type>Int</Type>
+    </Simple>
+    <Simple>
+      <Name>NewName</Name>
+      <Type>CString</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_GUILD_PROMOTE_MEMBER">
+    <Simple>
+      <Name>TargetName</Name>
+      <Type>CString</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_GUILD_DEMOTE_MEMBER">
+    <Simple>
+      <Name>TargetName</Name>
+      <Type>CString</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_GUILD_DELETE" />
+
+  <Packet Opcode="CMSG_GUILD_SET_GUILD_MASTER">
+    <Simple>
+      <Name>TargetName</Name>
+      <Type>CString</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_GUILD_COMMAND_RESULT">
+    <Simple>
+      <Name>GuildCommand</Name>
+      <Type>Int</Type>
+      <SegmentType>GuildCommandId</SegmentType>
+    </Simple>
+    <Simple>
+      <Name>Name</Name>
+      <Type>CString</Type>
+    </Simple>
+    <Simple>
+      <Name>ResultCode</Name>
+      <Type>Int</Type>
+      <SegmentType>GuildResult</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_GUILD_BANK_REMAINING_WITHDRAW_MONEY_QUERY" Group="Queries" />
+
+  <Packet Opcode="SMSG_GUILD_BANK_REMAINING_WITHDRAW_MONEY" Group="Queries">
+    <Simple>
+      <Name>Remaining Bank Money Withdrawl Allowance</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Unk</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Sender="Client" Opcode="MSG_SAVE_GUILD_EMBLEM">
+    <Simple>
+      <Name>Tab Vendor EntityId</Name>
+      <Type>Guid</Type>
+    </Simple>
+    <Simple>
+      <Name>Emblem Style</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Emblem Color</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Border Style</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Border Color</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Background Color</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Sender="Server" Opcode="MSG_SAVE_GUILD_EMBLEM">
+    <Simple>
+      <Name>Result</Name>
+      <Type>UInt</Type>
+      <SegmentType>Guilds.GuildTabardResult</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_GUILD_PERMISSIONS_QUERY" Group="Queries" />
+
+  <Packet Opcode="SMSG_GUILD_PERMISSIONS_QUERY_RESULTS" Group="Queries">
+    <Simple>
+      <Name>Rank Id</Name>
+      <Type>Int</Type>
+    </Simple>
+    <Simple>
+      <Name>Guild Privileges</Name>
+      <Type>UInt</Type>
+      <SegmentType>GuildRankRights</SegmentType>
+    </Simple>
+    <Simple>
+      <Name>Daily Money Withdrawl Allowance</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Number of Purchased Bank Tabs</Name>
+      <Type>Byte</Type>
+    </Simple>
+    <StaticList Length="8">
+      <Name>Bank Tab Privileges</Name>
+      <Simple>
+        <Name>Privileges</Name>
+        <Type>Int</Type>
+        <SegmentType>GuildBankRights</SegmentType>
+      </Simple>
+      <Simple>
+        <Name>Daily Item Withdrawl Allowance</Name>
+        <Type>UInt</Type>
+      </Simple>
+    </StaticList>
+  </Packet>
+
+  <Packet Opcode="CMSG_GUILD_BANKER_ACTIVATE">
+    <Simple>
+      <Name>Guild Bank EntityId</Name>
+      <Type>Guid</Type>
+    </Simple>
+    <Simple>
+      <Name>Unknown</Name>
+      <Type>Byte</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_GUILD_BANK_QUERY_TAB" Group="Queries">
+    <Simple>
+      <Name>Guild Bank EntityId</Name>
+      <Type>Guid</Type>
+    </Simple>
+    <Simple>
+      <Name>Tab Id</Name>
+      <Type>Byte</Type>
+    </Simple>
+    <Simple>
+      <Name>Unknown</Name>
+      <Type>Byte</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_GUILD_BANK_DEPOSIT_MONEY">
+    <Simple>
+      <Name>Guild Bank EntityId</Name>
+      <Type>Guid</Type>
+    </Simple>
+    <Simple>
+      <Name>Deposit Amount</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_GUILD_BANK_WITHDRAW_MONEY">
+    <Simple>
+      <Name>Guild Bank EntityId</Name>
+      <Type>Guid</Type>
+    </Simple>
+    <Simple>
+      <Name>Withdrawl Amount</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_GUILD_BANK_BUY_TAB">
+    <Simple>
+      <Name>Guild Bank EntityId</Name>
+      <Type>Guid</Type>
+    </Simple>
+    <Simple>
+      <Name>New Tab Id</Name>
+      <Type>Byte</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_GUILD_BANK_UPDATE_TAB">
+    <Simple>
+      <Name>Guild Bank EntityId</Name>
+      <Type>Guid</Type>
+    </Simple>
+    <Simple>
+      <Name>Tab Id</Name>
+      <Type>Byte</Type>
+    </Simple>
+    <Simple>
+      <Name>New Name</Name>
+      <Type>CString</Type>
+    </Simple>
+    <Simple>
+      <Name>New Icon</Name>
+      <Type>CString</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_GUILD_BANK_TEXT_QUERY" Group="Queries">
+    <Simple>
+      <Name>Tab Id</Name>
+      <Type>Byte</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_GUILD_BANK_TEXT_QUERY_RESULT" Group="Queries">
+    <Simple>
+      <Name>Tab Id</Name>
+      <Type>Byte</Type>
+    </Simple>
+    <Simple>
+      <Name>Text</Name>
+      <Type>CString</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_GUILD_BANK_SET_TAB_TEXT">
+    <Simple>
+      <Name>Tab Id</Name>
+      <Type>Byte</Type>
+    </Simple>
+    <Simple>
+      <Name>New Text</Name>
+      <Type>CString</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_GUILD_BANK_LOG_QUERY" Group="Queries">
+    <Simple>
+      <Name>Tab Id</Name>
+      <Type>Byte</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_GUILD_GET_RANKS" Group="Queries">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>GuildRanksRequest</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_GUILD_RANKS" Group="Queries">
+    <List>
+      <Name>Ranks</Name>
+      <Type>Int</Type>
+
+      <StaticList Length="8">
+        <Name>Tabs</Name>
+        <Simple>
+          <Name>Access Mask</Name>
+          <Type>UInt</Type>
+          <SegmentType>GuildBankRights</SegmentType>
+        </Simple>
+      </StaticList>
+
+      <Simple>
+        <Name>Rank Index</Name>
+        <Type>UInt</Type>
+      </Simple>
+      <Simple>
+        <Name>Name</Name>
+        <Type>CString</Type>
+      </Simple>
+
+      <StaticList Length="8">
+        <Name>Tabs</Name>
+        <Simple>
+          <Name>Can take stacks</Name>
+          <Type>Int</Type>
+        </Simple>
+      </StaticList>
+
+      <Simple>
+        <Name>Rank Order</Name>
+        <Type>UInt</Type>
+      </Simple>
+      <Simple>
+        <Name>Count of something</Name>
+        <Type>UInt</Type>
+      </Simple>
+      <Simple>
+        <Name>Access mask</Name>
+        <Type>UInt</Type>
+        <SegmentType>GuildRankRights</SegmentType>
+      </Simple>
+    </List>
+  </Packet>
+
+  <Packet Opcode="CMSG_REQUEST_GUILD_PARTY_STATE" Group="Queries">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>GuildUpdatePartyState</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_GUILD_PARTY_STATE" Group="Queries">
+    <Simple>
+      <Name>IsInGuildParty</Name>
+      <Type>Byte</Type>
+    </Simple>
+    <Simple>
+      <Name>numGuildRequired</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>numGuildPresent</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>XP Multiplier</Name>
+      <Type>Single</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_GUILD_SEND_GUILD_XP" Group="Queries">
+    <Simple>
+      <Name>Current Guild XP</Name>
+      <Type>ULong</Type>
+    </Simple>
+    <Simple>
+      <Name>Contributed Total Guild XP</Name>
+      <Type>ULong</Type>
+    </Simple>
+    <Simple>
+      <Name>Daily Guild XP</Name>
+      <Type>ULong</Type>
+    </Simple>
+    <Simple>
+      <Name>Until Next Guild Level XP</Name>
+      <Type>ULong</Type>
+    </Simple>
+    <Simple>
+      <Name>Contributed Weekly Guild XP</Name>
+      <Type>ULong</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_GUILD_REQUEST_MAX_DAILY_XP" Group="Queries">
+    <Simple>
+      <Name>Max XP</Name>
+      <Type>ULong</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_GUILD_QUERY_NEWS" Group="Queries">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>GuildQueryNews</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_GUILD_XP_EARNED">
+    <Simple>
+      <Name>Value</Name>
+      <Type>UInt64</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_LF_GUILD_SET_GUILD_POST" Group="LookingForGuild">
+    <Simple>
+      <Name>Listed</Name>
+      <Type>Byte</Type>
+    </Simple>
+    <Simple>
+      <Name>Interest</Name>
+      <Type>UInt</Type>
+      <SegmentType>GuildInterest</SegmentType>
+    </Simple>
+    <Simple>
+      <Name>Roles</Name>
+      <Type>UInt</Type>
+      <SegmentType>GroupRoles</SegmentType>
+    </Simple>
+    <Simple>
+      <Name>Level Flags</Name>
+      <Type>UInt</Type>
+      <SegmentType>LookingForGuildLevelFlags</SegmentType>
+    </Simple>
+    <Simple>
+      <Name>Availability</Name>
+      <Type>UInt</Type>
+      <SegmentType>GuildAvailability</SegmentType>
+    </Simple>
+    <Simple>
+      <Name>Comment</Name>
+      <Type>CString</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_LF_GUILD_GET_RECRUITS" Group="LookingForGuild">
+    <Simple>
+      <Name>Recruit Update Time</Name>
+      <Type>UnixTime</Type>
+    </Simple>
+  </Packet>
+
+</Definitions>

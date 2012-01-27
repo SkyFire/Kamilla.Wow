@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions>
+
+  <Packet Opcode="SMSG_HIGHEST_THREAT_UPDATE">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>ThreatHighestUpdate</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_THREAT_UPDATE">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>ThreatUpdate</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_THREAT_CLEAR">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>ThreatClear</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_THREAT_REMOVE">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>ThreatRemove</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_ATTACKSWING">
+    <Simple>
+      <Name>Attacker</Name>
+      <Type>Guid</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_SETSHEATHED">
+    <Simple>
+      <Name>Sheath Type</Name>
+      <Type>UInt</Type>
+      <SegmentType>SheathType</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_ATTACKSTART">
+    <Simple>
+      <Name>Attacker</Name>
+      <Type>Guid</Type>
+    </Simple>
+    <Simple>
+      <Name>Victim</Name>
+      <Type>Guid</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_ATTACKSTOP" />
+
+  <Packet>
+    <Opcodes>
+      <Opcode>SMSG_ATTACKSTOP</Opcode>
+      <Opcode>SMSG_COMBAT_EVENT_FAILED</Opcode>
+    </Opcodes>
+    <Simple>
+      <Name>Attacker</Name>
+      <Type>PackedGuid</Type>
+    </Simple>
+    <Simple>
+      <Name>Defender</Name>
+      <Type>PackedGuid</Type>
+    </Simple>
+    <Simple>
+      <Name>Unknown Int</Name>
+      <Type>Int</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_CANCEL_AUTO_REPEAT">
+    <Simple>
+      <Name>Character</Name>
+      <Type>PackedGuid</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_AI_REACTION">
+    <Simple>
+      <Name>Unit GUID</Name>
+      <Type>Guid</Type>
+    </Simple>
+    <Simple>
+      <Name>Reaction</Name>
+      <Type>UInt</Type>
+      <SegmentType>AIReaction</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_ATTACKSWING_BADFACING"/>
+
+  <Packet Opcode="SMSG_ATTACKSWING_DEADTARGET"/>
+
+  <Packet Opcode="SMSG_PVP_CREDIT" Group="CombatLog">
+    <Simple>
+      <Name>Honor</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Victim</Name>
+      <Type>Guid</Type>
+    </Simple>
+    <Simple>
+      <Name>Victim Rank</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_CANCEL_COMBAT"/>
+
+  <Packet Opcode="SMSG_SPELLDAMAGESHIELD" Group="CombatLog"/>
+
+  <Packet Opcode="SMSG_ATTACKSWING_NOTINRANGE"/>
+
+  <Packet Opcode="SMSG_PARTYKILLLOG" Group="CombatLog">
+    <Simple>
+      <Name>Killer</Name>
+      <Type>Guid</Type>
+    </Simple>
+    <Simple>
+      <Name>Victim</Name>
+      <Type>Guid</Type>
+    </Simple>
+  </Packet>
+
+</Definitions>

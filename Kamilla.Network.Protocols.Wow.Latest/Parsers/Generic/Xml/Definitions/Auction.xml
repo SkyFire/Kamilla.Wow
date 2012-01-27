@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Definitions>
+
+  <Packet Opcode="SMSG_AUCTION_LIST_RESULT" Group="Auction">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>AuctionListResult</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="MSG_AUCTION_HELLO" Group="Auction" Sender="Client">
+    <Simple>
+      <Name>Auctioneer</Name>
+      <Type>Guid</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="MSG_AUCTION_HELLO" Sender="Server" Group="Auction">
+    <Simple>
+      <Name>Auctioneer</Name>
+      <Type>Guid</Type>
+    </Simple>
+    <Simple>
+      <Name>Auction Id</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Auction Enabled</Name>
+      <Type>Byte</Type>
+    </Simple>
+  </Packet>
+
+  <!-- TODO: Fill structures -->
+  <Packet Opcode="CMSG_AUCTION_SELL_ITEM" Group="Auction"/>
+  <Packet Opcode="CMSG_AUCTION_REMOVE_ITEM" Group="Auction"/>
+  <Packet Opcode="CMSG_AUCTION_LIST_ITEMS" Group="Auction"/>
+  <Packet Opcode="CMSG_AUCTION_LIST_OWNER_ITEMS" Group="Auction"/>
+  <Packet Opcode="CMSG_AUCTION_PLACE_BID" Group="Auction"/>
+  <Packet Opcode="SMSG_AUCTION_COMMAND_RESULT" Group="Auction"/>
+  <Packet Opcode="SMSG_AUCTION_OWNER_LIST_RESULT" Group="Auction"/>
+  <Packet Opcode="SMSG_AUCTION_BIDDER_NOTIFICATION" Group="Auction"/>
+  <Packet Opcode="SMSG_AUCTION_OWNER_NOTIFICATION" Group="Auction"/>
+  <Packet Opcode="CMSG_AUCTION_LIST_BIDDER_ITEMS" Group="Auction"/>
+  <Packet Opcode="SMSG_AUCTION_BIDDER_LIST_RESULT" Group="Auction"/>
+  <Packet Opcode="SMSG_AUCTION_REMOVED_NOTIFICATION" Group="Auction"/>
+  <Packet Opcode="CMSG_AUCTION_LIST_PENDING_SALES" Group="Auction"/>
+  <Packet Opcode="SMSG_AUCTION_LIST_PENDING_SALES" Group="Auction"/>
+
+</Definitions>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions>
+
+  <Packet Opcode="SMSG_PARTY_COMMAND_RESULT" Group="Group">
+    <Simple>
+      <Name>ResultCode</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Name</Name>
+      <Type>CString</Type>
+    </Simple>
+    <Simple>
+      <Name>Result</Name>
+      <Type>UInt</Type>
+      <SegmentType>GroupResult</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_PARTY_INVITE" Group="Group">
+    <Simple>
+      <Name>InviteeName</Name>
+      <Type>CString</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_PARTY_INVITE" Group="Group">
+    <Simple>
+      <Name>InviterName</Name>
+      <Type>CString</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_REQUEST_PARTY_MEMBER_STATS" Group="Group">
+    <Simple>
+      <Name>TargetId</Name>
+      <Type>Guid</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_GROUP_SET_LEADER" Group="Group">
+    <Simple>
+      <Name>New Leader</Name>
+      <Type>Guid</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_GROUP_SET_LEADER" Group="Group">
+    <Simple>
+      <Name>New Leader</Name>
+      <Type>CString</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_GROUP_DISBAND" Group="Group"/>
+
+</Definitions>

@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Definitions>
+  
+  <Packet Opcode="SMSG_UPDATE_COMBO_POINTS">
+    <Simple>
+      <Name>Player Guid</Name>
+      <Type>PackedGuid</Type>
+    </Simple>
+    <Simple>
+      <Name>Combo Point</Name>
+      <Type>Byte</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_POWER_UPDATE">
+    <Simple>
+      <Name>Player Guid</Name>
+      <Type>PackedGuid</Type>
+    </Simple>
+    <List>
+      <Name>Count</Name>
+      <Type>UInt</Type>
+      <Simple>
+        <Name>Type</Name>
+        <Type>Byte</Type>
+        <SegmentType>PowerType</SegmentType>
+      </Simple>
+      <Simple>
+        <Name>Value</Name>
+        <Type>UInt</Type>
+      </Simple>
+    </List>
+  </Packet>
+
+  <Packet Opcode="SMSG_LEVELUP_INFO">
+    <Simple>
+      <Name>Level</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Health</Name>
+      <Type>UInt</Type>
+    </Simple>
+
+    <!-- Powers -->
+    <Simple>
+      <Name>Mana</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Rage</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Focus</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Energy</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Happiness</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Runes</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Runic Power</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Soul Shards</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Eclipse</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Holy Power</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Unk Power 10</Name>
+      <Type>UInt</Type>
+    </Simple>
+
+    <!-- Stats -->
+    <Simple>
+      <Name>Strength</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Agility</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Stamina</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Intellect</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Spirit</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_INSTANCE_DIFFICULTY">
+    <Simple>
+      <Name>Difficulty</Name>
+      <Type>UInt</Type>
+      <SegmentType>RaidDifficulty</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="MSG_SET_DUNGEON_DIFFICULTY" Sender="Client">
+    <Simple>
+      <Name>Difficulty</Name>
+      <Type>UInt</Type>
+      <SegmentType>DungeonDifficulty</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="MSG_SET_DUNGEON_DIFFICULTY" Sender="Server">
+    <Simple>
+      <Name>Difficulty</Name>
+      <Type>UInt</Type>
+      <SegmentType>DungeonDifficulty</SegmentType>
+    </Simple>
+    <Simple>
+      <Name>Value 1</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Value 2 (in group)</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="MSG_SET_RAID_DIFFICULTY" Sender="Client">
+    <Simple>
+      <Name>Difficulty</Name>
+      <Type>UInt</Type>
+      <SegmentType>RaidDifficulty</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="MSG_SET_RAID_DIFFICULTY" Sender="Server">
+    <Simple>
+      <Name>Difficulty</Name>
+      <Type>UInt</Type>
+      <SegmentType>RaidDifficulty</SegmentType>
+    </Simple>
+    <Simple>
+      <Name>Value 1</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Value 2 (in group)</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_TUTORIAL_FLAGS">
+    <StaticList Length="8">
+      <Simple>
+        <Name>Tutorials Flag</Name>
+        <Type>UInt</Type>
+      </Simple>
+    </StaticList>
+  </Packet>
+
+  <Packet Opcode="CMSG_ON_MISSILE_TRAJECTORY_COLLISION">
+    <Simple>
+      <Name>Caster</Name>
+      <Type>Guid</Type>
+    </Simple>
+    <Simple>
+      <Name>Spell ID</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Cast ID</Name>
+      <Type>Byte</Type>
+    </Simple>
+    <Simple>
+      <Name>Position</Name>
+      <Type>Vector3</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_LOGOUT_RESPONSE">
+    <Simple>
+      <Name>Unk UInt32</Name>
+      <Type>UInt32</Type>
+    </Simple>
+    <Simple>
+      <Name>Unk Byte</Name>
+      <Type>Byte</Type>
+    </Simple>
+  </Packet>
+
+</Definitions>

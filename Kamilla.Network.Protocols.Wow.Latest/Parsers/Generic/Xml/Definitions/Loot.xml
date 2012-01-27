@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions>
+  
+  <Packet Opcode="SMSG_LOOT_START_ROLL" Group="Loot">
+    <Simple>
+      <Name>Looted</Name>
+      <Type>Guid</Type>
+    </Simple>
+    <Simple>
+      <Name>Map</Name>
+      <Type>UInt</Type>
+      <SegmentType>Maps</SegmentType>
+    </Simple>
+    <Simple>
+      <Name>ItemIndex</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>ItemTemplate</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Random Suffix</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Item Property Id</Name>
+      <Type>Int</Type>
+    </Simple>
+    <Simple>
+      <Name>Item Count</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>TimeoutMillis</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Allowed Roll Votes</Name>
+      <Type>Byte</Type>
+      <SegmentType>RollVoteMask</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_LOOT_ROLL" Group="Loot">
+    <Simple>
+      <Name>Looted</Name>
+      <Type>Guid</Type>
+    </Simple>
+    <Simple>
+      <Name>ItemIndex</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Looter</Name>
+      <Type>Guid</Type>
+    </Simple>
+    <Simple>
+      <Name>ItemTemplate</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Random Suffix</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Item Property Id</Name>
+      <Type>Int</Type>
+    </Simple>
+    <Simple>
+      <Name>Roll</Name>
+      <Type>SByte</Type>
+    </Simple>
+    <Simple>
+      <Name>RollType</Name>
+      <Type>Byte</Type>
+      <SegmentType>RollVote</SegmentType>
+    </Simple>
+    <Simple>
+      <Name>Auto Pass</Name>
+      <Type>Byte</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_LOOT_ROLL_WON" Group="Loot">
+    <Simple>
+      <Name>Looted</Name>
+      <Type>Guid</Type>
+    </Simple>
+    <Simple>
+      <Name>ItemIndex</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>ItemTemplate</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Random Suffix</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Item Property Id</Name>
+      <Type>Int</Type>
+    </Simple>
+    <Simple>
+      <Name>Looter</Name>
+      <Type>Guid</Type>
+    </Simple>
+    <Simple>
+      <Name>Roll</Name>
+      <Type>SByte</Type>
+    </Simple>
+    <Simple>
+      <Name>RollType</Name>
+      <Type>Byte</Type>
+      <SegmentType>RollVote</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_LOOT_ROLL" Group="Loot">
+    <Simple>
+      <Name>Looted</Name>
+      <Type>Guid</Type>
+    </Simple>
+    <Simple>
+      <Name>ItemIndex</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>RollType</Name>
+      <Type>Byte</Type>
+      <SegmentType>RollVote</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_OPT_OUT_OF_LOOT" Group="Loot">
+    <Simple>
+      <Name>AutoOptOut (boolean)</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_LOOT_RELEASE_RESPONSE" Group="Loot">
+    <Simple>
+      <Name>Guid</Name>
+      <Type>Guid</Type>
+    </Simple>
+    <Simple>
+      <Name>Unk (mabe count???)</Name>
+      <Type>Byte</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_LOOT_REMOVED" Group="Loot">
+    <Simple>
+      <Name>Loot slot</Name>
+      <Type>Byte</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_LOOT_ALL_PASSED" Group="Loot">
+    <Simple>
+      <Name>Looted</Name>
+      <Type>Guid</Type>
+    </Simple>
+    <Simple>
+      <Name>ItemIndex</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>ItemTemplate</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Random Suffix</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Item Property Id</Name>
+      <Type>Int</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_LOOT_MONEY_NOTIFY" Group="Loot">
+    <Simple>
+      <Name>Money</Name>
+      <Type>Money32</Type>
+    </Simple>
+    <Simple>
+      <Name>Full Money (Not Shared)</Name>
+      <Type>Byte</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_LOOT_LIST" Group="Loot"/>
+
+  <Packet Opcode="CMSG_AUTOSTORE_LOOT_ITEM" Group="Loot">
+    <Simple>
+      <Name>Slot</Name>
+      <Type>Byte</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_LOOT_RELEASE" Group="Loot">
+    <Simple>
+      <Name>Guid</Name>
+      <Type>Guid</Type>
+    </Simple>
+  </Packet>
+
+</Definitions>

@@ -1,0 +1,830 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions>
+
+  <Packet Opcode="CMSG_WORLD_PORT_RESPONSE" Group="PlayerMovement"/>
+
+  <Packet Opcode="CMSG_MOVE_TIME_SKIPPED" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>MoveTimeSkippedClient</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MOVE_SKIP_TIME" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>MoveTimeSkippedServer</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_TIME_SYNC_REQUEST" Group="Queries">
+    <Simple>
+      <Name>Sequence</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_TIME_SYNC_RESPONSE" Sender="Client" Group="Queries">
+    <Simple>
+      <Name>Sequence</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Client Time</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_MOVE_SPLINE_DONE" Group="PlayerMovement"/>
+
+  <Packet Opcode="CMSG_SET_ACTIVE_MOVER" Group="PlayerMovement">
+    <Simple>
+      <Name>Mover</Name>
+      <Type>Guid</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_STANDSTATECHANGE">
+    <Simple>
+      <Name>Stand State</Name>
+      <Type>UInt</Type>
+      <SegmentType>StandState</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_STANDSTATE_UPDATE">
+    <Simple>
+      <Name>Stand State</Name>
+      <Type>Byte</Type>
+      <SegmentType>StandState</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_FLIGHT_SPLINE_SYNC" Group="MonsterMovement">
+    <Simple>
+      <Name>Spline</Name>
+      <Type>Single</Type>
+    </Simple>
+    <Simple>
+      <Name>Entity</Name>
+      <Type>PackedGuid</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MONSTER_MOVE" Group="MonsterMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>MonsterMove</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MONSTER_MOVE_TRANSPORT" Group="MonsterMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>MonsterMoveTransport</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MOVE_UPDATE" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>PlayerMove</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MOVE_UPDATE_TELEPORT" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>MoveTeleport</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_MOVE_START_FORWARD" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>MoveStartForward</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_MOVE_START_BACKWARD" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>MoveStartBackward</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_MOVE_STOP" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>MoveStop</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_MOVE_START_ASCEND" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>MoveStartAscend</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_MOVE_START_DESCEND" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>MoveStartDescend</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_MOVE_STOP_ASCEND" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>MoveStopAscend</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_MOVE_START_SWIM" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>MoveSwimStart</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_MOVE_STOP_SWIM" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>MoveSwimStop</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_MOVE_SET_FLY" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>MoveSetFlying</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_MOVE_START_STRAFE_LEFT" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>MoveStrafeStartLeft</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_MOVE_START_STRAFE_RIGHT" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>MoveStrafeStartRight</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_MOVE_STOP_STRAFE" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>MoveStrafeStop</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_MOVE_START_PITCH_UP" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>MovePitchStartUp</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_MOVE_START_PITCH_DOWN" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>MovePitchStartDown</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_MOVE_STOP_PITCH" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>MovePitchStop</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_MOVE_START_TURN_LEFT" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>MoveTurnStartLeft</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_MOVE_START_TURN_RIGHT" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>MoveTurnStartRight</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_MOVE_STOP_TURN" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>MoveTurnStop</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_MOVE_HEARTBEAT" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>MoveHeartBeat</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_MOVE_SET_FACING" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>MoveSetFacing</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_MOVE_SET_PITCH" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>MoveSetPitch</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_MOVE_JUMP" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>MoveJump</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_MOVE_FALL_LAND" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>MoveFallLand</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_MOVE_SET_RUN_MODE" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>MoveSetRunMode</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_MOVE_SET_WALK_MODE" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>MoveSetWalkMode</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MOVE_UPDATE_KNOCK_BACK" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>MoveKnockBack</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_MOVE_FORCE_RUN_SPEED_CHANGE_ACK" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>ForceRunSpeedChangeAck</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MOVE_SET_RUN_SPEED" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>ForceRunSpeedChange</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_MOVE_FORCE_RUN_BACK_SPEED_CHANGE_ACK" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>ForceRunBackSpeedChangeAck</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MOVE_SET_RUN_BACK_SPEED" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>ForceRunBackSpeedChange</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_MOVE_FORCE_FLIGHT_SPEED_CHANGE_ACK" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>ForceFlightSpeedChangeAck</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MOVE_SET_FLIGHT_SPEED" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>ForceFlightSpeedChange</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_MOVE_FORCE_FLIGHT_BACK_SPEED_CHANGE_ACK" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>ForceFlightBackSpeedChangeAck</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MOVE_SET_FLIGHT_BACK_SPEED" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>ForceFlightBackSpeedChange</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_MOVE_FORCE_SWIM_SPEED_CHANGE_ACK" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>ForceSwimSpeedChangeAck</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MOVE_SET_SWIM_SPEED" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>ForceSwimSpeedChange</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_MOVE_FORCE_SWIM_BACK_SPEED_CHANGE_ACK" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>ForceSwimBackSpeedChangeAck</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MOVE_SET_SWIM_BACK_SPEED" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>ForceSwimBackSpeedChange</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MOVE_SET_WALK_SPEED" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>ForceWalkSpeedChange</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MOVE_SET_TURN_RATE" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>ForceTurnRateChange</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MOVE_SET_PITCH_RATE" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>ForcePitchRateChange</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_MOVE_FORCE_WALK_SPEED_CHANGE_ACK" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>ForceWalkSpeedChangeAck</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_MOVE_FORCE_TURN_RATE_CHANGE_ACK" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>ForceTurnRateChangeAck</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_MOVE_FORCE_PITCH_RATE_CHANGE_ACK" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>ForcePitchRateChangeAck</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MOVE_ROOT" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>ForceRoot</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_MOVE_FORCE_ROOT_ACK" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>ForceRootAck</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MOVE_UNROOT" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>ForceUnroot</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_MOVE_FORCE_UNROOT_ACK" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>ForceUnrootAck</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MOVE_KNOCK_BACK" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>ForceKnockBack</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_MOVE_KNOCK_BACK_ACK" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>ForceKnockBackAck</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MOVE_SET_WATER_WALK" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>ForceWaterWalk</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MOVE_SET_LAND_WALK" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>ForceLandWalk</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_MOVE_WATER_WALK_ACK" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>ForceWaterWalkAck</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MOVE_SET_CAN_FLY" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>ForceSetCanFly</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MOVE_UNSET_CAN_FLY" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>ForceUnsetCanFly</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_MOVE_SET_CAN_FLY_ACK" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>ForceSetCanFlyAck</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MOVE_ENABLE_TRANSITION_BETWEEN_SWIM_AND_FLY" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>ForceSetCanTransitionBetweenSwimAndFly</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MOVE_DISABLE_TRANSITION_BETWEEN_SWIM_AND_FLY" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>ForceUnsetCanTransitionBetweenSwimAndFly</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_MOVE_ENABLE_SWIM_TO_FLY_TRANS_ACK" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>ForceSetCanTransitionBetweenSwimAndFlyAck</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MOVE_ENABLE_COLLISION" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>ForceEnableCollision</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MOVE_DISABLE_COLLISION" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>ForceDisableCollision</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_MOVE_TOGGLE_COLLISION_ACK" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>ForceToggleCollisionAck</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MOVE_SET_COLLISION_HEIGHT" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>ForceSetCollisionHeight</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_MOVE_SET_COLLISION_HEIGHT_ACK" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>ForceSetCollisionHeightAck</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MOVE_SET_VEHICLE_REC_ID" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>ForceSetVehicleId</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_MOVE_SET_VEHICLE_REC_ID_ACK" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>ForceSetVehicleIdAck</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MOVE_UPDATE_RUN_SPEED" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>SetRunSpeed</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MOVE_UPDATE_RUN_BACK_SPEED" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>SetRunBackSpeed</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MOVE_UPDATE_FLIGHT_SPEED" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>SetFlightSpeed</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MOVE_UPDATE_FLIGHT_BACK_SPEED" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>SetFlightBackSpeed</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MOVE_UPDATE_SWIM_SPEED" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>SetSwimSpeed</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MOVE_UPDATE_SWIM_BACK_SPEED" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>SetSwimBackSpeed</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MOVE_UPDATE_WALK_SPEED" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>SetWalkSpeed</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MOVE_UPDATE_PITCH_RATE" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>SetPitchRate</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MOVE_UPDATE_TURN_RATE" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>SetTurnRate</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MOVE_UPDATE_COLLISION_HEIGHT" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>SetCollisionHeight</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_UPDATE_VEHICLE_REC_ID" Group="PlayerMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>SetVehicleId</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MOVE_SPLINE_SET_RUN_SPEED" Group="MonsterMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>SplineSetRunSpeed</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MOVE_SPLINE_SET_RUN_BACK_SPEED" Group="MonsterMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>SplineSetRunBackSpeed</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MOVE_SPLINE_SET_SWIM_SPEED" Group="MonsterMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>SplineSetSwimSpeed</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MOVE_SPLINE_SET_SWIM_BACK_SPEED" Group="MonsterMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>SplineSetSwimBackSpeed</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MOVE_SPLINE_SET_FLIGHT_SPEED" Group="MonsterMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>SplineSetFlightSpeed</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MOVE_SPLINE_SET_FLIGHT_BACK_SPEED" Group="MonsterMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>SplineSetFlightBackSpeed</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MOVE_SPLINE_SET_WALK_SPEED" Group="MonsterMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>SplineSetWalkSpeed</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MOVE_SPLINE_SET_TURN_RATE" Group="MonsterMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>SplineSetTurnRateSpeed</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MOVE_SPLINE_SET_PITCH_RATE" Group="MonsterMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>SplineSetPitchRateSpeed</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MOVE_SPLINE_ROOT" Group="MonsterMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>SplineRoot</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MOVE_SPLINE_UNROOT" Group="MonsterMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>SplineUnroot</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MOVE_SPLINE_START_SWIM" Group="MonsterMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>SplineSwimStart</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MOVE_SPLINE_STOP_SWIM" Group="MonsterMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>SplineSwimStop</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MOVE_SPLINE_SET_FLYING" Group="MonsterMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>SplineSetFlying</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MOVE_SPLINE_UNSET_FLYING" Group="MonsterMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>SplineUnsetFlying</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MOVE_SPLINE_SET_FEATHER_FALL" Group="MonsterMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>SplineSetFeatherFall</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MOVE_SPLINE_SET_NORMAL_FALL" Group="MonsterMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>SplineSetNormalFall</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MOVE_SPLINE_SET_WALK_MODE" Group="MonsterMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>SplineSetWalkMode</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MOVE_SPLINE_SET_RUN_MODE" Group="MonsterMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>SplineSetRunMode</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MOVE_SPLINE_DISABLE_GRAVITY" Group="MonsterMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>SplineGravityDisable</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MOVE_SPLINE_ENABLE_GRAVITY" Group="MonsterMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>SplineGravityEnable</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MOVE_SPLINE_SET_HOVER" Group="MonsterMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>SplineSetHover</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MOVE_SPLINE_UNSET_HOVER" Group="MonsterMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>SplineUnsetHover</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MOVE_SPLINE_ENABLE_COLLISION" Group="MonsterMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>SplineCollisionEnable</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MOVE_SPLINE_DISABLE_COLLISION" Group="MonsterMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>SplineCollisionDisable</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MOVE_SPLINE_SET_WATER_WALK" Group="MonsterMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>SplineWaterWalk</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MOVE_SPLINE_SET_LAND_WALK" Group="MonsterMovement">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>SplineLandWalk</SegmentType>
+    </Simple>
+  </Packet>
+
+</Definitions>

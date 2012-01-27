@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions>
+
+  <Packet Opcode="SMSG_PET_TAME_FAILURE">
+    <Simple>
+      <Name>Error</Name>
+      <Type>Byte</Type>
+      <SegmentType>TameFailReason</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_PET_CAST_FAILED">
+    <Simple>
+      <Name>Spell</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Error</Name>
+      <Type>Byte</Type>
+      <SegmentType>SpellFailedReason</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_PET_NAME_QUERY" Group="Queries">
+    <Simple>
+      <Name>PetNumber</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>EntityId</Name>
+      <Type>Guid</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_REQUEST_PET_INFO"/>
+
+  <Packet Opcode="CMSG_PET_SET_ACTION">
+    <Simple>
+      <Name>PetEntityId</Name>
+      <Type>Guid</Type>
+    </Simple>
+    <FinalList>
+      <Name>Actions</Name>
+      <Simple>
+        <Name>Index</Name>
+        <Type>UInt</Type>
+      </Simple>
+      <Simple>
+        <Name>Action</Name>
+        <Type>UInt</Type>
+        <SegmentType>PetActionEntry</SegmentType>
+      </Simple>
+    </FinalList>
+  </Packet>
+
+  <Packet Opcode="CMSG_PET_ACTION">
+    <Simple>
+      <Name>PetEntityId</Name>
+      <Type>Guid</Type>
+    </Simple>
+    <Simple>
+      <Name>Action</Name>
+      <Type>UInt</Type>
+      <SegmentType>PetActionEntry</SegmentType>
+    </Simple>
+    <Simple>
+      <Name>Target</Name>
+      <Type>Guid</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_PET_NAME_INVALID">
+    <Simple>
+      <Name>Reason</Name>
+      <Type>UInt</Type>
+      <SegmentType>PetNameInvalidReason</SegmentType>
+    </Simple>
+    <Simple>
+      <Name>NewName</Name>
+      <Type>CString</Type>
+    </Simple>
+    <List>
+      <Name>DeclinedNames</Name>
+      <Type>Byte</Type>
+      <Simple>
+        <Name>DeclinedName</Name>
+        <Type>CString</Type>
+      </Simple>
+    </List>
+  </Packet>
+
+  <Packet Opcode="CMSG_PET_ABANDON">
+    <Simple>
+      <Name>PetEntityId</Name>
+      <Type>Guid</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_PET_SPELL_AUTOCAST">
+  </Packet>
+
+  <Packet Opcode="CMSG_PET_CANCEL_AURA">
+  </Packet>
+
+  <Packet Opcode="CMSG_PET_STOP_ATTACK">
+    <Simple>
+      <Name>VendorEntityId</Name>
+      <Type>Guid</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_PET_ACTION_SOUND">
+  </Packet>
+
+  <Packet Opcode="SMSG_PET_MODE">
+    <Simple>
+      <Name>PetId</Name>
+      <Type>Guid</Type>
+    </Simple>
+    <Simple>
+      <Name>AttackMode</Name>
+      <Type>Byte</Type>
+      <SegmentType>PetAttackMode</SegmentType>
+    </Simple>
+    <Simple>
+      <Name>Action</Name>
+      <Type>Byte</Type>
+      <SegmentType>PetAction</SegmentType>
+    </Simple>
+    <Simple>
+      <Name>Flags</Name>
+      <Type>UShort</Type>
+      <SegmentType>PetFlags</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_PET_ACTION_FEEDBACK">
+    <Simple>
+      <Name>Code</Name>
+      <Type>Byte</Type>
+      <SegmentType>PetActionFeedback</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_PET_LEARNED_SPELL">
+    <Simple>
+      <Name>SpellId</Name>
+      <Type>UShort</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_PET_REMOVED_SPELL">
+    <Simple>
+      <Name>SpellId</Name>
+      <Type>UShort</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_PET_RENAMEABLE">
+    <!--Emtpy-->
+  </Packet>
+
+  <Packet Opcode="SMSG_PET_BROKEN">
+    <!--Empty-->
+  </Packet>
+
+  <!-- Stabling -->
+  <Packet Opcode="CMSG_UNSTABLE_PET">
+    <Simple>
+      <Name>VendorEntityId</Name>
+      <Type>Guid</Type>
+    </Simple>
+    <Simple>
+      <Name>PetNumber</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_STABLE_PET">
+    <Simple>
+      <Name>VendorEntityId</Name>
+      <Type>Guid</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_BUY_STABLE_SLOT">
+    <Simple>
+      <Name>VendorEntityId</Name>
+      <Type>Guid</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_STABLE_SWAP_PET">
+    <Simple>
+      <Name>VendorEntityId</Name>
+      <Type>Guid</Type>
+    </Simple>
+    <Simple>
+      <Name>PetNumber</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="MSG_LIST_STABLED_PETS" Sender="Client">
+    <Simple>
+      <Name>VendorEntityId</Name>
+      <Type>Guid</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="MSG_LIST_STABLED_PETS" Sender="Server">
+    <Simple>
+      <Name>VendorEntityId</Name>
+      <Type>Guid</Type>
+    </Simple>
+    <Simple>
+      <Name>NumPets</Name>
+      <Type>Byte</Type>
+    </Simple>
+    <Simple>
+      <Name>NumOwnedSlots</Name>
+      <Type>Byte</Type>
+    </Simple>
+    <List LengthSegment="NumPets">
+      <Name>Pets</Name>
+      <Simple>
+        <Name>Pet Index (?)</Name>
+        <Type>UInt</Type>
+      </Simple>
+      <Simple>
+        <Name>Pet Number</Name>
+        <Type>UInt</Type>
+      </Simple>
+      <Simple>
+        <Name>Pet Entry Id</Name>
+        <Type>UInt</Type>
+      </Simple>
+      <Simple>
+        <Name>Pet Level</Name>
+        <Type>UInt</Type>
+      </Simple>
+      <Simple>
+        <Name>Pet Name</Name>
+        <Type>CString</Type>
+      </Simple>
+      <Simple>
+        <Name>Slot Num</Name>
+        <Type>Byte</Type>
+      </Simple>
+    </List>
+  </Packet>
+
+  <Packet Opcode="SMSG_STABLE_RESULT">
+    <Simple>
+      <Name>Result</Name>
+      <Type>Byte</Type>
+      <SegmentType>StableResult</SegmentType>
+    </Simple>
+  </Packet>
+  <!-- /Stabling/ -->
+
+  <!-- Talents -->
+
+  <Packet Opcode="CMSG_PET_LEARN_TALENT">
+    <Simple>
+      <Name>PetEntityId</Name>
+      <Type>Guid</Type>
+    </Simple>
+    <Simple>
+      <Name>TalentId</Name>
+      <Type>Int</Type>
+    </Simple>
+    <Simple>
+      <Name>Rank</Name>
+      <Type>Int</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_PET_UNLEARN">
+    <Simple>
+      <Name>PetGuid</Name>
+      <Type>Guid</Type>
+    </Simple>
+  </Packet>
+  <!-- /Talents/ -->
+
+  <Packet Opcode="SMSG_PET_GUIDS">
+    <List>
+      <Name>Pets</Name>
+      <Type>UInt</Type>
+      <Simple>
+        <Name>Pet</Name>
+        <Type>Guid</Type>
+      </Simple>
+    </List>
+  </Packet>
+
+  <Packet Opcode="SMSG_TOTEM_CREATED">
+    <Simple>
+      <Name>Slot</Name>
+      <Type>Byte</Type>
+    </Simple>
+    <Simple>
+      <Name>Totem GUID</Name>
+      <Type>Guid</Type>
+    </Simple>
+    <Simple>
+      <Name>Duration</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Spell Id</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+  
+</Definitions>

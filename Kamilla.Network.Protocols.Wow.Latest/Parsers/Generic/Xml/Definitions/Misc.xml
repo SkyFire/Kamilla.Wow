@@ -1,0 +1,906 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions>
+
+  <Packet Opcode="CMSG_UI_TIME_REQUEST" Group="Queries" />
+
+  <Packet Opcode="SMSG_UI_TIME" Group="Queries">
+    <Simple>
+      <Name>Server Time</Name>
+      <Type>UnixTime</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_INVALIDATE_PLAYER" Group="Queries">
+    <Simple>
+      <Name>Guid</Name>
+      <Type>Guid</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_CLIENTCACHE_VERSION">
+    <Simple>
+      <Name>Client Cache Version</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_NAME_QUERY" Group="Queries">
+    <Simple>
+      <Name>Entity</Name>
+      <Type>Guid</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_SET_SELECTION">
+    <Simple>
+      <Name>Entity</Name>
+      <Type>Guid</Type>
+    </Simple>
+  </Packet>
+  
+  <Packet Opcode="SMSG_EMOTE">
+    <Simple>
+      <Name>Emote</Name>
+      <Type>UInt</Type>
+      <SegmentType>Emote</SegmentType>
+    </Simple>
+    <Simple>
+      <Name>Source</Name>
+      <Type>Guid</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_PLAY_OBJECT_SOUND">
+    <Simple>
+      <Name>Sound</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Source</Name>
+      <Type>Guid</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_PLAY_SOUND">
+    <Simple>
+      <Name>Sound</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_AREATRIGGER">
+    <Simple>
+      <Name>AreaTrigger</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_ACTION_BUTTONS">
+    <Simple>
+      <Name>Spec</Name>
+      <Type>Byte</Type>
+    </Simple>
+
+    <StaticList Length="144">
+      <Name>Action Buttons</Name>
+      <Simple>
+        <Name>Button</Name>
+        <Type>Int</Type>
+      </Simple>
+    </StaticList>
+  </Packet>
+
+  <Packet Opcode="SMSG_LOGOUT_COMPLETE"/>
+
+  <Packet Opcode="CMSG_LOGOUT_REQUEST"/>
+
+  <Packet Opcode="CMSG_LOGOUT_CANCEL"/>
+
+  <Packet Opcode="SMSG_LOGOUT_CANCEL_ACK"/>
+
+  <Packet Opcode="CMSG_PLAYED_TIME" Group="Queries">
+    <Simple>
+      <Name>Print in Chat</Name>
+      <Type>Byte</Type>
+    </Simple>
+  </Packet>
+  
+  <Packet Opcode="SMSG_PLAYED_TIME" Group="Queries">
+    <Simple>
+      <Name>Total Time Played</Name>
+      <Type>Int</Type>
+    </Simple>
+    <Simple>
+      <Name>Time Played This Level</Name>
+      <Type>Int</Type>
+    </Simple>
+    <Simple>
+      <Name>Print in Chat</Name>
+      <Type>Byte</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_UPDATE_ACCOUNT_DATA" Group="Queries">
+    <Simple>
+      <Name>Type</Name>
+      <Type>UInt</Type>
+      <SegmentType>AccountDataType</SegmentType>
+    </Simple>
+    <Simple>
+      <Name>Timestamp</Name>
+      <Type>UnixTime</Type>
+    </Simple>
+    <Compressed>
+      <Simple>
+        <Name>Data</Name>
+        <Type>CString</Type>
+      </Simple>
+    </Compressed>
+  </Packet>
+
+  <Packet Opcode="SMSG_UPDATE_ACCOUNT_DATA_COMPLETE" Group="Queries">
+    <Simple>
+      <Name>Type</Name>
+      <Type>UInt</Type>
+      <SegmentType>AccountDataType</SegmentType>
+    </Simple>
+    <Simple>
+      <Name>Unk</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="MSG_SET_DUNGEON_DIFFICULTY" Group="Queries">
+    <Simple>
+      <Name>Int 1</Name>
+      <Type>Int</Type>
+    </Simple>
+    <Simple>
+      <Name>Int 2</Name>
+      <Type>Int</Type>
+    </Simple>
+    <Simple>
+      <Name>Int 3</Name>
+      <Type>Int</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_ZONEUPDATE">
+    <Simple>
+      <Name>New Zone Id</Name>
+      <Type>Int</Type>
+      <SegmentType>Zones</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_EXPLORATION_EXPERIENCE">
+    <Simple>
+      <Name>Zone</Name>
+      <Type>UInt</Type>
+      <SegmentType>Zones</SegmentType>
+    </Simple>
+    <Simple>
+      <Name>XP</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_DEATH_RELEASE_LOC" Sender="Server" Group="Queries">
+    <Simple>
+      <Name>SHRegion</Name>
+      <Type>UInt</Type>
+      <SegmentType>Maps</SegmentType>
+    </Simple>
+    <Simple>
+      <Name>SHPos</Name>
+      <Type>Vector3</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_REPOP_REQUEST" Group="Queries"/>
+
+  <Packet Opcode="SMSG_PRE_RESURRECT">
+    <Simple>
+      <Name>Entity</Name>
+      <Type>PackedGuid</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="MSG_CORPSE_QUERY" Sender="Client" Group="Queries"/>
+
+  <Packet Opcode="MSG_CORPSE_QUERY" Sender="Server" Group="Queries">
+    <Simple>
+      <Name>Active</Name>
+      <Type>Byte</Type>
+    </Simple>
+    <Switch CompareWith="Active">
+      <Case Equals="1">
+        <Simple>
+          <Name>MapId</Name>
+          <Type>UInt</Type>
+          <SegmentType>Maps</SegmentType>
+        </Simple>
+        <Simple>
+          <Name>Pos</Name>
+          <Type>Vector3</Type>
+        </Simple>
+        <Simple>
+          <Name>MapId2</Name>
+          <Type>UInt</Type>
+          <SegmentType>Maps</SegmentType>
+        </Simple>
+      </Case>
+    </Switch>
+  </Packet>
+
+  <Packet Opcode="SMSG_CORPSE_RECLAIM_DELAY">
+    <Simple>
+      <Name>Millis</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_PING" Group="Queries">
+    <Simple>
+      <Name>Latency</Name>
+      <Type>Int</Type>
+    </Simple>
+    <Simple>
+      <Name>Sequence</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_PONG" Group="Queries">
+    <Simple>
+      <Name>Sequence</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_LFG_SET_ROLES">
+    <Simple>
+      <Name>Role Mask</Name>
+      <Type>Byte</Type>
+      <SegmentType>GroupRoles</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_LOGIN_SETTIMESPEED">
+    <Simple>
+      <Name>Date/Time</Name>
+      <Type>UnixTime</Type>
+    </Simple>
+    <Simple>
+      <Name>Time Speed</Name>
+      <Type>Float</Type>
+    </Simple>
+    <Simple>
+      <Name>Unk</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_GAMESPEED_SET">
+    <Simple>
+      <Name>Date/Time</Name>
+      <Type>PackedDate</Type>
+    </Simple>
+    <Simple>
+      <Name>Game Speed</Name>
+      <Type>Single</Type>
+    </Simple>
+    <Simple>
+      <Name>Unk</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_TOGGLE_PVP">
+    <FinalList>
+      <Name>Toggle PvP</Name>
+      <Simple>
+        <Name>Allow PvP?</Name>
+        <Type>Byte</Type>
+      </Simple>
+    </FinalList>
+  </Packet>
+
+  <Packet Opcode="SMSG_BARBER_SHOP_RESULT">
+    <Simple>
+      <Name>Purchase Result</Name>
+      <Type>UInt</Type>
+      <SegmentType>BarberShopPurchaseResult</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_ENABLE_BARBER_SHOP">
+  </Packet>
+
+  <Packet Opcode="CMSG_ALTER_APPEARANCE">
+    <Simple>
+      <Name>Hair Style</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Hair Color</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Facial Hair Style</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_BINDPOINTUPDATE">
+    <Simple>
+      <Name>Coords</Name>
+      <Type>Vector3</Type>
+    </Simple>
+    <Simple>
+      <Name>Map</Name>
+      <Type>UInt</Type>
+      <SegmentType>Maps</SegmentType>
+    </Simple>
+    <Simple>
+      <Name>Area</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_SET_CURRENCY">
+    <Simple>
+      <Name>Currency</Name>
+      <Type>UInt</Type>
+      <SegmentType>CurrencyTypes</SegmentType>
+    </Simple>
+    <Simple>
+      <Name>This Week</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Value</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_SET_MAX_WEEKLY_QUANTITY">
+    <Simple>
+      <Name>Limit</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Currency</Name>
+      <Type>UInt</Type>
+      <SegmentType>CurrencyTypes</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_REQUEST_CEMETERY_LIST" Group="Queries"/>
+
+  <Packet Opcode="SMSG_REQUEST_CEMETERY_LIST_RESPONSE" Group="Queries">
+    <Simple>
+      <Name>Unk</Name>
+      <Type>Byte</Type>
+    </Simple>
+    <List>
+      <Name>Cemeteries</Name>
+      <Type>UInt</Type>
+      <Simple>
+        <Name>Cemetery</Name>
+        <Type>UInt</Type>
+      </Simple>
+    </List>
+  </Packet>
+
+  <Packet Opcode="SMSG_INSPECT_HONOR_STATS" Group="Queries">
+    <Simple>
+      <Name>Today HK</Name>
+      <Type>UShort</Type>
+    </Simple>
+    <Simple>
+      <Name>Yesterday HK</Name>
+      <Type>UShort</Type>
+    </Simple>
+    <Simple>
+      <Name>Rank</Name>
+      <Type>Byte</Type>
+    </Simple>
+    <Simple>
+      <Name>Lifetime HK</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Entity</Name>
+      <Type>Guid</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_REQUEST_HONOR_STATS" Group="Queries">
+    <Simple>
+      <Name>Entity</Name>
+      <Type>Guid</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="MSG_INSPECT_ARENA_TEAMS" Sender="Client" Group="Queries">
+    <Simple>
+      <Name>Entity</Name>
+      <Type>Guid</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="MSG_INSPECT_ARENA_TEAMS" Sender="Server" Group="Queries">
+    <Simple>
+      <Name>Player</Name>
+      <Type>Guid</Type>
+    </Simple>
+    <Simple>
+      <Name>Slot</Name>
+      <Type>Byte</Type>
+    </Simple>
+    <Simple>
+      <Name>Id</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Team Rating</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Team Games This Season</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Team Wins This Season</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Player Games This Season</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Player Rating</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_ARENA_TEAM_STATS" Group="Queries">
+    <Simple>
+      <Name>Id</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Rating</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Games This Week</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Wins This Week</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Games Season</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Wins Season</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Rank</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_ARENA_TEAM_QUERY_RESPONSE" Group="Queries">
+    <Simple>
+      <Name>Id</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Name</Name>
+      <Type>CString</Type>
+    </Simple>
+    <Simple>
+      <Name>Type</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Background Color</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Emblem Style</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Emblem Color</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Border Style</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Border Color</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="MSG_MINIMAP_PING" Sender="Client">
+    <Simple>
+      <Name>X</Name>
+      <Type>Single</Type>
+    </Simple>
+    <Simple>
+      <Name>Y</Name>
+      <Type>Single</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="MSG_MINIMAP_PING" Sender="Server">
+    <Simple>
+      <Name>Player</Name>
+      <Type>Guid</Type>
+    </Simple>
+    <Simple>
+      <Name>X</Name>
+      <Type>Single</Type>
+    </Simple>
+    <Simple>
+      <Name>Y</Name>
+      <Type>Single</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_GET_MIRRORIMAGE_DATA">
+    <Simple>
+      <Name>Entity</Name>
+      <Type>Guid</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_MIRRORIMAGE_DATA">
+    <Simple>
+      <Name>Entity</Name>
+      <Type>Guid</Type>
+    </Simple>
+    <Simple>
+      <Name>Model</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Race</Name>
+      <Type>Byte</Type>
+      <SegmentType>Races</SegmentType>
+    </Simple>
+    <Simple>
+      <Name>Gender</Name>
+      <Type>Byte</Type>
+      <SegmentType>Genders</SegmentType>
+    </Simple>
+    <Simple>
+      <Name>Class</Name>
+      <Type>Byte</Type>
+      <SegmentType>Classes</SegmentType>
+    </Simple>
+    <Simple>
+      <Name>Skin</Name>
+      <Type>Byte</Type>
+    </Simple>
+    <Simple>
+      <Name>Face</Name>
+      <Type>Byte</Type>
+    </Simple>
+    <Simple>
+      <Name>Hair</Name>
+      <Type>Byte</Type>
+    </Simple>
+    <Simple>
+      <Name>Hair Color</Name>
+      <Type>Byte</Type>
+    </Simple>
+    <Simple>
+      <Name>Face Features</Name>
+      <Type>Byte</Type>
+    </Simple>
+    <Simple>
+      <Name>Guild</Name>
+      <Type>Guid</Type>
+    </Simple>
+
+    <Simple>
+      <Name>Head</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Shoulders</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Body</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Chest</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Waist</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Legs</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Feet</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Wrists</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Hands</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Back</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Tabard</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_PLAY_MUSIC">
+    <Simple>
+      <Name>Sound</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_SHOW_BANK">
+    <Simple>
+      <Name>Guid</Name>
+      <Type>Guid</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_TRIGGER_MOVIE">
+    <Simple>
+      <Name>Movie Id</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_TRIGGER_CINEMATIC">
+    <Simple>
+      <Name>Cinematic Sequence id</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_ARENA_TEAM_CHANGE_FAILED">
+    <Simple>
+      <Name>Unk, Unused?</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_GODMODE">
+    <Simple>
+      <Name>Enable</Name>
+      <Type>Byte</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_PETGODMODE">
+    <Simple>
+      <Name>Enable</Name>
+      <Type>Byte</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_XPGAIN">
+    <Simple>
+      <Name>Enable</Name>
+      <Type>Byte</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_PLAYERBINDERROR"/>
+
+  <Packet Opcode="SMSG_CLEAR_FAR_SIGHT_IMMEDIATE"/>
+
+  <Packet Opcode="CMSG_FAR_SIGHT">
+    <Simple>
+      <Name>Guid</Name>
+      <Type>Guid</Type>
+    </Simple>
+    <Simple>
+      <Name>Enable Far Sight</Name>
+      <Type>Byte</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_VIOLENCE_LEVEL">
+    <Simple>
+      <Name>Violence Level</Name>
+      <Type>Byte</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_LOADING_SCREEN_NOTIFY">
+    <Simple>
+      <Name>Loading Screen Active</Name>
+      <Type>UnalignedBool</Type>
+    </Simple>
+    <Simple>
+      <Name>Map</Name>
+      <Type>UInt</Type>
+      <SegmentType>Maps</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_LOG_DISCONNECT">
+    <Simple>
+      <Name>Reason</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_PHASE_SHIFT_CHANGE">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>SetPhaseShift</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_MOUNTSPECIAL_ANIM"/>
+
+  <Packet Opcode="SMSG_MOUNTSPECIAL_ANIM">
+    <Simple>
+      <Name>Unit</Name>
+      <Type>Guid</Type>
+    </Simple>
+  </Packet>
+
+  <Packet>
+    <Opcodes>
+      <Opcode>CMSG_SHOWING_CLOAK</Opcode>
+      <Opcode>CMSG_SHOWING_HELM</Opcode>
+    </Opcodes>
+    <Simple>
+      <Name>Showing</Name>
+      <Type>Byte</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_KEEP_ALIVE"/>
+
+  <Packet Opcode="SMSG_DEFENSE_MESSAGE">
+    <Simple>
+      <Name>Area</Name>
+      <Type>UInt</Type>
+      <SegmentType>Zones</SegmentType>
+    </Simple>
+    <Simple>
+      <Name>String Length</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Message</Name>
+      <Type>CString</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_TRANSFER_PENDING">
+    <Simple>
+      <Name>Map</Name>
+      <Type>UInt</Type>
+      <SegmentType>Maps</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_CLEAR_EMOTESTATE">
+    <Simple>
+      <Name>Zero for map, three for auction</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="MSG_RAID_READY_CHECK" Sender="Client"/>
+  <Packet Opcode="MSG_RAID_READY_CHECK" Sender="Server">
+    <Simple>
+      <Name>Invoker</Name>
+      <Type>Guid</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="MSG_RAID_READY_CHECK_CONFIRM" Sender="Server">
+    <Simple>
+      <Name>Player</Name>
+      <Type>Guid</Type>
+    </Simple>
+    <Simple>
+      <Name>Is Ready</Name>
+      <Type>Byte</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="MSG_RAID_READY_CHECK_FINISHED"/>
+
+  <Packet Opcode="MSG_RAID_TARGET_UPDATE" Sender="Client">
+    <Simple>
+      <Name>Icon</Name>
+      <Type>Byte</Type>
+    </Simple>
+    <Simple>
+      <Name>Unit</Name>
+      <Type>Guid</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_HOTFIX_NOTIFY_BLOB" Group="Queries">
+    <List>
+      <Name>Hotfixes</Name>
+      <Type>UInt</Type>
+
+      <Simple>
+        <Name>DB2 Id</Name>
+        <Type>UInt</Type>
+        <SegmentType>DB2Ids</SegmentType>
+      </Simple>
+      <Simple>
+        <Name>Update Time</Name>
+        <Type>UnixTime</Type>
+      </Simple>
+      <Simple>
+        <Name>Row</Name>
+        <Type>UInt</Type>
+      </Simple>
+    </List>
+  </Packet>
+
+  <Packet Opcode="CMSG_DB_QUERY_BULK" Group="Queries">
+    <Simple>
+      <Name>DB2 Id</Name>
+      <Type>UInt</Type>
+      <SegmentType>DB2Ids</SegmentType>
+    </Simple>
+    <Simple>
+      <Name>Count</Name>
+      <Type>UInt</Type>
+    </Simple>
+
+    <List LengthSegment="Count">
+      <Simple>
+        <Name>Row</Name>
+        <Type>UInt</Type>
+      </Simple>
+      <Simple>
+        <Name>Zero1</Name>
+        <Type>UInt</Type>
+      </Simple>
+      <Simple>
+        <Name>Zero2</Name>
+        <Type>UInt</Type>
+      </Simple>
+    </List>
+  </Packet>
+
+  <Packet Opcode="SMSG_FAILED_PLAYER_CONDITION">
+    <Simple>
+      <Name>Condition</Name>
+      <Type>UInt</Type>
+      <SegmentType>PlayerCondition</SegmentType>
+    </Simple>
+  </Packet>
+</Definitions>

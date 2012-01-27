@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions>
+
+  <Packet Opcode="SMSG_TRAINER_BUY_FAILED">
+    <Simple>
+      <Name>Guid</Name>
+      <Type>Guid</Type>
+    </Simple>
+    <Simple>
+      <Name>Unk1</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Unk2</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+
+</Definitions>

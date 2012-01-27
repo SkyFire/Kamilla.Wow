@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions>
+
+    <Packet Opcode="SMSG_SERVER_FIRST_ACHIEVEMENT">
+      <Simple>
+        <Name>Player name</Name>
+        <Type>CString</Type>
+      </Simple>
+      <Simple>
+        <Name>Player GUID</Name>
+        <Type>Guid</Type>
+      </Simple>
+      <Simple>
+        <Name>Achievement ID</Name>
+        <Type>UInt</Type>
+      </Simple>
+      <Simple>
+        <Name>Link in chat (1 = yes)</Name>
+        <Type>UInt</Type>
+      </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_ACHIEVEMENT_EARNED">
+    <Simple>
+      <Name>Player GUID</Name>
+      <Type>PackedGuid</Type>
+    </Simple>
+    <Simple>
+      <Name>Achievement ID</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Time</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Unknown</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_CRITERIA_UPDATE">
+    <Simple>
+      <Name>Criteria ID</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Progress counter</Name>
+      <!-- the counter is packed like a packed Guid -->
+      <Type>PackedValue</Type>
+    </Simple>
+    <Simple>
+      <Name>Player GUID</Name>
+      <Type>PackedGuid</Type>
+    </Simple>
+    <Simple>
+      <Name>Unknown 1</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Time</Name>
+      <Type>UnixTime</Type>
+    </Simple>
+    <Simple>
+      <Name>dTime 1</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>dTime 2</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+  <Packet Opcode="SMSG_ACHIEVEMENT_DELETED">
+    <Simple>
+      <Name>Achievement ID</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_CRITERIA_DELETED">
+    <Simple>
+      <Name>Criteria ID</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_GUILD_ACHIEVEMENT_EARNED">
+    <Simple>
+      <Name>Achievement Id</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Guild</Name>
+      <Type>Guid</Type>
+    </Simple>
+    <Simple>
+      <Name>Time</Name>
+      <Type>TimeBitFields</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_ALL_GUILD_ACHIEVEMENTS">
+    <Simple>
+      <Name>Count</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <List LengthSegment="Count">
+      <Simple>
+        <Name>Time</Name>
+        <Type>TimeBitFields</Type>
+      </Simple>
+    </List>
+    <List LengthSegment="Count">
+      <Simple>
+        <Name>Id</Name>
+        <Type>UInt</Type>
+      </Simple>
+    </List>
+  </Packet>
+
+</Definitions>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions>
+  
+  <Packet Opcode="CMSG_GMTICKET_CREATE" Group="GMTickets">
+    <Simple>
+      <Name>Region</Name>
+      <Type>UInt</Type>
+      <SegmentType>Maps</SegmentType>
+    </Simple>
+    <Simple>
+      <Name>PosX</Name>
+      <Type>Float</Type>
+    </Simple>
+    <Simple>
+      <Name>PosY</Name>
+      <Type>Float</Type>
+    </Simple>
+    <Simple>
+      <Name>PosZ</Name>
+      <Type>Float</Type>
+    </Simple>
+    <Simple>
+      <Name>Message</Name>
+      <Type>CString</Type>
+    </Simple>
+    <Simple>
+      <Name>Type</Name>
+      <Type>UInt</Type>
+      <!--<SegmentType>Tickets.TicketType</SegmentType>-->
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_GMTICKET_CREATE" Group="GMTickets">
+    <Simple>
+      <Name>Result</Name>
+      <Type>UInt</Type>
+      <SegmentType>GmTicketStatus</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_GMTICKET_UPDATETEXT" Group="GMTickets">
+    <Simple>
+      <Name>Unknown</Name>
+      <Type>Byte</Type>
+    </Simple>
+    <Simple>
+      <Name>Message</Name>
+      <Type>CString</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_GMTICKET_UPDATETEXT" Group="GMTickets">
+    <Simple>
+      <Name>Result</Name>
+      <Type>UInt</Type>
+      <SegmentType>GmTicketStatus</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_GMTICKET_DELETETICKET" Group="GMTickets" />
+
+  <Packet Opcode="SMSG_GMTICKET_DELETETICKET" Group="GMTickets">
+    <Simple>
+      <Name>Result</Name>
+      <Type>UInt</Type>
+      <SegmentType>GmTicketStatus</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_GMTICKET_SYSTEMSTATUS" Group="GMTickets">
+    <Simple>
+      <Name>Status</Name>
+      <Type>UInt</Type>
+      <SegmentType>GmTicketStatus</SegmentType>
+    </Simple>
+  </Packet>
+
+</Definitions>

@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions>
+  <Packet Group="Spells">
+    <Opcodes>
+      <Opcode>SMSG_SET_PCT_SPELL_MODIFIER</Opcode>
+      <Opcode>SMSG_SET_FLAT_SPELL_MODIFIER</Opcode>
+    </Opcodes>
+    <List>
+      <Name>Types</Name>
+      <Type>UInt</Type>
+
+      <Simple>
+        <Name>Modifiers</Name>
+        <Type>UInt</Type>
+      </Simple>
+      <Simple>
+        <Name>Modifier</Name>
+        <Type>Byte</Type>
+        <SegmentType>SpellModifierType</SegmentType>
+      </Simple>
+
+      <List LengthSegment="Modifiers">
+        <Simple>
+          <Name>Spell Group</Name>
+          <Type>Byte</Type>
+        </Simple>
+        <Simple>
+          <Name>Value (%)</Name>
+          <Type>Float</Type>
+        </Simple>
+      </List>
+    </List>
+  </Packet>
+
+  <Packet Opcode="SMSG_SPELL_FAILURE" Group="Spells">
+    <Simple>
+      <Name>Caster</Name>
+      <Type>PackedGuid</Type>
+    </Simple>
+    <Simple>
+      <Name>CastId</Name>
+      <Type>Byte</Type>
+    </Simple>
+    <Simple>
+      <Name>Spell</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>FailReason</Name>
+      <Type>Byte</Type>
+      <SegmentType>SpellFailedReason</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Sender="Server" Opcode="SMSG_SPELL_FAILED_OTHER" Group="Spells">
+    <Simple>
+      <Name>Target</Name>
+      <Type>PackedGuid</Type>
+    </Simple>
+    <Simple>
+      <Name>CastId</Name>
+      <Type>Byte</Type>
+    </Simple>
+    <Simple>
+      <Name>Spell</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>FailReason</Name>
+      <Type>Byte</Type>
+      <SegmentType>SpellFailedReason</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_SEND_UNLEARN_SPELLS" Group="Spells">
+    <List>
+      <Name>Unlearned Spells</Name>
+      <Type>UInt</Type>
+      <Simple>
+        <Name>Spell</Name>
+        <Type>UInt</Type>
+      </Simple>
+    </List>
+  </Packet>
+
+  <Packet Opcode="SMSG_RESUME_CAST_BAR" Group="Spells">
+    <Simple>
+      <Name>Caster GUID</Name>
+      <Type>PackedGuid</Type>
+    </Simple>
+    <Simple>
+      <Name>Target GUID</Name>
+      <Type>PackedGuid</Type>
+    </Simple>
+    <Simple>
+      <Name>Spell ID</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Cast Time?</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Cast Time Mod?</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_LEARNED_SPELL" Group="Spells">
+    <Simple>
+      <Name>Unk</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>SpellId</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_PLAY_SPELL_VISUAL" Group="Spells">
+    <Simple>
+      <Name>EntityId</Name>
+      <Type>Guid</Type>
+    </Simple>
+    <Simple>
+      <Name>SpellId</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_PLAY_SPELL_VISUAL_KIT" Group="Spells">
+    <Simple>
+      <Name>EntityId</Name>
+      <Type>Guid</Type>
+    </Simple>
+    <Simple>
+      <Name>SpellId</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_COOLDOWN_EVENT" Group="Spells">
+    <Simple>
+      <Name>Spell</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Target</Name>
+      <Type>Guid</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_SPELLDISPELLOG" Group="CombatLog">
+    <Simple>
+      <Name>Target GUID</Name>
+      <Type>PackedGuid</Type>
+    </Simple>
+    <Simple>
+      <Name>Caster GUID</Name>
+      <Type>PackedGuid</Type>
+    </Simple>
+    <Simple>
+      <Name>Spell ID</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Unk Unused</Name>
+      <Type>Byte</Type>
+    </Simple>
+    <List>
+      <Name>Dispel Spells</Name>
+      <Type>UInt</Type>
+      <Simple>
+        <Name>Spell Id</Name>
+        <Type>UInt</Type>
+      </Simple>
+      <Simple>
+        <Name>IsCleansed</Name>
+        <Type>Byte</Type>
+      </Simple>
+    </List>
+  </Packet>
+
+  <Packet Opcode="SMSG_ENVIRONMENTALDAMAGELOG" Group="CombatLog">
+    <Simple>
+      <Name>GUID</Name>
+      <Type>Guid</Type>
+    </Simple>
+    <Simple>
+      <Name>Damage Type</Name>
+      <Type>Byte</Type>
+      <SegmentType>EnviromentalDamage</SegmentType>
+    </Simple>
+    <Simple>
+      <Name>Damage</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Absorb</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Resist</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_SPELL_DELAYED" Group="Spells">
+    <Simple>
+      <Name>Caster</Name>
+      <Type>PackedGuid</Type>
+    </Simple>
+    <Simple>
+      <Name>Delay (ms)</Name>
+      <Type>Int</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_INITIAL_SPELLS" Group="Spells">
+    <Simple>
+      <Name>UnkByte0</Name>
+      <Type>Byte</Type>
+    </Simple>
+    <List>
+      <Name>Spells</Name>
+      <Type>UShort</Type>
+      <Simple>
+        <Name>Spell</Name>
+        <Type>UInt</Type>
+      </Simple>
+      <Simple>
+        <Name>Slot</Name>
+        <Type>UShort</Type>
+      </Simple>
+    </List>
+    <List>
+      <Name>Cooldowns count</Name>
+      <Type>UShort</Type>
+      <Simple>
+        <Name>Spell</Name>
+        <Type>UInt</Type>
+      </Simple>
+      <Simple>
+        <Name>Item</Name>
+        <Type>UInt</Type>
+      </Simple>
+      <Simple>
+        <Name>Category</Name>
+        <Type>UShort</Type>
+      </Simple>
+      <Simple>
+        <Name>Cooldown</Name>
+        <Type>UInt</Type>
+      </Simple>
+      <Simple>
+        <Name>Category Cooldown</Name>
+        <Type>UInt</Type>
+      </Simple>
+    </List>
+  </Packet>
+
+  <Packet Opcode="SMSG_DISMOUNT" Group="Spells">
+    <Simple>
+      <Name>Guid</Name>
+      <Type>PackedGuid</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Group="Spells">
+    <Opcodes>
+      <Opcode>SMSG_AURA_UPDATE</Opcode>
+      <Opcode>SMSG_AURA_UPDATE_ALL</Opcode>
+    </Opcodes>
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>AuraUpdate</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_RESYNC_RUNES" Group="Spells">
+    <List>
+      <Name>Runes</Name>
+      <Type>UInt</Type>
+
+      <Simple>
+        <Name>Rune Type</Name>
+        <Type>Byte</Type>
+        <SegmentType>Runes</SegmentType>
+      </Simple>
+      <Simple>
+        <Name>Cooldown</Name>
+        <Type>Byte</Type>
+      </Simple>
+    </List>
+  </Packet>
+
+  <Packet Opcode="SMSG_ADD_RUNE_POWER" Group="Spells">
+    <Simple>
+      <Name>Value</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_CONVERT_RUNE" Group="Spells">
+    <Simple>
+      <Name>Rune</Name>
+      <Type>Byte</Type>
+      <SegmentType>Runes</SegmentType>
+    </Simple>
+    <Simple>
+      <Name>New Type</Name>
+      <Type>Byte</Type>
+      <SegmentType>RuneType</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_CLEAR_COOLDOWN" Group="Spells">
+    <Simple>
+      <Name>Spell</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Unit</Name>
+      <Type>Guid</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_WEEKLY_SPELL_USAGE" Group="Spells">
+    <List>
+      <Name>Spells</Name>
+      <Type>UInt</Type>
+      <Simple>
+        <Name>Usages</Name>
+        <Type>Byte</Type>
+      </Simple>
+      <Simple>
+        <Name>Spell</Name>
+        <Type>UInt</Type>
+      </Simple>
+    </List>
+  </Packet>
+
+  <Packet Opcode="CMSG_REQUEST_CATEGORY_COOLDOWNS" Group="Spells"/>
+
+  <Packet Opcode="SMSG_CATEGORY_COOLDOWN" Group="Spells">
+    <List>
+      <Name>Count</Name>
+      <Type>UInt</Type>
+      <Simple>
+        <Name>Category</Name>
+        <Type>UInt</Type>
+      </Simple>
+      <Simple>
+        <Name>Cooldown</Name>
+        <Type>Int</Type>
+      </Simple>
+    </List>
+  </Packet>
+
+  <Packet Opcode="CMSG_CANCEL_MOUNT_AURA" Group="Spells"/>
+
+  <Packet Opcode="CMSG_CANCEL_AURA" Group="Spells">
+    <Simple>
+      <Name>Spell</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_CANCEL_CAST" Group="Spells"/>
+
+  <Packet Opcode="SMSG_REMOVED_SPELL" Group="Spells">
+    <Simple>
+      <Name>Spell</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="MSG_CHANNEL_UPDATE" Group="Spells">
+    <Simple>
+      <Name>Unit</Name>
+      <Type>PackedGuid</Type>
+    </Simple>
+    <Simple>
+      <Name>Spell</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_TOTEM_DESTROYED" Group="Spells">
+    <Simple>
+      <Name>Slot</Name>
+      <Type>Byte</Type>
+      <SegmentType>TotemSlot</SegmentType>
+    </Simple>
+    <Simple>
+      <Name>Guid</Name>
+      <Type>Guid</Type>
+    </Simple>
+  </Packet>
+
+</Definitions>

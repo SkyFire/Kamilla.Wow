@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions>
+
+  <Packet Opcode="CMSG_CHANNEL_LIST" Group="Chat">
+    <Simple>
+      <Name>Channel</Name>
+      <Type>CString</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_CHANNEL_LIST" Group="Chat">
+    <Simple>
+      <Name>Unknown</Name>
+      <Type>Byte</Type>
+    </Simple>
+    <Simple>
+      <Name>Channel</Name>
+      <Type>CString</Type>
+    </Simple>
+    <Simple>
+      <Name>Channel Flags</Name>
+      <Type>Byte</Type>
+    </Simple>
+    <Simple>
+      <Name>Player Count</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <List LengthSegment="Player Count">
+      <Name>Player List</Name>
+      <Simple>
+        <Name>Player GUID</Name>
+        <Type>Guid</Type>
+      </Simple>
+      <Simple>
+        <Name>Player Channel Flags</Name>
+        <Type>Byte</Type>
+      </Simple>
+    </List>
+  </Packet>
+
+  <Packet Opcode="CMSG_JOIN_CHANNEL" Group="Chat">
+    <Simple>
+      <Name>Unk1</Name>
+      <Type>Byte</Type>
+    </Simple>
+    <Simple>
+      <Name>Unk2</Name>
+      <Type>Byte</Type>
+    </Simple>
+    <Simple>
+      <Name>ChannelId</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Password</Name>
+      <Type>CString</Type>
+    </Simple>
+    <Simple>
+      <Name>Channel</Name>
+      <Type>CString</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_LEAVE_CHANNEL" Group="Chat">
+    <Simple>
+      <Name>Unknown</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Channel</Name>
+      <Type>CString</Type>
+     </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_CHANNEL_PASSWORD" Group="Chat">
+    <Simple>
+      <Name>Channel</Name>
+      <Type>CString</Type>
+    </Simple>
+    <Simple>
+      <Name>Password</Name>
+      <Type>CString</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_CHANNEL_MEMBER_COUNT" Group="Chat">
+    <Simple>
+      <Name>UnkInt</Name>
+      <Type>Int</Type>
+    </Simple>
+    <Simple>
+      <Name>UnkZero</Name>
+      <Type>UShort</Type>
+    </Simple>
+    <Simple>
+      <Name>Channel</Name>
+      <Type>CString</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Sender="Client">
+    <Opcodes>
+      <Opcode>SMSG_USERLIST_ADD</Opcode>
+      <Opcode>SMSG_USERLIST_UPDATE</Opcode>
+    </Opcodes>
+    <Simple>
+      <Name>Player GUID</Name>
+      <Type>Guid</Type>
+    </Simple>
+    <Simple>
+      <Name>Player Channel Flags</Name>
+      <Type>Byte</Type>
+    </Simple>
+    <Simple>
+      <Name>Channel Flags</Name>
+      <Type>Byte</Type>
+    </Simple>
+    <Simple>
+      <Name>Player Count</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Channel</Name>
+      <Type>CString</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_TEXT_EMOTE" Group="Chat">
+    <Simple>
+      <Name>Emote Type</Name>
+      <Type>UInt</Type>
+      <SegmentType>TextEmote</SegmentType>
+    </Simple>
+    <Simple>
+      <Name>Unknown Int - Always -1?</Name>
+      <Type>Int</Type>
+    </Simple>
+    <Simple>
+      <Name>Target Character</Name>
+      <Type>Guid</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_TEXT_EMOTE" Group="Chat">
+    <Simple>
+      <Name>Acting Character</Name>
+      <Type>Guid</Type>
+    </Simple>
+    <Simple>
+      <Name>Emote Type</Name>
+      <Type>UInt</Type>
+      <SegmentType>TextEmote</SegmentType>
+    </Simple>
+    <Simple>
+      <Name>Unknown Int - Always -1?</Name>
+      <Type>Int</Type>
+    </Simple>
+    <Simple>
+      <Name>Target Character's Name</Name>
+      <Type>PascalStringUInt</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_LEARNED_DANCE_MOVES">
+    <Simple>
+      <Name>Unknown Mask</Name>
+      <Type>ULong</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_CHAT_RESTRICTED" Group="Chat">
+    <Simple>
+      <Name>Reason</Name>
+      <Type>Byte</Type>
+      <SegmentType>ChatRestrictionType</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_CHAT_WRONG_FACTION" Group="Chat"/>
+
+  <Packet Opcode="CMSG_UNREGISTER_ALL_ADDON_PREFIXES" Group="Chat"/>
+
+</Definitions>

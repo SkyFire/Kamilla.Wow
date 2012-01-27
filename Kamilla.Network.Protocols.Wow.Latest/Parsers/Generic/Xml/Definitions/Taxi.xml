@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Definitions>
+
+  <Packet Opcode="CMSG_TAXINODE_STATUS_QUERY" Group="Queries">
+    <Simple>
+      <Name>NPC Guid</Name>
+      <Type>Guid</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_TAXINODE_STATUS" Group="Queries">
+    <Simple>
+      <Name>NPC Guid</Name>
+      <Type>Guid</Type>
+    </Simple>
+    <Simple>
+      <Name>Node Known</Name>
+      <Type>Byte</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_NEW_TAXI_PATH"/>
+
+</Definitions>

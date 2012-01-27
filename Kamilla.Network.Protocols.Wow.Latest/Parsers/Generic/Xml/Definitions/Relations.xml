@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions>
+
+  <Packet Opcode="CMSG_ADD_FRIEND">
+    <Simple>
+      <Name>Name</Name>
+      <Type>CString</Type>
+    </Simple>
+    <Simple>
+      <Name>Note</Name>
+      <Type>CString</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_DEL_FRIEND">
+    <Simple>
+      <Name>CharacterId</Name>
+      <Type>Guid</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_SET_CONTACT_NOTES">
+    <Simple>
+      <Name>CharacterId</Name>
+      <Type>Guid</Type>
+    </Simple>
+    <Simple>
+      <Name>Note</Name>
+      <Type>CString</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_ADD_IGNORE">
+    <Simple>
+      <Name>Name</Name>
+      <Type>CString</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_DEL_IGNORE">
+    <Simple>
+      <Name>CharacterId</Name>
+      <Type>Guid</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_CONTACT_LIST">
+    <Simple>
+      <Name>RequestedList</Name>
+      <Type>UInt</Type>
+      <SegmentType>SocialFlag</SegmentType>
+    </Simple>
+  </Packet>
+
+</Definitions>

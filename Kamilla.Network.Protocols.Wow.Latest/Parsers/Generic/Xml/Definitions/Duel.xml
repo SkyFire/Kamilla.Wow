@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions>
+
+  <Packet Opcode="CMSG_DUEL_ACCEPTED">
+    <Simple>
+      <Name>FlagId</Name>
+      <Type>Guid</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_DUEL_CANCELLED"/>
+
+  <Packet Opcode="SMSG_DUEL_COUNTDOWN">
+    <Simple>
+      <Name>Delay (ms)</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_DUEL_REQUESTED">
+    <Simple>
+      <Name>FlagId</Name>
+      <Type>Guid</Type>
+    </Simple>
+    <Simple>
+      <Name>ChallengerId</Name>
+      <Type>Guid</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_DUEL_OUTOFBOUNDS">
+    <Simple>
+      <Name>CancelDelay</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_DUEL_COMPLETE">
+    <Simple>
+      <Name>Completed</Name>
+      <Type>Byte</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_DUEL_WINNER">
+    <Simple>
+      <Name>Win</Name>
+      <Type>Byte</Type>
+      <SegmentType>DuelWin</SegmentType>
+    </Simple>
+    <Simple>
+      <Name>Winner</Name>
+      <Type>CString</Type>
+    </Simple>
+    <Simple>
+      <Name>Loser</Name>
+      <Type>CString</Type>
+    </Simple>
+  </Packet>
+</Definitions>

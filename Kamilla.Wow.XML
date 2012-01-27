@@ -1,0 +1,634 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Kamilla.Wow</name>
+    </assembly>
+    <members>
+        <member name="T:Kamilla.Network.Protocols.Wow.WowStrings">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Kamilla.Network.Protocols.Wow.WowStrings.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Kamilla.Network.Protocols.Wow.WowStrings.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Kamilla.Network.Protocols.Wow.WowStrings.AllClasses">
+            <summary>
+              Looks up a localized string similar to All Classes.
+            </summary>
+        </member>
+        <member name="P:Kamilla.Network.Protocols.Wow.WowStrings.AllianceRaces">
+            <summary>
+              Looks up a localized string similar to Alliance Races.
+            </summary>
+        </member>
+        <member name="P:Kamilla.Network.Protocols.Wow.WowStrings.AllRaces">
+            <summary>
+              Looks up a localized string similar to All Races.
+            </summary>
+        </member>
+        <member name="P:Kamilla.Network.Protocols.Wow.WowStrings.Class1">
+            <summary>
+              Looks up a localized string similar to Warrior.
+            </summary>
+        </member>
+        <member name="P:Kamilla.Network.Protocols.Wow.WowStrings.Class11">
+            <summary>
+              Looks up a localized string similar to Druid.
+            </summary>
+        </member>
+        <member name="P:Kamilla.Network.Protocols.Wow.WowStrings.Class2">
+            <summary>
+              Looks up a localized string similar to Paladin.
+            </summary>
+        </member>
+        <member name="P:Kamilla.Network.Protocols.Wow.WowStrings.Class3">
+            <summary>
+              Looks up a localized string similar to Hunter.
+            </summary>
+        </member>
+        <member name="P:Kamilla.Network.Protocols.Wow.WowStrings.Class4">
+            <summary>
+              Looks up a localized string similar to Rogue.
+            </summary>
+        </member>
+        <member name="P:Kamilla.Network.Protocols.Wow.WowStrings.Class5">
+            <summary>
+              Looks up a localized string similar to Priest.
+            </summary>
+        </member>
+        <member name="P:Kamilla.Network.Protocols.Wow.WowStrings.Class6">
+            <summary>
+              Looks up a localized string similar to Death Knight.
+            </summary>
+        </member>
+        <member name="P:Kamilla.Network.Protocols.Wow.WowStrings.Class7">
+            <summary>
+              Looks up a localized string similar to Shaman.
+            </summary>
+        </member>
+        <member name="P:Kamilla.Network.Protocols.Wow.WowStrings.Class8">
+            <summary>
+              Looks up a localized string similar to Mage.
+            </summary>
+        </member>
+        <member name="P:Kamilla.Network.Protocols.Wow.WowStrings.Class9">
+            <summary>
+              Looks up a localized string similar to Warlock.
+            </summary>
+        </member>
+        <member name="P:Kamilla.Network.Protocols.Wow.WowStrings.Expac0">
+            <summary>
+              Looks up a localized string similar to World of Warcraft (Classic).
+            </summary>
+        </member>
+        <member name="P:Kamilla.Network.Protocols.Wow.WowStrings.Expac1">
+            <summary>
+              Looks up a localized string similar to World of Warcraft: The Burning Crusade.
+            </summary>
+        </member>
+        <member name="P:Kamilla.Network.Protocols.Wow.WowStrings.Expac2">
+            <summary>
+              Looks up a localized string similar to World of Warcraft: Wrath of the Lich King.
+            </summary>
+        </member>
+        <member name="P:Kamilla.Network.Protocols.Wow.WowStrings.Expac3">
+            <summary>
+              Looks up a localized string similar to World of Warcraft: Cataclysm.
+            </summary>
+        </member>
+        <member name="P:Kamilla.Network.Protocols.Wow.WowStrings.Expac4">
+            <summary>
+              Looks up a localized string similar to World of Warcraft: Mists of Pandaria.
+            </summary>
+        </member>
+        <member name="P:Kamilla.Network.Protocols.Wow.WowStrings.Gender0">
+            <summary>
+              Looks up a localized string similar to Male.
+            </summary>
+        </member>
+        <member name="P:Kamilla.Network.Protocols.Wow.WowStrings.Gender1">
+            <summary>
+              Looks up a localized string similar to Female.
+            </summary>
+        </member>
+        <member name="P:Kamilla.Network.Protocols.Wow.WowStrings.Gender2">
+            <summary>
+              Looks up a localized string similar to None.
+            </summary>
+        </member>
+        <member name="P:Kamilla.Network.Protocols.Wow.WowStrings.HordeRaces">
+            <summary>
+              Looks up a localized string similar to Horde Races.
+            </summary>
+        </member>
+        <member name="P:Kamilla.Network.Protocols.Wow.WowStrings.NoClasses">
+            <summary>
+              Looks up a localized string similar to No Classes.
+            </summary>
+        </member>
+        <member name="P:Kamilla.Network.Protocols.Wow.WowStrings.NoRaces">
+            <summary>
+              Looks up a localized string similar to No Races.
+            </summary>
+        </member>
+        <member name="P:Kamilla.Network.Protocols.Wow.WowStrings.NotPlayableRaces">
+            <summary>
+              Looks up a localized string similar to All Not Playable Races.
+            </summary>
+        </member>
+        <member name="P:Kamilla.Network.Protocols.Wow.WowStrings.PlayableRaces">
+            <summary>
+              Looks up a localized string similar to All Playable Races.
+            </summary>
+        </member>
+        <member name="P:Kamilla.Network.Protocols.Wow.WowStrings.Race1">
+            <summary>
+              Looks up a localized string similar to Human.
+            </summary>
+        </member>
+        <member name="P:Kamilla.Network.Protocols.Wow.WowStrings.Race10">
+            <summary>
+              Looks up a localized string similar to Blood Elf.
+            </summary>
+        </member>
+        <member name="P:Kamilla.Network.Protocols.Wow.WowStrings.Race11">
+            <summary>
+              Looks up a localized string similar to Draenei.
+            </summary>
+        </member>
+        <member name="P:Kamilla.Network.Protocols.Wow.WowStrings.Race12">
+            <summary>
+              Looks up a localized string similar to Fel Orc.
+            </summary>
+        </member>
+        <member name="P:Kamilla.Network.Protocols.Wow.WowStrings.Race13">
+            <summary>
+              Looks up a localized string similar to Naga.
+            </summary>
+        </member>
+        <member name="P:Kamilla.Network.Protocols.Wow.WowStrings.Race14">
+            <summary>
+              Looks up a localized string similar to Broken.
+            </summary>
+        </member>
+        <member name="P:Kamilla.Network.Protocols.Wow.WowStrings.Race15">
+            <summary>
+              Looks up a localized string similar to Skeleton.
+            </summary>
+        </member>
+        <member name="P:Kamilla.Network.Protocols.Wow.WowStrings.Race16">
+            <summary>
+              Looks up a localized string similar to Vrykul.
+            </summary>
+        </member>
+        <member name="P:Kamilla.Network.Protocols.Wow.WowStrings.Race17">
+            <summary>
+              Looks up a localized string similar to Tuskarr.
+            </summary>
+        </member>
+        <member name="P:Kamilla.Network.Protocols.Wow.WowStrings.Race18">
+            <summary>
+              Looks up a localized string similar to Forest Troll.
+            </summary>
+        </member>
+        <member name="P:Kamilla.Network.Protocols.Wow.WowStrings.Race19">
+            <summary>
+              Looks up a localized string similar to Taunka.
+            </summary>
+        </member>
+        <member name="P:Kamilla.Network.Protocols.Wow.WowStrings.Race2">
+            <summary>
+              Looks up a localized string similar to Orc.
+            </summary>
+        </member>
+        <member name="P:Kamilla.Network.Protocols.Wow.WowStrings.Race20">
+            <summary>
+              Looks up a localized string similar to Northrend Skeleton.
+            </summary>
+        </member>
+        <member name="P:Kamilla.Network.Protocols.Wow.WowStrings.Race21">
+            <summary>
+              Looks up a localized string similar to Ice Troll.
+            </summary>
+        </member>
+        <member name="P:Kamilla.Network.Protocols.Wow.WowStrings.Race22">
+            <summary>
+              Looks up a localized string similar to Worgen.
+            </summary>
+        </member>
+        <member name="P:Kamilla.Network.Protocols.Wow.WowStrings.Race23">
+            <summary>
+              Looks up a localized string similar to Gilneas Human.
+            </summary>
+        </member>
+        <member name="P:Kamilla.Network.Protocols.Wow.WowStrings.Race3">
+            <summary>
+              Looks up a localized string similar to Dwarf.
+            </summary>
+        </member>
+        <member name="P:Kamilla.Network.Protocols.Wow.WowStrings.Race4">
+            <summary>
+              Looks up a localized string similar to Night Elf.
+            </summary>
+        </member>
+        <member name="P:Kamilla.Network.Protocols.Wow.WowStrings.Race5">
+            <summary>
+              Looks up a localized string similar to Undead.
+            </summary>
+        </member>
+        <member name="P:Kamilla.Network.Protocols.Wow.WowStrings.Race6">
+            <summary>
+              Looks up a localized string similar to Tauren.
+            </summary>
+        </member>
+        <member name="P:Kamilla.Network.Protocols.Wow.WowStrings.Race7">
+            <summary>
+              Looks up a localized string similar to Gnome.
+            </summary>
+        </member>
+        <member name="P:Kamilla.Network.Protocols.Wow.WowStrings.Race8">
+            <summary>
+              Looks up a localized string similar to Troll.
+            </summary>
+        </member>
+        <member name="P:Kamilla.Network.Protocols.Wow.WowStrings.Race9">
+            <summary>
+              Looks up a localized string similar to Goblin.
+            </summary>
+        </member>
+        <member name="T:Kamilla.Network.Protocols.Wow.Races">
+            <summary>
+            Represents playable and not playable races of World of Warcraft.
+            
+            When using localized names of this enum, pass gender as the first argument.
+            </summary>
+        </member>
+        <member name="F:Kamilla.Network.Protocols.Wow.Races.Human">
+            <summary>
+            Represents the Human race. This race belongs to Alliance. This race is playable.
+            </summary>
+        </member>
+        <member name="F:Kamilla.Network.Protocols.Wow.Races.Orc">
+            <summary>
+            Represents the Orc race. This race belongs to Horde. This race is playable.
+            </summary>
+        </member>
+        <member name="F:Kamilla.Network.Protocols.Wow.Races.Dwarf">
+            <summary>
+            Represents the Dwarf race. This race belongs to Alliance. This race is playable.
+            </summary>
+        </member>
+        <member name="F:Kamilla.Network.Protocols.Wow.Races.NightElf">
+            <summary>
+            Represents the Night Elf race. This race belongs to Alliance. This race is playable.
+            </summary>
+        </member>
+        <member name="F:Kamilla.Network.Protocols.Wow.Races.Undead">
+            <summary>
+            Represents the Undead race. This race belongs to Horde. This race is playable.
+            </summary>
+        </member>
+        <member name="F:Kamilla.Network.Protocols.Wow.Races.Tauren">
+            <summary>
+            Represents the Tauren race. This race belongs to Horde. This race is playable.
+            </summary>
+        </member>
+        <member name="F:Kamilla.Network.Protocols.Wow.Races.Gnome">
+            <summary>
+            Represents the Gnome race. This race belongs to Alliance. This race is playable.
+            </summary>
+        </member>
+        <member name="F:Kamilla.Network.Protocols.Wow.Races.Troll">
+            <summary>
+            Represents the Troll race. This race belongs to Horde. This race is playable.
+            </summary>
+        </member>
+        <member name="F:Kamilla.Network.Protocols.Wow.Races.Goblin">
+            <summary>
+            Represents the Goblin race. This race belongs to Horde. This race is playable.
+            </summary>
+        </member>
+        <member name="F:Kamilla.Network.Protocols.Wow.Races.BloodElf">
+            <summary>
+            Represents the Blood Elf race. This race belongs to Horde. This race is playable.
+            </summary>
+        </member>
+        <member name="F:Kamilla.Network.Protocols.Wow.Races.Draenei">
+            <summary>
+            Represents the Draenei race. This race belongs to Alliance. This race is playable.
+            </summary>
+        </member>
+        <member name="F:Kamilla.Network.Protocols.Wow.Races.FelOrc">
+            <summary>
+            Represents the Fel Orc race. This race is not playable.
+            </summary>
+        </member>
+        <member name="F:Kamilla.Network.Protocols.Wow.Races.Naga">
+            <summary>
+            Represents the Naga race. This race is not playable.
+            </summary>
+        </member>
+        <member name="F:Kamilla.Network.Protocols.Wow.Races.Broken">
+            <summary>
+            Represents the Broken race. This race is not playable.
+            </summary>
+        </member>
+        <member name="F:Kamilla.Network.Protocols.Wow.Races.Skeleton">
+            <summary>
+            Represents the Skeleton race. This race is not playable.
+            </summary>
+        </member>
+        <member name="F:Kamilla.Network.Protocols.Wow.Races.Vrykul">
+            <summary>
+            Represents the Vrykul race. This race is not playable.
+            </summary>
+        </member>
+        <member name="F:Kamilla.Network.Protocols.Wow.Races.Tuskarr">
+            <summary>
+            Represents the Tuskarr race. This race is not playable.
+            </summary>
+        </member>
+        <member name="F:Kamilla.Network.Protocols.Wow.Races.ForestTroll">
+            <summary>
+            Represents the Forest Troll race. This race is not playable.
+            </summary>
+        </member>
+        <member name="F:Kamilla.Network.Protocols.Wow.Races.Taunka">
+            <summary>
+            Represents the Taunka race. This race is not playable.
+            </summary>
+        </member>
+        <member name="F:Kamilla.Network.Protocols.Wow.Races.NorthrendSkeleton">
+            <summary>
+            Represents the Northrend Skeleton race. This race is not playable.
+            </summary>
+        </member>
+        <member name="F:Kamilla.Network.Protocols.Wow.Races.IceTroll">
+            <summary>
+            Represents the Naga race. This race is not playable.
+            </summary>
+        </member>
+        <member name="F:Kamilla.Network.Protocols.Wow.Races.Worgen">
+            <summary>
+            Represents the Worgen race. This race belongs to Alliance. This race is playable.
+            </summary>
+        </member>
+        <member name="F:Kamilla.Network.Protocols.Wow.Races.GilneasHuman">
+            <summary>
+            Represents the Gilneas Human race. This race is not playable.
+            </summary>
+        </member>
+        <member name="F:Kamilla.Network.Protocols.Wow.Races.Horde">
+            <summary>
+            Represents all Horde races. These races are playable.
+            </summary>
+        </member>
+        <member name="F:Kamilla.Network.Protocols.Wow.Races.Alliance">
+            <summary>
+            Represents all Alliance races. These races are playable.
+            </summary>
+        </member>
+        <member name="F:Kamilla.Network.Protocols.Wow.Races.Playable">
+            <summary>
+            Represents all playable races. That is, all Horde and all Alliance races.
+            </summary>
+        </member>
+        <member name="F:Kamilla.Network.Protocols.Wow.Races.NotPlayable">
+            <summary>
+            Represents all not playable races.
+            </summary>
+        </member>
+        <member name="F:Kamilla.Network.Protocols.Wow.Races.All">
+            <summary>
+            Represents all races.
+            </summary>
+        </member>
+        <member name="T:Kamilla.Network.Protocols.Wow.Classes">
+            <summary>
+            Represents playable classes of World of Warcraft.
+            
+            When using localized names of this enum, pass gender as the first argument.
+            </summary>
+        </member>
+        <member name="F:Kamilla.Network.Protocols.Wow.Classes.Warrior">
+            <summary>
+            Represents the Warrior class.
+            </summary>
+        </member>
+        <member name="F:Kamilla.Network.Protocols.Wow.Classes.Paladin">
+            <summary>
+            Represents the Paladin class.
+            </summary>
+        </member>
+        <member name="F:Kamilla.Network.Protocols.Wow.Classes.Hunter">
+            <summary>
+            Represents the Hunter class.
+            </summary>
+        </member>
+        <member name="F:Kamilla.Network.Protocols.Wow.Classes.Rogue">
+            <summary>
+            Represents the Rogue class.
+            </summary>
+        </member>
+        <member name="F:Kamilla.Network.Protocols.Wow.Classes.Priest">
+            <summary>
+            Represents the Priest class.
+            </summary>
+        </member>
+        <member name="F:Kamilla.Network.Protocols.Wow.Classes.DeathKnight">
+            <summary>
+            Represents the Death Knight class.
+            </summary>
+        </member>
+        <member name="F:Kamilla.Network.Protocols.Wow.Classes.Shaman">
+            <summary>
+            Represents the Shaman class.
+            </summary>
+        </member>
+        <member name="F:Kamilla.Network.Protocols.Wow.Classes.Mage">
+            <summary>
+            Represents the Mage class.
+            </summary>
+        </member>
+        <member name="F:Kamilla.Network.Protocols.Wow.Classes.Warlock">
+            <summary>
+            Represents the Warlock class.
+            </summary>
+        </member>
+        <member name="F:Kamilla.Network.Protocols.Wow.Classes.Druid">
+            <summary>
+            Represents the Druid class.
+            </summary>
+        </member>
+        <member name="T:Kamilla.Network.Protocols.Wow.Expansions">
+            <summary>
+            Defines World of Warcraft expansion sets.
+            </summary>
+        </member>
+        <member name="F:Kamilla.Network.Protocols.Wow.Expansions.Original">
+            <summary>
+            Represents the original, classic World of Warcraft.
+            </summary>
+        </member>
+        <member name="F:Kamilla.Network.Protocols.Wow.Expansions.TheBurningCrusade">
+            <summary>
+            Represents the first expansion set to the World of Warcraft, The Burning Crusade.
+            </summary>
+        </member>
+        <member name="F:Kamilla.Network.Protocols.Wow.Expansions.WrathOfTheLichKing">
+            <summary>
+            Represents the second expansion set to the World of Warcraft, Wrath of the Lich King.
+            </summary>
+        </member>
+        <member name="F:Kamilla.Network.Protocols.Wow.Expansions.Cataclysm">
+            <summary>
+            Represents the third expansion set to the World of Warcraft, Cataclysm.
+            </summary>
+        </member>
+        <member name="F:Kamilla.Network.Protocols.Wow.Expansions.MistsOfPandaria">
+            <summary>
+            Represents the fourth expansion set to the World of Warcraft, Mists of Pandaria.
+            </summary>
+        </member>
+        <member name="T:Kamilla.Network.Protocols.Wow.Genders">
+            <summary>
+            Represents World of Warcraft genders.
+            </summary>
+        </member>
+        <member name="F:Kamilla.Network.Protocols.Wow.Genders.Male">
+            <summary>
+            Represents male gender.
+            </summary>
+        </member>
+        <member name="F:Kamilla.Network.Protocols.Wow.Genders.Female">
+            <summary>
+            Represents female gender.
+            </summary>
+        </member>
+        <member name="F:Kamilla.Network.Protocols.Wow.Genders.None">
+            <summary>
+            Represents an unknown or undefined gender.
+            </summary>
+        </member>
+        <member name="T:Kamilla.Network.Protocols.Wow.WowPacket">
+            <summary>
+            Represents a single World of Warcraft network packet.
+            </summary>
+        </member>
+        <member name="M:Kamilla.Network.Protocols.Wow.WowPacket.#ctor(System.Byte[],Kamilla.Network.TransferDirection,Kamilla.Network.PacketFlags,System.DateTime,System.UInt32,System.UInt32,System.Int32)">
+            <summary>
+            Initializes a new instance of <see cref="T:Kamilla.Network.Protocols.Wow.WowPacket"/> class.
+            </summary>
+            <param name="data">
+            Data of the new <see cref="T:Kamilla.Network.Protocols.Wow.WowPacket"/>.
+            </param>
+            <param name="direction">
+            <see cref="T:Kamilla.Network.TransferDirection"/> of
+            the new <see cref="T:Kamilla.Network.Protocols.Wow.WowPacket"/>.
+            </param>
+            <param name="flags">
+            <see cref="T:Kamilla.Network.PacketFlags"/> of
+            the new <see cref="T:Kamilla.Network.Protocols.Wow.WowPacket"/>.
+            </param>
+            <param name="arrivalTicks">
+            Number of milliseconds passed from the Operation System start to the packet arrival event.
+            </param>
+            <param name="arrivalTime">
+            An instance of <see cref="T:System.DateTime"/> representing the moment when
+            the packet <see cref="T:Kamilla.Network.Protocols.Wow.WowPacket"/> arrived.
+            </param>
+            <param name="opcode">
+            The opcode of the new <see cref="T:Kamilla.Network.Protocols.Wow.WowPacket"/>.
+            </param>
+            <param name="connectionId">
+            The connection id of the new <see cref="T:Kamilla.Network.Protocols.Wow.WowPacket"/>.
+            </param>
+        </member>
+        <member name="P:Kamilla.Network.Protocols.Wow.WowPacket.ConnectionId">
+            <summary>
+            Gets the connection id of the current <see cref="T:Kamilla.Network.Protocols.Wow.WowPacket"/>.
+            </summary>
+        </member>
+        <member name="P:Kamilla.Network.Protocols.Wow.WowPacket.Opcode">
+            <summary>
+            Gets the opcode of the current <see cref="T:Kamilla.Network.Protocols.Wow.WowPacket"/>.
+            </summary>
+        </member>
+        <member name="T:Kamilla.Network.Protocols.Wow.ClassMask">
+            <summary>
+            Represents bit mask of playable classes of World of Warcraft.
+            
+            When using localized names of this enum, pass gender as the first argument.
+            </summary>
+        </member>
+        <member name="F:Kamilla.Network.Protocols.Wow.ClassMask.None">
+            <summary>
+            Represents the empty class mask.
+            </summary>
+        </member>
+        <member name="F:Kamilla.Network.Protocols.Wow.ClassMask.Warrior">
+            <summary>
+            Represents the Warrior class bit.
+            </summary>
+        </member>
+        <member name="F:Kamilla.Network.Protocols.Wow.ClassMask.Paladin">
+            <summary>
+            Represents the Paladin class bit.
+            </summary>
+        </member>
+        <member name="F:Kamilla.Network.Protocols.Wow.ClassMask.Hunter">
+            <summary>
+            Represents the Hunter class bit.
+            </summary>
+        </member>
+        <member name="F:Kamilla.Network.Protocols.Wow.ClassMask.Rogue">
+            <summary>
+            Represents the Rogue class bit.
+            </summary>
+        </member>
+        <member name="F:Kamilla.Network.Protocols.Wow.ClassMask.Priest">
+            <summary>
+            Represents the Priest class bit.
+            </summary>
+        </member>
+        <member name="F:Kamilla.Network.Protocols.Wow.ClassMask.DeathKnight">
+            <summary>
+            Represents the Death Knight class bit.
+            </summary>
+        </member>
+        <member name="F:Kamilla.Network.Protocols.Wow.ClassMask.Shaman">
+            <summary>
+            Represents the Shaman class bit.
+            </summary>
+        </member>
+        <member name="F:Kamilla.Network.Protocols.Wow.ClassMask.Mage">
+            <summary>
+            Represents the Mage class bit.
+            </summary>
+        </member>
+        <member name="F:Kamilla.Network.Protocols.Wow.ClassMask.Warlock">
+            <summary>
+            Represents the Warlock class bit.
+            </summary>
+        </member>
+        <member name="F:Kamilla.Network.Protocols.Wow.ClassMask.Druid">
+            <summary>
+            Represents the Druid class bit.
+            </summary>
+        </member>
+        <member name="F:Kamilla.Network.Protocols.Wow.ClassMask.All">
+            <summary>
+            Represents all available World of Warcraft classes mask.
+            </summary>
+        </member>
+    </members>
+</doc>

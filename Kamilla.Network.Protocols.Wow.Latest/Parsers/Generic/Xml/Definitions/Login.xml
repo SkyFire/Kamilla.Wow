@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions>
+
+  <Packet Opcode="HELLO">
+    <Simple>
+      <Name>S</Name>
+      <Type>CString</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Sender="Server" Opcode="SMSG_AUTH_RESPONSE">
+    <Simple>
+      <Name>Response Code</Name>
+      <Type>Byte</Type>
+      <SegmentType>ResponseCodes</SegmentType>
+    </Simple>
+    <Simple>
+      <Name>Billing Time Remaining</Name>
+      <Type>TimeSpanMinutesUntil</Type>
+    </Simple>
+    <Simple>
+      <Name>Billing Plan Flags</Name>
+      <Type>Byte</Type>
+    </Simple>
+    <Simple>
+      <Name>Billing Time Rested</Name>
+      <Type>TimeSpanMinutes</Type>
+    </Simple>
+    <Simple>
+      <Name>Enabled Expansion</Name>
+      <Type>Byte</Type>
+      <SegmentType>Expansions</SegmentType>
+    </Simple>
+    <Simple>
+      <Name>Payed Expansion</Name>
+      <Type>Byte</Type>
+      <SegmentType>Expansions</SegmentType>
+    </Simple>
+  </Packet>
+  
+  <Packet Sender="Client" Opcode="CMSG_REALM_SPLIT">
+    <Simple>
+      <Name>Unknown</Name>
+      <Type>Int</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_REALM_SPLIT">
+    <Simple>
+      <Name>Unknown</Name>
+      <Type>Int</Type>
+    </Simple>
+    <Simple>
+      <Name>RealmState</Name>
+      <Type>UInt</Type>
+      <SegmentType>RealmState</SegmentType>
+    </Simple>
+    <Simple>
+      <Name>SplitDate</Name>
+      <Type>CString</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Sender="Client" Opcode="CMSG_ENUM_CHARACTERS"/>
+
+  <Packet Sender="Client" Opcode="CMSG_CHAR_CREATE">
+    <Simple>
+      <Name>Name</Name>
+      <Type>CString</Type>
+    </Simple>
+    <Simple>
+      <Name>Race</Name>
+      <Type>Byte</Type>
+      <SegmentType>Races</SegmentType>
+    </Simple>
+    <Simple>
+      <Name>Class</Name>
+      <Type>Byte</Type>
+      <SegmentType>Classes</SegmentType>
+    </Simple>
+    <Simple>
+      <Name>Gender</Name>
+      <Type>Byte</Type>
+      <SegmentType>Genders</SegmentType>
+    </Simple>
+    <Simple>
+      <Name>Skin</Name>
+      <Type>Byte</Type>
+    </Simple>
+    <Simple>
+      <Name>Face</Name>
+      <Type>Byte</Type>
+    </Simple>
+    <Simple>
+      <Name>HairStyle</Name>
+      <Type>Byte</Type>
+    </Simple>
+    <Simple>
+      <Name>HairColor</Name>
+      <Type>Byte</Type>
+    </Simple>
+    <Simple>
+      <Name>FacialHair</Name>
+      <Type>Byte</Type>
+    </Simple>
+    <Simple>
+      <Name>Outfit</Name>
+      <Type>Byte</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Sender="Client" Opcode="CMSG_VOICE_SESSION_ENABLE">
+    <Simple>
+      <Name>Enabled</Name>
+      <Type>UShort</Type>
+    </Simple>
+  </Packet>
+  
+  <Packet Opcode="SMSG_MOTD">
+    <List>
+      <Name>Messages</Name>
+      <Type>UInt</Type>
+      <Simple>
+        <Name>Message</Name>
+        <Type>CString</Type>
+      </Simple>
+    </List>
+  </Packet>
+
+  <Packet Sender="Client" Opcode="CMSG_PLAYER_LOGIN">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>PlayerLogin</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_LOGIN_VERIFY_WORLD">
+    <Simple>
+      <Name>Region Id</Name>
+      <Type>Int</Type>
+      <SegmentType>Maps</SegmentType>
+    </Simple>
+    <Simple>
+      <Name>Position</Name>
+      <Type>Vector3</Type>
+    </Simple>
+    <Simple>
+      <Name>Orientation</Name>
+      <Type>Float</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_SET_PLAYER_DECLINED_NAMES">
+    <Simple>
+      <Name>Character</Name>
+      <Type>Guid</Type>
+    </Simple>
+    <StaticList Length="6">
+      <Name>Declines</Name>
+      <Simple>
+        <Name>Declined Name</Name>
+        <Type>CString</Type>
+      </Simple>
+    </StaticList>
+  </Packet>
+
+  <Packet Opcode="SMSG_SET_PLAYER_DECLINED_NAMES_RESULT">
+    <Simple>
+      <Name>Response</Name>
+      <Type>UInt</Type>
+      <SegmentType>ResponseCodes</SegmentType>
+    </Simple>
+    <Simple>
+      <Name>Character</Name>
+      <Type>Guid</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_AUTH_CHALLENGE">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>AuthChallenge</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_REQUEST_ACCOUNT_DATA">
+    <Simple>
+      <Name>Type</Name>
+      <Type>UInt</Type>
+      <SegmentType>AccountDataType</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_READY_FOR_ACCOUNT_DATA_TIMES"/>
+
+  <Packet Opcode="SMSG_RESUME_COMMS"/>
+
+  <Packet Opcode="SMSG_SUSPEND_COMMS">
+    <Simple>
+      <Name>Token</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_SUSPEND_COMMS_ACK">
+    <Simple>
+      <Name>Token</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+
+</Definitions>

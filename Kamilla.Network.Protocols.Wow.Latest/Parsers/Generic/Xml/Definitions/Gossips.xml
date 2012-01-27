@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions>
+  <Packet Opcode="CMSG_GOSSIP_HELLO">
+    <Simple>
+      <Name>Target</Name>
+      <Type>Guid</Type>
+    </Simple>
+  </Packet>
+  
+  <Packet Opcode="CMSG_GOSSIP_SELECT_OPTION">
+    <Simple>
+      <Name>Target</Name>
+      <Type>Guid</Type>
+    </Simple>
+    <Simple>
+      <Name>Menu</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Option</Name>
+      <Type>Int</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_GOSSIP_COMPLETE"></Packet>
+</Definitions>

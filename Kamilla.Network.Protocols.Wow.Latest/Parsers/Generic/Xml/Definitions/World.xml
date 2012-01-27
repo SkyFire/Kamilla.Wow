@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions>
+
+  <Packet Opcode="SMSG_ZONE_UNDER_ATTACK">
+    <Simple>
+      <Name>Zone</Name>
+      <Type>UInt</Type>
+      <SegmentType>Zones</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_NEW_WORLD">
+    <Simple>
+      <Name>Map</Name>
+      <Type>UInt</Type>
+      <SegmentType>Maps</SegmentType>
+    </Simple>
+    <Simple>
+      <Name>Coords</Name>
+      <Type>Vector3</Type>
+    </Simple>
+    <Simple>
+      <Name>Orientation</Name>
+      <Type>Single</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_INIT_WORLD_STATES">
+    <Simple>
+      <Name>Map</Name>
+      <Type>UInt</Type>
+      <SegmentType>Maps</SegmentType>
+    </Simple>
+    <Simple>
+      <Name>Zone</Name>
+      <Type>UInt</Type>
+      <SegmentType>Zones</SegmentType>
+    </Simple>
+    <Simple>
+      <Name>Area</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <List>
+      <Name>States</Name>
+      <Type>UShort</Type>
+      <Simple>
+        <Name>Key</Name>
+        <Type>UInt</Type>
+      </Simple>
+      <Simple>
+        <Name>Value</Name>
+        <Type>UInt</Type>
+      </Simple>
+    </List>
+  </Packet>
+  
+  <Packet Opcode="SMSG_UPDATE_WORLD_STATE">
+    <Simple>
+      <Name>Key</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Value</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Unk Bool</Name>
+      <Type>Byte</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_DESTROY_OBJECT" Group="ObjectUpdates">
+    <Simple>
+      <Name>Entity</Name>
+      <Type>Guid</Type>
+    </Simple>
+    <Simple>
+      <Name>Anim</Name>
+      <Type>Byte</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_UPDATE_OBJECT" Group="ObjectUpdates">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>UpdateData</SegmentType>
+    </Simple>
+  </Packet>
+
+</Definitions>

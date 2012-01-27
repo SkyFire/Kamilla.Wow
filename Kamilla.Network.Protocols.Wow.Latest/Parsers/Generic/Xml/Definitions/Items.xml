@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions>
+  
+  <Packet Opcode="CMSG_DESTROYITEM">
+    <Simple>
+      <Name>ContSlot</Name>
+      <Type>Byte</Type>
+      <SegmentType>InventorySlot</SegmentType>
+    </Simple>
+    <Simple>
+      <Name>Slot</Name>
+      <Type>Byte</Type>
+    </Simple>
+  </Packet>
+  
+  <Packet Opcode="CMSG_USE_ITEM">
+    <Simple>
+      <Type>OpcodeData</Type>
+      <SegmentType>UseItem</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_DELETEEQUIPMENT_SET">
+    <Simple>
+      <Name>Set Guid</Name>
+      <Type>PackedGuid</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_SAVE_EQUIPMENT_SET">
+    <Simple>
+      <Name>Set Guid</Name>
+      <Type>PackedGuid</Type>
+    </Simple>
+    <Simple>
+      <Name>Set Id</Name>
+      <Type>Int</Type>
+    </Simple>
+    <Simple>
+      <Name>Set Name</Name>
+      <Type>CString</Type>
+    </Simple>
+    <Simple>
+      <Name>Set Icon Name</Name>
+      <Type>CString</Type>
+    </Simple>
+    <StaticList Length="19">
+      <Name>Items In Set</Name>
+      <Simple>
+        <Name>Item Guid</Name>
+        <Type>PackedGuid</Type>
+      </Simple>
+    </StaticList>
+  </Packet>
+
+  <Packet Opcode="SMSG_LOAD_EQUIPMENT_SET">
+    <List>
+      <Name>Set Count</Name>
+      <Type>Int</Type>
+      <Simple>
+        <Name>Set Guid</Name>
+        <Type>PackedGuid</Type>
+      </Simple>
+      <Simple>
+        <Name>Set Id</Name>
+        <Type>Int</Type>
+      </Simple>
+      <Simple>
+        <Name>Set Name</Name>
+        <Type>CString</Type>
+      </Simple>
+      <Simple>
+        <Name>Set Icon</Name>
+        <Type>CString</Type>
+      </Simple>
+      <StaticList Length="19">
+        <Name>Items In Set</Name>
+        <Simple>
+          <Name>Item Guid</Name>
+          <Type>Guid</Type>
+        </Simple>
+      </StaticList>
+    </List>
+  </Packet>
+
+  <Packet Opcode="CMSG_USE_EQUIPMENT_SET">
+    <StaticList Length="19">
+      <Name>Equipment Set</Name>
+      <Simple>
+        <Name>Item Guid</Name>
+        <Type>PackedGuid</Type>
+      </Simple>
+      <Simple>
+        <Name>Source Container</Name>
+        <Type>Byte</Type>
+        <SegmentType>InventorySlot</SegmentType>
+      </Simple>
+      <Switch CompareWith="Source Container">
+        <Case NotEqual="255">
+          <Simple>
+            <Name>Slot Inside Container</Name>
+            <Type>Byte</Type>
+          </Simple>
+        </Case>
+        <Case Equals="255">
+          <Simple>
+            <Name>Inventory Slot</Name>
+            <Type>Byte</Type>
+            <SegmentType>InventorySlot</SegmentType>
+          </Simple>
+        </Case>
+      </Switch>
+    </StaticList>
+  </Packet>
+
+  <Packet Opcode="SMSG_USE_EQUIPMENT_SET_RESULT">
+    <Simple>
+      <Name>Result</Name>
+      <Type>Byte</Type>
+      <SegmentType>Items.UseEquipmentSetError</SegmentType>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_EQUIPMENT_SET_ID">
+    <Simple>
+      <Name>Set Id</Name>
+      <Type>Int</Type>
+    </Simple>
+    <Simple>
+      <Name>Set Guid</Name>
+      <Type>PackedGuid</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_ITEM_PUSH_RESULT">
+    <Simple>
+      <Name>Player Guid</Name>
+      <Type>Guid</Type>
+    </Simple>
+    <Simple>
+      <Name>How Obtained</Name>
+      <Type>UInt</Type>
+      <SegmentType>ItemObtainType</SegmentType>
+    </Simple>
+    <Simple>
+      <Name>How Received</Name>
+      <Type>UInt</Type>
+      <SegmentType>ItemCreateType</SegmentType>
+    </Simple>
+    <Simple>
+      <Name>Constant Int - 1</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Bag Slot</Name>
+      <Type>Byte</Type>
+      <SegmentType>InventorySlot</SegmentType>
+    </Simple>
+    <Simple>
+      <Name>Slot</Name>
+      <Type>Int</Type>
+    </Simple>
+    <Simple>
+      <Name>Item Entry</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Item Property Seed</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Item Random Property</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Amount Received</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Total Amount</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_AUTOEQUIP_ITEM">
+    <Simple>
+      <Name>From Bag Slot</Name>
+      <Type>Byte</Type>
+      <SegmentType>InventorySlot</SegmentType>
+    </Simple>
+    <Simple>
+      <Name>From Slot</Name>
+      <Type>Byte</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_ENCHANTMENTLOG">
+    <Simple>
+      <Name>Target</Name>
+      <Type>PackedGuid</Type>
+    </Simple>
+    <Simple>
+      <Name>Caster</Name>
+      <Type>PackedGuid</Type>
+    </Simple>
+    <Simple>
+      <Name>Item</Name>
+      <Type>Int</Type>
+    </Simple>
+    <Simple>
+      <Name>Spell</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_ITEM_ENCHANT_TIME_UPDATE">
+    <Simple>
+      <Name>Item Guid</Name>
+      <Type>Guid</Type>
+    </Simple>
+    <Simple>
+      <Name>Slot</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Duration</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Player</Name>
+      <Type>Guid</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_ITEM_COOLDOWN">
+    <Simple>
+      <Name>Spell Id</Name>
+      <Type>UInt</Type>
+    </Simple>
+    <Simple>
+      <Name>Item Guid</Name>
+      <Type>Guid</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_SWAP_ITEM">
+    <Simple>
+      <Name>Destination Bag</Name>
+      <Type>Byte</Type>
+      <SegmentType>InventorySlot</SegmentType>
+    </Simple>
+    <Simple>
+      <Name>Destination Slot</Name>
+      <Type>Byte</Type>
+    </Simple>
+    <Simple>
+      <Name>Source Bag</Name>
+      <Type>Byte</Type>
+      <SegmentType>InventorySlot</SegmentType>
+    </Simple>
+    <Simple>
+      <Name>Source Slot</Name>
+      <Type>Byte</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_OPEN_CONTAINER">
+    <Simple>
+      <Name>Guid</Name>
+      <Type>Guid</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_GET_ITEM_PURCHASE_DATA">
+    <Simple>
+      <Name>Item</Name>
+      <Type>Guid</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="SMSG_ITEM_TIME_UPDATE">
+    <Simple>
+      <Name>Item</Name>
+      <Type>Guid</Type>
+    </Simple>
+    <Simple>
+      <Name>Duration</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_REPAIR_ITEM">
+    <Simple>
+      <Name>NPC</Name>
+      <Type>Guid</Type>
+    </Simple>
+    <Simple>
+      <Name>Item</Name>
+      <Type>Guid</Type>
+    </Simple>
+    <Simple>
+      <Name>Use Guild Bank Money</Name>
+      <Type>Byte</Type>
+    </Simple>
+  </Packet>
+
+</Definitions>

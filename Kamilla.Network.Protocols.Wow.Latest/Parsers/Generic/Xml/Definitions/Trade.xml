@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Definitions>
+  <Packet Opcode="SMSG_TRADE_STATUS" Group="Trade">
+    <Simple>
+      <Name>Trade Status</Name>
+      <Type>UInt</Type>
+      <SegmentType>TradeStatus</SegmentType>
+    </Simple>
+    <Switch CompareWith="Trade Status">
+      <Case Equals="Proposed">
+        <Simple>
+          <Name>Proposer</Name>
+          <Type>Guid</Type>
+        </Simple>
+      </Case>
+    </Switch>
+  </Packet>
+
+  <Packet Opcode="CMSG_INITIATE_TRADE" Group="Trade">
+    <Simple>
+      <Name>Target</Name>
+      <Type>Guid</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_BEGIN_TRADE" Group="Trade" />
+
+  <Packet Opcode="CMSG_BUSY_TRADE" Group="Trade" />
+
+  <Packet Opcode="CMSG_IGNORE_TRADE" Group="Trade" />
+
+  <Packet Opcode="CMSG_CANCEL_TRADE" Group="Trade" />
+
+  <Packet Opcode="CMSG_ACCEPT_TRADE" Group="Trade" />
+  
+  <Packet Opcode="CMSG_UNACCEPT_TRADE" Group="Trade" />
+
+  <Packet Opcode="CMSG_SET_TRADE_GOLD" Group="Trade">
+    <Simple>
+      <Name>Coinage</Name>
+      <Type>UInt</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_SET_TRADE_ITEM" Group="Trade">
+    <Simple>
+      <Name>Trade Slot</Name>
+      <Type>Byte</Type>
+    </Simple>
+    <Simple>
+      <Name>Bag</Name>
+      <Type>Byte</Type>
+    </Simple>
+    <Simple>
+      <Name>Slot</Name>
+      <Type>Byte</Type>
+    </Simple>
+  </Packet>
+
+  <Packet Opcode="CMSG_CLEAR_TRADE_ITEM" Group="Trade">
+    <Simple>
+      <Name>Trade Slot</Name>
+      <Type>Byte</Type>
+    </Simple>
+  </Packet>
+  
+</Definitions>
