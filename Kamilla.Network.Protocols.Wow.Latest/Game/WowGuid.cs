@@ -127,7 +127,7 @@ namespace Kamilla.Network.Protocols.Wow.Latest.Game
         {
             m_raw = 0;
 
-            var info = s_typeValuePairs.First(_ => _.Type == type);
+            var info = s_typeValuePairs.FirstOrDefault(_ => _.Type == type);
             if (info == null)
                 throw new ArgumentException("type");
 
@@ -271,7 +271,7 @@ namespace Kamilla.Network.Protocols.Wow.Latest.Game
 
         static WowGuid()
         {
-            PrintRaw = Configuration.GetValue("WowGuid - Print Raw Value", false);
+            PrintRaw = Configuration.GetValue("Print Raw Value", false);
         }
 
         public static bool PrintRaw { get; private set; }
