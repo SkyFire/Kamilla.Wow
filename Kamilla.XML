@@ -260,6 +260,11 @@
               resource lookups using this strongly typed resource class.
             </summary>
         </member>
+        <member name="P:Kamilla.Network.NetworkStrings.AllFiles">
+            <summary>
+              Looks up a localized string similar to All Files.
+            </summary>
+        </member>
         <member name="P:Kamilla.Network.NetworkStrings.bytes">
             <summary>
               Looks up a localized string similar to {0} {0?plural-en:byte:bytes}.
@@ -1809,6 +1814,12 @@
             Gets the handle of the viewer window. This value can be <see cref="F:System.IntPtr.Zero"/>.
             </summary>
         </member>
+        <member name="P:Kamilla.Network.Viewing.NetworkLogViewerBase.SelectedItem">
+            <summary>
+            Gets the <see cref="T:Kamilla.Network.Viewing.ViewerItem"/> that is currently selected.
+            This value can be null.
+            </summary>
+        </member>
         <member name="T:Kamilla.Network.Protocols.Protocol">
             <summary>
             Represents a network protocol.
@@ -1855,6 +1866,11 @@
             <summary>
             Gets the <see cref="T:Kamilla.Network.Protocols.ProtocolWrapper"/> of
             the current <see cref="T:Kamilla.Network.Protocols.Protocol"/>.
+            </summary>
+        </member>
+        <member name="P:Kamilla.Network.Protocols.Protocol.OpcodesEnumType">
+            <summary>
+            Gets the <see cref="T:System.Type"/> of the opcodes enum. This value can be null.
             </summary>
         </member>
         <member name="P:Kamilla.Network.Protocols.Protocol.Name">

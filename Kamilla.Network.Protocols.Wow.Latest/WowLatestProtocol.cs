@@ -171,6 +171,11 @@ namespace Kamilla.Network.Protocols.Wow.Latest
             get { return Strings.ProtocolName; }
         }
 
+        public override Type OpcodesEnumType
+        {
+            get { return typeof(WowOpcodes); }
+        }
+
         public override ViewBase View
         {
             get { return m_view; }
