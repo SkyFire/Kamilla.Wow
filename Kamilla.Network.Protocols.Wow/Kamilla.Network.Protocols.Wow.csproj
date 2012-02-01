@@ -1,0 +1,365 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B3010FA8-6BDB-439A-8DC8-DC50A5DBF02B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Kamilla.Network.Protocols.Wow</RootNamespace>
+    <AssemblyName>Kamilla.Network.Protocols.Wow</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Kamilla, Version=4.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Kamilla.dll</HintPath>
+    </Reference>
+    <Reference Include="Kamilla.Wow, Version=4.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Kamilla.Wow.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Game\BattleGrounds.cs" />
+    <Compile Include="Game\Calendar.cs" />
+    <Compile Include="Game\CommonEnums.cs" />
+    <Compile Include="Game\CreatureEnums.cs" />
+    <Compile Include="Game\CurrencyTypes.cs" />
+    <Compile Include="CustomPacket.cs" />
+    <Compile Include="Game\Difficulty.cs" />
+    <Compile Include="Disassembly.cs" />
+    <Compile Include="Game\Emote.cs" />
+    <Compile Include="Game\GossipMenu.cs" />
+    <Compile Include="Game\GroupEnums.cs" />
+    <Compile Include="Game\GuildEnums.cs" />
+    <Compile Include="Game\ItemEnums.cs" />
+    <Compile Include="Game\LFGDungeons.cs" />
+    <Compile Include="Game\Mail.cs" />
+    <Compile Include="Game\Money.cs" />
+    <Compile Include="Game\Aura.cs" />
+    <Compile Include="Game\AuraCollection.cs" />
+    <Compile Include="Game\MovementInfo.cs" />
+    <Compile Include="Game\UpdateField.cs" />
+    <Compile Include="Game\UpdateFields.cs" />
+    <Compile Include="Game\UpdateFields.Generated.cs" />
+    <Compile Include="Game\WowAreaTrigger.cs" />
+    <Compile Include="Game\WowContainer.cs" />
+    <Compile Include="Game\WowCorpse.cs" />
+    <Compile Include="Game\WowDynamicObject.cs" />
+    <Compile Include="Game\WowGameObject.cs" />
+    <Compile Include="Game\WowItem.cs" />
+    <Compile Include="Game\WowObject.cs" />
+    <Compile Include="Game\WowPlayer.cs" />
+    <Compile Include="Game\WowUnit.cs" />
+    <Compile Include="OpcodeDatas\AuctionListResult.cs" />
+    <Compile Include="OpcodeDatas\AuraUpdates.cs" />
+    <Compile Include="OpcodeDatas\Authentication.cs" />
+    <Compile Include="OpcodeDatas\ChannelStart.cs" />
+    <Compile Include="OpcodeDatas\ChatMessages\AddonChatMessage.cs" />
+    <Compile Include="OpcodeDatas\ChatMessages\AddonGuildChatMessage.cs" />
+    <Compile Include="OpcodeDatas\ChatMessages\AddonPartyChatMessage.cs" />
+    <Compile Include="OpcodeDatas\ChatMessages\AddonWhisperChatMessage.cs" />
+    <Compile Include="OpcodeDatas\ChatMessages\AfkChatMessage.cs" />
+    <Compile Include="OpcodeDatas\ChatMessages\ClientChatMessage.cs" />
+    <Compile Include="OpcodeDatas\ChatMessages\DndChatMessage.cs" />
+    <Compile Include="OpcodeDatas\ChatMessages\IAddonMessage.cs" />
+    <Compile Include="OpcodeDatas\ChatMessages\IChannelMessage.cs" />
+    <Compile Include="OpcodeDatas\ChatMessages\IClientChatMessage.cs" />
+    <Compile Include="OpcodeDatas\ChatMessages\IWhisper.cs" />
+    <Compile Include="OpcodeDatas\ChatMessages\PartyChatMessage.cs" />
+    <Compile Include="OpcodeDatas\ChatMessages\SayChatMessage.cs" />
+    <Compile Include="OpcodeDatas\ChatMessages\ServerChatMessage.cs" />
+    <Compile Include="OpcodeDatas\ConnectToPacket.cs" />
+    <Compile Include="OpcodeDatas\ForceAckPacket.cs" />
+    <Compile Include="OpcodeDatas\ForceChangeAckPacket.cs" />
+    <Compile Include="OpcodeDatas\ForceChangePacket.cs" />
+    <Compile Include="OpcodeDatas\ForceDisableCollision.cs" />
+    <Compile Include="OpcodeDatas\ForceEnableCollision.cs" />
+    <Compile Include="OpcodeDatas\ForceFlightBackSpeedChangeAck.cs" />
+    <Compile Include="OpcodeDatas\ForceFlightSpeedChange.cs" />
+    <Compile Include="OpcodeDatas\ForceFlightSpeedChangeAck.cs" />
+    <Compile Include="OpcodeDatas\ForceKnockBack.cs" />
+    <Compile Include="OpcodeDatas\ForceKnockBackAck.cs" />
+    <Compile Include="OpcodeDatas\ForceLandWalk.cs" />
+    <Compile Include="OpcodeDatas\ForcePacket.cs" />
+    <Compile Include="OpcodeDatas\ForceRoot.cs" />
+    <Compile Include="OpcodeDatas\ForceRootAck.cs" />
+    <Compile Include="OpcodeDatas\ForceRunBackSpeedChange.cs" />
+    <Compile Include="OpcodeDatas\ForceRunBackSpeedChangeAck.cs" />
+    <Compile Include="OpcodeDatas\ForceRunSpeedChange.cs" />
+    <Compile Include="OpcodeDatas\ForceRunSpeedChangeAck.cs" />
+    <Compile Include="OpcodeDatas\ForceSetCanFly.cs" />
+    <Compile Include="OpcodeDatas\ForceSetCanFlyAck.cs" />
+    <Compile Include="OpcodeDatas\ForceSetCanTransitionBetweenSwimAndFly.cs" />
+    <Compile Include="OpcodeDatas\ForceSetCanTransitionBetweenSwimAndFlyAck.cs" />
+    <Compile Include="OpcodeDatas\ForceSetCollisionHeight.cs" />
+    <Compile Include="OpcodeDatas\ForceSetCollisionHeightAck.cs" />
+    <Compile Include="OpcodeDatas\ForceSetVehicleId.cs" />
+    <Compile Include="OpcodeDatas\ForceSwimSpeedChange.cs" />
+    <Compile Include="OpcodeDatas\ForceSwimSpeedChangeAck.cs" />
+    <Compile Include="OpcodeDatas\ForceToggleCollisionAck.cs" />
+    <Compile Include="OpcodeDatas\ForceUnroot.cs" />
+    <Compile Include="OpcodeDatas\ForceUnrootAck.cs" />
+    <Compile Include="OpcodeDatas\ForceUnsetCanFly.cs" />
+    <Compile Include="OpcodeDatas\ForceUnsetCanTransitionBetweenSwimAndFly.cs" />
+    <Compile Include="OpcodeDatas\ForceWalkSpeedChange.cs" />
+    <Compile Include="OpcodeDatas\ForceWalkSpeedChangeAck.cs" />
+    <Compile Include="OpcodeDatas\ForceWaterWalk.cs" />
+    <Compile Include="OpcodeDatas\ForceWaterWalkAck.cs" />
+    <Compile Include="OpcodeDatas\GuildQueryNews.cs" />
+    <Compile Include="OpcodeDatas\GuildRanksRequest.cs" />
+    <Compile Include="OpcodeDatas\GuildRosterRequest.cs" />
+    <Compile Include="OpcodeDatas\GuildUpdatePartyState.cs" />
+    <Compile Include="OpcodeDatas\IChange.cs" />
+    <Compile Include="OpcodeDatas\IOpcodeData.cs" />
+    <Compile Include="OpcodeDatas\IValueChange.cs" />
+    <Compile Include="OpcodeDatas\LazyOpcodeData.cs" />
+    <Compile Include="OpcodeDatas\LFG.cs" />
+    <Compile Include="OpcodeDatas\Loot.cs" />
+    <Compile Include="OpcodeDatas\MirrorImageData.cs" />
+    <Compile Include="OpcodeDatas\MonsterMove.cs" />
+    <Compile Include="OpcodeDatas\MoveFallLand.cs" />
+    <Compile Include="OpcodeDatas\MoveHeartBeat.cs" />
+    <Compile Include="OpcodeDatas\MoveJump.cs" />
+    <Compile Include="OpcodeDatas\MoveKnockBack.cs" />
+    <Compile Include="OpcodeDatas\MovePitchStartDown.cs" />
+    <Compile Include="OpcodeDatas\MovePitchStartUp.cs" />
+    <Compile Include="OpcodeDatas\MovePitchStop.cs" />
+    <Compile Include="OpcodeDatas\MoveSetFacing.cs" />
+    <Compile Include="OpcodeDatas\MoveSetFlying.cs" />
+    <Compile Include="OpcodeDatas\MoveSetPacket.cs" />
+    <Compile Include="OpcodeDatas\MoveSetPitch.cs" />
+    <Compile Include="OpcodeDatas\MoveSetRunMode.cs" />
+    <Compile Include="OpcodeDatas\MoveSetWalkMode.cs" />
+    <Compile Include="OpcodeDatas\MoveStartAscend.cs" />
+    <Compile Include="OpcodeDatas\MoveStartBackward.cs" />
+    <Compile Include="OpcodeDatas\MoveStartDescend.cs" />
+    <Compile Include="OpcodeDatas\MoveStartForward.cs" />
+    <Compile Include="OpcodeDatas\MoveStop.cs" />
+    <Compile Include="OpcodeDatas\MoveStopAscend.cs" />
+    <Compile Include="OpcodeDatas\MoveStrafeStartLeft.cs" />
+    <Compile Include="OpcodeDatas\MoveStrafeStartRight.cs" />
+    <Compile Include="OpcodeDatas\MoveStrafeStop.cs" />
+    <Compile Include="OpcodeDatas\MoveSwimStart.cs" />
+    <Compile Include="OpcodeDatas\MoveSwimStop.cs" />
+    <Compile Include="OpcodeDatas\MoveTeleport.cs" />
+    <Compile Include="OpcodeDatas\MoveTimeSkippedClient.cs" />
+    <Compile Include="OpcodeDatas\MoveTimeSkippedServer.cs" />
+    <Compile Include="OpcodeDatas\MoveTurnStartLeft.cs" />
+    <Compile Include="OpcodeDatas\MoveTurnStartRight.cs" />
+    <Compile Include="OpcodeDatas\MoveTurnStop.cs" />
+    <Compile Include="OpcodeDatas\PackedData.cs" />
+    <Compile Include="OpcodeDatas\PackedGuidPacket.cs" />
+    <Compile Include="OpcodeDatas\PlayerLogin.cs" />
+    <Compile Include="OpcodeDatas\PlayerMove.cs" />
+    <Compile Include="OpcodeDatas\RegularMovementPacket.cs" />
+    <Compile Include="OpcodeDatas\SetCollisionHeight.cs" />
+    <Compile Include="OpcodeDatas\SetFlightBackSpeed.cs" />
+    <Compile Include="OpcodeDatas\SetFlightSpeed.cs" />
+    <Compile Include="OpcodeDatas\SetPhaseShift.cs" />
+    <Compile Include="OpcodeDatas\SetPitchRate.cs" />
+    <Compile Include="OpcodeDatas\SetRunBackSpeed.cs" />
+    <Compile Include="OpcodeDatas\SetRunSpeed.cs" />
+    <Compile Include="OpcodeDatas\SetSwimBackSpeed.cs" />
+    <Compile Include="OpcodeDatas\SetSwimSpeed.cs" />
+    <Compile Include="OpcodeDatas\SetTurnRate.cs" />
+    <Compile Include="OpcodeDatas\SetWalkSpeed.cs" />
+    <Compile Include="OpcodeDatas\SpellCasting.cs" />
+    <Compile Include="OpcodeDatas\SplineGravityDisable.cs" />
+    <Compile Include="OpcodeDatas\SplineGravityEnable.cs" />
+    <Compile Include="OpcodeDatas\SplineRoot.cs" />
+    <Compile Include="OpcodeDatas\SplineSetFlightSpeed.cs" />
+    <Compile Include="OpcodeDatas\SplineSetPacket.cs" />
+    <Compile Include="OpcodeDatas\SplineSetRunBackSpeed.cs" />
+    <Compile Include="OpcodeDatas\SplineSetRunSpeed.cs" />
+    <Compile Include="OpcodeDatas\SplineSetSwimBackSpeed.cs" />
+    <Compile Include="OpcodeDatas\SplineSetSwimSpeed.cs" />
+    <Compile Include="OpcodeDatas\SplineSetWalkSpeed.cs" />
+    <Compile Include="OpcodeDatas\SplineUnroot.cs" />
+    <Compile Include="OpcodeDatas\ThreatClear.cs" />
+    <Compile Include="OpcodeDatas\ThreatHighestUpdate.cs" />
+    <Compile Include="OpcodeDatas\ThreatRemove.cs" />
+    <Compile Include="OpcodeDatas\ThreatUpdate.cs" />
+    <Compile Include="OpcodeDatas\UpdateData.cs" />
+    <Compile Include="OpcodeDatas\UseItem.cs" />
+    <Compile Include="PacketGroups.cs" />
+    <Compile Include="Parsers\Achievements\AchievementDataParser.cs" />
+    <Compile Include="Parsers\Achievements\RespondInspectAchievementsParser.cs" />
+    <Compile Include="Parsers\Calendar\SendCalendarParser.cs" />
+    <Compile Include="Parsers\Chat\ChannelNotifyParser.cs" />
+    <Compile Include="Parsers\Chat\ClientChatMessageParser.cs" />
+    <Compile Include="Parsers\Chat\CombatLogParser.cs" />
+    <Compile Include="Parsers\Chat\RegisterAddonPrefixesParser.cs" />
+    <Compile Include="Parsers\Chat\ServerChatMessageParser.cs" />
+    <Compile Include="Parsers\Generic\XmlParser.cs" />
+    <Compile Include="Parsers\Generic\Xml\FinalListPacketSegment.cs" />
+    <Compile Include="Parsers\Generic\Xml\ListPacketSegment.cs" />
+    <Compile Include="Parsers\Generic\Xml\SimplePacketSegment.cs" />
+    <Compile Include="Parsers\Generic\Xml\StaticListPacketSegment.cs" />
+    <Compile Include="Parsers\Generic\Xml\XmlPacketDefinitions.cs" />
+    <Compile Include="Parsers\Generic\Xml\XmlTypeReader.cs" />
+    <Compile Include="Parsers\Gossip\GossipMessageParser.cs" />
+    <Compile Include="Parsers\Gossip\GossipPoiParser.cs" />
+    <Compile Include="Parsers\Gossip\ListInventoryParser.cs" />
+    <Compile Include="Parsers\Gossip\NpcTextUpdateParser.cs" />
+    <Compile Include="Parsers\Gossip\QuestGiverOfferRewardParser.cs" />
+    <Compile Include="Parsers\Gossip\QuestGiverRequestItemsParser.cs" />
+    <Compile Include="Parsers\Gossip\TrainerListParser.cs" />
+    <Compile Include="Parsers\Guilds\GuildEventParser.cs" />
+    <Compile Include="Parsers\Guilds\GuildQueryNewsParser.cs" />
+    <Compile Include="Parsers\Guilds\GuildQueryRecipesParser.cs" />
+    <Compile Include="Parsers\Guilds\GuildRosterParser.cs" />
+    <Compile Include="Parsers\Guilds\LfGuildPostParser.cs" />
+    <Compile Include="Parsers\Lfg\LfgPlayerInfoParser.cs" />
+    <Compile Include="Parsers\Lfg\LfgSearchResultsParser.cs" />
+    <Compile Include="Parsers\Lobby\AccountDataTimesParser.cs" />
+    <Compile Include="Parsers\Lobby\CharEnumParser.cs" />
+    <Compile Include="Parsers\Lobby\ConnectToParser.cs" />
+    <Compile Include="Parsers\Lobby\UpdateAccountDataParser.cs" />
+    <Compile Include="Parsers\Mail\MailListResultParser.cs" />
+    <Compile Include="Parsers\Mail\SendMailResultParser.cs" />
+    <Compile Include="Parsers\Misc\AttackerStateUpdateParser.cs" />
+    <Compile Include="Parsers\Misc\CompoundPacketParser.cs" />
+    <Compile Include="Parsers\Misc\ContactListParser.cs" />
+    <Compile Include="Parsers\Misc\GroupListParser.cs" />
+    <Compile Include="Parsers\Misc\InitCurrencyParser.cs" />
+    <Compile Include="Parsers\Misc\InspectResultsParser.cs" />
+    <Compile Include="Parsers\Misc\InstanceInfoParser.cs" />
+    <Compile Include="Parsers\Misc\LootResponseParser.cs" />
+    <Compile Include="Parsers\Misc\PetRenameParser.cs" />
+    <Compile Include="Parsers\Misc\ReferAFriendFailureParser.cs" />
+    <Compile Include="Parsers\Misc\ResearchHistoryParser.cs" />
+    <Compile Include="Parsers\Misc\SetProficiencyParser.cs" />
+    <Compile Include="Parsers\Misc\ShowTaxiNodesParser.cs" />
+    <Compile Include="Parsers\Movement\CompoundMoveParser.cs" />
+    <Compile Include="Parsers\Movement\MovesParser.cs" />
+    <Compile Include="Parsers\Queries\CreatureQueryResponseParser.cs" />
+    <Compile Include="Parsers\Queries\GameObjectQueryResponseParser.cs" />
+    <Compile Include="Parsers\Queries\ItemQuerySingleResponseParser.cs" />
+    <Compile Include="Parsers\Queries\NameQueryResponseParser.cs" />
+    <Compile Include="Parsers\Queries\PageTextQueryResponseParser.cs" />
+    <Compile Include="Parsers\Queries\PetNameQueryResponseParser.cs" />
+    <Compile Include="Parsers\Queries\QuestPoiQueryResponseParser.cs" />
+    <Compile Include="Parsers\Queries\QuestQueryResponseParser.cs" />
+    <Compile Include="Parsers\Security\BotDetectedParser.cs" />
+    <Compile Include="Parsers\Security\CheckForBotsParser.cs" />
+    <Compile Include="Parsers\Security\WardenDataParser.cs" />
+    <Compile Include="Parsers\Spells\CastFailedParser.cs" />
+    <Compile Include="Parsers\Spells\CastSpellParser.cs" />
+    <Compile Include="Parsers\Spells\ChannelStartParser.cs" />
+    <Compile Include="Parsers\Spells\PetSpellsParser.cs" />
+    <Compile Include="Parsers\Spells\SpellGoParser.cs" />
+    <Compile Include="Parsers\Spells\SpellStartParser.cs" />
+    <Compile Include="Parsers\Spells\TalentUpdateParser.cs" />
+    <Compile Include="Game\Pets.cs" />
+    <Compile Include="Game\PlayerCondition.cs" />
+    <Compile Include="Game\PlayerEnums.cs" />
+    <Compile Include="Game\QuestEnums.cs" />
+    <Compile Include="Game\Server.cs" />
+    <Compile Include="Game\Social.cs" />
+    <Compile Include="SpecialWowOpcodes.cs" />
+    <Compile Include="Game\SpellEnums.cs" />
+    <Compile Include="Game\SplineInfo.cs" />
+    <Compile Include="Game\Structures.cs" />
+    <Compile Include="Game\TimeBitFields.cs" />
+    <Compile Include="Game\UIErrors.cs" />
+    <Compile Include="Game\World.cs" />
+    <Compile Include="Game\WowGuid.cs" />
+    <Compile Include="WowOpcodes.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Strings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="WowLatestProtocol.cs" />
+    <Compile Include="WowPacketParser.cs" />
+    <Compile Include="WowPacketParserAttribute.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Strings.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Strings.ru.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Parsers\Generic\Xml\Definitions\Achievements.xml" />
+    <EmbeddedResource Include="Parsers\Generic\Xml\Definitions\Auction.xml" />
+    <EmbeddedResource Include="Parsers\Generic\Xml\Definitions\BattleGrounds.xml" />
+    <EmbeddedResource Include="Parsers\Generic\Xml\Definitions\Calendar.xml" />
+    <EmbeddedResource Include="Parsers\Generic\Xml\Definitions\Chat.xml" />
+    <EmbeddedResource Include="Parsers\Generic\Xml\Definitions\Combat.xml" />
+    <EmbeddedResource Include="Parsers\Generic\Xml\Definitions\Duel.xml" />
+    <EmbeddedResource Include="Parsers\Generic\Xml\Definitions\Factions.xml" />
+    <EmbeddedResource Include="Parsers\Generic\Xml\Definitions\GameObjects.xml" />
+    <EmbeddedResource Include="Parsers\Generic\Xml\Definitions\Gossips.xml" />
+    <EmbeddedResource Include="Parsers\Generic\Xml\Definitions\Groups.xml" />
+    <EmbeddedResource Include="Parsers\Generic\Xml\Definitions\Guilds.xml" />
+    <EmbeddedResource Include="Parsers\Generic\Xml\Definitions\Items.xml" />
+    <EmbeddedResource Include="Parsers\Generic\Xml\Definitions\LFG.xml" />
+    <EmbeddedResource Include="Parsers\Generic\Xml\Definitions\Login.xml" />
+    <EmbeddedResource Include="Parsers\Generic\Xml\Definitions\Loot.xml" />
+    <EmbeddedResource Include="Parsers\Generic\Xml\Definitions\Mail.xml" />
+    <EmbeddedResource Include="Parsers\Generic\Xml\Definitions\Misc.xml" />
+    <EmbeddedResource Include="Parsers\Generic\Xml\Definitions\Movement.xml" />
+    <EmbeddedResource Include="Parsers\Generic\Xml\Definitions\Pets.xml" />
+    <EmbeddedResource Include="Parsers\Generic\Xml\Definitions\Player.xml" />
+    <EmbeddedResource Include="Parsers\Generic\Xml\Definitions\Queries.xml" />
+    <EmbeddedResource Include="Parsers\Generic\Xml\Definitions\Quests.xml" />
+    <EmbeddedResource Include="Parsers\Generic\Xml\Definitions\Relations.xml" />
+    <EmbeddedResource Include="Parsers\Generic\Xml\Definitions\Spells.xml" />
+    <EmbeddedResource Include="Parsers\Generic\Xml\Definitions\Talents.xml" />
+    <EmbeddedResource Include="Parsers\Generic\Xml\Definitions\Taxi.xml" />
+    <EmbeddedResource Include="Parsers\Generic\Xml\Definitions\Ticket.xml" />
+    <EmbeddedResource Include="Parsers\Generic\Xml\Definitions\Trade.xml" />
+    <EmbeddedResource Include="Parsers\Generic\Xml\Definitions\Trainers.xml" />
+    <EmbeddedResource Include="Parsers\Generic\Xml\Definitions\Vendors.xml" />
+    <EmbeddedResource Include="Parsers\Generic\Xml\Definitions\VoiceChat.xml" />
+    <EmbeddedResource Include="Parsers\Generic\Xml\Definitions\WhoList.xml" />
+    <EmbeddedResource Include="Parsers\Generic\Xml\Definitions\World.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
