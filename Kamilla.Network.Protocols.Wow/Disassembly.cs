@@ -10,7 +10,7 @@ namespace Kamilla.Network.Protocols.Wow
         /// <summary>
         /// The unique client build number. This field is constant.
         /// </summary>
-        public const ushort ClientBuild = 15050;
+        public const ushort ClientBuild = 15211;
 
         /// <summary>
         /// A static class containing Connection-related constants.
