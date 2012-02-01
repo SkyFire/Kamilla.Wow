@@ -1630,7 +1630,7 @@ namespace Kamilla.Network.Protocols.Wow
         [Description("Changes character order. Introduced in patch 4.2.0.")]
         CMSG_REORDER_CHARACTERS = UNKNOWN_OPCODE,
         [Description("Introduced in patch 4.2.0. It's handler is called just before JamClientConnectionDispatch check. Handles any opcode. Possibly automatically created on server side.")]
-        SMSG_COMPOUND_PACKET = UNKNOWN_OPCODE,
+        SMSG_COMPOUND_PACKET = 808,
 
         [Description("Introduced in patch 4.2.0. EVENT_COMPACT_UNIT_FRAME_PROFILES_LOADED")]
         SMSG_LOAD_CUF_PROFILES = UNKNOWN_OPCODE,

@@ -1,6 +1,6 @@
 
-// Kamilla 15005
-// Auto generated on 17.12.2011 12:41:46
+// Kamilla 15211
+// Auto generated on 01.02.2012 12:16:41
 namespace Kamilla.Network.Protocols.Wow.Game
 {
     public partial class UpdateFields
