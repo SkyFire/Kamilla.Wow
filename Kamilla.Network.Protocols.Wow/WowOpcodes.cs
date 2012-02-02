@@ -14,7 +14,7 @@ namespace Kamilla.Network.Protocols.Wow
         SMSG_QUERY_OBJECT_POSITION                      = UNKNOWN_OPCODE, /* old 0x005, */
         CMSG_QUERY_OBJECT_ROTATION                      = UNKNOWN_OPCODE, /* old 0x006, */
         SMSG_QUERY_OBJECT_ROTATION                      = UNKNOWN_OPCODE, /* old 0x007, */
-        CMSG_WORLD_TELEPORT                             = UNKNOWN_OPCODE, /* old 0x008, */
+        CMSG_WORLD_TELEPORT                             = 2113, /* old 0x008, */
         CMSG_TELEPORT_TO_UNIT                           = UNKNOWN_OPCODE, /* old 0x009, */
         CMSG_ZONE_MAP                                   = UNKNOWN_OPCODE, /* old 0x00A, */
         SMSG_ZONE_MAP                                   = UNKNOWN_OPCODE, /* old 0x00B, */
@@ -61,16 +61,16 @@ namespace Kamilla.Network.Protocols.Wow
         CMSG_AUTH_SRP6_PROOF                            = UNKNOWN_OPCODE, /* old 0x034, */
         CMSG_AUTH_SRP6_RECODE                           = UNKNOWN_OPCODE, /* old 0x035, */
         CMSG_CHAR_CREATE                                = UNKNOWN_OPCODE, /* old 0x036, */
-        CMSG_ENUM_CHARACTERS                                  = UNKNOWN_OPCODE, /* old 0x037, */
+        CMSG_ENUM_CHARACTERS                                  = 16465, /* old 0x037, */
         CMSG_CHAR_DELETE                                = UNKNOWN_OPCODE, /* old 0x038, */
         SMSG_AUTH_SRP6_RESPONSE                         = UNKNOWN_OPCODE, /* old 0x039, */
         SMSG_CHAR_CREATE                                = UNKNOWN_OPCODE, /* old 0x03A, */
-        SMSG_ENUM_CHARACTERS_RESULT                     = UNKNOWN_OPCODE, /* old 0x03B, */
+        SMSG_ENUM_CHARACTERS_RESULT                     = 3317, /* old 0x03B, */
         SMSG_CHAR_DELETE                                = UNKNOWN_OPCODE, /* old 0x03C, */
-        CMSG_PLAYER_LOGIN                               = UNKNOWN_OPCODE, /* old 0x03D, */
-        SMSG_NEW_WORLD                                  = UNKNOWN_OPCODE, /* old 0x03E, */
-        SMSG_ABORT_NEW_WORLD                            = UNKNOWN_OPCODE,
-        SMSG_TRANSFER_PENDING                           = UNKNOWN_OPCODE, /* old 0x03F, */
+        CMSG_PLAYER_LOGIN                               = 2120, /* old 0x03D, */
+        SMSG_NEW_WORLD                                  = 3105, /* old 0x03E, */
+        SMSG_ABORT_NEW_WORLD                            = 5269,
+        SMSG_TRANSFER_PENDING                           = 7861, /* old 0x03F, */
         SMSG_TRANSFER_ABORTED                           = UNKNOWN_OPCODE, /* old 0x040, */
         SMSG_CHARACTER_LOGIN_FAILED                     = UNKNOWN_OPCODE, /* old 0x041, */
         SMSG_LOGIN_SETTIMESPEED                         = UNKNOWN_OPCODE, /* old 0x042, */
@@ -113,11 +113,11 @@ namespace Kamilla.Network.Protocols.Wow
         CMSG_SET_CONTACT_NOTES                          = UNKNOWN_OPCODE, /* old 0x06B, */
         CMSG_ADD_IGNORE                                 = UNKNOWN_OPCODE, /* old 0x06C, */
         CMSG_DEL_IGNORE                                 = UNKNOWN_OPCODE, /* old 0x06D, */
-        CMSG_PARTY_INVITE                               = UNKNOWN_OPCODE, /* old 0x06E, */
-        SMSG_PARTY_INVITE                               = UNKNOWN_OPCODE, /* old 0x06F, */
+        CMSG_PARTY_INVITE                               = 25, /* old 0x06E, */
+        SMSG_PARTY_INVITE                               = 1249, /* old 0x06F, */
         CMSG_GROUP_CANCEL                               = UNKNOWN_OPCODE, /* old 0x070, */
         SMSG_GROUP_CANCEL                               = UNKNOWN_OPCODE, /* old 0x071, */
-        CMSG_PARTY_INVITE_RESPONSE                      = UNKNOWN_OPCODE,
+        CMSG_PARTY_INVITE_RESPONSE                      = 89,
         CMSG_GROUP_ACCEPT                               = UNKNOWN_OPCODE, /* old 0x072, */ // exists?
         CMSG_GROUP_DECLINE                              = UNKNOWN_OPCODE, /* old 0x073, */ // exists?
         SMSG_GROUP_DECLINE                              = UNKNOWN_OPCODE, /* old 0x074, */
@@ -135,44 +135,44 @@ namespace Kamilla.Network.Protocols.Wow
         UMSG_UPDATE_GROUP_MEMBERS                       = UNKNOWN_OPCODE, /* old 0x080, */
         CMSG_GUILD_CREATE                               = UNKNOWN_OPCODE, /* old 0x081, */
         CMSG_GUILD_INVITE                               = UNKNOWN_OPCODE, /* old 0x082, */
-        SMSG_GUILD_INVITE                               = UNKNOWN_OPCODE, /* old 0x083, */
-        CMSG_GUILD_DECLINE_INVITATION                   = UNKNOWN_OPCODE, /* old 0x085, */
-        CMSG_ACCEPT_GUILD_INVITE                        = UNKNOWN_OPCODE, /* old 0x084, */
+        SMSG_GUILD_INVITE                               = 5748, /* old 0x083, */
+        CMSG_GUILD_DECLINE_INVITATION                   = 21773, /* old 0x085, */
+        CMSG_ACCEPT_GUILD_INVITE                        = 73, /* old 0x084, */
         SMSG_GUILD_DECLINE                              = UNKNOWN_OPCODE, /* old 0x086, */
         CMSG_GUILD_INFO                                 = UNKNOWN_OPCODE, /* old 0x087, */
         SMSG_GUILD_INFO                                 = UNKNOWN_OPCODE, /* old 0x088, */
-        SMSG_GUILD_NAME_CHANGED                         = UNKNOWN_OPCODE,
-        CMSG_GUILD_SHIFT_RANK                           = UNKNOWN_OPCODE,
-        CMSG_GUILD_ASSIGN_MEMBER_RANK                   = UNKNOWN_OPCODE,
-        SMSG_GUILD_SEND_RANK_CHANGE                     = UNKNOWN_OPCODE,
-        CMSG_GUILD_PROMOTE_MEMBER                       = UNKNOWN_OPCODE, /* old 0x08B, */
-        CMSG_GUILD_DEMOTE_MEMBER                        = UNKNOWN_OPCODE, /* old 0x08C, */
-        CMSG_GUILD_LEAVE                                = UNKNOWN_OPCODE, /* old 0x08D, */
-        CMSG_GUILD_OFFICER_REMOVE_MEMBER                = UNKNOWN_OPCODE, /* old 0x08E, */
-        CMSG_GUILD_DELETE                               = UNKNOWN_OPCODE, /* old 0x08F, */
-        CMSG_GUILD_SET_GUILD_MASTER                     = UNKNOWN_OPCODE, /* old 0x090, */
-        CMSG_GUILD_UPDATE_MOTD_TEXT                     = UNKNOWN_OPCODE, /* old 0x091, */
+        SMSG_GUILD_NAME_CHANGED                         = 5137,
+        CMSG_GUILD_SHIFT_RANK                           = 5509,
+        CMSG_GUILD_ASSIGN_MEMBER_RANK                   = 30081,
+        SMSG_GUILD_SEND_RANK_CHANGE                     = 5200,
+        CMSG_GUILD_PROMOTE_MEMBER                       = 15745, /* old 0x08B, */
+        CMSG_GUILD_DEMOTE_MEMBER                        = 7433, /* old 0x08C, */
+        CMSG_GUILD_LEAVE                                = 5381, /* old 0x08D, */
+        CMSG_GUILD_OFFICER_REMOVE_MEMBER                = 32141, /* old 0x08E, */
+        CMSG_GUILD_DELETE                               = 30085, /* old 0x08F, */
+        CMSG_GUILD_SET_GUILD_MASTER                     = 7553, /* old 0x090, */
+        CMSG_GUILD_UPDATE_MOTD_TEXT                     = 15749, /* old 0x091, */
         SMSG_GUILD_EVENT                                = UNKNOWN_OPCODE, /* old 0x092, */
-        SMSG_GUILD_COMMAND_RESULT                       = UNKNOWN_OPCODE, /* old 0x093, */
+        SMSG_GUILD_COMMAND_RESULT                       = 5329, /* old 0x093, */
         UMSG_UPDATE_GUILD                               = UNKNOWN_OPCODE, /* old 0x094, */
-        CMSG_JOIN_CHANNEL                               = UNKNOWN_OPCODE, /* old 0x097, */
-        CMSG_LEAVE_CHANNEL                              = UNKNOWN_OPCODE, /* old 0x098, */
+        CMSG_JOIN_CHANNEL                               = 8769, /* old 0x097, */
+        CMSG_LEAVE_CHANNEL                              = 10240, /* old 0x098, */
         SMSG_CHANNEL_NOTIFY                             = UNKNOWN_OPCODE, /* old 0x099, */
-        CMSG_CHANNEL_LIST                               = UNKNOWN_OPCODE, /* old 0x09A, */
+        CMSG_CHANNEL_LIST                               = 10337, /* old 0x09A, */
         SMSG_CHANNEL_LIST                               = UNKNOWN_OPCODE, /* old 0x09B, */
-        CMSG_CHANNEL_PASSWORD                           = UNKNOWN_OPCODE, /* old 0x09C, */
-        CMSG_CHANNEL_SET_OWNER                          = UNKNOWN_OPCODE, /* old 0x09D, */
-        CMSG_CHANNEL_OWNER                              = UNKNOWN_OPCODE, /* old 0x09E, */
-        CMSG_CHANNEL_MODERATOR                          = UNKNOWN_OPCODE, /* old 0x09F, */
-        CMSG_CHANNEL_UNMODERATOR                        = UNKNOWN_OPCODE, /* old 0x0A0, */
-        CMSG_CHANNEL_MUTE                               = UNKNOWN_OPCODE, /* old 0x0A1, */
-        CMSG_CHANNEL_UNMUTE                             = UNKNOWN_OPCODE, /* old 0x0A2, */
-        CMSG_CHANNEL_INVITE                             = UNKNOWN_OPCODE, /* old 0x0A3, */
-        CMSG_CHANNEL_KICK                               = UNKNOWN_OPCODE, /* old 0x0A4, */
-        CMSG_CHANNEL_BAN                                = UNKNOWN_OPCODE, /* old 0x0A5, */
-        CMSG_CHANNEL_UNBAN                              = UNKNOWN_OPCODE, /* old 0x0A6, */
-        CMSG_CHANNEL_ANNOUNCEMENTS                      = UNKNOWN_OPCODE, /* old 0x0A7, */
-        CMSG_CHANNEL_MODERATE                           = UNKNOWN_OPCODE, /* old 0x0A8, */
+        CMSG_CHANNEL_PASSWORD                           = 10401, /* old 0x09C, */
+        CMSG_CHANNEL_SET_OWNER                          = 10977, /* old 0x09D, */
+        CMSG_CHANNEL_OWNER                              = 10753, /* old 0x09E, */
+        CMSG_CHANNEL_MODERATOR                          = 8705, /* old 0x09F, */
+        CMSG_CHANNEL_UNMODERATOR                        = 10848, /* old 0x0A0, */
+        CMSG_CHANNEL_MUTE                               = 10465, /* old 0x0A1, */
+        CMSG_CHANNEL_UNMUTE                             = 8832, /* old 0x0A2, */
+        CMSG_CHANNEL_INVITE                             = 8353, /* old 0x0A3, */
+        CMSG_CHANNEL_KICK                               = 10272, /* old 0x0A4, */
+        CMSG_CHANNEL_BAN                                = 10400, /* old 0x0A5, */
+        CMSG_CHANNEL_UNBAN                              = 8865, /* old 0x0A6, */
+        CMSG_CHANNEL_ANNOUNCEMENTS                      = 10913, /* old 0x0A7, */
+        CMSG_CHANNEL_MODERATE                           = 10464, /* old 0x0A8, */
         SMSG_UPDATE_OBJECT                              = UNKNOWN_OPCODE, /* old 0x0A9, */
         SMSG_DESTROY_OBJECT                             = UNKNOWN_OPCODE, /* old 0x0AA, */
         CMSG_USE_ITEM                                   = UNKNOWN_OPCODE, /* old 0x0AB, */
@@ -219,19 +219,19 @@ namespace Kamilla.Network.Protocols.Wow
         SMSG_OPEN_CONTAINER                             = UNKNOWN_OPCODE, /* old 0x113, */
         CMSG_INSPECT                                    = UNKNOWN_OPCODE, /* old 0x114, */
         SMSG_INSPECT_RESULTS_UPDATE                     = UNKNOWN_OPCODE, /* old 0x115, */
-        CMSG_INITIATE_TRADE                             = UNKNOWN_OPCODE, /* old 0x116, */
-        CMSG_BEGIN_TRADE                                = UNKNOWN_OPCODE, /* old 0x117, */
-        CMSG_BUSY_TRADE                                 = UNKNOWN_OPCODE, /* old 0x118, */
-        CMSG_IGNORE_TRADE                               = UNKNOWN_OPCODE, /* old 0x119, */
-        CMSG_ACCEPT_TRADE                               = UNKNOWN_OPCODE, /* old 0x11A, */
-        CMSG_UNACCEPT_TRADE                             = UNKNOWN_OPCODE, /* old 0x11B, */
-        CMSG_CANCEL_TRADE                               = UNKNOWN_OPCODE, /* old 0x11C, */
-        CMSG_SET_TRADE_ITEM                             = UNKNOWN_OPCODE, /* old 0x11D, */
-        CMSG_CLEAR_TRADE_ITEM                           = UNKNOWN_OPCODE, /* old 0x11E, */
-        CMSG_SET_TRADE_GOLD                             = UNKNOWN_OPCODE, /* old 0x11F, */
-        CMSG_SET_TRADE_CURRENCY                         = UNKNOWN_OPCODE,
-        SMSG_TRADE_STATUS                               = UNKNOWN_OPCODE, /* old 0x120, */
-        SMSG_TRADE_UPDATED                              = UNKNOWN_OPCODE, /* old 0x121, */
+        CMSG_INITIATE_TRADE                             = 10532, /* old 0x116, */
+        CMSG_BEGIN_TRADE                                = 11169, /* old 0x117, */
+        CMSG_BUSY_TRADE                                 = 288, /* old 0x118, */
+        CMSG_IGNORE_TRADE                               = 11041, /* old 0x119, */
+        CMSG_ACCEPT_TRADE                               = 9152, /* old 0x11A, */
+        CMSG_UNACCEPT_TRADE                             = 8608, /* old 0x11B, */
+        CMSG_CANCEL_TRADE                               = 8677, /* old 0x11C, */
+        CMSG_SET_TRADE_ITEM                             = 289, /* old 0x11D, */
+        CMSG_CLEAR_TRADE_ITEM                           = 2464, /* old 0x11E, */
+        CMSG_SET_TRADE_GOLD                             = 257, /* old 0x11F, */
+        CMSG_SET_TRADE_CURRENCY                         = 11236,
+        SMSG_TRADE_STATUS                               = 5648, /* old 0x120, */
+        SMSG_TRADE_UPDATED                              = 3716, /* old 0x121, */
         SMSG_INITIALIZE_FACTIONS                        = UNKNOWN_OPCODE, /* old 0x122, */
         SMSG_SET_FACTION_VISIBLE                        = UNKNOWN_OPCODE, /* old 0x123, */
         SMSG_SET_FACTION_STANDING                       = UNKNOWN_OPCODE, /* old 0x124, */
@@ -241,8 +241,8 @@ namespace Kamilla.Network.Protocols.Wow
         CMSG_SET_ACTION_BUTTON                          = UNKNOWN_OPCODE, /* old 0x128, */
         SMSG_ACTION_BUTTONS                             = UNKNOWN_OPCODE, /* old 0x129, */
         SMSG_INITIAL_SPELLS                             = UNKNOWN_OPCODE, /* old 0x12A, */
-        SMSG_LEARNED_SPELL                              = UNKNOWN_OPCODE, /* old 0x12B, */
-        SMSG_SUPERCEDED_SPELL                           = UNKNOWN_OPCODE, /* old 0x12C, */
+        SMSG_LEARNED_SPELL                              = 5649, /* old 0x12B, */
+        SMSG_SUPERCEDED_SPELL                           = 1076, /* old 0x12C, */
         CMSG_NEW_SPELL_SLOT                             = UNKNOWN_OPCODE, /* old 0x12D, */
         CMSG_CAST_SPELL                                 = UNKNOWN_OPCODE, /* old 0x12E, */
         CMSG_CANCEL_CAST                                = UNKNOWN_OPCODE, /* old 0x12F, */
@@ -276,7 +276,7 @@ namespace Kamilla.Network.Protocols.Wow
         [Description("4.1.0 possibly swapped with SMSG_ATTACKSWING_DEADTARGET")]
         SMSG_ATTACKSWING_CANT_ATTACK                    = UNKNOWN_OPCODE, /* old 0x149, */
         SMSG_ATTACKERSTATEUPDATE                        = UNKNOWN_OPCODE, /* old 0x14A, */
-        SMSG_BATTLEFIELD_PORT_DENIED                    = UNKNOWN_OPCODE, /* old 0x14B, */
+        SMSG_BATTLEFIELD_PORT_DENIED                    = 7300, /* old 0x14B, */
         CMSG_PERFORM_ACTION_SET                         = UNKNOWN_OPCODE, /* old 0x14C, */
         SMSG_RESUME_CAST_BAR                            = UNKNOWN_OPCODE, /* old 0x14D, */
         SMSG_CANCEL_COMBAT                              = UNKNOWN_OPCODE, /* old 0x14E, */
@@ -326,9 +326,9 @@ namespace Kamilla.Network.Protocols.Wow
         SMSG_PET_NAME_INVALID                           = UNKNOWN_OPCODE, /* old 0x178, */
         SMSG_PET_SPELLS                                 = UNKNOWN_OPCODE, /* old 0x179, */
         SMSG_PET_MODE                                   = UNKNOWN_OPCODE, /* old 0x17A, */
-        CMSG_SET_PET_SLOT                               = UNKNOWN_OPCODE,
-        SMSG_PET_SLOT_UPDATED                           = UNKNOWN_OPCODE,
-        SMSG_PET_ADDED                                  = UNKNOWN_OPCODE,
+        CMSG_SET_PET_SLOT                               = 10625,
+        SMSG_PET_SLOT_UPDATED                           = 7761,
+        SMSG_PET_ADDED                                  = 1124,
         [Description("uint64 guid")]
         CMSG_GOSSIP_HELLO                               = UNKNOWN_OPCODE, /* old 0x17B, */
         CMSG_GOSSIP_SELECT_OPTION                       = UNKNOWN_OPCODE, /* old 0x17C, */
@@ -352,7 +352,7 @@ namespace Kamilla.Network.Protocols.Wow
         CMSG_QUESTGIVER_CHOOSE_REWARD                   = UNKNOWN_OPCODE, /* old 0x18E, */
         SMSG_QUESTGIVER_QUEST_INVALID                   = UNKNOWN_OPCODE, /* old 0x18F, */
         CMSG_QUESTGIVER_CANCEL                          = UNKNOWN_OPCODE, /* old 0x190, */
-        SMSG_QUEST_GIVER_QUEST_COMPLETE                  = UNKNOWN_OPCODE, /* old 0x191, */
+        SMSG_QUEST_GIVER_QUEST_COMPLETE                  = 7168, /* old 0x191, */
         SMSG_QUESTGIVER_QUEST_FAILED                    = UNKNOWN_OPCODE, /* old 0x192, */
         CMSG_QUESTLOG_SWAP_QUEST                        = UNKNOWN_OPCODE, /* old 0x193, */
         CMSG_QUESTLOG_REMOVE_QUEST                      = UNKNOWN_OPCODE, /* old 0x194, */
@@ -366,7 +366,7 @@ namespace Kamilla.Network.Protocols.Wow
         SMSG_QUEST_CONFIRM_ACCEPT                       = UNKNOWN_OPCODE, /* old 0x19C, */
         CMSG_PUSHQUESTTOPARTY                           = UNKNOWN_OPCODE, /* old 0x19D, */
         CMSG_LIST_INVENTORY                             = UNKNOWN_OPCODE, /* old 0x19E, */
-        SMSG_VENDOR_INVENTORY                             = UNKNOWN_OPCODE, /* old 0x19F, */
+        SMSG_VENDOR_INVENTORY                             = 1141, /* old 0x19F, */
         CMSG_SELL_ITEM                                  = UNKNOWN_OPCODE, /* old 0x1A0, */
         SMSG_SELL_ITEM                                  = UNKNOWN_OPCODE, /* old 0x1A1, */
         CMSG_BUY_ITEM                                   = UNKNOWN_OPCODE, /* old 0x1A2, */
@@ -432,16 +432,16 @@ namespace Kamilla.Network.Protocols.Wow
         SMSG_PAUSE_MIRROR_TIMER                         = UNKNOWN_OPCODE, /* old 0x1DA, */
         SMSG_STOP_MIRROR_TIMER                          = UNKNOWN_OPCODE, /* old 0x1DB, */
         [Description("Sent periodically. uint32 latency, uint32 sequence")]
-        CMSG_PING                                       = UNKNOWN_OPCODE, /* old 0x1DC, */
+        CMSG_PING                                       = 16458, /* old 0x1DC, */
         [Description("Response to CMSG_PING. Auth opcode. uint32 sequence")]
-        SMSG_PONG                                       = UNKNOWN_OPCODE, /* old 0x1DD, */
+        SMSG_PONG                                       = 264, /* old 0x1DD, */
         SMSG_CLEAR_COOLDOWN                             = UNKNOWN_OPCODE, /* old 0x1DE, */
         SMSG_GAMEOBJECT_PAGETEXT                        = UNKNOWN_OPCODE, /* old 0x1DF, */
         CMSG_SETSHEATHED                                = UNKNOWN_OPCODE, /* old 0x1E0, */
         SMSG_COOLDOWN_CHEAT                             = UNKNOWN_OPCODE, /* old 0x1E1, */
         SMSG_SPELL_DELAYED                              = UNKNOWN_OPCODE, /* old 0x1E2, */
         CMSG_QUEST_POI_QUERY                            = UNKNOWN_OPCODE, /* old 0x1E3, */
-        CMSG_QUERY_QUEST_COMPLETION_NP_CS                          = UNKNOWN_OPCODE,
+        CMSG_QUERY_QUEST_COMPLETION_NP_CS                          = 2848,
         SMSG_QUEST_POI_QUERY_RESPONSE                   = UNKNOWN_OPCODE, /* old 0x1E4, */
         CMSG_GHOST                                      = UNKNOWN_OPCODE, /* old 0x1E5, */
         CMSG_GM_INVIS                                   = UNKNOWN_OPCODE, /* old 0x1E6, */
@@ -451,19 +451,19 @@ namespace Kamilla.Network.Protocols.Wow
         SMSG_ITEM_TIME_UPDATE                           = UNKNOWN_OPCODE, /* old 0x1EA, */
         SMSG_ITEM_ENCHANT_TIME_UPDATE                   = UNKNOWN_OPCODE, /* old 0x1EB, */
         [Description("Sent by server when a connection is initialized (after HELLO packet since 4.1.0). Contains 8-bit count, 32-bit seed, two 128 bit encryption seeds. Exact structure is version-dependent since Cataclysm. This packet is not encrypted.")]
-        SMSG_AUTH_CHALLENGE                             = UNKNOWN_OPCODE, /* old 0x1EC, */
+        SMSG_AUTH_CHALLENGE                             = 297, /* old 0x1EC, */
         [Description("Client's reply to SMSG_AUTH_CHALLENGE on first connection. Contains client build value, account name, compressed addon data, etc. This packet is not encrypted.")]
-        CMSG_AUTH_SESSION                               = UNKNOWN_OPCODE, /* old 0x1ED, */
+        CMSG_AUTH_SESSION                               = 16450, /* old 0x1ED, */
         [Description("Server's reply to CMSG_AUTH_SESSION. Contains billing time, billing flags, account expansion, server expansion (since Cataclysm).")]
-        SMSG_AUTH_RESPONSE                              = UNKNOWN_OPCODE, /* old 0x1EE, */
+        SMSG_AUTH_RESPONSE                              = 3668, /* old 0x1EE, */
         MSG_GM_SHOWLABEL                                = UNKNOWN_OPCODE, /* old 0x1EF, */
         CMSG_PET_CAST_SPELL                             = UNKNOWN_OPCODE, /* old 0x1F0, */
         MSG_SAVE_GUILD_EMBLEM                           = UNKNOWN_OPCODE, /* old 0x1F1, */
         MSG_TABARDVENDOR_ACTIVATE                       = UNKNOWN_OPCODE, /* old 0x1F2, */
-        SMSG_PLAY_SPELL_VISUAL                          = UNKNOWN_OPCODE, /* old 0x1F3, */
+        SMSG_PLAY_SPELL_VISUAL                          = 5685, /* old 0x1F3, */
         CMSG_ZONEUPDATE                                 = UNKNOWN_OPCODE, /* old 0x1F4, */
         SMSG_PARTYKILLLOG                               = UNKNOWN_OPCODE, /* old 0x1F5, */
-        SMSG_PLAY_SPELL_VISUAL_KIT                          = UNKNOWN_OPCODE, /* old 0x1F7, */
+        SMSG_PLAY_SPELL_VISUAL_KIT                          = 7348, /* old 0x1F7, */
         SMSG_EXPLORATION_EXPERIENCE                     = UNKNOWN_OPCODE, /* old 0x1F8, */
         CMSG_GM_SET_SECURITY_GROUP                      = UNKNOWN_OPCODE, /* old 0x1F9, */
         CMSG_GM_NUKE                                    = UNKNOWN_OPCODE, /* old 0x1FA, */
@@ -527,19 +527,19 @@ namespace Kamilla.Network.Protocols.Wow
         CMSG_GM_UBERINVIS                               = UNKNOWN_OPCODE, /* old 0x22E, */
         CMSG_GM_REQUEST_PLAYER_INFO                     = UNKNOWN_OPCODE, /* old 0x22F, */
         SMSG_GM_PLAYER_INFO                             = UNKNOWN_OPCODE, /* old 0x230, */
-        CMSG_GUILD_SET_RANK_PERMISSIONS                 = UNKNOWN_OPCODE, /* old 0x231, */
-        CMSG_GUILD_ADD_RANK                             = UNKNOWN_OPCODE, /* old 0x232, */
-        CMSG_GUILD_DELETE_RANK                          = UNKNOWN_OPCODE, /* old 0x233, */
-        CMSG_GUILD_SET_MEMBER_NOTE                      = UNKNOWN_OPCODE, /* old 0x234, */
+        CMSG_GUILD_SET_RANK_PERMISSIONS                 = 7437, /* old 0x231, */
+        CMSG_GUILD_ADD_RANK                             = 13709, /* old 0x232, */
+        CMSG_GUILD_DELETE_RANK                          = 15621, /* old 0x233, */
+        CMSG_GUILD_SET_MEMBER_NOTE                      = 29957, /* old 0x234, */
         CMSG_GUILD_SET_OFFICER_NOTE                     = UNKNOWN_OPCODE, /* old 0x235, */
         SMSG_LOGIN_VERIFY_WORLD                         = UNKNOWN_OPCODE, /* old 0x236, */
         CMSG_CLEAR_EXPLORATION                          = UNKNOWN_OPCODE, /* old 0x237, */
-        CMSG_SEND_MAIL                                  = UNKNOWN_OPCODE, /* old 0x238, */
+        CMSG_SEND_MAIL                                  = 22537, /* old 0x238, */
         SMSG_SEND_MAIL_RESULT                           = UNKNOWN_OPCODE, /* old 0x239, */
         CMSG_GET_MAIL_LIST                              = UNKNOWN_OPCODE, /* old 0x23A, */
         SMSG_MAIL_LIST_RESULT                           = UNKNOWN_OPCODE, /* old 0x23B, */
-        CMSG_BATTLEFIELD_LIST                           = UNKNOWN_OPCODE, /* old 0x23C, */
-        SMSG_BATTLEFIELD_LIST                           = UNKNOWN_OPCODE, /* old 0x23D, */
+        CMSG_BATTLEFIELD_LIST                           = 9156, /* old 0x23C, */
+        SMSG_BATTLEFIELD_LIST                           = 3153, /* old 0x23D, */
         CMSG_BATTLEFIELD_JOIN                           = UNKNOWN_OPCODE, /* old 0x23E, */
         CMSG_TAXICLEARNODE                              = UNKNOWN_OPCODE, /* old 0x241, */
         CMSG_TAXIENABLENODE                             = UNKNOWN_OPCODE, /* old 0x242, */
@@ -582,7 +582,7 @@ namespace Kamilla.Network.Protocols.Wow
         CMSG_SET_AMMO                                   = UNKNOWN_OPCODE, /* old 0x268, */
         [Description("uint32 delay_ms")]
         SMSG_CORPSE_RECLAIM_DELAY                       = UNKNOWN_OPCODE, /* old 0x269, */
-        CMSG_SET_ACTIVE_MOVER                           = UNKNOWN_OPCODE, /* old 0x26A, */
+        CMSG_SET_ACTIVE_MOVER                           = 9092, /* old 0x26A, */
         CMSG_PET_CANCEL_AURA                            = UNKNOWN_OPCODE, /* old 0x26B, */
         CMSG_PLAYER_AI_CHEAT                            = UNKNOWN_OPCODE, /* old 0x26C, */
         CMSG_CANCEL_AUTO_REPEAT_SPELL                   = UNKNOWN_OPCODE, /* old 0x26D, */
@@ -678,36 +678,36 @@ namespace Kamilla.Network.Protocols.Wow
         SMSG_PET_ACTION_FEEDBACK                        = UNKNOWN_OPCODE, /* old 0x2C6, */
         CMSG_CHAR_RENAME                                = UNKNOWN_OPCODE, /* old 0x2C7, */
         SMSG_CHAR_RENAME                                = UNKNOWN_OPCODE, /* old 0x2C8, */
-        CMSG_MOVE_SPLINE_DONE                           = UNKNOWN_OPCODE, /* old 0x2C9, */
-        CMSG_MOVE_FALL_RESET                            = UNKNOWN_OPCODE, /* old 0x2CA, */
+        CMSG_MOVE_SPLINE_DONE                           = 3040, /* old 0x2C9, */
+        CMSG_MOVE_FALL_RESET                            = 2917, /* old 0x2CA, */
         SMSG_INSTANCE_SAVE_CREATED                      = UNKNOWN_OPCODE, /* old 0x2CB, */
         [Description("EVENT_UPDATE_INSTANCE_INFO")]
         SMSG_RAID_INSTANCE_INFO                         = UNKNOWN_OPCODE, /* old 0x2CC, */
         CMSG_REQUEST_RAID_INFO                          = UNKNOWN_OPCODE, /* old 0x2CD, */
-        CMSG_MOVE_NOT_ACTIVE_MOVER                      = UNKNOWN_OPCODE, /* old 0x2D1, */
+        CMSG_MOVE_NOT_ACTIVE_MOVER                      = 2497, /* old 0x2D1, */
         SMSG_PLAY_SOUND                                 = UNKNOWN_OPCODE, /* old 0x2D2, */
-        CMSG_QUERY_BATTLEFIELD_STATE                    = UNKNOWN_OPCODE, /* old 0x2D3, */
-        SMSG_BATTLEFIELD_STATUS_NONE                    = UNKNOWN_OPCODE, /* old 0x2D4, */
-        CMSG_BATTLEFIELD_PORT                           = UNKNOWN_OPCODE, /* old 0x2D5, */
+        CMSG_QUERY_BATTLEFIELD_STATE                    = 293, /* old 0x2D3, */
+        SMSG_BATTLEFIELD_STATUS_NONE                    = 7236, /* old 0x2D4, */
+        CMSG_BATTLEFIELD_PORT                           = 10497, /* old 0x2D5, */
         CMSG_BATTLEMASTER_HELLO                         = UNKNOWN_OPCODE, /* old 0x2D7, */
-        SMSG_PVP_LOG_DATA                               = UNKNOWN_OPCODE, /* old 0x2E0, */
-        CMSG_PVP_LOG_DATA                               = UNKNOWN_OPCODE,
+        SMSG_PVP_LOG_DATA                               = 3089, /* old 0x2E0, */
+        CMSG_PVP_LOG_DATA                               = 9057,
         CMSG_LEAVE_BATTLEFIELD                          = UNKNOWN_OPCODE, /* old 0x2E1, */
         CMSG_AREA_SPIRIT_HEALER_QUERY                   = UNKNOWN_OPCODE, /* old 0x2E2, */
         CMSG_AREA_SPIRIT_HEALER_QUEUE                   = UNKNOWN_OPCODE, /* old 0x2E3, */
         [Description("EVENT_AREA_SPIRIT_HEALER_IN_RANGE")]
         SMSG_AREA_SPIRIT_HEALER_TIME                    = UNKNOWN_OPCODE, /* old 0x2E4, */
         CMSG_GM_UNTEACH                                 = UNKNOWN_OPCODE, /* old 0x2E5, */
-        SMSG_WARDEN_DATA                                = UNKNOWN_OPCODE, /* old 0x2E6, */
-        CMSG_WARDEN_DATA                                = UNKNOWN_OPCODE, /* old 0x2E7, */
-        SMSG_BATTLEFIELD_STATUS_QUEUED                  = UNKNOWN_OPCODE, /* old 0x2E8, */
-        CMSG_REQUEST_BATTLEFIELD_PLAYER_POSITIONS       = UNKNOWN_OPCODE,
-        SMSG_BATTLEGROUND_PLAYER_POSITIONS              = UNKNOWN_OPCODE,
+        SMSG_WARDEN_DATA                                = 3312, /* old 0x2E6, */
+        CMSG_WARDEN_DATA                                = 16409, /* old 0x2E7, */
+        SMSG_BATTLEFIELD_STATUS_QUEUED                  = 3204, /* old 0x2E8, */
+        CMSG_REQUEST_BATTLEFIELD_PLAYER_POSITIONS       = 2852,
+        SMSG_BATTLEGROUND_PLAYER_POSITIONS              = 7797,
         CMSG_PET_STOP_ATTACK                            = UNKNOWN_OPCODE, /* old 0x2EA, */
         SMSG_BINDER_CONFIRM                             = UNKNOWN_OPCODE, /* old 0x2EB, */
-        SMSG_BATTLEGROUND_PLAYER_JOINED                 = UNKNOWN_OPCODE, /* old 0x2EC, */
-        SMSG_BATTLEGROUND_PLAYER_LEFT                   = UNKNOWN_OPCODE, /* old 0x2ED, */
-        CMSG_BATTLEMASTER_JOIN                          = UNKNOWN_OPCODE, /* old 0x2EE, */
+        SMSG_BATTLEGROUND_PLAYER_JOINED                 = 3744, /* old 0x2EC, */
+        SMSG_BATTLEGROUND_PLAYER_LEFT                   = 5296, /* old 0x2ED, */
+        CMSG_BATTLEMASTER_JOIN                          = 320, /* old 0x2EE, */
         [Description("Sent after SMSG_ITEM_UPDATED_MULTIPLE")]
         SMSG_ADDON_INFO                                 = UNKNOWN_OPCODE, /* old 0x2EF, */
         CMSG_PET_UNLEARN                                = UNKNOWN_OPCODE, /* old 0x2F0, */
@@ -721,7 +721,7 @@ namespace Kamilla.Network.Protocols.Wow
         CMSG_MINIGAME_MOVE                              = UNKNOWN_OPCODE, /* old 0x2F8, */
         SMSG_MINIGAME_MOVE_FAILED                       = UNKNOWN_OPCODE, /* old 0x2F9, */
         SMSG_RAID_INSTANCE_MESSAGE                      = UNKNOWN_OPCODE, /* old 0x2FA, */
-        CMSG_GUILD_UPDATE_INFO_TEXT                            = UNKNOWN_OPCODE, /* old 0x2FC, */
+        CMSG_GUILD_UPDATE_INFO_TEXT                            = 15753, /* old 0x2FC, */
         SMSG_CHAT_RESTRICTED                            = UNKNOWN_OPCODE, /* old 0x2FD, */
         CMSG_GM_NUKE_ACCOUNT                            = UNKNOWN_OPCODE, /* old 0x30F, */
         MSG_GM_DESTROY_CORPSE                           = UNKNOWN_OPCODE, /* old 0x310, */
@@ -768,8 +768,8 @@ namespace Kamilla.Network.Protocols.Wow
         MSG_GM_RESETINSTANCELIMIT                       = UNKNOWN_OPCODE, /* old 0x33C, */
         SMSG_MOTD                                       = UNKNOWN_OPCODE, /* old 0x33D, */
         CMSG_SOCKET_GEMS                                = UNKNOWN_OPCODE, /* old 0x347, */
-        CMSG_CREATE_ARENA_TEAM                          = UNKNOWN_OPCODE, /* old 0x348, */
-        SMSG_ARENA_TEAM_COMMAND_RESULT                  = UNKNOWN_OPCODE, /* old 0x349, */
+        CMSG_CREATE_ARENA_TEAM                          = 22592, /* old 0x348, */
+        SMSG_ARENA_TEAM_COMMAND_RESULT                  = 5364, /* old 0x349, */
         CMSG_ARENA_TEAM_QUERY                           = UNKNOWN_OPCODE, /* old 0x34B, */
         SMSG_ARENA_TEAM_QUERY_RESPONSE                  = UNKNOWN_OPCODE, /* old 0x34C, */
         CMSG_ARENA_TEAM_ROSTER                          = UNKNOWN_OPCODE, /* old 0x34D, */
@@ -783,18 +783,18 @@ namespace Kamilla.Network.Protocols.Wow
         CMSG_ARENA_TEAM_DISBAND                         = UNKNOWN_OPCODE, /* old 0x355, */
         CMSG_ARENA_TEAM_LEADER                          = UNKNOWN_OPCODE, /* old 0x356, */
         SMSG_ARENA_TEAM_EVENT                           = UNKNOWN_OPCODE, /* old 0x357, */
-        CMSG_BATTLEMASTER_JOIN_ARENA                    = UNKNOWN_OPCODE, /* old 0x358, */
+        CMSG_BATTLEMASTER_JOIN_ARENA                    = 11073, /* old 0x358, */
         SMSG_ARENA_TEAM_STATS                           = UNKNOWN_OPCODE, /* old 0x35B, */
         CMSG_LFG_JOIN                                   = UNKNOWN_OPCODE, /* old 0x35C, */    // CMSG JoinLFG
         CMSG_LFG_LEAVE                                  = UNKNOWN_OPCODE, /* old 0x35D, */    // CMSG LeaveLFG
         CMSG_LFG_SEARCH_JOIN                            = UNKNOWN_OPCODE, /* old 0x35E, */    // CMSG SearchLFGJoin
         CMSG_LFG_SEARCH_LEAVE                           = UNKNOWN_OPCODE, /* old 0x35F, */    // CMSG SearchLFGLeave
-        SMSG_LFG_SEARCH_RESULTS                         = UNKNOWN_OPCODE, /* old 0x360, */    // SMSG uint32, uint32, if(uint8) { uint32 count, for(count) { uint64} }, uint32 count2, uint32, for(count2) { uint64, uint32 flags, if(flags & 0x2) {string}, if(flags & 0x10) {for(3) uint8}, if(flags & 0x80) {uint64, uint32}}, uint32 count3, uint32, for(count3) {uint64, uint32 flags, if(flags & 0x1) {uint8, uint8, uint8, for(3) uint8, uint32, uint32, uint32, uint32, uint32, uint32, float, float, uint32, uint32, uint32, uint32, uint32, float, uint32, uint32, uint32, uint32, uint32, uint32}, if(flags&0x2) string, if(flags&0x4) uint8, if(flags&0x8) uint64, if(flags&0x10) uint8, if(flags&0x20) uint32, if(flags&0x40) uint8, if(flags& 0x80) {uint64, uint32}}
-        SMSG_LFG_PROPOSAL_UPDATE                        = UNKNOWN_OPCODE, /* old 0x361, */    // SMSG uint32, uint8, uint32, uint32, uint8, for(uint8) {uint32,uint8,uint8,uint8,uint8}
+        SMSG_LFG_SEARCH_RESULTS                         = 5633, /* old 0x360, */    // SMSG uint32, uint32, if(uint8) { uint32 count, for(count) { uint64} }, uint32 count2, uint32, for(count2) { uint64, uint32 flags, if(flags & 0x2) {string}, if(flags & 0x10) {for(3) uint8}, if(flags & 0x80) {uint64, uint32}}, uint32 count3, uint32, for(count3) {uint64, uint32 flags, if(flags & 0x1) {uint8, uint8, uint8, for(3) uint8, uint32, uint32, uint32, uint32, uint32, uint32, float, float, uint32, uint32, uint32, uint32, uint32, float, uint32, uint32, uint32, uint32, uint32, uint32}, if(flags&0x2) string, if(flags&0x4) uint8, if(flags&0x8) uint64, if(flags&0x10) uint8, if(flags&0x20) uint32, if(flags&0x40) uint8, if(flags& 0x80) {uint64, uint32}}
+        SMSG_LFG_PROPOSAL_UPDATE                        = 1584, /* old 0x361, */    // SMSG uint32, uint8, uint32, uint32, uint8, for(uint8) {uint32,uint8,uint8,uint8,uint8}
         CMSG_LFG_PROPOSAL_RESULT                        = UNKNOWN_OPCODE, /* old 0x362, */    // CMSG AcceptProposal, RejectProposal
         SMSG_LFG_ROLE_CHECK_UPDATE                      = UNKNOWN_OPCODE, /* old 0x363, */    // SMSG uint32, uint8, for(uint8) uint32, uint8, for(uint8) { uint64, uint8, uint32, uint8, }
-        SMSG_LFG_JOIN_RESULT                            = UNKNOWN_OPCODE, /* old 0x364, */    // SMSG uint32 unk, uint32, if(unk==6) { uint8 count, for(count) uint64 }
-        SMSG_LFG_QUEUE_STATUS                           = UNKNOWN_OPCODE, /* old 0x365, */    // SMSG uint32 dungeon, uint32 lfgtype, uint32, uint32, uint32, uint32, uint8, uint8, uint8, uint8
+        SMSG_LFG_JOIN_RESULT                            = 7200, /* old 0x364, */    // SMSG uint32 unk, uint32, if(unk==6) { uint8 count, for(count) uint64 }
+        SMSG_LFG_QUEUE_STATUS                           = 5360, /* old 0x365, */    // SMSG uint32 dungeon, uint32 lfgtype, uint32, uint32, uint32, uint32, uint8, uint8, uint8, uint8
         CMSG_SET_LFG_COMMENT                            = UNKNOWN_OPCODE, /* old 0x366, */    // CMSG SetLFGComment
         SMSG_LFG_UPDATE_PLAYER                          = UNKNOWN_OPCODE, /* old 0x367, */    // SMSG uint8, if(uint8) { uint8, uint8, uint8, uint8, if(uint8) for(uint8) uint32, string}
         SMSG_LFG_UPDATE_PARTY                           = UNKNOWN_OPCODE, /* old 0x368, */    // SMSG uint8, if(uint8) { uint8, uint8, uint8, for(3) uint8, uint8, if(uint8) for(uint8) uint32, string}
@@ -821,17 +821,17 @@ namespace Kamilla.Network.Protocols.Wow
         CMSG_MAELSTROM_INVALIDATE_CACHE                 = UNKNOWN_OPCODE, /* old 0x387, */
         SMSG_FLIGHT_SPLINE_SYNC                         = UNKNOWN_OPCODE, /* old 0x388, */
         CMSG_SET_TAXI_BENCHMARK_MODE                    = UNKNOWN_OPCODE, /* old 0x389, */
-        SMSG_BATTLEFIELD_STATUS_FAILED                  = UNKNOWN_OPCODE, /* old 0x38A, */
+        SMSG_BATTLEFIELD_STATUS_FAILED                  = 3621, /* old 0x38A, */
         SMSG_REALM_SPLIT                                = UNKNOWN_OPCODE, /* old 0x38B, */
         CMSG_REALM_SPLIT                                = UNKNOWN_OPCODE, /* old 0x38C, */
-        CMSG_MOVE_CHANGE_TRANSPORT                      = UNKNOWN_OPCODE, /* old 0x38D, */
+        CMSG_MOVE_CHANGE_TRANSPORT                      = 992, /* old 0x38D, */
         MSG_PARTY_ASSIGNMENT                            = UNKNOWN_OPCODE, /* old 0x38E, */
         SMSG_OFFER_PETITION_ERROR                       = UNKNOWN_OPCODE, /* old 0x38F, */
-        SMSG_PETITION_ALREADY_SIGNED                    = UNKNOWN_OPCODE,
+        SMSG_PETITION_ALREADY_SIGNED                    = 7712,
         [Description("Jam Opcode")]
-        SMSG_TIME_SYNC_REQUEST                          = UNKNOWN_OPCODE, /* old 0x390, */
-        CMSG_TIME_SYNC_RESPONSE                         = UNKNOWN_OPCODE, /* old 0x391, */
-        CMSG_TIME_SYNC_RESPONSE_FAILED                  = UNKNOWN_OPCODE,
+        SMSG_TIME_SYNC_REQUEST                          = 3104, /* old 0x390, */
+        CMSG_TIME_SYNC_RESPONSE                         = 961, /* old 0x391, */
+        CMSG_TIME_SYNC_RESPONSE_FAILED                  = 10725,
         CMSG_SEND_LOCAL_EVENT                           = UNKNOWN_OPCODE, /* old 0x392, */
         CMSG_SEND_GENERAL_TRIGGER                       = UNKNOWN_OPCODE, /* old 0x393, */
         CMSG_SEND_COMBAT_TRIGGER                        = UNKNOWN_OPCODE, /* old 0x394, */
@@ -875,7 +875,7 @@ namespace Kamilla.Network.Protocols.Wow
         CMSG_COMMENTATOR_ENTER_INSTANCE                 = UNKNOWN_OPCODE, /* old 0x3BC, */
         CMSG_COMMENTATOR_EXIT_INSTANCE                  = UNKNOWN_OPCODE, /* old 0x3BD, */
         CMSG_COMMENTATOR_INSTANCE_COMMAND               = UNKNOWN_OPCODE, /* old 0x3BE, */
-        CMSG_COMMENTATOR_GET_PARTY_INFO                 = UNKNOWN_OPCODE,
+        CMSG_COMMENTATOR_GET_PARTY_INFO                 = 22601,
         [Description("uint64 target. CGGameUI::ClearTarget(target, true);. Sends CMSG_SET_SELECTION")]
         SMSG_CLEAR_TARGET                               = UNKNOWN_OPCODE, /* old 0x3BF, */
         CMSG_BOT_DETECTED                               = UNKNOWN_OPCODE, /* old 0x3C0, */
@@ -887,21 +887,21 @@ namespace Kamilla.Network.Protocols.Wow
         MSG_RAID_READY_CHECK_FINISHED                   = UNKNOWN_OPCODE, /* old 0x3C6, */
         CMSG_COMPLAIN                                   = UNKNOWN_OPCODE, /* old 0x3C7, */
         SMSG_COMPLAIN_RESULT                            = UNKNOWN_OPCODE, /* old 0x3C8, */
-        SMSG_FEATURE_SYSTEM_STATUS                      = UNKNOWN_OPCODE, /* old 0x3C9, */
+        SMSG_FEATURE_SYSTEM_STATUS                      = 3749, /* old 0x3C9, */
         CMSG_GM_SHOW_COMPLAINTS                         = UNKNOWN_OPCODE, /* old 0x3CA, */
         CMSG_GM_UNSQUELCH                               = UNKNOWN_OPCODE, /* old 0x3CB, */
-        CMSG_CHANNEL_SILENCE_VOICE                      = UNKNOWN_OPCODE, /* old 0x3CC, */
-        CMSG_CHANNEL_SILENCE_ALL                        = UNKNOWN_OPCODE, /* old 0x3CD, */
-        CMSG_CHANNEL_UNSILENCE_VOICE                    = UNKNOWN_OPCODE, /* old 0x3CE, */
-        CMSG_CHANNEL_UNSILENCE_ALL                      = UNKNOWN_OPCODE, /* old 0x3CF, */
+        CMSG_CHANNEL_SILENCE_VOICE                      = 10305, /* old 0x3CC, */
+        CMSG_CHANNEL_SILENCE_ALL                        = 8833, /* old 0x3CD, */
+        CMSG_CHANNEL_UNSILENCE_VOICE                    = 8896, /* old 0x3CE, */
+        CMSG_CHANNEL_UNSILENCE_ALL                      = 8288, /* old 0x3CF, */
         CMSG_TARGET_CAST                                = UNKNOWN_OPCODE, /* old 0x3D0, */
         CMSG_TARGET_SCRIPT_CAST                         = UNKNOWN_OPCODE, /* old 0x3D1, */
-        CMSG_CHANNEL_DISPLAY_LIST                       = UNKNOWN_OPCODE, /* old 0x3D2, */
+        CMSG_CHANNEL_DISPLAY_LIST                       = 8321, /* old 0x3D2, */
         CMSG_SET_ACTIVE_VOICE_CHANNEL                   = UNKNOWN_OPCODE, /* old 0x3D3, */
-        CMSG_CHANNEL_MEMBER_COUNT                       = UNKNOWN_OPCODE, /* old 0x3D4, */
+        CMSG_CHANNEL_MEMBER_COUNT                       = 10880, /* old 0x3D4, */
         SMSG_CHANNEL_MEMBER_COUNT                       = UNKNOWN_OPCODE, /* old 0x3D5, */
-        CMSG_CHANNEL_VOICE_ON                           = UNKNOWN_OPCODE, /* old 0x3D6, */
-        CMSG_CHANNEL_VOICE_OFF                          = UNKNOWN_OPCODE, /* old 0x3D7, */
+        CMSG_CHANNEL_VOICE_ON                           = 10945, /* old 0x3D6, */
+        CMSG_CHANNEL_VOICE_OFF                          = 8224, /* old 0x3D7, */
         CMSG_DEBUG_LIST_TARGETS                         = UNKNOWN_OPCODE, /* old 0x3D8, */
         SMSG_DEBUG_LIST_TARGETS                         = UNKNOWN_OPCODE, /* old 0x3D9, */
         SMSG_AVAILABLE_VOICE_CHANNEL                    = UNKNOWN_OPCODE, /* old 0x3DA, */
@@ -916,8 +916,8 @@ namespace Kamilla.Network.Protocols.Wow
         SMSG_VOICE_CHAT_STATUS                          = UNKNOWN_OPCODE, /* old 0x3E3, */
         CMSG_REPORT_PVP_AFK                             = UNKNOWN_OPCODE, /* old 0x3E4, */
         SMSG_REPORT_PVP_AFK_RESULT                      = UNKNOWN_OPCODE, /* old 0x3E5, */ // SMSG?
-        CMSG_REPORT_FILTERED                            = UNKNOWN_OPCODE,
-        CMSG_REPORT_IGNORED                             = UNKNOWN_OPCODE,
+        CMSG_REPORT_FILTERED                            = 8864,
+        CMSG_REPORT_IGNORED                             = 10368,
         CMSG_GUILD_BANKER_ACTIVATE                      = UNKNOWN_OPCODE, /* old 0x3E6, */
         CMSG_GUILD_BANK_QUERY_TAB                       = UNKNOWN_OPCODE, /* old 0x3E7, */
         [Description("EVENT_GUILDBANKBAGSLOTS_CHANGED")]
@@ -927,8 +927,8 @@ namespace Kamilla.Network.Protocols.Wow
         CMSG_GUILD_BANK_UPDATE_TAB                      = UNKNOWN_OPCODE, /* old 0x3EB, */
         CMSG_GUILD_BANK_DEPOSIT_MONEY                   = UNKNOWN_OPCODE, /* old 0x3EC, */
         CMSG_GUILD_BANK_WITHDRAW_MONEY                  = UNKNOWN_OPCODE, /* old 0x3ED, */
-        CMSG_GUILD_BANK_LOG_QUERY                       = UNKNOWN_OPCODE, /* old 0x3EE, */
-        SMSG_GUILD_BANK_LOG_QUERY_RESULTS               = UNKNOWN_OPCODE,
+        CMSG_GUILD_BANK_LOG_QUERY                       = 7557, /* old 0x3EE, */
+        SMSG_GUILD_BANK_LOG_QUERY_RESULTS               = 1216,
         CMSG_SET_CHANNEL_WATCH                          = UNKNOWN_OPCODE, /* old 0x3EF, */
         SMSG_USERLIST_ADD                               = UNKNOWN_OPCODE, /* old 0x3F0, */
         SMSG_USERLIST_REMOVE                            = UNKNOWN_OPCODE, /* old 0x3F1, */
@@ -943,12 +943,12 @@ namespace Kamilla.Network.Protocols.Wow
         CMSG_GM_CHARACTER_RESTORE                       = UNKNOWN_OPCODE, /* old 0x3FA, */
         CMSG_GM_CHARACTER_SAVE                          = UNKNOWN_OPCODE, /* old 0x3FB, */
         SMSG_VOICESESSION_FULL                          = UNKNOWN_OPCODE, /* old 0x3FC, */
-        CMSG_GUILD_PERMISSIONS_QUERY                    = UNKNOWN_OPCODE, /* old 0x3FD, */
-        SMSG_GUILD_PERMISSIONS_QUERY_RESULTS            = UNKNOWN_OPCODE,
-        CMSG_GUILD_BANK_REMAINING_WITHDRAW_MONEY_QUERY  = UNKNOWN_OPCODE, /* old 0x3FE, */
-        SMSG_GUILD_BANK_REMAINING_WITHDRAW_MONEY        = UNKNOWN_OPCODE,
-        CMSG_GUILD_EVENT_LOG_QUERY                      = UNKNOWN_OPCODE, /* old 0x3FF, */
-        SMSG_GUILD_EVENT_LOG_QUERY_RESULTS              = UNKNOWN_OPCODE,
+        CMSG_GUILD_PERMISSIONS_QUERY                    = 15629, /* old 0x3FD, */
+        SMSG_GUILD_PERMISSIONS_QUERY_RESULTS            = 1060,
+        CMSG_GUILD_BANK_REMAINING_WITHDRAW_MONEY_QUERY  = 13701, /* old 0x3FE, */
+        SMSG_GUILD_BANK_REMAINING_WITHDRAW_MONEY        = 3760,
+        CMSG_GUILD_EVENT_LOG_QUERY                      = 30089, /* old 0x3FF, */
+        SMSG_GUILD_EVENT_LOG_QUERY_RESULTS              = 5221,
         CMSG_MAELSTROM_RENAME_GUILD                     = UNKNOWN_OPCODE, /* old 0x400, */
         CMSG_GET_MIRRORIMAGE_DATA                       = UNKNOWN_OPCODE, /* old 0x401, */
         SMSG_MIRRORIMAGE_DATA                           = UNKNOWN_OPCODE, /* old 0x402, */
@@ -959,9 +959,9 @@ namespace Kamilla.Network.Protocols.Wow
         CMSG_KEEP_ALIVE                                 = UNKNOWN_OPCODE, /* old 0x407, */
         SMSG_RAID_READY_CHECK_ERROR                     = UNKNOWN_OPCODE, /* old 0x408, */
         CMSG_OPT_OUT_OF_LOOT                            = UNKNOWN_OPCODE,  /* old 0x409, */
-        CMSG_GUILD_BANK_TEXT_QUERY                      = UNKNOWN_OPCODE, /* old 0x40A, */
-        SMSG_GUILD_BANK_TEXT_QUERY_RESULT               = UNKNOWN_OPCODE,
-        CMSG_GUILD_BANK_SET_TAB_TEXT                    = UNKNOWN_OPCODE, /* old 0x40B, */
+        CMSG_GUILD_BANK_TEXT_QUERY                      = 7561, /* old 0x40A, */
+        SMSG_GUILD_BANK_TEXT_QUERY_RESULT               = 3684,
+        CMSG_GUILD_BANK_SET_TAB_TEXT                    = 29961, /* old 0x40B, */
         CMSG_SET_GRANTABLE_LEVELS                       = UNKNOWN_OPCODE, /* old 0x40C, */
         CMSG_GRANT_LEVEL                                = UNKNOWN_OPCODE, /* old 0x40D, */
         CMSG_REFER_A_FRIEND                             = UNKNOWN_OPCODE, /* old 0x40E, */
@@ -1044,7 +1044,7 @@ namespace Kamilla.Network.Protocols.Wow
         CMSG_CALENDAR_EVENT_INVITE_NOTES                = UNKNOWN_OPCODE, /* old 0x45F, */
         SMSG_CALENDAR_EVENT_INVITE_NOTES                = UNKNOWN_OPCODE, /* old 0x460, */
         SMSG_CALENDAR_EVENT_INVITE_NOTES_ALERT          = UNKNOWN_OPCODE, /* old 0x461, */
-        CMSG_UPDATE_MISSILE_TRAJECTORY                  = UNKNOWN_OPCODE, /* old 0x462, */
+        CMSG_UPDATE_MISSILE_TRAJECTORY                  = 3013, /* old 0x462, */
         SMSG_UPDATE_ACCOUNT_DATA_COMPLETE               = UNKNOWN_OPCODE, /* old 0x463, */
         [Description("EVENT_PLAY_MOVIE. uint32 movie_id (Movie.dbc)")]
         SMSG_TRIGGER_MOVIE                              = UNKNOWN_OPCODE, /* old 0x464, */
@@ -1055,7 +1055,7 @@ namespace Kamilla.Network.Protocols.Wow
         SMSG_DYNAMIC_DROP_ROLL_RESULT                   = UNKNOWN_OPCODE, /* old 0x469, */
         SMSG_CRITERIA_UPDATE                            = UNKNOWN_OPCODE, /* old 0x46A, */
         CMSG_QUERY_INSPECT_ACHIEVEMENTS                 = UNKNOWN_OPCODE, /* old 0x46B, */
-        CMSG_MOVE_DISMISS_VEHICLE                       = UNKNOWN_OPCODE, /* old 0x46D, */
+        CMSG_MOVE_DISMISS_VEHICLE                       = 2821, /* old 0x46D, */
         CMSG_COMPLETE_ACHIEVEMENT_CHEAT                 = UNKNOWN_OPCODE, /* old 0x46E, */
         SMSG_QUESTUPDATE_ADD_PVP_KILL                   = UNKNOWN_OPCODE, /* old 0x46F, */
         CMSG_SET_CRITERIA_CHEAT                         = UNKNOWN_OPCODE, /* old 0x470, */
@@ -1099,19 +1099,19 @@ namespace Kamilla.Network.Protocols.Wow
         SMSG_SERVER_FIRST_ACHIEVEMENT                   = UNKNOWN_OPCODE, /* old 0x498, */
         SMSG_PET_LEARNED_SPELL                          = UNKNOWN_OPCODE, /* old 0x499, */
         SMSG_PET_REMOVED_SPELL                          = UNKNOWN_OPCODE, /* old 0x49A, */
-        CMSG_MOVE_CHANGE_VEHICLE_SEATS         = UNKNOWN_OPCODE, /* old 0x49B, */
+        CMSG_MOVE_CHANGE_VEHICLE_SEATS         = 9185, /* old 0x49B, */
         CMSG_HEARTH_AND_RESURRECT                       = UNKNOWN_OPCODE, /* old 0x49C, */ // not changed in 3.1
         SMSG_ON_CANCEL_EXPECTED_RIDE_VEHICLE_AURA       = UNKNOWN_OPCODE, /* old 0x49D, */ // not changed 9626
         SMSG_CRITERIA_DELETED                           = UNKNOWN_OPCODE, /* old 0x49E, */ // not changed 9626
         SMSG_ACHIEVEMENT_DELETED                        = UNKNOWN_OPCODE, /* old 0x49F, */ // not changed 9626
         CMSG_SERVER_INFO_QUERY                          = UNKNOWN_OPCODE, /* old 0x4A0, */ // not found
-        SMSG_SERVER_INFO_RESPONSE                       = UNKNOWN_OPCODE, /* old 0x4A1, */ // not found
+        SMSG_SERVER_INFO_RESPONSE                       = 3120, /* old 0x4A1, */ // not found
         CMSG_CHECK_LOGIN_CRITERIA                       = UNKNOWN_OPCODE, /* old 0x4A2, */ // not found
         SMSG_SERVER_BUCK_DATA_START                     = UNKNOWN_OPCODE, /* old 0x4A3, */ // not found
         CMSG_SET_BREATH                                 = UNKNOWN_OPCODE, /* old 0x4A4, */ // not found
         CMSG_QUERY_VEHICLE_STATUS                       = UNKNOWN_OPCODE, /* old 0x4A5, */ // not found, old SMSG_PET_GUIDS
         [Description("Jam Opcode. ERR_BATTLEGROUND_INFO_THROTTLED")]
-        SMSG_BATTLEGROUND_INFO_THROTTLED                = UNKNOWN_OPCODE, /* old 0x4A6, */ // empty, "You can't do that yet"
+        SMSG_BATTLEGROUND_INFO_THROTTLED                = 5680, /* old 0x4A6, */ // empty, "You can't do that yet"
         SMSG_UPDATE_VEHICLE_REC_ID                      = UNKNOWN_OPCODE, /* old 0x4A7, */ // smsg guid+uint32 (vehicle) EVENT_PLAYER_GAINS_VEHICLE_DATA/EVENT_PLAYER_LOSES_VEHICLE_DATA
         CMSG_RIDE_VEHICLE_INTERACT                      = UNKNOWN_OPCODE, /* old 0x4A8, */ // cmsg uint64
         CMSG_CONTROLLER_EJECT_PASSENGER                 = UNKNOWN_OPCODE, /* old 0x4A9, */ // cmsg uint64
@@ -1125,11 +1125,11 @@ namespace Kamilla.Network.Protocols.Wow
         CMSG_SET_ARENA_MEMBER_WEEKLY_GAMES              = UNKNOWN_OPCODE, /* old 0x4B0, */ // not found
         CMSG_SET_ARENA_MEMBER_SEASON_GAMES              = UNKNOWN_OPCODE, /* old 0x4B1, */ // not found
         [Description("Jam Opcode")]
-        SMSG_SET_ITEM_PURCHASE_DATA                     = UNKNOWN_OPCODE, /* old 0x4B2, */ // refund item info
+        SMSG_SET_ITEM_PURCHASE_DATA                     = 7397, /* old 0x4B2, */ // refund item info
         CMSG_GET_ITEM_PURCHASE_DATA                     = UNKNOWN_OPCODE, /* old 0x4B3, */ // refund request?
         CMSG_ITEM_PURCHASE_REFUND                       = UNKNOWN_OPCODE, /* old 0x4B4, */ // lua: ContainerRefundItemPurchase
         [Description("Jam Opcode")]
-        SMSG_ITEM_PURCHASE_REFUND_RESULT                = UNKNOWN_OPCODE, /* old 0x4B5, */ // refund item result
+        SMSG_ITEM_PURCHASE_REFUND_RESULT                = 5220, /* old 0x4B5, */ // refund item result
         CMSG_CORPSE_TRANSPORT_QUERY                     = UNKNOWN_OPCODE, /* old 0x4B6, */ // CMSG, uint32
         SMSG_CORPSE_TRANSPORT_QUERY                     = UNKNOWN_OPCODE, /* old 0x4B7, */ // SMSG, 3*float+float
         CMSG_UNUSED5                                    = UNKNOWN_OPCODE, /* old 0x4B8, */ // not found
@@ -1165,18 +1165,18 @@ namespace Kamilla.Network.Protocols.Wow
         CMSG_PVP_QUEUE_STATS_REQUEST                    = UNKNOWN_OPCODE, /* old 0x4DB, */ // not found 3.2
         SMSG_PVP_QUEUE_STATS                            = UNKNOWN_OPCODE, /* old 0x4DC, */ // not found 3.2
         CMSG_SET_PAID_SERVICE_CHEAT                     = UNKNOWN_OPCODE, /* old 0x4DD, */ // not found 3.2
-        SMSG_BF_MGR_ENTRY_INVITE                        = UNKNOWN_OPCODE, /* old 0x4DE, */ // uint32, EVENT_BATTLEFIELD_MGR_ENTRY_INVITE
-        CMSG_BF_MGR_ENTRY_INVITE_RESPONSE               = UNKNOWN_OPCODE, /* old 0x4DF, */ // lua: BattlefieldMgrEntryInviteResponse
-        SMSG_BF_MGR_ENTERING                            = UNKNOWN_OPCODE, /* old 0x4E0, */ // uint32, uint8, uint8 EVENT_BATTLEFIELD_MGR_ENTERED
-        SMSG_BF_MGR_QUEUE_INVITE                        = UNKNOWN_OPCODE, /* old 0x4E1, */ // uint32 EVENT_BATTLEFIELD_MGR_QUEUE_INVITE
-        CMSG_BF_MGR_QUEUE_INVITE_RESPONSE               = UNKNOWN_OPCODE, /* old 0x4E2, */ // lua: BattlefieldMgrQueueInviteResponse
-        CMSG_BF_MGR_QUEUE_REQUEST                       = UNKNOWN_OPCODE, /* old 0x4E3, */ // lua: BattlefieldMgrQueueRequest
-        SMSG_BF_MGR_QUEUE_REQUEST_RESPONSE              = UNKNOWN_OPCODE, /* old 0x4E4, */ // uint32, uint8 EVENT_BATTLEFIELD_MGR_QUEUE_REQUEST_RESPONSE
-        SMSG_BF_MGR_EJECT_PENDING                       = UNKNOWN_OPCODE, /* old 0x4E5, */ // uint32 EVENT_BATTLEFIELD_MGR_EJECT_PENDING
-        SMSG_BF_MGR_EJECTED                             = UNKNOWN_OPCODE, /* old 0x4E6, */ // uint32, uint32, uint8 EVENT_BATTLEFIELD_MGR_EJECTED
-        CMSG_BF_MGR_QUEUE_EXIT_REQUEST                  = UNKNOWN_OPCODE, /* old 0x4E7, */ // lua: BattlefieldMgrExitRequest
-        SMSG_BF_MGR_STATE_CHANGED                       = UNKNOWN_OPCODE, /* old 0x4E8, */ // uint32, uint32 EVENT_BATTLEFIELD_MGR_STATE_CHANGE
-        SMSG_BF_MGR_EXIT_REQUEST                        = UNKNOWN_OPCODE,
+        SMSG_BF_MGR_ENTRY_INVITE                        = 5809, /* old 0x4DE, */ // uint32, EVENT_BATTLEFIELD_MGR_ENTRY_INVITE
+        CMSG_BF_MGR_ENTRY_INVITE_RESPONSE               = 16392, /* old 0x4DF, */ // lua: BattlefieldMgrEntryInviteResponse
+        SMSG_BF_MGR_ENTERING                            = 5808, /* old 0x4E0, */ // uint32, uint8, uint8 EVENT_BATTLEFIELD_MGR_ENTERED
+        SMSG_BF_MGR_QUEUE_INVITE                        = 5285, /* old 0x4E1, */ // uint32 EVENT_BATTLEFIELD_MGR_QUEUE_INVITE
+        CMSG_BF_MGR_QUEUE_INVITE_RESPONSE               = 20569, /* old 0x4E2, */ // lua: BattlefieldMgrQueueInviteResponse
+        CMSG_BF_MGR_QUEUE_REQUEST                       = 2912, /* old 0x4E3, */ // lua: BattlefieldMgrQueueRequest
+        SMSG_BF_MGR_QUEUE_REQUEST_RESPONSE              = 5237, /* old 0x4E4, */ // uint32, uint8 EVENT_BATTLEFIELD_MGR_QUEUE_REQUEST_RESPONSE
+        SMSG_BF_MGR_EJECT_PENDING                       = 1637, /* old 0x4E5, */ // uint32 EVENT_BATTLEFIELD_MGR_EJECT_PENDING
+        SMSG_BF_MGR_EJECTED                             = 5141, /* old 0x4E6, */ // uint32, uint32, uint8 EVENT_BATTLEFIELD_MGR_EJECTED
+        CMSG_BF_MGR_QUEUE_EXIT_REQUEST                  = 16385, /* old 0x4E7, */ // lua: BattlefieldMgrExitRequest
+        SMSG_BF_MGR_STATE_CHANGED                       = 1744, /* old 0x4E8, */ // uint32, uint32 EVENT_BATTLEFIELD_MGR_STATE_CHANGE
+        SMSG_BF_MGR_EXIT_REQUEST                        = 5156,
         CMSG_BF_MGR_ADVANCE_STATE                       = UNKNOWN_OPCODE, /* old 0x4E9, */ // not found 3.2
         CMSG_BF_MGR_SET_NEXT_TRANSITION_TIME            = UNKNOWN_OPCODE, /* old 0x4EA, */ // not found 3.2
         [Description("Script_SetRaidDifficulty")]
@@ -1242,15 +1242,15 @@ namespace Kamilla.Network.Protocols.Wow
         SMSG_SOCKET_GEMS                                = UNKNOWN_OPCODE, /* old 0x50B, SMSG_UPDATE_ITEM_ENCHANTMENTS */
         [Description("not found")]
         CMSG_SET_CHARACTER_MODEL                        = UNKNOWN_OPCODE, /* old 0x50C, */
-        SMSG_CONNECT_TO                                 = UNKNOWN_OPCODE,
-        CMSG_CONNECT_TO_FAILED                          = UNKNOWN_OPCODE, /* old 0x50E, */ // something with networking
-        SMSG_SUSPEND_COMMS                              = UNKNOWN_OPCODE,
-        CMSG_SUSPEND_COMMS_ACK                          = UNKNOWN_OPCODE,
-        SMSG_RESUME_COMMS                               = UNKNOWN_OPCODE, /* old 0x511, */
-        CMSG_AUTH_CONTINUED_SESSION                     = UNKNOWN_OPCODE, /* old 0x512, */ // something with networking
+        SMSG_CONNECT_TO                                 = 4905,
+        CMSG_CONNECT_TO_FAILED                          = 16393, /* old 0x50E, */ // something with networking
+        SMSG_SUSPEND_COMMS                              = 777,
+        CMSG_SUSPEND_COMMS_ACK                          = 66,
+        SMSG_RESUME_COMMS                               = 776, /* old 0x511, */
+        CMSG_AUTH_CONTINUED_SESSION                     = 74, /* old 0x512, */ // something with networking
         [Description("not found")]
         CMSG_DROP_NEW_CONNECTION                        = UNKNOWN_OPCODE, /* old 0x513, */
-        SMSG_DROP_NEW_CONNECTION                        = UNKNOWN_OPCODE,
+        SMSG_DROP_NEW_CONNECTION                        = 4873,
         [Description("multi combatlog")]
         SMSG_SEND_ALL_COMBAT_LOG                        = UNKNOWN_OPCODE, /* old 0x514, */
         [Description("event EVENT_LFG_OPEN_FROM_GOSSIP (opens dungeon finder, probably for outdoor bosses)")]
@@ -1268,66 +1268,66 @@ namespace Kamilla.Network.Protocols.Wow
 
         SMSG_MESSAGECHAT                                = UNKNOWN_OPCODE, /* old 0x096, */
         // regular structure: uint32 language, szMessage
-        CMSG_MESSAGE_SAY                            = UNKNOWN_OPCODE,
-        CMSG_MESSAGE_YELL                           = UNKNOWN_OPCODE,
+        CMSG_MESSAGE_SAY                            = 8928,
+        CMSG_MESSAGE_YELL                           = 8800,
         [Description("uint32 language, CString channel, CString message")]
-        CMSG_MESSAGE_CHANNEL                        = UNKNOWN_OPCODE,
+        CMSG_MESSAGE_CHANNEL                        = 10433,
         [Description("uint32 language, CString whisperTarget, CString message. Was 0 in 4.0.6")]
-        CMSG_MESSAGE_WHISPER                        = UNKNOWN_OPCODE,
-        CMSG_MESSAGE_GUILD                          = UNKNOWN_OPCODE,
-        CMSG_MESSAGE_OFFICER                        = UNKNOWN_OPCODE,
+        CMSG_MESSAGE_WHISPER                        = 10369,
+        CMSG_MESSAGE_GUILD                          = 8737,
+        CMSG_MESSAGE_OFFICER                        = 8704,
         [Description("CString message")]
-        CMSG_MESSAGE_AFK                            = UNKNOWN_OPCODE,
+        CMSG_MESSAGE_AFK                            = 8929,
         [Description("CString message")]
-        CMSG_MESSAGE_DND                            = UNKNOWN_OPCODE,
+        CMSG_MESSAGE_DND                            = 8417,
         [Description("CString message")]
-        CMSG_MESSAGE_EMOTE                          = UNKNOWN_OPCODE,
-        CMSG_MESSAGE_PARTY                          = UNKNOWN_OPCODE,
-        CMSG_MESSAGE_RAID                           = UNKNOWN_OPCODE,
-        CMSG_MESSAGE_RAID_WARNING                   = UNKNOWN_OPCODE,
-        CMSG_MESSAGE_BATTLEGROUND                   = UNKNOWN_OPCODE,
-        CMSG_ADDON_MESSAGE_WHISPER                  = UNKNOWN_OPCODE,
-        CMSG_ADDON_MESSAGE_GUILD                    = UNKNOWN_OPCODE,
-        CMSG_ADDON_MESSAGE_OFFICER                  = UNKNOWN_OPCODE,
-        CMSG_ADDON_MESSAGE_PARTY                    = UNKNOWN_OPCODE,
-        CMSG_ADDON_MESSAGE_RAID                     = UNKNOWN_OPCODE,
-        CMSG_ADDON_MESSAGE_BATTLEGROUND             = UNKNOWN_OPCODE,
+        CMSG_MESSAGE_EMOTE                          = 8897,
+        CMSG_MESSAGE_PARTY                          = 10273,
+        CMSG_MESSAGE_RAID                           = 8416,
+        CMSG_MESSAGE_RAID_WARNING                   = 10752,
+        CMSG_MESSAGE_BATTLEGROUND                   = 8768,
+        CMSG_ADDON_MESSAGE_WHISPER                  = 8384,
+        CMSG_ADDON_MESSAGE_GUILD                    = 10432,
+        CMSG_ADDON_MESSAGE_OFFICER                  = 8352,
+        CMSG_ADDON_MESSAGE_PARTY                    = 10912,
+        CMSG_ADDON_MESSAGE_RAID                     = 10881,
+        CMSG_ADDON_MESSAGE_BATTLEGROUND             = 8192,
 
         // MOVEMENT OPCODES
         SMSG_MOVES                                  = UNKNOWN_OPCODE,
         // Movement Speed Opcodes
-        SMSG_MOVE_UPDATE_RUN_SPEED                         = UNKNOWN_OPCODE, /* old 0x0CD, */
-        SMSG_MOVE_UPDATE_RUN_BACK_SPEED                    = UNKNOWN_OPCODE, /* old 0x0CF, */
-        SMSG_MOVE_UPDATE_FLIGHT_SPEED                      = UNKNOWN_OPCODE, /* old 0x37E, */
-        SMSG_MOVE_UPDATE_FLIGHT_BACK_SPEED                 = UNKNOWN_OPCODE, /* old 0x380, */
-        SMSG_MOVE_UPDATE_WALK_SPEED                        = UNKNOWN_OPCODE, /* old 0x0D1, */
-        SMSG_MOVE_UPDATE_SWIM_SPEED                        = UNKNOWN_OPCODE, /* old 0x0D3, */
-        SMSG_MOVE_UPDATE_SWIM_BACK_SPEED                   = UNKNOWN_OPCODE, /* old 0x0D5, */
-        SMSG_MOVE_UPDATE_TURN_RATE                         = UNKNOWN_OPCODE, /* old 0x0D8, */
-        SMSG_MOVE_UPDATE_PITCH_RATE                        = UNKNOWN_OPCODE, /* old 0x45B, */
-        SMSG_MOVE_UPDATE_COLLISION_HEIGHT                  = UNKNOWN_OPCODE, /* old 0x518, */
+        SMSG_MOVE_UPDATE_RUN_SPEED                         = 7344, /* old 0x0CD, */
+        SMSG_MOVE_UPDATE_RUN_BACK_SPEED                    = 3588, /* old 0x0CF, */
+        SMSG_MOVE_UPDATE_FLIGHT_SPEED                      = 1125, /* old 0x37E, */
+        SMSG_MOVE_UPDATE_FLIGHT_BACK_SPEED                 = 3173, /* old 0x380, */
+        SMSG_MOVE_UPDATE_WALK_SPEED                        = 7824, /* old 0x0D1, */
+        SMSG_MOVE_UPDATE_SWIM_SPEED                        = 3189, /* old 0x0D3, */
+        SMSG_MOVE_UPDATE_SWIM_BACK_SPEED                   = 7233, /* old 0x0D5, */
+        SMSG_MOVE_UPDATE_TURN_RATE                         = 1168, /* old 0x0D8, */
+        SMSG_MOVE_UPDATE_PITCH_RATE                        = 3264, /* old 0x45B, */
+        SMSG_MOVE_UPDATE_COLLISION_HEIGHT                  = 3809, /* old 0x518, */
         // Movement Opcodes
-        CMSG_MOVE_START_FORWARD                         = UNKNOWN_OPCODE, /* old 0x0B5, */
-        CMSG_MOVE_START_BACKWARD                        = UNKNOWN_OPCODE, /* old 0x0B6, */
-        CMSG_MOVE_STOP                                  = UNKNOWN_OPCODE, /* old 0x0B7, */
-        CMSG_MOVE_START_STRAFE_LEFT                     = UNKNOWN_OPCODE, /* old 0x0B8, */
-        CMSG_MOVE_START_STRAFE_RIGHT                    = UNKNOWN_OPCODE, /* old 0x0B9, */
-        CMSG_MOVE_STOP_STRAFE                           = UNKNOWN_OPCODE, /* old 0x0BA, */
-        CMSG_MOVE_START_ASCEND                          = UNKNOWN_OPCODE, /* old 0x359, */
-        CMSG_MOVE_START_DESCEND                         = UNKNOWN_OPCODE, /* old 0x3A7, */
-        CMSG_MOVE_STOP_ASCEND                           = UNKNOWN_OPCODE, /* old 0x35A, */
-        CMSG_MOVE_JUMP                                  = UNKNOWN_OPCODE, /* old 0x0BB, */
-        CMSG_MOVE_START_TURN_LEFT                       = UNKNOWN_OPCODE, /* old 0x0BC, */
-        CMSG_MOVE_START_TURN_RIGHT                      = UNKNOWN_OPCODE, /* old 0x0BD, */
-        CMSG_MOVE_STOP_TURN                             = UNKNOWN_OPCODE, /* old 0x0BE, */
-        CMSG_MOVE_START_PITCH_UP                        = UNKNOWN_OPCODE, /* old 0x0BF, */
-        CMSG_MOVE_START_PITCH_DOWN                      = UNKNOWN_OPCODE, /* old 0x0C0, */
-        CMSG_MOVE_STOP_PITCH                            = UNKNOWN_OPCODE, /* old 0x0C1, */
-        CMSG_MOVE_SET_RUN_MODE                          = UNKNOWN_OPCODE, /* old 0x0C2, */
-        CMSG_MOVE_SET_WALK_MODE                         = UNKNOWN_OPCODE, /* old 0x0C3, */
-        CMSG_MOVE_SET_PITCH                             = UNKNOWN_OPCODE, /* old 0x0DB, */
-        CMSG_MOVE_START_SWIM                            = UNKNOWN_OPCODE, /* old 0x0CA, */
-        CMSG_MOVE_STOP_SWIM                             = UNKNOWN_OPCODE, /* old 0x0CB, */
+        CMSG_MOVE_START_FORWARD                         = 10501, /* old 0x0B5, */
+        CMSG_MOVE_START_BACKWARD                        = 865, /* old 0x0B6, */
+        CMSG_MOVE_STOP                                  = 805, /* old 0x0B7, */
+        CMSG_MOVE_START_STRAFE_LEFT                     = 9188, /* old 0x0B8, */
+        CMSG_MOVE_START_STRAFE_RIGHT                    = 10724, /* old 0x0B9, */
+        CMSG_MOVE_STOP_STRAFE                           = 2336, /* old 0x0BA, */
+        CMSG_MOVE_START_ASCEND                          = 10561, /* old 0x359, */
+        CMSG_MOVE_START_DESCEND                         = 901, /* old 0x3A7, */
+        CMSG_MOVE_STOP_ASCEND                           = 2496, /* old 0x35A, */
+        CMSG_MOVE_JUMP                                  = 2308, /* old 0x0BB, */
+        CMSG_MOVE_START_TURN_LEFT                       = 449, /* old 0x0BC, */
+        CMSG_MOVE_START_TURN_RIGHT                      = 353, /* old 0x0BD, */
+        CMSG_MOVE_STOP_TURN                             = 8545, /* old 0x0BE, */
+        CMSG_MOVE_START_PITCH_UP                        = 11044, /* old 0x0BF, */
+        CMSG_MOVE_START_PITCH_DOWN                      = 10657, /* old 0x0C0, */
+        CMSG_MOVE_STOP_PITCH                            = 11012, /* old 0x0C1, */
+        CMSG_MOVE_SET_RUN_MODE                          = 420, /* old 0x0C2, */
+        CMSG_MOVE_SET_WALK_MODE                         = 10593, /* old 0x0C3, */
+        CMSG_MOVE_SET_PITCH                             = 10721, /* old 0x0DB, */
+        CMSG_MOVE_START_SWIM                            = 2820, /* old 0x0CA, */
+        CMSG_MOVE_STOP_SWIM                             = 9120, /* old 0x0CB, */
         //MSG_MOVE_TOGGLE_GRAVITY                         = UNKNOWN_OPCODE, /* old 0x4D2, */
         //MSG_MOVE_TOGGLE_COLLISION                       = UNKNOWN_OPCODE,
         //MSG_MOVE_TOGGLE_WATER_WALK                      = UNKNOWN_OPCODE, /* old 0x2B1, */
@@ -1337,416 +1337,421 @@ namespace Kamilla.Network.Protocols.Wow
         //MSG_MOVE_HOVER                                  = UNKNOWN_OPCODE, /* old 0x0F7, */
         //MSG_MOVE_ROOT                                   = UNKNOWN_OPCODE, /* old 0x0EC, */
         //MSG_MOVE_UNROOT                                 = UNKNOWN_OPCODE, /* old 0x0ED, */
-        CMSG_MOVE_HEARTBEAT                             = UNKNOWN_OPCODE, /* old 0x0EE, */
-        CMSG_MOVE_FALL_LAND                             = UNKNOWN_OPCODE, /* old 0x0C9, */
-        CMSG_MOVE_SET_FACING                            = UNKNOWN_OPCODE, /* old 0x0DA, */
+        CMSG_MOVE_HEARTBEAT                             = 11137, /* old 0x0EE, */
+        CMSG_MOVE_FALL_LAND                             = 897, /* old 0x0C9, */
+        CMSG_MOVE_SET_FACING                            = 8997, /* old 0x0DA, */
         //MSG_MOVE_STOP_FLIGHT                            = UNKNOWN_OPCODE,
         //MSG_MOVE_START_FLIGHT                           = UNKNOWN_OPCODE,
-        CMSG_MOVE_SET_FLY                               = UNKNOWN_OPCODE, /* old 0x346, */
+        CMSG_MOVE_SET_FLY                               = 8480, /* old 0x346, */
 
-        SMSG_MOVE_TELEPORT                              = UNKNOWN_OPCODE, /* old 0x0C5, */
-        SMSG_MOVE_UPDATE                                = UNKNOWN_OPCODE,
-        SMSG_MOVE_UPDATE_TELEPORT                       = UNKNOWN_OPCODE,
-        SMSG_MOVE_UPDATE_KNOCK_BACK                     = UNKNOWN_OPCODE, /* old 0x0F1, */
+        SMSG_MOVE_TELEPORT                              = 7860, /* old 0x0C5, */
+        SMSG_MOVE_UPDATE                                = 5157,
+        SMSG_MOVE_UPDATE_TELEPORT                       = 5333,
+        SMSG_MOVE_UPDATE_KNOCK_BACK                     = 1024, /* old 0x0F1, */
         // Spline Speed Opcodes
-        SMSG_MOVE_SPLINE_SET_RUN_SPEED                  = UNKNOWN_OPCODE, /* old 0x2FE, */
-        SMSG_MOVE_SPLINE_SET_RUN_BACK_SPEED             = UNKNOWN_OPCODE, /* old 0x2FF, */
-        SMSG_MOVE_SPLINE_SET_SWIM_SPEED                 = UNKNOWN_OPCODE, /* old 0x300, */
-        SMSG_MOVE_SPLINE_SET_SWIM_BACK_SPEED            = UNKNOWN_OPCODE, /* old 0x302, */
-        SMSG_MOVE_SPLINE_SET_FLIGHT_SPEED               = UNKNOWN_OPCODE, /* old 0x385, */
-        SMSG_MOVE_SPLINE_SET_FLIGHT_BACK_SPEED          = UNKNOWN_OPCODE, /* old 0x386, */
-        SMSG_MOVE_SPLINE_SET_WALK_SPEED                 = UNKNOWN_OPCODE, /* old 0x301, */
-        SMSG_MOVE_SPLINE_SET_TURN_RATE                  = UNKNOWN_OPCODE, /* old 0x303, */
-        SMSG_MOVE_SPLINE_SET_PITCH_RATE                 = UNKNOWN_OPCODE, /* old 0x45E, */
+        SMSG_MOVE_SPLINE_SET_RUN_SPEED                  = 5172, /* old 0x2FE, */
+        SMSG_MOVE_SPLINE_SET_RUN_BACK_SPEED             = 3600, /* old 0x2FF, */
+        SMSG_MOVE_SPLINE_SET_SWIM_SPEED                 = 3281, /* old 0x300, */
+        SMSG_MOVE_SPLINE_SET_SWIM_BACK_SPEED            = 3584, /* old 0x302, */
+        SMSG_MOVE_SPLINE_SET_FLIGHT_SPEED               = 3697, /* old 0x385, */
+        SMSG_MOVE_SPLINE_SET_FLIGHT_BACK_SPEED          = 1685, /* old 0x386, */
+        SMSG_MOVE_SPLINE_SET_WALK_SPEED                 = 5124, /* old 0x301, */
+        SMSG_MOVE_SPLINE_SET_TURN_RATE                  = 7812, /* old 0x303, */
+        SMSG_MOVE_SPLINE_SET_PITCH_RATE                 = 1697, /* old 0x45E, */
         // Spline Opcodes
-        SMSG_MOVE_SPLINE_START_SWIM                     = UNKNOWN_OPCODE, /* old 0x30B, */
-        SMSG_MOVE_SPLINE_STOP_SWIM                      = UNKNOWN_OPCODE, /* old 0x30C, */
-        SMSG_MOVE_SPLINE_SET_FLYING                     = UNKNOWN_OPCODE, /* old 0x422, */
-        SMSG_MOVE_SPLINE_UNSET_FLYING                   = UNKNOWN_OPCODE, /* old 0x423, */
-        SMSG_MOVE_SPLINE_SET_FEATHER_FALL               = UNKNOWN_OPCODE, /* old 0x305, */
-        SMSG_MOVE_SPLINE_SET_NORMAL_FALL                = UNKNOWN_OPCODE, /* old 0x306, */
-        SMSG_MOVE_SPLINE_ROOT                           = UNKNOWN_OPCODE, /* old 0x31A, */
-        SMSG_MOVE_SPLINE_UNROOT                         = UNKNOWN_OPCODE, /* old 0x304, */
-        SMSG_MOVE_SPLINE_SET_WALK_MODE                  = UNKNOWN_OPCODE, /* old 0x30E, */
-        SMSG_MOVE_SPLINE_SET_RUN_MODE                   = UNKNOWN_OPCODE, /* old 0x30D, */
-        SMSG_MOVE_SPLINE_DISABLE_GRAVITY                = UNKNOWN_OPCODE, /* old 0x4D3, */
-        SMSG_MOVE_SPLINE_ENABLE_GRAVITY                 = UNKNOWN_OPCODE, /* old 0x4D4, */
-        SMSG_MOVE_SPLINE_SET_HOVER                      = UNKNOWN_OPCODE, /* old 0x307, */
-        SMSG_MOVE_SPLINE_UNSET_HOVER                    = UNKNOWN_OPCODE, /* old 0x308, */
-        SMSG_MOVE_SPLINE_ENABLE_COLLISION               = UNKNOWN_OPCODE,
-        SMSG_MOVE_SPLINE_DISABLE_COLLISION              = UNKNOWN_OPCODE,
-        SMSG_MOVE_SPLINE_SET_WATER_WALK                 = UNKNOWN_OPCODE, /* old 0x309, */
-        SMSG_MOVE_SPLINE_SET_LAND_WALK                  = UNKNOWN_OPCODE, /* old 0x30A, */
+        SMSG_MOVE_SPLINE_START_SWIM                     = 5121, /* old 0x30B, */
+        SMSG_MOVE_SPLINE_STOP_SWIM                      = 3781, /* old 0x30C, */
+        SMSG_MOVE_SPLINE_SET_FLYING                     = 1157, /* old 0x422, */
+        SMSG_MOVE_SPLINE_UNSET_FLYING                   = 1268, /* old 0x423, */
+        SMSG_MOVE_SPLINE_SET_FEATHER_FALL               = 1201, /* old 0x305, */
+        SMSG_MOVE_SPLINE_SET_NORMAL_FALL                = 1604, /* old 0x306, */
+        SMSG_MOVE_SPLINE_ROOT                           = 1780, /* old 0x31A, */
+        SMSG_MOVE_SPLINE_UNROOT                         = 7172, /* old 0x304, */
+        SMSG_MOVE_SPLINE_SET_WALK_MODE                  = 1712, /* old 0x30E, */
+        SMSG_MOVE_SPLINE_SET_RUN_MODE                   = 7297, /* old 0x30D, */
+        SMSG_MOVE_SPLINE_DISABLE_GRAVITY                = 1748, /* old 0x4D3, */
+        SMSG_MOVE_SPLINE_ENABLE_GRAVITY                 = 5792, /* old 0x4D4, */
+        SMSG_MOVE_SPLINE_SET_HOVER                      = 3648, /* old 0x307, */
+        SMSG_MOVE_SPLINE_UNSET_HOVER                    = 5332, /* old 0x308, */
+        SMSG_MOVE_SPLINE_ENABLE_COLLISION               = 7269,
+        SMSG_MOVE_SPLINE_DISABLE_COLLISION              = 1633,
+        SMSG_MOVE_SPLINE_SET_WATER_WALK                 = 7925, /* old 0x309, */
+        SMSG_MOVE_SPLINE_SET_LAND_WALK                  = 7872, /* old 0x30A, */
         // Force Opcodes
-        SMSG_MOVE_DISABLE_GRAVITY                       = UNKNOWN_OPCODE, /* old 0x4CE, */
-        SMSG_MOVE_ENABLE_GRAVITY                        = UNKNOWN_OPCODE, /* old 0x4D0, */
-        SMSG_MOVE_SET_COLLISION_HEIGHT                  = UNKNOWN_OPCODE, /* old 0x516, */ // float, byte
-        SMSG_MOVE_ENABLE_TRANSITION_BETWEEN_SWIM_AND_FLY = UNKNOWN_OPCODE, /* old 0x33E, */
-        SMSG_MOVE_DISABLE_TRANSITION_BETWEEN_SWIM_AND_FLY = UNKNOWN_OPCODE, /* old 0x33F, */
-        SMSG_MOVE_SET_CAN_FLY                           = UNKNOWN_OPCODE, /* old 0x343, */
-        SMSG_MOVE_UNSET_CAN_FLY                         = UNKNOWN_OPCODE, /* old 0x344, */
-        SMSG_MOVE_SET_VEHICLE_REC_ID                    = UNKNOWN_OPCODE, /* old 0x23F, */ // uint32
-        SMSG_MOVE_SET_FEATHER_FALL                      = UNKNOWN_OPCODE, /* old 0x0F2, */
-        SMSG_MOVE_SET_NORMAL_FALL                       = UNKNOWN_OPCODE, /* old 0x0F3, */
-        SMSG_MOVE_SET_WATER_WALK                        = UNKNOWN_OPCODE, /* old 0x0DE, */
-        SMSG_MOVE_SET_LAND_WALK                         = UNKNOWN_OPCODE, /* old 0x0DF, */
-        SMSG_MOVE_ENABLE_COLLISION                      = UNKNOWN_OPCODE,
-        SMSG_MOVE_DISABLE_COLLISION                     = UNKNOWN_OPCODE,
-        SMSG_MOVE_SET_HOVERING                          = UNKNOWN_OPCODE, /* old 0x0F4, */
-        SMSG_MOVE_UNSET_HOVERING                        = UNKNOWN_OPCODE, /* old 0x0F5, */
-        SMSG_MOVE_ROOT                                  = UNKNOWN_OPCODE, /* old 0x0E8, */
-        SMSG_MOVE_UNROOT                                = UNKNOWN_OPCODE, /* old 0x0EA, */
-        SMSG_MOVE_SET_WALK_SPEED                        = UNKNOWN_OPCODE, /* old 0x2DA, */ // float
-        SMSG_MOVE_SET_SWIM_BACK_SPEED                   = UNKNOWN_OPCODE, /* old 0x2DC, */ // float
-        SMSG_MOVE_SET_RUN_SPEED                         = UNKNOWN_OPCODE, /* old 0x0E2, */ // float
-        SMSG_MOVE_SET_RUN_BACK_SPEED                    = UNKNOWN_OPCODE, /* old 0x0E4, */ // float
-        SMSG_MOVE_SET_SWIM_SPEED                        = UNKNOWN_OPCODE, /* old 0x0E6, */ // float
-        SMSG_MOVE_SET_FLIGHT_SPEED                      = UNKNOWN_OPCODE, /* old 0x381, */ // float
-        SMSG_MOVE_SET_FLIGHT_BACK_SPEED                 = UNKNOWN_OPCODE, /* old 0x383, */ // float
-        SMSG_MOVE_SET_PITCH_RATE                        = UNKNOWN_OPCODE, /* old 0x45C, */ // float
-        SMSG_MOVE_SET_TURN_RATE                         = UNKNOWN_OPCODE, /* old 0x2DE, */ // float
-        SMSG_MOVE_KNOCK_BACK                            = UNKNOWN_OPCODE, /* old 0x0EF, */ // float x4
-        SMSG_SET_PLAY_HOVER_ANIM                        = UNKNOWN_OPCODE,
+        SMSG_MOVE_DISABLE_GRAVITY                       = 7781, /* old 0x4CE, */
+        SMSG_MOVE_ENABLE_GRAVITY                        = 7877, /* old 0x4D0, */
+        SMSG_MOVE_SET_COLLISION_HEIGHT                  = 1765, /* old 0x516, */ // float, byte
+        SMSG_MOVE_ENABLE_TRANSITION_BETWEEN_SWIM_AND_FLY = 7793, /* old 0x33E, */
+        SMSG_MOVE_DISABLE_TRANSITION_BETWEEN_SWIM_AND_FLY = 3653, /* old 0x33F, */
+        SMSG_MOVE_SET_CAN_FLY                           = 3761, /* old 0x343, */
+        SMSG_MOVE_UNSET_CAN_FLY                         = 1105, /* old 0x344, */
+        SMSG_MOVE_SET_VEHICLE_REC_ID                    = 3237, /* old 0x23F, */ // uint32
+        SMSG_MOVE_SET_FEATHER_FALL                      = 5248, /* old 0x0F2, */
+        SMSG_MOVE_SET_NORMAL_FALL                       = 7409, /* old 0x0F3, */
+        SMSG_MOVE_SET_WATER_WALK                        = 3313, /* old 0x0DE, */
+        SMSG_MOVE_SET_LAND_WALK                         = 5125, /* old 0x0DF, */
+        SMSG_MOVE_ENABLE_COLLISION                      = 1252,
+        SMSG_MOVE_DISABLE_COLLISION                     = 7684,
+        SMSG_MOVE_SET_HOVERING                          = 3217, /* old 0x0F4, */
+        SMSG_MOVE_UNSET_HOVERING                        = 5249, /* old 0x0F5, */
+        SMSG_MOVE_ROOT                                  = 3700, /* old 0x0E8, */
+        SMSG_MOVE_UNROOT                                = 1729, /* old 0x0EA, */
+        SMSG_MOVE_SET_WALK_SPEED                        = 5872, /* old 0x2DA, */ // float
+        SMSG_MOVE_SET_SWIM_BACK_SPEED                   = 5761, /* old 0x2DC, */ // float
+        SMSG_MOVE_SET_RUN_SPEED                         = 1552, /* old 0x0E2, */ // float
+        SMSG_MOVE_SET_RUN_BACK_SPEED                    = 7744, /* old 0x0E4, */ // float
+        SMSG_MOVE_SET_SWIM_SPEED                        = 3829, /* old 0x0E6, */ // float
+        SMSG_MOVE_SET_FLIGHT_SPEED                      = 3072, /* old 0x381, */ // float
+        SMSG_MOVE_SET_FLIGHT_BACK_SPEED                 = 1701, /* old 0x383, */ // float
+        SMSG_MOVE_SET_PITCH_RATE                        = 3140, /* old 0x45C, */ // float
+        SMSG_MOVE_SET_TURN_RATE                         = 5781, /* old 0x2DE, */ // float
+        SMSG_MOVE_KNOCK_BACK                            = 3777, /* old 0x0EF, */ // float x4
+        SMSG_SET_PLAY_HOVER_ANIM                        = 7365,
         // Ack Opcodes
-        CMSG_MOVE_GRAVITY_DISABLE_ACK                   = UNKNOWN_OPCODE, /* old 0x4CF, */
-        CMSG_MOVE_GRAVITY_ENABLE_ACK                    = UNKNOWN_OPCODE, /* old 0x4D1, */
-        CMSG_MOVE_SET_COLLISION_HEIGHT_ACK              = UNKNOWN_OPCODE, /* old 0x517, */
-        CMSG_MOVE_ENABLE_SWIM_TO_FLY_TRANS_ACK          = UNKNOWN_OPCODE, /* old 0x340, */
-        CMSG_MOVE_SET_CAN_FLY_ACK                       = UNKNOWN_OPCODE, /* old 0x345, */
-        CMSG_MOVE_SET_VEHICLE_REC_ID_ACK                = UNKNOWN_OPCODE, /* old 0x240, */
-        CMSG_MOVE_FEATHER_FALL_ACK                      = UNKNOWN_OPCODE, /* old 0x2CF, */
-        CMSG_MOVE_WATER_WALK_ACK                        = UNKNOWN_OPCODE, /* old 0x2D0, */
-        CMSG_MOVE_FORCE_ROOT_ACK                        = UNKNOWN_OPCODE, /* old 0x0E9, */
-        CMSG_MOVE_FORCE_UNROOT_ACK                      = UNKNOWN_OPCODE, /* old 0x0EB, */
-        CMSG_MOVE_FORCE_RUN_SPEED_CHANGE_ACK            = UNKNOWN_OPCODE, /* old 0x0E3, */
-        CMSG_MOVE_FORCE_RUN_BACK_SPEED_CHANGE_ACK       = UNKNOWN_OPCODE, /* old 0x0E5, */
-        CMSG_MOVE_FORCE_WALK_SPEED_CHANGE_ACK           = UNKNOWN_OPCODE, /* old 0x2DB, */
-        CMSG_MOVE_FORCE_SWIM_SPEED_CHANGE_ACK           = UNKNOWN_OPCODE, /* old 0x0E7, */
-        CMSG_MOVE_FORCE_SWIM_BACK_SPEED_CHANGE_ACK      = UNKNOWN_OPCODE, /* old 0x2DD, */
-        CMSG_MOVE_FORCE_FLIGHT_SPEED_CHANGE_ACK         = UNKNOWN_OPCODE, /* old 0x382, */
-        CMSG_MOVE_FORCE_FLIGHT_BACK_SPEED_CHANGE_ACK    = UNKNOWN_OPCODE, /* old 0x384, */
-        CMSG_MOVE_FORCE_PITCH_RATE_CHANGE_ACK           = UNKNOWN_OPCODE, /* old 0x45D, */
-        CMSG_MOVE_FORCE_TURN_RATE_CHANGE_ACK            = UNKNOWN_OPCODE, /* old 0x2DF, */
-        CMSG_MOVE_KNOCK_BACK_ACK                        = UNKNOWN_OPCODE, /* old 0x0F0, */
-        CMSG_MOVE_TELEPORT_ACK                          = UNKNOWN_OPCODE, /* old 0x0C7, */
-        CMSG_MOVE_HOVER_ACK                             = UNKNOWN_OPCODE, /* old 0x0F6, */
-        CMSG_MOVE_TOGGLE_COLLISION_ACK                  = UNKNOWN_OPCODE, // unsure CMSG_MOVE_TOGGLE_COLLISION_CHEAT
+        CMSG_MOVE_GRAVITY_DISABLE_ACK                   = 8644, /* old 0x4CF, */
+        CMSG_MOVE_GRAVITY_ENABLE_ACK                    = 801, /* old 0x4D1, */
+        CMSG_MOVE_SET_COLLISION_HEIGHT_ACK              = 8965, /* old 0x517, */
+        CMSG_MOVE_ENABLE_SWIM_TO_FLY_TRANS_ACK          = 2305, /* old 0x340, */
+        CMSG_MOVE_SET_CAN_FLY_ACK                       = 8640, /* old 0x345, */
+        CMSG_MOVE_SET_VEHICLE_REC_ID_ACK                = 484, /* old 0x240, */
+        CMSG_MOVE_FEATHER_FALL_ACK                      = 868, /* old 0x2CF, */
+        CMSG_MOVE_WATER_WALK_ACK                        = 2977, /* old 0x2D0, */
+        CMSG_MOVE_FORCE_ROOT_ACK                        = 9028, /* old 0x0E9, */
+        CMSG_MOVE_FORCE_UNROOT_ACK                      = 385, /* old 0x0EB, */
+        CMSG_MOVE_FORCE_RUN_SPEED_CHANGE_ACK            = 10660, /* old 0x0E3, */
+        CMSG_MOVE_FORCE_RUN_BACK_SPEED_CHANGE_ACK       = 11201, /* old 0x0E5, */
+        CMSG_MOVE_FORCE_WALK_SPEED_CHANGE_ACK           = 2404, /* old 0x2DB, */
+        CMSG_MOVE_FORCE_SWIM_SPEED_CHANGE_ACK           = 10528, /* old 0x0E7, */
+        CMSG_MOVE_FORCE_SWIM_BACK_SPEED_CHANGE_ACK      = 11200, /* old 0x2DD, */
+        CMSG_MOVE_FORCE_FLIGHT_SPEED_CHANGE_ACK         = 9121, /* old 0x382, */
+        CMSG_MOVE_FORCE_FLIGHT_BACK_SPEED_CHANGE_ACK    = 8641, /* old 0x384, */
+        CMSG_MOVE_FORCE_PITCH_RATE_CHANGE_ACK           = 8609, /* old 0x45D, */
+        CMSG_MOVE_FORCE_TURN_RATE_CHANGE_ACK            = 772, /* old 0x2DF, */
+        CMSG_MOVE_KNOCK_BACK_ACK                        = 2949, /* old 0x0F0, */
+        CMSG_MOVE_TELEPORT_ACK                          = 2433, /* old 0x0C7, */
+        CMSG_MOVE_HOVER_ACK                             = 8484, /* old 0x0F6, */
+        CMSG_MOVE_TOGGLE_COLLISION_ACK                  = 9157, // unsure CMSG_MOVE_TOGGLE_COLLISION_CHEAT
 
-        CMSG_MOVE_SET_RELATIVE_POSITION                 = UNKNOWN_OPCODE, /* old 0x0E1, */
-        CMSG_WORLD_PORT_RESPONSE                        = UNKNOWN_OPCODE, /* old 0x0DC, */
-        SMSG_MOVE_SKIP_TIME                             = UNKNOWN_OPCODE, /* old 0x319, */
-        CMSG_MOVE_TIME_SKIPPED                          = UNKNOWN_OPCODE, /* old 0x2CE, */
-        SMSG_MOVE_SET_ACTIVE_MOVER                      = UNKNOWN_OPCODE,
-        CMSG_MOVE_TELEPORT_CHEAT                        = UNKNOWN_OPCODE,
-        CMSG_MOVE_CHARM_TELEPORT_CHEAT                  = UNKNOWN_OPCODE,
-        SMSG_MOVE_SET_COMPOUND_STATE                    = UNKNOWN_OPCODE,
+        CMSG_MOVE_SET_RELATIVE_POSITION                 = 832, /* old 0x0E1, */
+        CMSG_WORLD_PORT_RESPONSE                        = 20561, /* old 0x0DC, */
+        SMSG_MOVE_SKIP_TIME                             = 7169, /* old 0x319, */
+        CMSG_MOVE_TIME_SKIPPED                          = 2881, /* old 0x2CE, */
+        SMSG_MOVE_SET_ACTIVE_MOVER                      = 5188,
+        CMSG_MOVE_TELEPORT_CHEAT                        = 8673,
+        CMSG_MOVE_CHARM_TELEPORT_CHEAT                  = 2373,
+        SMSG_MOVE_SET_COMPOUND_STATE                    = 5344,
 
         [Description("Jam Opcode. RAID_SUMMON_FAILED_*")]
-        SMSG_SUMMON_RAID_MEMBER_VALIDATE_FAILED         = UNKNOWN_OPCODE,
+        SMSG_SUMMON_RAID_MEMBER_VALIDATE_FAILED         = 3680,
         [Description("EVENT_CHAT_SERVER_RECONNECTED. handler: CGChat* this; m_chatServerDown = 0; RejoinChannels(); ReregisterAddonMessagePrefixes();")]
         SMSG_CHAT_SERVER_RECONNECTED                    = UNKNOWN_OPCODE,
         [Description("Script_RegisterAddonPrefix. Introduced in patch 4.1.0.")]
-        CMSG_REGISTER_ADDON_PREFIXES                    = UNKNOWN_OPCODE,
+        CMSG_REGISTER_ADDON_PREFIXES                    = 10336,
         [Description("Sent in CGChat::ReregisterAddonMessagePrefixes. Introduced in patch 4.1.0.")]
-        CMSG_UNREGISTER_ALL_ADDON_PREFIXES              = UNKNOWN_OPCODE,
+        CMSG_UNREGISTER_ALL_ADDON_PREFIXES              = 8736,
 
         [Description("packed: uint64 guild, uint64 player")]
-        CMSG_GUILD_GET_ROSTER                           = UNKNOWN_OPCODE, /* old 0x089, */
-        SMSG_GUILD_ROSTER                               = UNKNOWN_OPCODE, /* old 0x08A, */
+        CMSG_GUILD_GET_ROSTER                           = 5505, /* old 0x089, */
+        SMSG_GUILD_ROSTER                               = 7828, /* old 0x08A, */
 
-        SMSG_ALL_ACHIEVEMENT_DATA                       = UNKNOWN_OPCODE,
-        SMSG_RESPOND_INSPECT_ACHIEVEMENTS               = UNKNOWN_OPCODE,
+        SMSG_ALL_ACHIEVEMENT_DATA                       = 1248,
+        SMSG_RESPOND_INSPECT_ACHIEVEMENTS               = 7909,
 
         SMSG_AUCTION_LIST_RESULT                        = UNKNOWN_OPCODE, /* old 0x25C, */
 
         [Description("packed: uint64 guild")]
-        CMSG_GUILD_GET_RANKS                            = UNKNOWN_OPCODE,
+        CMSG_GUILD_GET_RANKS                            = 5377,
         [Description("Sent after SMSG_LOAD_EQUIPMENT_SET on init. Sent after SMSG[_COMPRESSED]_GUILD_ROSTER during playtime")]
-        SMSG_GUILD_RANKS                                = UNKNOWN_OPCODE,
+        SMSG_GUILD_RANKS                                = 7857,
 
         [Description("Sent in lua RequestGuildPartyState. packed: uint64 player, uint64 guild")]
-        CMSG_REQUEST_GUILD_PARTY_STATE                  = UNKNOWN_OPCODE,
+        CMSG_REQUEST_GUILD_PARTY_STATE                  = 480,
         [Description("triggers event GUILD_PARTY_STATE_UPDATED. local inGuildParty, numGuildPresent, numGuildRequired, xpMultiplier = InGuildParty();. uint8 InGuildParty (fulfill), uint32 numGuildPresent, uint32 numGuildRequired, float xpMultiplier")]
-        SMSG_GUILD_PARTY_STATE                          = UNKNOWN_OPCODE,
+        SMSG_GUILD_PARTY_STATE                          = 3729,
 
         [Description("Sent on connection termination. Introduced somewhere between 4.0.3 and 4.0.6.")]
-        CMSG_LOG_DISCONNECT                             = UNKNOWN_OPCODE,
+        CMSG_LOG_DISCONNECT                             = 16459,
 
         [Description("uint64 guild")]
-        CMSG_GUILD_REQUEST_GUILD_XP                     = UNKNOWN_OPCODE,
-        SMSG_GUILD_SEND_GUILD_XP                        = UNKNOWN_OPCODE,
+        CMSG_GUILD_REQUEST_GUILD_XP                     = 15617,
+        SMSG_GUILD_SEND_GUILD_XP                        = 7316,
         [Description("uint64 value. COMBATLOG_GUILD_XPGAIN, Jam Opcode")]
-        SMSG_GUILD_XP_EARNED                            = UNKNOWN_OPCODE,
+        SMSG_GUILD_XP_EARNED                            = 7813,
         [Description("uint64 guild")]
-        CMSG_GUILD_QUERY_NEWS                           = UNKNOWN_OPCODE,
-        SMSG_GUILD_NEWS                                 = UNKNOWN_OPCODE,
-        SMSG_GUILD_NEWS_DELETED                         = UNKNOWN_OPCODE,
+        CMSG_GUILD_QUERY_NEWS                           = 21897,
+        SMSG_GUILD_NEWS                                 = 3169,
+        SMSG_GUILD_NEWS_DELETED                         = 5205,
         [Description("uint64 guild")]
-        CMSG_GUILD_REQUEST_MAX_DAILY_XP                 = UNKNOWN_OPCODE,
+        CMSG_GUILD_REQUEST_MAX_DAILY_XP                 = 15625,
         [Description("uint64 limit")]
-        SMSG_GUILD_SEND_MAX_DAILY_XP                    = UNKNOWN_OPCODE,
-        CMSG_GUILD_QUERY_RECIPES                        = UNKNOWN_OPCODE,
-        CMSG_GUILD_QUERY_MEMBER_RECIPES                 = UNKNOWN_OPCODE,
-        SMSG_GUILD_MEMBER_RECIPES                       = UNKNOWN_OPCODE,
-        SMSG_GUILD_KNOWN_RECIPES                        = UNKNOWN_OPCODE,
-        CMSG_GUILD_QUERY_MEMBERS_FOR_RECIPE             = UNKNOWN_OPCODE,
-        SMSG_GUILD_MEMBERS_WITH_RECIPE                  = UNKNOWN_OPCODE,
-        CMSG_GUILD_CHALLENGE_UPDATE_REQUEST             = UNKNOWN_OPCODE,
-        SMSG_GUILD_CHALLENGE_UPDATE                     = UNKNOWN_OPCODE,
-        SMSG_GUILD_CHALLENGE_COMPLETED                  = UNKNOWN_OPCODE,
-        SMSG_GUILD_MEMBER_UPDATE_NOTE                   = UNKNOWN_OPCODE,
-        SMSG_GUILD_MOVED                                = UNKNOWN_OPCODE,
-        SMSG_GUILD_MOVE_STARTING                        = UNKNOWN_OPCODE,
-        SMSG_GUILD_RESET                                = UNKNOWN_OPCODE,
-        SMSG_GUILD_CRITERIA_DELETED                     = UNKNOWN_OPCODE,
-        SMSG_GUILD_CRITERIA_UPDATE                      = UNKNOWN_OPCODE,
-        CMSG_GUILD_SET_FOCUSED_ACHIEVEMENT              = UNKNOWN_OPCODE,
-        SMSG_GUILD_REPUTATION_WEEKLY_CAP                = UNKNOWN_OPCODE,
-        CMSG_GUILD_NEWS_UPDATE_STICKY                   = UNKNOWN_OPCODE,
-        SMSG_GUILD_REPUTATION_REACTION_CHANGED          = UNKNOWN_OPCODE,
-        SMSG_GUILD_ACHIEVEMENT_DELETED                  = UNKNOWN_OPCODE,
-        CMSG_GUILD_GET_ACHIEVEMENT_MEMBERS              = UNKNOWN_OPCODE,
-        SMSG_GUILD_ACHIEVEMENT_MEMBERS                  = UNKNOWN_OPCODE,
-        CMSG_REQUEST_GUILD_REWARDS_LIST                 = UNKNOWN_OPCODE,
-        SMSG_GUILD_REWARD_LIST                          = UNKNOWN_OPCODE,
-        CMSG_GUILD_SET_ACHIEVEMENT_TRACKING             = UNKNOWN_OPCODE,
-        CMSG_GUILD_AUTO_DECLINE_INVITATION              = UNKNOWN_OPCODE,
+        SMSG_GUILD_SEND_MAX_DAILY_XP                    = 5764,
+        CMSG_GUILD_QUERY_RECIPES                        = 21889,
+        CMSG_GUILD_QUERY_MEMBER_RECIPES                 = 21901,
+        SMSG_GUILD_MEMBER_RECIPES                       = 1108,
+        SMSG_GUILD_KNOWN_RECIPES                        = 5232,
+        CMSG_GUILD_QUERY_MEMBERS_FOR_RECIPE             = 23809,
+        SMSG_GUILD_MEMBERS_WITH_RECIPE                  = 5284,
+        CMSG_GUILD_CHALLENGE_UPDATE_REQUEST             = 15757,
+        SMSG_GUILD_CHALLENGE_UPDATE                     = 1572,
+        SMSG_GUILD_CHALLENGE_COMPLETED                  = 3728,
+        SMSG_GUILD_MEMBER_UPDATE_NOTE                   = 3269,
+        SMSG_GUILD_MOVED                                = 3649,
+        SMSG_GUILD_MOVE_STARTING                        = 3301,
+        SMSG_GUILD_RESET                                = 7765,
+        SMSG_GUILD_CRITERIA_DELETED                     = 7201,
+        SMSG_GUILD_CRITERIA_UPDATE                      = 5217,
+        CMSG_GUILD_SET_FOCUSED_ACHIEVEMENT              = 23941,
+        SMSG_GUILD_REPUTATION_WEEKLY_CAP                = 1220,
+        CMSG_GUILD_NEWS_UPDATE_STICKY                   = 21765,
+        SMSG_GUILD_REPUTATION_REACTION_CHANGED          = 5300,
+        SMSG_GUILD_ACHIEVEMENT_DELETED                  = 1185,
+        CMSG_GUILD_GET_ACHIEVEMENT_MEMBERS              = 29953,
+        SMSG_GUILD_ACHIEVEMENT_MEMBERS                  = 5636,
+        CMSG_REQUEST_GUILD_REWARDS_LIST                 = 11077,
+        SMSG_GUILD_REWARD_LIST                          = 1648,
+        CMSG_GUILD_SET_ACHIEVEMENT_TRACKING             = 29965,
+        CMSG_GUILD_AUTO_DECLINE_INVITATION              = 32009,
 
         // guild recruiting
         [Description("EVENT_LF_GUILD_POST_UPDATED. uint8 flags, if (0x80) { uint32s, string, uint32s }. Script_GetLookingForGuildSettings. You are in a guild, and your guild is recruiting.")]
-        SMSG_LF_GUILD_POST = UNKNOWN_OPCODE,
+        SMSG_LF_GUILD_POST = 3605,
         [Description("Script_SetLookingForGuildSettings. You are in a guild, and your guild is recruiting.")]
-        CMSG_LF_GUILD_SET_GUILD_POST = UNKNOWN_OPCODE,
+        CMSG_LF_GUILD_SET_GUILD_POST = 6018,
         [Description("Script_RequestLookingForGuildSettings. You are in a guild, and your guild is recruiting.")]
-        CMSG_LF_GUILD_GET_GUILD_POST = UNKNOWN_OPCODE,
+        CMSG_LF_GUILD_GET_GUILD_POST = 21769,
         [Description("Script_RequestGuildApplicantsList. uint32 recruitUpdateTime. You are in a guild, and your guild is recruiting.")]
-        CMSG_LF_GUILD_GET_RECRUITS = UNKNOWN_OPCODE,
+        CMSG_LF_GUILD_GET_RECRUITS = 32013,
         [Description("EVENT_LF_GUILD_RECRUITS_UPDATED. You are in a guild, and your guild is recruiting.")]
-        SMSG_LF_GUILD_RECRUITS = UNKNOWN_OPCODE,
+        SMSG_LF_GUILD_RECRUITS = 1172,
         [Description("You are in a guild, and your guild is recruiting.")]
-        SMSG_LF_GUILD_APPLICANT_LIST_CHANGED = UNKNOWN_OPCODE,
+        SMSG_LF_GUILD_APPLICANT_LIST_CHANGED = 3616,
         [Description("Script_RequestGuildMembership. You are not in a guild, and you are willing to join one.")]
-        CMSG_LF_GUILD_ADD_RECRUIT = UNKNOWN_OPCODE,
+        CMSG_LF_GUILD_ADD_RECRUIT = 6016,
         [Description("Script_CancelGuildMembershipRequest. You are not in a guild, and you are willing to join one.")]
-        CMSG_LF_GUILD_REMOVE_RECRUIT = UNKNOWN_OPCODE,
+        CMSG_LF_GUILD_REMOVE_RECRUIT = 7565,
         [Description("Script_SetLookingForGuildSettings, Script_RequestRecruitingGuildsList. You are not in a guild, and you are willing to join one.")]
-        CMSG_LF_GUILD_BROWSE = UNKNOWN_OPCODE,
+        CMSG_LF_GUILD_BROWSE = 1410,
         [Description("EVENT_LF_GUILD_BROWSE_UPDATED. You are not in a guild, and you are willing to join one.")]
-        SMSG_LF_GUILD_BROWSE = UNKNOWN_OPCODE,
+        SMSG_LF_GUILD_BROWSE = 5345,
         [Description("EVENT_LF_GUILD_MEMBERSHIP_LIST_CHANGED sends CMSG_LF_GUILD_GET_REQUEST_MEMBERSHIP_LIST. You are not in a guild, and you are willing to join one.")]
-        SMSG_LF_GUILD_APPLICATIONS_LIST_CHANGED = UNKNOWN_OPCODE,
+        SMSG_LF_GUILD_APPLICATIONS_LIST_CHANGED = 3268,
         [Description("Script_RequestGuildMembershipList. You are not in a guild, and you are willing to join one.")]
-        CMSG_LF_GUILD_GET_APPLICATIONS = UNKNOWN_OPCODE,
+        CMSG_LF_GUILD_GET_APPLICATIONS = 23821,
         [Description("EVENT_LF_GUILD_MEMBERSHIP_LIST_UPDATED. You are not in a guild, and you are willing to join one.")]
-        SMSG_LF_GUILD_APPLICATIONS = UNKNOWN_OPCODE,
-        SMSG_LF_GUILD_COMMAND_RESULT = UNKNOWN_OPCODE,
-        CMSG_LF_GUILD_DECLINE_RECRUIT = UNKNOWN_OPCODE,
+        SMSG_LF_GUILD_APPLICATIONS = 1668,
+        SMSG_LF_GUILD_COMMAND_RESULT = 3637,
+        CMSG_LF_GUILD_DECLINE_RECRUIT = 13573,
 
         // archaeology
         [Description("Script_RequestArtifactCompletionHistory")]
-        CMSG_REQUEST_RESEARCH_HISTORY = UNKNOWN_OPCODE,
-        SMSG_SETUP_RESEARCH_HISTORY = UNKNOWN_OPCODE,
-        SMSG_RESEARCH_COMPLETE = UNKNOWN_OPCODE,
+        CMSG_REQUEST_RESEARCH_HISTORY = 2945,
+        SMSG_SETUP_RESEARCH_HISTORY = 5184,
+        SMSG_RESEARCH_COMPLETE = 5281,
 
         [Description("Script_InitiateRolePoll")]
-        CMSG_INITIATE_ROLE_POLL = UNKNOWN_OPCODE,
+        CMSG_INITIATE_ROLE_POLL = 0,
         [Description("Script_UnitSetRole")]
-        CMSG_SET_ROLE = UNKNOWN_OPCODE,
-        SMSG_ROLE_POLL_INFORM = UNKNOWN_OPCODE,
-        SMSG_ROLE_CHANGED_INFORM = UNKNOWN_OPCODE,
+        CMSG_SET_ROLE = 6225,
+        SMSG_ROLE_POLL_INFORM = 3157,
+        SMSG_ROLE_CHANGED_INFORM = 1556,
         [Description("Script_SpellCancelQueuedSpell")]
-        CMSG_CANCEL_QUEUED_SPELL = UNKNOWN_OPCODE,
+        CMSG_CANCEL_QUEUED_SPELL = 10533,
         [Description("Script_SetCemeteryPreference")]
-        CMSG_SET_PREFERRED_CEMETERY = UNKNOWN_OPCODE,
+        CMSG_SET_PREFERRED_CEMETERY = 960,
         [Description("Script_PortGraveyard")]
-        CMSG_PORT_GRAVEYARD = UNKNOWN_OPCODE,
+        CMSG_PORT_GRAVEYARD = 10692,
         [Description("Sent after SMSG_AUTH_RESPONSE.")]
-        SMSG_HOTFIX_NOTIFY_BLOB = UNKNOWN_OPCODE,
-        SMSG_HOTFIX_NOTIFY = UNKNOWN_OPCODE,
-        CMSG_DB_QUERY_BULK = UNKNOWN_OPCODE,
-        SMSG_DB_REPLY = UNKNOWN_OPCODE,
+        SMSG_HOTFIX_NOTIFY_BLOB = 1237,
+        SMSG_HOTFIX_NOTIFY = 3604,
+        CMSG_DB_QUERY_BULK = 18441,
+        SMSG_DB_REPLY = 1745,
         [Description("Sent after SMSG_INIT_WORLD_STATES")]
-        SMSG_PHASE_SHIFT_CHANGE = UNKNOWN_OPCODE,
+        SMSG_PHASE_SHIFT_CHANGE = 7713,
         [Description("Sent after SMSG_PHASE_SHIFT_CHANGE. Jam opcode")]
-        SMSG_SETUP_CURRENCY = UNKNOWN_OPCODE,
+        SMSG_SETUP_CURRENCY = 5632,
         [Description("Sent after SMSG_PVP_CREDIT. Jam opcode")]
-        SMSG_SET_CURRENCY = UNKNOWN_OPCODE,
+        SMSG_SET_CURRENCY = 7204,
         [Description("Sometimes sent after SMSG_SET_CURRENCY on loading")]
-        SMSG_SET_MAX_WEEKLY_QUANTITY = UNKNOWN_OPCODE,
-        CMSG_LOOT_CURRENCY = UNKNOWN_OPCODE,
-        SMSG_CURRENCY_LOOT_REMOVED = UNKNOWN_OPCODE,
-        SMSG_CURRENCY_LOOT_RESTORED = UNKNOWN_OPCODE,
-        CMSG_SET_CURRENCY_FLAGS = UNKNOWN_OPCODE,
+        SMSG_SET_MAX_WEEKLY_QUANTITY = 5253,
+        CMSG_LOOT_CURRENCY = 2944,
+        SMSG_CURRENCY_LOOT_REMOVED = 3248,
+        SMSG_CURRENCY_LOOT_RESTORED = 1553,
+        CMSG_SET_CURRENCY_FLAGS = 9056,
         [Description("Sent on zone switch soon after CMSG_ZONEUPDATE. Sent on timer in CGGameUI::Idle")]
-        CMSG_REQUEST_CEMETERY_LIST = UNKNOWN_OPCODE,
+        CMSG_REQUEST_CEMETERY_LIST = 932,
         [Description("response to CMSG_REQUEST_CEMETERY_LIST")]
-        SMSG_REQUEST_CEMETERY_LIST_RESPONSE = UNKNOWN_OPCODE,
-        CMSG_REQUEST_HONOR_STATS = UNKNOWN_OPCODE,
+        SMSG_REQUEST_CEMETERY_LIST_RESPONSE = 1029,
+        CMSG_REQUEST_HONOR_STATS = 833,
         [Description("EVENT_INSPECT_HONOR_UPDATE. uint16 todayHK, uint16 yesterdayHK, uint8 rank, uint32 lifetimeHK")]
-        SMSG_INSPECT_HONOR_STATS = UNKNOWN_OPCODE,
+        SMSG_INSPECT_HONOR_STATS = 7776,
         [Description("uint32 achievement_id, uint64 guild, uint32 time")]
-        SMSG_GUILD_ACHIEVEMENT_EARNED = UNKNOWN_OPCODE,
+        SMSG_GUILD_ACHIEVEMENT_EARNED = 3232,
         [Description("Sent after SMSG_GUILD_RANKS on loading. uint32 x, for(x) uint32 time, for (x) uint32 id")]
-        SMSG_ALL_GUILD_ACHIEVEMENTS = UNKNOWN_OPCODE,
-        CMSG_LOADING_SCREEN_NOTIFY = UNKNOWN_OPCODE,
+        SMSG_ALL_GUILD_ACHIEVEMENTS = 3249,
+        CMSG_LOADING_SCREEN_NOTIFY = 22528,
         [Description("CGGameUI::m_isOnTournamentRealm, CGGameUI::m_instanceDifficulty, CGGameUI::m_lastWeeklyReset, TrialLevelCap, TrialMoneyCap. Script_isOnTournamentRealm")]
-        SMSG_WORLD_SERVER_INFO = UNKNOWN_OPCODE,
+        SMSG_WORLD_SERVER_INFO = 7680,
         [Description("uint32 for() { uint8, uint32 }")]
-        SMSG_WEEKLY_SPELL_USAGE = UNKNOWN_OPCODE,
-        SMSG_LAST_WEEKLY_RESET = UNKNOWN_OPCODE,
-        SMSG_UPDATE_WEEKLY_SPELL_USAGE = UNKNOWN_OPCODE,
-        SMSG_RESET_WEEKLY_CURRENCY = UNKNOWN_OPCODE,
+        SMSG_WEEKLY_SPELL_USAGE = 5841,
+        SMSG_LAST_WEEKLY_RESET = 5252,
+        SMSG_UPDATE_WEEKLY_SPELL_USAGE = 3669,
+        SMSG_RESET_WEEKLY_CURRENCY = 5664,
 
-        CMSG_GET_PVP_OPTIONS_ENABLED = UNKNOWN_OPCODE,
+        CMSG_GET_PVP_OPTIONS_ENABLED = 2112,
         [Description("EVENT_PVP_TYPES_ENABLED")]
-        SMSG_PVP_OPTIONS_ENABLED = UNKNOWN_OPCODE,
-        SMSG_RATED_BG_STATS = UNKNOWN_OPCODE,
-        CMSG_REQUEST_RATED_BATTLEFIELD_INFO = UNKNOWN_OPCODE,
-        CMSG_START_WAR_GAME = UNKNOWN_OPCODE,
-        SMSG_BATTLEFIELD_STATUS_WAIT_FOR_GROUPS = UNKNOWN_OPCODE,
-        SMSG_BATTLEFIELD_STATUS_ACTIVE = UNKNOWN_OPCODE,
-        SMSG_BATTLEFIELD_STATUS_NEED_CONFIRMATION = UNKNOWN_OPCODE,
-        CMSG_REQUEST_BATTLEFIELD_STATUS = UNKNOWN_OPCODE,
-        SMSG_CHECK_WARGAME_ENTRY = UNKNOWN_OPCODE,
-        CMSG_ACCEPT_WARGAME_INVITE = UNKNOWN_OPCODE,
-        CMSG_COMMENTATOR_START_WARGAME = UNKNOWN_OPCODE,
-        SMSG_COMMENTATOR_PARTY_INFO = UNKNOWN_OPCODE,
-        SMSG_INSPECT_RATED_BG_STATS = UNKNOWN_OPCODE,
-        SMSG_WARGAME_REQUEST_SUCCESSFULLY_SENT_TO_OPPONENT = UNKNOWN_OPCODE,
-        CMSG_JOIN_RATED_BATTLEGROUND = UNKNOWN_OPCODE,
-        SMSG_RATED_BATTLEFIELD_INFO = UNKNOWN_OPCODE,
-        CMSG_REQUEST_RATED_BG_STATS = UNKNOWN_OPCODE,
-        CMSG_REQUEST_INSPECT_RATED_BG_STATS = UNKNOWN_OPCODE,
-        SMSG_RATED_BATTLEGROUND_RATING = UNKNOWN_OPCODE,
-        SMSG_REQUEST_PVP_REWARDS_RESPONSE = UNKNOWN_OPCODE,
-        CMSG_REQUEST_PVP_REWARDS = UNKNOWN_OPCODE,
-        SMSG_SHOW_RATINGS = UNKNOWN_OPCODE,
+        SMSG_PVP_OPTIONS_ENABLED = 5697,
+        SMSG_RATED_BG_STATS = 7905,
+        CMSG_REQUEST_RATED_BATTLEFIELD_INFO = 1,
+        CMSG_START_WAR_GAME = 18520,
+        SMSG_BATTLEFIELD_STATUS_WAIT_FOR_GROUPS = 3201,
+        SMSG_BATTLEFIELD_STATUS_ACTIVE = 7329,
+        SMSG_BATTLEFIELD_STATUS_NEED_CONFIRMATION = 3265,
+        CMSG_REQUEST_BATTLEFIELD_STATUS = 20544,
+        SMSG_CHECK_WARGAME_ENTRY = 1044,
+        CMSG_ACCEPT_WARGAME_INVITE = 16384,
+        CMSG_COMMENTATOR_START_WARGAME = 20481,
+        SMSG_COMMENTATOR_PARTY_INFO = 5173,
+        SMSG_INSPECT_RATED_BG_STATS = 5189,
+        SMSG_WARGAME_REQUEST_SUCCESSFULLY_SENT_TO_OPPONENT = 1537,
+        CMSG_JOIN_RATED_BATTLEGROUND = 2437,
+        SMSG_RATED_BATTLEFIELD_INFO = 3168,
+        CMSG_REQUEST_RATED_BG_STATS = 16408,
+        CMSG_REQUEST_INSPECT_RATED_BG_STATS = 996,
+        SMSG_RATED_BATTLEGROUND_RATING = 3824,
+        SMSG_REQUEST_PVP_REWARDS_RESPONSE = 1089,
+        CMSG_REQUEST_PVP_REWARDS = 8960,
+        SMSG_SHOW_RATINGS = 7408,
 
         [Description("Sent after CMSG_AUTH_CONTINUED_SESSION or CMSG_AUTH_SESSION. Enables Nagle algorithm at server-side. Client's Jam opcode. Introduced in patch 4.1.0.")]
-        CMSG_ENABLE_NAGLE = UNKNOWN_OPCODE,
+        CMSG_ENABLE_NAGLE = 16451,
         [Description("Sent on new connection after CMSG_PLAYER_LOGIN, after SMSG_RESUME_COMMS. Sent in update function of violenceLevel CVar")]
-        CMSG_VIOLENCE_LEVEL = UNKNOWN_OPCODE,
+        CMSG_VIOLENCE_LEVEL = 11141,
 
         [Description("Changes character order. Introduced in patch 4.2.0.")]
-        CMSG_REORDER_CHARACTERS = UNKNOWN_OPCODE,
+        CMSG_REORDER_CHARACTERS = 22529,
         [Description("Introduced in patch 4.2.0. It's handler is called just before JamClientConnectionDispatch check. Handles any opcode. Possibly automatically created on server side.")]
         SMSG_COMPOUND_PACKET = 808,
 
         [Description("Introduced in patch 4.2.0. EVENT_COMPACT_UNIT_FRAME_PROFILES_LOADED")]
-        SMSG_LOAD_CUF_PROFILES = UNKNOWN_OPCODE,
+        SMSG_LOAD_CUF_PROFILES = 5268,
         [Description("Introduced in patch 4.2.0. Script_SaveRaidProfileCopy")]
-        CMSG_SAVE_CUF_PROFILES = UNKNOWN_OPCODE,
+        CMSG_SAVE_CUF_PROFILES = 11040,
 
         [Description("Sent in later CGPlayer_C::PostInit")]
-        CMSG_REQUEST_CATEGORY_COOLDOWNS = UNKNOWN_OPCODE,
-        SMSG_CATEGORY_COOLDOWN = UNKNOWN_OPCODE,
+        CMSG_REQUEST_CATEGORY_COOLDOWNS = 8548,
+        SMSG_CATEGORY_COOLDOWN = 1601,
 
         [Description("Clears UNIT_NPC_EMOTESTATE. Sent for example when you close in-game map. Introduced in patch 4.2")]
         CMSG_CLEAR_EMOTESTATE = UNKNOWN_OPCODE,
 
-        SMSG_SUSPEND_TOKEN = UNKNOWN_OPCODE,
-        CMSG_SUSPEND_TOKEN_RESPONSE = UNKNOWN_OPCODE,
-        CMSG_REQUEST_PARTY_JOIN_UPDATES = UNKNOWN_OPCODE,
-        SMSG_SPELL_INTERRUPT_LOG = UNKNOWN_OPCODE,
-        SMSG_MESSAGE_BOX = UNKNOWN_OPCODE,
-        SMSG_DISPLAY_GAME_ERROR = UNKNOWN_OPCODE,
-        SMSG_AURA_POINTS_DEPLETED = UNKNOWN_OPCODE,
-        SMSG_AVERAGE_ITEM_LEVEL_INFORM = UNKNOWN_OPCODE,
-        CMSG_OBJECT_UPDATE_RESCUED = UNKNOWN_OPCODE,
-        CMSG_OBJECT_UPDATE_FAILED = UNKNOWN_OPCODE,
-        SMSG_SUPPRESS_NPC_GREETINGS = UNKNOWN_OPCODE,
-        CMSG_GENERATE_RANDOM_CHARACTER_NAME = UNKNOWN_OPCODE,
-        SMSG_GENERATE_RANDOM_CHARACTER_NAME_RESULT = UNKNOWN_OPCODE,
-        SMSG_SET_FORGE_MASTER = UNKNOWN_OPCODE,
-        CMSG_CLEAR_RAID_MARKER = UNKNOWN_OPCODE,
-        SMSG_RAID_MARKERS_CHANGED = UNKNOWN_OPCODE,
-        SMSG_RUNE_REGEN_DEBUG = UNKNOWN_OPCODE,
-        SMSG_RESTRICTED_ACCOUNT_WARNING = UNKNOWN_OPCODE,
-        SMSG_DISENCHANT_CREDIT = UNKNOWN_OPCODE,
-        SMSG_ADD_ITEM_PASSIVE = UNKNOWN_OPCODE,
-        SMSG_REMOVE_ITEM_PASSIVE = UNKNOWN_OPCODE,
-        SMSG_SEND_ITEM_PASSIVES = UNKNOWN_OPCODE,
-        CMSG_REFORGE_ITEM = UNKNOWN_OPCODE,
-        SMSG_REFORGE_RESULT = UNKNOWN_OPCODE,
-        SMSG_NOTIFY_MONEY = UNKNOWN_OPCODE,
-        SMSG_STREAMING_MOVIES = UNKNOWN_OPCODE,
-        SMSG_START_TIMER = UNKNOWN_OPCODE,
-        SMSG_DIFFERENT_INSTANCE_FROM_PARTY = UNKNOWN_OPCODE,
-        SMSG_TIME_ADJUSTMENT = UNKNOWN_OPCODE,
-        CMSG_TIME_ADJUSTMENT_RESPONSE = UNKNOWN_OPCODE,
-        CMSG_USED_FOLLOW = UNKNOWN_OPCODE,
-        SMSG_CLEAR_BOSS_EMOTES = UNKNOWN_OPCODE,
-        SMSG_QUEST_COMPLETION_NPC_RESPONSE = UNKNOWN_OPCODE,
+        SMSG_SUSPEND_TOKEN = 7825,
+        CMSG_SUSPEND_TOKEN_RESPONSE = 75,
+        CMSG_REQUEST_PARTY_JOIN_UPDATES = 64,
+        SMSG_SPELL_INTERRUPT_LOG = 3200,
+        SMSG_MESSAGE_BOX = 1665,
+        SMSG_DISPLAY_GAME_ERROR = 1056,
+        SMSG_AURA_POINTS_DEPLETED = 3617,
+        SMSG_AVERAGE_ITEM_LEVEL_INFORM = 3825,
+        CMSG_OBJECT_UPDATE_RESCUED = 11105,
+        CMSG_OBJECT_UPDATE_FAILED = 8516,
+        SMSG_SUPPRESS_NPC_GREETINGS = 1221,
+        CMSG_GENERATE_RANDOM_CHARACTER_NAME = 18456,
+        SMSG_GENERATE_RANDOM_CHARACTER_NAME_RESULT = 5797,
+        SMSG_SET_FORGE_MASTER = 5301,
+        CMSG_CLEAR_RAID_MARKER = 768,
+        SMSG_RAID_MARKERS_CHANGED = 7281,
+        SMSG_RUNE_REGEN_DEBUG = 1189,
+        SMSG_RESTRICTED_ACCOUNT_WARNING = 5728,
+        SMSG_DISENCHANT_CREDIT = 3620,
+        SMSG_ADD_ITEM_PASSIVE = 5216,
+        SMSG_REMOVE_ITEM_PASSIVE = 7844,
+        SMSG_SEND_ITEM_PASSIVES = 1716,
+        CMSG_REFORGE_ITEM = 928,
+        SMSG_REFORGE_RESULT = 1749,
+        SMSG_NOTIFY_MONEY = 5169,
+        SMSG_STREAMING_MOVIES = 7376,
+        SMSG_START_TIMER = 3233,
+        SMSG_DIFFERENT_INSTANCE_FROM_PARTY = 1569,
+        SMSG_TIME_ADJUSTMENT = 1253,
+        CMSG_TIME_ADJUSTMENT_RESPONSE = 10661,
+        CMSG_USED_FOLLOW = 10693,
+        SMSG_CLEAR_BOSS_EMOTES = 5297,
+        SMSG_QUEST_COMPLETION_NPC_RESPONSE = 5365,
 
         // 4.3 jam new
-        SMSG_GUILD_FLAGGED_FOR_RENAME = UNKNOWN_OPCODE,
-        CMSG_GUILD_CHANGE_NAME_REQUEST = UNKNOWN_OPCODE,
-        SMSG_GUILD_CHANGE_NAME_RESULT = UNKNOWN_OPCODE,
-        SMSG_GUILD_MEMBER_DAILY_RESET = UNKNOWN_OPCODE,
-        CMSG_GUILD_REPLACE_GUILD_MASTER = UNKNOWN_OPCODE,
-        CMSG_GUILD_INVITE_BY_NAME = UNKNOWN_OPCODE,
-        SMSG_GUILD_BANK_QUERY_RESULTS = UNKNOWN_OPCODE, // ???
-        SMSG_GUILD_ROSTER_UPDATE = UNKNOWN_OPCODE, // ???
+        SMSG_GUILD_FLAGGED_FOR_RENAME = 3152,
+        CMSG_GUILD_CHANGE_NAME_REQUEST = 23937,
+        SMSG_GUILD_CHANGE_NAME_RESULT = 1041,
+        SMSG_GUILD_MEMBER_DAILY_RESET = 5717,
+        CMSG_GUILD_REPLACE_GUILD_MASTER = 5517,
+        CMSG_GUILD_INVITE_BY_NAME = 2072,
+        SMSG_GUILD_BANK_QUERY_RESULTS = 3713, // ???
+        SMSG_GUILD_ROSTER_UPDATE = 3589, // ???
 
         // DF
-        CMSG_DF_PROPOSAL_RESPONSE = UNKNOWN_OPCODE,
-        CMSG_DF_JOIN = UNKNOWN_OPCODE,
-        CMSG_DF_SET_ROLES = UNKNOWN_OPCODE,
-        CMSG_DF_TELEPORT = UNKNOWN_OPCODE,
-        CMSG_DF_BOOT_PLAYER_VOTE = UNKNOWN_OPCODE,
-        CMSG_DF_GET_SYSTEM_INFO = UNKNOWN_OPCODE,
-        CMSG_DF_SET_COMMENT = UNKNOWN_OPCODE,
-        CMSG_DF_GET_JOIN_STATUS = UNKNOWN_OPCODE,
-        CMSG_DF_LEAVE = UNKNOWN_OPCODE,
-        CMSG_DF_SEARCH_JOIN = UNKNOWN_OPCODE,
-        CMSG_DF_SEARCH_LEAVE = UNKNOWN_OPCODE,
-        SMSG_SET_DF_FAST_LAUNCH_RESULT = UNKNOWN_OPCODE,
+        CMSG_DF_PROPOSAL_RESPONSE = 18449,
+        CMSG_DF_JOIN = 4185,
+        CMSG_DF_SET_ROLES = 20560,
+        CMSG_DF_TELEPORT = 6208,
+        CMSG_DF_BOOT_PLAYER_VOTE = 2128,
+        CMSG_DF_GET_SYSTEM_INFO = 2129,
+        CMSG_DF_SET_COMMENT = 22545,
+        CMSG_DF_GET_JOIN_STATUS = 2049,
+        CMSG_DF_LEAVE = 4097,
+        CMSG_DF_SEARCH_JOIN = 18505,
+        CMSG_DF_SEARCH_LEAVE = 6169,
+        SMSG_SET_DF_FAST_LAUNCH_RESULT = 5696,
 
-        SMSG_LFG_UPDATE_STATUS = UNKNOWN_OPCODE,
-        CMSG_SET_EVERYONE_IS_ASSISTANT = UNKNOWN_OPCODE,
-        SMSG_RESET_COMPRESSION_CONTEXT = UNKNOWN_OPCODE,
-        SMSG_CUSTOM_LOAD_SCREEN = UNKNOWN_OPCODE, // ???
-        SMSG_GAME_EVENT_DEBUG_LOG = UNKNOWN_OPCODE,
-        SMSG_SERVER_PERF = UNKNOWN_OPCODE, // ???
-        SMSG_FLOOD_DETECTED = UNKNOWN_OPCODE,
-        SMSG_AREA_TRIGGER_MOVEMENT_UPDATE = UNKNOWN_OPCODE,
-        SMSG_LFG_SLOT_INVALID = UNKNOWN_OPCODE,
-        SMSG_XP_GAIN_ABORTED = UNKNOWN_OPCODE,
-        SMSG_CHAT_IGNORED_ACCOUNT_MUTED = UNKNOWN_OPCODE,
-        SMSG_MAP_OBJ_EVENTS = UNKNOWN_OPCODE,
-        SMSG_DUMP_RIDE_TICKETS_RESPONSE = UNKNOWN_OPCODE,
-        SMSG_UPDATE_SERVER_PLAYER_POSITION = UNKNOWN_OPCODE,
-        CMSG_BATTLEFIELD_LEAVE = UNKNOWN_OPCODE,
-        SMSG_CLEAR_COOLDOWNS = UNKNOWN_OPCODE,
-        SMSG_LOOT_CONTENTS = UNKNOWN_OPCODE,
-        SMSG_PRINT_NOTIFICATION = UNKNOWN_OPCODE,
-        SMSG_GAME_OBJECT_ACTIVATE_ANIM_KIT = UNKNOWN_OPCODE,
-        SMSG_LFG_UPDATE_STATUS_NONE = UNKNOWN_OPCODE,
-        SMSG_ACCOUNT_INFO_RESPONSE = UNKNOWN_OPCODE,
-        CMSG_UNLEARN_SPECIALIZATION = UNKNOWN_OPCODE,
-        SMSG_FAILED_PLAYER_CONDITION = UNKNOWN_OPCODE,
-        SMSG_DONT_AUTO_PUSH_SPELLS_TO_ACTION_BAR = UNKNOWN_OPCODE,
-        SMSG_UPDATE_DUNGEON_ENCOUNTER_FOR_LOOT = UNKNOWN_OPCODE,
-        SMSG_UPDATE_ACTION_BUTTONS = UNKNOWN_OPCODE,
-        SMSG_MISSILE_CANCEL = UNKNOWN_OPCODE,
-        SMSG_ITEM_EXPIRE_PURCHASE_REFUND = UNKNOWN_OPCODE,
+        SMSG_LFG_UPDATE_STATUS = 7873,
+        CMSG_SET_EVERYONE_IS_ASSISTANT = 22609,
+        SMSG_RESET_COMPRESSION_CONTEXT = 4392,
+        SMSG_CUSTOM_LOAD_SCREEN = 5780, // ???
+        SMSG_GAME_EVENT_DEBUG_LOG = 3253,
+        SMSG_SERVER_PERF = 3793, // ???
+        SMSG_FLOOD_DETECTED = 4904,
+        SMSG_AREA_TRIGGER_MOVEMENT_UPDATE = 7184,
+        SMSG_LFG_SLOT_INVALID = 5637,
+        SMSG_XP_GAIN_ABORTED = 1104,
+        SMSG_CHAT_IGNORED_ACCOUNT_MUTED = 7232,
+        SMSG_MAP_OBJ_EVENTS = 7333,
+        SMSG_DUMP_RIDE_TICKETS_RESPONSE = 1061,
+        SMSG_UPDATE_SERVER_PLAYER_POSITION = 1121,
+        CMSG_BATTLEFIELD_LEAVE = 8993,
+        SMSG_CLEAR_COOLDOWNS = 3280,
+        SMSG_LOOT_CONTENTS = 1589,
+        SMSG_PRINT_NOTIFICATION = 1616,
+        SMSG_GAME_OBJECT_ACTIVATE_ANIM_KIT = 7921,
+        SMSG_LFG_UPDATE_STATUS_NONE = 5684,
+        SMSG_ACCOUNT_INFO_RESPONSE = 3156,
+        CMSG_UNLEARN_SPECIALIZATION = 2816,
+        SMSG_FAILED_PLAYER_CONDITION = 5204,
+        SMSG_DONT_AUTO_PUSH_SPELLS_TO_ACTION_BAR = 7349,
+        SMSG_UPDATE_DUNGEON_ENCOUNTER_FOR_LOOT = 1137,
+        SMSG_UPDATE_ACTION_BUTTONS = 5201,
+        SMSG_MISSILE_CANCEL = 7701,
+        SMSG_ITEM_EXPIRE_PURCHASE_REFUND = 3236,
 
-        SMSG_VOID_ITEM_SWAP_RESPONSE = UNKNOWN_OPCODE,
-        CMSG_VOID_STORAGE_TRANSFER = UNKNOWN_OPCODE,
-        SMSG_VOID_TRANSFER_RESULT = UNKNOWN_OPCODE,
-        CMSG_UNLOCK_VOID_STORAGE = UNKNOWN_OPCODE,
-        CMSG_SWAP_VOID_ITEM = UNKNOWN_OPCODE,
-        CMSG_QUERY_VOID_STORAGE = UNKNOWN_OPCODE,
-        SMSG_VOID_STORAGE_FAILED = UNKNOWN_OPCODE,
-        SMSG_VOID_STORAGE_CONTENTS = UNKNOWN_OPCODE,
-        SMSG_VOID_STORAGE_TRANSFER_CHANGES = UNKNOWN_OPCODE,
+        SMSG_VOID_ITEM_SWAP_RESPONSE = 3252,
+        CMSG_VOID_STORAGE_TRANSFER = 357,
+        SMSG_VOID_TRANSFER_RESULT = 5856,
+        CMSG_UNLOCK_VOID_STORAGE = 8453,
+        CMSG_SWAP_VOID_ITEM = 2309,
+        CMSG_QUERY_VOID_STORAGE = 10656,
+        SMSG_VOID_STORAGE_FAILED = 3136,
+        SMSG_VOID_STORAGE_CONTENTS = 7728,
+        SMSG_VOID_STORAGE_TRANSFER_CHANGES = 1728,
 
-        CMSG_TRANSMOGRIFY_ITEMS = UNKNOWN_OPCODE,
+        CMSG_TRANSMOGRIFY_ITEMS = 929,
 
-        CMSG_GUILD_MEMBER_SEND_SOR_REQUEST = UNKNOWN_OPCODE,
-        CMSG_SEND_SOR_REQUEST_VIA_BNET_ACCOUNT_ID = UNKNOWN_OPCODE,
-        CMSG_SEND_SOR_REQUEST_VIA_ADDRESS = UNKNOWN_OPCODE,
-        SMSG_SOR_START_EXPERIENCE_INCOMPLETE = UNKNOWN_OPCODE,
+        CMSG_GUILD_MEMBER_SEND_SOR_REQUEST = 13581,
+        CMSG_SEND_SOR_REQUEST_VIA_BNET_ACCOUNT_ID = 16473,
+        CMSG_SEND_SOR_REQUEST_VIA_ADDRESS = 4105,
+        SMSG_SOR_START_EXPERIENCE_INCOMPLETE = 3284,
+
+        [Description("Added in 4.3.2")]
+        SMSG_WAIT_QUEUE_UPDATE = 3297,
+        [Description("Added in 4.3.2")]
+        SMSG_WAIT_QUEUE_FINISH = 7328,
     }
 /*
         [Description("")]
