@@ -7,35 +7,35 @@
         Title="{x:Static wow:Strings.Gossip_Title}" Height="422" Width="823" MinWidth="400" MinHeight="200"
         WindowStartupLocation="CenterOwner" Closing="Window_Closing"
         kwpf:WindowBehavior.HasTitleBarMaximizeButton="false">
-    <Window.Resources>
-        <Style x:Key="NoHideSelection" TargetType="{x:Type Control}">
-            <Style.Resources>
-                <SolidColorBrush x:Key="{x:Static SystemColors.ControlBrushKey}" Color="{x:Static SystemColors.HighlightColor}"/>
-            </Style.Resources>
-        </Style>
-        <Style TargetType="{x:Type ListViewItem}" BasedOn="{StaticResource NoHideSelection}">
-            <Style.Triggers>
-                <Trigger Property="IsSelected" Value="True">
-                    <Setter Property="Foreground">
-                        <Setter.Value>
-                            <SolidColorBrush Color="{x:Static SystemColors.HighlightTextColor}"/>
-                        </Setter.Value>
-                    </Setter>
-                </Trigger>
-            </Style.Triggers>
-        </Style>
-        <Style TargetType="{x:Type TreeViewItem}" BasedOn="{StaticResource NoHideSelection}">
-            <Style.Triggers>
-                <Trigger Property="IsSelected" Value="True">
-                    <Setter Property="Foreground">
-                        <Setter.Value>
-                            <SolidColorBrush Color="{x:Static SystemColors.HighlightTextColor}"/>
-                        </Setter.Value>
-                    </Setter>
-                </Trigger>
-            </Style.Triggers>
-        </Style>
-    </Window.Resources>
+  <Window.Resources>
+    <Style x:Key="NoHideSelection" TargetType="{x:Type Control}">
+      <Style.Resources>
+        <SolidColorBrush x:Key="{x:Static SystemColors.ControlBrushKey}" Color="{x:Static SystemColors.HighlightColor}"/>
+      </Style.Resources>
+    </Style>
+    <Style TargetType="{x:Type ListViewItem}" BasedOn="{StaticResource NoHideSelection}">
+      <Style.Triggers>
+        <Trigger Property="IsSelected" Value="True">
+          <Setter Property="Foreground">
+            <Setter.Value>
+              <SolidColorBrush Color="{x:Static SystemColors.HighlightTextColor}"/>
+            </Setter.Value>
+          </Setter>
+        </Trigger>
+      </Style.Triggers>
+    </Style>
+    <Style TargetType="{x:Type TreeViewItem}" BasedOn="{StaticResource NoHideSelection}">
+      <Style.Triggers>
+        <Trigger Property="IsSelected" Value="True">
+          <Setter Property="Foreground">
+            <Setter.Value>
+              <SolidColorBrush Color="{x:Static SystemColors.HighlightTextColor}"/>
+            </Setter.Value>
+          </Setter>
+        </Trigger>
+      </Style.Triggers>
+    </Style>
+  </Window.Resources>
   <Grid Name="MenuListGrid">
     <Grid.RowDefinitions>
       <RowDefinition Height="22"/>
