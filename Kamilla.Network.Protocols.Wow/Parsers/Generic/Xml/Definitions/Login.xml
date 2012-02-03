@@ -8,7 +8,7 @@
     </Simple>
   </Packet>
 
-  <Packet Sender="Server" Opcode="SMSG_AUTH_RESPONSE">
+  <Packet Opcode="SMSG_AUTH_RESPONSE">
     <Simple>
       <Name>Response Code</Name>
       <Type>Byte</Type>
@@ -38,7 +38,7 @@
     </Simple>
   </Packet>
   
-  <Packet Sender="Client" Opcode="CMSG_REALM_SPLIT">
+  <Packet Opcode="CMSG_REALM_SPLIT">
     <Simple>
       <Name>Unknown</Name>
       <Type>Int</Type>
@@ -61,9 +61,9 @@
     </Simple>
   </Packet>
 
-  <Packet Sender="Client" Opcode="CMSG_ENUM_CHARACTERS"/>
+  <Packet Opcode="CMSG_ENUM_CHARACTERS"/>
 
-  <Packet Sender="Client" Opcode="CMSG_CHAR_CREATE">
+  <Packet Opcode="CMSG_CHAR_CREATE">
     <Simple>
       <Name>Name</Name>
       <Type>CString</Type>
@@ -109,7 +109,7 @@
     </Simple>
   </Packet>
 
-  <Packet Sender="Client" Opcode="CMSG_VOICE_SESSION_ENABLE">
+  <Packet Opcode="CMSG_VOICE_SESSION_ENABLE">
     <Simple>
       <Name>Enabled</Name>
       <Type>UShort</Type>
@@ -127,7 +127,7 @@
     </List>
   </Packet>
 
-  <Packet Sender="Client" Opcode="CMSG_PLAYER_LOGIN">
+  <Packet Opcode="CMSG_PLAYER_LOGIN">
     <Simple>
       <Type>OpcodeData</Type>
       <SegmentType>PlayerLogin</SegmentType>
