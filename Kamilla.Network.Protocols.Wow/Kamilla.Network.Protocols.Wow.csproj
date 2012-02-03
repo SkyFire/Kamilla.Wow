@@ -9,7 +9,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Kamilla.Network.Protocols.Wow</RootNamespace>
-    <AssemblyName>Kamilla.Network.Protocols.Wow</AssemblyName>
+    <AssemblyName>Kamilla.Network.Protocols.Wow.Latest</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
