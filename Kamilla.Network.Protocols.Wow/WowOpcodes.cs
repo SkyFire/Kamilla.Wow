@@ -627,7 +627,6 @@ namespace Kamilla.Network.Protocols.Wow
         SMSG_LFG_OFFER_CONTINUE                         = UNKNOWN_OPCODE, /* old 0x293, */
         CMSG_TEST_DROP_RATE                             = UNKNOWN_OPCODE, /* old 0x294, */ // not found 3.3
         SMSG_TEST_DROP_RATE_RESULT                      = UNKNOWN_OPCODE, /* old 0x295, */ // string, showed in console
-        CMSG_LFG_GET_STATUS                             = UNKNOWN_OPCODE, /* old 0x296, */ // EVENT_LFG_UPDATE
         SMSG_SHOW_MAILBOX                               = UNKNOWN_OPCODE, /* old 0x297, */ // mail open from gossip?, EVENT_MAIL_SHOW
         SMSG_RESET_RANGED_COMBAT_TIMER                  = UNKNOWN_OPCODE, /* old 0x298, */ // uint32, some UPDATE_COOLDOWN events
         SMSG_CHAT_NOT_IN_PARTY                          = UNKNOWN_OPCODE, /* old 0x299, */ // uint32, errors: ERR_NOT_IN_GROUP (2,51) and ERR_NOT_IN_RAID (3,39,40)
@@ -785,28 +784,16 @@ namespace Kamilla.Network.Protocols.Wow
         SMSG_ARENA_TEAM_EVENT                           = 13476, /* old 0x357, */
         CMSG_BATTLEMASTER_JOIN_ARENA                    = 13971, /* old 0x358, */
         SMSG_ARENA_TEAM_STATS                           = 9376, /* old 0x35B, */
-        CMSG_LFG_JOIN                                   = UNKNOWN_OPCODE, /* old 0x35C, */    // CMSG JoinLFG
-        CMSG_LFG_LEAVE                                  = UNKNOWN_OPCODE, /* old 0x35D, */    // CMSG LeaveLFG
-        CMSG_LFG_SEARCH_JOIN                            = UNKNOWN_OPCODE, /* old 0x35E, */    // CMSG SearchLFGJoin
-        CMSG_LFG_SEARCH_LEAVE                           = UNKNOWN_OPCODE, /* old 0x35F, */    // CMSG SearchLFGLeave
         SMSG_LFG_SEARCH_RESULTS                         = 3624, /* old 0x360, */    // SMSG uint32, uint32, if(uint8) { uint32 count, for(count) { uint64} }, uint32 count2, uint32, for(count2) { uint64, uint32 flags, if(flags & 0x2) {string}, if(flags & 0x10) {for(3) uint8}, if(flags & 0x80) {uint64, uint32}}, uint32 count3, uint32, for(count3) {uint64, uint32 flags, if(flags & 0x1) {uint8, uint8, uint8, for(3) uint8, uint32, uint32, uint32, uint32, uint32, uint32, float, float, uint32, uint32, uint32, uint32, uint32, float, uint32, uint32, uint32, uint32, uint32, uint32}, if(flags&0x2) string, if(flags&0x4) uint8, if(flags&0x8) uint64, if(flags&0x10) uint8, if(flags&0x20) uint32, if(flags&0x40) uint8, if(flags& 0x80) {uint64, uint32}}
         SMSG_LFG_PROPOSAL_UPDATE                        = 25758, /* old 0x361, */    // SMSG uint32, uint8, uint32, uint32, uint8, for(uint8) {uint32,uint8,uint8,uint8,uint8}
-        CMSG_LFG_PROPOSAL_RESULT                        = UNKNOWN_OPCODE, /* old 0x362, */    // CMSG AcceptProposal, RejectProposal
         SMSG_LFG_ROLE_CHECK_UPDATE                      = UNKNOWN_OPCODE, /* old 0x363, */    // SMSG uint32, uint8, for(uint8) uint32, uint8, for(uint8) { uint64, uint8, uint32, uint8, }
         SMSG_LFG_JOIN_RESULT                            = 20106, /* old 0x364, */    // SMSG uint32 unk, uint32, if(unk==6) { uint8 count, for(count) uint64 }
         SMSG_LFG_QUEUE_STATUS                           = 17592, /* old 0x365, */    // SMSG uint32 dungeon, uint32 lfgtype, uint32, uint32, uint32, uint32, uint8, uint8, uint8, uint8
-        CMSG_SET_LFG_COMMENT                            = UNKNOWN_OPCODE, /* old 0x366, */    // CMSG SetLFGComment
         SMSG_LFG_UPDATE_PLAYER                          = UNKNOWN_OPCODE, /* old 0x367, */    // SMSG uint8, if(uint8) { uint8, uint8, uint8, uint8, if(uint8) for(uint8) uint32, string}
         SMSG_LFG_UPDATE_PARTY                           = UNKNOWN_OPCODE, /* old 0x368, */    // SMSG uint8, if(uint8) { uint8, uint8, uint8, for(3) uint8, uint8, if(uint8) for(uint8) uint32, string}
         SMSG_LFG_UPDATE_SEARCH                          = UNKNOWN_OPCODE, /* old 0x369, */    // SMSG uint8
-        CMSG_LFG_SET_ROLES                              = UNKNOWN_OPCODE, /* old 0x36A, */    // CMSG SetLFGRoles
-        CMSG_LFG_SET_NEEDS                              = UNKNOWN_OPCODE, /* old 0x36B, */    // CMSG SetLFGNeeds
-        CMSG_LFG_BOOT_PLAYER_VOTE                       = UNKNOWN_OPCODE, /* old 0x36C, */    // CMSG SetLFGBootVote
         SMSG_LFG_BOOT_PLAYER                            = UNKNOWN_OPCODE, /* old 0x36D, */    // SMSG uint8, uint8, uint8, uint64, uint32, uint32, uint32, uint32
-        CMSG_LFG_GET_PLAYER_INFO                        = UNKNOWN_OPCODE, /* old 0x36E, */    // CMSG RequestLFDPlayerLockInfo
         SMSG_LFG_PLAYER_INFO                            = UNKNOWN_OPCODE, /* old 0x36F, */    // SMSG uint8, for(uint8) { uint32, uint8, uint32, uint32, uint32, uint32, uint8, for(uint8) {uint32,uint32, uint32}}, uint32, for(uint32) {uint32,uint32}
-        CMSG_LFG_TELEPORT                               = UNKNOWN_OPCODE, /* old 0x370, */    // CMSG LFGTeleport
-        CMSG_LFG_GET_PARTY_INFO                         = UNKNOWN_OPCODE, /* old 0x371, */    // CMSG RequestLFDPartyLockInfo
         SMSG_LFG_PARTY_INFO                             = UNKNOWN_OPCODE, /* old 0x372, */    // SMSG uint8, for(uint8) uint64
         SMSG_TITLE_EARNED                               = 22146, /* old 0x373, */
         CMSG_SET_TITLE                                  = 3584, /* old 0x374, */
@@ -1689,17 +1676,18 @@ namespace Kamilla.Network.Protocols.Wow
         SMSG_GUILD_ROSTER_UPDATE = 20028, // ???
 
         // DF
-        CMSG_DF_PROPOSAL_RESPONSE = 326,
-        CMSG_DF_JOIN = 340,
-        CMSG_DF_SET_ROLES = 772,
-        CMSG_DF_TELEPORT = 870,
-        CMSG_DF_BOOT_PLAYER_VOTE = 2340,
+        CMSG_DF_PROPOSAL_RESPONSE = 326, /* old 0x362, */ // CMSG AcceptProposal, RejectProposal
+        CMSG_DF_JOIN = 340, /* old 0x35C, */ // CMSG JoinLFG
+        CMSG_DF_SET_ROLES = 772, /* old 0x36A, */ // CMSG SetLFGRoles
+        CMSG_DF_TELEPORT = 870, /* old 0x370, */    // CMSG LFGTeleport
+        CMSG_DF_BOOT_PLAYER_VOTE = 2340, /* old 0x36C, */ // CMSG SetLFGBootVote
+        [Description("Successor of CMSG_LFG_GET_PLAYER_INFO/CMSG_LFG_GET_PARTY_INFO, bit = 1 -> playerLock, else partyLock")]
         CMSG_DF_GET_SYSTEM_INFO = 2342,
-        CMSG_DF_SET_COMMENT = 2822,
-        CMSG_DF_GET_JOIN_STATUS = 16708,
-        CMSG_DF_LEAVE = 17158,
-        CMSG_DF_SEARCH_JOIN = 19254,
-        CMSG_DF_SEARCH_LEAVE = 19268,
+        CMSG_DF_SET_COMMENT = 2822, /* old 0x366, */ // CMSG SetLFGComment
+        CMSG_DF_GET_JOIN_STATUS = 16708, /* old 0x296, */ // EVENT_LFG_UPDATE
+        CMSG_DF_LEAVE = 17158, /* old 0x35D, */ // CMSG LeaveLFG
+        CMSG_DF_SEARCH_JOIN = 19254, /* old 0x35E, */ // CMSG SearchLFGJoin
+        CMSG_DF_SEARCH_LEAVE = 19268, /* old 0x35F, */ // CMSG SearchLFGLeave
         SMSG_SET_DF_FAST_LAUNCH_RESULT = 26140,
 
         SMSG_LFG_UPDATE_STATUS = 1034,

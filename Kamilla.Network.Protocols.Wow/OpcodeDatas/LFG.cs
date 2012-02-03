@@ -81,7 +81,7 @@ namespace Kamilla.Network.Protocols.Wow.OpcodeDatas
 
         public override CustomPacket CreatePacket()
         {
-            return base.CreatePacket(WowOpcodes.CMSG_LFG_JOIN, TransferDirection.ToServer);
+            return base.CreatePacket(WowOpcodes.CMSG_DF_JOIN, TransferDirection.ToServer);
         }
     }
 
