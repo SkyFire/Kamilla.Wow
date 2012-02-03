@@ -61,7 +61,7 @@ namespace Kamilla.Network.Protocols.Wow
         CMSG_AUTH_SRP6_PROOF                            = UNKNOWN_OPCODE, /* old 0x034, */
         CMSG_AUTH_SRP6_RECODE                           = UNKNOWN_OPCODE, /* old 0x035, */
         CMSG_CHAR_CREATE                                = UNKNOWN_OPCODE, /* old 0x036, */
-        CMSG_ENUM_CHARACTERS                                  = 16465, /* old 0x037, */
+        CMSG_ENUM_CHARACTERS                            = 16465, /* old 0x037, */
         CMSG_CHAR_DELETE                                = UNKNOWN_OPCODE, /* old 0x038, */
         SMSG_AUTH_SRP6_RESPONSE                         = UNKNOWN_OPCODE, /* old 0x039, */
         SMSG_CHAR_CREATE                                = UNKNOWN_OPCODE, /* old 0x03A, */
@@ -1216,7 +1216,7 @@ namespace Kamilla.Network.Protocols.Wow
         SMSG_LOOT_UPDATE                                = UNKNOWN_OPCODE, /* old 0x4FD, */
         UMSG_UPDATE_GROUP_INFO                          = UNKNOWN_OPCODE, /* old 0x4FE, */
         [Description("Sent after SMSG_AUTH_RESPONSE.")]
-        CMSG_READY_FOR_ACCOUNT_DATA_TIMES               = UNKNOWN_OPCODE, /* old 0x4FF, */
+        CMSG_READY_FOR_ACCOUNT_DATA_TIMES               = 17707, /* old 0x4FF, */
         [Description("lua: QueryQuestsCompleted")]
         CMSG_QUERY_GET_ALL_QUESTS                       = UNKNOWN_OPCODE, /* old 0x500, */
         [Description("response to CMSG_QUERY_GET_ALL_QUESTS")]
