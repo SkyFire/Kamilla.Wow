@@ -1493,47 +1493,6 @@
             Sum of two instances of <see cref="T:Kamilla.Vector2"/> structure.
             </returns>
         </member>
-        <member name="T:Kamilla.Network.Viewing.NetworkLogChangedEventHandler">
-            <summary>
-            Handles <see cref="E:Kamilla.Network.Viewing.NetworkLogViewerBase.NetworkLogChanged"/> event.
-            </summary>
-            <param name="sender">
-            The current <see cref="T:Kamilla.Network.Viewing.NetworkLogViewerBase"/>.
-            </param>
-            <param name="e">
-            An instance of <see cref="T:Kamilla.Network.Viewing.NetworkLogChangedEventArgs"/> class
-            that contains the event data.
-            </param>
-        </member>
-        <member name="T:Kamilla.Network.Viewing.NetworkLogChangedEventArgs">
-            <summary>
-            Contains data related to
-            <see cref="E:Kamilla.Network.Viewing.NetworkLogViewerBase.NetworkLogChanged"/> event.
-            </summary>
-        </member>
-        <member name="M:Kamilla.Network.Viewing.NetworkLogChangedEventArgs.#ctor(Kamilla.Network.Logging.NetworkLog,Kamilla.Network.Logging.NetworkLog)">
-            <summary>
-            Initializes a new instance of
-            <see cref="T:Kamilla.Network.Viewing.NetworkLogChangedEventArgs"/> with the specified
-            new and old instances of <see cref="T:Kamilla.Network.Logging.NetworkLog"/>.
-            </summary>
-            <param name="oldLog">
-            The old instance of <see cref="T:Kamilla.Network.Logging.NetworkLog"/>.
-            </param>
-            <param name="newLog">
-            The new instance of <see cref="T:Kamilla.Network.Logging.NetworkLog"/>.
-            </param>
-        </member>
-        <member name="P:Kamilla.Network.Viewing.NetworkLogChangedEventArgs.OldLog">
-            <summary>
-            Gets the old instance of <see cref="T:Kamilla.Network.Logging.NetworkLog"/>.
-            </summary>
-        </member>
-        <member name="P:Kamilla.Network.Viewing.NetworkLogChangedEventArgs.NewLog">
-            <summary>
-            Gets the new instance of <see cref="T:Kamilla.Network.Logging.NetworkLog"/>.
-            </summary>
-        </member>
         <member name="T:Kamilla.Time">
             <summary>
             Contains methods to work with time-representing variables.
@@ -3948,47 +3907,6 @@
         <member name="T:Kamilla.Network.Parsing.UndefinedPacketParser">
             <summary>
             Represents an unkown or undefined packet parser.  This parser does nothing.
-            </summary>
-        </member>
-        <member name="T:Kamilla.Network.Viewing.ProtocolChangedEventHandler">
-            <summary>
-            Handles <see cref="E:Kamilla.Network.Viewing.NetworkLogViewerBase.ProtocolChanged"/> event.
-            </summary>
-            <param name="sender">
-            The current <see cref="T:Kamilla.Network.Viewing.NetworkLogViewerBase"/>.
-            </param>
-            <param name="e">
-            An instance of <see cref="T:Kamilla.Network.Viewing.ProtocolChangedEventArgs"/> class
-            that contains the event data.
-            </param>
-        </member>
-        <member name="T:Kamilla.Network.Viewing.ProtocolChangedEventArgs">
-            <summary>
-            Contains data related to
-            <see cref="E:Kamilla.Network.Viewing.NetworkLogViewerBase.ProtocolChanged"/> event.
-            </summary>
-        </member>
-        <member name="M:Kamilla.Network.Viewing.ProtocolChangedEventArgs.#ctor(Kamilla.Network.Protocols.Protocol,Kamilla.Network.Protocols.Protocol)">
-            <summary>
-            Initializes a new instance of
-            <see cref="T:Kamilla.Network.Viewing.ProtocolChangedEventArgs"/> with the specified
-            new and old instances of <see cref="T:Kamilla.Network.Protocols.Protocol"/>.
-            </summary>
-            <param name="oldProtocol">
-            The old instance of <see cref="T:Kamilla.Network.Protocols.Protocol"/>.
-            </param>
-            <param name="newProtocol">
-            The new instance of <see cref="T:Kamilla.Network.Protocols.Protocol"/>.
-            </param>
-        </member>
-        <member name="P:Kamilla.Network.Viewing.ProtocolChangedEventArgs.OldProtocol">
-            <summary>
-            Gets the old instance of <see cref="T:Kamilla.Network.Protocols.Protocol"/>.
-            </summary>
-        </member>
-        <member name="P:Kamilla.Network.Viewing.ProtocolChangedEventArgs.NewProtocol">
-            <summary>
-            Gets the new instance of <see cref="T:Kamilla.Network.Protocols.Protocol"/>.
             </summary>
         </member>
         <member name="T:Kamilla.Network.SpecialOpcodes">
