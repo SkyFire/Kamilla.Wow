@@ -123,6 +123,9 @@
   <data name="CH_Preview" xml:space="preserve">
     <value>Предпросмотр</value>
   </data>
+  <data name="Close" xml:space="preserve">
+    <value>Закрыть</value>
+  </data>
   <data name="Error" xml:space="preserve">
     <value>Ошибка</value>
   </data>
@@ -233,6 +236,21 @@
   </data>
   <data name="Menu_View" xml:space="preserve">
     <value>Вид</value>
+  </data>
+  <data name="OI_Info" xml:space="preserve">
+    <value>Данные</value>
+  </data>
+  <data name="OI_Opcode" xml:space="preserve">
+    <value>Опкод:</value>
+  </data>
+  <data name="OI_OpenOI" xml:space="preserve">
+    <value>Данные опкодов...</value>
+  </data>
+  <data name="OI_Title" xml:space="preserve">
+    <value>Данные опкодов</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>OK</value>
   </data>
   <data name="ProtocolName" xml:space="preserve">
     <value>World of Warcraft: Катаклизм v4.3.2</value>

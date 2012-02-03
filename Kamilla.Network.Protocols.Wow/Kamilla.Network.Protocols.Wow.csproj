@@ -292,11 +292,15 @@
     <Compile Include="Game\QuestEnums.cs" />
     <Compile Include="Game\Server.cs" />
     <Compile Include="Game\Social.cs" />
+    <Compile Include="Plugins\OpcodeInfoWindow.xaml.cs">
+      <DependentUpon>OpcodeInfoWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Plugins\GossipParser.cs" />
     <Compile Include="Plugins\GossipParserWindow.xaml.cs">
       <DependentUpon>GossipParserWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Plugins\OpcodeInfo.cs" />
     <Compile Include="SpecialWowOpcodes.cs" />
     <Compile Include="Game\SpellEnums.cs" />
     <Compile Include="Game\SplineInfo.cs" />
@@ -360,10 +364,17 @@
     <EmbeddedResource Include="Parsers\Generic\Xml\Definitions\World.xml" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Plugins\OpcodeInfoWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Plugins\GossipParserWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Plugins\OpcodeInfo.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
