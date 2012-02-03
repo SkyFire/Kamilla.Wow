@@ -111,12 +111,14 @@ namespace Kamilla.Network.Protocols.Wow.Plugins
             m_parsingItemsWorker.RunWorkerCompleted += new RunWorkerCompletedEventHandler(m_parsingItemsWorker_RunWorkerCompleted);
             m_parsingItemsWorker.WorkerReportsProgress = true;
             m_parsingItemsWorker.ProgressChanged += new ProgressChangedEventHandler(worker_ProgressChanged);
+            m_parsingItemsWorker.WorkerSupportsCancellation = true;
 
             m_creatingMenuDataWorker = new BackgroundWorker();
             m_creatingMenuDataWorker.DoWork += new DoWorkEventHandler(m_creatingMenuDataWorker_DoWork);
             m_creatingMenuDataWorker.RunWorkerCompleted += new RunWorkerCompletedEventHandler(m_creatingMenuDataWorker_RunWorkerCompleted);
             m_creatingMenuDataWorker.WorkerReportsProgress = true;
             m_creatingMenuDataWorker.ProgressChanged += new ProgressChangedEventHandler(worker_ProgressChanged);
+            m_creatingMenuDataWorker.WorkerSupportsCancellation = true;
 
             ui_rtbSqlOutput.Document.PageWidth = 2000.0;
 
@@ -301,7 +303,7 @@ namespace Kamilla.Network.Protocols.Wow.Plugins
 
             var optSelectQueue = new Queue<GossipSelectOption>();
 
-            for (int i = 0; i < nitems; i++)
+            for (int i = 0; i < nitems && !worker.CancellationPending; i++)
             {
                 var item = items[i];
                 var packet = item.Packet;
@@ -548,8 +550,13 @@ namespace Kamilla.Network.Protocols.Wow.Plugins
                 int newProgress = 100 * i / nitems;
                 if (newProgress != progress)
                     worker.ReportProgress(progress = newProgress);
+            }
 
-                Thread.Sleep(0);
+            if (worker.CancellationPending)
+            {
+                m_objects = new KeyValuePair<WowGuid, ObjectGossip>[0];
+                m_menus = new KeyValuePair<uint, ExtGossipMenu>[0];
+                return;
             }
 
             // Setup names.
@@ -849,7 +856,7 @@ namespace Kamilla.Network.Protocols.Wow.Plugins
             var builder = new StringBuilder(16 * 1024);
             int progress = 0;
 
-            for (int i = 0; i < nMenus; i++)
+            for (int i = 0; i < nMenus && !worker.CancellationPending; i++)
             {
                 var menu = menus[i];
                 var menuId = menu.Menu.MenuId;
@@ -882,6 +889,12 @@ namespace Kamilla.Network.Protocols.Wow.Plugins
                 int newProgress = 100 * i / nMenus;
                 if (newProgress != progress)
                     worker.ReportProgress(progress = newProgress);
+            }
+
+            if (worker.CancellationPending)
+            {
+                m_sql = string.Empty;
+                return;
             }
 
             var text = builder.ToString();
