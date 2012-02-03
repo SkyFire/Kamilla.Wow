@@ -234,4 +234,7 @@
   <data name="Menu_View" xml:space="preserve">
     <value>Вид</value>
   </data>
+  <data name="ProtocolName" xml:space="preserve">
+    <value>World of Warcraft: Катаклизм v4.3.2</value>
+  </data>
 </root>

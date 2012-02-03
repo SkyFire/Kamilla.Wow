@@ -400,7 +400,7 @@ namespace Kamilla.Network.Protocols.Wow {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to World of Warcraft 4.3.0 (&quot;Hour of Twilight&quot;).
+        ///   Looks up a localized string similar to World of Warcraft: Cataclysm v4.3.2.
         /// </summary>
         public static string ProtocolName {
             get {
