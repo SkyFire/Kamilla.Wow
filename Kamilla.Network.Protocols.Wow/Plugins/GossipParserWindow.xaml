@@ -59,7 +59,7 @@
             <RowDefinition Height="1*"/>
             <RowDefinition Height="22"/>
           </Grid.RowDefinitions>
-          <ListView Name="ui_lvObjects" BorderThickness="0" />
+          <ListView Name="ui_lvObjects" BorderThickness="0"/>
           <Label Name="ui_lblSelectedObjects" Grid.Row="1" Padding="5,0" />
         </Grid>
       </GroupBox>
