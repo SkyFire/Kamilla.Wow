@@ -30,22 +30,28 @@ namespace Kamilla.Network.Protocols.Wow.Parsers.Generic.Xml
 
             if (!String.IsNullOrEmpty(this.EnumName))
             {
-                string nameSpace = Assembly.GetExecutingAssembly().GetName().Name;
+                var assembly = Assembly.GetExecutingAssembly();
+                var assemblyName = assembly.GetName().Name;
+                string nameSpace = ProjectInformation.Title + ".Network.Protocols.Wow";
                 string[] searches =
                 {
-                    // game namespace
-                    nameSpace + ".Game.{0}, " + nameSpace,
-                    // base assembly
-                    ProjectInformation.Title + ".Network.Protocols.Wow.{0}, " + ProjectInformation.Title + ".Wow",
-                    // opcode datas
-                    nameSpace + ".OpcodeDatas.{0}, " + nameSpace,
-                    // base namespace
-                    nameSpace + ".{0}, " + nameSpace,
+                    // this assembly, game namespace
+                    nameSpace + ".Game.{0}, " + assemblyName,
+                    // base assembly, base namespace
+                    nameSpace + ".{0}, " + ProjectInformation.Title + ".Wow",
+                    // this assembly, opcodedatas namaspace
+                    nameSpace + ".OpcodeDatas.{0}, " + assemblyName,
+                    // this assembly, base namespace
+                    nameSpace + ".{0}, " + assemblyName,
                 };
 
+                var enumName = this.EnumName;
                 int i = -1;
                 while (T == null && ++i < searches.Length)
-                    T = Type.GetType(string.Format(searches[i], this.EnumName));
+                {
+                    var typeName = string.Format(searches[i], enumName);
+                    T = Type.GetType(typeName);
+                }
 
                 if (T == null)
                     throw new Exception("Type " + this.EnumName + " cannot be found.");
