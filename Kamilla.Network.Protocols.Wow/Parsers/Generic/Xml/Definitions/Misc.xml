@@ -739,13 +739,13 @@
 
   <Packet Opcode="CMSG_LOADING_SCREEN_NOTIFY">
     <Simple>
-      <Name>Loading Screen Active</Name>
-      <Type>UnalignedBool</Type>
-    </Simple>
-    <Simple>
       <Name>Map</Name>
       <Type>UInt</Type>
       <SegmentType>Maps</SegmentType>
+    </Simple>
+    <Simple>
+      <Name>Loading Screen Active</Name>
+      <Type>UnalignedBool</Type>
     </Simple>
   </Packet>
 
