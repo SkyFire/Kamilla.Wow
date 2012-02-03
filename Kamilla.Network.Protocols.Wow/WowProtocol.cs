@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -8,8 +10,6 @@ using System.Windows.Media;
 using Kamilla.Network.Parsing;
 using Kamilla.Network.Protocols.Wow.Parsers.Generic;
 using Kamilla.Network.Viewing;
-using System.Reflection;
-using System.Collections.Generic;
 
 namespace Kamilla.Network.Protocols.Wow
 {
