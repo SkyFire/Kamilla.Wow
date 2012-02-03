@@ -881,16 +881,6 @@
             Stores configuration options.
             </summary>
         </member>
-        <member name="M:Kamilla.Configuration.SuspendSaving">
-            <summary>
-            Prevents the configuration from saving to file automatically.
-            </summary>
-        </member>
-        <member name="M:Kamilla.Configuration.ResumeSaving">
-            <summary>
-            Resumes automatical saving to file.
-            </summary>
-        </member>
         <member name="M:Kamilla.Configuration.GetValue``1(System.String,``0)">
             <summary>
             Gets the value of an option from the configuration file.
@@ -1544,35 +1534,6 @@
             Gets the new instance of <see cref="T:Kamilla.Network.Logging.NetworkLog"/>.
             </summary>
         </member>
-        <member name="T:Kamilla.Network.Viewing.NetworkLogViewerBasePlugin">
-            <summary>
-            Provides an interface for plugins to the
-            <see cref="T:Kamilla.Network.Viewing.NetworkLogViewerBase"/>.
-            </summary>
-        </member>
-        <member name="M:Kamilla.Network.Viewing.NetworkLogViewerBasePlugin.Load(Kamilla.Network.Viewing.NetworkLogViewerBase)">
-            <summary>
-            Loads the current instance of
-            <see cref="T:Kamilla.Network.Viewing.NetworkLogViewerBasePlugin"/>.
-            </summary>
-            <param name="viewer">
-            The <see cref="T:Kamilla.Network.Viewing.NetworkLogViewerBase"/>
-            that the current plugin is attached to.
-            </param>
-            <returns>
-            true if the plugin has successfully integrated with
-            the <see cref="T:Kamilla.Network.Viewing.NetworkLogViewerBase"/>,
-            the current <see cref="T:Kamilla.Network.Logging.NetworkLog"/>,
-            and the current <see cref="T:Kamilla.Network.Protocols.Protocol"/>;
-            otherwise, false.
-            </returns>
-        </member>
-        <member name="M:Kamilla.Network.Viewing.NetworkLogViewerBasePlugin.Unload">
-            <summary>
-            Unloads and releases all resources used by the current instance of
-            <see cref="T:Kamilla.Network.Viewing.NetworkLogViewerBasePlugin"/>.
-            </summary>
-        </member>
         <member name="T:Kamilla.Time">
             <summary>
             Contains methods to work with time-representing variables.
@@ -1744,12 +1705,35 @@
             The <see cref="T:Kamilla.Network.Viewing.ViewerItem"/> that should be flagged for parsing.
             </param>
         </member>
-        <member name="E:Kamilla.Network.Viewing.NetworkLogViewerBase.StyleChanged">
+        <member name="M:Kamilla.Network.Viewing.NetworkLogViewerBase.RegisterPluginCommand(Kamilla.Network.Viewing.Plugins.PluginCommand)">
             <summary>
-            Occurs when <see cref="P:Kamilla.Network.Viewing.NetworkLogViewerBase.Style"/> property changes.
-            
-            Handlers of this event MUST be called from the UI thread if one exists.
+            Registers a <see cref="T:Kamilla.Network.Viewing.Plugins.PluginCommand"/>.
             </summary>
+            <param name="command">
+            The <see cref="T:Kamilla.Network.Viewing.Plugins.PluginCommand"/> that should be registered.
+            </param>
+            <exception cref="T:System.ArgumentNullException">
+            <c>command</c> is null.
+            </exception>
+            <exception cref="T:System.ArgumentException">
+            The provided <see cref="T:Kamilla.Network.Viewing.Plugins.PluginCommand"/> is already
+            registered with the current <see cref="T:Kamilla.Network.Viewing.NetworkLogViewerBase"/>.
+            </exception>
+        </member>
+        <member name="M:Kamilla.Network.Viewing.NetworkLogViewerBase.UnregisterPluginCommand(Kamilla.Network.Viewing.Plugins.PluginCommand)">
+            <summary>
+            Unregisters a <see cref="T:Kamilla.Network.Viewing.Plugins.PluginCommand"/>.
+            </summary>
+            <param name="command">
+            The <see cref="T:Kamilla.Network.Viewing.Plugins.PluginCommand"/> that should be unregistered.
+            </param>
+            <exception cref="T:System.ArgumentNullException">
+            <c>command</c> is null.
+            </exception>
+            <exception cref="T:System.ArgumentException">
+            The provided <see cref="T:Kamilla.Network.Viewing.Plugins.PluginCommand"/> is not
+            registered with the current <see cref="T:Kamilla.Network.Viewing.NetworkLogViewerBase"/>.
+            </exception>
         </member>
         <member name="E:Kamilla.Network.Viewing.NetworkLogViewerBase.ProtocolChanged">
             <summary>
@@ -1789,6 +1773,11 @@
             Handlers of this event should be called from any suiting thread.
             </summary>
         </member>
+        <member name="P:Kamilla.Network.Viewing.NetworkLogViewerBase.InterfaceObject">
+            <summary>
+            Retrieves the object that is responsible for the user interface. This value can be null.
+            </summary>
+        </member>
         <member name="P:Kamilla.Network.Viewing.NetworkLogViewerBase.CurrentLog">
             <summary>
             Gets the currently viewed <see cref="T:Kamilla.Network.Logging.NetworkLog"/>. This value can be null.
@@ -1802,11 +1791,6 @@
         <member name="P:Kamilla.Network.Viewing.NetworkLogViewerBase.Items">
             <summary>
             Gets the collection of items currently loaded.
-            </summary>
-        </member>
-        <member name="P:Kamilla.Network.Viewing.NetworkLogViewerBase.Style">
-            <summary>
-            Retrieves an object that contains style information. This value can be null.
             </summary>
         </member>
         <member name="P:Kamilla.Network.Viewing.NetworkLogViewerBase.WindowHandle">
@@ -1876,6 +1860,51 @@
         <member name="P:Kamilla.Network.Protocols.Protocol.Name">
             <summary>
             Gets the localized name of the current <see cref="T:Kamilla.Network.Protocols.Protocol"/>.
+            </summary>
+        </member>
+        <member name="T:Kamilla.Network.Viewing.Plugins.PluginCommand">
+            <summary>
+            Represents a command to a
+            <see cref="T:Kamilla.Network.Viewing.Plugins.INetworkLogViewerPlugin"/>.
+            </summary>
+        </member>
+        <member name="M:Kamilla.Network.Viewing.Plugins.PluginCommand.#ctor(Kamilla.Network.Viewing.Plugins.INetworkLogViewerPlugin,System.String,System.Windows.Input.KeyGesture,System.Action)">
+            <summary>
+            Initializes a new instance of
+            <see cref="T:Kamilla.Network.Viewing.Plugins.PluginCommand"/> class
+            with the specified command information.
+            </summary>
+            <param name="plugin">
+            The plugin to which the current command belongs.
+            </param>
+            <param name="title">
+            The localized title string of the current command.
+            </param>
+            <param name="gesture">
+            The key gesture that can be used to call the current command. This value can be null.
+            </param>
+            <param name="callback">
+            The delegate that is called when the command is executed.
+            </param>
+        </member>
+        <member name="P:Kamilla.Network.Viewing.Plugins.PluginCommand.Plugin">
+            <summary>
+            Gets the plugin to which the current command belongs.
+            </summary>
+        </member>
+        <member name="P:Kamilla.Network.Viewing.Plugins.PluginCommand.Title">
+            <summary>
+            Gets the localized title string of the current command.
+            </summary>
+        </member>
+        <member name="P:Kamilla.Network.Viewing.Plugins.PluginCommand.Gesture">
+            <summary>
+            Gets the key gesture that can be used to call the current command. This value can be null. 
+            </summary>
+        </member>
+        <member name="P:Kamilla.Network.Viewing.Plugins.PluginCommand.Callback">
+            <summary>
+            Gets the delegate that is called when the command is executed.
             </summary>
         </member>
         <member name="M:Kamilla.Network.Protocols.DefaultProtocol.BaseItemData.#ctor(Kamilla.Network.Viewing.ViewerItem)">
@@ -2069,6 +2098,22 @@
             <summary>
             Occurs when <see cref="P:Kamilla.UICulture.Culture"/> property changes.
             </summary>
+        </member>
+        <member name="T:Kamilla.Network.Viewing.Plugins.INetworkLogViewerPlugin">
+            <summary>
+            Provides an interface for plugins to a
+            <see cref="T:Kamilla.Network.Viewing.NetworkLogViewerBase"/>.
+            </summary>
+        </member>
+        <member name="M:Kamilla.Network.Viewing.Plugins.INetworkLogViewerPlugin.Initialize(Kamilla.Network.Viewing.NetworkLogViewerBase)">
+            <summary>
+            Initializes the current instance of
+            <see cref="T:Kamilla.Network.Viewing.Plugins.INetworkLogViewerPlugin"/>.
+            </summary>
+            <param name="viewer">
+            The <see cref="T:Kamilla.Network.Viewing.NetworkLogViewerBase"/>
+            that the current plugin is attached to.
+            </param>
         </member>
         <member name="T:Kamilla.Network.Logging.NetworkLogFlags">
             <summary>
@@ -3666,34 +3711,6 @@
             In writing mode a <see cref="T:Kamilla.Network.Logging.NetworkLog"/> saves
             all passed packets into a file, and doesn't allow accessing stored data.
             </remarks>
-        </member>
-        <member name="T:Kamilla.Network.Viewing.NetworkLogViewerPluginAttribute">
-            <summary>
-            Indicates <see cref="T:Kamilla.Network.Protocols.Protocol"/>
-            that the current <see cref="T:Kamilla.Network.Viewing.NetworkLogViewerBasePlugin"/> can handle.
-            </summary>
-        </member>
-        <member name="M:Kamilla.Network.Viewing.NetworkLogViewerPluginAttribute.#ctor(System.Type)">
-            <summary>
-            Initializes a new instance of <see cref="T:Kamilla.Network.Viewing.NetworkLogViewerPluginAttribute"/>
-            for the specified <see cref="T:System.Type"/> of <see cref="T:Kamilla.Network.Protocols.Protocol"/>.
-            </summary>
-            <param name="protocol">
-            <see cref="T:System.Type"/> of <see cref="T:Kamilla.Network.Protocols.Protocol"/>
-            that the underlying <see cref="T:Kamilla.Network.Viewing.NetworkLogViewerBasePlugin"/> can handle.
-            </param>
-            <exception cref="T:System.ArgumentNullException">
-            protocol is null.
-            </exception>
-            <exception cref="T:System.ArgumentException">
-            protocol is not subclass of <see cref="T:Kamilla.Network.Protocols.Protocol"/>.
-            </exception>
-        </member>
-        <member name="P:Kamilla.Network.Viewing.NetworkLogViewerPluginAttribute.ProtocolType">
-            <summary>
-            Gets the type of <see cref="T:Kamilla.Network.Protocols.Protocol"/>
-            that the current <see cref="T:Kamilla.Network.Viewing.NetworkLogViewerBasePlugin"/> can handle.
-            </summary>
         </member>
         <member name="T:Kamilla.WPF.WpfExtensions">
             <summary>

@@ -126,4 +126,115 @@
   <data name="ProtocolName" xml:space="preserve">
     <value>World of Warcraft 4.3.0 ("Hour of Twilight")</value>
   </data>
+  <data name="Gossip_AppendSQLOutput" xml:space="preserve">
+    <value>Append SQL Output...</value>
+  </data>
+  <data name="Gossip_AppendSQLOutputTitle" xml:space="preserve">
+    <value>Append SQL Output</value>
+  </data>
+  <data name="Gossip_Data" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="Gossip_ErrorSavingSQLOutput" xml:space="preserve">
+    <value>Failed to write SQL output into file.</value>
+  </data>
+  <data name="Gossip_MenuDesc" xml:space="preserve">
+    <value>Menu #{0}
+Text #{1}
+
+{2} options</value>
+  </data>
+  <data name="Gossip_MenuEntries" xml:space="preserve">
+    <value>Menu Ids</value>
+  </data>
+  <data name="Gossip_MenuN" xml:space="preserve">
+    <value>Menu #{0}</value>
+  </data>
+  <data name="Gossip_Menus" xml:space="preserve">
+    <value>Menus</value>
+  </data>
+  <data name="Gossip_MenusSelected" xml:space="preserve">
+    <value>{0} {0?plural-en:menu:menus} selected</value>
+  </data>
+  <data name="Gossip_NMenus" xml:space="preserve">
+    <value>{0} {0?plural-en:menu:menus}</value>
+  </data>
+  <data name="Gossip_ObjectEntries" xml:space="preserve">
+    <value>Object Ids</value>
+  </data>
+  <data name="Gossip_Objects" xml:space="preserve">
+    <value>Objects</value>
+  </data>
+  <data name="Gossip_ObjectsSelected" xml:space="preserve">
+    <value>{0} {0?plural-en:object:objects} selected</value>
+  </data>
+  <data name="Gossip_OpenParser" xml:space="preserve">
+    <value>Open Gossip Parser...</value>
+  </data>
+  <data name="Gossip_OptionBoxText" xml:space="preserve">
+    <value>  Box text: {0}</value>
+  </data>
+  <data name="Gossip_OptionDesc" xml:space="preserve">
+    <value>Option #{0}
+  Icon: {1}
+  Text: {2}</value>
+  </data>
+  <data name="Gossip_OptionHasPassword" xml:space="preserve">
+    <value>  Clicking asks for password.</value>
+  </data>
+  <data name="Gossip_OptionMoneyRequired" xml:space="preserve">
+    <value>  Money required: {0}</value>
+  </data>
+  <data name="Gossip_OptionTargetMenu" xml:space="preserve">
+    <value>  Clicking shows menu #{0}
+    (double-click the tree item to follow)</value>
+  </data>
+  <data name="Gossip_SaveFileFilter" xml:space="preserve">
+    <value>SQL Files (*.sql)|*.sql|All Files (*.*)|*.*</value>
+  </data>
+  <data name="Gossip_SaveSQLOutput" xml:space="preserve">
+    <value>Save SQL Output...</value>
+  </data>
+  <data name="Gossip_SaveSQLOutputTitle" xml:space="preserve">
+    <value>Save SQL Output</value>
+  </data>
+  <data name="Gossip_ShowMenuEntries" xml:space="preserve">
+    <value>Menu Ids...</value>
+  </data>
+  <data name="Gossip_ShowObjectEntries" xml:space="preserve">
+    <value>Object Ids...</value>
+  </data>
+  <data name="Gossip_ShowTextEntries" xml:space="preserve">
+    <value>Text Ids...</value>
+  </data>
+  <data name="Gossip_SqlInitialMenus" xml:space="preserve">
+    <value>Object '{0}' has the following initial menus: {1}</value>
+  </data>
+  <data name="Gossip_SqlStructure" xml:space="preserve">
+    <value>Creating SQL structure for menu #{0}.</value>
+  </data>
+  <data name="Gossip_SqlUnsupportedObject" xml:space="preserve">
+    <value>Objects of type {0} are not supported ({1})</value>
+  </data>
+  <data name="Gossip_TextEntries" xml:space="preserve">
+    <value>Text Ids</value>
+  </data>
+  <data name="Gossip_Title" xml:space="preserve">
+    <value>Gossip Parser</value>
+  </data>
+  <data name="Menu_Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="Menu_Exit" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="Menu_File" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="Menu_View" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Error</value>
+  </data>
 </root>
