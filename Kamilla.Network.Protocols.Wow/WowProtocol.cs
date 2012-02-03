@@ -20,13 +20,6 @@ namespace Kamilla.Network.Protocols.Wow
             {
             }
 
-            internal void ParserChanged()
-            {
-                this.Changed("ParsingError");
-                this.Changed("Preview");
-                this.Changed("IsUndefinedParser");
-            }
-
             string m_connId;
             string m_preview;
 
@@ -364,8 +357,8 @@ namespace Kamilla.Network.Protocols.Wow
             var item = e.Item;
             if (item.Data == null)
                 item.Data = this.CreateDataForItem(item);
-
-            ((ItemData)item.Data).ParserChanged();
+            else
+                item.NotifyDataChanged();
         }
 
         protected override PacketParser InternalCreateParser(ViewerItem item)
