@@ -8,7 +8,7 @@ using Kamilla.Network.Protocols.Wow.Game;
 namespace Kamilla.Network.Protocols.Wow.OpcodeDatas
 {
     /// <summary>
-    /// 14545
+    /// 15211
     /// </summary>
     public sealed class AuthChallenge : OpcodeData
     {
@@ -28,10 +28,10 @@ namespace Kamilla.Network.Protocols.Wow.OpcodeDatas
 
         public override void Read(StreamHandler Reader)
         {
+            this.Count = Reader.ReadByte();
+            this.Seed = Reader.ReadUInt32();
             this.ClientSeed = Reader.ReadBytes(16);
             this.ServerSeed = Reader.ReadBytes(16);
-            this.Seed = Reader.ReadUInt32();
-            this.Count = Reader.ReadByte();
         }
 
         public override void ToString(StringBuilder builder)
