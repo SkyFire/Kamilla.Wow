@@ -8,6 +8,8 @@ using System.Windows.Media;
 using Kamilla.Network.Parsing;
 using Kamilla.Network.Protocols.Wow.Parsers.Generic;
 using Kamilla.Network.Viewing;
+using System.Reflection;
+using System.Collections.Generic;
 
 namespace Kamilla.Network.Protocols.Wow
 {
@@ -215,6 +217,33 @@ namespace Kamilla.Network.Protocols.Wow
         {
             if (m_viewer != null)
                 throw new InvalidOperationException();
+
+            // Check opcode integrity
+            {
+                Console.WriteLine("Debug: Protocol '{0}' build {1} checking opcode integrity...",
+                    this.CodeName, Disassembly.ClientBuild);
+                var fields = typeof(WowOpcodes).GetFields(BindingFlags.Static | BindingFlags.Public);
+
+                var list = new SortedSet<uint>();
+                foreach (var field in fields)
+                {
+                    var value = (uint)field.GetRawConstantValue();
+                    if (value != SpecialOpcodes.UnknownOpcode)
+                    {
+                        if (!list.Contains(value))
+                            list.Add(value);
+                        else
+                            Console.WriteLine("Error: Protocol '{1}' duplicate opcode value {0}",
+                                value, this.CodeName);
+                    }
+                }
+                Console.WriteLine(
+                    "Debug: Integrity check complete, {0}/{1} ({2:0.00}%) known unique opcode values.",
+                    list.Count,
+                    fields.Length,
+                    list.Count * 100.0 / fields.Length
+                    );
+            }
 
             m_viewer = viewer;
             viewer.ItemQueried += m_itemQueriedHandler;
