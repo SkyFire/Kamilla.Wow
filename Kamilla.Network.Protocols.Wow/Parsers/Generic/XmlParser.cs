@@ -32,7 +32,8 @@ namespace Kamilla.Network.Protocols.Wow.Parsers.Generic
             var resources = exec.GetManifestResourceNames();
             foreach (var file in resources)
             {
-                if (file.EndsWith(".xml", StringComparison.InvariantCultureIgnoreCase))
+                if (file.EndsWith(".xml", StringComparison.InvariantCultureIgnoreCase) &&
+                    file.IndexOf("parsers", StringComparison.InvariantCultureIgnoreCase) >= 0)
                 {
                     streams.Add(exec.GetManifestResourceStream(file));
                     filenames.Add(file);
