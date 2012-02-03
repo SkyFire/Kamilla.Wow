@@ -11,7 +11,7 @@ using Kamilla.Network.Viewing;
 
 namespace Kamilla.Network.Protocols.Wow
 {
-    public sealed class WowLatestProtocol : Protocol
+    public sealed class WowProtocol : Protocol
     {
         sealed class ItemData : DefaultProtocol.BaseItemData
         {
@@ -160,7 +160,7 @@ namespace Kamilla.Network.Protocols.Wow
         ViewerItemEventHandler m_itemQueriedHandler;
         ViewerItemEventHandler m_itemParsingDoneHandler;
 
-        public WowLatestProtocol()
+        public WowProtocol()
         {
             m_itemQueriedHandler = new ViewerItemEventHandler(viewer_ItemQueried);
             m_itemParsingDoneHandler = new ViewerItemEventHandler(viewer_ItemParsingDone);
@@ -169,6 +169,11 @@ namespace Kamilla.Network.Protocols.Wow
         public override string Name
         {
             get { return Strings.ProtocolName; }
+        }
+
+        public override string CodeName
+        {
+            get { return "WowLatest"; }
         }
 
         public override Type OpcodesEnumType
