@@ -16,6 +16,7 @@ namespace Kamilla.Network.Protocols.Wow.Parsers.Generic
             = new Dictionary<PacketSender, Dictionary<WowOpcodes, XmlPacketDefinition>>();
 
         static bool s_initialized = false;
+        static object s_lock = new object();
 
         internal static void Initialize()
         {
@@ -118,7 +119,13 @@ namespace Kamilla.Network.Protocols.Wow.Parsers.Generic
         public static XmlParser GetParser(WowPacket packet)
         {
             if (!s_initialized)
-                Initialize();
+            {
+                lock (s_lock)
+                {
+                    if (!s_initialized)
+                        Initialize();
+                }
+            }
 
             if (Definitions[PacketSender.Any].ContainsKey((WowOpcodes)packet.Opcode))
                 return new XmlParser(Definitions[PacketSender.Any][(WowOpcodes)packet.Opcode]);
