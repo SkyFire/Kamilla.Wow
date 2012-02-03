@@ -18,8 +18,8 @@ namespace Kamilla.Network.Protocols.Wow.Plugins
             m_command = new PluginCommand(this, Strings.Gossip_OpenParser,
                 new KeyGesture(Key.G, ModifierKeys.Control | ModifierKeys.Alt), Clicked);
 
-            viewer.ProtocolChanged += new ProtocolChangedEventHandler(viewer_ProtocolChanged);
-            viewer.NetworkLogChanged += new NetworkLogChangedEventHandler(viewer_NetworkLogChanged);
+            viewer.ProtocolChanged += new EventHandler(viewer_ProtocolChanged);
+            viewer.NetworkLogChanged += new EventHandler(viewer_NetworkLogChanged);
 
             this.UpdateCommand();
             Console.WriteLine("Debug: Gossip Parser initialized.");
@@ -45,7 +45,7 @@ namespace Kamilla.Network.Protocols.Wow.Plugins
             }
         }
 
-        void viewer_NetworkLogChanged(object sender, NetworkLogChangedEventArgs e)
+        void viewer_NetworkLogChanged(object sender, EventArgs e)
         {
             this.UpdateCommand();
 
@@ -53,7 +53,7 @@ namespace Kamilla.Network.Protocols.Wow.Plugins
                 m_wnd.NewItems(m_viewer.Items);
         }
 
-        void viewer_ProtocolChanged(object sender, ProtocolChangedEventArgs e)
+        void viewer_ProtocolChanged(object sender, EventArgs e)
         {
             this.UpdateCommand();
         }
