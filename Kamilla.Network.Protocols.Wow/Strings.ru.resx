@@ -123,4 +123,115 @@
   <data name="CH_Preview" xml:space="preserve">
     <value>Предпросмотр</value>
   </data>
+  <data name="Error" xml:space="preserve">
+    <value>Ошибка</value>
+  </data>
+  <data name="Gossip_AppendSQLOutput" xml:space="preserve">
+    <value>Дописать SQL в файл...</value>
+  </data>
+  <data name="Gossip_AppendSQLOutputTitle" xml:space="preserve">
+    <value>Дописать SQL в файл</value>
+  </data>
+  <data name="Gossip_Data" xml:space="preserve">
+    <value>Данные</value>
+  </data>
+  <data name="Gossip_ErrorSavingSQLOutput" xml:space="preserve">
+    <value>Ошибка записи SQL данных в файл.</value>
+  </data>
+  <data name="Gossip_MenuDesc" xml:space="preserve">
+    <value>Меню №{0}
+Текст №{1}
+
+{2} {2?plural-ru:пункт меню:пункта меню:пунктов меню}</value>
+  </data>
+  <data name="Gossip_MenuEntries" xml:space="preserve">
+    <value>Номера меню</value>
+  </data>
+  <data name="Gossip_MenuN" xml:space="preserve">
+    <value>Меню №{0}</value>
+  </data>
+  <data name="Gossip_Menus" xml:space="preserve">
+    <value>Меню</value>
+  </data>
+  <data name="Gossip_MenusSelected" xml:space="preserve">
+    <value>Выбрано {0} меню</value>
+  </data>
+  <data name="Gossip_NMenus" xml:space="preserve">
+    <value>{0} меню</value>
+  </data>
+  <data name="Gossip_ObjectEntries" xml:space="preserve">
+    <value>Номера объектов</value>
+  </data>
+  <data name="Gossip_Objects" xml:space="preserve">
+    <value>Объекты</value>
+  </data>
+  <data name="Gossip_ObjectsSelected" xml:space="preserve">
+    <value>{0?plural-ru:Выбран:Выбрано:Выбрано} {0} {0?plural-ru:объект:объекта:объектов}</value>
+  </data>
+  <data name="Gossip_OpenParser" xml:space="preserve">
+    <value>Открыть парсер диалогов...</value>
+  </data>
+  <data name="Gossip_OptionBoxText" xml:space="preserve">
+    <value>  Текст диалогового окна: {0}</value>
+  </data>
+  <data name="Gossip_OptionDesc" xml:space="preserve">
+    <value>Пункт меню №{0}
+  Иконка: {1}
+  Текст: {2}</value>
+  </data>
+  <data name="Gossip_OptionHasPassword" xml:space="preserve">
+    <value>  Требуется ввести пароль.</value>
+  </data>
+  <data name="Gossip_OptionMoneyRequired" xml:space="preserve">
+    <value>  Требуются деньги: {0}</value>
+  </data>
+  <data name="Gossip_OptionTargetMenu" xml:space="preserve">
+    <value>  При выборе этого пункта показывается меню №{0}
+    (кликните дважды по пункту в дереве меню, чтобы перейти)</value>
+  </data>
+  <data name="Gossip_SaveFileFilter" xml:space="preserve">
+    <value>Файлы SQL (*.sql)|*.sql|Все файлы (*.*)|*.*</value>
+  </data>
+  <data name="Gossip_SaveSQLOutput" xml:space="preserve">
+    <value>Сохранить SQL в файл...</value>
+  </data>
+  <data name="Gossip_SaveSQLOutputTitle" xml:space="preserve">
+    <value>Сохранить SQL в файл</value>
+  </data>
+  <data name="Gossip_ShowMenuEntries" xml:space="preserve">
+    <value>Номера меню...</value>
+  </data>
+  <data name="Gossip_ShowObjectEntries" xml:space="preserve">
+    <value>Номера объектов...</value>
+  </data>
+  <data name="Gossip_ShowTextEntries" xml:space="preserve">
+    <value>Номера текстов...</value>
+  </data>
+  <data name="Gossip_SqlInitialMenus" xml:space="preserve">
+    <value>У объекта '{0}' существуют следующие начальные меню: {1}</value>
+  </data>
+  <data name="Gossip_SqlStructure" xml:space="preserve">
+    <value>SQL запрос для меню №{0}</value>
+  </data>
+  <data name="Gossip_SqlUnsupportedObject" xml:space="preserve">
+    <value>Объекты типа '{0}' не поддерживаются ({1})</value>
+  </data>
+  <data name="Gossip_TextEntries" xml:space="preserve">
+    <value>Номера текстов</value>
+  </data>
+  <data name="Gossip_Title" xml:space="preserve">
+    <value>Парсер диалогов</value>
+  </data>
+  <data name="Menu_Edit" xml:space="preserve">
+    <value>Правка</value>
+  </data>
+  <data name="Menu_Exit" xml:space="preserve">
+    <value>Выход</value>
+  </data>
+  <data name="Menu_File" xml:space="preserve">
+    <value>Файл</value>
+  </data>
+  <data name="Menu_View" xml:space="preserve">
+    <value>Вид</value>
+  </data>
 </root>

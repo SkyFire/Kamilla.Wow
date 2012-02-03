@@ -22,7 +22,7 @@ namespace Kamilla.Network.Protocols.Wow {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Strings {
+    public class Strings {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace Kamilla.Network.Protocols.Wow {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Kamilla.Network.Protocols.Wow.Strings", typeof(Strings).Assembly);
@@ -51,7 +51,7 @@ namespace Kamilla.Network.Protocols.Wow {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace Kamilla.Network.Protocols.Wow {
         /// <summary>
         ///   Looks up a localized string similar to Connection Id.
         /// </summary>
-        internal static string CH_ConnId {
+        public static string CH_ConnId {
             get {
                 return ResourceManager.GetString("CH_ConnId", resourceCulture);
             }
@@ -72,16 +72,337 @@ namespace Kamilla.Network.Protocols.Wow {
         /// <summary>
         ///   Looks up a localized string similar to Preview.
         /// </summary>
-        internal static string CH_Preview {
+        public static string CH_Preview {
             get {
                 return ResourceManager.GetString("CH_Preview", resourceCulture);
             }
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Error.
+        /// </summary>
+        public static string Error {
+            get {
+                return ResourceManager.GetString("Error", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Append SQL Output....
+        /// </summary>
+        public static string Gossip_AppendSQLOutput {
+            get {
+                return ResourceManager.GetString("Gossip_AppendSQLOutput", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Append SQL Output.
+        /// </summary>
+        public static string Gossip_AppendSQLOutputTitle {
+            get {
+                return ResourceManager.GetString("Gossip_AppendSQLOutputTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Data.
+        /// </summary>
+        public static string Gossip_Data {
+            get {
+                return ResourceManager.GetString("Gossip_Data", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Failed to write SQL output into file..
+        /// </summary>
+        public static string Gossip_ErrorSavingSQLOutput {
+            get {
+                return ResourceManager.GetString("Gossip_ErrorSavingSQLOutput", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Menu #{0}
+        ///Text #{1}
+        ///
+        ///{2} options.
+        /// </summary>
+        public static string Gossip_MenuDesc {
+            get {
+                return ResourceManager.GetString("Gossip_MenuDesc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Menu Ids.
+        /// </summary>
+        public static string Gossip_MenuEntries {
+            get {
+                return ResourceManager.GetString("Gossip_MenuEntries", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Menu #{0}.
+        /// </summary>
+        public static string Gossip_MenuN {
+            get {
+                return ResourceManager.GetString("Gossip_MenuN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Menus.
+        /// </summary>
+        public static string Gossip_Menus {
+            get {
+                return ResourceManager.GetString("Gossip_Menus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0} {0?plural-en:menu:menus} selected.
+        /// </summary>
+        public static string Gossip_MenusSelected {
+            get {
+                return ResourceManager.GetString("Gossip_MenusSelected", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0} {0?plural-en:menu:menus}.
+        /// </summary>
+        public static string Gossip_NMenus {
+            get {
+                return ResourceManager.GetString("Gossip_NMenus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Object Ids.
+        /// </summary>
+        public static string Gossip_ObjectEntries {
+            get {
+                return ResourceManager.GetString("Gossip_ObjectEntries", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Objects.
+        /// </summary>
+        public static string Gossip_Objects {
+            get {
+                return ResourceManager.GetString("Gossip_Objects", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0} {0?plural-en:object:objects} selected.
+        /// </summary>
+        public static string Gossip_ObjectsSelected {
+            get {
+                return ResourceManager.GetString("Gossip_ObjectsSelected", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Open Gossip Parser....
+        /// </summary>
+        public static string Gossip_OpenParser {
+            get {
+                return ResourceManager.GetString("Gossip_OpenParser", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to   Box text: {0}.
+        /// </summary>
+        public static string Gossip_OptionBoxText {
+            get {
+                return ResourceManager.GetString("Gossip_OptionBoxText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Option #{0}
+        ///  Icon: {1}
+        ///  Text: {2}.
+        /// </summary>
+        public static string Gossip_OptionDesc {
+            get {
+                return ResourceManager.GetString("Gossip_OptionDesc", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to   Clicking asks for password..
+        /// </summary>
+        public static string Gossip_OptionHasPassword {
+            get {
+                return ResourceManager.GetString("Gossip_OptionHasPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to   Money required: {0}.
+        /// </summary>
+        public static string Gossip_OptionMoneyRequired {
+            get {
+                return ResourceManager.GetString("Gossip_OptionMoneyRequired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to   Clicking shows menu #{0}
+        ///    (double-click the tree item to follow).
+        /// </summary>
+        public static string Gossip_OptionTargetMenu {
+            get {
+                return ResourceManager.GetString("Gossip_OptionTargetMenu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SQL Files (*.sql)|*.sql|All Files (*.*)|*.*.
+        /// </summary>
+        public static string Gossip_SaveFileFilter {
+            get {
+                return ResourceManager.GetString("Gossip_SaveFileFilter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Save SQL Output....
+        /// </summary>
+        public static string Gossip_SaveSQLOutput {
+            get {
+                return ResourceManager.GetString("Gossip_SaveSQLOutput", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Save SQL Output.
+        /// </summary>
+        public static string Gossip_SaveSQLOutputTitle {
+            get {
+                return ResourceManager.GetString("Gossip_SaveSQLOutputTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Menu Ids....
+        /// </summary>
+        public static string Gossip_ShowMenuEntries {
+            get {
+                return ResourceManager.GetString("Gossip_ShowMenuEntries", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Object Ids....
+        /// </summary>
+        public static string Gossip_ShowObjectEntries {
+            get {
+                return ResourceManager.GetString("Gossip_ShowObjectEntries", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Text Ids....
+        /// </summary>
+        public static string Gossip_ShowTextEntries {
+            get {
+                return ResourceManager.GetString("Gossip_ShowTextEntries", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Object &apos;{0}&apos; has the following initial menus: {1}.
+        /// </summary>
+        public static string Gossip_SqlInitialMenus {
+            get {
+                return ResourceManager.GetString("Gossip_SqlInitialMenus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Creating SQL structure for menu #{0}..
+        /// </summary>
+        public static string Gossip_SqlStructure {
+            get {
+                return ResourceManager.GetString("Gossip_SqlStructure", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Objects of type {0} are not supported ({1}).
+        /// </summary>
+        public static string Gossip_SqlUnsupportedObject {
+            get {
+                return ResourceManager.GetString("Gossip_SqlUnsupportedObject", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Text Ids.
+        /// </summary>
+        public static string Gossip_TextEntries {
+            get {
+                return ResourceManager.GetString("Gossip_TextEntries", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Gossip Parser.
+        /// </summary>
+        public static string Gossip_Title {
+            get {
+                return ResourceManager.GetString("Gossip_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Edit.
+        /// </summary>
+        public static string Menu_Edit {
+            get {
+                return ResourceManager.GetString("Menu_Edit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Exit.
+        /// </summary>
+        public static string Menu_Exit {
+            get {
+                return ResourceManager.GetString("Menu_Exit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to File.
+        /// </summary>
+        public static string Menu_File {
+            get {
+                return ResourceManager.GetString("Menu_File", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to View.
+        /// </summary>
+        public static string Menu_View {
+            get {
+                return ResourceManager.GetString("Menu_View", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to World of Warcraft 4.3.0 (&quot;Hour of Twilight&quot;).
         /// </summary>
-        internal static string ProtocolName {
+        public static string ProtocolName {
             get {
                 return ResourceManager.GetString("ProtocolName", resourceCulture);
             }

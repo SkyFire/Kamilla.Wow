@@ -1,0 +1,112 @@
+﻿<Window x:Class="Kamilla.Network.Protocols.Wow.Plugins.GossipParserWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:wow="clr-namespace:Kamilla.Network.Protocols.Wow"
+        xmlns:kwpf="clr-namespace:Kamilla.WPF;assembly=Kamilla"
+        Title="{x:Static wow:Strings.Gossip_Title}" Height="422" Width="823" MinWidth="400" MinHeight="200"
+        WindowStartupLocation="CenterOwner" Closing="Window_Closing"
+        kwpf:WindowBehavior.HasTitleBarMaximizeButton="false">
+    <Window.Resources>
+        <Style x:Key="NoHideSelection" TargetType="{x:Type Control}">
+            <Style.Resources>
+                <SolidColorBrush x:Key="{x:Static SystemColors.ControlBrushKey}" Color="{x:Static SystemColors.HighlightColor}"/>
+            </Style.Resources>
+        </Style>
+        <Style TargetType="{x:Type ListViewItem}" BasedOn="{StaticResource NoHideSelection}">
+            <Style.Triggers>
+                <Trigger Property="IsSelected" Value="True">
+                    <Setter Property="Foreground">
+                        <Setter.Value>
+                            <SolidColorBrush Color="{x:Static SystemColors.HighlightTextColor}"/>
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+        <Style TargetType="{x:Type TreeViewItem}" BasedOn="{StaticResource NoHideSelection}">
+            <Style.Triggers>
+                <Trigger Property="IsSelected" Value="True">
+                    <Setter Property="Foreground">
+                        <Setter.Value>
+                            <SolidColorBrush Color="{x:Static SystemColors.HighlightTextColor}"/>
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    <Grid Name="MenuListGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="22"/>
+            <RowDefinition Height="390*"/>
+            <RowDefinition Height="22"/>
+        </Grid.RowDefinitions>
+        <Grid Name="ListPropsGrid" Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150" MinWidth="50" />
+                <ColumnDefinition Width="150" MinWidth="50" />
+                <ColumnDefinition Width="*" MinWidth="50" />
+            </Grid.ColumnDefinitions>
+            <GridSplitter HorizontalAlignment="Right" Name="ListPropsGridSplitter" VerticalAlignment="Stretch" Width="4" Margin="0,0,-2,0" Background="#00000000" />
+            <GridSplitter HorizontalAlignment="Right" Name="ListPropsGridSplitter2" VerticalAlignment="Stretch" Width="4" Grid.Column="1" Margin="0,0,-2,0" Background="#00000000" />
+            <GroupBox Margin="3,1,2,1">
+                <GroupBox.Header>
+                    <CheckBox Name="ui_cbAllObjects" Content="{x:Static wow:Strings.Gossip_Objects}"/>
+                </GroupBox.Header>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="22"/>
+                    </Grid.RowDefinitions>
+                    <ListView Name="ui_lvObjects" BorderThickness="0" />
+                    <Label Name="ui_lblSelectedObjects" Grid.Row="1" Padding="5,0" />
+                </Grid>
+            </GroupBox>
+            <GroupBox Grid.Column="1" Margin="3,1,2,1">
+                <GroupBox.Header>
+                    <CheckBox Name="ui_cbAllMenus" Content="{x:Static wow:Strings.Gossip_Menus}"/>
+                </GroupBox.Header>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="22"/>
+                    </Grid.RowDefinitions>
+                    <ListView Name="ui_lvMenus" BorderThickness="0" />
+                    <Label Name="ui_lblSelectedMenus" Grid.Row="1" Padding="5,0" />
+                </Grid>
+            </GroupBox>
+            <GroupBox Grid.Column="2" Header="{x:Static wow:Strings.Gossip_Data}" Margin="2,1" Name="ui_gbSelection">
+                <Grid Name="TreeSqlGrid">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="238*" MinHeight="20" />
+                        <RowDefinition Height="145*" MinHeight="20" />
+                    </Grid.RowDefinitions>
+                    <RichTextBox Grid.Row="1" Name="ui_rtbSqlOutput" Grid.ColumnSpan="2" Margin="0,2,0,0" BorderBrush="#FFB6C5D3" FontFamily="Lucida Console" VerticalScrollBarVisibility="Auto" IsReadOnly="True" IsUndoEnabled="False" IsReadOnlyCaretVisible="True" />
+                    <GridSplitter Grid.Row="1" Height="4" HorizontalAlignment="Stretch" Name="TreeSqlGridSplitter" VerticalAlignment="Top" Grid.ColumnSpan="2" Margin="0,-2,0,0" Background="#00000000" />
+                    <Grid Name="TreeNotesGrid">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="230*" MinWidth="20"/>
+                            <ColumnDefinition Width="130*" MinWidth="20"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBox Grid.Column="1" Name="ui_tbNotes" IsReadOnly="True" VerticalScrollBarVisibility="Auto" Margin="2,0,0,2" BorderBrush="#FFB6C5D3" TextWrapping="WrapWithOverflow" />
+                        <TreeView Name="ui_tvObject" SelectedItemChanged="ui_tvObject_SelectedItemChanged" Margin="0,0,2,2" BorderBrush="#FFB6C5D3" />
+                        <GridSplitter HorizontalAlignment="Right" Name="TreeNotesGridSplitter" Width="4" Margin="0,0,-2,0" Background="#00000000" />
+                    </Grid>
+                </Grid>
+            </GroupBox>
+        </Grid>
+        <ProgressBar Name="ui_progressBar" Grid.Row="2"/>
+        <Menu Name="MainMenu">
+            <MenuItem Header="{x:Static wow:Strings.Menu_File}">
+                <MenuItem Command="ApplicationCommands.Save" Header="{x:Static wow:Strings.Gossip_SaveSQLOutput}" InputGestureText="Ctrl+S"/>
+                <MenuItem Command="ApplicationCommands.SaveAs" Header="{x:Static wow:Strings.Gossip_AppendSQLOutput}" InputGestureText="Ctrl+Shift+S"/>
+                <MenuItem Command="ApplicationCommands.Close" Header="{x:Static wow:Strings.Menu_Exit}" InputGestureText="Escape, Alt+X, Alt+F4" />
+            </MenuItem>
+            <MenuItem Header="{x:Static wow:Strings.Menu_Edit}">
+                <MenuItem Command="wwpf:GossipParserCommands.ShowObjectEntries" Header="{x:Static wow:Strings.Gossip_ShowObjectEntries}" />
+                <MenuItem Command="wwpf:GossipParserCommands.ShowMenuEntries" Header="{x:Static wow:Strings.Gossip_ShowMenuEntries}" />
+                <MenuItem Command="wwpf:GossipParserCommands.ShowTextEntries" Header="{x:Static wow:Strings.Gossip_ShowTextEntries}" />
+            </MenuItem>
+        </Menu>
+    </Grid>
+</Window>
