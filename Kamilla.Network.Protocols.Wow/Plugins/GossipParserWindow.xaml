@@ -2,6 +2,7 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:wow="clr-namespace:Kamilla.Network.Protocols.Wow"
+        xmlns:wowplugins="clr-namespace:Kamilla.Network.Protocols.Wow.Plugins"
         xmlns:kwpf="clr-namespace:Kamilla.WPF;assembly=Kamilla"
         Title="{x:Static wow:Strings.Gossip_Title}" Height="422" Width="823" MinWidth="400" MinHeight="200"
         WindowStartupLocation="CenterOwner" Closing="Window_Closing"
@@ -81,15 +82,15 @@
                         <RowDefinition Height="238*" MinHeight="20" />
                         <RowDefinition Height="145*" MinHeight="20" />
                     </Grid.RowDefinitions>
-                    <RichTextBox Grid.Row="1" Name="ui_rtbSqlOutput" Grid.ColumnSpan="2" Margin="0,2,0,0" BorderBrush="#FFB6C5D3" FontFamily="Lucida Console" VerticalScrollBarVisibility="Auto" IsReadOnly="True" IsUndoEnabled="False" IsReadOnlyCaretVisible="True" />
+                    <RichTextBox Grid.Row="1" Name="ui_rtbSqlOutput" Grid.ColumnSpan="2" Margin="0,2,0,0" BorderBrush="#FFB6C5D3" FontFamily="Lucida Console" VerticalScrollBarVisibility="Auto" IsReadOnly="True" IsUndoEnabled="False" IsReadOnlyCaretVisible="True" BorderThickness="1.0001" />
                     <GridSplitter Grid.Row="1" Height="4" HorizontalAlignment="Stretch" Name="TreeSqlGridSplitter" VerticalAlignment="Top" Grid.ColumnSpan="2" Margin="0,-2,0,0" Background="#00000000" />
                     <Grid Name="TreeNotesGrid">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="230*" MinWidth="20"/>
                             <ColumnDefinition Width="130*" MinWidth="20"/>
                         </Grid.ColumnDefinitions>
-                        <TextBox Grid.Column="1" Name="ui_tbNotes" IsReadOnly="True" VerticalScrollBarVisibility="Auto" Margin="2,0,0,2" BorderBrush="#FFB6C5D3" TextWrapping="WrapWithOverflow" />
-                        <TreeView Name="ui_tvObject" SelectedItemChanged="ui_tvObject_SelectedItemChanged" Margin="0,0,2,2" BorderBrush="#FFB6C5D3" />
+                        <TextBox Grid.Column="1" Name="ui_tbNotes" IsReadOnly="True" VerticalScrollBarVisibility="Auto" Margin="2,0,0,2" BorderBrush="#FFB6C5D3" TextWrapping="WrapWithOverflow" BorderThickness="1.0001" />
+                        <TreeView Name="ui_tvObject" SelectedItemChanged="ui_tvObject_SelectedItemChanged" Margin="0,0,2,2" BorderBrush="#FFB6C5D3" BorderThickness="1.0001" />
                         <GridSplitter HorizontalAlignment="Right" Name="TreeNotesGridSplitter" Width="4" Margin="0,0,-2,0" Background="#00000000" />
                     </Grid>
                 </Grid>
@@ -103,9 +104,9 @@
                 <MenuItem Command="ApplicationCommands.Close" Header="{x:Static wow:Strings.Menu_Exit}" InputGestureText="Escape, Alt+X, Alt+F4" />
             </MenuItem>
             <MenuItem Header="{x:Static wow:Strings.Menu_Edit}">
-                <MenuItem Command="wwpf:GossipParserCommands.ShowObjectEntries" Header="{x:Static wow:Strings.Gossip_ShowObjectEntries}" />
-                <MenuItem Command="wwpf:GossipParserCommands.ShowMenuEntries" Header="{x:Static wow:Strings.Gossip_ShowMenuEntries}" />
-                <MenuItem Command="wwpf:GossipParserCommands.ShowTextEntries" Header="{x:Static wow:Strings.Gossip_ShowTextEntries}" />
+                <MenuItem Command="wowplugins:GossipParserCommands.ShowObjectEntries" Header="{x:Static wow:Strings.Gossip_ShowObjectEntries}" />
+                <MenuItem Command="wowplugins:GossipParserCommands.ShowMenuEntries" Header="{x:Static wow:Strings.Gossip_ShowMenuEntries}" />
+                <MenuItem Command="wowplugins:GossipParserCommands.ShowTextEntries" Header="{x:Static wow:Strings.Gossip_ShowTextEntries}" />
             </MenuItem>
         </Menu>
     </Grid>
