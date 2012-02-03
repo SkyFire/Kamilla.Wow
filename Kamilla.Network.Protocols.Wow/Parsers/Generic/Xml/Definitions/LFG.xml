@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Definitions>
 
-  <Packet Opcode="CMSG_SET_LFG_COMMENT" Group="LookingForGroup">
+  <Packet Opcode="CMSG_DF_SET_COMMENT" Group="LookingForGroup">
     <Simple>
       <Name>Comment</Name>
       <Type>CString</Type>
     </Simple>
   </Packet>
 
-  <Packet Opcode="CMSG_LFG_PROPOSAL_RESULT" Group="LookingForGroup">
+  <Packet Opcode="CMSG_DF_PROPOSAL_RESPONSE" Group="LookingForGroup">
     <Simple>
       <Name>Unknown (1)</Name>
       <Type>UInt</Type>
@@ -19,21 +19,21 @@
     </Simple>
   </Packet>
   
-  <Packet Opcode="CMSG_LFG_SEARCH_JOIN" Group="LookingForGroup">
+  <Packet Opcode="CMSG_DF_SEARCH_JOIN" Group="LookingForGroup">
     <Simple>
       <Name>Unknown (1)</Name>
       <Type>UInt</Type>
     </Simple>
   </Packet>
 
-  <Packet Opcode="CMSG_LFG_SEARCH_LEAVE" Group="LookingForGroup">
+  <Packet Opcode="CMSG_DF_SEARCH_LEAVE" Group="LookingForGroup">
     <Simple>
       <Name>Unknown (1)</Name>
       <Type>UInt</Type>
     </Simple>
   </Packet>
 
-  <Packet Opcode="CMSG_LFG_JOIN" Group="LookingForGroup">
+  <Packet Opcode="CMSG_DF_JOIN" Group="LookingForGroup">
     <Simple>
       <Type>OpcodeData</Type>
       <SegmentType>LFGJoin</SegmentType>
@@ -65,8 +65,7 @@
     </Simple>
   </Packet>
 
-  <Packet Opcode="CMSG_LFG_GET_PLAYER_INFO" Group="LookingForGroup"/>
-  <Packet Opcode="CMSG_LFG_GET_PARTY_INFO" Group="LookingForGroup"/>
+  <Packet Opcode="CMSG_DF_GET_SYSTEM_INFO" Group="LookingForGroup"/>
   <Packet Opcode="SMSG_LFG_QUEUE_STATUS" Group="LookingForGroup"/>
   <Packet Opcode="SMSG_LFG_UPDATE_PARTY" Group="LookingForGroup"/>
   <Packet Opcode="SMSG_LFG_UPDATE_SEARCH" Group="LookingForGroup"/>

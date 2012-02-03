@@ -258,7 +258,7 @@
     </Simple>
   </Packet>
 
-  <Packet Opcode="CMSG_LFG_SET_ROLES">
+  <Packet Opcode="CMSG_DF_SET_ROLES">
     <Simple>
       <Name>Role Mask</Name>
       <Type>Byte</Type>
