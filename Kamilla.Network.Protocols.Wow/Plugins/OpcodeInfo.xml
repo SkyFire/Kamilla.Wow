@@ -1,0 +1,706 @@
+﻿<?xml version="1.0"?>
+<ArrayOfOpcodeInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <OpcodeInfo value="2" index="1" ctor="0" handler="4199168" dtor="0" comment="Regular opcode, transformed handler is 0x62E1B61F" />
+  <OpcodeInfo value="6" index="3" ctor="0" handler="10526224" dtor="0" comment="Regular opcode, transformed handler is 0x6346412B" />
+  <OpcodeInfo value="38" index="7" ctor="0" handler="5627392" dtor="0" comment="Regular opcode, transformed handler is 0x62DB813B" />
+  <OpcodeInfo value="130" index="9" ctor="0" handler="10189424" dtor="0" comment="Regular opcode, transformed handler is 0x62BD1E0F" />
+  <OpcodeInfo value="160" index="12" ctor="0" handler="4812400" dtor="0" comment="Regular opcode, transformed handler is 0x624D122D" />
+  <OpcodeInfo value="164" index="14" ctor="0" handler="5662480" dtor="0" comment="Regular opcode, transformed handler is 0x625E0AC9" />
+  <OpcodeInfo value="166" index="15" ctor="0" handler="9329808" dtor="0" comment="Regular opcode, transformed handler is 0x6294004B" />
+  <OpcodeInfo value="544" index="20" ctor="0" handler="5626320" dtor="0" comment="Regular opcode, transformed handler is 0x60D97B0D" />
+  <OpcodeInfo value="546" index="21" ctor="0" handler="5651616" dtor="0" comment="Regular opcode, transformed handler is 0x60D7DDDF" />
+  <OpcodeInfo value="548" index="22" ctor="0" handler="9768064" dtor="0" comment="Regular opcode, transformed handler is 0x611CADB9" />
+  <OpcodeInfo value="646" index="27" ctor="0" handler="6138768" dtor="0" comment="Regular opcode, transformed handler is 0x60834D2B" />
+  <OpcodeInfo value="678" index="31" ctor="0" handler="5650224" dtor="0" comment="Regular opcode, transformed handler is 0x605BD8EB" />
+  <OpcodeInfo value="770" index="0" ctor="6905088" handler="4756592" dtor="6898000" comment="Auth opcode, switch case is at 0x694069" />
+  <OpcodeInfo value="771" index="1" ctor="7047824" handler="4756816" dtor="6946048" comment="Auth opcode, switch case is at 0x693FFE" />
+  <OpcodeInfo value="1026" index="33" ctor="0" handler="6132912" dtor="0" comment="Regular opcode, transformed handler is 0x66FF3BCF" />
+  <OpcodeInfo value="1028" index="34" ctor="0" handler="5668080" dtor="0" comment="Regular opcode, transformed handler is 0x66FE2409" />
+  <OpcodeInfo value="1032" index="0" ctor="7045024" handler="5958768" dtor="6948544" comment="Jam opcode, switch case is at 0x667D0E" />
+  <OpcodeInfo value="1034" index="1" ctor="7167872" handler="9994912" dtor="7117456" comment="Jam opcode, switch case is at 0x668D1E" />
+  <OpcodeInfo value="1038" index="3" ctor="6992224" handler="5959984" dtor="6943024" comment="Jam opcode, switch case is at 0x66801E" />
+  <OpcodeInfo value="1050" index="5" ctor="7039424" handler="9649328" dtor="6946368" comment="Jam opcode, switch case is at 0x66892F" />
+  <OpcodeInfo value="1052" index="6" ctor="7118352" handler="5992848" dtor="6950416" comment="Jam opcode, switch case is at 0x6676B3" />
+  <OpcodeInfo value="1054" index="7" ctor="7175152" handler="5993248" dtor="6951488" comment="Jam opcode, switch case is at 0x667761" />
+  <OpcodeInfo value="1058" index="37" ctor="0" handler="10126016" dtor="0" comment="Regular opcode, transformed handler is 0x671C29FF" />
+  <OpcodeInfo value="1062" index="39" ctor="0" handler="9933984" dtor="0" comment="Regular opcode, transformed handler is 0x671D3BDB" />
+  <OpcodeInfo value="1064" index="8" ctor="7253808" handler="9655456" dtor="7212224" comment="Jam opcode, switch case is at 0x668B22" />
+  <OpcodeInfo value="1070" index="11" ctor="7182000" handler="5669664" dtor="7142288" comment="Jam opcode, switch case is at 0x66742D" />
+  <OpcodeInfo value="1152" index="40" ctor="0" handler="6105728" dtor="0" comment="Regular opcode, transformed handler is 0x6680D21D" />
+  <OpcodeInfo value="1154" index="41" ctor="0" handler="5573136" dtor="0" comment="Regular opcode, transformed handler is 0x6676B1AF" />
+  <OpcodeInfo value="1156" index="42" ctor="0" handler="5578752" dtor="0" comment="Regular opcode, transformed handler is 0x667CC799" />
+  <OpcodeInfo value="1158" index="43" ctor="0" handler="9996976" dtor="0" comment="Regular opcode, transformed handler is 0x66BE324B" />
+  <OpcodeInfo value="1176" index="20" ctor="7058112" handler="9755408" dtor="6949424" comment="Jam opcode, switch case is at 0x666B32" />
+  <OpcodeInfo value="1182" index="23" ctor="7112880" handler="6095920" dtor="6942992" comment="Jam opcode, switch case is at 0x668390" />
+  <OpcodeInfo value="1184" index="44" ctor="0" handler="6439632" dtor="0" comment="Regular opcode, transformed handler is 0x6665EA8D" />
+  <OpcodeInfo value="1192" index="24" ctor="7221440" handler="9646000" dtor="7202496" comment="Jam opcode, switch case is at 0x668B53" />
+  <OpcodeInfo value="1194" index="25" ctor="7167808" handler="5321472" dtor="7179792" comment="Jam opcode, switch case is at 0x667145" />
+  <OpcodeInfo value="1196" index="26" ctor="7267376" handler="6441872" dtor="7221056" comment="Jam opcode, switch case is at 0x6660FB" />
+  <OpcodeInfo value="1208" index="28" ctor="7085024" handler="9714864" dtor="6950768" comment="Jam opcode, switch case is at 0x666574" />
+  <OpcodeInfo value="1214" index="31" ctor="7086112" handler="5081456" dtor="6997744" comment="Jam opcode, switch case is at 0x665F9B" />
+  <OpcodeInfo value="1536" index="48" ctor="0" handler="9621440" dtor="0" comment="Regular opcode, transformed handler is 0x653674DD" />
+  <OpcodeInfo value="1544" index="32" ctor="7035888" handler="9703328" dtor="6948096" comment="Jam opcode, switch case is at 0x6667C0" />
+  <OpcodeInfo value="1550" index="35" ctor="7254464" handler="10402592" dtor="7207040" comment="Jam opcode, switch case is at 0x6672D6" />
+  <OpcodeInfo value="1562" index="37" ctor="7136480" handler="5608112" dtor="6943968" comment="Jam opcode, switch case is at 0x668745" />
+  <OpcodeInfo value="1574" index="55" ctor="0" handler="5876544" dtor="0" comment="Regular opcode, transformed handler is 0x64DF507B" />
+  <OpcodeInfo value="1576" index="40" ctor="7125312" handler="5959328" dtor="6951520" comment="Jam opcode, switch case is at 0x667E65" />
+  <OpcodeInfo value="1580" index="42" ctor="7034400" handler="5959168" dtor="6943328" comment="Jam opcode, switch case is at 0x667E03" />
+  <OpcodeInfo value="1582" index="43" ctor="7032768" handler="9078912" dtor="6945040" comment="Jam opcode, switch case is at 0x66739A" />
+  <OpcodeInfo value="1592" index="44" ctor="6943808" handler="10397360" dtor="6943104" comment="Jam opcode, switch case is at 0x667338" />
+  <OpcodeInfo value="1594" index="45" ctor="7138336" handler="6076592" dtor="7131584" comment="Jam opcode, switch case is at 0x667E96" />
+  <OpcodeInfo value="1664" index="56" ctor="0" handler="9920880" dtor="0" comment="Regular opcode, transformed handler is 0x64BB070D" />
+  <OpcodeInfo value="1666" index="57" ctor="0" handler="5577824" dtor="0" comment="Regular opcode, transformed handler is 0x6476C1FF" />
+  <OpcodeInfo value="1674" index="49" ctor="7194224" handler="9677104" dtor="7206720" comment="Jam opcode, switch case is at 0x66644E" />
+  <OpcodeInfo value="1676" index="50" ctor="7070128" handler="6095472" dtor="6949152" comment="Jam opcode, switch case is at 0x6682CC" />
+  <OpcodeInfo value="1690" index="53" ctor="7206256" handler="9747504" dtor="7225808" comment="Jam opcode, switch case is at 0x665DE2" />
+  <OpcodeInfo value="1692" index="54" ctor="7095600" handler="5957712" dtor="6952128" comment="Jam opcode, switch case is at 0x667A91" />
+  <OpcodeInfo value="1694" index="55" ctor="7065040" handler="5958608" dtor="6945088" comment="Jam opcode, switch case is at 0x667CAC" />
+  <OpcodeInfo value="1698" index="61" ctor="0" handler="9765232" dtor="0" comment="Regular opcode, transformed handler is 0x6496A72F" />
+  <OpcodeInfo value="1700" index="62" ctor="0" handler="9273072" dtor="0" comment="Regular opcode, transformed handler is 0x649524A9" />
+  <OpcodeInfo value="1704" index="56" ctor="7125520" handler="5957648" dtor="6950400" comment="Jam opcode, switch case is at 0x667A60" />
+  <OpcodeInfo value="1706" index="57" ctor="7088576" handler="5960160" dtor="6943008" comment="Jam opcode, switch case is at 0x668080" />
+  <OpcodeInfo value="1794" index="4" ctor="6905088" handler="4754624" dtor="6898000" comment="Auth opcode, switch case is at 0x693F9C" />
+  <OpcodeInfo value="1795" index="5" ctor="6905168" handler="4753456" dtor="6898016" comment="Auth opcode, switch case is at 0x69402F" />
+  <OpcodeInfo value="2048" index="64" ctor="0" handler="9128496" dtor="0" comment="Regular opcode, transformed handler is 0x6B2EF54D" />
+  <OpcodeInfo value="2052" index="66" ctor="0" handler="9273072" dtor="0" comment="Regular opcode, transformed handler is 0x6B352A09" />
+  <OpcodeInfo value="2084" index="70" ctor="0" handler="10528336" dtor="0" comment="Regular opcode, transformed handler is 0x6B285189" />
+  <OpcodeInfo value="2086" index="71" ctor="0" handler="9273072" dtor="0" comment="Regular opcode, transformed handler is 0x6B132A2B" />
+  <OpcodeInfo value="2182" index="75" ctor="0" handler="10190928" dtor="0" comment="Regular opcode, transformed handler is 0x6AC12BEB" />
+  <OpcodeInfo value="2208" index="76" ctor="0" handler="5651616" dtor="0" comment="Regular opcode, transformed handler is 0x6A59E85D" />
+  <OpcodeInfo value="2212" index="78" ctor="0" handler="5572992" dtor="0" comment="Regular opcode, transformed handler is 0x6A5CB539" />
+  <OpcodeInfo value="2214" index="79" ctor="0" handler="5652032" dtor="0" comment="Regular opcode, transformed handler is 0x6A5BE9FB" />
+  <OpcodeInfo value="2560" index="80" ctor="0" handler="5951536" dtor="0" comment="Regular opcode, transformed handler is 0x68FE794D" />
+  <OpcodeInfo value="2564" index="82" ctor="0" handler="9408256" dtor="0" comment="Regular opcode, transformed handler is 0x69373819" />
+  <OpcodeInfo value="2566" index="83" ctor="0" handler="9963920" dtor="0" comment="Regular opcode, transformed handler is 0x693DB2AB" />
+  <OpcodeInfo value="2592" index="84" ctor="0" handler="9372992" dtor="0" comment="Regular opcode, transformed handler is 0x6912AE7D" />
+  <OpcodeInfo value="2594" index="85" ctor="0" handler="10189424" dtor="0" comment="Regular opcode, transformed handler is 0x691D23AF" />
+  <OpcodeInfo value="2598" index="87" ctor="0" handler="9621520" dtor="0" comment="Regular opcode, transformed handler is 0x6918794B" />
+  <OpcodeInfo value="2694" index="91" ctor="0" handler="9925984" dtor="0" comment="Regular opcode, transformed handler is 0x68BD1EFB" />
+  <OpcodeInfo value="2724" index="94" ctor="0" handler="9419392" dtor="0" comment="Regular opcode, transformed handler is 0x68976439" />
+  <OpcodeInfo value="2726" index="95" ctor="0" handler="4207984" dtor="0" comment="Regular opcode, transformed handler is 0x6845DF2B" />
+  <OpcodeInfo value="3078" index="99" ctor="0" handler="9222608" dtor="0" comment="Regular opcode, transformed handler is 0x6F3268EB" />
+  <OpcodeInfo value="3084" index="66" ctor="7117232" handler="9694400" dtor="6947568" comment="Jam opcode, switch case is at 0x666917" />
+  <OpcodeInfo value="3086" index="67" ctor="7080624" handler="9702752" dtor="6943728" comment="Jam opcode, switch case is at 0x66672D" />
+  <OpcodeInfo value="3100" index="70" ctor="7126208" handler="5855792" dtor="6951392" comment="Jam opcode, switch case is at 0x6688CD" />
+  <OpcodeInfo value="3102" index="71" ctor="7281456" handler="9674432" dtor="7211760" comment="Jam opcode, switch case is at 0x66618E" />
+  <OpcodeInfo value="3104" index="100" ctor="0" handler="6089920" dtor="0" comment="Regular opcode, transformed handler is 0x6EE09BFD" />
+  <OpcodeInfo value="3106" index="101" ctor="0" handler="5606928" dtor="0" comment="Regular opcode, transformed handler is 0x6ED73D4F" />
+  <OpcodeInfo value="3108" index="102" ctor="0" handler="10416960" dtor="0" comment="Regular opcode, transformed handler is 0x6F26A279" />
+  <OpcodeInfo value="3112" index="72" ctor="7126480" handler="5993520" dtor="6946352" comment="Jam opcode, switch case is at 0x6677D5" />
+  <OpcodeInfo value="3116" index="74" ctor="7089552" handler="5957584" dtor="6943792" comment="Jam opcode, switch case is at 0x667A2F" />
+  <OpcodeInfo value="3118" index="75" ctor="7120592" handler="5584576" dtor="6948528" comment="Jam opcode, switch case is at 0x6670B2" />
+  <OpcodeInfo value="3130" index="77" ctor="6973168" handler="10227120" dtor="6947200" comment="Jam opcode, switch case is at 0x668AF1" />
+  <OpcodeInfo value="3134" index="79" ctor="7069680" handler="4205840" dtor="6947536" comment="Jam opcode, switch case is at 0x66723A" />
+  <OpcodeInfo value="3200" index="104" ctor="0" handler="5079088" dtor="0" comment="Regular opcode, transformed handler is 0x6E712FCD" />
+  <OpcodeInfo value="3206" index="107" ctor="0" handler="9898352" dtor="0" comment="Regular opcode, transformed handler is 0x6EBCB90B" />
+  <OpcodeInfo value="3212" index="82" ctor="7065712" handler="5959088" dtor="6945680" comment="Jam opcode, switch case is at 0x667DD2" />
+  <OpcodeInfo value="3214" index="83" ctor="6994704" handler="9696272" dtor="6945808" comment="Jam opcode, switch case is at 0x666F2A" />
+  <OpcodeInfo value="3224" index="84" ctor="7277248" handler="10097472" dtor="7212288" comment="Jam opcode, switch case is at 0x665E75" />
+  <OpcodeInfo value="3232" index="108" ctor="0" handler="9894336" dtor="0" comment="Regular opcode, transformed handler is 0x6E9AA97D" />
+  <OpcodeInfo value="3234" index="109" ctor="0" handler="5668080" dtor="0" comment="Regular opcode, transformed handler is 0x6E582CAF" />
+  <OpcodeInfo value="3244" index="90" ctor="7092672" handler="5951952" dtor="6947552" comment="Jam opcode, switch case is at 0x668616" />
+  <OpcodeInfo value="3256" index="92" ctor="7194304" handler="5608048" dtor="7134384" comment="Jam opcode, switch case is at 0x6668B5" />
+  <OpcodeInfo value="3262" index="95" ctor="7271952" handler="9761296" dtor="7194416" comment="Jam opcode, switch case is at 0x666BC5" />
+  <OpcodeInfo value="3588" index="114" ctor="0" handler="5668080" dtor="0" comment="Regular opcode, transformed handler is 0x6CFE2A09" />
+  <OpcodeInfo value="3590" index="115" ctor="0" handler="9273072" dtor="0" comment="Regular opcode, transformed handler is 0x6D332C0B" />
+  <OpcodeInfo value="3598" index="99" ctor="7047824" handler="10094816" dtor="6946048" comment="Jam opcode, switch case is at 0x665ED7" />
+  <OpcodeInfo value="3612" index="102" ctor="7008624" handler="5958208" dtor="6943056" comment="Jam opcode, switch case is at 0x667BB7" />
+  <OpcodeInfo value="3618" index="117" ctor="0" handler="10528832" dtor="0" comment="Regular opcode, transformed handler is 0x6D22557F" />
+  <OpcodeInfo value="3620" index="118" ctor="0" handler="6262560" dtor="0" comment="Regular opcode, transformed handler is 0x6CE73C59" />
+  <OpcodeInfo value="3624" index="104" ctor="7281024" handler="10006000" dtor="7208720" comment="Jam opcode, switch case is at 0x668D89" />
+  <OpcodeInfo value="3626" index="105" ctor="6998608" handler="5636848" dtor="6947440" comment="Jam opcode, switch case is at 0x665F08" />
+  <OpcodeInfo value="3628" index="106" ctor="7165024" handler="5992976" dtor="6943472" comment="Jam opcode, switch case is at 0x6676ED" />
+  <OpcodeInfo value="3640" index="108" ctor="7047696" handler="6095808" dtor="6943696" comment="Jam opcode, switch case is at 0x66835F" />
+  <OpcodeInfo value="3642" index="109" ctor="7092224" handler="5686224" dtor="6949680" comment="Jam opcode, switch case is at 0x667209" />
+  <OpcodeInfo value="3644" index="110" ctor="7085952" handler="5957520" dtor="6945664" comment="Jam opcode, switch case is at 0x6679FE" />
+  <OpcodeInfo value="3716" index="122" ctor="0" handler="10189424" dtor="0" comment="Regular opcode, transformed handler is 0x6CC32809" />
+  <OpcodeInfo value="3718" index="123" ctor="0" handler="5951296" dtor="0" comment="Regular opcode, transformed handler is 0x6C807CDB" />
+  <OpcodeInfo value="3724" index="114" ctor="6965728" handler="9807184" dtor="6944256" comment="Jam opcode, switch case is at 0x66622A" />
+  <OpcodeInfo value="3726" index="115" ctor="7164608" handler="5993648" dtor="6951456" comment="Jam opcode, switch case is at 0x66780F" />
+  <OpcodeInfo value="3738" index="117" ctor="7116432" handler="5576992" dtor="6948400" comment="Jam opcode, switch case is at 0x666BF6" />
+  <OpcodeInfo value="3744" index="124" ctor="0" handler="5606240" dtor="0" comment="Regular opcode, transformed handler is 0x6C59391D" />
+  <OpcodeInfo value="3746" index="125" ctor="0" handler="5582464" dtor="0" comment="Regular opcode, transformed handler is 0x6C56DC3F" />
+  <OpcodeInfo value="3748" index="126" ctor="0" handler="6090032" dtor="0" comment="Regular opcode, transformed handler is 0x6C649AE9" />
+  <OpcodeInfo value="3754" index="121" ctor="7277936" handler="5994048" dtor="7280880" comment="Jam opcode, switch case is at 0x6680B1" />
+  <OpcodeInfo value="3768" index="124" ctor="7088640" handler="5959664" dtor="6944368" comment="Jam opcode, switch case is at 0x667F5A" />
+  <OpcodeInfo value="3770" index="125" ctor="6978944" handler="5960064" dtor="6951408" comment="Jam opcode, switch case is at 0x66804F" />
+  <OpcodeInfo value="3774" index="127" ctor="7278000" handler="10402864" dtor="7212352" comment="Jam opcode, switch case is at 0x667369" />
+  <OpcodeInfo value="4100" index="130" ctor="0" handler="4812576" dtor="0" comment="Regular opcode, transformed handler is 0x72F12239" />
+  <OpcodeInfo value="4130" index="133" ctor="0" handler="5606928" dtor="0" comment="Regular opcode, transformed handler is 0x72D7414F" />
+  <OpcodeInfo value="4132" index="134" ctor="0" handler="9695056" dtor="0" comment="Regular opcode, transformed handler is 0x731BA289" />
+  <OpcodeInfo value="4134" index="135" ctor="0" handler="9079072" dtor="0" comment="Regular opcode, transformed handler is 0x73103C5B" />
+  <OpcodeInfo value="4228" index="138" ctor="0" handler="9409920" dtor="0" comment="Regular opcode, transformed handler is 0x72B74919" />
+  <OpcodeInfo value="4256" index="140" ctor="0" handler="10191600" dtor="0" comment="Regular opcode, transformed handler is 0x729F36AD" />
+  <OpcodeInfo value="4258" index="141" ctor="0" handler="9329744" dtor="0" comment="Regular opcode, transformed handler is 0x7290100F" />
+  <OpcodeInfo value="4260" index="142" ctor="0" handler="4813040" dtor="0" comment="Regular opcode, transformed handler is 0x725124A9" />
+  <OpcodeInfo value="4608" index="144" ctor="0" handler="6253184" dtor="0" comment="Regular opcode, transformed handler is 0x71031B9D" />
+  <OpcodeInfo value="4612" index="146" ctor="0" handler="9128784" dtor="0" comment="Regular opcode, transformed handler is 0x7132FC69" />
+  <OpcodeInfo value="4642" index="149" ctor="0" handler="5950896" dtor="0" comment="Regular opcode, transformed handler is 0x70DC7EEF" />
+  <OpcodeInfo value="4644" index="150" ctor="0" handler="9620320" dtor="0" comment="Regular opcode, transformed handler is 0x711A7C99" />
+  <OpcodeInfo value="4742" index="155" ctor="0" handler="9434496" dtor="0" comment="Regular opcode, transformed handler is 0x70B5A71B" />
+  <OpcodeInfo value="4768" index="156" ctor="0" handler="9616896" dtor="0" comment="Regular opcode, transformed handler is 0x70966FBD" />
+  <OpcodeInfo value="4770" index="157" ctor="0" handler="9888864" dtor="0" comment="Regular opcode, transformed handler is 0x7098961F" />
+  <OpcodeInfo value="4772" index="158" ctor="0" handler="5603200" dtor="0" comment="Regular opcode, transformed handler is 0x705D3139" />
+  <OpcodeInfo value="4774" index="159" ctor="0" handler="5664384" dtor="0" comment="Regular opcode, transformed handler is 0x705C203B" />
+  <OpcodeInfo value="4898" index="10" ctor="7047824" handler="4759712" dtor="6946048" comment="Auth opcode, switch case is at 0x693FCD" />
+  <OpcodeInfo value="5120" index="160" ctor="0" handler="5951744" dtor="0" comment="Regular opcode, transformed handler is 0x76FE881D" />
+  <OpcodeInfo value="5124" index="162" ctor="0" handler="5951344" dtor="0" comment="Regular opcode, transformed handler is 0x77028689" />
+  <OpcodeInfo value="5126" index="163" ctor="0" handler="6439632" dtor="0" comment="Regular opcode, transformed handler is 0x7707F9EB" />
+  <OpcodeInfo value="5158" index="167" ctor="0" handler="5575856" dtor="0" comment="Regular opcode, transformed handler is 0x76DACBEB" />
+  <OpcodeInfo value="5248" index="168" ctor="0" handler="9273072" dtor="0" comment="Regular opcode, transformed handler is 0x76B1368D" />
+  <OpcodeInfo value="5250" index="169" ctor="0" handler="5606928" dtor="0" comment="Regular opcode, transformed handler is 0x767745AF" />
+  <OpcodeInfo value="5252" index="170" ctor="0" handler="9411216" dtor="0" comment="Regular opcode, transformed handler is 0x76B75229" />
+  <OpcodeInfo value="5280" index="172" ctor="0" handler="10189424" dtor="0" comment="Regular opcode, transformed handler is 0x769F322D" />
+  <OpcodeInfo value="5282" index="173" ctor="0" handler="10189424" dtor="0" comment="Regular opcode, transformed handler is 0x769D322F" />
+  <OpcodeInfo value="5284" index="174" ctor="0" handler="9222608" dtor="0" comment="Regular opcode, transformed handler is 0x76947189" />
+  <OpcodeInfo value="5286" index="175" ctor="0" handler="5650608" dtor="0" comment="Regular opcode, transformed handler is 0x765BF06B" />
+  <OpcodeInfo value="5638" index="179" ctor="0" handler="6293616" dtor="0" comment="Regular opcode, transformed handler is 0x7505BD8B" />
+  <OpcodeInfo value="5670" index="183" ctor="0" handler="5636112" dtor="0" comment="Regular opcode, transformed handler is 0x74DBB54B" />
+  <OpcodeInfo value="5794" index="189" ctor="0" handler="9366416" dtor="0" comment="Regular opcode, transformed handler is 0x7490A14F" />
+  <OpcodeInfo value="5796" index="190" ctor="0" handler="4814304" dtor="0" comment="Regular opcode, transformed handler is 0x74512B99" />
+  <OpcodeInfo value="5922" index="14" ctor="7047824" handler="4752736" dtor="6946048" comment="Auth opcode, switch case is at 0x69409A" />
+  <OpcodeInfo value="5923" index="15" ctor="6898704" handler="4754816" dtor="6897984" comment="Auth opcode, switch case is at 0x693F6B" />
+  <OpcodeInfo value="6144" index="192" ctor="0" handler="5082688" dtor="0" comment="Regular opcode, transformed handler is 0x7AF1495D" />
+  <OpcodeInfo value="6178" index="197" ctor="0" handler="9331024" dtor="0" comment="Regular opcode, transformed handler is 0x7B101C8F" />
+  <OpcodeInfo value="6272" index="200" ctor="0" handler="10526224" dtor="0" comment="Regular opcode, transformed handler is 0x7AC459AD" />
+  <OpcodeInfo value="6304" index="204" ctor="0" handler="10189424" dtor="0" comment="Regular opcode, transformed handler is 0x7A9F362D" />
+  <OpcodeInfo value="6310" index="207" ctor="0" handler="5591008" dtor="0" comment="Regular opcode, transformed handler is 0x7A5B0B9B" />
+  <OpcodeInfo value="6660" index="210" ctor="0" handler="10189424" dtor="0" comment="Regular opcode, transformed handler is 0x79433389" />
+  <OpcodeInfo value="6688" index="212" ctor="0" handler="9104992" dtor="0" comment="Regular opcode, transformed handler is 0x790EA79D" />
+  <OpcodeInfo value="6692" index="214" ctor="0" handler="6293616" dtor="0" comment="Regular opcode, transformed handler is 0x78E7C1A9" />
+  <OpcodeInfo value="6694" index="215" ctor="0" handler="5668080" dtor="0" comment="Regular opcode, transformed handler is 0x78DC362B" />
+  <OpcodeInfo value="6786" index="217" ctor="0" handler="5668080" dtor="0" comment="Regular opcode, transformed handler is 0x7878368F" />
+  <OpcodeInfo value="6790" index="219" ctor="0" handler="5054256" dtor="0" comment="Regular opcode, transformed handler is 0x7872D8CB" />
+  <OpcodeInfo value="6816" index="220" ctor="0" handler="5580032" dtor="0" comment="Regular opcode, transformed handler is 0x7858DEBD" />
+  <OpcodeInfo value="6820" index="222" ctor="0" handler="4814208" dtor="0" comment="Regular opcode, transformed handler is 0x78512F39" />
+  <OpcodeInfo value="7170" index="225" ctor="0" handler="4812800" dtor="0" comment="Regular opcode, transformed handler is 0x7EEB2F1F" />
+  <OpcodeInfo value="7172" index="226" ctor="0" handler="9424080" dtor="0" comment="Regular opcode, transformed handler is 0x7F378BE9" />
+  <OpcodeInfo value="7174" index="227" ctor="0" handler="5950368" dtor="0" comment="Regular opcode, transformed handler is 0x7F008ABB" />
+  <OpcodeInfo value="7296" index="232" ctor="0" handler="4209392" dtor="0" comment="Regular opcode, transformed handler is 0x7E63FA8D" />
+  <OpcodeInfo value="7300" index="234" ctor="0" handler="10526224" dtor="0" comment="Regular opcode, transformed handler is 0x7EC85DA9" />
+  <OpcodeInfo value="7328" index="236" ctor="0" handler="10189424" dtor="0" comment="Regular opcode, transformed handler is 0x7E9F3A2D" />
+  <OpcodeInfo value="7330" index="237" ctor="0" handler="5651616" dtor="0" comment="Regular opcode, transformed handler is 0x7E57FC5F" />
+  <OpcodeInfo value="7334" index="239" ctor="0" handler="9410896" dtor="0" comment="Regular opcode, transformed handler is 0x7E95590B" />
+  <OpcodeInfo value="7682" index="241" ctor="0" handler="5651616" dtor="0" comment="Regular opcode, transformed handler is 0x7CF7F9BF" />
+  <OpcodeInfo value="7684" index="242" ctor="0" handler="10526224" dtor="0" comment="Regular opcode, transformed handler is 0x7D485B29" />
+  <OpcodeInfo value="7712" index="244" ctor="0" handler="5650480" dtor="0" comment="Regular opcode, transformed handler is 0x7CD9F56D" />
+  <OpcodeInfo value="7716" index="246" ctor="0" handler="9158704" dtor="0" comment="Regular opcode, transformed handler is 0x7D137D69" />
+  <OpcodeInfo value="7842" index="253" ctor="0" handler="5079504" dtor="0" comment="Regular opcode, transformed handler is 0x7C4F3F8F" />
+  <OpcodeInfo value="7844" index="254" ctor="0" handler="9273072" dtor="0" comment="Regular opcode, transformed handler is 0x7C953CA9" />
+  <OpcodeInfo value="8194" index="257" ctor="0" handler="5082464" dtor="0" comment="Regular opcode, transformed handler is 0x42EF107F" />
+  <OpcodeInfo value="8196" index="258" ctor="0" handler="5627392" dtor="0" comment="Regular opcode, transformed handler is 0x42FD6119" />
+  <OpcodeInfo value="8226" index="261" ctor="0" handler="9981120" dtor="0" comment="Regular opcode, transformed handler is 0x4319CFFF" />
+  <OpcodeInfo value="8230" index="263" ctor="0" handler="9618528" dtor="0" comment="Regular opcode, transformed handler is 0x4318479B" />
+  <OpcodeInfo value="8322" index="265" ctor="0" handler="5627664" dtor="0" comment="Regular opcode, transformed handler is 0x427762AF" />
+  <OpcodeInfo value="8324" index="266" ctor="0" handler="9158464" dtor="0" comment="Regular opcode, transformed handler is 0x42B342D9" />
+  <OpcodeInfo value="8326" index="267" ctor="0" handler="10004256" dtor="0" comment="Regular opcode, transformed handler is 0x42BE2ABB" />
+  <OpcodeInfo value="8356" index="270" ctor="0" handler="6105824" dtor="0" comment="Regular opcode, transformed handler is 0x4264AE99" />
+  <OpcodeInfo value="8358" index="271" ctor="0" handler="10189424" dtor="0" comment="Regular opcode, transformed handler is 0x42A0FE2B" />
+  <OpcodeInfo value="8704" index="272" ctor="0" handler="5651616" dtor="0" comment="Regular opcode, transformed handler is 0x40F9BDBD" />
+  <OpcodeInfo value="8708" index="274" ctor="0" handler="5870944" dtor="0" comment="Regular opcode, transformed handler is 0x41011679" />
+  <OpcodeInfo value="8832" index="280" ctor="0" handler="4814416" dtor="0" comment="Regular opcode, transformed handler is 0x406CF7ED" />
+  <OpcodeInfo value="8834" index="281" ctor="0" handler="5668080" dtor="0" comment="Regular opcode, transformed handler is 0x4077FE8F" />
+  <OpcodeInfo value="8836" index="282" ctor="0" handler="6253440" dtor="0" comment="Regular opcode, transformed handler is 0x4086ED19" />
+  <OpcodeInfo value="8864" index="284" ctor="0" handler="10003584" dtor="0" comment="Regular opcode, transformed handler is 0x409C263D" />
+  <OpcodeInfo value="8866" index="285" ctor="0" handler="5950784" dtor="0" comment="Regular opcode, transformed handler is 0x405C4EFF" />
+  <OpcodeInfo value="8868" index="286" ctor="0" handler="9273072" dtor="0" comment="Regular opcode, transformed handler is 0x409500A9" />
+  <OpcodeInfo value="9216" index="288" ctor="0" handler="5651616" dtor="0" comment="Regular opcode, transformed handler is 0x46F9C3BD" />
+  <OpcodeInfo value="9220" index="290" ctor="0" handler="9767280" dtor="0" comment="Regular opcode, transformed handler is 0x473C9089" />
+  <OpcodeInfo value="9222" index="291" ctor="0" handler="6439632" dtor="0" comment="Regular opcode, transformed handler is 0x4707C9EB" />
+  <OpcodeInfo value="9224" index="128" ctor="7004576" handler="10097712" dtor="6943600" comment="Jam opcode, switch case is at 0x665EA6" />
+  <OpcodeInfo value="9226" index="129" ctor="6969088" handler="9696368" dtor="6948480" comment="Jam opcode, switch case is at 0x668714" />
+  <OpcodeInfo value="9230" index="131" ctor="7047824" handler="4199408" dtor="6946048" comment="Jam opcode, switch case is at 0x666CF4" />
+  <OpcodeInfo value="9242" index="133" ctor="7149488" handler="5993776" dtor="6958896" comment="Jam opcode, switch case is at 0x667849" />
+  <OpcodeInfo value="9244" index="134" ctor="7039424" handler="9649280" dtor="6946368" comment="Jam opcode, switch case is at 0x668960" />
+  <OpcodeInfo value="9248" index="292" ctor="0" handler="9329744" dtor="0" comment="Regular opcode, transformed handler is 0x4711E38D" />
+  <OpcodeInfo value="9250" index="293" ctor="0" handler="9273072" dtor="0" comment="Regular opcode, transformed handler is 0x470F062F" />
+  <OpcodeInfo value="9252" index="294" ctor="0" handler="5582544" dtor="0" comment="Regular opcode, transformed handler is 0x46DCB609" />
+  <OpcodeInfo value="9254" index="295" ctor="0" handler="9273072" dtor="0" comment="Regular opcode, transformed handler is 0x4713062B" />
+  <OpcodeInfo value="9256" index="136" ctor="7194688" handler="10268368" dtor="7175104" comment="Jam opcode, switch case is at 0x6685E5" />
+  <OpcodeInfo value="9262" index="139" ctor="7226400" handler="9872192" dtor="7225344" comment="Jam opcode, switch case is at 0x668485" />
+  <OpcodeInfo value="9272" index="140" ctor="6946064" handler="4238720" dtor="6949216" comment="Jam opcode, switch case is at 0x668A2D" />
+  <OpcodeInfo value="9274" index="141" ctor="6996656" handler="9747088" dtor="6943248" comment="Jam opcode, switch case is at 0x666B63" />
+  <OpcodeInfo value="9276" index="142" ctor="7111792" handler="9264192" dtor="6945776" comment="Jam opcode, switch case is at 0x666F8C" />
+  <OpcodeInfo value="9278" index="143" ctor="7047824" handler="9639248" dtor="6946048" comment="Jam opcode, switch case is at 0x668BBE" />
+  <OpcodeInfo value="9344" index="296" ctor="0" handler="5627664" dtor="0" comment="Regular opcode, transformed handler is 0x467966AD" />
+  <OpcodeInfo value="9372" index="150" ctor="7064512" handler="6105904" dtor="6951440" comment="Jam opcode, switch case is at 0x66726B" />
+  <OpcodeInfo value="9376" index="300" ctor="0" handler="10131584" dtor="0" comment="Regular opcode, transformed handler is 0x469E203D" />
+  <OpcodeInfo value="9380" index="302" ctor="0" handler="9767280" dtor="0" comment="Regular opcode, transformed handler is 0x469C9129" />
+  <OpcodeInfo value="9382" index="303" ctor="0" handler="5651616" dtor="0" comment="Regular opcode, transformed handler is 0x465BC45B" />
+  <OpcodeInfo value="9386" index="153" ctor="7071120" handler="9881792" dtor="6943200" comment="Jam opcode, switch case is at 0x6660CA" />
+  <OpcodeInfo value="9390" index="155" ctor="6946064" handler="5636784" dtor="6949216" comment="Jam opcode, switch case is at 0x6673FC" />
+  <OpcodeInfo value="9402" index="157" ctor="7073920" handler="8387616" dtor="6952112" comment="Jam opcode, switch case is at 0x66612C" />
+  <OpcodeInfo value="9404" index="158" ctor="6946064" handler="9657648" dtor="6949216" comment="Jam opcode, switch case is at 0x667050" />
+  <OpcodeInfo value="9406" index="159" ctor="6957984" handler="4768736" dtor="6950016" comment="Jam opcode, switch case is at 0x6669AA" />
+  <OpcodeInfo value="9730" index="305" ctor="0" handler="5054192" dtor="0" comment="Regular opcode, transformed handler is 0x44EEA40F" />
+  <OpcodeInfo value="9732" index="306" ctor="0" handler="9076304" dtor="0" comment="Regular opcode, transformed handler is 0x45320369" />
+  <OpcodeInfo value="9734" index="307" ctor="0" handler="9330160" dtor="0" comment="Regular opcode, transformed handler is 0x4533E30B" />
+  <OpcodeInfo value="9736" index="160" ctor="6973168" handler="9264112" dtor="6947200" comment="Jam opcode, switch case is at 0x666D99" />
+  <OpcodeInfo value="9738" index="161" ctor="7047824" handler="10396512" dtor="6946048" comment="Jam opcode, switch case is at 0x6675B5" />
+  <OpcodeInfo value="9752" index="164" ctor="7127056" handler="9703136" dtor="6945104" comment="Jam opcode, switch case is at 0x66678F" />
+  <OpcodeInfo value="9756" index="166" ctor="7061904" handler="9666352" dtor="6943072" comment="Jam opcode, switch case is at 0x667081" />
+  <OpcodeInfo value="9758" index="167" ctor="7212416" handler="4768800" dtor="7170992" comment="Jam opcode, switch case is at 0x6669DB" />
+  <OpcodeInfo value="9768" index="168" ctor="7047824" handler="9702448" dtor="6946048" comment="Jam opcode, switch case is at 0x66669A" />
+  <OpcodeInfo value="9770" index="169" ctor="6954400" handler="5697728" dtor="6945696" comment="Jam opcode, switch case is at 0x668EE9" />
+  <OpcodeInfo value="9774" index="171" ctor="7103104" handler="5637072" dtor="6951856" comment="Jam opcode, switch case is at 0x666037" />
+  <OpcodeInfo value="9788" index="174" ctor="6945120" handler="5852400" dtor="6945504" comment="Jam opcode, switch case is at 0x668809" />
+  <OpcodeInfo value="9790" index="175" ctor="6951872" handler="9964320" dtor="6944304" comment="Jam opcode, switch case is at 0x668FB6" />
+  <OpcodeInfo value="9856" index="312" ctor="0" handler="5082832" dtor="0" comment="Regular opcode, transformed handler is 0x4471146D" />
+  <OpcodeInfo value="9858" index="313" ctor="0" handler="6293616" dtor="0" comment="Regular opcode, transformed handler is 0x44818E0F" />
+  <OpcodeInfo value="9862" index="315" ctor="0" handler="9424960" dtor="0" comment="Regular opcode, transformed handler is 0x44B555DB" />
+  <OpcodeInfo value="9866" index="177" ctor="7131728" handler="5957776" dtor="6948512" comment="Jam opcode, switch case is at 0x667AC2" />
+  <OpcodeInfo value="9870" index="179" ctor="7177360" handler="9711360" dtor="7179840" comment="Jam opcode, switch case is at 0x6665D6" />
+  <OpcodeInfo value="9880" index="180" ctor="7240400" handler="5856640" dtor="7225072" comment="Jam opcode, switch case is at 0x66883A" />
+  <OpcodeInfo value="9882" index="181" ctor="6946064" handler="9221424" dtor="6949216" comment="Jam opcode, switch case is at 0x6689FC" />
+  <OpcodeInfo value="9886" index="183" ctor="7179392" handler="6094352" dtor="6952144" comment="Jam opcode, switch case is at 0x667931" />
+  <OpcodeInfo value="9896" index="184" ctor="7088384" handler="9657008" dtor="6947664" comment="Jam opcode, switch case is at 0x666D5F" />
+  <OpcodeInfo value="9898" index="185" ctor="7221360" handler="9747840" dtor="7206176" comment="Jam opcode, switch case is at 0x665E13" />
+  <OpcodeInfo value="9914" index="189" ctor="7131248" handler="6094800" dtor="6943376" comment="Jam opcode, switch case is at 0x6681A6" />
+  <OpcodeInfo value="9918" index="191" ctor="7047824" handler="9494704" dtor="6946048" comment="Jam opcode, switch case is at 0x668F85" />
+  <OpcodeInfo value="10242" index="321" ctor="0" handler="9273072" dtor="0" comment="Regular opcode, transformed handler is 0x4B2F0A0F" />
+  <OpcodeInfo value="10368" index="328" ctor="0" handler="9886720" dtor="0" comment="Regular opcode, transformed handler is 0x4ABA679D" />
+  <OpcodeInfo value="10372" index="330" ctor="0" handler="9621408" dtor="0" comment="Regular opcode, transformed handler is 0x4ABA5B39" />
+  <OpcodeInfo value="10404" index="334" ctor="0" handler="5627664" dtor="0" comment="Regular opcode, transformed handler is 0x4A5D6AC9" />
+  <OpcodeInfo value="10754" index="337" ctor="0" handler="6439632" dtor="0" comment="Regular opcode, transformed handler is 0x4903CBEF" />
+  <OpcodeInfo value="10756" index="338" ctor="0" handler="10129920" dtor="0" comment="Regular opcode, transformed handler is 0x49421B19" />
+  <OpcodeInfo value="10786" index="341" ctor="0" handler="9273072" dtor="0" comment="Regular opcode, transformed handler is 0x490F082F" />
+  <OpcodeInfo value="10880" index="344" ctor="0" handler="9078560" dtor="0" comment="Regular opcode, transformed handler is 0x48AE10BD" />
+  <OpcodeInfo value="10882" index="345" ctor="0" handler="6439632" dtor="0" comment="Regular opcode, transformed handler is 0x4883CC6F" />
+  <OpcodeInfo value="10884" index="346" ctor="0" handler="5627392" dtor="0" comment="Regular opcode, transformed handler is 0x487D6799" />
+  <OpcodeInfo value="10912" index="348" ctor="0" handler="5668080" dtor="0" comment="Regular opcode, transformed handler is 0x485A06AD" />
+  <OpcodeInfo value="11266" index="353" ctor="0" handler="9222608" dtor="0" comment="Regular opcode, transformed handler is 0x4F2E48EF" />
+  <OpcodeInfo value="11270" index="355" ctor="0" handler="9104640" dtor="0" comment="Regular opcode, transformed handler is 0x4F307C1B" />
+  <OpcodeInfo value="11272" index="192" ctor="7116656" handler="5627328" dtor="6948112" comment="Jam opcode, switch case is at 0x666E5D" />
+  <OpcodeInfo value="11274" index="193" ctor="7085872" handler="5959584" dtor="6950320" comment="Jam opcode, switch case is at 0x667F29" />
+  <OpcodeInfo value="11276" index="194" ctor="7118416" handler="5608208" dtor="6946336" comment="Jam opcode, switch case is at 0x6688FE" />
+  <OpcodeInfo value="11278" index="195" ctor="7117840" handler="9691184" dtor="6948352" comment="Jam opcode, switch case is at 0x666F5B" />
+  <OpcodeInfo value="11290" index="197" ctor="7120720" handler="5959744" dtor="6948384" comment="Jam opcode, switch case is at 0x667F8B" />
+  <OpcodeInfo value="11304" index="200" ctor="7089616" handler="6094464" dtor="6945760" comment="Jam opcode, switch case is at 0x668113" />
+  <OpcodeInfo value="11310" index="203" ctor="7085456" handler="9737248" dtor="6947232" comment="Jam opcode, switch case is at 0x666B94" />
+  <OpcodeInfo value="11322" index="205" ctor="7082928" handler="6095248" dtor="6949600" comment="Jam opcode, switch case is at 0x66826A" />
+  <OpcodeInfo value="11396" index="362" ctor="0" handler="5573936" dtor="0" comment="Regular opcode, transformed handler is 0x4E7C9CC9" />
+  <OpcodeInfo value="11400" index="208" ctor="7131328" handler="5992720" dtor="6951424" comment="Jam opcode, switch case is at 0x667679" />
+  <OpcodeInfo value="11402" index="209" ctor="7167952" handler="9428704" dtor="7163520" comment="Jam opcode, switch case is at 0x668647" />
+  <OpcodeInfo value="11418" index="213" ctor="7228864" handler="5686480" dtor="7194368" comment="Jam opcode, switch case is at 0x6663EC" />
+  <OpcodeInfo value="11422" index="215" ctor="7025232" handler="5689488" dtor="6944112" comment="Jam opcode, switch case is at 0x666DCA" />
+  <OpcodeInfo value="11424" index="364" ctor="0" handler="5576800" dtor="0" comment="Regular opcode, transformed handler is 0x4E58A81D" />
+  <OpcodeInfo value="11428" index="366" ctor="0" handler="10189424" dtor="0" comment="Regular opcode, transformed handler is 0x4EA30A29" />
+  <OpcodeInfo value="11432" index="216" ctor="6946064" handler="5852496" dtor="6949216" comment="Jam opcode, switch case is at 0x66889C" />
+  <OpcodeInfo value="11434" index="217" ctor="7034464" handler="5960240" dtor="6943488" comment="Jam opcode, switch case is at 0x6680E2" />
+  <OpcodeInfo value="11436" index="218" ctor="7117376" handler="4207824" dtor="6996448" comment="Jam opcode, switch case is at 0x668A5E" />
+  <OpcodeInfo value="11448" index="220" ctor="7120528" handler="5958368" dtor="6951536" comment="Jam opcode, switch case is at 0x667C19" />
+  <OpcodeInfo value="11452" index="222" ctor="7056672" handler="5957392" dtor="6951328" comment="Jam opcode, switch case is at 0x66799C" />
+  <OpcodeInfo value="11778" index="369" ctor="0" handler="5571664" dtor="0" comment="Regular opcode, transformed handler is 0x4CF6916F" />
+  <OpcodeInfo value="11780" index="370" ctor="0" handler="9373184" dtor="0" comment="Regular opcode, transformed handler is 0x4D369319" />
+  <OpcodeInfo value="11782" index="371" ctor="0" handler="9078784" dtor="0" comment="Regular opcode, transformed handler is 0x4D30151B" />
+  <OpcodeInfo value="11788" index="226" ctor="7088464" handler="9884336" dtor="6944240" comment="Jam opcode, switch case is at 0x666C30" />
+  <OpcodeInfo value="11820" index="234" ctor="7296608" handler="5607952" dtor="7280928" comment="Jam opcode, switch case is at 0x666884" />
+  <OpcodeInfo value="11822" index="235" ctor="6973168" handler="9656656" dtor="6947200" comment="Jam opcode, switch case is at 0x666C92" />
+  <OpcodeInfo value="11834" index="237" ctor="7116576" handler="6096032" dtor="6943040" comment="Jam opcode, switch case is at 0x6683C1" />
+  <OpcodeInfo value="11836" index="238" ctor="7047824" handler="5584672" dtor="6946048" comment="Jam opcode, switch case is at 0x668E1C" />
+  <OpcodeInfo value="11838" index="239" ctor="7039424" handler="5584656" dtor="6946368" comment="Jam opcode, switch case is at 0x666068" />
+  <OpcodeInfo value="11906" index="377" ctor="0" handler="10360544" dtor="0" comment="Regular opcode, transformed handler is 0x4CBFA47F" />
+  <OpcodeInfo value="11910" index="379" ctor="0" handler="9779856" dtor="0" comment="Regular opcode, transformed handler is 0x4CBAC82B" />
+  <OpcodeInfo value="11912" index="240" ctor="7002816" handler="5907728" dtor="7005024" comment="Jam opcode, switch case is at 0x6687A7" />
+  <OpcodeInfo value="11914" index="241" ctor="7114304" handler="5584144" dtor="6952096" comment="Jam opcode, switch case is at 0x667617" />
+  <OpcodeInfo value="11934" index="247" ctor="7131456" handler="9695296" dtor="6945792" comment="Jam opcode, switch case is at 0x666822" />
+  <OpcodeInfo value="11938" index="381" ctor="0" handler="5950656" dtor="0" comment="Regular opcode, transformed handler is 0x4C5C5A7F" />
+  <OpcodeInfo value="11946" index="249" ctor="7175040" handler="5689424" dtor="7127376" comment="Jam opcode, switch case is at 0x666DFB" />
+  <OpcodeInfo value="11964" index="254" ctor="7117296" handler="5958048" dtor="6945072" comment="Jam opcode, switch case is at 0x667B55" />
+  <OpcodeInfo value="11966" index="255" ctor="7131664" handler="9703072" dtor="6945712" comment="Jam opcode, switch case is at 0x66675E" />
+  <OpcodeInfo value="12324" index="390" ctor="0" handler="6293616" dtor="0" comment="Regular opcode, transformed handler is 0x52E79BA9" />
+  <OpcodeInfo value="12326" index="391" ctor="0" handler="5583088" dtor="0" comment="Regular opcode, transformed handler is 0x52DAC42B" />
+  <OpcodeInfo value="12422" index="395" ctor="0" handler="5668080" dtor="0" comment="Regular opcode, transformed handler is 0x527C108B" />
+  <OpcodeInfo value="12450" index="397" ctor="0" handler="5627664" dtor="0" comment="Regular opcode, transformed handler is 0x525772CF" />
+  <OpcodeInfo value="12452" index="398" ctor="0" handler="6253760" dtor="0" comment="Regular opcode, transformed handler is 0x52670079" />
+  <OpcodeInfo value="12804" index="402" ctor="0" handler="10195024" dtor="0" comment="Regular opcode, transformed handler is 0x51432169" />
+  <OpcodeInfo value="12834" index="405" ctor="0" handler="9900464" dtor="0" comment="Regular opcode, transformed handler is 0x5118A2EF" />
+  <OpcodeInfo value="12836" index="406" ctor="0" handler="9099408" dtor="0" comment="Regular opcode, transformed handler is 0x511269C9" />
+  <OpcodeInfo value="12930" index="409" ctor="0" handler="9273072" dtor="0" comment="Regular opcode, transformed handler is 0x50AF108F" />
+  <OpcodeInfo value="12964" index="414" ctor="0" handler="9925088" dtor="0" comment="Regular opcode, transformed handler is 0x509F0399" />
+  <OpcodeInfo value="13348" index="422" ctor="0" handler="5571824" dtor="0" comment="Regular opcode, transformed handler is 0x56DC9C29" />
+  <OpcodeInfo value="13350" index="423" ctor="0" handler="9737520" dtor="0" comment="Regular opcode, transformed handler is 0x571A2C6B" />
+  <OpcodeInfo value="13440" index="424" ctor="0" handler="9379616" dtor="0" comment="Regular opcode, transformed handler is 0x56B2B6BD" />
+  <OpcodeInfo value="13446" index="427" ctor="0" handler="6262528" dtor="0" comment="Regular opcode, transformed handler is 0x5685269B" />
+  <OpcodeInfo value="13474" index="429" ctor="0" handler="5628464" dtor="0" comment="Regular opcode, transformed handler is 0x565779EF" />
+  <OpcodeInfo value="13476" index="430" ctor="0" handler="5590576" dtor="0" comment="Regular opcode, transformed handler is 0x565CE5E9" />
+  <OpcodeInfo value="13826" index="433" ctor="0" handler="5668080" dtor="0" comment="Regular opcode, transformed handler is 0x54F8120F" />
+  <OpcodeInfo value="13830" index="435" ctor="0" handler="5988560" dtor="0" comment="Regular opcode, transformed handler is 0x5500F5EB" />
+  <OpcodeInfo value="13862" index="439" ctor="0" handler="5678352" dtor="0" comment="Regular opcode, transformed handler is 0x54DC3A4B" />
+  <OpcodeInfo value="13956" index="442" ctor="0" handler="5577696" dtor="0" comment="Regular opcode, transformed handler is 0x547CB179" />
+  <OpcodeInfo value="13984" index="444" ctor="0" handler="5668080" dtor="0" comment="Regular opcode, transformed handler is 0x545A12AD" />
+  <OpcodeInfo value="13986" index="445" ctor="0" handler="5590384" dtor="0" comment="Regular opcode, transformed handler is 0x5456E32F" />
+  <OpcodeInfo value="14338" index="449" ctor="0" handler="5573776" dtor="0" comment="Regular opcode, transformed handler is 0x5AF6A7AF" />
+  <OpcodeInfo value="14342" index="451" ctor="0" handler="5672512" dtor="0" comment="Regular opcode, transformed handler is 0x5AFC295B" />
+  <OpcodeInfo value="14370" index="453" ctor="0" handler="5678752" dtor="0" comment="Regular opcode, transformed handler is 0x5AD841DF" />
+  <OpcodeInfo value="14464" index="456" ctor="0" handler="4812432" dtor="0" comment="Regular opcode, transformed handler is 0x5A6D0A2D" />
+  <OpcodeInfo value="14468" index="458" ctor="0" handler="9419360" dtor="0" comment="Regular opcode, transformed handler is 0x5AB755F9" />
+  <OpcodeInfo value="14470" index="459" ctor="0" handler="6123456" dtor="0" comment="Regular opcode, transformed handler is 0x5A830B5B" />
+  <OpcodeInfo value="14502" index="463" ctor="0" handler="9361680" dtor="0" comment="Regular opcode, transformed handler is 0x5A9474CB" />
+  <OpcodeInfo value="14852" index="466" ctor="0" handler="6293616" dtor="0" comment="Regular opcode, transformed handler is 0x5907A189" />
+  <OpcodeInfo value="14884" index="470" ctor="0" handler="5082304" dtor="0" comment="Regular opcode, transformed handler is 0x58D525F9" />
+  <OpcodeInfo value="14886" index="471" ctor="0" handler="5576880" dtor="0" comment="Regular opcode, transformed handler is 0x58DAB1EB" />
+  <OpcodeInfo value="14978" index="473" ctor="0" handler="5604416" dtor="0" comment="Regular opcode, transformed handler is 0x58771DDF" />
+  <OpcodeInfo value="14980" index="474" ctor="0" handler="5626704" dtor="0" comment="Regular opcode, transformed handler is 0x587D74E9" />
+  <OpcodeInfo value="15014" index="479" ctor="0" handler="5668080" dtor="0" comment="Regular opcode, transformed handler is 0x585C16AB" />
+  <OpcodeInfo value="15360" index="480" ctor="0" handler="5604448" dtor="0" comment="Regular opcode, transformed handler is 0x5EF9237D" />
+  <OpcodeInfo value="15362" index="481" ctor="0" handler="5951648" dtor="0" comment="Regular opcode, transformed handler is 0x5EFC6FBF" />
+  <OpcodeInfo value="15394" index="485" ctor="0" handler="6439632" dtor="0" comment="Regular opcode, transformed handler is 0x5EE3E20F" />
+  <OpcodeInfo value="15396" index="486" ctor="0" handler="5627392" dtor="0" comment="Regular opcode, transformed handler is 0x5EDD7D39" />
+  <OpcodeInfo value="15490" index="489" ctor="0" handler="5678352" dtor="0" comment="Regular opcode, transformed handler is 0x5E7844AF" />
+  <OpcodeInfo value="15492" index="490" ctor="0" handler="10108736" dtor="0" comment="Regular opcode, transformed handler is 0x5EC1DED9" />
+  <OpcodeInfo value="15522" index="493" ctor="0" handler="5606512" dtor="0" comment="Regular opcode, transformed handler is 0x5E572C2F" />
+  <OpcodeInfo value="15872" index="496" ctor="0" handler="5572064" dtor="0" comment="Regular opcode, transformed handler is 0x5CF8A2FD" />
+  <OpcodeInfo value="15874" index="497" ctor="0" handler="9077072" dtor="0" comment="Regular opcode, transformed handler is 0x5D2C1E6F" />
+  <OpcodeInfo value="15908" index="502" ctor="0" handler="9438416" dtor="0" comment="Regular opcode, transformed handler is 0x5D17A209" />
+  <OpcodeInfo value="15910" index="503" ctor="0" handler="10189424" dtor="0" comment="Regular opcode, transformed handler is 0x5D2117AB" />
+  <OpcodeInfo value="16000" index="504" ctor="0" handler="9273072" dtor="0" comment="Regular opcode, transformed handler is 0x5CB11C8D" />
+  <OpcodeInfo value="16006" index="507" ctor="0" handler="5668080" dtor="0" comment="Regular opcode, transformed handler is 0x5C7C1A8B" />
+  <OpcodeInfo value="16032" index="508" ctor="0" handler="10189424" dtor="0" comment="Regular opcode, transformed handler is 0x5C9F182D" />
+  <OpcodeInfo value="16034" index="509" ctor="0" handler="5076112" dtor="0" comment="Regular opcode, transformed handler is 0x5C4F124F" />
+  <OpcodeInfo value="16036" index="510" ctor="0" handler="5573440" dtor="0" comment="Regular opcode, transformed handler is 0x5C5CA8F9" />
+  <OpcodeInfo value="16038" index="511" ctor="0" handler="5951440" dtor="0" comment="Regular opcode, transformed handler is 0x5C606D8B" />
+  <OpcodeInfo value="16390" index="515" ctor="0" handler="5590176" dtor="0" comment="Regular opcode, transformed handler is 0x22FB2FBB" />
+  <OpcodeInfo value="16416" index="516" ctor="0" handler="9930976" dtor="0" comment="Regular opcode, transformed handler is 0x231B6C1D" />
+  <OpcodeInfo value="16512" index="520" ctor="0" handler="5650608" dtor="0" comment="Regular opcode, transformed handler is 0x227A1C4D" />
+  <OpcodeInfo value="16514" index="521" ctor="0" handler="9273072" dtor="0" comment="Regular opcode, transformed handler is 0x22AF628F" />
+  <OpcodeInfo value="16518" index="523" ctor="0" handler="9920992" dtor="0" comment="Regular opcode, transformed handler is 0x22BD457B" />
+  <OpcodeInfo value="16544" index="524" ctor="0" handler="5573264" dtor="0" comment="Regular opcode, transformed handler is 0x2258EE4D" />
+  <OpcodeInfo value="16548" index="526" ctor="0" handler="5076112" dtor="0" comment="Regular opcode, transformed handler is 0x22555849" />
+  <OpcodeInfo value="16896" index="528" ctor="0" handler="9765936" dtor="0" comment="Regular opcode, transformed handler is 0x2138E54D" />
+  <OpcodeInfo value="16898" index="529" ctor="0" handler="5635808" dtor="0" comment="Regular opcode, transformed handler is 0x20F7DFFF" />
+  <OpcodeInfo value="16900" index="530" ctor="0" handler="5650608" dtor="0" comment="Regular opcode, transformed handler is 0x20FE19C9" />
+  <OpcodeInfo value="17030" index="539" ctor="0" handler="5571488" dtor="0" comment="Regular opcode, transformed handler is 0x207AE53B" />
+  <OpcodeInfo value="17056" index="540" ctor="0" handler="5604736" dtor="0" comment="Regular opcode, transformed handler is 0x2059673D" />
+  <OpcodeInfo value="17062" index="543" ctor="0" handler="5575584" dtor="0" comment="Regular opcode, transformed handler is 0x205AF55B" />
+  <OpcodeInfo value="17412" index="546" ctor="0" handler="9273072" dtor="0" comment="Regular opcode, transformed handler is 0x27356609" />
+  <OpcodeInfo value="17418" index="257" ctor="7103168" handler="6096368" dtor="6951952" comment="Jam opcode, switch case is at 0x668454" />
+  <OpcodeInfo value="17420" index="258" ctor="7089680" handler="5959424" dtor="6947488" comment="Jam opcode, switch case is at 0x667EC7" />
+  <OpcodeInfo value="17422" index="259" ctor="7105776" handler="9695104" dtor="6949664" comment="Jam opcode, switch case is at 0x6666FC" />
+  <OpcodeInfo value="17432" index="260" ctor="7156512" handler="6094064" dtor="6943360" comment="Jam opcode, switch case is at 0x6678BD" />
+  <OpcodeInfo value="17434" index="261" ctor="6951744" handler="9648944" dtor="6943088" comment="Jam opcode, switch case is at 0x667553" />
+  <OpcodeInfo value="17436" index="262" ctor="7086112" handler="4205760" dtor="6997744" comment="Jam opcode, switch case is at 0x665F6A" />
+  <OpcodeInfo value="17438" index="263" ctor="7212496" handler="5637504" dtor="7221552" comment="Jam opcode, switch case is at 0x666295" />
+  <OpcodeInfo value="17448" index="264" ctor="7095936" handler="5130928" dtor="7069664" comment="Jam opcode, switch case is at 0x665FCC" />
+  <OpcodeInfo value="17452" index="266" ctor="7047824" handler="5574240" dtor="6946048" comment="Jam opcode, switch case is at 0x666853" />
+  <OpcodeInfo value="17466" index="269" ctor="6948736" handler="10097824" dtor="6943152" comment="Jam opcode, switch case is at 0x66701F" />
+  <OpcodeInfo value="17468" index="270" ctor="7054080" handler="5584448" dtor="6948864" comment="Jam opcode, switch case is at 0x66647F" />
+  <OpcodeInfo value="17470" index="271" ctor="7095872" handler="9695248" dtor="6947184" comment="Jam opcode, switch case is at 0x666FBD" />
+  <OpcodeInfo value="17538" index="553" ctor="0" handler="9341984" dtor="0" comment="Regular opcode, transformed handler is 0x26B073BF" />
+  <OpcodeInfo value="17540" index="554" ctor="0" handler="9619248" dtor="0" comment="Regular opcode, transformed handler is 0x26BAAEC9" />
+  <OpcodeInfo value="17544" index="272" ctor="7192224" handler="10445712" dtor="7225472" comment="Jam opcode, switch case is at 0x6662F7" />
+  <OpcodeInfo value="17546" index="273" ctor="6989536" handler="6095024" dtor="6950752" comment="Jam opcode, switch case is at 0x668208" />
+  <OpcodeInfo value="17560" index="276" ctor="7093872" handler="6094576" dtor="6946144" comment="Jam opcode, switch case is at 0x668144" />
+  <OpcodeInfo value="17562" index="277" ctor="7063040" handler="6095584" dtor="6948880" comment="Jam opcode, switch case is at 0x6682FD" />
+  <OpcodeInfo value="17564" index="278" ctor="7047824" handler="9964368" dtor="6946048" comment="Jam opcode, switch case is at 0x668FE7" />
+  <OpcodeInfo value="17566" index="279" ctor="6947296" handler="9648736" dtor="6948320" comment="Jam opcode, switch case is at 0x667522" />
+  <OpcodeInfo value="17568" index="556" ctor="0" handler="5606960" dtor="0" comment="Regular opcode, transformed handler is 0x265975ED" />
+  <OpcodeInfo value="17572" index="558" ctor="0" handler="10416416" dtor="0" comment="Regular opcode, transformed handler is 0x26A6D8D9" />
+  <OpcodeInfo value="17576" index="280" ctor="7080560" handler="5957840" dtor="6945024" comment="Jam opcode, switch case is at 0x667AF3" />
+  <OpcodeInfo value="17578" index="281" ctor="7131952" handler="6094240" dtor="6945744" comment="Jam opcode, switch case is at 0x6678F7" />
+  <OpcodeInfo value="17580" index="282" ctor="7092288" handler="6094912" dtor="6948080" comment="Jam opcode, switch case is at 0x6681D7" />
+  <OpcodeInfo value="17592" index="284" ctor="7036576" handler="9963360" dtor="6951504" comment="Jam opcode, switch case is at 0x668CBC" />
+  <OpcodeInfo value="17594" index="285" ctor="6951872" handler="5637616" dtor="6944304" comment="Jam opcode, switch case is at 0x6671D8" />
+  <OpcodeInfo value="17596" index="286" ctor="7032896" handler="5958448" dtor="6950800" comment="Jam opcode, switch case is at 0x667C4A" />
+  <OpcodeInfo value="17598" index="287" ctor="7092544" handler="5584272" dtor="6943168" comment="Jam opcode, switch case is at 0x66641D" />
+  <OpcodeInfo value="17926" index="563" ctor="0" handler="4787664" dtor="0" comment="Regular opcode, transformed handler is 0x24EEF2EB" />
+  <OpcodeInfo value="17932" index="290" ctor="6954400" handler="5697456" dtor="6945696" comment="Jam opcode, switch case is at 0x668F1A" />
+  <OpcodeInfo value="17946" index="293" ctor="6968240" handler="5959504" dtor="6945728" comment="Jam opcode, switch case is at 0x667EF8" />
+  <OpcodeInfo value="17948" index="294" ctor="7043584" handler="5628656" dtor="6943984" comment="Jam opcode, switch case is at 0x668F4B" />
+  <OpcodeInfo value="17950" index="295" ctor="7019664" handler="5958688" dtor="6949200" comment="Jam opcode, switch case is at 0x667CDD" />
+  <OpcodeInfo value="17954" index="565" ctor="0" handler="10190848" dtor="0" comment="Regular opcode, transformed handler is 0x251D653F" />
+  <OpcodeInfo value="17958" index="567" ctor="0" handler="5074832" dtor="0" comment="Regular opcode, transformed handler is 0x24D354CB" />
+  <OpcodeInfo value="17960" index="296" ctor="7047824" handler="10396480" dtor="6946048" comment="Jam opcode, switch case is at 0x667584" />
+  <OpcodeInfo value="17962" index="297" ctor="7281392" handler="9877920" dtor="7272016" comment="Jam opcode, switch case is at 0x666099" />
+  <OpcodeInfo value="17976" index="300" ctor="7087872" handler="9221296" dtor="6947648" comment="Jam opcode, switch case is at 0x66745E" />
+  <OpcodeInfo value="18050" index="569" ctor="0" handler="5572512" dtor="0" comment="Regular opcode, transformed handler is 0x2476ED3F" />
+  <OpcodeInfo value="18054" index="571" ctor="0" handler="9068096" dtor="0" comment="Regular opcode, transformed handler is 0x24B043DB" />
+  <OpcodeInfo value="18058" index="305" ctor="7067216" handler="5637424" dtor="6949168" comment="Jam opcode, switch case is at 0x66625B" />
+  <OpcodeInfo value="18072" index="308" ctor="6946064" handler="5584544" dtor="6949216" comment="Jam opcode, switch case is at 0x6670E3" />
+  <OpcodeInfo value="18074" index="309" ctor="7023184" handler="9712496" dtor="6944208" comment="Jam opcode, switch case is at 0x666543" />
+  <OpcodeInfo value="18082" index="573" ctor="0" handler="5668080" dtor="0" comment="Regular opcode, transformed handler is 0x245862AF" />
+  <OpcodeInfo value="18088" index="312" ctor="6996176" handler="5957968" dtor="6944224" comment="Jam opcode, switch case is at 0x667B24" />
+  <OpcodeInfo value="18090" index="313" ctor="7082864" handler="9666384" dtor="6944384" comment="Jam opcode, switch case is at 0x6684E7" />
+  <OpcodeInfo value="18104" index="316" ctor="7026032" handler="5811504" dtor="6947376" comment="Jam opcode, switch case is at 0x6687D8" />
+  <OpcodeInfo value="18110" index="319" ctor="7225408" handler="9747376" dtor="7108784" comment="Jam opcode, switch case is at 0x665E44" />
+  <OpcodeInfo value="18432" index="576" ctor="0" handler="10189424" dtor="0" comment="Regular opcode, transformed handler is 0x2B3F658D" />
+  <OpcodeInfo value="18434" index="577" ctor="0" handler="9410176" dtor="0" comment="Regular opcode, transformed handler is 0x2B31819F" />
+  <OpcodeInfo value="18436" index="578" ctor="0" handler="5572144" dtor="0" comment="Regular opcode, transformed handler is 0x2AFCF149" />
+  <OpcodeInfo value="18438" index="579" ctor="0" handler="5951168" dtor="0" comment="Regular opcode, transformed handler is 0x2B00B9DB" />
+  <OpcodeInfo value="18464" index="580" ctor="0" handler="9119936" dtor="0" comment="Regular opcode, transformed handler is 0x2B0F13FD" />
+  <OpcodeInfo value="18564" index="586" ctor="0" handler="10462448" dtor="0" comment="Regular opcode, transformed handler is 0x2AC79089" />
+  <OpcodeInfo value="18592" index="588" ctor="0" handler="5664800" dtor="0" comment="Regular opcode, transformed handler is 0x2A5A5BDD" />
+  <OpcodeInfo value="18944" index="592" ctor="0" handler="9755136" dtor="0" comment="Regular opcode, transformed handler is 0x2938C31D" />
+  <OpcodeInfo value="18948" index="594" ctor="0" handler="5573888" dtor="0" comment="Regular opcode, transformed handler is 0x28FCF619" />
+  <OpcodeInfo value="18976" index="596" ctor="0" handler="10122752" dtor="0" comment="Regular opcode, transformed handler is 0x291E5F3D" />
+  <OpcodeInfo value="18978" index="597" ctor="0" handler="5572208" dtor="0" comment="Regular opcode, transformed handler is 0x28D6EFAF" />
+  <OpcodeInfo value="18980" index="598" ctor="0" handler="5668080" dtor="0" comment="Regular opcode, transformed handler is 0x28DE6629" />
+  <OpcodeInfo value="18982" index="599" ctor="0" handler="6454480" dtor="0" comment="Regular opcode, transformed handler is 0x28E8660B" />
+  <OpcodeInfo value="19074" index="601" ctor="0" handler="9942432" dtor="0" comment="Regular opcode, transformed handler is 0x28B99F3F" />
+  <OpcodeInfo value="19104" index="604" ctor="0" handler="9353328" dtor="0" comment="Regular opcode, transformed handler is 0x2892A22D" />
+  <OpcodeInfo value="19106" index="605" ctor="0" handler="5950464" dtor="0" comment="Regular opcode, transformed handler is 0x285CB5BF" />
+  <OpcodeInfo value="19108" index="606" ctor="0" handler="4199072" dtor="0" comment="Regular opcode, transformed handler is 0x2847FC59" />
+  <OpcodeInfo value="19458" index="609" ctor="0" handler="5627216" dtor="0" comment="Regular opcode, transformed handler is 0x2EF7CC6F" />
+  <OpcodeInfo value="19468" index="322" ctor="7092464" handler="9714896" dtor="6950832" comment="Jam opcode, switch case is at 0x6665A5" />
+  <OpcodeInfo value="19484" index="326" ctor="6960272" handler="5584032" dtor="6943952" comment="Jam opcode, switch case is at 0x6671A7" />
+  <OpcodeInfo value="19488" index="612" ctor="0" handler="9602272" dtor="0" comment="Regular opcode, transformed handler is 0x2F16741D" />
+  <OpcodeInfo value="19496" index="328" ctor="7298032" handler="10232864" dtor="7289440" comment="Jam opcode, switch case is at 0x668A8F" />
+  <OpcodeInfo value="19512" index="332" ctor="7047824" handler="9199440" dtor="6946048" comment="Jam opcode, switch case is at 0x66638A" />
+  <OpcodeInfo value="19584" index="616" ctor="0" handler="5628464" dtor="0" comment="Regular opcode, transformed handler is 0x2E79D1CD" />
+  <OpcodeInfo value="19586" index="617" ctor="0" handler="9067680" dtor="0" comment="Regular opcode, transformed handler is 0x2EAC4C3F" />
+  <OpcodeInfo value="19596" index="338" ctor="7047824" handler="5584688" dtor="6946048" comment="Jam opcode, switch case is at 0x668E4D" />
+  <OpcodeInfo value="19598" index="339" ctor="7126576" handler="10397136" dtor="7131904" comment="Jam opcode, switch case is at 0x66729C" />
+  <OpcodeInfo value="19616" index="620" ctor="0" handler="5626912" dtor="0" comment="Regular opcode, transformed handler is 0x2E59CBDD" />
+  <OpcodeInfo value="19618" index="621" ctor="0" handler="9330096" dtor="0" comment="Regular opcode, transformed handler is 0x2E904D6F" />
+  <OpcodeInfo value="19622" index="623" ctor="0" handler="4812368" dtor="0" comment="Regular opcode, transformed handler is 0x2E4F5E0B" />
+  <OpcodeInfo value="19624" index="344" ctor="7116736" handler="9702496" dtor="6944448" comment="Jam opcode, switch case is at 0x6666CB" />
+  <OpcodeInfo value="19626" index="345" ctor="7035952" handler="9694864" dtor="6947456" comment="Jam opcode, switch case is at 0x666638" />
+  <OpcodeInfo value="19630" index="347" ctor="7226464" handler="5856704" dtor="7169696" comment="Jam opcode, switch case is at 0x66886B" />
+  <OpcodeInfo value="19642" index="349" ctor="7226096" handler="9746480" dtor="7211712" comment="Jam opcode, switch case is at 0x666B01" />
+  <OpcodeInfo value="19968" index="624" ctor="0" handler="6439632" dtor="0" comment="Regular opcode, transformed handler is 0x2D062FED" />
+  <OpcodeInfo value="19970" index="625" ctor="0" handler="5571728" dtor="0" comment="Regular opcode, transformed handler is 0x2CF6F1AF" />
+  <OpcodeInfo value="19972" index="626" ctor="0" handler="6293616" dtor="0" comment="Regular opcode, transformed handler is 0x2D07F589" />
+  <OpcodeInfo value="19992" index="356" ctor="7142416" handler="9666544" dtor="6945216" comment="Jam opcode, switch case is at 0x6686E3" />
+  <OpcodeInfo value="20004" index="630" ctor="0" handler="5074752" dtor="0" comment="Regular opcode, transformed handler is 0x2CD55C79" />
+  <OpcodeInfo value="20006" index="631" ctor="0" handler="10129792" dtor="0" comment="Regular opcode, transformed handler is 0x2D207EBB" />
+  <OpcodeInfo value="20010" index="361" ctor="7127296" handler="5588800" dtor="6945520" comment="Jam opcode, switch case is at 0x6686B2" />
+  <OpcodeInfo value="20012" index="362" ctor="7086016" handler="5958928" dtor="6942976" comment="Jam opcode, switch case is at 0x667D70" />
+  <OpcodeInfo value="20014" index="363" ctor="7131520" handler="5959904" dtor="6949440" comment="Jam opcode, switch case is at 0x667FED" />
+  <OpcodeInfo value="20028" index="366" ctor="7267216" handler="9674864" dtor="7178608" comment="Jam opcode, switch case is at 0x6661C8" />
+  <OpcodeInfo value="20096" index="632" ctor="0" handler="9373648" dtor="0" comment="Regular opcode, transformed handler is 0x2CB2F56D" />
+  <OpcodeInfo value="20106" index="369" ctor="7297952" handler="10003840" dtor="7281568" comment="Jam opcode, switch case is at 0x668C8B" />
+  <OpcodeInfo value="20110" index="371" ctor="7066144" handler="6095360" dtor="6948656" comment="Jam opcode, switch case is at 0x66829B" />
+  <OpcodeInfo value="20120" index="372" ctor="7026976" handler="6094688" dtor="6943392" comment="Jam opcode, switch case is at 0x668175" />
+  <OpcodeInfo value="20138" index="377" ctor="7002960" handler="5958128" dtor="6943136" comment="Jam opcode, switch case is at 0x667B86" />
+  <OpcodeInfo value="20158" index="383" ctor="7116512" handler="9712688" dtor="6943680" comment="Jam opcode, switch case is at 0x666A0C" />
+  <OpcodeInfo value="20484" index="642" ctor="0" handler="9883584" dtor="0" comment="Regular opcode, transformed handler is 0x333EC2D9" />
+  <OpcodeInfo value="20486" index="643" ctor="0" handler="9273072" dtor="0" comment="Regular opcode, transformed handler is 0x3333720B" />
+  <OpcodeInfo value="20512" index="644" ctor="0" handler="6293616" dtor="0" comment="Regular opcode, transformed handler is 0x32E3FBAD" />
+  <OpcodeInfo value="20514" index="645" ctor="0" handler="5575760" dtor="0" comment="Regular opcode, transformed handler is 0x32D7078F" />
+  <OpcodeInfo value="20516" index="646" ctor="0" handler="5627392" dtor="0" comment="Regular opcode, transformed handler is 0x32DDD139" />
+  <OpcodeInfo value="20608" index="648" ctor="0" handler="5668080" dtor="0" comment="Regular opcode, transformed handler is 0x327A708D" />
+  <OpcodeInfo value="20610" index="649" ctor="0" handler="9273072" dtor="0" comment="Regular opcode, transformed handler is 0x32AF728F" />
+  <OpcodeInfo value="20612" index="650" ctor="0" handler="5650144" dtor="0" comment="Regular opcode, transformed handler is 0x327E2A79" />
+  <OpcodeInfo value="20614" index="651" ctor="0" handler="4812336" dtor="0" comment="Regular opcode, transformed handler is 0x326F61CB" />
+  <OpcodeInfo value="20644" index="654" ctor="0" handler="9330128" dtor="0" comment="Regular opcode, transformed handler is 0x32965189" />
+  <OpcodeInfo value="20996" index="658" ctor="0" handler="9765968" dtor="0" comment="Regular opcode, transformed handler is 0x313CF569" />
+  <OpcodeInfo value="21028" index="662" ctor="0" handler="9273072" dtor="0" comment="Regular opcode, transformed handler is 0x31157029" />
+  <OpcodeInfo value="21030" index="663" ctor="0" handler="5950272" dtor="0" comment="Regular opcode, transformed handler is 0x30E0BC7B" />
+  <OpcodeInfo value="21120" index="664" ctor="0" handler="10526224" dtor="0" comment="Regular opcode, transformed handler is 0x30C48FAD" />
+  <OpcodeInfo value="21124" index="666" ctor="0" handler="9273072" dtor="0" comment="Regular opcode, transformed handler is 0x30B57089" />
+  <OpcodeInfo value="21126" index="667" ctor="0" handler="5651616" dtor="0" comment="Regular opcode, transformed handler is 0x307C2E3B" />
+  <OpcodeInfo value="21152" index="668" ctor="0" handler="9885152" dtor="0" comment="Regular opcode, transformed handler is 0x309AC79D" />
+  <OpcodeInfo value="21154" index="669" ctor="0" handler="9067984" dtor="0" comment="Regular opcode, transformed handler is 0x308C4F8F" />
+  <OpcodeInfo value="21504" index="672" ctor="0" handler="5629152" dtor="0" comment="Regular opcode, transformed handler is 0x36F9DBFD" />
+  <OpcodeInfo value="21508" index="674" ctor="0" handler="5650608" dtor="0" comment="Regular opcode, transformed handler is 0x36FE2FC9" />
+  <OpcodeInfo value="21536" index="676" ctor="0" handler="5938048" dtor="0" comment="Regular opcode, transformed handler is 0x36DE92BD" />
+  <OpcodeInfo value="21540" index="678" ctor="0" handler="10189424" dtor="0" comment="Regular opcode, transformed handler is 0x372371A9" />
+  <OpcodeInfo value="21542" index="679" ctor="0" handler="6089920" dtor="0" comment="Regular opcode, transformed handler is 0x36E2E3FB" />
+  <OpcodeInfo value="21666" index="685" ctor="0" handler="10189424" dtor="0" comment="Regular opcode, transformed handler is 0x369D722F" />
+  <OpcodeInfo value="21670" index="687" ctor="0" handler="8381392" dtor="0" comment="Regular opcode, transformed handler is 0x3685DB8B" />
+  <OpcodeInfo value="22022" index="691" ctor="0" handler="5668080" dtor="0" comment="Regular opcode, transformed handler is 0x34FC720B" />
+  <OpcodeInfo value="22048" index="692" ctor="0" handler="9078512" dtor="0" comment="Regular opcode, transformed handler is 0x350E7C2D" />
+  <OpcodeInfo value="22050" index="693" ctor="0" handler="9963168" dtor="0" comment="Regular opcode, transformed handler is 0x3519FBDF" />
+  <OpcodeInfo value="22144" index="696" ctor="0" handler="5678752" dtor="0" comment="Regular opcode, transformed handler is 0x347A9C3D" />
+  <OpcodeInfo value="22146" index="697" ctor="0" handler="9408608" dtor="0" comment="Regular opcode, transformed handler is 0x34B185FF" />
+  <OpcodeInfo value="22148" index="698" ctor="0" handler="5627392" dtor="0" comment="Regular opcode, transformed handler is 0x347DD399" />
+  <OpcodeInfo value="22176" index="700" ctor="0" handler="5573808" dtor="0" comment="Regular opcode, transformed handler is 0x3459026D" />
+  <OpcodeInfo value="22178" index="701" ctor="0" handler="5636112" dtor="0" comment="Regular opcode, transformed handler is 0x3457F5CF" />
+  <OpcodeInfo value="22180" index="702" ctor="0" handler="5573568" dtor="0" comment="Regular opcode, transformed handler is 0x345D0179" />
+  <OpcodeInfo value="22530" index="705" ctor="0" handler="5607152" dtor="0" comment="Regular opcode, transformed handler is 0x3AF78A0F" />
+  <OpcodeInfo value="22534" index="707" ctor="0" handler="10189424" dtor="0" comment="Regular opcode, transformed handler is 0x3B41758B" />
+  <OpcodeInfo value="22560" index="708" ctor="0" handler="10107968" dtor="0" comment="Regular opcode, transformed handler is 0x3B1E377D" />
+  <OpcodeInfo value="22562" index="709" ctor="0" handler="5573680" dtor="0" comment="Regular opcode, transformed handler is 0x3AD7076F" />
+  <OpcodeInfo value="22658" index="713" ctor="0" handler="9824720" dtor="0" comment="Regular opcode, transformed handler is 0x3AB7E56F" />
+  <OpcodeInfo value="22660" index="714" ctor="0" handler="5571440" dtor="0" comment="Regular opcode, transformed handler is 0x3A7CFF09" />
+  <OpcodeInfo value="22688" index="716" ctor="0" handler="5572352" dtor="0" comment="Regular opcode, transformed handler is 0x3A5902BD" />
+  <OpcodeInfo value="22690" index="717" ctor="0" handler="9931776" dtor="0" comment="Regular opcode, transformed handler is 0x3A9987BF" />
+  <OpcodeInfo value="22694" index="719" ctor="0" handler="9737744" dtor="0" comment="Regular opcode, transformed handler is 0x3A9A91CB" />
+  <OpcodeInfo value="23040" index="720" ctor="0" handler="9635424" dtor="0" comment="Regular opcode, transformed handler is 0x3936FF7D" />
+  <OpcodeInfo value="23046" index="723" ctor="0" handler="5668080" dtor="0" comment="Regular opcode, transformed handler is 0x38FC760B" />
+  <OpcodeInfo value="23074" index="725" ctor="0" handler="5578560" dtor="0" comment="Regular opcode, transformed handler is 0x38D7187F" />
+  <OpcodeInfo value="23078" index="727" ctor="0" handler="5651616" dtor="0" comment="Regular opcode, transformed handler is 0x38DC35DB" />
+  <OpcodeInfo value="23170" index="729" ctor="0" handler="5668080" dtor="0" comment="Regular opcode, transformed handler is 0x3878768F" />
+  <OpcodeInfo value="23174" index="731" ctor="0" handler="5668080" dtor="0" comment="Regular opcode, transformed handler is 0x387C768B" />
+  <OpcodeInfo value="23202" index="733" ctor="0" handler="5668080" dtor="0" comment="Regular opcode, transformed handler is 0x385876AF" />
+  <OpcodeInfo value="23206" index="735" ctor="0" handler="10360592" dtor="0" comment="Regular opcode, transformed handler is 0x38A410CB" />
+  <OpcodeInfo value="23586" index="741" ctor="0" handler="9409552" dtor="0" comment="Regular opcode, transformed handler is 0x3F11934F" />
+  <OpcodeInfo value="23680" index="744" ctor="0" handler="5668080" dtor="0" comment="Regular opcode, transformed handler is 0x3E7A7C8D" />
+  <OpcodeInfo value="23684" index="746" ctor="0" handler="9273072" dtor="0" comment="Regular opcode, transformed handler is 0x3EB57E89" />
+  <OpcodeInfo value="23686" index="747" ctor="0" handler="9621344" dtor="0" comment="Regular opcode, transformed handler is 0x3EB8CEFB" />
+  <OpcodeInfo value="23712" index="748" ctor="0" handler="9273072" dtor="0" comment="Regular opcode, transformed handler is 0x3E917EAD" />
+  <OpcodeInfo value="23716" index="750" ctor="0" handler="5652368" dtor="0" comment="Regular opcode, transformed handler is 0x3E5E3F49" />
+  <OpcodeInfo value="23718" index="751" ctor="0" handler="9631424" dtor="0" comment="Regular opcode, transformed handler is 0x3E98F67B" />
+  <OpcodeInfo value="24066" index="753" ctor="0" handler="5651616" dtor="0" comment="Regular opcode, transformed handler is 0x3CF839BF" />
+  <OpcodeInfo value="24068" index="754" ctor="0" handler="10118544" dtor="0" comment="Regular opcode, transformed handler is 0x3D4262A9" />
+  <OpcodeInfo value="24096" index="756" ctor="0" handler="4813648" dtor="0" comment="Regular opcode, transformed handler is 0x3CCD708D" />
+  <OpcodeInfo value="24098" index="757" ctor="0" handler="5668080" dtor="0" comment="Regular opcode, transformed handler is 0x3CD87A2F" />
+  <OpcodeInfo value="24102" index="759" ctor="0" handler="5650608" dtor="0" comment="Regular opcode, transformed handler is 0x3CDC35EB" />
+  <OpcodeInfo value="24228" index="766" ctor="0" handler="5625872" dtor="0" comment="Regular opcode, transformed handler is 0x3C5DD5C9" />
+  <OpcodeInfo value="24576" index="768" ctor="0" handler="5627216" dtor="0" comment="Regular opcode, transformed handler is 0x2F9A06D" />
+  <OpcodeInfo value="24578" index="769" ctor="0" handler="9119408" dtor="0" comment="Regular opcode, transformed handler is 0x32CE9CF" />
+  <OpcodeInfo value="24582" index="771" ctor="0" handler="5074864" dtor="0" comment="Regular opcode, transformed handler is 0x2F332CB" />
+  <OpcodeInfo value="24610" index="773" ctor="0" handler="5668080" dtor="0" comment="Regular opcode, transformed handler is 0x2D8402F" />
+  <OpcodeInfo value="24706" index="777" ctor="0" handler="10363440" dtor="0" comment="Regular opcode, transformed handler is 0x2BFE5CF" />
+  <OpcodeInfo value="24736" index="780" ctor="0" handler="6090032" dtor="0" comment="Regular opcode, transformed handler is 0x260B0ED" />
+  <OpcodeInfo value="24738" index="781" ctor="0" handler="5627392" dtor="0" comment="Regular opcode, transformed handler is 0x257A1BF" />
+  <OpcodeInfo value="24740" index="782" ctor="0" handler="10189424" dtor="0" comment="Regular opcode, transformed handler is 0x2A33E29" />
+  <OpcodeInfo value="24742" index="783" ctor="0" handler="5668080" dtor="0" comment="Regular opcode, transformed handler is 0x25C40AB" />
+  <OpcodeInfo value="25120" index="788" ctor="0" handler="5678096" dtor="0" comment="Regular opcode, transformed handler is 0xDA654D" />
+  <OpcodeInfo value="25122" index="789" ctor="0" handler="9273072" dtor="0" comment="Regular opcode, transformed handler is 0x10F402F" />
+  <OpcodeInfo value="25126" index="791" ctor="0" handler="9767792" dtor="0" comment="Regular opcode, transformed handler is 0x11ACCAB" />
+  <OpcodeInfo value="25220" index="794" ctor="0" handler="5627392" dtor="0" comment="Regular opcode, transformed handler is 0x7D9F99" />
+  <OpcodeInfo value="25222" index="795" ctor="0" handler="5578656" dtor="0" comment="Regular opcode, transformed handler is 0x7AE13B" />
+  <OpcodeInfo value="25248" index="796" ctor="0" handler="10526224" dtor="0" comment="Regular opcode, transformed handler is 0xA45FCD" />
+  <OpcodeInfo value="25252" index="798" ctor="0" handler="9078720" dtor="0" comment="Regular opcode, transformed handler is 0x924979" />
+  <OpcodeInfo value="25600" index="800" ctor="0" handler="5650352" dtor="0" comment="Regular opcode, transformed handler is 0x6F9FECD" />
+  <OpcodeInfo value="25606" index="803" ctor="0" handler="10415920" dtor="0" comment="Regular opcode, transformed handler is 0x744B64B" />
+  <OpcodeInfo value="25608" index="384" ctor="6968176" handler="9696448" dtor="6947472" comment="Jam opcode, switch case is at 0x666A9F" />
+  <OpcodeInfo value="25612" index="386" ctor="7114144" handler="5959248" dtor="6949888" comment="Jam opcode, switch case is at 0x667E34" />
+  <OpcodeInfo value="25614" index="387" ctor="7047824" handler="9330224" dtor="6946048" comment="Jam opcode, switch case is at 0x6685B4" />
+  <OpcodeInfo value="25628" index="390" ctor="7184496" handler="5584240" dtor="7175216" comment="Jam opcode, switch case is at 0x6662C6" />
+  <OpcodeInfo value="25640" index="392" ctor="7118288" handler="5957456" dtor="6946016" comment="Jam opcode, switch case is at 0x6679CD" />
+  <OpcodeInfo value="25644" index="394" ctor="7266624" handler="9603632" dtor="7225120" comment="Jam opcode, switch case is at 0x667114" />
+  <OpcodeInfo value="25646" index="395" ctor="6973168" handler="5637008" dtor="6947200" comment="Jam opcode, switch case is at 0x665F39" />
+  <OpcodeInfo value="25656" index="396" ctor="7065104" handler="5957328" dtor="6947520" comment="Jam opcode, switch case is at 0x66796B" />
+  <OpcodeInfo value="25658" index="397" ctor="7061968" handler="5959824" dtor="6950432" comment="Jam opcode, switch case is at 0x667FBC" />
+  <OpcodeInfo value="25662" index="399" ctor="7043136" handler="9711984" dtor="6943120" comment="Jam opcode, switch case is at 0x6664E1" />
+  <OpcodeInfo value="25734" index="811" ctor="0" handler="5583184" dtor="0" comment="Regular opcode, transformed handler is 0x67AF8EB" />
+  <OpcodeInfo value="25736" index="400" ctor="7142352" handler="5993120" dtor="6945488" comment="Jam opcode, switch case is at 0x667727" />
+  <OpcodeInfo value="25742" index="403" ctor="7171888" handler="5993376" dtor="6948832" comment="Jam opcode, switch case is at 0x66779B" />
+  <OpcodeInfo value="25752" index="404" ctor="7167584" handler="5993904" dtor="6948672" comment="Jam opcode, switch case is at 0x667883" />
+  <OpcodeInfo value="25754" index="405" ctor="7056832" handler="5584656" dtor="6945184" comment="Jam opcode, switch case is at 0x667648" />
+  <OpcodeInfo value="25758" index="407" ctor="7253904" handler="9962704" dtor="7225280" comment="Jam opcode, switch case is at 0x668D58" />
+  <OpcodeInfo value="25760" index="812" ctor="0" handler="9964128" dtor="0" comment="Regular opcode, transformed handler is 0x69BD21D" />
+  <OpcodeInfo value="25762" index="813" ctor="0" handler="9068096" dtor="0" comment="Regular opcode, transformed handler is 0x68C25FF" />
+  <OpcodeInfo value="25772" index="410" ctor="6951968" handler="4209296" dtor="6943184" comment="Jam opcode, switch case is at 0x666CC3" />
+  <OpcodeInfo value="25788" index="414" ctor="7169776" handler="9099792" dtor="7108736" comment="Jam opcode, switch case is at 0x6689CB" />
+  <OpcodeInfo value="26120" index="416" ctor="7105696" handler="5958528" dtor="6948064" comment="Jam opcode, switch case is at 0x667C7B" />
+  <OpcodeInfo value="26122" index="417" ctor="7202352" handler="9813104" dtor="7225168" comment="Jam opcode, switch case is at 0x668DEB" />
+  <OpcodeInfo value="26136" index="420" ctor="7065280" handler="6096144" dtor="6950528" comment="Jam opcode, switch case is at 0x6683F2" />
+  <OpcodeInfo value="26138" index="421" ctor="7093808" handler="5959008" dtor="6945008" comment="Jam opcode, switch case is at 0x667DA1" />
+  <OpcodeInfo value="26140" index="422" ctor="7039424" handler="9964256" dtor="6946368" comment="Jam opcode, switch case is at 0x668EB8" />
+  <OpcodeInfo value="26142" index="423" ctor="6946064" handler="5583856" dtor="6949216" comment="Jam opcode, switch case is at 0x667176" />
+  <OpcodeInfo value="26150" index="823" ctor="0" handler="5579024" dtor="0" comment="Regular opcode, transformed handler is 0x4DAE64B" />
+  <OpcodeInfo value="26152" index="424" ctor="7042800" handler="9712096" dtor="6949568" comment="Jam opcode, switch case is at 0x666512" />
+  <OpcodeInfo value="26154" index="425" ctor="7034528" handler="10445824" dtor="7042720" comment="Jam opcode, switch case is at 0x666328" />
+  <OpcodeInfo value="26156" index="426" ctor="7092608" handler="9654928" dtor="6946128" comment="Jam opcode, switch case is at 0x666EBF" />
+  <OpcodeInfo value="26158" index="427" ctor="7030160" handler="5958288" dtor="6943344" comment="Jam opcode, switch case is at 0x667BE8" />
+  <OpcodeInfo value="26246" index="827" ctor="0" handler="9631744" dtor="0" comment="Regular opcode, transformed handler is 0x4B8BD9B" />
+  <OpcodeInfo value="26250" index="433" ctor="7297872" handler="9682112" dtor="7280864" comment="Jam opcode, switch case is at 0x666A3D" />
+  <OpcodeInfo value="26254" index="435" ctor="7126416" handler="9656800" dtor="6950512" comment="Jam opcode, switch case is at 0x666D25" />
+  <OpcodeInfo value="26266" index="437" ctor="7152080" handler="4199136" dtor="6944176" comment="Jam opcode, switch case is at 0x668991" />
+  <OpcodeInfo value="26270" index="439" ctor="7163408" handler="9641440" dtor="6946848" comment="Jam opcode, switch case is at 0x66857A" />
+  <OpcodeInfo value="26286" index="443" ctor="7114368" handler="5689360" dtor="7054720" comment="Jam opcode, switch case is at 0x666E2C" />
+  <OpcodeInfo value="26296" index="444" ctor="7202416" handler="9694576" dtor="7202272" comment="Jam opcode, switch case is at 0x666607" />
+  <OpcodeInfo value="26298" index="445" ctor="7026384" handler="9944160" dtor="6949456" comment="Jam opcode, switch case is at 0x6675E6" />
+  <OpcodeInfo value="26300" index="446" ctor="6950448" handler="9884144" dtor="6943712" comment="Jam opcode, switch case is at 0x666359" />
+  <OpcodeInfo value="26624" index="832" ctor="0" handler="5627664" dtor="0" comment="Regular opcode, transformed handler is 0xAF9AA2D" />
+  <OpcodeInfo value="26628" index="834" ctor="0" handler="10356096" dtor="0" comment="Regular opcode, transformed handler is 0xB45D099" />
+  <OpcodeInfo value="26658" index="837" ctor="0" handler="6123584" dtor="0" comment="Regular opcode, transformed handler is 0xADF3B7F" />
+  <OpcodeInfo value="26662" index="839" ctor="0" handler="9767680" dtor="0" comment="Regular opcode, transformed handler is 0xB1AD63B" />
+  <OpcodeInfo value="26754" index="841" ctor="0" handler="6439632" dtor="0" comment="Regular opcode, transformed handler is 0xA840E6F" />
+  <OpcodeInfo value="26758" index="843" ctor="0" handler="6253072" dtor="0" comment="Regular opcode, transformed handler is 0xA8535AB" />
+  <OpcodeInfo value="26786" index="845" ctor="0" handler="9273072" dtor="0" comment="Regular opcode, transformed handler is 0xA8F4AAF" />
+  <OpcodeInfo value="26790" index="847" ctor="0" handler="6043680" dtor="0" comment="Regular opcode, transformed handler is 0xA6203DB" />
+  <OpcodeInfo value="27168" index="852" ctor="0" handler="5574256" dtor="0" comment="Regular opcode, transformed handler is 0x8D8D7AD" />
+  <OpcodeInfo value="27270" index="859" ctor="0" handler="9958256" dtor="0" comment="Regular opcode, transformed handler is 0x8BDBD0B" />
+  <OpcodeInfo value="27296" index="860" ctor="0" handler="6293616" dtor="0" comment="Regular opcode, transformed handler is 0x863D22D" />
+  <OpcodeInfo value="27648" index="864" ctor="0" handler="10135792" dtor="0" comment="Regular opcode, transformed handler is 0xF3E780D" />
+  <OpcodeInfo value="27650" index="865" ctor="0" handler="10129920" dtor="0" comment="Regular opcode, transformed handler is 0xF3C611F" />
+  <OpcodeInfo value="27652" index="866" ctor="0" handler="5574144" dtor="0" comment="Regular opcode, transformed handler is 0xEFCDD19" />
+  <OpcodeInfo value="27658" index="449" ctor="7066080" handler="5871040" dtor="6943408" comment="Jam opcode, switch case is at 0x668776" />
+  <OpcodeInfo value="27674" index="453" ctor="7278064" handler="9648080" dtor="7226176" comment="Jam opcode, switch case is at 0x666C61" />
+  <OpcodeInfo value="27676" index="454" ctor="7019104" handler="5958848" dtor="6948848" comment="Jam opcode, switch case is at 0x667D3F" />
+  <OpcodeInfo value="27678" index="455" ctor="7033584" handler="6095136" dtor="6947360" comment="Jam opcode, switch case is at 0x668239" />
+  <OpcodeInfo value="27680" index="868" ctor="0" handler="9273072" dtor="0" comment="Regular opcode, transformed handler is 0xF114E2D" />
+  <OpcodeInfo value="27682" index="869" ctor="0" handler="9409216" dtor="0" comment="Regular opcode, transformed handler is 0xF1161FF" />
+  <OpcodeInfo value="27684" index="870" ctor="0" handler="10415888" dtor="0" comment="Regular opcode, transformed handler is 0xF26BE49" />
+  <OpcodeInfo value="27692" index="458" ctor="6943808" handler="9102976" dtor="6943104" comment="Jam opcode, switch case is at 0x6674C0" />
+  <OpcodeInfo value="27708" index="462" ctor="7225216" handler="5607632" dtor="7206992" comment="Jam opcode, switch case is at 0x6664B0" />
+  <OpcodeInfo value="27776" index="872" ctor="0" handler="5574096" dtor="0" comment="Regular opcode, transformed handler is 0xE78DD6D" />
+  <OpcodeInfo value="27782" index="875" ctor="0" handler="5575872" dtor="0" comment="Regular opcode, transformed handler is 0xE7AE45B" />
+  <OpcodeInfo value="27800" index="468" ctor="7281216" handler="10402720" dtor="7208736" comment="Jam opcode, switch case is at 0x667307" />
+  <OpcodeInfo value="27802" index="469" ctor="7056128" handler="9944048" dtor="6951472" comment="Jam opcode, switch case is at 0x666E8E" />
+  <OpcodeInfo value="27804" index="470" ctor="6946064" handler="9682448" dtor="6949216" comment="Jam opcode, switch case is at 0x666A6E" />
+  <OpcodeInfo value="27806" index="471" ctor="6945120" handler="9808288" dtor="6945504" comment="Jam opcode, switch case is at 0x6661F9" />
+  <OpcodeInfo value="27808" index="876" ctor="0" handler="9076544" dtor="0" comment="Regular opcode, transformed handler is 0xE8E4EFD" />
+  <OpcodeInfo value="27810" index="877" ctor="0" handler="10189424" dtor="0" comment="Regular opcode, transformed handler is 0xE9D4A2F" />
+  <OpcodeInfo value="27812" index="878" ctor="0" handler="10526224" dtor="0" comment="Regular opcode, transformed handler is 0xEA86DC9" />
+  <OpcodeInfo value="27816" index="472" ctor="6946064" handler="5669552" dtor="6949216" comment="Jam opcode, switch case is at 0x6673CB" />
+  <OpcodeInfo value="27818" index="473" ctor="7015120" handler="9641392" dtor="6944192" comment="Jam opcode, switch case is at 0x668549" />
+  <OpcodeInfo value="28164" index="882" ctor="0" handler="6293616" dtor="0" comment="Regular opcode, transformed handler is 0xD07D589" />
+  <OpcodeInfo value="28168" index="480" ctor="7095744" handler="10015968" dtor="6950816" comment="Jam opcode, switch case is at 0x6668E6" />
+  <OpcodeInfo value="28174" index="483" ctor="7095680" handler="6277664" dtor="6948368" comment="Jam opcode, switch case is at 0x668518" />
+  <OpcodeInfo value="28188" index="486" ctor="7286448" handler="9701728" dtor="7281280" comment="Jam opcode, switch case is at 0x666EF0" />
+  <OpcodeInfo value="28192" index="884" ctor="0" handler="9444928" dtor="0" comment="Regular opcode, transformed handler is 0xD13EB7D" />
+  <OpcodeInfo value="28196" index="886" ctor="0" handler="5650608" dtor="0" comment="Regular opcode, transformed handler is 0xCDE05E9" />
+  <OpcodeInfo value="28198" index="887" ctor="0" handler="5083072" dtor="0" comment="Regular opcode, transformed handler is 0xCD35CFB" />
+  <OpcodeInfo value="28204" index="490" ctor="7212000" handler="9105376" dtor="7221504" comment="Jam opcode, switch case is at 0x66748F" />
+  <OpcodeInfo value="28206" index="491" ctor="6987616" handler="9694960" dtor="6950784" comment="Jam opcode, switch case is at 0x666669" />
+  <OpcodeInfo value="28216" index="492" ctor="7280944" handler="10239056" dtor="7167536" comment="Jam opcode, switch case is at 0x668AC0" />
+  <OpcodeInfo value="28288" index="888" ctor="0" handler="10526224" dtor="0" comment="Regular opcode, transformed handler is 0xCC46BAD" />
+  <OpcodeInfo value="28290" index="889" ctor="0" handler="9924240" dtor="0" comment="Regular opcode, transformed handler is 0xCB93C2F" />
+  <OpcodeInfo value="28300" index="498" ctor="6988032" handler="4767936" dtor="7006400" comment="Jam opcode, switch case is at 0x666979" />
+  <OpcodeInfo value="28312" index="500" ctor="7131600" handler="6043904" dtor="6949184" comment="Jam opcode, switch case is at 0x666006" />
+  <OpcodeInfo value="28314" index="501" ctor="7064896" handler="5576768" dtor="6948336" comment="Jam opcode, switch case is at 0x66615D" />
+  <OpcodeInfo value="28318" index="503" ctor="7054736" handler="6095696" dtor="6946320" comment="Jam opcode, switch case is at 0x66832E" />
+  <OpcodeInfo value="28322" index="893" ctor="0" handler="9330192" dtor="0" comment="Regular opcode, transformed handler is 0xC902BCF" />
+  <OpcodeInfo value="28328" index="504" ctor="7126352" handler="6096256" dtor="6945056" comment="Jam opcode, switch case is at 0x668423" />
+  <OpcodeInfo value="28344" index="508" ctor="7126288" handler="10227168" dtor="6949584" comment="Jam opcode, switch case is at 0x668B84" />
+  <OpcodeInfo value="28672" index="896" ctor="0" handler="5680912" dtor="0" comment="Regular opcode, transformed handler is 0x12FA822D" />
+  <OpcodeInfo value="28674" index="897" ctor="0" handler="6072320" dtor="0" comment="Regular opcode, transformed handler is 0x12FE7B1F" />
+  <OpcodeInfo value="28678" index="899" ctor="0" handler="9273072" dtor="0" comment="Regular opcode, transformed handler is 0x1333520B" />
+  <OpcodeInfo value="28800" index="904" ctor="0" handler="5651616" dtor="0" comment="Regular opcode, transformed handler is 0x127A103D" />
+  <OpcodeInfo value="28806" index="907" ctor="0" handler="10416560" dtor="0" comment="Regular opcode, transformed handler is 0x12C4C54B" />
+  <OpcodeInfo value="28832" index="908" ctor="0" handler="9099664" dtor="0" comment="Regular opcode, transformed handler is 0x128EAD4D" />
+  <OpcodeInfo value="29184" index="912" ctor="0" handler="9099408" dtor="0" comment="Regular opcode, transformed handler is 0x112EA9AD" />
+  <OpcodeInfo value="29186" index="913" ctor="0" handler="10189424" dtor="0" comment="Regular opcode, transformed handler is 0x113D4B8F" />
+  <OpcodeInfo value="29188" index="914" ctor="0" handler="9353008" dtor="0" comment="Regular opcode, transformed handler is 0x11368849" />
+  <OpcodeInfo value="29218" index="917" ctor="0" handler="9099408" dtor="0" comment="Regular opcode, transformed handler is 0x110CA9CF" />
+  <OpcodeInfo value="29220" index="918" ctor="0" handler="5605824" dtor="0" comment="Regular opcode, transformed handler is 0x10DD5AF9" />
+  <OpcodeInfo value="29222" index="919" ctor="0" handler="9980352" dtor="0" comment="Regular opcode, transformed handler is 0x111E1AFB" />
+  <OpcodeInfo value="29344" index="924" ctor="0" handler="9273072" dtor="0" comment="Regular opcode, transformed handler is 0x109150AD" />
+  <OpcodeInfo value="29346" index="925" ctor="0" handler="5951840" dtor="0" comment="Regular opcode, transformed handler is 0x105CA31F" />
+  <OpcodeInfo value="29348" index="926" ctor="0" handler="5651616" dtor="0" comment="Regular opcode, transformed handler is 0x105E0E59" />
+  <OpcodeInfo value="29700" index="930" ctor="0" handler="9402752" dtor="0" comment="Regular opcode, transformed handler is 0x17375099" />
+  <OpcodeInfo value="29728" index="932" ctor="0" handler="10416352" dtor="0" comment="Regular opcode, transformed handler is 0x1722C81D" />
+  <OpcodeInfo value="29824" index="936" ctor="0" handler="6138768" dtor="0" comment="Regular opcode, transformed handler is 0x1681832D" />
+  <OpcodeInfo value="29828" index="938" ctor="0" handler="4812912" dtor="0" comment="Regular opcode, transformed handler is 0x16714809" />
+  <OpcodeInfo value="29856" index="940" ctor="0" handler="9746080" dtor="0" comment="Regular opcode, transformed handler is 0x16988E5D" />
+  <OpcodeInfo value="29862" index="943" ctor="0" handler="9780720" dtor="0" comment="Regular opcode, transformed handler is 0x169B15AB" />
+  <OpcodeInfo value="30208" index="944" ctor="0" handler="5672656" dtor="0" comment="Regular opcode, transformed handler is 0x14FA63ED" />
+  <OpcodeInfo value="30212" index="946" ctor="0" handler="9410688" dtor="0" comment="Regular opcode, transformed handler is 0x15376D99" />
+  <OpcodeInfo value="30338" index="953" ctor="0" handler="5588528" dtor="0" comment="Regular opcode, transformed handler is 0x14771BCF" />
+  <OpcodeInfo value="30340" index="954" ctor="0" handler="9409456" dtor="0" comment="Regular opcode, transformed handler is 0x14B76949" />
+  <OpcodeInfo value="30342" index="955" ctor="0" handler="9158464" dtor="0" comment="Regular opcode, transformed handler is 0x14B194DB" />
+  <OpcodeInfo value="30370" index="957" ctor="0" handler="9757888" dtor="0" comment="Regular opcode, transformed handler is 0x1496BA7F" />
+  <OpcodeInfo value="30720" index="960" ctor="0" handler="5628336" dtor="0" comment="Regular opcode, transformed handler is 0x1AF9BCCD" />
+  <OpcodeInfo value="30722" index="961" ctor="0" handler="5651616" dtor="0" comment="Regular opcode, transformed handler is 0x1AF817BF" />
+  <OpcodeInfo value="30752" index="964" ctor="0" handler="5876640" dtor="0" comment="Regular opcode, transformed handler is 0x1ADD86DD" />
+  <OpcodeInfo value="30850" index="969" ctor="0" handler="5584224" dtor="0" comment="Regular opcode, transformed handler is 0x1A7710FF" />
+  <OpcodeInfo value="30884" index="974" ctor="0" handler="5678352" dtor="0" comment="Regular opcode, transformed handler is 0x1A5E80C9" />
+  <OpcodeInfo value="31232" index="976" ctor="0" handler="5668080" dtor="0" comment="Regular opcode, transformed handler is 0x18FA560D" />
+  <OpcodeInfo value="31234" index="977" ctor="0" handler="4813120" dtor="0" comment="Regular opcode, transformed handler is 0x18EB4A5F" />
+  <OpcodeInfo value="31238" index="979" ctor="0" handler="9119600" dtor="0" comment="Regular opcode, transformed handler is 0x1931008B" />
+  <OpcodeInfo value="31266" index="981" ctor="0" handler="5627392" dtor="0" comment="Regular opcode, transformed handler is 0x18D7B73F" />
+  <OpcodeInfo value="31268" index="982" ctor="0" handler="6439632" dtor="0" comment="Regular opcode, transformed handler is 0x18EA1C09" />
+  <OpcodeInfo value="31270" index="983" ctor="0" handler="9415392" dtor="0" comment="Regular opcode, transformed handler is 0x1915841B" />
+  <OpcodeInfo value="31364" index="986" ctor="0" handler="5578352" dtor="0" comment="Regular opcode, transformed handler is 0x187CF809" />
+  <OpcodeInfo value="31394" index="989" ctor="0" handler="5574208" dtor="0" comment="Regular opcode, transformed handler is 0x1856E7FF" />
+  <OpcodeInfo value="31398" index="991" ctor="0" handler="5988448" dtor="0" comment="Regular opcode, transformed handler is 0x18613A1B" />
+  <OpcodeInfo value="31744" index="992" ctor="0" handler="9635712" dtor="0" comment="Regular opcode, transformed handler is 0x1F36E69D" />
+  <OpcodeInfo value="31746" index="993" ctor="0" handler="9963552" dtor="0" comment="Regular opcode, transformed handler is 0x1F39E73F" />
+  <OpcodeInfo value="31748" index="994" ctor="0" handler="5573840" dtor="0" comment="Regular opcode, transformed handler is 0x1EFCEBE9" />
+  <OpcodeInfo value="31778" index="997" ctor="0" handler="6293616" dtor="0" comment="Regular opcode, transformed handler is 0x1EE1E7AF" />
+  <OpcodeInfo value="31876" index="1002" ctor="0" handler="4812544" dtor="0" comment="Regular opcode, transformed handler is 0x1E714E99" />
+  <OpcodeInfo value="31904" index="1004" ctor="0" handler="9273072" dtor="0" comment="Regular opcode, transformed handler is 0x1E915EAD" />
+  <OpcodeInfo value="31910" index="1007" ctor="0" handler="5626624" dtor="0" comment="Regular opcode, transformed handler is 0x1E5BBABB" />
+  <OpcodeInfo value="32260" index="1010" ctor="0" handler="10105424" dtor="0" comment="Regular opcode, transformed handler is 0x1D420F69" />
+  <OpcodeInfo value="32262" index="1011" ctor="0" handler="10189424" dtor="0" comment="Regular opcode, transformed handler is 0x1D41578B" />
+  <OpcodeInfo value="32288" index="1012" ctor="0" handler="5627216" dtor="0" comment="Regular opcode, transformed handler is 0x1CD9BA8D" />
+  <OpcodeInfo value="32290" index="1013" ctor="0" handler="6072448" dtor="0" comment="Regular opcode, transformed handler is 0x1CDE85BF" />
+  <OpcodeInfo value="32292" index="1014" ctor="0" handler="9932816" dtor="0" comment="Regular opcode, transformed handler is 0x1D1F6D49" />
+  <OpcodeInfo value="32384" index="1016" ctor="0" handler="4788176" dtor="0" comment="Regular opcode, transformed handler is 0x1C6CED6D" />
+  <OpcodeInfo value="32420" index="1022" ctor="0" handler="5937968" dtor="0" comment="Regular opcode, transformed handler is 0x1C6278E9" />
+</ArrayOfOpcodeInfo>

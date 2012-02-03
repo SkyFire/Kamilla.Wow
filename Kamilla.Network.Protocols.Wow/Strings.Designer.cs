@@ -79,6 +79,15 @@ namespace Kamilla.Network.Protocols.Wow {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Close.
+        /// </summary>
+        public static string Close {
+            get {
+                return ResourceManager.GetString("Close", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Error.
         /// </summary>
         public static string Error {
@@ -396,6 +405,51 @@ namespace Kamilla.Network.Protocols.Wow {
         public static string Menu_View {
             get {
                 return ResourceManager.GetString("Menu_View", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Summary.
+        /// </summary>
+        public static string OI_Info {
+            get {
+                return ResourceManager.GetString("OI_Info", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Opcode:.
+        /// </summary>
+        public static string OI_Opcode {
+            get {
+                return ResourceManager.GetString("OI_Opcode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Opcode Info....
+        /// </summary>
+        public static string OI_OpenOI {
+            get {
+                return ResourceManager.GetString("OI_OpenOI", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Opcode Info.
+        /// </summary>
+        public static string OI_Title {
+            get {
+                return ResourceManager.GetString("OI_Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OK.
+        /// </summary>
+        public static string OK {
+            get {
+                return ResourceManager.GetString("OK", resourceCulture);
             }
         }
         
