@@ -67,11 +67,6 @@ namespace Kamilla.Network.Protocols.Wow.Plugins
                     MultilineCommentsEndWith = "*/",
                     MultilineCommentsStartWith = "/*",
                     OneLineCommentsStartWith = "--",
-                    //KeywordsBrush = new SolidColorBrush(Color.FromRgb(0, 0, 255)),
-                    //MultilineCommentsBrush = new SolidColorBrush(Color.FromRgb(0, 128, 0)),
-                    //NumbersBrush = new SolidColorBrush(Color.FromRgb(255, 0, 0)),
-                    //OneLineCommentsBrush = new SolidColorBrush(Color.FromRgb(0, 128, 0)),
-                    //StringsBrush = new SolidColorBrush(Color.FromRgb(163, 21, 21))
                 };
             }
 
@@ -125,7 +120,7 @@ namespace Kamilla.Network.Protocols.Wow.Plugins
 
             ui_rtbSqlOutput.Document.PageWidth = 2000.0;
 
-            //this.NewItems(pv.Items);
+            this.NewItems(viewer.Items);
             RestoreSelectionHandlers();
         }
 
@@ -255,7 +250,7 @@ namespace Kamilla.Network.Protocols.Wow.Plugins
 
             if (e.Error != null)
             {
-                MessageBox.Show(this, "Error occured while parsing items:\n\n" + e.Error, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageWindow.Show(this, Strings.Error, "Error occured while parsing items:\n\n" + e.Error);
                 return;
             }
 
