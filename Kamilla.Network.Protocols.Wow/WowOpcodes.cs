@@ -193,7 +193,7 @@ namespace Kamilla.Network.Protocols.Wow
         CMSG_NEXT_CINEMATIC_CAMERA                      = UNKNOWN_OPCODE, /* old 0x0FB, */
         CMSG_COMPLETE_CINEMATIC                         = UNKNOWN_OPCODE, /* old 0x0FC, */
         [Description("Sent after SMSG_CLIENTCACHE_VERSION")]
-        SMSG_TUTORIAL_FLAGS                             = UNKNOWN_OPCODE, /* old 0x0FD, */
+        SMSG_TUTORIAL_FLAGS                             = 19855, /* old 0x0FD, */
         CMSG_TUTORIAL_FLAG                              = UNKNOWN_OPCODE, /* old 0x0FE, */
         CMSG_TUTORIAL_CLEAR                             = UNKNOWN_OPCODE, /* old 0x0FF, */
         CMSG_TUTORIAL_RESET                             = UNKNOWN_OPCODE, /* old 0x100, */
@@ -483,7 +483,7 @@ namespace Kamilla.Network.Protocols.Wow
         SMSG_GMTICKET_CREATE                            = UNKNOWN_OPCODE, /* old 0x206, */
         CMSG_GMTICKET_UPDATETEXT                        = UNKNOWN_OPCODE, /* old 0x207, */
         SMSG_GMTICKET_UPDATETEXT                        = UNKNOWN_OPCODE, /* old 0x208, */
-        SMSG_ACCOUNT_DATA_TIMES                         = UNKNOWN_OPCODE, /* old 0x209, */
+        SMSG_ACCOUNT_DATA_TIMES                         = 1419, /* old 0x209, */
         CMSG_REQUEST_ACCOUNT_DATA                       = UNKNOWN_OPCODE, /* old 0x20A, */
         CMSG_UPDATE_ACCOUNT_DATA                        = UNKNOWN_OPCODE, /* old 0x20B, */
         SMSG_UPDATE_ACCOUNT_DATA                        = UNKNOWN_OPCODE, /* old 0x20C, */
@@ -709,7 +709,7 @@ namespace Kamilla.Network.Protocols.Wow
         SMSG_BATTLEGROUND_PLAYER_LEFT                   = 5296, /* old 0x2ED, */
         CMSG_BATTLEMASTER_JOIN                          = 320, /* old 0x2EE, */
         [Description("Sent after SMSG_ITEM_UPDATED_MULTIPLE")]
-        SMSG_ADDON_INFO                                 = UNKNOWN_OPCODE, /* old 0x2EF, */
+        SMSG_ADDON_INFO                                 = 28045, /* old 0x2EF, */
         CMSG_PET_UNLEARN                                = UNKNOWN_OPCODE, /* old 0x2F0, */
         SMSG_PET_UNLEARN_CONFIRM                        = UNKNOWN_OPCODE, /* old 0x2F1, */
         SMSG_PARTY_MEMBER_STATS_FULL                    = UNKNOWN_OPCODE, /* old 0x2F2, */
@@ -822,8 +822,8 @@ namespace Kamilla.Network.Protocols.Wow
         SMSG_FLIGHT_SPLINE_SYNC                         = UNKNOWN_OPCODE, /* old 0x388, */
         CMSG_SET_TAXI_BENCHMARK_MODE                    = UNKNOWN_OPCODE, /* old 0x389, */
         SMSG_BATTLEFIELD_STATUS_FAILED                  = 3621, /* old 0x38A, */
-        SMSG_REALM_SPLIT                                = UNKNOWN_OPCODE, /* old 0x38B, */
-        CMSG_REALM_SPLIT                                = UNKNOWN_OPCODE, /* old 0x38C, */
+        SMSG_REALM_SPLIT                                = 1409, /* old 0x38B, */
+        CMSG_REALM_SPLIT                                = 3511, /* old 0x38C, */
         CMSG_MOVE_CHANGE_TRANSPORT                      = 992, /* old 0x38D, */
         MSG_PARTY_ASSIGNMENT                            = UNKNOWN_OPCODE, /* old 0x38E, */
         SMSG_OFFER_PETITION_ERROR                       = UNKNOWN_OPCODE, /* old 0x38F, */
@@ -1117,7 +1117,7 @@ namespace Kamilla.Network.Protocols.Wow
         CMSG_CONTROLLER_EJECT_PASSENGER                 = UNKNOWN_OPCODE, /* old 0x4A9, */ // cmsg uint64
         SMSG_PET_GUIDS                                  = UNKNOWN_OPCODE, /* old 0x4AA, */ // shifted+5
         [Description("Sent after SMSG_ADDON_INFO")]
-        SMSG_CLIENTCACHE_VERSION                        = UNKNOWN_OPCODE, /* old 0x4AB, */
+        SMSG_CLIENTCACHE_VERSION                        = 17725, /* old 0x4AB, */
         CMSG_CHANGE_GDF_ARENA_RATING                    = UNKNOWN_OPCODE, /* old 0x4AC, */ // not found
         CMSG_SET_ARENA_TEAM_RATING_BY_INDEX             = UNKNOWN_OPCODE, /* old 0x4AD, */ // not found
         CMSG_SET_ARENA_TEAM_WEEKLY_GAMES                = UNKNOWN_OPCODE, /* old 0x4AE, */ // not found
