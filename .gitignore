@@ -9,6 +9,12 @@ bin/*
 *.suo
 *.csproj.user
 
+# Kamilla files
+
+Kamilla.dll
+Kamilla.xml
+Kamilla.Wow.dll
+Kamilla.Wow.xml
 
 # misc files
 
