@@ -747,7 +747,7 @@ namespace Kamilla.Network.Protocols.Wow
         SMSG_GHOSTEE_GONE                               = UNKNOWN_OPCODE, /* old 0x326, */
         CMSG_GM_UPDATE_TICKET_STATUS                    = UNKNOWN_OPCODE, /* old 0x327, */
         SMSG_GM_TICKET_STATUS_UPDATE                    = UNKNOWN_OPCODE, /* old 0x328, */
-        MSG_SET_DUNGEON_DIFFICULTY                      = UNKNOWN_OPCODE, /* old 0x329, */
+        MSG_SET_DUNGEON_DIFFICULTY                      = 9623, /* old 0x329, */
         CMSG_GMSURVEY_SUBMIT                            = UNKNOWN_OPCODE, /* old 0x32A, */
         SMSG_UPDATE_INSTANCE_OWNERSHIP                  = 17871, /* old 0x32B, */
         SMSG_CHAT_PLAYER_AMBIGUOUS                      = UNKNOWN_OPCODE, /* old 0x32D, */
@@ -764,7 +764,7 @@ namespace Kamilla.Network.Protocols.Wow
         SMSG_CHARACTER_PROFILE                          = UNKNOWN_OPCODE, /* old 0x338, */
         SMSG_CHARACTER_PROFILE_REALM_CONNECTED          = UNKNOWN_OPCODE, /* old 0x339, */
         SMSG_DEFENSE_MESSAGE                            = 17775, /* old 0x33A, */
-        SMSG_INSTANCE_DIFFICULTY                        = 9623, /* old 0x33B, */
+        SMSG_INSTANCE_DIFFICULTY                        = UNKNOWN_OPCODE, /* old 0x33B, */
         MSG_GM_RESETINSTANCELIMIT                       = UNKNOWN_OPCODE, /* old 0x33C, */
         SMSG_MOTD                                       = 27921, /* old 0x33D, */
         CMSG_SOCKET_GEMS                                = UNKNOWN_OPCODE, /* old 0x347, */
