@@ -1862,6 +1862,11 @@
             Gets the localized name of the current <see cref="T:Kamilla.Network.Protocols.Protocol"/>.
             </summary>
         </member>
+        <member name="P:Kamilla.Network.Protocols.Protocol.CodeName">
+            <summary>
+            Gets the code name of the current <see cref="T:Kamilla.Network.Protocols.Protocol"/>.
+            </summary>
+        </member>
         <member name="T:Kamilla.Network.Viewing.Plugins.PluginCommand">
             <summary>
             Represents a command to a
@@ -3799,15 +3804,15 @@
             underlying <see cref="T:Kamilla.Network.Protocols.Protocol"/>.
             </summary>
         </member>
-        <member name="F:Kamilla.Network.Protocols.ProtocolWrapper.TypeName">
-            <summary>
-            Gets the name of the <see cref="T:System.Type"/>
-            of the underlying <see cref="T:Kamilla.Network.Protocols.Protocol"/>.
-            </summary>
-        </member>
         <member name="F:Kamilla.Network.Protocols.ProtocolWrapper.Name">
             <summary>
             Gets the localized name of the underlying
+            <see cref="T:Kamilla.Network.Protocols.Protocol"/>.
+            </summary>
+        </member>
+        <member name="F:Kamilla.Network.Protocols.ProtocolWrapper.CodeName">
+            <summary>
+            Gets the code name of the underlying
             <see cref="T:Kamilla.Network.Protocols.Protocol"/>.
             </summary>
         </member>
@@ -4006,15 +4011,15 @@
             <summary>
             Finds a <see cref="T:Kamilla.Network.Protocols.Protocol"/> with the specified typename.
             </summary>
-            <param name="typename">
-            Typename of the <see cref="T:Kamilla.Network.Protocols.ProtocolWrapper"/>.
+            <param name="codename">
+            Code name of the <see cref="T:Kamilla.Network.Protocols.ProtocolWrapper"/>.
             </param>
             <returns>
-            <see cref="T:Kamilla.Network.Protocols.ProtocolWrapper"/> of the
-            specified <see cref="T:System.Type"/> if found; otherwise, null.
+            The <see cref="T:Kamilla.Network.Protocols.ProtocolWrapper"/> with the
+            specified code name if found; otherwise, null.
             </returns>
             <exception cref="T:System.ArgumentNullException">
-            typename is null.
+            <c>codename</c> is null.
             </exception>
         </member>
         <member name="M:Kamilla.Network.Protocols.ProtocolManager.FindWrapper(System.Type)">
