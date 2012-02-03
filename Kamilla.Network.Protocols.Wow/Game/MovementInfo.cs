@@ -165,7 +165,7 @@ namespace Kamilla.Network.Protocols.Wow.Game
         public WowGuid          AttackingTarget;
         public uint             VehicleId;
         public float            VehicleAimAdjustement;
-        //public Quaternion       GameObjectRotation;
+        public Quaternion       GameObjectRotation;
 
         public float[]          Speeds = new float[(int)MoveTypes.Total]
         {
@@ -573,8 +573,8 @@ namespace Kamilla.Network.Protocols.Wow.Game
             }
 
             // go rotation?
-            //if (this.HaveGameObjectRotation)
-            //    this.GameObjectRotation = Reader.ReadUInt64().UnpackQuaternion();
+            if (this.HaveGameObjectRotation)
+                this.GameObjectRotation = Reader.ReadUInt64().UnpackQuaternion();
 
             // target guid?
             if (this.HaveAttackingTarget)
@@ -953,8 +953,8 @@ namespace Kamilla.Network.Protocols.Wow.Game
             // shorts here
 
             // go rotation?
-            //if (this.HaveGameObjectRotation)
-            //    Writer.WriteUInt64(this.GameObjectRotation.Pack());
+            if (this.HaveGameObjectRotation)
+                Writer.WriteUInt64(this.GameObjectRotation.Pack());
 
             // target guid?
             if (this.HaveAttackingTarget)
@@ -1120,8 +1120,8 @@ namespace Kamilla.Network.Protocols.Wow.Game
                     builder.Append("Spline Elevation: ").Append(this.SplineElevation).AppendLine();
             }
 
-            //if (this.HaveGameObjectRotation)
-            //    builder.Append("Rotation: ").Append(this.GameObjectRotation.ToString()).AppendLine();
+            if (this.HaveGameObjectRotation)
+                builder.Append("Rotation: ").Append(this.GameObjectRotation.ToString()).AppendLine();
 
             if (this.HaveAttackingTarget)
                 builder.Append("Attacking Target: ").Append(this.AttackingTarget.ToString()).AppendLine();
