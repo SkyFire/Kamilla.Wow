@@ -235,18 +235,21 @@ namespace Kamilla.Network.Protocols.Wow.Plugins
 
         public void NewItems(IList<ViewerItem> items)
         {
-            if (m_parsingItemsWorker.IsBusy)
-                m_parsingItemsWorker.CancelAsync();
+            this.ThreadSafeBegin(_ =>
+            {
+                if (m_parsingItemsWorker.IsBusy)
+                    m_parsingItemsWorker.CancelAsync();
 
-            if (m_creatingMenuDataWorker.IsBusy)
-                m_creatingMenuDataWorker.CancelAsync();
+                if (m_creatingMenuDataWorker.IsBusy)
+                    m_creatingMenuDataWorker.CancelAsync();
 
-            ui_lvObjects.Items.Clear();
-            ui_lvMenus.Items.Clear();
-            m_creatureTemplates.Clear();
+                ui_lvObjects.Items.Clear();
+                ui_lvMenus.Items.Clear();
+                m_creatureTemplates.Clear();
 
-            SetProgressBarVisible(true);
-            m_parsingItemsWorker.RunWorkerAsync(items);
+                SetProgressBarVisible(true);
+                m_parsingItemsWorker.RunWorkerAsync(items);
+            });
         }
 
         void m_parsingItemsWorker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
