@@ -13,14 +13,14 @@ namespace Kamilla.Network.Protocols.Wow.Parsers.Queries
         {
             int row;
             int size;
+            DB2Ids type;
 
-            Output.AppendLine("Row: " + (row = Reader.ReadInt32()));
             Output.AppendLine("Data Size: " + (size = Reader.ReadInt32()));
             byte[] data = Reader.ReadBytes(size);
 
-            Output.AppendLine("Time(?): " + Reader.ReadUInt32());
-            DB2Ids type;
             Output.AppendLine("Type: " + (type = (DB2Ids)Reader.ReadUInt32()));
+            Output.AppendLine("Row: " + (row = Reader.ReadInt32()));
+            Output.AppendLine("Time(?): " + Reader.ReadUInt32().AsUnixTime());
             Output.AppendLine();
 
             if (row < 0)
@@ -45,6 +45,9 @@ namespace Kamilla.Network.Protocols.Wow.Parsers.Queries
                     Output.AppendLine("quality: " + (ItemQuality)dataReader.ReadInt32());
                     Output.AppendLine("flags: " + dataReader.ReadUInt32());
                     Output.AppendLine("flags2: " + dataReader.ReadUInt32());
+                    Output.AppendLine("4.3.2 float1: " + dataReader.ReadSingle()); // 0.95-1.05
+                    Output.AppendLine("4.3.2 float2: " + dataReader.ReadSingle()); // 0, 1, 4, huge
+                    Output.AppendLine("4.3.2 int: " + dataReader.ReadUInt32()); // stack count
                     Output.AppendLine("buyprice: " + dataReader.ReadInt32());
                     Output.AppendLine("sellprice: " + dataReader.ReadInt32());
                     Output.AppendLine("inventorytype: " + dataReader.ReadInt32());
@@ -152,7 +155,6 @@ namespace Kamilla.Network.Protocols.Wow.Parsers.Queries
                     Output.AppendLine("randomproperty: " + dataReader.ReadInt32());
                     Output.AppendLine("randomsuffix: " + dataReader.ReadInt32());
                     Output.AppendLine("itemset: " + dataReader.ReadInt32());
-                    Output.AppendLine("maxdurability: " + dataReader.ReadInt32());
                     Output.AppendLine("area: " + dataReader.ReadInt32());
                     Output.AppendLine("map: " + dataReader.ReadInt32());
                     Output.AppendLine("bagfamily: " + dataReader.ReadInt32());
