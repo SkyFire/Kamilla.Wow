@@ -248,6 +248,7 @@
     <Compile Include="Parsers\Lfg\LfgPlayerInfoParser.cs" />
     <Compile Include="Parsers\Lfg\LfgSearchResultsParser.cs" />
     <Compile Include="Parsers\Lobby\AccountDataTimesParser.cs" />
+    <Compile Include="Parsers\Lobby\AuthResponseParser.cs" />
     <Compile Include="Parsers\Lobby\CharEnumParser.cs" />
     <Compile Include="Parsers\Lobby\ConnectToParser.cs" />
     <Compile Include="Parsers\Lobby\UpdateAccountDataParser.cs" />

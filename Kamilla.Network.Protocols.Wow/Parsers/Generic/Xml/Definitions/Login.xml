@@ -8,36 +8,6 @@
     </Simple>
   </Packet>
 
-  <Packet Sender="Server" Opcode="SMSG_AUTH_RESPONSE">
-    <Simple>
-      <Name>Response Code</Name>
-      <Type>Byte</Type>
-      <SegmentType>ResponseCodes</SegmentType>
-    </Simple>
-    <Simple>
-      <Name>Billing Time Remaining</Name>
-      <Type>TimeSpanMinutesUntil</Type>
-    </Simple>
-    <Simple>
-      <Name>Billing Plan Flags</Name>
-      <Type>Byte</Type>
-    </Simple>
-    <Simple>
-      <Name>Billing Time Rested</Name>
-      <Type>TimeSpanMinutes</Type>
-    </Simple>
-    <Simple>
-      <Name>Enabled Expansion</Name>
-      <Type>Byte</Type>
-      <SegmentType>Expansions</SegmentType>
-    </Simple>
-    <Simple>
-      <Name>Payed Expansion</Name>
-      <Type>Byte</Type>
-      <SegmentType>Expansions</SegmentType>
-    </Simple>
-  </Packet>
-  
   <Packet Sender="Client" Opcode="CMSG_REALM_SPLIT">
     <Simple>
       <Name>Unknown</Name>
