@@ -27,7 +27,7 @@ namespace Kamilla.Network.Protocols.Wow.Plugins
 
         void UpdateCommand()
         {
-            if (m_viewer.CurrentProtocol is WowLatestProtocol)
+            if (m_viewer.CurrentProtocol is WowProtocol)
             {
                 if (!m_commandRegistered)
                 {

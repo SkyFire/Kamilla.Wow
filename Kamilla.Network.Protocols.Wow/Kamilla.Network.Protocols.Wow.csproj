@@ -312,7 +312,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Strings.resx</DependentUpon>
     </Compile>
-    <Compile Include="WowLatestProtocol.cs" />
+    <Compile Include="WowProtocol.cs" />
     <Compile Include="WowPacketParser.cs" />
     <Compile Include="WowPacketParserAttribute.cs" />
   </ItemGroup>
