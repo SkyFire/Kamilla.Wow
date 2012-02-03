@@ -286,6 +286,7 @@ namespace Kamilla.Network.Protocols.Wow.Plugins
             var items = (IList<ViewerItem>)e.Argument;
             var nitems = items.Count;
             int progress = 0;
+            var protocol = m_viewer.CurrentProtocol;
 
             var objects = new SortedDictionary<WowGuid, ObjectGossip>(new WowGuidKindEntryComparer());
             var menus = new SortedDictionary<uint, ExtGossipMenu>();
@@ -417,6 +418,12 @@ namespace Kamilla.Network.Protocols.Wow.Plugins
                     default:
                     {
                         var parser = item.Parser;
+                        if (parser == null)
+                        {
+                            protocol.CreateParser(item);
+                            parser = item.Parser;
+                        }
+
                         if (parser is GossipMessageParser)
                         {
                             var gossip = (GossipMessageParser)parser;
