@@ -6,7 +6,8 @@
         xmlns:kwpf="clr-namespace:Kamilla.WPF;assembly=Kamilla"
         Title="{x:Static wow:Strings.Gossip_Title}" Height="422" Width="823" MinWidth="400" MinHeight="200"
         WindowStartupLocation="CenterOwner" Closing="Window_Closing"
-        kwpf:WindowBehavior.HasTitleBarMaximizeButton="false">
+        kwpf:WindowBehavior.HasTitleBarMaximizeButton="false"
+        kwpf:WindowBehavior.HasTitleBarMinimizeButton="false" WindowStyle="None" AllowsTransparency="True" ShowInTaskbar="False">
   <Window.Resources>
     <Style x:Key="NoHideSelection" TargetType="{x:Type Control}">
       <Style.Resources>

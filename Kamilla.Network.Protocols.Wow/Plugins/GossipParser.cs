@@ -5,7 +5,7 @@ using Kamilla.Network.Viewing.Plugins;
 
 namespace Kamilla.Network.Protocols.Wow.Plugins
 {
-    public sealed class GossipParser : INetworkLogViewerPlugin
+    sealed class GossipParser : INetworkLogViewerPlugin
     {
         NetworkLogViewerBase m_viewer;
         GossipParserWindow m_wnd;
@@ -42,6 +42,9 @@ namespace Kamilla.Network.Protocols.Wow.Plugins
                     m_viewer.UnregisterPluginCommand(m_command);
                     m_commandRegistered = false;
                 }
+
+                if (m_wnd != null && m_wnd.IsVisible)
+                    m_wnd.Close();
             }
         }
 
