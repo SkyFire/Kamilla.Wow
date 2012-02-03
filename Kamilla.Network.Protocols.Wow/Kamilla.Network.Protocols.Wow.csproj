@@ -292,6 +292,11 @@
     <Compile Include="Game\QuestEnums.cs" />
     <Compile Include="Game\Server.cs" />
     <Compile Include="Game\Social.cs" />
+    <Compile Include="Plugins\GossipParser.cs" />
+    <Compile Include="Plugins\GossipParserWindow.xaml.cs">
+      <DependentUpon>GossipParserWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="SpecialWowOpcodes.cs" />
     <Compile Include="Game\SpellEnums.cs" />
     <Compile Include="Game\SplineInfo.cs" />
@@ -313,7 +318,7 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Strings.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Strings.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Strings.ru.resx" />
@@ -353,6 +358,12 @@
     <EmbeddedResource Include="Parsers\Generic\Xml\Definitions\VoiceChat.xml" />
     <EmbeddedResource Include="Parsers\Generic\Xml\Definitions\WhoList.xml" />
     <EmbeddedResource Include="Parsers\Generic\Xml\Definitions\World.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Plugins\GossipParserWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
