@@ -15,8 +15,8 @@ namespace Kamilla.Network.Protocols.Wow.OpcodeDatas
 
         protected override bool IsMaskSequenceSwapped { get { return false; } }
 
-        protected override int[] MaskSequence { get { return new int[] { 0, 5, 3, 4, 7, 6, 2, 1, }; } }
-        protected override int[] ByteSequence { get { return new int[] { 4, 1, 7, 2, 6, 5, 3, 0, }; } }
+        protected override int[] MaskSequence { get { return new int[] { 1, 5, 6, 2, 7, 4, 3, 0, }; } }
+        protected override int[] ByteSequence { get { return new int[] { 4, 6, 2, 5, 7, 1, 0, 3, }; } }
 
         protected override int ByteXorValue
         {
