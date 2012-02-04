@@ -20,8 +20,6 @@ namespace Kamilla.Network.Protocols.Wow.Parsers.Generic
 
         internal static void Initialize()
         {
-            s_initialized = true;
-
             foreach (PacketSender type in Enum.GetValues(typeof(PacketSender)))
                 Definitions.Add(type, new Dictionary<WowOpcodes, XmlPacketDefinition>());
 
@@ -105,6 +103,8 @@ namespace Kamilla.Network.Protocols.Wow.Parsers.Generic
                     }
                 }
             }
+
+            s_initialized = true;
         }
 
         /// <summary>
