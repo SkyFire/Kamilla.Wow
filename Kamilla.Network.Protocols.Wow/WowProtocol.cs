@@ -16,7 +16,7 @@ namespace Kamilla.Network.Protocols.Wow
 {
     public sealed class WowProtocol : Protocol
     {
-        sealed class ItemData
+        sealed class ItemVisualData
         {
             readonly ViewerItem m_item;
             string m_c2sStr;
@@ -33,7 +33,7 @@ namespace Kamilla.Network.Protocols.Wow
             /// <exception cref="System.ArgumentNullException">
             /// <c>item</c> is null.
             /// </exception>
-            public ItemData(ViewerItem item)
+            public ItemVisualData(ViewerItem item)
             {
                 if (item == null)
                     throw new ArgumentNullException("item");
@@ -189,12 +189,12 @@ namespace Kamilla.Network.Protocols.Wow
 
         NetworkLogViewerBase m_viewer;
         GridView m_view;
-        ViewerItemEventHandler m_itemQueriedHandler;
+        ViewerItemEventHandler m_itemVisualDataQueriedHandler;
         ViewerItemEventHandler m_itemParsingDoneHandler;
 
         public WowProtocol()
         {
-            m_itemQueriedHandler = new ViewerItemEventHandler(viewer_ItemQueried);
+            m_itemVisualDataQueriedHandler = new ViewerItemEventHandler(viewer_ItemVisualDataQueried);
             m_itemParsingDoneHandler = new ViewerItemEventHandler(viewer_ItemParsingDone);
         }
 
@@ -238,13 +238,13 @@ namespace Kamilla.Network.Protocols.Wow
         static readonly string[] s_columnBindings = new string[]
         {
             ".Index",
-            ".Data.ArrivalTime",
-            ".Data.ArrivalTicks",
+            ".VisualData.ArrivalTime",
+            ".VisualData.ArrivalTicks",
             ".Packet.ConnectionId",
-            ".Data.C2sStr",
-            ".Data.S2cStr",
+            ".VisualData.C2sStr",
+            ".VisualData.S2cStr",
             ".Packet.Data.Length",
-            ".Data.Preview",
+            ".VisualData.Preview",
         };
 
         static Brush s_freezedBrush;
@@ -283,7 +283,7 @@ namespace Kamilla.Network.Protocols.Wow
             }
 
             m_viewer = viewer;
-            viewer.ItemQueried += m_itemQueriedHandler;
+            viewer.ItemVisualDataQueried += m_itemVisualDataQueriedHandler;
             viewer.ItemParsingDone += m_itemParsingDoneHandler;
 
             var view = m_view = new GridView();
@@ -328,7 +328,7 @@ namespace Kamilla.Network.Protocols.Wow
                 item.Width = widths[col];
 
                 var dataTemplate = new DataTemplate();
-                dataTemplate.DataType = typeof(ItemData);
+                dataTemplate.DataType = typeof(ItemVisualData);
 
                 var block = new FrameworkElementFactory(typeof(TextBlock));
                 block.Name = "tb";
@@ -342,19 +342,19 @@ namespace Kamilla.Network.Protocols.Wow
                     DataTrigger trigger;
 
                     trigger = new DataTrigger();
-                    trigger.Binding = new Binding(".Data.IsCustom");
+                    trigger.Binding = new Binding(".VisualData.IsCustom");
                     trigger.Value = true;
                     trigger.Setters.Add(new Setter(TextBlock.ForegroundProperty, s_customBrush, "tb"));
                     dataTemplate.Triggers.Add(trigger);
 
                     trigger = new DataTrigger();
-                    trigger.Binding = new Binding(".Data.IsFreezed");
+                    trigger.Binding = new Binding(".VisualData.IsFreezed");
                     trigger.Value = true;
                     trigger.Setters.Add(new Setter(TextBlock.ForegroundProperty, s_freezedBrush, "tb"));
                     dataTemplate.Triggers.Add(trigger);
 
                     trigger = new DataTrigger();
-                    trigger.Binding = new Binding(".Data.IsUndefinedParser");
+                    trigger.Binding = new Binding(".VisualData.IsUndefinedParser");
                     trigger.Value = true;
                     trigger.Setters.Add(new Setter(TextBlock.ForegroundProperty, Brushes.Gray, "tb"));
                     dataTemplate.Triggers.Add(trigger);
@@ -363,7 +363,7 @@ namespace Kamilla.Network.Protocols.Wow
                 else if (col == 7)
                 {
                     var trigger = new DataTrigger();
-                    trigger.Binding = new Binding(".Data.ParsingError");
+                    trigger.Binding = new Binding(".VisualData.ParsingError");
                     trigger.Value = true;
                     trigger.Setters.Add(new Setter(TextBlock.ForegroundProperty, Brushes.Red, "tb"));
                     dataTemplate.Triggers.Add(trigger);
@@ -400,29 +400,29 @@ namespace Kamilla.Network.Protocols.Wow
             Configuration.SetValue("Column Order", order);
             m_view = null;
 
-            m_viewer.ItemQueried -= m_itemQueriedHandler;
+            m_viewer.ItemVisualDataQueried -= m_itemVisualDataQueriedHandler;
             m_viewer.ItemParsingDone -= m_itemParsingDoneHandler;
 
             m_viewer = null;
         }
 
-        void viewer_ItemQueried(object sender, ViewerItemEventArgs e)
+        void viewer_ItemVisualDataQueried(object sender, ViewerItemEventArgs e)
         {
             var item = e.Item;
-            if (item.Data == null)
-                item.Data = CreateDataForItem(item);
+            if (item.VisualData == null)
+                item.VisualData = CreateDataForItem(item);
         }
 
-        ItemData CreateDataForItem(ViewerItem item)
+        ItemVisualData CreateDataForItem(ViewerItem item)
         {
-            return new ItemData(item);
+            return new ItemVisualData(item);
         }
 
         void viewer_ItemParsingDone(object sender, ViewerItemEventArgs e)
         {
             var item = e.Item;
-            if (item.Data == null)
-                item.Data = this.CreateDataForItem(item);
+            if (item.VisualData == null)
+                item.VisualData = this.CreateDataForItem(item);
             else
                 item.NotifyDataChanged();
         }
