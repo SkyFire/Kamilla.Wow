@@ -8,6 +8,7 @@ namespace Kamilla.Network.Protocols.Wow.Game
         Item = 0x50238EC2,
         [LocalizedName("Item-sparse.db2")]
         ItemSparse = 0x919BE54E,
+        Unk1 = 0x6D8A2694,
     }
 
     public enum ItemSubClass
