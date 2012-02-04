@@ -185,7 +185,7 @@ namespace Kamilla.Network.Protocols.Wow
         CMSG_DESTROY_ITEMS                              = UNKNOWN_OPCODE, /* old 0x0B2, */
         SMSG_GAMEOBJECT_CUSTOM_ANIM                     = UNKNOWN_OPCODE, /* old 0x0B3, */
         CMSG_AREATRIGGER                                = UNKNOWN_OPCODE, /* old 0x0B4, */
-        SMSG_MONSTER_MOVE                               = UNKNOWN_OPCODE, /* old 0x0DD, */
+        SMSG_MONSTER_MOVE                               = 0x5CF570, /* old 0x0DD, */
         CMSG_TRIGGER_CINEMATIC_CHEAT                    = UNKNOWN_OPCODE, /* old 0x0F8, */
         CMSG_OPENING_CINEMATIC                          = UNKNOWN_OPCODE, /* old 0x0F9, */
         SMSG_TRIGGER_CINEMATIC                          = 27971, /* old 0x0FA, */
@@ -650,7 +650,7 @@ namespace Kamilla.Network.Protocols.Wow
         SMSG_SUMMON_REQUEST                             = 17727, /* old 0x2AB, */
         CMSG_SUMMON_RESPONSE                            = UNKNOWN_OPCODE, /* old 0x2AC, */
         MSG_DEV_SHOWLABEL                               = UNKNOWN_OPCODE, /* old 0x2AD, */
-        SMSG_MONSTER_MOVE_TRANSPORT                     = UNKNOWN_OPCODE, /* old 0x2AE, */
+        SMSG_MONSTER_MOVE_TRANSPORT                     = 26069, /* old 0x2AE, */
         SMSG_PET_BROKEN                                 = UNKNOWN_OPCODE, /* old 0x2AF, */
         CMSG_SERVER_BROADCAST                           = UNKNOWN_OPCODE, /* old 0x2B2, */
         CMSG_SELF_RES                                   = UNKNOWN_OPCODE, /* old 0x2B3, */
