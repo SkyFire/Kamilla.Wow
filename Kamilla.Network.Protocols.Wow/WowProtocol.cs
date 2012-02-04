@@ -7,6 +7,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Media;
+using Kamilla.Network.Logging;
 using Kamilla.Network.Parsing;
 using Kamilla.Network.Protocols.Wow.Parsers.Generic;
 using Kamilla.Network.Viewing;
@@ -15,29 +16,115 @@ namespace Kamilla.Network.Protocols.Wow
 {
     public sealed class WowProtocol : Protocol
     {
-        sealed class ItemData : DefaultProtocol.BaseItemData
+        sealed class ItemData
         {
-            internal ItemData(ViewerItem item)
-                : base(item)
+            readonly ViewerItem m_item;
+            string m_c2sStr;
+            string m_s2cStr;
+            string m_preview;
+
+            /// <summary>
+            /// Initializes a new instance of
+            /// <see cref="Kamilla.Network.Protocols.DefaultProtocol.ItemData"/> class.
+            /// </summary>
+            /// <param name="item">
+            /// The underlying instance of <see cref="Kamilla.Network.Viewing.ViewerItem"/> class.
+            /// </param>
+            /// <exception cref="System.ArgumentNullException">
+            /// <c>item</c> is null.
+            /// </exception>
+            public ItemData(ViewerItem item)
             {
+                if (item == null)
+                    throw new ArgumentNullException("item");
+
+                m_item = item;
             }
 
-            string m_connId;
-            string m_preview;
+            public string ArrivalTime
+            {
+                get { return m_item.Packet.ArrivalTime.ToString("HH:mm:ss"); }
+            }
+
+            public string ArrivalTicks
+            {
+                get
+                {
+                    var log = m_item.Log as IHasStartTicks;
+                    if (log != null)
+                        return ((int)(m_item.Packet.ArrivalTicks - log.StartTicks)).ToString();
+
+                    return m_item.Packet.ArrivalTicks.ToString();
+                }
+            }
+
+            public string C2sStr
+            {
+                get
+                {
+                    if (m_c2sStr == null)
+                    {
+                        var packet = m_item.Packet;
+                        if (packet.Direction != TransferDirection.ToServer)
+                            m_c2sStr = string.Empty;
+                        else
+                        {
+                            var wowPacket = packet as WowPacket;
+                            if (wowPacket == null)
+                                m_c2sStr = NetworkStrings.bytes.LocalizedFormat(packet.Data.Length);
+                            else
+                            {
+                                var opcStr = ((WowOpcodes)wowPacket.Opcode).ToString();
+                                if (opcStr.StartsWith("CMSG_"))
+                                    opcStr = opcStr.Substring(5);
+
+                                m_c2sStr = opcStr;
+                            }
+                        }
+                    }
+
+                    return m_c2sStr;
+                }
+            }
+
+            public string S2cStr
+            {
+                get
+                {
+                    if (m_s2cStr == null)
+                    {
+                        var packet = m_item.Packet;
+                        if (packet.Direction != TransferDirection.ToClient)
+                            m_s2cStr = string.Empty;
+                        else
+                        {
+                            var wowPacket = packet as WowPacket;
+                            if (wowPacket == null)
+                                m_s2cStr = NetworkStrings.bytes.LocalizedFormat(packet.Data.Length);
+                            else
+                            {
+                                var opcStr = ((WowOpcodes)wowPacket.Opcode).ToString();
+                                if (opcStr.StartsWith("SMSG_"))
+                                    opcStr = opcStr.Substring(5);
+
+                                m_s2cStr = opcStr;
+                            }
+                        }
+                    }
+
+                    return m_s2cStr;
+                }
+            }
 
             public string ConnectionId
             {
                 get
                 {
-                    if (m_connId == null)
-                    {
-                        var packet = m_item.Packet as WowPacket;
-                        if (packet != null)
-                            m_connId = packet.ConnectionId.ToString();
-                        else
-                            m_connId = string.Empty;
-                    }
-                    return m_connId;
+                    var packet = m_item.Packet as WowPacket;
+                    if (packet != null)
+                        return packet.ConnectionId.ToString();
+
+                    return string.Empty;
                 }
             }
 
@@ -53,56 +140,6 @@ namespace Kamilla.Network.Protocols.Wow
                     }
 
                     return m_preview;
-                }
-            }
-
-            public override string C2sStr
-            {
-                get
-                {
-                    if (m_c2sStr == null)
-                    {
-                        var packet = m_item.Packet as WowPacket;
-                        if (packet == null)
-                            m_c2sStr = base.C2sStr;
-                        else if (packet.Direction != TransferDirection.ToServer)
-                            m_c2sStr = string.Empty;
-                        else
-                        {
-                            var opcStr = ((WowOpcodes)packet.Opcode).ToString();
-                            if (opcStr.StartsWith("CMSG_"))
-                                opcStr = opcStr.Substring(5);
-
-                            m_c2sStr = opcStr;
-                        }
-                    }
-
-                    return m_c2sStr;
-                }
-            }
-
-            public override string S2cStr
-            {
-                get
-                {
-                    if (m_s2cStr == null)
-                    {
-                        var packet = m_item.Packet as WowPacket;
-                        if (packet == null)
-                            m_s2cStr = base.S2cStr;
-                        else if (packet.Direction != TransferDirection.ToClient)
-                            m_s2cStr = string.Empty;
-                        else
-                        {
-                            var opcStr = ((WowOpcodes)packet.Opcode).ToString();
-                            if (opcStr.StartsWith("SMSG_"))
-                                opcStr = opcStr.Substring(5);
-
-                            m_s2cStr = opcStr;
-                        }
-                    }
-
-                    return m_s2cStr;
                 }
             }
 
