@@ -41,12 +41,48 @@ namespace Kamilla.Network.Protocols.Wow
         }
 
         /// <summary>
+        /// A static class containing Connection-related constants in Windows x64 client.
+        /// </summary>
+        public static class Connection64
+        {
+            /// <remarks>
+            /// Updated for client build 15211.
+            /// </remarks>
+            public const long Current = 0x00C9F7F0;
+
+            /// <remarks>
+            /// Updated for client build 15211.
+            /// </remarks>
+            public const long Offset_SessionKey = 0x050C;
+            /// <remarks>
+            /// Updated for client build 15211.
+            /// </remarks>
+            public const long SessionKey_Length = 0x0028;
+            /// <remarks>
+            /// Updated for client build 15211.
+            /// </remarks>
+            public const long Offset_OpcodeHandlers = 0x0568;
+            /// <remarks>
+            /// Updated for client build 15211.
+            /// </remarks>
+            public const long Offset_OpcodeHandlerStates = 0x4568;
+        }
+
+        /// <summary>
         /// Address of the current locale string of the client.
         /// </summary>
         /// <remarks>
         /// Updated for client build 15211.
         /// </remarks>
         public const long Locale = 0x00971B34;
+
+        /// <summary>
+        /// Address of the current locale string of the Windows x64 client.
+        /// </summary>
+        /// <remarks>
+        /// Updated for client build 15211.
+        /// </remarks>
+        public const long Locale64 = 0x00C29B10;
 
         /// <summary>
         /// Condenses the provided uncondensed opcode.
