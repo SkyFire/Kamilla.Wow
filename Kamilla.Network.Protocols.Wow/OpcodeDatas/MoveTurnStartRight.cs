@@ -31,7 +31,7 @@ MovementStatusElements.Flags2, // 6A1BC2
 MovementStatusElements.GuidByte2, // 6A1BCB
 MovementStatusElements.GuidByte5, // 6A1BFA
 MovementStatusElements.HaveFallData, // 6A1C21
-MovementStatusElements.HaveFallTransferDirection, // 6A1C46
+MovementStatusElements.HaveFallDirection, // 6A1C46
 MovementStatusElements.HavePitch, // 6A1C6C
 MovementStatusElements.HaveSplineElev, // 6A1C8C
 MovementStatusElements.HaveTransportData, // 6A1CAF

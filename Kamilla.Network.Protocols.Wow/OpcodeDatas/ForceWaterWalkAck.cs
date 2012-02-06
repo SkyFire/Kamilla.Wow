@@ -38,7 +38,7 @@ MovementStatusElements.TransportHaveTime3, // 68A113
 MovementStatusElements.TransportHaveTime2, // 68A13F
 MovementStatusElements.HavePitch, // 68A15F
 MovementStatusElements.HaveFallData, // 68A17F
-MovementStatusElements.HaveFallTransferDirection, // 68A1A4
+MovementStatusElements.HaveFallDirection, // 68A1A4
 MovementStatusElements.HaveSplineElev, // 68A1CA
 MovementStatusElements.Timestamp, // 68A1FE
 MovementStatusElements.PositionO, // 68A203

@@ -27,7 +27,7 @@ MovementStatusElements.GuidByte6, // 68F53D
 MovementStatusElements.GuidByte1, // 68F56C
 MovementStatusElements.HavePitch, // 68F593
 MovementStatusElements.HaveFallData, // 68F5B5
-MovementStatusElements.HaveFallTransferDirection, // 68F5DA
+MovementStatusElements.HaveFallDirection, // 68F5DA
 MovementStatusElements.HaveTransportData, // 68F600
 MovementStatusElements.TransportGuidByte6, // 68F627
 MovementStatusElements.TransportGuidByte3, // 68F65B

@@ -31,7 +31,7 @@ MovementStatusElements.TransportHaveTime3, // 6D8642
 MovementStatusElements.TransportGuidByte5, // 6D868D
 MovementStatusElements.GuidByte7, // 6D86B5
 MovementStatusElements.HaveFallData, // 6D86DE
-MovementStatusElements.HaveFallTransferDirection, // 6D8715
+MovementStatusElements.HaveFallDirection, // 6D8715
 MovementStatusElements.HaveSplineElev, // 6D8757
 MovementStatusElements.GuidByte5, // 6D8786
 MovementStatusElements.Flags2, // 6D87A0

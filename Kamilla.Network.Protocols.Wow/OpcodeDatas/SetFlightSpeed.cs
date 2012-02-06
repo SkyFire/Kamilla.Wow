@@ -22,7 +22,7 @@ MovementStatusElements.TransportHaveTime3, // 6DCC11
 MovementStatusElements.TransportGuidByte5, // 6DCC43
 MovementStatusElements.HavePitch, // 6DCC57
 MovementStatusElements.HaveFallData, // 6DCC86
-MovementStatusElements.HaveFallTransferDirection, // 6DCCBD
+MovementStatusElements.HaveFallDirection, // 6DCCBD
 MovementStatusElements.GuidByte2, // 6DCCFB
 MovementStatusElements.GuidByte3, // 6DCD20
 MovementStatusElements.GuidByte6, // 6DCD45

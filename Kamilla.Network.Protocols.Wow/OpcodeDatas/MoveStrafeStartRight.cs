@@ -44,7 +44,7 @@ MovementStatusElements.TransportGuidByte5, // 69E851
 MovementStatusElements.TransportHaveTime3, // 69E884
 MovementStatusElements.TransportHaveTime2, // 69E8B0
 MovementStatusElements.HaveFallData, // 69E8D0
-MovementStatusElements.HaveFallTransferDirection, // 69E8FB
+MovementStatusElements.HaveFallDirection, // 69E8FB
 MovementStatusElements.Timestamp, // 69E92F
 MovementStatusElements.PositionO, // 69E937
 MovementStatusElements.PositionX, // 69E945

@@ -38,7 +38,7 @@ MovementStatusElements.TransportHaveTime3, // 67CE77
 MovementStatusElements.TransportHaveTime2, // 67CEA4
 MovementStatusElements.HavePitch, // 67CEC4
 MovementStatusElements.HaveFallData, // 67CEE4
-MovementStatusElements.HaveFallTransferDirection, // 67CF0A
+MovementStatusElements.HaveFallDirection, // 67CF0A
 MovementStatusElements.HaveSplineElev, // 67CF30
 MovementStatusElements.Timestamp, // 67CF63
 MovementStatusElements.PositionX, // 67CF6B

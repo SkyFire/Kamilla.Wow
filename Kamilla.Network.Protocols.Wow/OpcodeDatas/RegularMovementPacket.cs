@@ -32,7 +32,7 @@ namespace Kamilla.Network.Protocols.Wow.OpcodeDatas
             GuidByte7, // 6DB960
             #endregion
             HaveFallData,
-            HaveFallTransferDirection,
+            HaveFallDirection,
             HaveTransportData,
             TransportHaveTime2,
             TransportHaveTime3,
@@ -209,7 +209,7 @@ namespace Kamilla.Network.Protocols.Wow.OpcodeDatas
                 case MovementStatusElements.HaveFallData:
                     status.HaveFallData = reader.UnalignedReadBit();
                     break;
-                case MovementStatusElements.HaveFallTransferDirection:
+                case MovementStatusElements.HaveFallDirection:
                     if (status.HaveFallData)
                         status.HaveFallTransferDirection = reader.UnalignedReadBit();
                     break;
@@ -387,7 +387,7 @@ namespace Kamilla.Network.Protocols.Wow.OpcodeDatas
                 case MovementStatusElements.HaveFallData:
                     writer.UnalignedWriteBit(status.HaveFallData);
                     break;
-                case MovementStatusElements.HaveFallTransferDirection:
+                case MovementStatusElements.HaveFallDirection:
                     if (status.HaveFallData)
                         writer.UnalignedWriteBit(status.HaveFallTransferDirection);
                     break;
