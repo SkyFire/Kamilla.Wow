@@ -468,7 +468,13 @@ namespace Kamilla.Network.Protocols.Wow
 
             builder
                 .Append(", ").Append(dataLength)
-                .Append(" bytes").Append(", Flags: ").Append(packet.Flags.ToString());
+                .Append(" bytes");
+
+            if (packet.Flags != 0)
+                builder.AppendLine().Append("Flags: ").Append(packet.Flags.ToString());
+
+            if (wowPacket != null && wowPacket.WowFlags != 0)
+                builder.AppendLine().Append("WoW Flags: ").Append(wowPacket.WowFlags.ToString());
 
             return builder.ToString();
         }

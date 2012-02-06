@@ -302,7 +302,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Plugins\OpcodeInfo.cs" />
-    <Compile Include="SpecialWowOpcodes.cs" />
     <Compile Include="Game\SpellEnums.cs" />
     <Compile Include="Game\SplineInfo.cs" />
     <Compile Include="Game\Structures.cs" />
