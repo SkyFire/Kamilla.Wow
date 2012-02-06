@@ -33,7 +33,7 @@ MovementStatusElements.Flags2, // 688DDA
 MovementStatusElements.HavePitch, // 688DEE
 MovementStatusElements.HaveSplineElev, // 688E0E
 MovementStatusElements.HaveFallData, // 688E31
-MovementStatusElements.HaveFallTransferDirection, // 688E57
+MovementStatusElements.HaveFallDirection, // 688E57
 MovementStatusElements.HaveTransportData, // 688E7D
 MovementStatusElements.TransportGuidByte6, // 688EAB
 MovementStatusElements.TransportGuidByte3, // 688EE1

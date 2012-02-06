@@ -43,7 +43,7 @@ MovementStatusElements.TransportGuidByte5, // 687E0D
 MovementStatusElements.TransportHaveTime3, // 687E40
 MovementStatusElements.TransportHaveTime2, // 687E6C
 MovementStatusElements.HaveFallData, // 687E8C
-MovementStatusElements.HaveFallTransferDirection, // 687EB1
+MovementStatusElements.HaveFallDirection, // 687EB1
 MovementStatusElements.HaveSplineElev, // 687ED7
 MovementStatusElements.Timestamp, // 687F0B
 MovementStatusElements.PositionX, // 687F10

@@ -11,7 +11,7 @@ namespace Kamilla.Network.Protocols.Wow.OpcodeDatas
                 {
 MovementStatusElements.HavePitch, // 6DAB9D
 MovementStatusElements.HaveFallData, // 6DABB4
-MovementStatusElements.HaveFallTransferDirection, // 6DABD3
+MovementStatusElements.HaveFallDirection, // 6DABD3
 MovementStatusElements.GuidByte7, // 6DAC0A
 MovementStatusElements.Flags2, // 6DAC18
 MovementStatusElements.GuidByte0, // 6DAC43

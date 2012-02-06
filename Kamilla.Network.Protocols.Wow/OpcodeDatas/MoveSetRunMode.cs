@@ -32,7 +32,7 @@ MovementStatusElements.GuidByte6, // 6A0A09
 MovementStatusElements.GuidByte4, // 6A0A38
 MovementStatusElements.HaveSplineElev, // 6A0A5F
 MovementStatusElements.HaveFallData, // 6A0A82
-MovementStatusElements.HaveFallTransferDirection, // 6A0AA7
+MovementStatusElements.HaveFallDirection, // 6A0AA7
 MovementStatusElements.HavePitch, // 6A0ACD
 MovementStatusElements.HaveTransportData, // 6A0AED
 MovementStatusElements.TransportGuidByte6, // 6A0B1A

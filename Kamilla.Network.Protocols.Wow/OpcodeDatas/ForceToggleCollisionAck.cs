@@ -39,7 +39,7 @@ MovementStatusElements.TransportHaveTime2, // 67545E
 MovementStatusElements.HaveSplineElev, // 67547E
 MovementStatusElements.HavePitch, // 6754A1
 MovementStatusElements.HaveFallData, // 6754C1
-MovementStatusElements.HaveFallTransferDirection, // 6754EC
+MovementStatusElements.HaveFallDirection, // 6754EC
 MovementStatusElements.PositionO, // 67551A
 MovementStatusElements.PositionX, // 67552B
 MovementStatusElements.PositionY, // 675539

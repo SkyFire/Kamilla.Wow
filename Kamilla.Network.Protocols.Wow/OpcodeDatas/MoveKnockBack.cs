@@ -25,7 +25,7 @@ MovementStatusElements.GuidByte3, // 6D5C72
 MovementStatusElements.GuidByte0, // 6D5C7D
 MovementStatusElements.HavePitch, // 6D5C8C
 MovementStatusElements.HaveFallData, // 6D5CA3
-MovementStatusElements.HaveFallTransferDirection, // 6D5CC2
+MovementStatusElements.HaveFallDirection, // 6D5CC2
 MovementStatusElements.GuidByte5, // 6D5CE8
 MovementStatusElements.HaveSpline, // 6D5D22
 MovementStatusElements.Flags2, // 6D5D33

@@ -43,7 +43,7 @@ MovementStatusElements.TransportHaveTime3, // 66CA81
 MovementStatusElements.TransportHaveTime2, // 66CAAD
 MovementStatusElements.HavePitch, // 66CACD
 MovementStatusElements.HaveFallData, // 66CAED
-MovementStatusElements.HaveFallTransferDirection, // 66CB12
+MovementStatusElements.HaveFallDirection, // 66CB12
 MovementStatusElements.HaveSplineElev, // 66CB38
 MovementStatusElements.Timestamp, // 66CB6C
 MovementStatusElements.PositionO, // 66CB71

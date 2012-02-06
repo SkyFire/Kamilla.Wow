@@ -44,7 +44,7 @@ MovementStatusElements.TransportHaveTime2, // 6A5351
 MovementStatusElements.HaveSplineElev, // 6A5371
 MovementStatusElements.HavePitch, // 6A5394
 MovementStatusElements.HaveFallData, // 6A53B4
-MovementStatusElements.HaveFallTransferDirection, // 6A53DF
+MovementStatusElements.HaveFallDirection, // 6A53DF
 MovementStatusElements.PositionX, // 6A540D
 MovementStatusElements.PositionO, // 6A543A
 MovementStatusElements.Timestamp, // 6A544B

@@ -28,7 +28,7 @@ MovementStatusElements.Flags, // 695BC4
 MovementStatusElements.HaveSplineElev, // 695BD4
 MovementStatusElements.HavePitch, // 695BF7
 MovementStatusElements.HaveFallData, // 695C17
-MovementStatusElements.HaveFallTransferDirection, // 695C3C
+MovementStatusElements.HaveFallDirection, // 695C3C
 MovementStatusElements.HaveTransportData, // 695C62
 MovementStatusElements.TransportGuidByte6, // 695C8F
 MovementStatusElements.TransportGuidByte3, // 695CC3

@@ -26,7 +26,7 @@ MovementStatusElements.GuidByte1, // 67BAA1
 MovementStatusElements.GuidByte7, // 67BAC6
 MovementStatusElements.HaveSpline, // 67BAED
 MovementStatusElements.HaveFallData, // 67BB10
-MovementStatusElements.HaveFallTransferDirection, // 67BB35
+MovementStatusElements.HaveFallDirection, // 67BB35
 MovementStatusElements.HaveSplineElev, // 67BB5B
 MovementStatusElements.HaveTransportData, // 67BB7E
 MovementStatusElements.TransportGuidByte6, // 67BBA5

@@ -33,7 +33,7 @@ MovementStatusElements.GuidByte0, // 69A0FD
 MovementStatusElements.HavePitch, // 69A124
 MovementStatusElements.HaveSplineElev, // 69A144
 MovementStatusElements.HaveFallData, // 69A167
-MovementStatusElements.HaveFallTransferDirection, // 69A18C
+MovementStatusElements.HaveFallDirection, // 69A18C
 MovementStatusElements.HaveTransportData, // 69A1B2
 MovementStatusElements.TransportGuidByte6, // 69A1DF
 MovementStatusElements.TransportGuidByte3, // 69A213
