@@ -22,7 +22,7 @@ namespace Kamilla.Network.Protocols.Wow
 
         public WowPacket ToPacket()
         {
-            return new WowPacket(this.Data.ToArray(), TransferDirection, PacketFlags.Custom,
+            return new WowPacket(this.Data.ToArray(), TransferDirection, PacketFlags.Custom, WowPacketFlags.None,
                 DateTime.Now, (uint)Environment.TickCount, (uint)Opcode, 0);
         }
 
