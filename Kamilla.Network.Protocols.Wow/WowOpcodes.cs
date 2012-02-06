@@ -185,7 +185,7 @@ namespace Kamilla.Network.Protocols.Wow
         CMSG_DESTROY_ITEMS                              = UNKNOWN_OPCODE, /* old 0x0B2, */
         SMSG_GAMEOBJECT_CUSTOM_ANIM                     = UNKNOWN_OPCODE, /* old 0x0B3, */
         CMSG_AREATRIGGER                                = UNKNOWN_OPCODE, /* old 0x0B4, */
-        SMSG_MONSTER_MOVE                               = 0x5CF570, /* old 0x0DD, */
+        SMSG_MONSTER_MOVE                               = 9569, /* old 0x0DD, */
         CMSG_TRIGGER_CINEMATIC_CHEAT                    = UNKNOWN_OPCODE, /* old 0x0F8, */
         CMSG_OPENING_CINEMATIC                          = UNKNOWN_OPCODE, /* old 0x0F9, */
         SMSG_TRIGGER_CINEMATIC                          = 27971, /* old 0x0FA, */
