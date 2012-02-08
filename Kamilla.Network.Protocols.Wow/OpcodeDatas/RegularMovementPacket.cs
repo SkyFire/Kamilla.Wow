@@ -19,8 +19,9 @@ namespace Kamilla.Network.Protocols.Wow.OpcodeDatas
         {
             Flags,
             Flags2,
+            Flags_2,
+            Flags2_2,
             Timestamp,
-            HavePitch,
             #region Guid
             GuidByte0, // 6DB645
             GuidByte1, // 6DB5D7
@@ -47,11 +48,12 @@ namespace Kamilla.Network.Protocols.Wow.OpcodeDatas
             TransportGuidByte7, // 6DB81E
             #endregion
             HaveSpline,
-            HaveSplineElev,
+            HaveSpline2,
             PositionX,
             PositionY,
             PositionZ,
             PositionO,
+            PositionO_2,
             #region Guid Seq
             GuidByte0_2, // 6DB9BF
             GuidByte1_2, // 6DBAC6
@@ -63,6 +65,7 @@ namespace Kamilla.Network.Protocols.Wow.OpcodeDatas
             GuidByte7_2, // 6DBE27
             #endregion
             Pitch,
+            Pitch_2,
             FallTime,
             #region TransportGuid Seq
             TransportGuidByte0_2, // 6DBD35
@@ -75,6 +78,7 @@ namespace Kamilla.Network.Protocols.Wow.OpcodeDatas
             TransportGuidByte7_2, // 6DBAFF
             #endregion
             SplineElev,
+            SplineElev_2,
             FallHorizontalSpeed,
             FallVerticalSpeed,
             FallCosAngle,
@@ -195,16 +199,21 @@ namespace Kamilla.Network.Protocols.Wow.OpcodeDatas
             switch (element)
             {
                 case MovementStatusElements.Flags:
-                    status.Flags = (MovementFlags)reader.UnalignedReadInt(30);
+                    status.Flags = (MovementFlags)reader.UnalignedReadInt(1);
+                    break;
+                case MovementStatusElements.Flags_2:
+                    if (status.Flags != 0)
+                        status.Flags = (MovementFlags)reader.UnalignedReadInt(30);
                     break;
                 case MovementStatusElements.Flags2:
-                    status.Flags2 = (MovementFlags2)reader.UnalignedReadSmallInt(12);
+                    status.Flags2 = (MovementFlags2)reader.UnalignedReadInt(1);
+                    break;
+                case MovementStatusElements.Flags2_2:
+                    if (status.Flags2 != 0)
+                        status.Flags2 = (MovementFlags2)reader.UnalignedReadSmallInt(12);
                     break;
                 case MovementStatusElements.Timestamp:
                     status.TimeStamp = reader.ReadUInt32();
-                    break;
-                case MovementStatusElements.HavePitch:
-                    status.HavePitch = reader.UnalignedReadBit();
                     break;
                 case MovementStatusElements.HaveFallData:
                     status.HaveFallData = reader.UnalignedReadBit();
@@ -227,16 +236,23 @@ namespace Kamilla.Network.Protocols.Wow.OpcodeDatas
                 case MovementStatusElements.HaveSpline:
                     status.HaveSpline = reader.UnalignedReadBit();
                     break;
-                case MovementStatusElements.HaveSplineElev:
-                    status.HaveSplineElevation = reader.UnalignedReadBit();
+                case MovementStatusElements.HaveSpline2:
+                    status.HaveSpline2 = reader.UnalignedReadBit();
                     break;
                 case MovementStatusElements.PositionX:
                     status.Position = reader.ReadVector3();
                     break;
                 case MovementStatusElements.PositionO:
-                    status.Orientation = reader.ReadSingle();
+                    status.Orientation = reader.UnalignedReadBit() ? 1.0f : 0.0f;
+                    break;
+                case MovementStatusElements.PositionO_2:
+                    if (status.Orientation != 0.0f)
+                        status.Orientation = reader.ReadSingle();
                     break;
                 case MovementStatusElements.Pitch:
+                    status.HavePitch = reader.UnalignedReadBit();
+                    break;
+                case MovementStatusElements.Pitch_2:
                     if (status.HavePitch)
                         status.Pitch = reader.ReadSingle();
                     break;
@@ -245,6 +261,9 @@ namespace Kamilla.Network.Protocols.Wow.OpcodeDatas
                         status.FallTime = reader.ReadUInt32();
                     break;
                 case MovementStatusElements.SplineElev:
+                    status.HavePitch = reader.UnalignedReadBit();
+                    break;
+                case MovementStatusElements.SplineElev_2:
                     if (status.HaveSplineElevation)
                         status.SplineElevation = reader.ReadSingle();
                     break;
