@@ -22,6 +22,7 @@ namespace Kamilla.Network.Protocols.Wow.OpcodeDatas
             Flags_2,
             Flags2_2,
             Timestamp,
+            Timestamp_2,
             #region Guid
             GuidByte0, // 6DB645
             GuidByte1, // 6DB5D7
@@ -199,21 +200,25 @@ namespace Kamilla.Network.Protocols.Wow.OpcodeDatas
             switch (element)
             {
                 case MovementStatusElements.Flags:
-                    status.Flags = (MovementFlags)reader.UnalignedReadInt(1);
+                    status.Flags = (MovementFlags)(!reader.UnalignedReadBit() ? 1 : 0);
                     break;
                 case MovementStatusElements.Flags_2:
                     if (status.Flags != 0)
                         status.Flags = (MovementFlags)reader.UnalignedReadInt(30);
                     break;
                 case MovementStatusElements.Flags2:
-                    status.Flags2 = (MovementFlags2)reader.UnalignedReadInt(1);
+                    status.Flags2 = (MovementFlags2)(!reader.UnalignedReadBit() ? 1 : 0);
                     break;
                 case MovementStatusElements.Flags2_2:
                     if (status.Flags2 != 0)
                         status.Flags2 = (MovementFlags2)reader.UnalignedReadSmallInt(12);
                     break;
                 case MovementStatusElements.Timestamp:
-                    status.TimeStamp = reader.ReadUInt32();
+                    status.TimeStamp = !reader.UnalignedReadBit() ? 1U : 0U;
+                    break;
+                case MovementStatusElements.Timestamp_2:
+                    if (status.TimeStamp != 0)
+                        status.TimeStamp = reader.ReadUInt32();
                     break;
                 case MovementStatusElements.HaveFallData:
                     status.HaveFallData = reader.UnalignedReadBit();
@@ -240,17 +245,23 @@ namespace Kamilla.Network.Protocols.Wow.OpcodeDatas
                     status.HaveSpline2 = reader.UnalignedReadBit();
                     break;
                 case MovementStatusElements.PositionX:
-                    status.Position = reader.ReadVector3();
+                    status.Position.X = reader.ReadSingle();
+                    break;
+                case MovementStatusElements.PositionY:
+                    status.Position.Y = reader.ReadSingle();
+                    break;
+                case MovementStatusElements.PositionZ:
+                    status.Position.Z = reader.ReadSingle();
                     break;
                 case MovementStatusElements.PositionO:
-                    status.Orientation = reader.UnalignedReadBit() ? 1.0f : 0.0f;
+                    status.Orientation = !reader.UnalignedReadBit() ? 1.0f : 0.0f;
                     break;
                 case MovementStatusElements.PositionO_2:
                     if (status.Orientation != 0.0f)
                         status.Orientation = reader.ReadSingle();
                     break;
                 case MovementStatusElements.Pitch:
-                    status.HavePitch = reader.UnalignedReadBit();
+                    status.HavePitch = !reader.UnalignedReadBit();
                     break;
                 case MovementStatusElements.Pitch_2:
                     if (status.HavePitch)
@@ -261,7 +272,7 @@ namespace Kamilla.Network.Protocols.Wow.OpcodeDatas
                         status.FallTime = reader.ReadUInt32();
                     break;
                 case MovementStatusElements.SplineElev:
-                    status.HavePitch = reader.UnalignedReadBit();
+                    status.HaveSplineElevation = !reader.UnalignedReadBit();
                     break;
                 case MovementStatusElements.SplineElev_2:
                     if (status.HaveSplineElevation)
@@ -293,11 +304,15 @@ namespace Kamilla.Network.Protocols.Wow.OpcodeDatas
                     break;
                 case MovementStatusElements.TransportPositionX:
                     if (status.HaveTransportData)
-                    {
                         status.TransportPosition.X = reader.ReadSingle();
+                    break;
+                case MovementStatusElements.TransportPositionY:
+                    if (status.HaveTransportData)
                         status.TransportPosition.Y = reader.ReadSingle();
+                    break;
+                case MovementStatusElements.TransportPositionZ:
+                    if (status.HaveTransportData)
                         status.TransportPosition.Z = reader.ReadSingle();
-                    }
                     break;
                 case MovementStatusElements.TransportTime:
                     if (status.HaveTransportData)
@@ -310,11 +325,6 @@ namespace Kamilla.Network.Protocols.Wow.OpcodeDatas
                 case MovementStatusElements.TransportTime3:
                     if (status.HaveTransportTime3)
                         status.TransportTime3 = reader.ReadUInt32();
-                    break;
-                case MovementStatusElements.PositionY:
-                case MovementStatusElements.PositionZ:
-                case MovementStatusElements.TransportPositionY:
-                case MovementStatusElements.TransportPositionZ:
                     break;
                 default:
                     throw new InvalidOperationException("Unknown element: " + element);
@@ -391,17 +401,32 @@ namespace Kamilla.Network.Protocols.Wow.OpcodeDatas
             switch (element)
             {
                 case MovementStatusElements.Flags:
-                    writer.UnalignedWriteInt((uint)status.Flags, 30);
+                    writer.UnalignedWriteBit(status.Flags == 0);
+                    break;
+                case MovementStatusElements.Flags_2:
+                    if (status.Flags != 0)
+                        writer.UnalignedWriteInt((uint)status.Flags, 30);
                     break;
                 case MovementStatusElements.Flags2:
-                    writer.UnalignedWriteInt((ushort)status.Flags2, 12);
+                    writer.UnalignedWriteBit(status.Flags2 == 0);
+                    break;
+                case MovementStatusElements.Flags2_2:
+                    if (status.Flags2 != 0)
+                        writer.UnalignedWriteInt((ushort)status.Flags2, 12);
                     break;
                 case MovementStatusElements.Timestamp:
-                    writer.FlushUnalignedBits();
-                    writer.WriteUInt32(status.TimeStamp);
+                    writer.UnalignedWriteBit(status.TimeStamp == 0);
                     break;
-                case MovementStatusElements.HavePitch:
-                    writer.UnalignedWriteBit(status.HavePitch);
+                case MovementStatusElements.Timestamp_2:
+                    if (status.TimeStamp != 0)
+                        writer.WriteUInt32(status.TimeStamp);
+                    break;
+                case MovementStatusElements.Pitch:
+                    writer.UnalignedWriteBit(!status.HavePitch);
+                    break;
+                case MovementStatusElements.Pitch_2:
+                    if (status.HavePitch)
+                        writer.WriteSingle(status.Pitch);
                     break;
                 case MovementStatusElements.HaveFallData:
                     writer.UnalignedWriteBit(status.HaveFallData);
@@ -424,90 +449,83 @@ namespace Kamilla.Network.Protocols.Wow.OpcodeDatas
                 case MovementStatusElements.HaveSpline:
                     writer.UnalignedWriteBit(status.HaveSpline);
                     break;
-                case MovementStatusElements.HaveSplineElev:
-                    writer.UnalignedWriteBit(status.HaveSplineElevation);
-                    break;
-                case MovementStatusElements.PositionX:
-                    writer.FlushUnalignedBits();
-                    writer.WriteVector3(ref status.Position);
-                    break;
-                case MovementStatusElements.PositionO:
-                    writer.FlushUnalignedBits();
-                    writer.WriteSingle(status.Orientation);
-                    break;
-                case MovementStatusElements.Pitch:
-                    writer.FlushUnalignedBits();
-                    if (status.HavePitch)
-                        writer.WriteSingle(status.Pitch);
-                    break;
-                case MovementStatusElements.FallTime:
-                    writer.FlushUnalignedBits();
-                    if (status.HaveFallData)
-                        writer.WriteUInt32(status.FallTime);
+                case MovementStatusElements.HaveSpline2:
+                    writer.UnalignedWriteBit(status.HaveSpline2);
                     break;
                 case MovementStatusElements.SplineElev:
-                    writer.FlushUnalignedBits();
+                    writer.UnalignedWriteBit(!status.HaveSplineElevation);
+                    break;
+                case MovementStatusElements.SplineElev_2:
                     if (status.HaveSplineElevation)
                         writer.WriteSingle(status.SplineElevation);
                     break;
+                case MovementStatusElements.PositionX:
+                    writer.WriteSingle(status.Position.X);
+                    break;
+                case MovementStatusElements.PositionY:
+                    writer.WriteSingle(status.Position.Y);
+                    break;
+                case MovementStatusElements.PositionZ:
+                    writer.WriteSingle(status.Position.Z);
+                    break;
+                case MovementStatusElements.PositionO:
+                    writer.UnalignedWriteBit(status.Orientation == 0.0f);
+                    break;
+                case MovementStatusElements.PositionO_2:
+                    if (status.Orientation != 0.0f)
+                        writer.WriteSingle(status.Orientation);
+                    break;
+                case MovementStatusElements.FallTime:
+                    if (status.HaveFallData)
+                        writer.WriteUInt32(status.FallTime);
+                    break;
                 case MovementStatusElements.FallHorizontalSpeed:
-                    writer.FlushUnalignedBits();
                     if (status.HaveFallTransferDirection)
                         writer.WriteSingle(status.FallHorizontalSpeed);
                     break;
                 case MovementStatusElements.FallVerticalSpeed:
-                    writer.FlushUnalignedBits();
                     if (status.HaveFallData)
                         writer.WriteSingle(status.FallVerticalSpeed);
                     break;
                 case MovementStatusElements.FallCosAngle:
-                    writer.FlushUnalignedBits();
                     if (status.HaveFallTransferDirection)
                         writer.WriteSingle(status.FallCosAngle);
                     break;
                 case MovementStatusElements.FallSinAngle:
-                    writer.FlushUnalignedBits();
                     if (status.HaveFallTransferDirection)
                         writer.WriteSingle(status.FallSinAngle);
                     break;
                 case MovementStatusElements.TransportSeat:
-                    writer.FlushUnalignedBits();
                     if (status.HaveTransportData)
                         writer.WriteSByte(status.TransportSeat);
                     break;
                 case MovementStatusElements.TransportPositionO:
-                    writer.FlushUnalignedBits();
                     if (status.HaveTransportData)
                         writer.WriteSingle(status.TransportFacing);
                     break;
                 case MovementStatusElements.TransportPositionX:
-                    writer.FlushUnalignedBits();
                     if (status.HaveTransportData)
-                    {
                         writer.WriteSingle(status.TransportPosition.X);
+                    break;
+                case MovementStatusElements.TransportPositionY:
+                    if (status.HaveTransportData)
                         writer.WriteSingle(status.TransportPosition.Y);
+                    break;
+                case MovementStatusElements.TransportPositionZ:
+                    if (status.HaveTransportData)
                         writer.WriteSingle(status.TransportPosition.Z);
-                    }
                     break;
                 case MovementStatusElements.TransportTime:
-                    writer.FlushUnalignedBits();
                     if (status.HaveTransportData)
                         writer.WriteUInt32(status.TransportTime);
                     break;
                 case MovementStatusElements.TransportTime2:
-                    writer.FlushUnalignedBits();
                     if (status.HaveTransportTime2)
                         writer.WriteUInt32(status.TransportTime2);
                     break;
                 case MovementStatusElements.TransportTime3:
-                    writer.FlushUnalignedBits();
                     if (status.HaveTransportTime3)
                         writer.WriteUInt32(status.TransportTime3);
-                    break;
-                case MovementStatusElements.PositionY:
-                case MovementStatusElements.PositionZ:
-                case MovementStatusElements.TransportPositionY:
-                case MovementStatusElements.TransportPositionZ:
                     break;
                 default:
                     throw new InvalidOperationException("Unknown element: " + element);
