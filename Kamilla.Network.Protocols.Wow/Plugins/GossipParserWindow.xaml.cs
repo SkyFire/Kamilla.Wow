@@ -331,87 +331,87 @@ namespace Kamilla.Network.Protocols.Wow.Plugins
                         }
                         break;
                     }
-                    //case WowOpcodes.CMSG_GOSSIP_SELECT_OPTION:
-                    //{
-                    //    if (currentMenu != null)
-                    //    {
-                    //        using (var reader = new StreamHandler(packet.Data))
-                    //        {
-                    //            var obj = reader.ReadGuid();
-                    //            var menuId = reader.ReadUInt32();
-                    //            var optionId = reader.ReadUInt32();
-                    //            if (currentMenu.Menu.MenuId == menuId)
-                    //            {
-                    //                optSelectQueue.Enqueue(new GossipSelectOption()
-                    //                {
-                    //                    Object = obj,
-                    //                    MenuId = menuId,
-                    //                    OptionId = optionId
-                    //                });
-                    //            }
-                    //            else
-                    //                Console.WriteLine("Error: Gossip Menu: currentMenuId != selectedMenuId ({0} != {1})",
-                    //                    currentMenu.Menu.MenuId, menuId);
-                    //        }
-                    //    }
-                    //    else
-                    //        Console.WriteLine("Error: Gossip Parser: Unexpected CMSG_GOSSIP_SELECT_OPTION (inner)");
-                    //    break;
-                    //}
-                    //case WowOpcodes.SMSG_DESTROY_OBJECT:
-                    //{
-                    //    var guid = new WowGuid(BitConverter.ToUInt64(packet.Data, 0));
-                    //    if (currentObject == guid)
-                    //        resetCurrent();
-                    //    break;
-                    //}
-                    //case WowOpcodes.SMSG_UPDATE_OBJECT:
-                    //{
-                    //    using (var reader = new StreamHandler(packet.Data))
-                    //    {
-                    //        var updateData = new UpdateData(reader, true);
-                    //        foreach (var guid in updateData.DestroyedObjects)
-                    //        {
-                    //            if (currentObject == guid)
-                    //                resetCurrent();
-                    //        }
-                    //    }
-                    //    break;
-                    //}
-                    //case WowOpcodes.CMSG_QUESTGIVER_ACCEPT_QUEST:
-                    //{
-                    //    var guid = new WowGuid(BitConverter.ToUInt64(packet.Data, 0));
-                    //    if (optSelectQueue.Count > 0)
-                    //    {
-                    //        if (optSelectQueue.Peek().Object == guid)
-                    //            optSelectQueue.Dequeue();
-                    //        else
-                    //            Console.WriteLine("Error: Gossip Parser: Unexpected {0} (packet #{1})", opcode, i);
-                    //    }
-                    //    break;
-                    //}
-                    //case WowOpcodes.SMSG_TRAINER_LIST:
-                    //case WowOpcodes.SMSG_VENDOR_INVENTORY:
-                    //case WowOpcodes.SMSG_INVALID_PROMOTION_CODE:
-                    //{
-                    //    if (optSelectQueue.Count > 0)
-                    //        optSelectQueue.Dequeue();
-                    //    else
-                    //        Console.WriteLine("Error: Gossip Parser: Unexpected {0} (packet #{1})", opcode, i);
-                    //    break;
-                    //}
-                    //case WowOpcodes.SMSG_GOSSIP_COMPLETE:
-                    //{
-                    //    while (optSelectQueue.Count > 0 &&
-                    //        optSelectQueue.Peek().Object == currentObject &&
-                    //        optSelectQueue.Peek().MenuId == currentMenu.Menu.MenuId)
-                    //        optSelectQueue.Dequeue();
-                    //    resetCurrent();
-                    //    break;
-                    //}
+                    case WowOpcodes.CMSG_GOSSIP_SELECT_OPTION:
+                    {
+                        if (currentMenu != null)
+                        {
+                            using (var reader = new StreamHandler(packet.Data))
+                            {
+                                var obj = reader.ReadGuid();
+                                var menuId = reader.ReadUInt32();
+                                var optionId = reader.ReadUInt32();
+                                if (currentMenu.Menu.MenuId == menuId)
+                                {
+                                    optSelectQueue.Enqueue(new GossipSelectOption()
+                                    {
+                                        Object = obj,
+                                        MenuId = menuId,
+                                        OptionId = optionId
+                                    });
+                                }
+                                else
+                                    Console.WriteLine("Error: Gossip Menu: currentMenuId != selectedMenuId ({0} != {1})",
+                                        currentMenu.Menu.MenuId, menuId);
+                            }
+                        }
+                        else
+                            Console.WriteLine("Error: Gossip Parser: Unexpected CMSG_GOSSIP_SELECT_OPTION (inner)");
+                        break;
+                    }
+                    case WowOpcodes.SMSG_DESTROY_OBJECT:
+                    {
+                        var guid = new WowGuid(BitConverter.ToUInt64(packet.Data, 0));
+                        if (currentObject == guid)
+                            resetCurrent();
+                        break;
+                    }
+                    case WowOpcodes.SMSG_UPDATE_OBJECT:
+                    {
+                        using (var reader = new StreamHandler(packet.Data))
+                        {
+                            var updateData = new UpdateData(reader, true);
+                            foreach (var guid in updateData.DestroyedObjects)
+                            {
+                                if (currentObject == guid)
+                                    resetCurrent();
+                            }
+                        }
+                        break;
+                    }
+                    case WowOpcodes.CMSG_QUESTGIVER_ACCEPT_QUEST:
+                    {
+                        var guid = new WowGuid(BitConverter.ToUInt64(packet.Data, 0));
+                        if (optSelectQueue.Count > 0)
+                        {
+                            if (optSelectQueue.Peek().Object == guid)
+                                optSelectQueue.Dequeue();
+                            else
+                                Console.WriteLine("Error: Gossip Parser: Unexpected {0} (packet #{1})", opcode, i);
+                        }
+                        break;
+                    }
+                    case WowOpcodes.SMSG_TRAINER_LIST:
+                    case WowOpcodes.SMSG_VENDOR_INVENTORY:
+                    case WowOpcodes.SMSG_INVALID_PROMOTION_CODE:
+                    {
+                        if (optSelectQueue.Count > 0)
+                            optSelectQueue.Dequeue();
+                        else
+                            Console.WriteLine("Error: Gossip Parser: Unexpected {0} (packet #{1})", opcode, i);
+                        break;
+                    }
+                    case WowOpcodes.SMSG_GOSSIP_COMPLETE:
+                    {
+                        while (optSelectQueue.Count > 0 &&
+                            optSelectQueue.Peek().Object == currentObject &&
+                            optSelectQueue.Peek().MenuId == currentMenu.Menu.MenuId)
+                            optSelectQueue.Dequeue();
+                        resetCurrent();
+                        break;
+                    }
                     case WowOpcodes.CMSG_LOADING_SCREEN_NOTIFY:
                     case WowOpcodes.SMSG_NEW_WORLD:
-                    //case WowOpcodes.SMSG_LOGIN_VERIFY_WORLD:
+                    case WowOpcodes.SMSG_LOGIN_VERIFY_WORLD:
                     {
                         resetCurrent();
                         optSelectQueue.Clear();
