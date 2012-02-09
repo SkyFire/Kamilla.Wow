@@ -60,13 +60,13 @@ namespace Kamilla.Network.Protocols.Wow
         CMSG_AUTH_SRP6_BEGIN                            = UNKNOWN_OPCODE, /* old 0x033, */
         CMSG_AUTH_SRP6_PROOF                            = UNKNOWN_OPCODE, /* old 0x034, */
         CMSG_AUTH_SRP6_RECODE                           = UNKNOWN_OPCODE, /* old 0x035, */
-        CMSG_CHAR_CREATE                                = UNKNOWN_OPCODE, /* old 0x036, */
+        CMSG_CHAR_CREATE                                = 17919, /* old 0x036, */
         CMSG_ENUM_CHARACTERS                            = 16465, /* old 0x037, */
-        CMSG_CHAR_DELETE                                = UNKNOWN_OPCODE, /* old 0x038, */
+        CMSG_CHAR_DELETE                                = 1525, /* old 0x038, */
         SMSG_AUTH_SRP6_RESPONSE                         = UNKNOWN_OPCODE, /* old 0x039, */
-        SMSG_CHAR_CREATE                                = UNKNOWN_OPCODE, /* old 0x03A, */
+        SMSG_CHAR_CREATE                                = 19919, /* old 0x03A, */
         SMSG_ENUM_CHARACTERS_RESULT                     = 3317, /* old 0x03B, */
-        SMSG_CHAR_DELETE                                = UNKNOWN_OPCODE, /* old 0x03C, */
+        SMSG_CHAR_DELETE                                = 1421, /* old 0x03C, */
         CMSG_PLAYER_LOGIN                               = 2120, /* old 0x03D, */
         SMSG_NEW_WORLD                                  = 3105, /* old 0x03E, */
         SMSG_ABORT_NEW_WORLD                            = 5269,
@@ -94,7 +94,7 @@ namespace Kamilla.Network.Protocols.Wow
         CMSG_GUILD_QUERY                                = 3407, /* old 0x054, */
         SMSG_GUILD_QUERY_RESPONSE                       = 11571, /* old 0x055, */
         CMSG_PAGE_TEXT_QUERY                            = 19743, /* old 0x05A, */
-        SMSG_PAGE_TEXT_QUERY_RESPONSE                   = 3337, /* old 0x05B, */
+        SMSG_PAGE_TEXT_QUERY_RESPONSE                   = 3493, /* old 0x05B, */
         CMSG_QUEST_QUERY                                = 17717, /* old 0x05C, */
         SMSG_QUEST_QUERY_RESPONSE                       = 9675, /* old 0x05D, */
         CMSG_GAMEOBJECT_QUERY                           = 17699, /* old 0x05E, */
@@ -133,7 +133,7 @@ namespace Kamilla.Network.Protocols.Wow
         SMSG_PARTY_MEMBER_STATS                         = UNKNOWN_OPCODE, /* old 0x07E, */
         SMSG_PARTY_COMMAND_RESULT                       = UNKNOWN_OPCODE, /* old 0x07F, */
         UMSG_UPDATE_GROUP_MEMBERS                       = UNKNOWN_OPCODE, /* old 0x080, */
-        CMSG_GUILD_CREATE                               = UNKNOWN_OPCODE, /* old 0x081, */
+        CMSG_GUILD_CREATE                               = 11593, /* old 0x081, */
         CMSG_GUILD_INVITE                               = UNKNOWN_OPCODE, /* old 0x082, */
         SMSG_GUILD_INVITE                               = 5748, /* old 0x083, */
         CMSG_GUILD_DECLINE_INVITATION                   = 21773, /* old 0x085, */
@@ -152,12 +152,12 @@ namespace Kamilla.Network.Protocols.Wow
         CMSG_GUILD_DELETE                               = 30085, /* old 0x08F, */
         CMSG_GUILD_SET_GUILD_MASTER                     = 7553, /* old 0x090, */
         CMSG_GUILD_UPDATE_MOTD_TEXT                     = 15749, /* old 0x091, */
-        SMSG_GUILD_EVENT                                = UNKNOWN_OPCODE, /* old 0x092, */
+        SMSG_GUILD_EVENT                                = 26101, /* old 0x092, */
         SMSG_GUILD_COMMAND_RESULT                       = 5329, /* old 0x093, */
         UMSG_UPDATE_GUILD                               = UNKNOWN_OPCODE, /* old 0x094, */
         CMSG_JOIN_CHANNEL                               = 8769, /* old 0x097, */
         CMSG_LEAVE_CHANNEL                              = 10240, /* old 0x098, */
-        SMSG_CHANNEL_NOTIFY                             = UNKNOWN_OPCODE, /* old 0x099, */
+        SMSG_CHANNEL_NOTIFY                             = 26025, /* old 0x099, */
         CMSG_CHANNEL_LIST                               = 10337, /* old 0x09A, */
         SMSG_CHANNEL_LIST                               = 1461, /* old 0x09B, */
         CMSG_CHANNEL_PASSWORD                           = 10401, /* old 0x09C, */
@@ -173,7 +173,7 @@ namespace Kamilla.Network.Protocols.Wow
         CMSG_CHANNEL_UNBAN                              = 8865, /* old 0x0A6, */
         CMSG_CHANNEL_ANNOUNCEMENTS                      = 10913, /* old 0x0A7, */
         CMSG_CHANNEL_MODERATE                           = 10464, /* old 0x0A8, */
-        SMSG_UPDATE_OBJECT                              = UNKNOWN_OPCODE, /* old 0x0A9, */
+        SMSG_UPDATE_OBJECT                              = 3427, /* old 0x0A9, */
         SMSG_DESTROY_OBJECT                             = 19887, /* old 0x0AA, */
         CMSG_USE_ITEM                                   = UNKNOWN_OPCODE, /* old 0x0AB, */
         CMSG_OPEN_ITEM                                  = UNKNOWN_OPCODE, /* old 0x0AC, */
@@ -247,8 +247,8 @@ namespace Kamilla.Network.Protocols.Wow
         CMSG_CAST_SPELL                                 = UNKNOWN_OPCODE, /* old 0x12E, */
         CMSG_CANCEL_CAST                                = UNKNOWN_OPCODE, /* old 0x12F, */
         SMSG_CAST_FAILED                                = UNKNOWN_OPCODE, /* old 0x130, */
-        SMSG_SPELL_START                                = UNKNOWN_OPCODE, /* old 0x131, */
-        SMSG_SPELL_GO                                   = UNKNOWN_OPCODE, /* old 0x132, */
+        SMSG_SPELL_START                                = 27943, /* old 0x131, */
+        SMSG_SPELL_GO                                   = 28143, /* old 0x132, */
         SMSG_SPELL_FAILURE                              = UNKNOWN_OPCODE, /* old 0x133, */
         SMSG_SPELL_COOLDOWN                             = UNKNOWN_OPCODE, /* old 0x134, */
         SMSG_COOLDOWN_EVENT                             = UNKNOWN_OPCODE, /* old 0x135, */
@@ -275,7 +275,7 @@ namespace Kamilla.Network.Protocols.Wow
         SMSG_ATTACKSWING_DEADTARGET                     = UNKNOWN_OPCODE, /* old 0x148, */
         [Description("4.1.0 possibly swapped with SMSG_ATTACKSWING_DEADTARGET")]
         SMSG_ATTACKSWING_CANT_ATTACK                    = UNKNOWN_OPCODE, /* old 0x149, */
-        SMSG_ATTACKERSTATEUPDATE                        = UNKNOWN_OPCODE, /* old 0x14A, */
+        SMSG_ATTACKERSTATEUPDATE                        = 11609, /* old 0x14A, */
         SMSG_BATTLEFIELD_PORT_DENIED                    = 7300, /* old 0x14B, */
         CMSG_PERFORM_ACTION_SET                         = UNKNOWN_OPCODE, /* old 0x14C, */
         SMSG_RESUME_CAST_BAR                            = UNKNOWN_OPCODE, /* old 0x14D, */
@@ -335,7 +335,7 @@ namespace Kamilla.Network.Protocols.Wow
         SMSG_GOSSIP_MESSAGE                             = 9655, /* old 0x17D, */
         SMSG_GOSSIP_COMPLETE                            = 17781, /* old 0x17E, */
         CMSG_NPC_TEXT_QUERY                             = 19955, /* old 0x17F, */
-        SMSG_NPC_TEXT_UPDATE                            = 3493, /* old 0x180, */
+        SMSG_NPC_TEXT_UPDATE                            = 3337, /* old 0x180, */
         SMSG_NPC_WONT_TALK                              = UNKNOWN_OPCODE, /* old 0x181, */
         CMSG_QUESTGIVER_STATUS_QUERY                    = UNKNOWN_OPCODE, /* old 0x182, */
         SMSG_QUESTGIVER_STATUS                          = UNKNOWN_OPCODE, /* old 0x183, */
@@ -343,7 +343,7 @@ namespace Kamilla.Network.Protocols.Wow
         SMSG_QUESTGIVER_QUEST_LIST                      = UNKNOWN_OPCODE, /* old 0x185, */
         CMSG_QUESTGIVER_QUERY_QUEST                     = UNKNOWN_OPCODE, /* old 0x186, */
         CMSG_QUESTGIVER_QUEST_AUTOLAUNCH                = UNKNOWN_OPCODE, /* old 0x187, */
-        SMSG_QUESTGIVER_QUEST_DETAILS                   = UNKNOWN_OPCODE, /* old 0x188, */
+        SMSG_QUESTGIVER_QUEST_DETAILS                   = 3473, /* old 0x188, */
         CMSG_QUESTGIVER_ACCEPT_QUEST                    = UNKNOWN_OPCODE, /* old 0x189, */
         CMSG_QUESTGIVER_COMPLETE_QUEST                  = UNKNOWN_OPCODE, /* old 0x18A, */
         SMSG_QUESTGIVER_REQUEST_ITEMS                   = UNKNOWN_OPCODE, /* old 0x18B, */
@@ -385,7 +385,7 @@ namespace Kamilla.Network.Protocols.Wow
         [Description("ERR_NEWTAXIPATH, empty")]
         SMSG_NEW_TAXI_PATH                              = 9609, /* old 0x1AF, */
         CMSG_TRAINER_LIST                               = UNKNOWN_OPCODE, /* old 0x1B0, */
-        SMSG_TRAINER_LIST                               = UNKNOWN_OPCODE, /* old 0x1B1, */
+        SMSG_TRAINER_LIST                               = 28037, /* old 0x1B1, */
         CMSG_TRAINER_BUY_SPELL                          = UNKNOWN_OPCODE, /* old 0x1B2, */
         SMSG_TRAINER_BUY_SUCCEEDED                      = UNKNOWN_OPCODE, /* old 0x1B3, */
         [Description("uint64, uint32, uint32 (0...2)")]
@@ -1048,8 +1048,8 @@ namespace Kamilla.Network.Protocols.Wow
         CMSG_SET_CRITERIA_CHEAT                         = UNKNOWN_OPCODE, /* old 0x470, */
         SMSG_CALENDAR_RAID_LOCKOUT_UPDATED              = UNKNOWN_OPCODE, /* old 0x471, */
         CMSG_UNITANIMTIER_CHEAT                         = UNKNOWN_OPCODE, /* old 0x472, */
-        CMSG_CHAR_CUSTOMIZE                             = UNKNOWN_OPCODE, /* old 0x473, */
-        SMSG_CHAR_CUSTOMIZE                             = UNKNOWN_OPCODE, /* old 0x474, */
+        CMSG_CHAR_CUSTOMIZE                             = 3329, /* old 0x473, */
+        SMSG_CHAR_CUSTOMIZE                             = 28053, /* old 0x474, */
         SMSG_PET_RENAMEABLE                             = UNKNOWN_OPCODE, /* old 0x475, */
         CMSG_REQUEST_VEHICLE_EXIT                       = UNKNOWN_OPCODE, /* old 0x476, */
         CMSG_REQUEST_VEHICLE_PREV_SEAT                  = UNKNOWN_OPCODE, /* old 0x477, */
@@ -1081,7 +1081,7 @@ namespace Kamilla.Network.Protocols.Wow
         CMSG_ENABLETAXI                                 = UNKNOWN_OPCODE, /* old 0x493, */
         SMSG_PRE_RESURRECT                              = 11747, /* old 0x494, */
         SMSG_AURA_UPDATE_ALL                            = UNKNOWN_OPCODE, /* old 0x495, */
-        SMSG_AURA_UPDATE                                = UNKNOWN_OPCODE, /* old 0x496, */
+        SMSG_AURA_UPDATE                                = 19739, /* old 0x496, */
         CMSG_FLOOD_GRACE_CHEAT                          = UNKNOWN_OPCODE, /* old 0x497, */
         SMSG_SERVER_FIRST_ACHIEVEMENT                   = 11733, /* old 0x498, */
         SMSG_PET_LEARNED_SPELL                          = UNKNOWN_OPCODE, /* old 0x499, */
@@ -1124,7 +1124,7 @@ namespace Kamilla.Network.Protocols.Wow
         CMSG_CALENDAR_EVENT_SIGNUP                      = UNKNOWN_OPCODE, /* old 0x4BA, */ // CMSG, uint64, lua: CalendarContextEventSignUp
         SMSG_CALENDAR_CLEAR_PENDING_ACTION              = UNKNOWN_OPCODE, /* old 0x4BB, */ // SMSG, calendar related EVENT_CALENDAR_ACTION_PENDING
         [Description("Sent on loading after SMSG_INIT_CURRENCY")]
-        SMSG_LOAD_EQUIPMENT_SET                         = UNKNOWN_OPCODE, /* old 0x4BC, */ // SMSG, equipment manager list?
+        SMSG_LOAD_EQUIPMENT_SET                         = 19867, /* old 0x4BC, */ // SMSG, equipment manager list?
         CMSG_SAVE_EQUIPMENT_SET                         = UNKNOWN_OPCODE, /* old 0x4BD, */ // CMSG, lua: SaveEquipmentSet
         CMSG_ON_MISSILE_TRAJECTORY_COLLISION            = UNKNOWN_OPCODE, /* old 0x4BE, */ // CMSG, uint64 caster, uint32 spellId, uint8 castId, vector3 position
         SMSG_NOTIFY_MISSILE_TRAJECTORY_COLLISION        = UNKNOWN_OPCODE, /* old 0x4BF, */ // SMSG, uint64 caster, uint8 castId, vector3 position
