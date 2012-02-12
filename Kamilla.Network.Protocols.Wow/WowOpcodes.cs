@@ -133,7 +133,7 @@ namespace Kamilla.Network.Protocols.Wow
         SMSG_PARTY_MEMBER_STATS                         = UNKNOWN_OPCODE, /* old 0x07E, */
         SMSG_PARTY_COMMAND_RESULT                       = UNKNOWN_OPCODE, /* old 0x07F, */
         UMSG_UPDATE_GROUP_MEMBERS                       = UNKNOWN_OPCODE, /* old 0x080, */
-        CMSG_GUILD_CREATE                               = 11593, /* old 0x081, */
+        CMSG_GUILD_CREATE                               = UNKNOWN_OPCODE, /* old 0x081, */
         CMSG_GUILD_INVITE                               = UNKNOWN_OPCODE, /* old 0x082, */
         SMSG_GUILD_INVITE                               = 5748, /* old 0x083, */
         CMSG_GUILD_DECLINE_INVITATION                   = 21773, /* old 0x085, */
@@ -184,7 +184,7 @@ namespace Kamilla.Network.Protocols.Wow
         CMSG_GAMEOBJ_USE                                = UNKNOWN_OPCODE, /* old 0x0B1, */
         CMSG_DESTROY_ITEMS                              = UNKNOWN_OPCODE, /* old 0x0B2, */
         SMSG_GAMEOBJECT_CUSTOM_ANIM                     = UNKNOWN_OPCODE, /* old 0x0B3, */
-        CMSG_AREATRIGGER                                = UNKNOWN_OPCODE, /* old 0x0B4, */
+        CMSG_AREATRIGGER                                = 17763, /* old 0x0B4, */
         SMSG_MONSTER_MOVE                               = 9569, /* old 0x0DD, */
         CMSG_TRIGGER_CINEMATIC_CHEAT                    = UNKNOWN_OPCODE, /* old 0x0F8, */
         CMSG_OPENING_CINEMATIC                          = UNKNOWN_OPCODE, /* old 0x0F9, */
@@ -279,7 +279,7 @@ namespace Kamilla.Network.Protocols.Wow
         SMSG_BATTLEFIELD_PORT_DENIED                    = 7300, /* old 0x14B, */
         CMSG_PERFORM_ACTION_SET                         = UNKNOWN_OPCODE, /* old 0x14C, */
         SMSG_RESUME_CAST_BAR                            = UNKNOWN_OPCODE, /* old 0x14D, */
-        SMSG_CANCEL_COMBAT                              = UNKNOWN_OPCODE, /* old 0x14E, */
+        SMSG_CANCEL_COMBAT                              = 27993, /* old 0x14E, */
         SMSG_SPELLBREAKLOG                              = UNKNOWN_OPCODE, /* old 0x14F, */
         SMSG_SPELLHEALLOG                               = 3357, /* old 0x150, */
         SMSG_SPELLENERGIZELOG                           = 1519, /* old 0x151, */
@@ -377,7 +377,7 @@ namespace Kamilla.Network.Protocols.Wow
         CMSG_TAXIENABLEALLNODES                         = UNKNOWN_OPCODE, /* old 0x1A7, */
         CMSG_TAXISHOWNODES                              = UNKNOWN_OPCODE, /* old 0x1A8, */
         SMSG_SHOWTAXINODES                              = 17777, /* old 0x1A9, */
-        CMSG_TAXINODE_STATUS_QUERY                      = UNKNOWN_OPCODE, /* old 0x1AA, */
+        CMSG_TAXINODE_STATUS_QUERY                      = 1353, /* old 0x1AA, */
         SMSG_TAXINODE_STATUS                            = 25919, /* old 0x1AB, */
         CMSG_TAXIQUERYAVAILABLENODES                    = UNKNOWN_OPCODE, /* old 0x1AC, */
         CMSG_ACTIVATETAXI                               = UNKNOWN_OPCODE, /* old 0x1AD, */
@@ -1188,7 +1188,7 @@ namespace Kamilla.Network.Protocols.Wow
         CMSG_SERVERINFO                                 = UNKNOWN_OPCODE, /* old 0x4F4, */
         [Description("not found")]
         SMSG_SERVERINFO                                 = UNKNOWN_OPCODE, /* old 0x4F5, */
-        CMSG_UI_TIME_REQUEST                            = UNKNOWN_OPCODE, /* old 0x4F6, */
+        CMSG_UI_TIME_REQUEST                            = 11593, /* old 0x4F6, */
         SMSG_UI_TIME                                    = 3429, /* old 0x4F7, */
         [Description("Paid Race Change. lua: CreateCharacter")]
         CMSG_CHAR_RACE_CHANGE                           = UNKNOWN_OPCODE, /* old 0x4F8, */
@@ -1629,7 +1629,7 @@ namespace Kamilla.Network.Protocols.Wow
         SMSG_CATEGORY_COOLDOWN = 1601,
 
         [Description("Clears UNIT_NPC_EMOTESTATE. Sent for example when you close in-game map. Introduced in patch 4.2")]
-        CMSG_CLEAR_EMOTESTATE = UNKNOWN_OPCODE,
+        CMSG_CLEAR_EMOTESTATE = 9553,
 
         SMSG_SUSPEND_TOKEN = 7825,
         CMSG_SUSPEND_TOKEN_RESPONSE = 75,
