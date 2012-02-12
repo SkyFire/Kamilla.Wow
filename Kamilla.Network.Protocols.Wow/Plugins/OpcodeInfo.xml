@@ -1,22 +1,212 @@
 ﻿<?xml version="1.0"?>
 <ArrayOfOpcodeInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <OpcodeInfo value="264" index="0" ctor="6903856" handler="4756288" dtor="6896720" comment="Auth opcode, switch case is at 0x693B5A" />
+  <OpcodeInfo value="0">
+    <Senders>
+      <Sender addr="6729880" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="1">
+    <Senders>
+      <Sender addr="6735630" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="25">
+    <Senders>
+      <Sender addr="6744737" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="64">
+    <Senders>
+      <Sender addr="6729528" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="66">
+    <Senders>
+      <Sender addr="6726990" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="73">
+    <Senders>
+      <Sender addr="6730200" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="74">
+    <Senders>
+      <Sender addr="6727150" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="75">
+    <Senders>
+      <Sender addr="6727502" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="89">
+    <Senders>
+      <Sender addr="6741169" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="257">
+    <Senders>
+      <Sender addr="6759153" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="264" ctor="6903856" handler="4756288" dtor="6896720" comment="Auth opcode, switch case is at 0x693B5A" />
+  <OpcodeInfo value="288">
+    <Senders>
+      <Sender addr="6747579" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="289">
+    <Senders>
+      <Sender addr="6749585" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="293">
+    <Senders>
+      <Sender addr="6749371" />
+    </Senders>
+  </OpcodeInfo>
   <OpcodeInfo value="297" index="3" ctor="6897376" handler="4754240" dtor="6896704" comment="Auth opcode, switch case is at 0x693A5C" />
+  <OpcodeInfo value="320">
+    <Senders>
+      <Sender addr="6765108" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="353">
+    <Senders>
+      <Sender addr="6814005" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="357">
+    <Senders>
+      <Sender addr="6774165" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="385">
+    <Senders>
+      <Sender addr="6775781" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="420">
+    <Senders>
+      <Sender addr="6771413" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="449">
+    <Senders>
+      <Sender addr="6786773" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="480">
+    <Senders>
+      <Sender addr="6766724" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="484">
+    <Senders>
+      <Sender addr="6811525" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="768">
+    <Senders>
+      <Sender addr="6765953" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="772">
+    <Senders>
+      <Sender addr="6805317" />
+    </Senders>
+  </OpcodeInfo>
   <OpcodeInfo value="776" index="4" ctor="6949264" handler="4759456" dtor="6954144" comment="Auth opcode, switch case is at 0x693ABE" />
   <OpcodeInfo value="777" index="5" ctor="6903856" handler="4754048" dtor="6896720" comment="Auth opcode, switch case is at 0x693A8D" />
-  <OpcodeInfo value="1024" index="0" ctor="7126672" handler="6096464" dtor="6946976" comment="Jam opcode, switch case is at 0x668296" />
+  <OpcodeInfo value="801">
+    <Senders>
+      <Sender addr="6778261" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="805">
+    <Senders>
+      <Sender addr="6812773" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="832">
+    <Senders>
+      <Sender addr="6749745" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="833">
+    <Senders>
+      <Sender addr="6765524" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="865">
+    <Senders>
+      <Sender addr="6792069" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="868">
+    <Senders>
+      <Sender addr="6824693" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="897">
+    <Senders>
+      <Sender addr="6796005" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="901">
+    <Senders>
+      <Sender addr="6790837" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="928">
+    <Senders>
+      <Sender addr="6766372" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="929">
+    <Senders>
+      <Sender addr="6801109" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="932">
+    <Senders>
+      <Sender addr="6747899" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="960">
+    <Senders>
+      <Sender addr="6749249" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="961">
+    <Senders>
+      <Sender addr="6749057" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="992">
+    <Senders>
+      <Sender addr="6785557" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="996">
+    <Senders>
+      <Sender addr="6764756" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="1024" ctor="7126672" handler="6096464" dtor="6946976" comment="Jam opcode, switch case is at 0x668296" />
   <OpcodeInfo value="1029" index="3" ctor="7190288" handler="5610960" dtor="7153472" comment="Jam opcode, switch case is at 0x66721A" />
   <OpcodeInfo value="1041" index="5" ctor="7138288" handler="9643280" dtor="6953392" comment="Jam opcode, switch case is at 0x6692C5" />
   <OpcodeInfo value="1044" index="6" ctor="7131184" handler="9688528" dtor="6950496" comment="Jam opcode, switch case is at 0x66727C" />
   <OpcodeInfo value="1056" index="8" ctor="7045216" handler="9259104" dtor="6949904" comment="Jam opcode, switch case is at 0x6678F1" />
   <OpcodeInfo value="1060" index="10" ctor="7185680" handler="9649536" dtor="7174016" comment="Jam opcode, switch case is at 0x669487" />
-  <OpcodeInfo value="1061" index="11" ctor="7288032" handler="0" dtor="7184496" comment="Jam opcode, switch case is at 0x668FE6, handler not found" />
+  <OpcodeInfo value="1061" index="11" ctor="7288032" dtor="7184496" comment="Jam opcode, switch case is at 0x668FE6, handler not found" />
   <OpcodeInfo value="1076" index="14" ctor="6950960" handler="5701088" dtor="6948080" comment="Jam opcode, switch case is at 0x66984E" />
   <OpcodeInfo value="1089" index="17" ctor="6970608" handler="9690496" dtor="6946992" comment="Jam opcode, switch case is at 0x669079" />
   <OpcodeInfo value="1104" index="20" ctor="7067360" handler="5611120" dtor="6954400" comment="Jam opcode, switch case is at 0x669263" />
   <OpcodeInfo value="1105" index="21" ctor="7045344" handler="5961584" dtor="6950352" comment="Jam opcode, switch case is at 0x66885D" />
   <OpcodeInfo value="1108" index="22" ctor="6971072" handler="5640352" dtor="6953728" comment="Jam opcode, switch case is at 0x666BC0" />
-  <OpcodeInfo value="1121" index="25" ctor="7000464" handler="0" dtor="6950320" comment="Jam opcode, switch case is at 0x666D20, handler not found" />
+  <OpcodeInfo value="1121" index="25" ctor="7000464" dtor="6950320" comment="Jam opcode, switch case is at 0x666D20, handler not found" />
   <OpcodeInfo value="1124" index="26" ctor="7078640" handler="9878480" dtor="6948592" comment="Jam opcode, switch case is at 0x667595" />
   <OpcodeInfo value="1125" index="27" ctor="7103360" handler="5995424" dtor="6949584" comment="Jam opcode, switch case is at 0x668100" />
   <OpcodeInfo value="1137" index="29" ctor="6949264" handler="9958464" dtor="6954144" comment="Jam opcode, switch case is at 0x66994C" />
@@ -36,67 +226,201 @@
   <OpcodeInfo value="1252" index="58" ctor="7058064" handler="5962064" dtor="6954176" comment="Jam opcode, switch case is at 0x668983" />
   <OpcodeInfo value="1253" index="59" ctor="6963648" handler="5586880" dtor="6947088" comment="Jam opcode, switch case is at 0x667B0C" />
   <OpcodeInfo value="1268" index="62" ctor="7100720" handler="6098480" dtor="6949600" comment="Jam opcode, switch case is at 0x668DB9" />
-  <OpcodeInfo value="1281" index="0" ctor="0" handler="5675872" dtor="0" comment="Legacy opcode, transformed handler is 0x67F9417C" />
-  <OpcodeInfo value="1283" index="1" ctor="0" handler="9267984" dtor="0" comment="Legacy opcode, transformed handler is 0x682E112E" />
-  <OpcodeInfo value="1287" index="3" ctor="0" handler="9267984" dtor="0" comment="Legacy opcode, transformed handler is 0x6832112A" />
-  <OpcodeInfo value="1289" index="4" ctor="0" handler="9217472" dtor="0" comment="Legacy opcode, transformed handler is 0x68374BD4" />
-  <OpcodeInfo value="1297" index="8" ctor="0" handler="5579568" dtor="0" comment="Legacy opcode, transformed handler is 0x6807C93C" />
-  <OpcodeInfo value="1301" index="10" ctor="0" handler="5671104" dtor="0" comment="Legacy opcode, transformed handler is 0x680D2EC8" />
-  <OpcodeInfo value="1303" index="11" ctor="0" handler="9267984" dtor="0" comment="Legacy opcode, transformed handler is 0x6842111A" />
-  <OpcodeInfo value="1305" index="12" ctor="0" handler="9749344" dtor="0" comment="Legacy opcode, transformed handler is 0x684F6964" />
-  <OpcodeInfo value="1307" index="13" ctor="0" handler="9740288" dtor="0" comment="Legacy opcode, transformed handler is 0x684D4606" />
-  <OpcodeInfo value="1313" index="16" ctor="0" handler="9356144" dtor="0" comment="Legacy opcode, transformed handler is 0x681169AC" />
-  <OpcodeInfo value="1315" index="17" ctor="0" handler="5593904" dtor="0" comment="Legacy opcode, transformed handler is 0x67D6016E" />
-  <OpcodeInfo value="1317" index="18" ctor="0" handler="5630304" dtor="0" comment="Legacy opcode, transformed handler is 0x67DC8F98" />
-  <OpcodeInfo value="1321" index="20" ctor="0" handler="9413760" dtor="0" comment="Legacy opcode, transformed handler is 0x681A4AB4" />
-  <OpcodeInfo value="1329" index="24" ctor="0" handler="5671104" dtor="0" comment="Legacy opcode, transformed handler is 0x67E92EEC" />
-  <OpcodeInfo value="1331" index="25" ctor="0" handler="10183856" dtor="0" comment="Legacy opcode, transformed handler is 0x682C0ADE" />
-  <OpcodeInfo value="1333" index="26" ctor="0" handler="9759424" dtor="0" comment="Legacy opcode, transformed handler is 0x682B90E8" />
-  <OpcodeInfo value="1335" index="27" ctor="0" handler="5609840" dtor="0" comment="Legacy opcode, transformed handler is 0x67EA3F9A" />
-  <OpcodeInfo value="1343" index="31" ctor="0" handler="9818912" dtor="0" comment="Legacy opcode, transformed handler is 0x68327942" />
-  <OpcodeInfo value="1351" index="35" ctor="0" handler="10124272" dtor="0" comment="Legacy opcode, transformed handler is 0x687F224A" />
-  <OpcodeInfo value="1355" index="37" ctor="0" handler="5653280" dtor="0" comment="Legacy opcode, transformed handler is 0x683EE976" />
-  <OpcodeInfo value="1357" index="38" ctor="0" handler="5630560" dtor="0" comment="Legacy opcode, transformed handler is 0x684490B0" />
-  <OpcodeInfo value="1391" index="55" ctor="0" handler="5631392" dtor="0" comment="Legacy opcode, transformed handler is 0x68229412" />
-  <OpcodeInfo value="1395" index="57" ctor="0" handler="10124144" dtor="0" comment="Legacy opcode, transformed handler is 0x686B21DE" />
-  <OpcodeInfo value="1399" index="59" ctor="0" handler="9997840" dtor="0" comment="Legacy opcode, transformed handler is 0x686D347A" />
-  <OpcodeInfo value="1403" index="61" ctor="0" handler="10183856" dtor="0" comment="Legacy opcode, transformed handler is 0x68740B16" />
-  <OpcodeInfo value="1409" index="64" ctor="0" handler="8386448" dtor="0" comment="Legacy opcode, transformed handler is 0x67A29E2C" />
-  <OpcodeInfo value="1411" index="65" ctor="0" handler="5653536" dtor="0" comment="Legacy opcode, transformed handler is 0x6776EABE" />
-  <OpcodeInfo value="1417" index="68" ctor="0" handler="9348000" dtor="0" comment="Legacy opcode, transformed handler is 0x67B94A34" />
-  <OpcodeInfo value="1419" index="69" ctor="0" handler="5080752" dtor="0" comment="Legacy opcode, transformed handler is 0x67762D46" />
-  <OpcodeInfo value="1421" index="70" ctor="0" handler="6442192" dtor="0" comment="Legacy opcode, transformed handler is 0x6790F360" />
-  <OpcodeInfo value="1423" index="71" ctor="0" handler="4813024" dtor="0" comment="Legacy opcode, transformed handler is 0x67761772" />
-  <OpcodeInfo value="1425" index="72" ctor="0" handler="5653536" dtor="0" comment="Legacy opcode, transformed handler is 0x6788EAAC" />
-  <OpcodeInfo value="1431" index="75" ctor="0" handler="5653536" dtor="0" comment="Legacy opcode, transformed handler is 0x678AEAAA" />
-  <OpcodeInfo value="1433" index="76" ctor="0" handler="5671104" dtor="0" comment="Legacy opcode, transformed handler is 0x67912F44" />
-  <OpcodeInfo value="1435" index="77" ctor="0" handler="10125952" dtor="0" comment="Legacy opcode, transformed handler is 0x67D32906" />
-  <OpcodeInfo value="1443" index="81" ctor="0" handler="5671104" dtor="0" comment="Legacy opcode, transformed handler is 0x67572F7E" />
-  <OpcodeInfo value="1445" index="82" ctor="0" handler="9405296" dtor="0" comment="Legacy opcode, transformed handler is 0x67962A28" />
-  <OpcodeInfo value="1447" index="83" ctor="0" handler="5671104" dtor="0" comment="Legacy opcode, transformed handler is 0x675B2F7A" />
-  <OpcodeInfo value="1453" index="86" ctor="0" handler="5630560" dtor="0" comment="Legacy opcode, transformed handler is 0x67649110" />
-  <OpcodeInfo value="1455" index="87" ctor="0" handler="4199232" dtor="0" comment="Legacy opcode, transformed handler is 0x674CB9F2" />
-  <OpcodeInfo value="1457" index="88" ctor="0" handler="9419376" dtor="0" comment="Legacy opcode, transformed handler is 0x67A2611C" />
-  <OpcodeInfo value="1461" index="90" ctor="0" handler="9374048" dtor="0" comment="Legacy opcode, transformed handler is 0x67A5B008" />
-  <OpcodeInfo value="1465" index="92" ctor="0" handler="6134928" dtor="0" comment="Legacy opcode, transformed handler is 0x67784334" />
-  <OpcodeInfo value="1469" index="94" ctor="0" handler="6140784" dtor="0" comment="Legacy opcode, transformed handler is 0x677C5A10" />
-  <OpcodeInfo value="1471" index="95" ctor="0" handler="5630304" dtor="0" comment="Legacy opcode, transformed handler is 0x67729002" />
-  <OpcodeInfo value="1473" index="96" ctor="0" handler="5576464" dtor="0" comment="Legacy opcode, transformed handler is 0x67B7BDEC" />
-  <OpcodeInfo value="1475" index="97" ctor="0" handler="9337040" dtor="0" comment="Legacy opcode, transformed handler is 0x67EF1FAE" />
-  <OpcodeInfo value="1477" index="98" ctor="0" handler="5630128" dtor="0" comment="Legacy opcode, transformed handler is 0x67BC8F88" />
-  <OpcodeInfo value="1483" index="101" ctor="0" handler="5632080" dtor="0" comment="Legacy opcode, transformed handler is 0x67BE9726" />
-  <OpcodeInfo value="1485" index="102" ctor="0" handler="5576624" dtor="0" comment="Legacy opcode, transformed handler is 0x67C3BE80" />
-  <OpcodeInfo value="1489" index="104" ctor="0" handler="5628784" dtor="0" comment="Legacy opcode, transformed handler is 0x67C88A3C" />
-  <OpcodeInfo value="1493" index="106" ctor="0" handler="9072608" dtor="0" comment="Legacy opcode, transformed handler is 0x680116A8" />
-  <OpcodeInfo value="1495" index="107" ctor="0" handler="5609872" dtor="0" comment="Legacy opcode, transformed handler is 0x67CA405A" />
-  <OpcodeInfo value="1505" index="112" ctor="0" handler="6296112" dtor="0" comment="Legacy opcode, transformed handler is 0x67A2B92C" />
-  <OpcodeInfo value="1509" index="114" ctor="0" handler="10099632" dtor="0" comment="Legacy opcode, transformed handler is 0x67E0C2A8" />
-  <OpcodeInfo value="1511" index="115" ctor="0" handler="5575952" dtor="0" comment="Legacy opcode, transformed handler is 0x6799BC0A" />
-  <OpcodeInfo value="1517" index="118" ctor="0" handler="5581712" dtor="0" comment="Legacy opcode, transformed handler is 0x67A3D280" />
-  <OpcodeInfo value="1519" index="119" ctor="0" handler="5609424" dtor="0" comment="Legacy opcode, transformed handler is 0x67A23EC2" />
-  <OpcodeInfo value="1527" index="123" ctor="0" handler="9915136" dtor="0" comment="Legacy opcode, transformed handler is 0x67EBF1EA" />
-  <OpcodeInfo value="1531" index="125" ctor="0" handler="5578560" dtor="0" comment="Legacy opcode, transformed handler is 0x67ADC626" />
-  <OpcodeInfo value="1535" index="127" ctor="0" handler="9760160" dtor="0" comment="Legacy opcode, transformed handler is 0x67F19482" />
+  <OpcodeInfo value="1281" handler="5675872" comment="Legacy opcode, transformed handler is 0x67F9417C" />
+  <OpcodeInfo value="1283" index="1" handler="9267984" comment="Legacy opcode, transformed handler is 0x682E112E" />
+  <OpcodeInfo value="1287" index="3" handler="9267984" comment="Legacy opcode, transformed handler is 0x6832112A" />
+  <OpcodeInfo value="1289" index="4" handler="9217472" comment="Legacy opcode, transformed handler is 0x68374BD4" />
+  <OpcodeInfo value="1295">
+    <Senders>
+      <Sender addr="5614459" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="1297" index="8" handler="5579568" comment="Legacy opcode, transformed handler is 0x6807C93C" />
+  <OpcodeInfo value="1301" index="10" handler="5671104" comment="Legacy opcode, transformed handler is 0x680D2EC8" />
+  <OpcodeInfo value="1303" index="11" handler="9267984" comment="Legacy opcode, transformed handler is 0x6842111A" />
+  <OpcodeInfo value="1305" index="12" handler="9749344" comment="Legacy opcode, transformed handler is 0x684F6964" />
+  <OpcodeInfo value="1307" index="13" handler="9740288" comment="Legacy opcode, transformed handler is 0x684D4606" />
+  <OpcodeInfo value="1311">
+    <Senders>
+      <Sender addr="5064595" name="FriendList__SetNotes" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="1313" index="16" handler="9356144" comment="Legacy opcode, transformed handler is 0x681169AC" />
+  <OpcodeInfo value="1315" index="17" handler="5593904" comment="Legacy opcode, transformed handler is 0x67D6016E" />
+  <OpcodeInfo value="1317" index="18" handler="5630304" comment="Legacy opcode, transformed handler is 0x67DC8F98" />
+  <OpcodeInfo value="1321" index="20" handler="9413760" comment="Legacy opcode, transformed handler is 0x681A4AB4" />
+  <OpcodeInfo value="1323">
+    <Senders>
+      <Sender addr="9438216" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="1329" index="24" handler="5671104" comment="Legacy opcode, transformed handler is 0x67E92EEC" />
+  <OpcodeInfo value="1331" index="25" handler="10183856" comment="Legacy opcode, transformed handler is 0x682C0ADE" />
+  <OpcodeInfo value="1333" index="26" handler="9759424" comment="Legacy opcode, transformed handler is 0x682B90E8" />
+  <OpcodeInfo value="1335" index="27" handler="5609840" comment="Legacy opcode, transformed handler is 0x67EA3F9A" />
+  <OpcodeInfo value="1341">
+    <Senders>
+      <Sender addr="9889758" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="1343" index="31" handler="9818912" comment="Legacy opcode, transformed handler is 0x68327942" />
+  <OpcodeInfo value="1347">
+    <Senders>
+      <Sender addr="10064890" name="Script_SetPrimaryTalentTree" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="1349">
+    <Senders>
+      <Sender addr="9602041" name="Script_CommentatorSetMode" />
+      <Sender addr="9602224" name="Script_CommentatorToggleMode" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="1351" index="35" handler="10124272" comment="Legacy opcode, transformed handler is 0x687F224A" />
+  <OpcodeInfo value="1353">
+    <Senders>
+      <Sender addr="5617323" name="Send_CMSG_TAXINODE_STATUS_QUERY" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="1355" index="37" handler="5653280" comment="Legacy opcode, transformed handler is 0x683EE976" />
+  <OpcodeInfo value="1357" index="38" handler="5630560" comment="Legacy opcode, transformed handler is 0x684490B0" />
+  <OpcodeInfo value="1361">
+    <Senders>
+      <Sender addr="10136091" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="1363">
+    <Senders>
+      <Sender addr="5954888" name="CGUnit_C__RequestMirrorImageDataFromServer" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="1365">
+    <Senders>
+      <Sender addr="9842896" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="1367">
+    <Senders>
+      <Sender addr="6106430" name="CGUnit_C__SetSheatheState" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="1375">
+    <Senders>
+      <Sender addr="10530975" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="1379">
+    <Senders>
+      <Sender addr="5601197" name="CGPlayer_C__TalkToGuildBanker" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="1385">
+    <Senders>
+      <Sender addr="5601035" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="1389">
+    <Senders>
+      <Sender addr="9421285" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="1391" index="55" handler="5631392" comment="Legacy opcode, transformed handler is 0x68229412" />
+  <OpcodeInfo value="1395" index="57" handler="10124144" comment="Legacy opcode, transformed handler is 0x686B21DE" />
+  <OpcodeInfo value="1399" index="59" handler="9997840" comment="Legacy opcode, transformed handler is 0x686D347A" />
+  <OpcodeInfo value="1401">
+    <Senders>
+      <Sender addr="9253620" name="Script_SetCurrentTitle" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="1403" index="61" handler="10183856" comment="Legacy opcode, transformed handler is 0x68740B16" />
+  <OpcodeInfo value="1407">
+    <Senders>
+      <Sender addr="9885615" name="Script_CheckInbox" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="1409" index="64" handler="8386448" comment="Legacy opcode, transformed handler is 0x67A29E2C" />
+  <OpcodeInfo value="1410">
+    <Senders>
+      <Sender addr="11774817" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="1411" index="65" handler="5653536" comment="Legacy opcode, transformed handler is 0x6776EABE" />
+  <OpcodeInfo value="1413">
+    <Senders>
+      <Sender addr="9437702" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="1417" index="68" handler="9348000" comment="Legacy opcode, transformed handler is 0x67B94A34" />
+  <OpcodeInfo value="1419" index="69" handler="5080752" comment="Legacy opcode, transformed handler is 0x67762D46" />
+  <OpcodeInfo value="1421" index="70" handler="6442192" comment="Legacy opcode, transformed handler is 0x6790F360" />
+  <OpcodeInfo value="1423" index="71" handler="4813024" comment="Legacy opcode, transformed handler is 0x67761772" />
+  <OpcodeInfo value="1425" index="72" handler="5653536" comment="Legacy opcode, transformed handler is 0x6788EAAC">
+    <Senders>
+      <Sender addr="10353108" name="Script_RenamePetition" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="1427">
+    <Senders>
+      <Sender addr="5602059" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="1429">
+    <Senders>
+      <Sender addr="9250461" name="Script_DeleteCursorItem" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="1431" index="75" handler="5653536" comment="Legacy opcode, transformed handler is 0x678AEAAA" />
+  <OpcodeInfo value="1433" index="76" handler="5671104" comment="Legacy opcode, transformed handler is 0x67912F44" />
+  <OpcodeInfo value="1435" index="77" handler="10125952" comment="Legacy opcode, transformed handler is 0x67D32906" />
+  <OpcodeInfo value="1437">
+    <Senders>
+      <Sender addr="10114069" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="1441">
+    <Senders>
+      <Sender addr="9730331" name="Script_QueryQuestsCompleted" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="1443" index="81" handler="5671104" comment="Legacy opcode, transformed handler is 0x67572F7E" />
+  <OpcodeInfo value="1445" index="82" handler="9405296" comment="Legacy opcode, transformed handler is 0x67962A28" />
+  <OpcodeInfo value="1447" index="83" handler="5671104" comment="Legacy opcode, transformed handler is 0x675B2F7A" />
+  <OpcodeInfo value="1453" index="86" handler="5630560" comment="Legacy opcode, transformed handler is 0x67649110" />
+  <OpcodeInfo value="1455" index="87" handler="4199232" comment="Legacy opcode, transformed handler is 0x674CB9F2" />
+  <OpcodeInfo value="1457" index="88" handler="9419376" comment="Legacy opcode, transformed handler is 0x67A2611C" />
+  <OpcodeInfo value="1461" index="90" handler="9374048" comment="Legacy opcode, transformed handler is 0x67A5B008" />
+  <OpcodeInfo value="1465" index="92" handler="6134928" comment="Legacy opcode, transformed handler is 0x67784334" />
+  <OpcodeInfo value="1469" index="94" handler="6140784" comment="Legacy opcode, transformed handler is 0x677C5A10" />
+  <OpcodeInfo value="1471" index="95" handler="5630304" comment="Legacy opcode, transformed handler is 0x67729002" />
+  <OpcodeInfo value="1473" index="96" handler="5576464" comment="Legacy opcode, transformed handler is 0x67B7BDEC" />
+  <OpcodeInfo value="1475" index="97" handler="9337040" comment="Legacy opcode, transformed handler is 0x67EF1FAE" />
+  <OpcodeInfo value="1477" index="98" handler="5630128" comment="Legacy opcode, transformed handler is 0x67BC8F88" />
+  <OpcodeInfo value="1483" index="101" handler="5632080" comment="Legacy opcode, transformed handler is 0x67BE9726" />
+  <OpcodeInfo value="1485" index="102" handler="5576624" comment="Legacy opcode, transformed handler is 0x67C3BE80" />
+  <OpcodeInfo value="1489" index="104" handler="5628784" comment="Legacy opcode, transformed handler is 0x67C88A3C" />
+  <OpcodeInfo value="1493" index="106" handler="9072608" comment="Legacy opcode, transformed handler is 0x680116A8" />
+  <OpcodeInfo value="1495" index="107" handler="5609872" comment="Legacy opcode, transformed handler is 0x67CA405A" />
+  <OpcodeInfo value="1501">
+    <Senders>
+      <Sender addr="10101925" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="1505" index="112" handler="6296112" comment="Legacy opcode, transformed handler is 0x67A2B92C" />
+  <OpcodeInfo value="1509" index="114" handler="10099632" comment="Legacy opcode, transformed handler is 0x67E0C2A8" />
+  <OpcodeInfo value="1511" index="115" handler="5575952" comment="Legacy opcode, transformed handler is 0x6799BC0A" />
+  <OpcodeInfo value="1517" index="118" handler="5581712" comment="Legacy opcode, transformed handler is 0x67A3D280" />
+  <OpcodeInfo value="1519" index="119" handler="5609424" comment="Legacy opcode, transformed handler is 0x67A23EC2" />
+  <OpcodeInfo value="1525">
+    <Senders>
+      <Sender addr="5048166" name="ClientServices__DeleteCharacter" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="1527" index="123" handler="9915136" comment="Legacy opcode, transformed handler is 0x67EBF1EA" />
+  <OpcodeInfo value="1531" index="125" handler="5578560" comment="Legacy opcode, transformed handler is 0x67ADC626">
+    <Senders>
+      <Sender addr="5601540" name="CGPlayer_C__TalkToTabardVendor" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="1535" index="127" handler="9760160" comment="Legacy opcode, transformed handler is 0x67F19482" />
   <OpcodeInfo value="1537" index="65" ctor="7099472" handler="9685312" dtor="6950288" comment="Jam opcode, switch case is at 0x6678C0" />
   <OpcodeInfo value="1552" index="68" ctor="7065200" handler="5960048" dtor="6946848" comment="Jam opcode, switch case is at 0x668489" />
   <OpcodeInfo value="1553" index="69" ctor="6954080" handler="9801392" dtor="6949936" comment="Jam opcode, switch case is at 0x666B8F" />
@@ -126,16 +450,176 @@
   <OpcodeInfo value="1749" index="119" ctor="7138288" handler="8372496" dtor="6953392" comment="Jam opcode, switch case is at 0x6669CD" />
   <OpcodeInfo value="1765" index="123" ctor="7046848" handler="5962144" dtor="6947168" comment="Jam opcode, switch case is at 0x6689B4" />
   <OpcodeInfo value="1780" index="126" ctor="7138352" handler="6096576" dtor="6952416" comment="Jam opcode, switch case is at 0x668A78" />
+  <OpcodeInfo value="2049">
+    <Senders>
+      <Sender addr="6730011" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="2072">
+    <Senders>
+      <Sender addr="6735508" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="2112">
+    <Senders>
+      <Sender addr="6729595" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="2113">
+    <Senders>
+      <Sender addr="6738388" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="2120">
+    <Senders>
+      <Sender addr="6738036" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="2128">
+    <Senders>
+      <Sender addr="6735780" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="2129">
+    <Senders>
+      <Sender addr="6740932" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="2305">
+    <Senders>
+      <Sender addr="6831141" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="2308">
+    <Senders>
+      <Sender addr="6832373" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="2309">
+    <Senders>
+      <Sender addr="6761460" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="2336">
+    <Senders>
+      <Sender addr="6798437" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="2373">
+    <Senders>
+      <Sender addr="6761361" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="2404">
+    <Senders>
+      <Sender addr="6784005" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="2433">
+    <Senders>
+      <Sender addr="6762692" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="2437">
+    <Senders>
+      <Sender addr="6747355" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="2464">
+    <Senders>
+      <Sender addr="6764497" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="2496">
+    <Senders>
+      <Sender addr="6806597" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="2497">
+    <Senders>
+      <Sender addr="6793525" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="2816">
+    <Senders>
+      <Sender addr="6763249" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="2820">
+    <Senders>
+      <Sender addr="6781013" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="2821">
+    <Senders>
+      <Sender addr="6834805" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="2848">
+    <Senders>
+      <Sender addr="6790725" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="2852">
+    <Senders>
+      <Sender addr="6749115" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="2881">
+    <Senders>
+      <Sender addr="6759236" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="2912">
+    <Senders>
+      <Sender addr="6759780" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="2917">
+    <Senders>
+      <Sender addr="6841525" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="2944">
+    <Senders>
+      <Sender addr="6762065" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="2945">
+    <Senders>
+      <Sender addr="6747451" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="2949">
+    <Senders>
+      <Sender addr="6840277" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="2977">
+    <Senders>
+      <Sender addr="6787989" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="3013">
+    <Senders>
+      <Sender addr="6803365" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="3040">
+    <Senders>
+      <Sender addr="6809061" />
+    </Senders>
+  </OpcodeInfo>
   <OpcodeInfo value="3072" index="128" ctor="7092592" handler="5960368" dtor="6946832" comment="Jam opcode, switch case is at 0x66854D" />
   <OpcodeInfo value="3089" index="133" ctor="7300608" handler="9695872" dtor="7289024" comment="Jam opcode, switch case is at 0x667855" />
   <OpcodeInfo value="3104" index="136" ctor="6984992" handler="5586704" dtor="6946960" comment="Jam opcode, switch case is at 0x667ADB" />
   <OpcodeInfo value="3105" index="137" ctor="7039856" handler="4208608" dtor="6947600" comment="Jam opcode, switch case is at 0x667628" />
-  <OpcodeInfo value="3120" index="140" ctor="7287952" handler="0" dtor="7205840" comment="Jam opcode, switch case is at 0x66971F, handler not found" />
+  <OpcodeInfo value="3120" index="140" ctor="7287952" dtor="7205840" comment="Jam opcode, switch case is at 0x66971F, handler not found" />
   <OpcodeInfo value="3136" index="144" ctor="6954752" handler="5854816" dtor="6954912" comment="Jam opcode, switch case is at 0x66916E" />
   <OpcodeInfo value="3140" index="146" ctor="7051296" handler="5960688" dtor="6946944" comment="Jam opcode, switch case is at 0x668611" />
   <OpcodeInfo value="3152" index="148" ctor="7138288" handler="9643328" dtor="6953392" comment="Jam opcode, switch case is at 0x669294" />
   <OpcodeInfo value="3153" index="149" ctor="7227520" handler="9705520" dtor="7179440" comment="Jam opcode, switch case is at 0x666F3B" />
-  <OpcodeInfo value="3156" index="150" ctor="7252256" handler="0" dtor="7185664" comment="Jam opcode, switch case is at 0x6697E3, handler not found" />
+  <OpcodeInfo value="3156" index="150" ctor="7252256" dtor="7185664" comment="Jam opcode, switch case is at 0x6697E3, handler not found" />
   <OpcodeInfo value="3157" index="151" ctor="7126608" handler="5587296" dtor="6949632" comment="Jam opcode, switch case is at 0x666DE4" />
   <OpcodeInfo value="3168" index="152" ctor="6998032" handler="9690576" dtor="6950528" comment="Jam opcode, switch case is at 0x667404" />
   <OpcodeInfo value="3169" index="153" ctor="7302240" handler="9676240" dtor="7287936" comment="Jam opcode, switch case is at 0x6673A2" />
@@ -152,7 +636,7 @@
   <OpcodeInfo value="3248" index="172" ctor="6954752" handler="9802496" dtor="6954912" comment="Jam opcode, switch case is at 0x666B5E" />
   <OpcodeInfo value="3249" index="173" ctor="7194144" handler="9741584" dtor="7178592" comment="Jam opcode, switch case is at 0x6667A9" />
   <OpcodeInfo value="3252" index="174" ctor="7103792" handler="5858208" dtor="6954656" comment="Jam opcode, switch case is at 0x669232" />
-  <OpcodeInfo value="3253" index="175" ctor="7129776" handler="0" dtor="6947184" comment="Jam opcode, switch case is at 0x669554, handler not found" />
+  <OpcodeInfo value="3253" index="175" ctor="7129776" dtor="6947184" comment="Jam opcode, switch case is at 0x669554, handler not found" />
   <OpcodeInfo value="3264" index="176" ctor="7137168" handler="5995840" dtor="6948464" comment="Jam opcode, switch case is at 0x6681AE" />
   <OpcodeInfo value="3265" index="177" ctor="7029600" handler="9706144" dtor="6965216" comment="Jam opcode, switch case is at 0x666E46" />
   <OpcodeInfo value="3268" index="178" ctor="6949264" handler="10390768" dtor="6954144" comment="Jam opcode, switch case is at 0x667F1A" />
@@ -165,59 +649,223 @@
   <OpcodeInfo value="3312" index="188" ctor="7117456" handler="5083136" dtor="7051680" comment="Jam opcode, switch case is at 0x666900" />
   <OpcodeInfo value="3313" index="189" ctor="7042320" handler="5960928" dtor="6947584" comment="Jam opcode, switch case is at 0x6686A4" />
   <OpcodeInfo value="3317" index="191" ctor="7274992" handler="6444656" dtor="7252176" comment="Jam opcode, switch case is at 0x666A60" />
-  <OpcodeInfo value="3331" index="129" ctor="0" handler="10519248" dtor="0" comment="Legacy opcode, transformed handler is 0x704130EE" />
-  <OpcodeInfo value="3335" index="131" ctor="0" handler="10183856" dtor="0" comment="Legacy opcode, transformed handler is 0x704012CA" />
-  <OpcodeInfo value="3337" index="132" ctor="0" handler="4812304" dtor="0" comment="Legacy opcode, transformed handler is 0x6FF41C24" />
-  <OpcodeInfo value="3345" index="136" ctor="0" handler="5953616" dtor="0" comment="Legacy opcode, transformed handler is 0x700D865C" />
-  <OpcodeInfo value="3347" index="137" ctor="0" handler="9774064" dtor="0" comment="Legacy opcode, transformed handler is 0x7045D1FE" />
-  <OpcodeInfo value="3349" index="138" ctor="0" handler="5575824" dtor="0" comment="Legacy opcode, transformed handler is 0x700BC298" />
-  <OpcodeInfo value="3355" index="141" ctor="0" handler="9093600" dtor="0" comment="Legacy opcode, transformed handler is 0x70436FE6" />
-  <OpcodeInfo value="3357" index="142" ctor="0" handler="5609152" dtor="0" comment="Legacy opcode, transformed handler is 0x701444C0" />
-  <OpcodeInfo value="3363" index="145" ctor="0" handler="9073168" dtor="0" comment="Legacy opcode, transformed handler is 0x700B204E" />
-  <OpcodeInfo value="3365" index="146" ctor="0" handler="9267984" dtor="0" comment="Legacy opcode, transformed handler is 0x70141948" />
-  <OpcodeInfo value="3377" index="152" ctor="0" handler="10183856" dtor="0" comment="Legacy opcode, transformed handler is 0x702E12DC" />
-  <OpcodeInfo value="3381" index="154" ctor="0" handler="6296112" dtor="0" comment="Legacy opcode, transformed handler is 0x6FF6C058" />
-  <OpcodeInfo value="3383" index="155" ctor="0" handler="6265008" dtor="0" comment="Legacy opcode, transformed handler is 0x6FF446DA" />
-  <OpcodeInfo value="3385" index="156" ctor="0" handler="10183856" dtor="0" comment="Legacy opcode, transformed handler is 0x703612D4" />
-  <OpcodeInfo value="3397" index="162" ctor="0" handler="6255920" dtor="0" comment="Legacy opcode, transformed handler is 0x70462388" />
-  <OpcodeInfo value="3403" index="165" ctor="0" handler="9113792" dtor="0" comment="Legacy opcode, transformed handler is 0x7073BF16" />
-  <OpcodeInfo value="3409" index="168" ctor="0" handler="6046016" dtor="0" comment="Legacy opcode, transformed handler is 0x704EEF8C" />
-  <OpcodeInfo value="3419" index="173" ctor="0" handler="9093808" dtor="0" comment="Legacy opcode, transformed handler is 0x708370F6" />
-  <OpcodeInfo value="3425" index="176" ctor="0" handler="10183856" dtor="0" comment="Legacy opcode, transformed handler is 0x705E132C" />
-  <OpcodeInfo value="3427" index="177" ctor="0" handler="4787728" dtor="0" comment="Legacy opcode, transformed handler is 0x7009BC8E" />
-  <OpcodeInfo value="3429" index="178" ctor="0" handler="9267984" dtor="0" comment="Legacy opcode, transformed handler is 0x70541988" />
-  <OpcodeInfo value="3443" index="185" ctor="0" handler="9360880" dtor="0" comment="Legacy opcode, transformed handler is 0x705F845E" />
-  <OpcodeInfo value="3445" index="186" ctor="0" handler="4207296" dtor="0" comment="Legacy opcode, transformed handler is 0x7016E128" />
-  <OpcodeInfo value="3453" index="190" ctor="0" handler="10183856" dtor="0" comment="Legacy opcode, transformed handler is 0x707A1310" />
-  <OpcodeInfo value="3455" index="191" ctor="0" handler="9368112" dtor="0" comment="Legacy opcode, transformed handler is 0x706BA092" />
-  <OpcodeInfo value="3457" index="192" ctor="0" handler="5609840" dtor="0" comment="Legacy opcode, transformed handler is 0x6F78480C" />
-  <OpcodeInfo value="3463" index="195" ctor="0" handler="5671104" dtor="0" comment="Legacy opcode, transformed handler is 0x6F7B375A" />
-  <OpcodeInfo value="3467" index="197" ctor="0" handler="4812704" dtor="0" comment="Legacy opcode, transformed handler is 0x6F721E36" />
-  <OpcodeInfo value="3469" index="198" ctor="0" handler="9093600" dtor="0" comment="Legacy opcode, transformed handler is 0x6FB97070" />
-  <OpcodeInfo value="3473" index="200" ctor="0" handler="5630304" dtor="0" comment="Legacy opcode, transformed handler is 0x6F8897EC" />
-  <OpcodeInfo value="3487" index="207" ctor="0" handler="5654528" dtor="0" comment="Legacy opcode, transformed handler is 0x6F92F682" />
-  <OpcodeInfo value="3493" index="210" ctor="0" handler="4812448" dtor="0" comment="Legacy opcode, transformed handler is 0x6F501D58" />
-  <OpcodeInfo value="3501" index="214" ctor="0" handler="10183856" dtor="0" comment="Legacy opcode, transformed handler is 0x6FAA1360" />
-  <OpcodeInfo value="3503" index="215" ctor="0" handler="5076496" dtor="0" comment="Legacy opcode, transformed handler is 0x6F5A24C2" />
-  <OpcodeInfo value="3513" index="220" ctor="0" handler="9975248" dtor="0" comment="Legacy opcode, transformed handler is 0x6FB2E474" />
-  <OpcodeInfo value="3519" index="223" ctor="0" handler="5990592" dtor="0" comment="Legacy opcode, transformed handler is 0x6F781762" />
-  <OpcodeInfo value="3527" index="227" ctor="0" handler="5630304" dtor="0" comment="Legacy opcode, transformed handler is 0x6FBA983A" />
-  <OpcodeInfo value="3529" index="228" ctor="0" handler="10183856" dtor="0" comment="Legacy opcode, transformed handler is 0x70061384" />
-  <OpcodeInfo value="3531" index="229" ctor="0" handler="4812480" dtor="0" comment="Legacy opcode, transformed handler is 0x6FB21D96" />
-  <OpcodeInfo value="3533" index="230" ctor="0" handler="9217472" dtor="0" comment="Legacy opcode, transformed handler is 0x6FFB5490" />
-  <OpcodeInfo value="3535" index="231" ctor="0" handler="9952432" dtor="0" comment="Legacy opcode, transformed handler is 0x70048B82" />
-  <OpcodeInfo value="3543" index="235" ctor="0" handler="6125696" dtor="0" comment="Legacy opcode, transformed handler is 0x6FD2274A" />
-  <OpcodeInfo value="3547" index="237" ctor="0" handler="5630304" dtor="0" comment="Legacy opcode, transformed handler is 0x6FCE9826" />
-  <OpcodeInfo value="3555" index="241" ctor="0" handler="5684256" dtor="0" comment="Legacy opcode, transformed handler is 0x6F976B1E" />
-  <OpcodeInfo value="3559" index="243" ctor="0" handler="10183856" dtor="0" comment="Legacy opcode, transformed handler is 0x6FE013AA" />
-  <OpcodeInfo value="3561" index="244" ctor="0" handler="9879296" dtor="0" comment="Legacy opcode, transformed handler is 0x6FE16DF4" />
-  <OpcodeInfo value="3563" index="245" ctor="0" handler="4208704" dtor="0" comment="Legacy opcode, transformed handler is 0x6F88E736" />
-  <OpcodeInfo value="3565" index="246" ctor="0" handler="9892496" dtor="0" comment="Legacy opcode, transformed handler is 0x6FE5A180" />
-  <OpcodeInfo value="3575" index="251" ctor="0" handler="10130160" dtor="0" comment="Legacy opcode, transformed handler is 0x6FEF41DA" />
-  <OpcodeInfo value="3577" index="252" ctor="0" handler="6296112" dtor="0" comment="Legacy opcode, transformed handler is 0x6FBAC114" />
-  <OpcodeInfo value="3579" index="253" ctor="0" handler="9629440" dtor="0" comment="Legacy opcode, transformed handler is 0x6FEB9DE6" />
-  <OpcodeInfo value="3581" index="254" ctor="0" handler="5654528" dtor="0" comment="Legacy opcode, transformed handler is 0x6FB4F6E0" />
-  <OpcodeInfo value="3583" index="255" ctor="0" handler="5607360" dtor="0" comment="Legacy opcode, transformed handler is 0x6FB23EA2" />
+  <OpcodeInfo value="3329">
+    <Senders>
+      <Sender addr="8398982" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="3331" index="129" handler="10519248" comment="Legacy opcode, transformed handler is 0x704130EE" />
+  <OpcodeInfo value="3333">
+    <Senders>
+      <Sender addr="10151247" />
+      <Sender addr="10530475" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="3335" index="131" handler="10183856" comment="Legacy opcode, transformed handler is 0x704012CA" />
+  <OpcodeInfo value="3337" index="132" handler="4812304" comment="Legacy opcode, transformed handler is 0x6FF41C24" />
+  <OpcodeInfo value="3345" index="136" handler="5953616" comment="Legacy opcode, transformed handler is 0x700D865C" />
+  <OpcodeInfo value="3347" index="137" handler="9774064" comment="Legacy opcode, transformed handler is 0x7045D1FE" />
+  <OpcodeInfo value="3349" index="138" handler="5575824" comment="Legacy opcode, transformed handler is 0x700BC298" />
+  <OpcodeInfo value="3355" index="141" handler="9093600" comment="Legacy opcode, transformed handler is 0x70436FE6" />
+  <OpcodeInfo value="3357" index="142" handler="5609152" comment="Legacy opcode, transformed handler is 0x701444C0" />
+  <OpcodeInfo value="3361">
+    <Senders>
+      <Sender addr="5636025" />
+      <Sender addr="5636525" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="3363" index="145" handler="9073168" comment="Legacy opcode, transformed handler is 0x700B204E" />
+  <OpcodeInfo value="3365" index="146" handler="9267984" comment="Legacy opcode, transformed handler is 0x70141948" />
+  <OpcodeInfo value="3369">
+    <Senders>
+      <Sender addr="6211383" name="CGUnit_C__VehicleExit" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="3373">
+    <Senders>
+      <Sender addr="5616475" name="CGPlayer_C__GiveQuestItems" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="3377" index="152" handler="10183856" comment="Legacy opcode, transformed handler is 0x702E12DC" />
+  <OpcodeInfo value="3379">
+    <Senders>
+      <Sender addr="9218321" name="CGPlayer_C__AcceptLevelGrant" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="3381" index="154" handler="6296112" comment="Legacy opcode, transformed handler is 0x6FF6C058" />
+  <OpcodeInfo value="3383" index="155" handler="6265008" comment="Legacy opcode, transformed handler is 0x6FF446DA" />
+  <OpcodeInfo value="3385" index="156" handler="10183856" comment="Legacy opcode, transformed handler is 0x703612D4" />
+  <OpcodeInfo value="3387">
+    <Senders>
+      <Sender addr="6201419" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="3391">
+    <Senders>
+      <Sender addr="5639584" name="AreaTriggerCheck" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="3397" index="162" handler="6255920" comment="Legacy opcode, transformed handler is 0x70462388" />
+  <OpcodeInfo value="3399">
+    <Senders>
+      <Sender addr="9890074" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="3403" index="165" handler="9113792" comment="Legacy opcode, transformed handler is 0x7073BF16" />
+  <OpcodeInfo value="3409" index="168" handler="6046016" comment="Legacy opcode, transformed handler is 0x704EEF8C" />
+  <OpcodeInfo value="3417">
+    <Senders>
+      <Sender addr="10221730" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="3419" index="173" handler="9093808" comment="Legacy opcode, transformed handler is 0x708370F6" />
+  <OpcodeInfo value="3425" index="176" handler="10183856" comment="Legacy opcode, transformed handler is 0x705E132C" />
+  <OpcodeInfo value="3427" index="177" handler="4787728" comment="Legacy opcode, transformed handler is 0x7009BC8E" />
+  <OpcodeInfo value="3429" index="178" handler="9267984" comment="Legacy opcode, transformed handler is 0x70541988" />
+  <OpcodeInfo value="3431">
+    <Senders>
+      <Sender addr="5922640" name="CGItem_C__RequestRefundInfo" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="3435">
+    <Senders>
+      <Sender addr="10119493" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="3437">
+    <Senders>
+      <Sender addr="5599771" />
+      <Sender addr="9719267" name="CGQuestInfo__DeclineQuest" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="3439">
+    <Senders>
+      <Sender addr="9203675" name="Script_OpeningCinematic" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="3443" index="185" handler="9360880" comment="Legacy opcode, transformed handler is 0x705F845E" />
+  <OpcodeInfo value="3445" index="186" handler="4207296" comment="Legacy opcode, transformed handler is 0x7016E128" />
+  <OpcodeInfo value="3449">
+    <Senders>
+      <Sender addr="5064347" name="FriendList__RemoveFriend" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="3453" index="190" handler="10183856" comment="Legacy opcode, transformed handler is 0x707A1310" />
+  <OpcodeInfo value="3455" index="191" handler="9368112" comment="Legacy opcode, transformed handler is 0x706BA092" />
+  <OpcodeInfo value="3457" index="192" handler="5609840" comment="Legacy opcode, transformed handler is 0x6F78480C" />
+  <OpcodeInfo value="3461">
+    <Senders>
+      <Sender addr="9730174" name="Script_SetAchievementComparisonUnit" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="3463" index="195" handler="5671104" comment="Legacy opcode, transformed handler is 0x6F7B375A" />
+  <OpcodeInfo value="3465">
+    <Senders>
+      <Sender addr="9409618" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="3467" index="197" handler="4812704" comment="Legacy opcode, transformed handler is 0x6F721E36" />
+  <OpcodeInfo value="3469" index="198" handler="9093600" comment="Legacy opcode, transformed handler is 0x6FB97070" />
+  <OpcodeInfo value="3473" index="200" handler="5630304" comment="Legacy opcode, transformed handler is 0x6F8897EC" />
+  <OpcodeInfo value="3477">
+    <Senders>
+      <Sender addr="5604246" name="CGPlayer_C__HandleRepopRequest" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="3487" index="207" handler="5654528" comment="Legacy opcode, transformed handler is 0x6F92F682" />
+  <OpcodeInfo value="3489">
+    <Senders>
+      <Sender addr="8392112" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="3491">
+    <Senders>
+      <Sender addr="5615003" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="3493" index="210" handler="4812448" comment="Legacy opcode, transformed handler is 0x6F501D58" />
+  <OpcodeInfo value="3495">
+    <Senders>
+      <Sender addr="10150964" />
+      <Sender addr="10152417" />
+      <Sender addr="10529800" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="3499">
+    <Senders>
+      <Sender addr="5067027" />
+      <Sender addr="5067451" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="3501" index="214" handler="10183856" comment="Legacy opcode, transformed handler is 0x6FAA1360" />
+  <OpcodeInfo value="3503" index="215" handler="5076496" comment="Legacy opcode, transformed handler is 0x6F5A24C2" />
+  <OpcodeInfo value="3511">
+    <Senders>
+      <Sender addr="8416496" name="Script_RequestRealmSplitInfo" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="3513" index="220" handler="9975248" comment="Legacy opcode, transformed handler is 0x6FB2E474" />
+  <OpcodeInfo value="3515">
+    <Senders>
+      <Sender addr="5644775" />
+      <Sender addr="5645011" name="CGPlayer_C__OpenWrappedItem" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="3519" index="223" handler="5990592" comment="Legacy opcode, transformed handler is 0x6F781762" />
+  <OpcodeInfo value="3523">
+    <Senders>
+      <Sender addr="4557314" name="Script_RespondInstanceLock" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="3527" index="227" handler="5630304" comment="Legacy opcode, transformed handler is 0x6FBA983A" />
+  <OpcodeInfo value="3529" index="228" handler="10183856" comment="Legacy opcode, transformed handler is 0x70061384" />
+  <OpcodeInfo value="3531" index="229" handler="4812480" comment="Legacy opcode, transformed handler is 0x6FB21D96" />
+  <OpcodeInfo value="3533" index="230" handler="9217472" comment="Legacy opcode, transformed handler is 0x6FFB5490" />
+  <OpcodeInfo value="3535" index="231" handler="9952432" comment="Legacy opcode, transformed handler is 0x70048B82" />
+  <OpcodeInfo value="3541">
+    <Senders>
+      <Sender addr="5079454" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="3543" index="235" handler="6125696" comment="Legacy opcode, transformed handler is 0x6FD2274A" />
+  <OpcodeInfo value="3547" index="237" handler="5630304" comment="Legacy opcode, transformed handler is 0x6FCE9826" />
+  <OpcodeInfo value="3549">
+    <Senders>
+      <Sender addr="4231041" />
+      <Sender addr="5622739" />
+      <Sender addr="5662222" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="3553">
+    <Senders>
+      <Sender addr="9202099" name="Script_ArenaTeamDisband" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="3555" index="241" handler="5684256" comment="Legacy opcode, transformed handler is 0x6F976B1E" />
+  <OpcodeInfo value="3557">
+    <Senders>
+      <Sender addr="5059275" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="3559" index="243" handler="10183856" comment="Legacy opcode, transformed handler is 0x6FE013AA" />
+  <OpcodeInfo value="3561" index="244" handler="9879296" comment="Legacy opcode, transformed handler is 0x6FE16DF4" />
+  <OpcodeInfo value="3563" index="245" handler="4208704" comment="Legacy opcode, transformed handler is 0x6F88E736" />
+  <OpcodeInfo value="3565" index="246" handler="9892496" comment="Legacy opcode, transformed handler is 0x6FE5A180" />
+  <OpcodeInfo value="3567">
+    <Senders>
+      <Sender addr="10223097" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="3573">
+    <Senders>
+      <Sender addr="9622752" name="Script_RequestRaidInfo" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="3575" index="251" handler="10130160" comment="Legacy opcode, transformed handler is 0x6FEF41DA" />
+  <OpcodeInfo value="3577" index="252" handler="6296112" comment="Legacy opcode, transformed handler is 0x6FBAC114" />
+  <OpcodeInfo value="3579" index="253" handler="9629440" comment="Legacy opcode, transformed handler is 0x6FEB9DE6" />
+  <OpcodeInfo value="3581" index="254" handler="5654528" comment="Legacy opcode, transformed handler is 0x6FB4F6E0" />
+  <OpcodeInfo value="3583" index="255" handler="5607360" comment="Legacy opcode, transformed handler is 0x6FB23EA2" />
   <OpcodeInfo value="3584" index="192" ctor="7058192" handler="5959600" dtor="6954736" comment="Jam opcode, switch case is at 0x668363" />
   <OpcodeInfo value="3588" index="194" ctor="7121296" handler="5994880" dtor="6969424" comment="Jam opcode, switch case is at 0x668018" />
   <OpcodeInfo value="3589" index="195" ctor="7287680" handler="9668992" dtor="7173776" comment="Jam opcode, switch case is at 0x666B2D" />
@@ -248,21 +896,36 @@
   <OpcodeInfo value="3761" index="237" ctor="7071344" handler="5961504" dtor="6952528" comment="Jam opcode, switch case is at 0x66882C" />
   <OpcodeInfo value="3777" index="241" ctor="7044320" handler="5961408" dtor="6952912" comment="Jam opcode, switch case is at 0x6687CA" />
   <OpcodeInfo value="3781" index="243" ctor="7137104" handler="6098032" dtor="6954896" comment="Jam opcode, switch case is at 0x668CF5" />
-  <OpcodeInfo value="3793" index="245" ctor="7235008" handler="0" dtor="7195792" comment="Jam opcode, switch case is at 0x66958E, handler not found" />
+  <OpcodeInfo value="3793" index="245" ctor="7235008" dtor="7195792" comment="Jam opcode, switch case is at 0x66958E, handler not found" />
   <OpcodeInfo value="3809" index="249" ctor="7166512" handler="5995984" dtor="6948032" comment="Jam opcode, switch case is at 0x6681E8" />
-  <OpcodeInfo value="3824" index="252" ctor="6984992" handler="0" dtor="6946960" comment="Jam opcode, switch case is at 0x667953, handler not found" />
-  <OpcodeInfo value="3825" index="253" ctor="7019120" handler="0" dtor="6949984" comment="Jam opcode, switch case is at 0x667435, handler not found" />
+  <OpcodeInfo value="3824" index="252" ctor="6984992" dtor="6946960" comment="Jam opcode, switch case is at 0x667953, handler not found" />
+  <OpcodeInfo value="3825" index="253" ctor="7019120" dtor="6949984" comment="Jam opcode, switch case is at 0x667435, handler not found" />
   <OpcodeInfo value="3829" index="255" ctor="6995008" handler="5960208" dtor="6951168" comment="Jam opcode, switch case is at 0x6684EB" />
+  <OpcodeInfo value="4097">
+    <Senders>
+      <Sender addr="6736097" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="4105">
+    <Senders>
+      <Sender addr="6745653" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="4185">
+    <Senders>
+      <Sender addr="6745445" />
+    </Senders>
+  </OpcodeInfo>
   <OpcodeInfo value="4392" index="10" ctor="6949264" handler="4752160" dtor="6954144" comment="Auth opcode, switch case is at 0x693B8B" />
   <OpcodeInfo value="4873" index="13" ctor="6949264" handler="4756512" dtor="6954144" comment="Auth opcode, switch case is at 0x693AEF" />
-  <OpcodeInfo value="4904" index="14" ctor="6949264" handler="0" dtor="6954144" comment="Auth opcode, switch case is at 0x693BBC, handler not found" />
+  <OpcodeInfo value="4904" index="14" ctor="6949264" dtor="6954144" comment="Auth opcode, switch case is at 0x693BBC, handler not found" />
   <OpcodeInfo value="4905" index="15" ctor="6897200" handler="4752880" dtor="6896688" comment="Auth opcode, switch case is at 0x693B20" />
   <OpcodeInfo value="5121" index="257" ctor="7140912" handler="6097920" dtor="6953360" comment="Jam opcode, switch case is at 0x668CC4" />
   <OpcodeInfo value="5124" index="258" ctor="7143568" handler="5959792" dtor="6947200" comment="Jam opcode, switch case is at 0x6683F6" />
   <OpcodeInfo value="5125" index="259" ctor="7027728" handler="5961008" dtor="6946880" comment="Jam opcode, switch case is at 0x6686D5" />
   <OpcodeInfo value="5137" index="261" ctor="7086688" handler="9660672" dtor="6954256" comment="Jam opcode, switch case is at 0x669048" />
   <OpcodeInfo value="5141" index="263" ctor="7121536" handler="9697296" dtor="6953744" comment="Jam opcode, switch case is at 0x6670F4" />
-  <OpcodeInfo value="5156" index="266" ctor="6949264" handler="0" dtor="6954144" comment="Jam opcode, switch case is at 0x667156, handler not found" />
+  <OpcodeInfo value="5156" index="266" ctor="6949264" dtor="6954144" comment="Jam opcode, switch case is at 0x667156, handler not found" />
   <OpcodeInfo value="5157" index="267" ctor="7177184" handler="6096176" dtor="6949920" comment="Jam opcode, switch case is at 0x668222" />
   <OpcodeInfo value="5169" index="269" ctor="6952944" handler="9259024" dtor="6954384" comment="Jam opcode, switch case is at 0x6676FE" />
   <OpcodeInfo value="5172" index="270" ctor="7070400" handler="5959408" dtor="6954960" comment="Jam opcode, switch case is at 0x6682D0" />
@@ -282,7 +945,7 @@
   <OpcodeInfo value="5237" index="287" ctor="7092672" handler="9696912" dtor="6951056" comment="Jam opcode, switch case is at 0x667092" />
   <OpcodeInfo value="5248" index="288" ctor="7092800" handler="5961088" dtor="6946688" comment="Jam opcode, switch case is at 0x668706" />
   <OpcodeInfo value="5249" index="289" ctor="7030960" handler="5961328" dtor="6947136" comment="Jam opcode, switch case is at 0x668799" />
-  <OpcodeInfo value="5252" index="290" ctor="6984992" handler="0" dtor="6946960" comment="Jam opcode, switch case is at 0x667E56, handler not found" />
+  <OpcodeInfo value="5252" index="290" ctor="6984992" dtor="6946960" comment="Jam opcode, switch case is at 0x667E56, handler not found" />
   <OpcodeInfo value="5253" index="291" ctor="6950960" handler="10092016" dtor="6948080" comment="Jam opcode, switch case is at 0x667984" />
   <OpcodeInfo value="5268" index="294" ctor="7188816" handler="10262560" dtor="7183824" comment="Jam opcode, switch case is at 0x668F4A" />
   <OpcodeInfo value="5269" index="295" ctor="6949264" handler="4199472" dtor="6954144" comment="Jam opcode, switch case is at 0x667659" />
@@ -301,6 +964,31 @@
   <OpcodeInfo value="5360" index="316" ctor="7121600" handler="9957456" dtor="6950304" comment="Jam opcode, switch case is at 0x669621" />
   <OpcodeInfo value="5364" index="318" ctor="7147056" handler="5579680" dtor="6947968" comment="Jam opcode, switch case is at 0x66755B" />
   <OpcodeInfo value="5365" index="319" ctor="7298880" handler="5610864" dtor="7288224" comment="Jam opcode, switch case is at 0x6671E9" />
+  <OpcodeInfo value="5377">
+    <Senders>
+      <Sender addr="6922020" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="5381">
+    <Senders>
+      <Sender addr="6918763" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="5505">
+    <Senders>
+      <Sender addr="6919444" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="5509">
+    <Senders>
+      <Sender addr="6928372" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="5517">
+    <Senders>
+      <Sender addr="6918075" />
+    </Senders>
+  </OpcodeInfo>
   <OpcodeInfo value="5632" index="320" ctor="7263504" handler="10091664" dtor="7177264" comment="Jam opcode, switch case is at 0x6667DA" />
   <OpcodeInfo value="5633" index="321" ctor="7275088" handler="10000256" dtor="7174544" comment="Jam opcode, switch case is at 0x6696EE" />
   <OpcodeInfo value="5636" index="322" ctor="7273680" handler="9755488" dtor="7216896" comment="Jam opcode, switch case is at 0x66752A" />
@@ -309,12 +997,12 @@
   <OpcodeInfo value="5649" index="325" ctor="6950960" handler="5700816" dtor="6948080" comment="Jam opcode, switch case is at 0x66987F" />
   <OpcodeInfo value="5664" index="328" ctor="6949264" handler="10089008" dtor="6954144" comment="Jam opcode, switch case is at 0x66683C" />
   <OpcodeInfo value="5680" index="332" ctor="6949264" handler="5576928" dtor="6954144" comment="Jam opcode, switch case is at 0x6671B8" />
-  <OpcodeInfo value="5684" index="334" ctor="6949264" handler="0" dtor="6954144" comment="Jam opcode, switch case is at 0x669652, handler not found" />
+  <OpcodeInfo value="5684" index="334" ctor="6949264" dtor="6954144" comment="Jam opcode, switch case is at 0x669652, handler not found" />
   <OpcodeInfo value="5685" index="335" ctor="7099856" handler="6108112" dtor="6946704" comment="Jam opcode, switch case is at 0x667BD0" />
   <OpcodeInfo value="5696" index="336" ctor="7138288" handler="9958352" dtor="6953392" comment="Jam opcode, switch case is at 0x66981D" />
   <OpcodeInfo value="5697" index="337" ctor="6986768" handler="9689376" dtor="6947696" comment="Jam opcode, switch case is at 0x667922" />
   <OpcodeInfo value="5717" index="343" ctor="6949264" handler="9633264" dtor="6954144" comment="Jam opcode, switch case is at 0x669523" />
-  <OpcodeInfo value="5728" index="344" ctor="7015440" handler="0" dtor="6949344" comment="Jam opcode, switch case is at 0x668E1B, handler not found" />
+  <OpcodeInfo value="5728" index="344" ctor="7015440" dtor="6949344" comment="Jam opcode, switch case is at 0x668E1B, handler not found" />
   <OpcodeInfo value="5748" index="350" ctor="7140560" handler="9651072" dtor="6948512" comment="Jam opcode, switch case is at 0x6676C4" />
   <OpcodeInfo value="5761" index="353" ctor="7097376" handler="5960288" dtor="6947152" comment="Jam opcode, switch case is at 0x66851C" />
   <OpcodeInfo value="5764" index="354" ctor="6952944" handler="5639936" dtor="6954384" comment="Jam opcode, switch case is at 0x66689E" />
@@ -327,10 +1015,35 @@
   <OpcodeInfo value="5841" index="373" ctor="7222656" handler="9099520" dtor="7217456" comment="Jam opcode, switch case is at 0x667DF4" />
   <OpcodeInfo value="5856" index="376" ctor="6984992" handler="5854912" dtor="6946960" comment="Jam opcode, switch case is at 0x669201" />
   <OpcodeInfo value="5872" index="380" ctor="7064272" handler="5960528" dtor="6952544" comment="Jam opcode, switch case is at 0x6685AF" />
+  <OpcodeInfo value="6016">
+    <Senders>
+      <Sender addr="11775141" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="6018">
+    <Senders>
+      <Sender addr="11774917" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="6169">
+    <Senders>
+      <Sender addr="6740993" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="6208">
+    <Senders>
+      <Sender addr="6739972" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="6225">
+    <Senders>
+      <Sender addr="6736996" />
+    </Senders>
+  </OpcodeInfo>
   <OpcodeInfo value="7168" index="384" ctor="7129056" handler="5692832" dtor="6947008" comment="Jam opcode, switch case is at 0x66772F" />
   <OpcodeInfo value="7169" index="385" ctor="7099616" handler="5962304" dtor="6952928" comment="Jam opcode, switch case is at 0x668A47" />
   <OpcodeInfo value="7172" index="386" ctor="7097520" handler="6096688" dtor="6954816" comment="Jam opcode, switch case is at 0x668AA9" />
-  <OpcodeInfo value="7184" index="388" ctor="7057056" handler="0" dtor="6946816" comment="Jam opcode, switch case is at 0x6695BF, handler not found" />
+  <OpcodeInfo value="7184" index="388" ctor="7057056" dtor="6946816" comment="Jam opcode, switch case is at 0x6695BF, handler not found" />
   <OpcodeInfo value="7200" index="392" ctor="7304576" handler="9998096" dtor="7292080" comment="Jam opcode, switch case is at 0x6695F0" />
   <OpcodeInfo value="7201" index="393" ctor="6993008" handler="9731440" dtor="6953376" comment="Jam opcode, switch case is at 0x6674F9" />
   <OpcodeInfo value="7204" index="394" ctor="7064080" handler="10091904" dtor="6954368" comment="Jam opcode, switch case is at 0x66680B" />
@@ -351,8 +1064,38 @@
   <OpcodeInfo value="7365" index="435" ctor="6998608" handler="6280144" dtor="6948528" comment="Jam opcode, switch case is at 0x668E7D" />
   <OpcodeInfo value="7376" index="436" ctor="7199376" handler="5323856" dtor="7178768" comment="Jam opcode, switch case is at 0x667AAA" />
   <OpcodeInfo value="7397" index="443" ctor="7068496" handler="5692704" dtor="6995520" comment="Jam opcode, switch case is at 0x667791" />
-  <OpcodeInfo value="7408" index="444" ctor="6952464" handler="0" dtor="6947664" comment="Jam opcode, switch case is at 0x6672AD, handler not found" />
+  <OpcodeInfo value="7408" index="444" ctor="6952464" dtor="6947664" comment="Jam opcode, switch case is at 0x6672AD, handler not found" />
   <OpcodeInfo value="7409" index="445" ctor="7039408" handler="5961168" dtor="6948608" comment="Jam opcode, switch case is at 0x668737" />
+  <OpcodeInfo value="7433">
+    <Senders>
+      <Sender addr="6921332" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="7437">
+    <Senders>
+      <Sender addr="6923477" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="7553">
+    <Senders>
+      <Sender addr="6923364" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="7557">
+    <Senders>
+      <Sender addr="6919233" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="7561">
+    <Senders>
+      <Sender addr="6918273" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="7565">
+    <Senders>
+      <Sender addr="6928052" />
+    </Senders>
+  </OpcodeInfo>
   <OpcodeInfo value="7680" index="448" ctor="7058560" handler="9216160" dtor="6946656" comment="Jam opcode, switch case is at 0x667DC3" />
   <OpcodeInfo value="7684" index="450" ctor="7106400" handler="5961984" dtor="6952640" comment="Jam opcode, switch case is at 0x668952" />
   <OpcodeInfo value="7701" index="455" ctor="6977872" handler="5813760" dtor="6954464" comment="Jam opcode, switch case is at 0x66913D" />
@@ -382,347 +1125,2041 @@
   <OpcodeInfo value="7909" index="507" ctor="7216944" handler="9742048" dtor="7235072" comment="Jam opcode, switch case is at 0x666778" />
   <OpcodeInfo value="7921" index="509" ctor="7007008" handler="5873488" dtor="6946640" comment="Jam opcode, switch case is at 0x6690DB" />
   <OpcodeInfo value="7925" index="511" ctor="7046640" handler="6097696" dtor="6949952" comment="Jam opcode, switch case is at 0x668C62" />
-  <OpcodeInfo value="9475" index="257" ctor="0" handler="5953424" dtor="0" comment="Legacy opcode, transformed handler is 0x47FB5DAE" />
-  <OpcodeInfo value="9483" index="261" ctor="0" handler="9596336" dtor="0" comment="Legacy opcode, transformed handler is 0x483AF3C6" />
-  <OpcodeInfo value="9487" index="263" ctor="0" handler="5608736" dtor="0" comment="Legacy opcode, transformed handler is 0x48021B32" />
-  <OpcodeInfo value="9489" index="264" ctor="0" handler="5671104" dtor="0" comment="Legacy opcode, transformed handler is 0x48090ECC" />
-  <OpcodeInfo value="9491" index="265" ctor="0" handler="5953824" dtor="0" comment="Legacy opcode, transformed handler is 0x480B5F2E" />
-  <OpcodeInfo value="9503" index="271" ctor="0" handler="10519248" dtor="0" comment="Legacy opcode, transformed handler is 0x485D08D2" />
-  <OpcodeInfo value="9507" index="273" ctor="0" handler="9629728" dtor="0" comment="Legacy opcode, transformed handler is 0x4813765E" />
-  <OpcodeInfo value="9529" index="284" ctor="0" handler="10519248" dtor="0" comment="Legacy opcode, transformed handler is 0x483B08F4" />
-  <OpcodeInfo value="9531" index="285" ctor="0" handler="9428896" dtor="0" comment="Legacy opcode, transformed handler is 0x482865C6" />
-  <OpcodeInfo value="9533" index="286" ctor="0" handler="4812272" dtor="0" comment="Legacy opcode, transformed handler is 0x47E7F410" />
-  <OpcodeInfo value="9535" index="287" ctor="0" handler="9324800" dtor="0" comment="Legacy opcode, transformed handler is 0x482ACF22" />
-  <OpcodeInfo value="9539" index="289" ctor="0" handler="5681712" dtor="0" comment="Legacy opcode, transformed handler is 0x4837388E" />
-  <OpcodeInfo value="9541" index="290" ctor="0" handler="9122688" dtor="0" comment="Legacy opcode, transformed handler is 0x4871B9D8" />
-  <OpcodeInfo value="9555" index="297" ctor="0" handler="10120368" dtor="0" comment="Legacy opcode, transformed handler is 0x488AF2FE" />
-  <OpcodeInfo value="9567" index="303" ctor="0" handler="5586032" dtor="0" comment="Legacy opcode, transformed handler is 0x4851C2B2" />
-  <OpcodeInfo value="9569" index="304" ctor="0" handler="6092144" dtor="0" comment="Legacy opcode, transformed handler is 0x481F7BEC" />
-  <OpcodeInfo value="9577" index="308" ctor="0" handler="9324864" dtor="0" comment="Legacy opcode, transformed handler is 0x4858CFB4" />
-  <OpcodeInfo value="9581" index="310" ctor="0" handler="9267984" dtor="0" comment="Legacy opcode, transformed handler is 0x485BF180" />
-  <OpcodeInfo value="9585" index="312" ctor="0" handler="5576784" dtor="0" comment="Legacy opcode, transformed handler is 0x48279EBC" />
-  <OpcodeInfo value="9595" index="317" ctor="0" handler="9918384" dtor="0" comment="Legacy opcode, transformed handler is 0x486FDE16" />
-  <OpcodeInfo value="9597" index="318" ctor="0" handler="5084512" dtor="0" comment="Legacy opcode, transformed handler is 0x482C1BC0" />
-  <OpcodeInfo value="9605" index="322" ctor="0" handler="5671104" dtor="0" comment="Legacy opcode, transformed handler is 0x477D0F58" />
-  <OpcodeInfo value="9607" index="323" ctor="0" handler="5638736" dtor="0" comment="Legacy opcode, transformed handler is 0x477A90EA" />
-  <OpcodeInfo value="9609" index="324" ctor="0" handler="5671104" dtor="0" comment="Legacy opcode, transformed handler is 0x47810F54" />
-  <OpcodeInfo value="9619" index="329" ctor="0" handler="9267984" dtor="0" comment="Legacy opcode, transformed handler is 0x47BDF19E" />
-  <OpcodeInfo value="9621" index="330" ctor="0" handler="5953728" dtor="0" comment="Legacy opcode, transformed handler is 0x47915F48" />
-  <OpcodeInfo value="9623" index="331" ctor="0" handler="9267984" dtor="0" comment="Legacy opcode, transformed handler is 0x47C1F19A" />
-  <OpcodeInfo value="9627" index="333" ctor="0" handler="6255552" dtor="0" comment="Legacy opcode, transformed handler is 0x4797FA46" />
-  <OpcodeInfo value="9631" index="335" ctor="0" handler="5653072" dtor="0" comment="Legacy opcode, transformed handler is 0x4792C8D2" />
-  <OpcodeInfo value="9641" index="340" ctor="0" handler="9613312" dtor="0" comment="Legacy opcode, transformed handler is 0x479D36B4" />
-  <OpcodeInfo value="9649" index="344" ctor="0" handler="10411232" dtor="0" comment="Legacy opcode, transformed handler is 0x47B1638C" />
-  <OpcodeInfo value="9651" index="345" ctor="0" handler="9974480" dtor="0" comment="Legacy opcode, transformed handler is 0x47A8B97E" />
-  <OpcodeInfo value="9655" index="347" ctor="0" handler="10357632" dtor="0" comment="Legacy opcode, transformed handler is 0x47B2922A" />
-  <OpcodeInfo value="9657" index="348" ctor="0" handler="5630128" dtor="0" comment="Legacy opcode, transformed handler is 0x47706F54" />
-  <OpcodeInfo value="9661" index="350" ctor="0" handler="5879008" dtor="0" comment="Legacy opcode, transformed handler is 0x47783B80" />
-  <OpcodeInfo value="9663" index="351" ctor="0" handler="10183856" dtor="0" comment="Legacy opcode, transformed handler is 0x47B7EB52" />
-  <OpcodeInfo value="9669" index="354" ctor="0" handler="9072816" dtor="0" comment="Legacy opcode, transformed handler is 0x47F0F788" />
-  <OpcodeInfo value="9673" index="356" ctor="0" handler="10112912" dtor="0" comment="Legacy opcode, transformed handler is 0x4804D664" />
-  <OpcodeInfo value="9675" index="357" ctor="0" handler="4812336" dtor="0" comment="Legacy opcode, transformed handler is 0x47B1F506" />
-  <OpcodeInfo value="9681" index="360" ctor="0" handler="9915024" dtor="0" comment="Legacy opcode, transformed handler is 0x4809D15C" />
-  <OpcodeInfo value="9683" index="361" ctor="0" handler="9894608" dtor="0" comment="Legacy opcode, transformed handler is 0x4807819E" />
-  <OpcodeInfo value="9685" index="362" ctor="0" handler="5578272" dtor="0" comment="Legacy opcode, transformed handler is 0x47CBA4E8" />
-  <OpcodeInfo value="9695" index="367" ctor="0" handler="6107936" dtor="0" comment="Legacy opcode, transformed handler is 0x47D9B9E2" />
-  <OpcodeInfo value="9697" index="368" ctor="0" handler="10410160" dtor="0" comment="Legacy opcode, transformed handler is 0x47E15FAC" />
-  <OpcodeInfo value="9701" index="370" ctor="0" handler="9070400" dtor="0" comment="Legacy opcode, transformed handler is 0x47D0EE38" />
-  <OpcodeInfo value="9703" index="371" ctor="0" handler="9405616" dtor="0" comment="Legacy opcode, transformed handler is 0x47D40BAA" />
-  <OpcodeInfo value="9713" index="376" ctor="0" handler="9267984" dtor="0" comment="Legacy opcode, transformed handler is 0x47DFF1FC" />
-  <OpcodeInfo value="9723" index="381" ctor="0" handler="4812240" dtor="0" comment="Legacy opcode, transformed handler is 0x47A1F4B6" />
-  <OpcodeInfo value="11523" index="385" ctor="0" handler="5654528" dtor="0" comment="Legacy opcode, transformed handler is 0x4FF6D61E" />
-  <OpcodeInfo value="11527" index="387" ctor="0" handler="10183856" dtor="0" comment="Legacy opcode, transformed handler is 0x503FF2CA" />
-  <OpcodeInfo value="11529" index="388" ctor="0" handler="5581344" dtor="0" comment="Legacy opcode, transformed handler is 0x4FFFB834" />
-  <OpcodeInfo value="11531" index="389" ctor="0" handler="4812944" dtor="0" comment="Legacy opcode, transformed handler is 0x4FF1FEA6" />
-  <OpcodeInfo value="11533" index="390" ctor="0" handler="5575200" dtor="0" comment="Legacy opcode, transformed handler is 0x5003A030" />
-  <OpcodeInfo value="11545" index="396" ctor="0" handler="5629616" dtor="0" comment="Legacy opcode, transformed handler is 0x501074B4" />
-  <OpcodeInfo value="11551" index="399" ctor="0" handler="9404320" dtor="0" comment="Legacy opcode, transformed handler is 0x504C0DA2" />
-  <OpcodeInfo value="11553" index="400" ctor="0" handler="5076528" dtor="0" comment="Legacy opcode, transformed handler is 0x4FD0046C" />
-  <OpcodeInfo value="11565" index="406" ctor="0" handler="9267984" dtor="0" comment="Legacy opcode, transformed handler is 0x501BF940" />
-  <OpcodeInfo value="11567" index="407" ctor="0" handler="5629536" dtor="0" comment="Legacy opcode, transformed handler is 0x4FE27492" />
-  <OpcodeInfo value="11571" index="409" ctor="0" handler="4814112" dtor="0" comment="Legacy opcode, transformed handler is 0x4FDA034E" />
-  <OpcodeInfo value="11573" index="410" ctor="0" handler="5576576" dtor="0" comment="Legacy opcode, transformed handler is 0x4FEBA5A8" />
-  <OpcodeInfo value="11575" index="411" ctor="0" handler="5083984" dtor="0" comment="Legacy opcode, transformed handler is 0x4FE2217A" />
-  <OpcodeInfo value="11579" index="413" ctor="0" handler="5574752" dtor="0" comment="Legacy opcode, transformed handler is 0x4FED9E86" />
-  <OpcodeInfo value="11581" index="414" ctor="0" handler="10183856" dtor="0" comment="Legacy opcode, transformed handler is 0x5039F2D0" />
-  <OpcodeInfo value="11583" index="415" ctor="0" handler="9615472" dtor="0" comment="Legacy opcode, transformed handler is 0x502F4692" />
-  <OpcodeInfo value="11595" index="421" ctor="0" handler="5630304" dtor="0" comment="Legacy opcode, transformed handler is 0x503E77B6" />
-  <OpcodeInfo value="11597" index="422" ctor="0" handler="6296112" dtor="0" comment="Legacy opcode, transformed handler is 0x504EA080" />
-  <OpcodeInfo value="11605" index="426" ctor="0" handler="5952864" dtor="0" comment="Legacy opcode, transformed handler is 0x505163A8" />
-  <OpcodeInfo value="11607" index="427" ctor="0" handler="5055920" dtor="0" comment="Legacy opcode, transformed handler is 0x5041B3FA" />
-  <OpcodeInfo value="11609" index="428" ctor="0" handler="6296112" dtor="0" comment="Legacy opcode, transformed handler is 0x505AA074" />
-  <OpcodeInfo value="11615" index="431" ctor="0" handler="9760128" dtor="0" comment="Legacy opcode, transformed handler is 0x50917BC2" />
-  <OpcodeInfo value="11623" index="435" ctor="0" handler="6442192" dtor="0" comment="Legacy opcode, transformed handler is 0x5026DB4A" />
-  <OpcodeInfo value="11627" index="437" ctor="0" handler="9347680" dtor="0" comment="Legacy opcode, transformed handler is 0x505730D6" />
-  <OpcodeInfo value="11629" index="438" ctor="0" handler="9114128" dtor="0" comment="Legacy opcode, transformed handler is 0x5059A080" />
-  <OpcodeInfo value="11641" index="444" ctor="0" handler="10410832" dtor="0" comment="Legacy opcode, transformed handler is 0x507969B4" />
-  <OpcodeInfo value="11643" index="445" ctor="0" handler="5630304" dtor="0" comment="Legacy opcode, transformed handler is 0x502E77C6" />
-  <OpcodeInfo value="11653" index="450" ctor="0" handler="5574128" dtor="0" comment="Legacy opcode, transformed handler is 0x4F7B9C88" />
-  <OpcodeInfo value="11657" index="452" ctor="0" handler="10519248" dtor="0" comment="Legacy opcode, transformed handler is 0x4FCB1164" />
-  <OpcodeInfo value="11667" index="457" ctor="0" handler="5682096" dtor="0" comment="Legacy opcode, transformed handler is 0x4F87423E" />
-  <OpcodeInfo value="11675" index="461" ctor="0" handler="5610064" dtor="0" comment="Legacy opcode, transformed handler is 0x4F8E28D6" />
-  <OpcodeInfo value="11681" index="464" ctor="0" handler="9267984" dtor="0" comment="Legacy opcode, transformed handler is 0x4F8FF9CC" />
-  <OpcodeInfo value="11687" index="467" ctor="0" handler="5585392" dtor="0" comment="Legacy opcode, transformed handler is 0x4F59C8AA" />
-  <OpcodeInfo value="11691" index="469" ctor="0" handler="5574352" dtor="0" comment="Legacy opcode, transformed handler is 0x4F5D9D86" />
-  <OpcodeInfo value="11693" index="470" ctor="0" handler="5629232" dtor="0" comment="Legacy opcode, transformed handler is 0x4F6473E0" />
-  <OpcodeInfo value="11697" index="472" ctor="0" handler="9731712" dtor="0" comment="Legacy opcode, transformed handler is 0x4FA70D2C" />
-  <OpcodeInfo value="11699" index="473" ctor="0" handler="5630560" dtor="0" comment="Legacy opcode, transformed handler is 0x4F66790E" />
-  <OpcodeInfo value="11701" index="474" ctor="0" handler="9880864" dtor="0" comment="Legacy opcode, transformed handler is 0x4FAD53C8" />
-  <OpcodeInfo value="11703" index="475" ctor="0" handler="5630304" dtor="0" comment="Legacy opcode, transformed handler is 0x4F6A780A" />
-  <OpcodeInfo value="11707" index="477" ctor="0" handler="5654528" dtor="0" comment="Legacy opcode, transformed handler is 0x4F6ED6A6" />
-  <OpcodeInfo value="11713" index="480" ctor="0" handler="9267984" dtor="0" comment="Legacy opcode, transformed handler is 0x4FEFF9EC" />
-  <OpcodeInfo value="11717" index="482" ctor="0" handler="5578448" dtor="0" comment="Legacy opcode, transformed handler is 0x4FBBADA8" />
-  <OpcodeInfo value="11721" index="484" ctor="0" handler="9403856" dtor="0" comment="Legacy opcode, transformed handler is 0x4FFA0CA4" />
-  <OpcodeInfo value="11723" index="485" ctor="0" handler="10521072" dtor="0" comment="Legacy opcode, transformed handler is 0x500918C6" />
-  <OpcodeInfo value="11727" index="487" ctor="0" handler="9614384" dtor="0" comment="Legacy opcode, transformed handler is 0x4FFF4302" />
-  <OpcodeInfo value="11729" index="488" ctor="0" handler="10519248" dtor="0" comment="Legacy opcode, transformed handler is 0x5013119C" />
-  <OpcodeInfo value="11733" index="490" ctor="0" handler="9397168" dtor="0" comment="Legacy opcode, transformed handler is 0x5005F278" />
-  <OpcodeInfo value="11747" index="497" ctor="0" handler="5953376" dtor="0" comment="Legacy opcode, transformed handler is 0x4F9B665E" />
-  <OpcodeInfo value="11749" index="498" ctor="0" handler="9267984" dtor="0" comment="Legacy opcode, transformed handler is 0x4FD3FA08" />
-  <OpcodeInfo value="11753" index="500" ctor="0" handler="5055856" dtor="0" comment="Legacy opcode, transformed handler is 0x4F97B464" />
-  <OpcodeInfo value="11755" index="501" ctor="0" handler="10410192" dtor="0" comment="Legacy opcode, transformed handler is 0x4FE767C6" />
-  <OpcodeInfo value="11757" index="502" ctor="0" handler="8393328" dtor="0" comment="Legacy opcode, transformed handler is 0x4FCEA160" />
-  <OpcodeInfo value="11761" index="504" ctor="0" handler="9217472" dtor="0" comment="Legacy opcode, transformed handler is 0x4FDF34AC" />
-  <OpcodeInfo value="11765" index="506" ctor="0" handler="5653536" dtor="0" comment="Legacy opcode, transformed handler is 0x4FACD308" />
-  <OpcodeInfo value="11771" index="509" ctor="0" handler="5671104" dtor="0" comment="Legacy opcode, transformed handler is 0x4FAF17A6" />
-  <OpcodeInfo value="11775" index="511" ctor="0" handler="5581040" dtor="0" comment="Legacy opcode, transformed handler is 0x4FB1B7D2" />
-  <OpcodeInfo value="17669" index="514" ctor="0" handler="10185472" dtor="0" comment="Legacy opcode, transformed handler is 0x28425118" />
-  <OpcodeInfo value="17671" index="515" ctor="0" handler="9928144" dtor="0" comment="Legacy opcode, transformed handler is 0x283C63EA" />
-  <OpcodeInfo value="17673" index="516" ctor="0" handler="9325152" dtor="0" comment="Legacy opcode, transformed handler is 0x28393074" />
-  <OpcodeInfo value="17683" index="521" ctor="0" handler="5631264" dtor="0" comment="Legacy opcode, transformed handler is 0x2806D32E" />
-  <OpcodeInfo value="17689" index="524" ctor="0" handler="5653408" dtor="0" comment="Legacy opcode, transformed handler is 0x281129A4" />
-  <OpcodeInfo value="17693" index="526" ctor="0" handler="5952544" dtor="0" comment="Legacy opcode, transformed handler is 0x2819BA20" />
-  <OpcodeInfo value="17695" index="527" ctor="0" handler="9267984" dtor="0" comment="Legacy opcode, transformed handler is 0x284A5112" />
-  <OpcodeInfo value="17711" index="535" ctor="0" handler="5639040" dtor="0" comment="Legacy opcode, transformed handler is 0x27E2F1B2" />
-  <OpcodeInfo value="17715" index="537" ctor="0" handler="9267984" dtor="0" comment="Legacy opcode, transformed handler is 0x281E513E" />
-  <OpcodeInfo value="17725" index="542" ctor="0" handler="6442192" dtor="0" comment="Legacy opcode, transformed handler is 0x280132F0" />
-  <OpcodeInfo value="17727" index="543" ctor="0" handler="5593088" dtor="0" comment="Legacy opcode, transformed handler is 0x27F23E22" />
-  <OpcodeInfo value="17729" index="544" ctor="0" handler="9099136" dtor="0" comment="Legacy opcode, transformed handler is 0x286DBDDC" />
-  <OpcodeInfo value="17731" index="545" ctor="0" handler="5878912" dtor="0" comment="Legacy opcode, transformed handler is 0x283A9ADE" />
-  <OpcodeInfo value="17735" index="547" ctor="0" handler="5580512" dtor="0" comment="Legacy opcode, transformed handler is 0x283A0D3A" />
-  <OpcodeInfo value="17737" index="548" ctor="0" handler="5952352" dtor="0" comment="Legacy opcode, transformed handler is 0x2845B9B4" />
-  <OpcodeInfo value="17739" index="549" ctor="0" handler="5084368" dtor="0" comment="Legacy opcode, transformed handler is 0x28367B26" />
-  <OpcodeInfo value="17745" index="552" ctor="0" handler="10350288" dtor="0" comment="Legacy opcode, transformed handler is 0x2890D51C" />
-  <OpcodeInfo value="17747" index="553" ctor="0" handler="10103120" dtor="0" comment="Legacy opcode, transformed handler is 0x288B0F9E" />
-  <OpcodeInfo value="17755" index="557" ctor="0" handler="4814320" dtor="0" comment="Legacy opcode, transformed handler is 0x28425C36" />
-  <OpcodeInfo value="17757" index="558" ctor="0" handler="4813552" dtor="0" comment="Legacy opcode, transformed handler is 0x28485930" />
-  <OpcodeInfo value="17759" index="559" ctor="0" handler="9405088" dtor="0" comment="Legacy opcode, transformed handler is 0x288C68E2" />
-  <OpcodeInfo value="17761" index="560" ctor="0" handler="9062096" dtor="0" comment="Legacy opcode, transformed handler is 0x284D2D4C" />
-  <OpcodeInfo value="17765" index="562" ctor="0" handler="5574512" dtor="0" comment="Legacy opcode, transformed handler is 0x281BF5E8" />
-  <OpcodeInfo value="17769" index="564" ctor="0" handler="5607328" dtor="0" comment="Legacy opcode, transformed handler is 0x28207614" />
-  <OpcodeInfo value="17773" index="566" ctor="0" handler="9761472" dtor="0" comment="Legacy opcode, transformed handler is 0x2863D930" />
-  <OpcodeInfo value="17775" index="567" ctor="0" handler="9403952" dtor="0" comment="Legacy opcode, transformed handler is 0x285C64A2" />
-  <OpcodeInfo value="17777" index="568" ctor="0" handler="5671104" dtor="0" comment="Legacy opcode, transformed handler is 0x28296F2C" />
-  <OpcodeInfo value="17781" index="570" ctor="0" handler="10354736" dtor="0" comment="Legacy opcode, transformed handler is 0x2874E698" />
-  <OpcodeInfo value="17783" index="571" ctor="0" handler="9689184" dtor="0" comment="Legacy opcode, transformed handler is 0x2868BECA" />
-  <OpcodeInfo value="17785" index="572" ctor="0" handler="5630560" dtor="0" comment="Legacy opcode, transformed handler is 0x2830D0C4" />
-  <OpcodeInfo value="17789" index="574" ctor="0" handler="6108032" dtor="0" comment="Legacy opcode, transformed handler is 0x283C19E0" />
-  <OpcodeInfo value="17795" index="577" ctor="0" handler="5630304" dtor="0" comment="Legacy opcode, transformed handler is 0x2776CFFE" />
-  <OpcodeInfo value="17797" index="578" ctor="0" handler="6296112" dtor="0" comment="Legacy opcode, transformed handler is 0x2786F8C8" />
-  <OpcodeInfo value="17801" index="580" ctor="0" handler="10521568" dtor="0" comment="Legacy opcode, transformed handler is 0x27CB7274" />
-  <OpcodeInfo value="17805" index="582" ctor="0" handler="4814208" dtor="0" comment="Legacy opcode, transformed handler is 0x27785C10" />
-  <OpcodeInfo value="17809" index="584" ctor="0" handler="6296112" dtor="0" comment="Legacy opcode, transformed handler is 0x2792F8BC" />
-  <OpcodeInfo value="17811" index="585" ctor="0" handler="9061792" dtor="0" comment="Legacy opcode, transformed handler is 0x27BB2C2E" />
-  <OpcodeInfo value="17813" index="586" ctor="0" handler="9152944" dtor="0" comment="Legacy opcode, transformed handler is 0x27C29038" />
-  <OpcodeInfo value="17815" index="587" ctor="0" handler="5653536" dtor="0" comment="Legacy opcode, transformed handler is 0x278B2AAA" />
-  <OpcodeInfo value="17823" index="591" ctor="0" handler="5581440" dtor="0" comment="Legacy opcode, transformed handler is 0x27921102" />
-  <OpcodeInfo value="17825" index="592" ctor="0" handler="5681712" dtor="0" comment="Legacy opcode, transformed handler is 0x275998EC" />
-  <OpcodeInfo value="17831" index="595" ctor="0" handler="5654528" dtor="0" comment="Legacy opcode, transformed handler is 0x275B2EBA" />
-  <OpcodeInfo value="17843" index="601" ctor="0" handler="5582720" dtor="0" comment="Legacy opcode, transformed handler is 0x2766162E" />
-  <OpcodeInfo value="17847" index="603" ctor="0" handler="9098784" dtor="0" comment="Legacy opcode, transformed handler is 0x279FBCCA" />
-  <OpcodeInfo value="17853" index="606" ctor="0" handler="9367456" dtor="0" comment="Legacy opcode, transformed handler is 0x27ADD640" />
-  <OpcodeInfo value="17857" index="608" ctor="0" handler="9998512" dtor="0" comment="Legacy opcode, transformed handler is 0x27FB778C" />
-  <OpcodeInfo value="17859" index="609" ctor="0" handler="9072880" dtor="0" comment="Legacy opcode, transformed handler is 0x27EB57CE" />
-  <OpcodeInfo value="17863" index="611" ctor="0" handler="5585312" dtor="0" comment="Legacy opcode, transformed handler is 0x27BA207A" />
-  <OpcodeInfo value="17867" index="613" ctor="0" handler="9093600" dtor="0" comment="Legacy opcode, transformed handler is 0x27F3A8B6" />
-  <OpcodeInfo value="17871" index="615" ctor="0" handler="9326064" dtor="0" comment="Legacy opcode, transformed handler is 0x27FB34C2" />
-  <OpcodeInfo value="17877" index="618" ctor="0" handler="9752080" dtor="0" comment="Legacy opcode, transformed handler is 0x280BB4D8" />
-  <OpcodeInfo value="17879" index="619" ctor="0" handler="9919232" dtor="0" comment="Legacy opcode, transformed handler is 0x280C41CA" />
-  <OpcodeInfo value="17881" index="620" ctor="0" handler="9612592" dtor="0" comment="Legacy opcode, transformed handler is 0x280D93F4" />
-  <OpcodeInfo value="17887" index="623" ctor="0" handler="5953920" dtor="0" comment="Legacy opcode, transformed handler is 0x27D7C042" />
-  <OpcodeInfo value="17889" index="624" ctor="0" handler="9062208" dtor="0" comment="Legacy opcode, transformed handler is 0x27CD2E3C" />
-  <OpcodeInfo value="17891" index="625" ctor="0" handler="5671104" dtor="0" comment="Legacy opcode, transformed handler is 0x27976FBE" />
-  <OpcodeInfo value="17893" index="626" ctor="0" handler="9267984" dtor="0" comment="Legacy opcode, transformed handler is 0x27D45208" />
-  <OpcodeInfo value="17895" index="627" ctor="0" handler="8386560" dtor="0" comment="Legacy opcode, transformed handler is 0x27C4DEFA" />
-  <OpcodeInfo value="17897" index="628" ctor="0" handler="8393008" dtor="0" comment="Legacy opcode, transformed handler is 0x27CAF824" />
-  <OpcodeInfo value="17899" index="629" ctor="0" handler="5671104" dtor="0" comment="Legacy opcode, transformed handler is 0x279F6FB6" />
-  <OpcodeInfo value="17901" index="630" ctor="0" handler="5667824" dtor="0" comment="Legacy opcode, transformed handler is 0x27A562E0" />
-  <OpcodeInfo value="17903" index="631" ctor="0" handler="9991232" dtor="0" comment="Legacy opcode, transformed handler is 0x27E55B32" />
-  <OpcodeInfo value="17905" index="632" ctor="0" handler="9267984" dtor="0" comment="Legacy opcode, transformed handler is 0x27E051FC" />
-  <OpcodeInfo value="17907" index="633" ctor="0" handler="5654528" dtor="0" comment="Legacy opcode, transformed handler is 0x27A72EEE" />
-  <OpcodeInfo value="17911" index="635" ctor="0" handler="5576832" dtor="0" comment="Legacy opcode, transformed handler is 0x27A9FF6A" />
-  <OpcodeInfo value="17913" index="636" ctor="0" handler="5084144" dtor="0" comment="Legacy opcode, transformed handler is 0x27A87AD4" />
-  <OpcodeInfo value="17915" index="637" ctor="0" handler="5671104" dtor="0" comment="Legacy opcode, transformed handler is 0x27AF6FA6" />
-  <OpcodeInfo value="19715" index="641" ctor="0" handler="5654528" dtor="0" comment="Legacy opcode, transformed handler is 0x2FF7361E" />
-  <OpcodeInfo value="19717" index="642" ctor="0" handler="9418496" dtor="0" comment="Legacy opcode, transformed handler is 0x3036A518" />
-  <OpcodeInfo value="19721" index="644" ctor="0" handler="5574176" dtor="0" comment="Legacy opcode, transformed handler is 0x2FFFFC34" />
-  <OpcodeInfo value="19723" index="645" ctor="0" handler="5606112" dtor="0" comment="Legacy opcode, transformed handler is 0x2FFE78F6" />
-  <OpcodeInfo value="19729" index="648" ctor="0" handler="5654528" dtor="0" comment="Legacy opcode, transformed handler is 0x3009360C" />
-  <OpcodeInfo value="19737" index="652" ctor="0" handler="10519248" dtor="0" comment="Legacy opcode, transformed handler is 0x305B70D4" />
-  <OpcodeInfo value="19739" index="653" ctor="0" handler="6092032" dtor="0" comment="Legacy opcode, transformed handler is 0x3015E306" />
-  <OpcodeInfo value="19741" index="654" ctor="0" handler="5682096" dtor="0" comment="Legacy opcode, transformed handler is 0x3015A1B0" />
-  <OpcodeInfo value="19749" index="658" ctor="0" handler="5671104" dtor="0" comment="Legacy opcode, transformed handler is 0x2FDD76F8" />
-  <OpcodeInfo value="19755" index="661" ctor="0" handler="5587072" dtor="0" comment="Legacy opcode, transformed handler is 0x2FDE2EB6" />
-  <OpcodeInfo value="19757" index="662" ctor="0" handler="10124272" dtor="0" comment="Legacy opcode, transformed handler is 0x30296A20" />
-  <OpcodeInfo value="19759" index="663" ctor="0" handler="10186000" dtor="0" comment="Legacy opcode, transformed handler is 0x30285B42" />
-  <OpcodeInfo value="19765" index="666" ctor="0" handler="5084752" dtor="0" comment="Legacy opcode, transformed handler is 0x2FE48478" />
-  <OpcodeInfo value="19767" index="667" ctor="0" handler="9072656" dtor="0" comment="Legacy opcode, transformed handler is 0x301F5E3A" />
-  <OpcodeInfo value="19775" index="671" ctor="0" handler="5607648" dtor="0" comment="Legacy opcode, transformed handler is 0x2FF27F02" />
-  <OpcodeInfo value="19779" index="673" ctor="0" handler="10461616" dtor="0" comment="Legacy opcode, transformed handler is 0x3080900E" />
-  <OpcodeInfo value="19781" index="674" ctor="0" handler="10410624" dtor="0" comment="Legacy opcode, transformed handler is 0x3085C8D8" />
-  <OpcodeInfo value="19789" index="678" ctor="0" handler="9267984" dtor="0" comment="Legacy opcode, transformed handler is 0x307C5960" />
-  <OpcodeInfo value="19795" index="681" ctor="0" handler="6442192" dtor="0" comment="Legacy opcode, transformed handler is 0x30533B1E" />
-  <OpcodeInfo value="19797" index="682" ctor="0" handler="8400656" dtor="0" comment="Legacy opcode, transformed handler is 0x30771D58" />
-  <OpcodeInfo value="19803" index="685" ctor="0" handler="10410688" dtor="0" comment="Legacy opcode, transformed handler is 0x3097C906" />
-  <OpcodeInfo value="19807" index="687" ctor="0" handler="5653152" dtor="0" comment="Legacy opcode, transformed handler is 0x305330E2" />
-  <OpcodeInfo value="19809" index="688" ctor="0" handler="10183856" dtor="0" comment="Legacy opcode, transformed handler is 0x305E532C" />
-  <OpcodeInfo value="19815" index="691" ctor="0" handler="10185392" dtor="0" comment="Legacy opcode, transformed handler is 0x3060592A" />
-  <OpcodeInfo value="19817" index="692" ctor="0" handler="9413792" dtor="0" comment="Legacy opcode, transformed handler is 0x305A9314" />
-  <OpcodeInfo value="19821" index="694" ctor="0" handler="5654528" dtor="0" comment="Legacy opcode, transformed handler is 0x30253670" />
-  <OpcodeInfo value="19823" index="695" ctor="0" handler="5671104" dtor="0" comment="Legacy opcode, transformed handler is 0x30237732" />
-  <OpcodeInfo value="19829" index="698" ctor="0" handler="5581248" dtor="0" comment="Legacy opcode, transformed handler is 0x302C1828" />
-  <OpcodeInfo value="19837" index="702" ctor="0" handler="5576896" dtor="0" comment="Legacy opcode, transformed handler is 0x30340720" />
-  <OpcodeInfo value="19841" index="704" ctor="0" handler="5077776" dtor="0" comment="Legacy opcode, transformed handler is 0x2F7069AC" />
-  <OpcodeInfo value="19843" index="705" ctor="0" handler="5654528" dtor="0" comment="Legacy opcode, transformed handler is 0x2F77369E" />
-  <OpcodeInfo value="19847" index="707" ctor="0" handler="9367648" dtor="0" comment="Legacy opcode, transformed handler is 0x2FB3DEFA" />
-  <OpcodeInfo value="19849" index="708" ctor="0" handler="10183856" dtor="0" comment="Legacy opcode, transformed handler is 0x2FC65344" />
-  <OpcodeInfo value="19853" index="710" ctor="0" handler="10519248" dtor="0" comment="Legacy opcode, transformed handler is 0x2FCF7160" />
-  <OpcodeInfo value="19855" index="711" ctor="0" handler="9439328" dtor="0" comment="Legacy opcode, transformed handler is 0x2FBCF6F2" />
-  <OpcodeInfo value="19857" index="712" ctor="0" handler="6092032" dtor="0" comment="Legacy opcode, transformed handler is 0x2F8FE38C" />
-  <OpcodeInfo value="19863" index="715" ctor="0" handler="9062208" dtor="0" comment="Legacy opcode, transformed handler is 0x2FBF35CA" />
-  <OpcodeInfo value="19867" index="717" ctor="0" handler="10102064" dtor="0" comment="Legacy opcode, transformed handler is 0x2FD313B6" />
-  <OpcodeInfo value="19869" index="718" ctor="0" handler="9071168" dtor="0" comment="Legacy opcode, transformed handler is 0x2FC958C0" />
-  <OpcodeInfo value="19873" index="720" ctor="0" handler="9403008" dtor="0" comment="Legacy opcode, transformed handler is 0x2F92693C" />
-  <OpcodeInfo value="19887" index="727" ctor="0" handler="4788064" dtor="0" comment="Legacy opcode, transformed handler is 0x2F55FE12" />
-  <OpcodeInfo value="19889" index="728" ctor="0" handler="5953248" dtor="0" comment="Legacy opcode, transformed handler is 0x2F6DC58C" />
-  <OpcodeInfo value="19891" index="729" ctor="0" handler="5671104" dtor="0" comment="Legacy opcode, transformed handler is 0x2F67776E" />
-  <OpcodeInfo value="19903" index="735" ctor="0" handler="4812816" dtor="0" comment="Legacy opcode, transformed handler is 0x2F665EB2" />
-  <OpcodeInfo value="19907" index="737" ctor="0" handler="5575040" dtor="0" comment="Legacy opcode, transformed handler is 0x2FB6005E" />
-  <OpcodeInfo value="19915" index="741" ctor="0" handler="5671104" dtor="0" comment="Legacy opcode, transformed handler is 0x2FBF7796" />
-  <OpcodeInfo value="19919" index="743" ctor="0" handler="6442192" dtor="0" comment="Legacy opcode, transformed handler is 0x2FCF3BA2" />
-  <OpcodeInfo value="19921" index="744" ctor="0" handler="5076416" dtor="0" comment="Legacy opcode, transformed handler is 0x2FC0648C" />
-  <OpcodeInfo value="19923" index="745" ctor="0" handler="9070640" dtor="0" comment="Legacy opcode, transformed handler is 0x2FFB56FE" />
-  <OpcodeInfo value="19927" index="747" ctor="0" handler="5629824" dtor="0" comment="Legacy opcode, transformed handler is 0x2FCAD64A" />
-  <OpcodeInfo value="19931" index="749" ctor="0" handler="4199136" dtor="0" comment="Legacy opcode, transformed handler is 0x2FB901A6" />
-  <OpcodeInfo value="19933" index="750" ctor="0" handler="5630560" dtor="0" comment="Legacy opcode, transformed handler is 0x2FD4D920" />
-  <OpcodeInfo value="19937" index="752" ctor="0" handler="5574896" dtor="0" comment="Legacy opcode, transformed handler is 0x2F97FFEC" />
-  <OpcodeInfo value="19943" index="755" ctor="0" handler="9122976" dtor="0" comment="Legacy opcode, transformed handler is 0x2FD0239A" />
-  <OpcodeInfo value="19947" index="757" ctor="0" handler="5574832" dtor="0" comment="Legacy opcode, transformed handler is 0x2F9DFFA6" />
-  <OpcodeInfo value="19957" index="762" ctor="0" handler="9936576" dtor="0" comment="Legacy opcode, transformed handler is 0x2FEE8DA8" />
-  <OpcodeInfo value="19959" index="763" ctor="0" handler="5077776" dtor="0" comment="Legacy opcode, transformed handler is 0x2FA269FA" />
-  <OpcodeInfo value="19963" index="765" ctor="0" handler="9615504" dtor="0" comment="Legacy opcode, transformed handler is 0x2FEBA776" />
-  <OpcodeInfo value="19965" index="766" ctor="0" handler="5671104" dtor="0" comment="Legacy opcode, transformed handler is 0x2FB577A0" />
-  <OpcodeInfo value="25867" index="773" ctor="0" handler="6256240" dtor="0" comment="Legacy opcode, transformed handler is 0x8083C86" />
-  <OpcodeInfo value="25871" index="775" ctor="0" handler="5654528" dtor="0" comment="Legacy opcode, transformed handler is 0x8030E12" />
-  <OpcodeInfo value="25879" index="779" ctor="0" handler="9925120" dtor="0" comment="Legacy opcode, transformed handler is 0x84C380A" />
-  <OpcodeInfo value="25881" index="780" ctor="0" handler="9957648" dtor="0" comment="Legacy opcode, transformed handler is 0x852B714" />
-  <OpcodeInfo value="25889" index="784" ctor="0" handler="10519248" dtor="0" comment="Legacy opcode, transformed handler is 0x823490C" />
-  <OpcodeInfo value="25895" index="787" ctor="0" handler="6140784" dtor="0" comment="Legacy opcode, transformed handler is 0x7E279AA" />
-  <OpcodeInfo value="25897" index="788" ctor="0" handler="5654528" dtor="0" comment="Legacy opcode, transformed handler is 0x7E10E34" />
-  <OpcodeInfo value="25901" index="790" ctor="0" handler="5671104" dtor="0" comment="Legacy opcode, transformed handler is 0x7E54EF0" />
-  <OpcodeInfo value="25903" index="791" ctor="0" handler="5630128" dtor="0" comment="Legacy opcode, transformed handler is 0x7E2AEE2" />
-  <OpcodeInfo value="25907" index="793" ctor="0" handler="5952448" dtor="0" comment="Legacy opcode, transformed handler is 0x7EB99EE" />
-  <OpcodeInfo value="25911" index="795" ctor="0" handler="5609840" dtor="0" comment="Legacy opcode, transformed handler is 0x7EA5F9A" />
-  <OpcodeInfo value="25915" index="797" ctor="0" handler="5681712" dtor="0" comment="Legacy opcode, transformed handler is 0x7EF7856" />
-  <OpcodeInfo value="25919" index="799" ctor="0" handler="5671104" dtor="0" comment="Legacy opcode, transformed handler is 0x7F34EE2" />
-  <OpcodeInfo value="25921" index="800" ctor="0" handler="6296112" dtor="0" comment="Legacy opcode, transformed handler is 0x842D88C" />
-  <OpcodeInfo value="25923" index="801" ctor="0" handler="5591392" dtor="0" comment="Legacy opcode, transformed handler is 0x83617BE" />
-  <OpcodeInfo value="25927" index="803" ctor="0" handler="9625760" dtor="0" comment="Legacy opcode, transformed handler is 0x877A6FA" />
-  <OpcodeInfo value="25931" index="805" ctor="0" handler="9267984" dtor="0" comment="Legacy opcode, transformed handler is 0x8763166" />
-  <OpcodeInfo value="25935" index="807" ctor="0" handler="9731936" dtor="0" comment="Legacy opcode, transformed handler is 0x88145B2" />
-  <OpcodeInfo value="25937" index="808" ctor="0" handler="5873392" dtor="0" comment="Legacy opcode, transformed handler is 0x84C653C" />
-  <OpcodeInfo value="25943" index="811" ctor="0" handler="10183856" dtor="0" comment="Legacy opcode, transformed handler is 0x8902AFA" />
-  <OpcodeInfo value="25947" index="813" ctor="0" handler="6074560" dtor="0" comment="Legacy opcode, transformed handler is 0x8557706" />
-  <OpcodeInfo value="25957" index="818" ctor="0" handler="10354784" dtor="0" comment="Legacy opcode, transformed handler is 0x864C6D8" />
-  <OpcodeInfo value="25961" index="820" ctor="0" handler="9403616" dtor="0" comment="Legacy opcode, transformed handler is 0x85A4354" />
-  <OpcodeInfo value="25963" index="821" ctor="0" handler="5990480" dtor="0" comment="Legacy opcode, transformed handler is 0x8242EC6" />
-  <OpcodeInfo value="25969" index="824" ctor="0" handler="5676016" dtor="0" comment="Legacy opcode, transformed handler is 0x829625C" />
-  <OpcodeInfo value="25977" index="828" ctor="0" handler="9958224" dtor="0" comment="Legacy opcode, transformed handler is 0x872B9B4" />
-  <OpcodeInfo value="25981" index="830" ctor="0" handler="9267984" dtor="0" comment="Legacy opcode, transformed handler is 0x86C3170" />
-  <OpcodeInfo value="25985" index="832" ctor="0" handler="5671104" dtor="0" comment="Legacy opcode, transformed handler is 0x7794F5C" />
-  <OpcodeInfo value="25987" index="833" ctor="0" handler="9774928" dtor="0" comment="Legacy opcode, transformed handler is 0x7B5EDEE" />
-  <OpcodeInfo value="25995" index="837" ctor="0" handler="9267984" dtor="0" comment="Legacy opcode, transformed handler is 0x7B631A6" />
-  <OpcodeInfo value="26009" index="844" ctor="0" handler="5940288" dtor="0" comment="Legacy opcode, transformed handler is 0x7956AC4" />
-  <OpcodeInfo value="26021" index="850" ctor="0" handler="10117104" dtor="0" comment="Legacy opcode, transformed handler is 0x7A126A8" />
-  <OpcodeInfo value="26023" index="851" ctor="0" handler="9615584" dtor="0" comment="Legacy opcode, transformed handler is 0x7977F9A" />
-  <OpcodeInfo value="26025" index="852" ctor="0" handler="9409792" dtor="0" comment="Legacy opcode, transformed handler is 0x79A5BB4" />
-  <OpcodeInfo value="26027" index="853" ctor="0" handler="5574416" dtor="0" comment="Legacy opcode, transformed handler is 0x75DD5C6" />
-  <OpcodeInfo value="26035" index="857" ctor="0" handler="9958016" dtor="0" comment="Legacy opcode, transformed handler is 0x7A8B92E" />
-  <OpcodeInfo value="26037" index="858" ctor="0" handler="9761984" dtor="0" comment="Legacy opcode, transformed handler is 0x7ABBB68" />
-  <OpcodeInfo value="26039" index="859" ctor="0" handler="9615408" dtor="0" comment="Legacy opcode, transformed handler is 0x7A77EDA" />
-  <OpcodeInfo value="26041" index="860" ctor="0" handler="9957264" dtor="0" comment="Legacy opcode, transformed handler is 0x7B2B634" />
-  <OpcodeInfo value="26053" index="866" ctor="0" handler="6265040" dtor="0" comment="Legacy opcode, transformed handler is 0x7C65FA8" />
-  <OpcodeInfo value="26059" index="869" ctor="0" handler="9888480" dtor="0" comment="Legacy opcode, transformed handler is 0x7FFA9B6" />
-  <OpcodeInfo value="26061" index="870" ctor="0" handler="5654528" dtor="0" comment="Legacy opcode, transformed handler is 0x7C50ED0" />
-  <OpcodeInfo value="26063" index="871" ctor="0" handler="6442192" dtor="0" comment="Legacy opcode, transformed handler is 0x7CF13A2" />
-  <OpcodeInfo value="26067" index="873" ctor="0" handler="5654928" dtor="0" comment="Legacy opcode, transformed handler is 0x7C7105E" />
-  <OpcodeInfo value="26069" index="874" ctor="0" handler="6092144" dtor="0" comment="Legacy opcode, transformed handler is 0x7D3BC38" />
-  <OpcodeInfo value="26075" index="877" ctor="0" handler="10183856" dtor="0" comment="Legacy opcode, transformed handler is 0x8142B76" />
-  <OpcodeInfo value="26087" index="883" ctor="0" handler="9267984" dtor="0" comment="Legacy opcode, transformed handler is 0x7D2320A" />
-  <OpcodeInfo value="26089" index="884" ctor="0" handler="6255664" dtor="0" comment="Legacy opcode, transformed handler is 0x7AA3B24" />
-  <OpcodeInfo value="26091" index="885" ctor="0" handler="5952976" dtor="0" comment="Legacy opcode, transformed handler is 0x7A39CC6" />
-  <OpcodeInfo value="26095" index="887" ctor="0" handler="9920128" dtor="0" comment="Legacy opcode, transformed handler is 0x7E42572" />
-  <OpcodeInfo value="26099" index="889" ctor="0" handler="9432816" dtor="0" comment="Legacy opcode, transformed handler is 0x7E0B5DE" />
-  <OpcodeInfo value="26101" index="890" ctor="0" handler="5655264" dtor="0" comment="Legacy opcode, transformed handler is 0x7AD11C8" />
-  <OpcodeInfo value="26105" index="892" ctor="0" handler="5593296" dtor="0" comment="Legacy opcode, transformed handler is 0x7B01FB4" />
-  <OpcodeInfo value="26109" index="894" ctor="0" handler="5580384" dtor="0" comment="Legacy opcode, transformed handler is 0x7B3ED40" />
-  <OpcodeInfo value="26111" index="895" ctor="0" handler="5953520" dtor="0" comment="Legacy opcode, transformed handler is 0x7B79ED2" />
-  <OpcodeInfo value="27907" index="897" ctor="0" handler="5081168" dtor="0" comment="Legacy opcode, transformed handler is 0xFEE566E" />
-  <OpcodeInfo value="27911" index="899" ctor="0" handler="6074432" dtor="0" comment="Legacy opcode, transformed handler is 0x10017E5A" />
-  <OpcodeInfo value="27917" index="902" ctor="0" handler="10183856" dtor="0" comment="Legacy opcode, transformed handler is 0x104A32C0" />
-  <OpcodeInfo value="27921" index="904" ctor="0" handler="10456896" dtor="0" comment="Legacy opcode, transformed handler is 0x10525D4C" />
-  <OpcodeInfo value="27923" index="905" ctor="0" handler="5585936" dtor="0" comment="Legacy opcode, transformed handler is 0x10060A1E" />
-  <OpcodeInfo value="27925" index="906" ctor="0" handler="5671104" dtor="0" comment="Legacy opcode, transformed handler is 0x100D56C8" />
-  <OpcodeInfo value="27927" index="907" ctor="0" handler="5940208" dtor="0" comment="Legacy opcode, transformed handler is 0x100F71FA" />
-  <OpcodeInfo value="27931" index="909" ctor="0" handler="5576528" dtor="0" comment="Legacy opcode, transformed handler is 0x100DE556" />
-  <OpcodeInfo value="27933" index="910" ctor="0" handler="10183856" dtor="0" comment="Legacy opcode, transformed handler is 0x105A32B0" />
-  <OpcodeInfo value="27935" index="911" ctor="0" handler="5575680" dtor="0" comment="Legacy opcode, transformed handler is 0x1011E202" />
-  <OpcodeInfo value="27943" index="915" ctor="0" handler="9152704" dtor="0" comment="Legacy opcode, transformed handler is 0x101076FA" />
-  <OpcodeInfo value="27945" index="916" ctor="0" handler="9402656" dtor="0" comment="Legacy opcode, transformed handler is 0x101A4754" />
-  <OpcodeInfo value="27955" index="921" ctor="0" handler="9267984" dtor="0" comment="Legacy opcode, transformed handler is 0x101E393E" />
-  <OpcodeInfo value="27959" index="923" ctor="0" handler="5593488" dtor="0" comment="Legacy opcode, transformed handler is 0xFEA27BA" />
-  <OpcodeInfo value="27961" index="924" ctor="0" handler="5681456" dtor="0" comment="Legacy opcode, transformed handler is 0xFF17F54" />
-  <OpcodeInfo value="27965" index="926" ctor="0" handler="10189264" dtor="0" comment="Legacy opcode, transformed handler is 0x103A47F0" />
-  <OpcodeInfo value="27969" index="928" ctor="0" handler="5671104" dtor="0" comment="Legacy opcode, transformed handler is 0x1039571C" />
-  <OpcodeInfo value="27971" index="929" ctor="0" handler="5671104" dtor="0" comment="Legacy opcode, transformed handler is 0x1037571E" />
-  <OpcodeInfo value="27973" index="930" ctor="0" handler="9877728" dtor="0" comment="Legacy opcode, transformed handler is 0x107D8738" />
-  <OpcodeInfo value="27975" index="931" ctor="0" handler="5576496" dtor="0" comment="Legacy opcode, transformed handler is 0x1039E58A" />
-  <OpcodeInfo value="27985" index="936" ctor="0" handler="9610960" dtor="0" comment="Legacy opcode, transformed handler is 0x1085751C" />
-  <OpcodeInfo value="27993" index="940" ctor="0" handler="5667408" dtor="0" comment="Legacy opcode, transformed handler is 0x10514894" />
-  <OpcodeInfo value="27995" index="941" ctor="0" handler="5952736" dtor="0" comment="Legacy opcode, transformed handler is 0x1053A326" />
-  <OpcodeInfo value="28007" index="947" ctor="0" handler="5576944" dtor="0" comment="Legacy opcode, transformed handler is 0x1019E76A" />
-  <OpcodeInfo value="28009" index="948" ctor="0" handler="9925920" dtor="0" comment="Legacy opcode, transformed handler is 0x10624394" />
-  <OpcodeInfo value="28011" index="949" ctor="0" handler="9267984" dtor="0" comment="Legacy opcode, transformed handler is 0x10563986" />
-  <OpcodeInfo value="28017" index="952" ctor="0" handler="9404576" dtor="0" comment="Legacy opcode, transformed handler is 0x10624F0C" />
-  <OpcodeInfo value="28021" index="954" ctor="0" handler="9761872" dtor="0" comment="Legacy opcode, transformed handler is 0x106BC2B8" />
-  <OpcodeInfo value="28023" index="955" ctor="0" handler="5576368" dtor="0" comment="Legacy opcode, transformed handler is 0x1029E51A" />
-  <OpcodeInfo value="28025" index="956" ctor="0" handler="10183856" dtor="0" comment="Legacy opcode, transformed handler is 0x10763314" />
-  <OpcodeInfo value="28027" index="957" ctor="0" handler="9762256" dtor="0" comment="Legacy opcode, transformed handler is 0x106DC436" />
-  <OpcodeInfo value="28035" index="961" ctor="0" handler="9113600" dtor="0" comment="Legacy opcode, transformed handler is 0xFABDE9E" />
-  <OpcodeInfo value="28037" index="962" ctor="0" handler="5631392" dtor="0" comment="Legacy opcode, transformed handler is 0xF7CBC38" />
-  <OpcodeInfo value="28045" index="966" ctor="0" handler="6442192" dtor="0" comment="Legacy opcode, transformed handler is 0xF911B60" />
-  <OpcodeInfo value="28051" index="969" ctor="0" handler="6442192" dtor="0" comment="Legacy opcode, transformed handler is 0xF931B5E" />
-  <OpcodeInfo value="28053" index="970" ctor="0" handler="8400912" dtor="0" comment="Legacy opcode, transformed handler is 0xFB6FE98" />
-  <OpcodeInfo value="28063" index="975" ctor="0" handler="5579488" dtor="0" comment="Legacy opcode, transformed handler is 0xF91F162" />
-  <OpcodeInfo value="28065" index="976" ctor="0" handler="6125824" dtor="0" comment="Legacy opcode, transformed handler is 0xF6047BC" />
-  <OpcodeInfo value="28081" index="984" ctor="0" handler="9324800" dtor="0" comment="Legacy opcode, transformed handler is 0xFA117AC" />
-  <OpcodeInfo value="28085" index="986" ctor="0" handler="5576128" dtor="0" comment="Legacy opcode, transformed handler is 0xF6BE468" />
-  <OpcodeInfo value="28087" index="987" ctor="0" handler="5576256" dtor="0" comment="Legacy opcode, transformed handler is 0xF69E4EA" />
-  <OpcodeInfo value="28091" index="989" ctor="0" handler="9325248" dtor="0" comment="Legacy opcode, transformed handler is 0xFA71966" />
-  <OpcodeInfo value="28093" index="990" ctor="0" handler="5653536" dtor="0" comment="Legacy opcode, transformed handler is 0xF7512C0" />
-  <OpcodeInfo value="28101" index="994" ctor="0" handler="5665504" dtor="0" comment="Legacy opcode, transformed handler is 0xFBD41B8" />
-  <OpcodeInfo value="28105" index="996" ctor="0" handler="9883008" dtor="0" comment="Legacy opcode, transformed handler is 0x10019C54" />
-  <OpcodeInfo value="28107" index="997" ctor="0" handler="9267984" dtor="0" comment="Legacy opcode, transformed handler is 0xFF639E6" />
-  <OpcodeInfo value="28111" index="999" ctor="0" handler="9926960" dtor="0" comment="Legacy opcode, transformed handler is 0x10044802" />
-  <OpcodeInfo value="28113" index="1000" ctor="0" handler="9761472" dtor="0" comment="Legacy opcode, transformed handler is 0x1007C18C" />
-  <OpcodeInfo value="28117" index="1002" ctor="0" handler="9325184" dtor="0" comment="Legacy opcode, transformed handler is 0x10051948" />
-  <OpcodeInfo value="28125" index="1006" ctor="0" handler="6296112" dtor="0" comment="Legacy opcode, transformed handler is 0xFDEE0F0" />
-  <OpcodeInfo value="28131" index="1009" ctor="0" handler="9267984" dtor="0" comment="Legacy opcode, transformed handler is 0xFCE3A0E" />
-  <OpcodeInfo value="28137" index="1012" ctor="0" handler="5578544" dtor="0" comment="Legacy opcode, transformed handler is 0xF9FEE24" />
-  <OpcodeInfo value="28143" index="1015" ctor="0" handler="9152704" dtor="0" comment="Legacy opcode, transformed handler is 0xFD877B2" />
-  <OpcodeInfo value="28147" index="1017" ctor="0" handler="9267984" dtor="0" comment="Legacy opcode, transformed handler is 0xFDE39FE" />
-  <OpcodeInfo value="28151" index="1019" ctor="0" handler="9625440" dtor="0" comment="Legacy opcode, transformed handler is 0xFE7AE4A" />
-  <OpcodeInfo value="28153" index="1020" ctor="0" handler="6296112" dtor="0" comment="Legacy opcode, transformed handler is 0xFBAE114" />
-  <OpcodeInfo value="28157" index="1022" ctor="0" handler="9325216" dtor="0" comment="Legacy opcode, transformed handler is 0xFED1980" />
-  <OpcodeInfo value="28159" index="1023" ctor="0" handler="5639040" dtor="0" comment="Legacy opcode, transformed handler is 0xFB2DA62" />
+  <OpcodeInfo value="8192">
+    <Senders>
+      <Sender addr="6941733" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="8224">
+    <Senders>
+      <Sender addr="6931140" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="8288">
+    <Senders>
+      <Sender addr="6937173" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="8321">
+    <Senders>
+      <Sender addr="6936308" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="8352">
+    <Senders>
+      <Sender addr="6941061" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="8353">
+    <Senders>
+      <Sender addr="6932325" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="8384">
+    <Senders>
+      <Sender addr="6941237" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="8416">
+    <Senders>
+      <Sender addr="6942580" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="8417">
+    <Senders>
+      <Sender addr="6942340" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="8453">
+    <Senders>
+      <Sender addr="6760980" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="8480">
+    <Senders>
+      <Sender addr="6829925" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="8484">
+    <Senders>
+      <Sender addr="6822213" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="8516">
+    <Senders>
+      <Sender addr="6758660" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="8545">
+    <Senders>
+      <Sender addr="6779493" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="8548">
+    <Senders>
+      <Sender addr="6747755" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="8608">
+    <Senders>
+      <Sender addr="6747547" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="8609">
+    <Senders>
+      <Sender addr="6807813" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="8640">
+    <Senders>
+      <Sender addr="6816453" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="8641">
+    <Senders>
+      <Sender addr="6828629" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="8644">
+    <Senders>
+      <Sender addr="6810293" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="8673">
+    <Senders>
+      <Sender addr="6758049" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="8677">
+    <Senders>
+      <Sender addr="6747323" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="8704">
+    <Senders>
+      <Sender addr="6939940" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="8705">
+    <Senders>
+      <Sender addr="6938933" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="8736">
+    <Senders>
+      <Sender addr="6929659" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="8737">
+    <Senders>
+      <Sender addr="6942452" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="8768">
+    <Senders>
+      <Sender addr="6942084" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="8769">
+    <Senders>
+      <Sender addr="6933013" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="8800">
+    <Senders>
+      <Sender addr="6941492" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="8832">
+    <Senders>
+      <Sender addr="6933381" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="8833">
+    <Senders>
+      <Sender addr="6933685" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="8864">
+    <Senders>
+      <Sender addr="6936548" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="8865">
+    <Senders>
+      <Sender addr="6938597" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="8896">
+    <Senders>
+      <Sender addr="6931557" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="8897">
+    <Senders>
+      <Sender addr="6941620" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="8928">
+    <Senders>
+      <Sender addr="6942708" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="8929">
+    <Senders>
+      <Sender addr="6940628" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="8960">
+    <Senders>
+      <Sender addr="6747275" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="8965">
+    <Senders>
+      <Sender addr="6818900" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="8993">
+    <Senders>
+      <Sender addr="6748235" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="8997">
+    <Senders>
+      <Sender addr="6820597" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="9028">
+    <Senders>
+      <Sender addr="6770181" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="9056">
+    <Senders>
+      <Sender addr="6758513" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="9057">
+    <Senders>
+      <Sender addr="6747515" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="9092">
+    <Senders>
+      <Sender addr="6764084" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="9120">
+    <Senders>
+      <Sender addr="6825925" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="9121">
+    <Senders>
+      <Sender addr="6823445" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="9152">
+    <Senders>
+      <Sender addr="6760897" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="9156">
+    <Senders>
+      <Sender addr="6748689" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="9157">
+    <Senders>
+      <Sender addr="6833589" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="9185">
+    <Senders>
+      <Sender addr="6782229" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="9188">
+    <Senders>
+      <Sender addr="6817685" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="9475" index="257" handler="5953424" comment="Legacy opcode, transformed handler is 0x47FB5DAE" />
+  <OpcodeInfo value="9481">
+    <Senders>
+      <Sender addr="5047646" name="ClientConnection__CharacterAbortLogout" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="9483" index="261" handler="9596336" comment="Legacy opcode, transformed handler is 0x483AF3C6" />
+  <OpcodeInfo value="9485">
+    <Senders>
+      <Sender addr="8392416" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="9487" index="263" handler="5608736" comment="Legacy opcode, transformed handler is 0x48021B32" />
+  <OpcodeInfo value="9489" index="264" handler="5671104" comment="Legacy opcode, transformed handler is 0x48090ECC" />
+  <OpcodeInfo value="9491" index="265" handler="5953824" comment="Legacy opcode, transformed handler is 0x480B5F2E" />
+  <OpcodeInfo value="9495">
+    <Senders>
+      <Sender addr="5067692" />
+      <Sender addr="5068103" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="9497">
+    <Senders>
+      <Sender addr="10075801" name="Script_LearnPreviewTalents" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="9501">
+    <Senders>
+      <Sender addr="9419307" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="9503" index="271" handler="10519248" comment="Legacy opcode, transformed handler is 0x485D08D2" />
+  <OpcodeInfo value="9507" index="273" handler="9629728" comment="Legacy opcode, transformed handler is 0x4813765E">
+    <Senders>
+      <Sender addr="9619267" />
+      <Sender addr="9622213" name="Script_ConfirmReadyCheck" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="9519">
+    <Senders>
+      <Sender addr="10518045" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="9525">
+    <Senders>
+      <Sender addr="9766280" name="CGPetInfo__SendPetAction" />
+      <Sender addr="9767157" name="CGPetInfo__PetDismiss" />
+      <Sender addr="9768928" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="9529" index="284" handler="10519248" comment="Legacy opcode, transformed handler is 0x483B08F4" />
+  <OpcodeInfo value="9531" index="285" handler="9428896" comment="Legacy opcode, transformed handler is 0x482865C6" />
+  <OpcodeInfo value="9533" index="286" handler="4812272" comment="Legacy opcode, transformed handler is 0x47E7F410" />
+  <OpcodeInfo value="9535" index="287" handler="9324800" comment="Legacy opcode, transformed handler is 0x482ACF22" />
+  <OpcodeInfo value="9537">
+    <Senders>
+      <Sender addr="5066924" />
+      <Sender addr="5067335" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="9539" index="289" handler="5681712" comment="Legacy opcode, transformed handler is 0x4837388E" />
+  <OpcodeInfo value="9541" index="290" handler="9122688" comment="Legacy opcode, transformed handler is 0x4871B9D8" />
+  <OpcodeInfo value="9543">
+    <Senders>
+      <Sender addr="5601355" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="9553">
+    <Senders>
+      <Sender addr="5624155" />
+      <Sender addr="9915694" name="PH_SMSG_AUCTION_COMMAND_RESULT" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="9555" index="297" handler="10120368" comment="Legacy opcode, transformed handler is 0x488AF2FE" />
+  <OpcodeInfo value="9559">
+    <Senders>
+      <Sender addr="5637189" name="CGPlayer_C__TalkToSpiritHealer" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="9567" index="303" handler="5586032" comment="Legacy opcode, transformed handler is 0x4851C2B2" />
+  <OpcodeInfo value="9569" index="304" handler="6092144" comment="Legacy opcode, transformed handler is 0x481F7BEC" />
+  <OpcodeInfo value="9575">
+    <Senders>
+      <Sender addr="10113826" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="9577" index="308" handler="9324864" comment="Legacy opcode, transformed handler is 0x4858CFB4" />
+  <OpcodeInfo value="9581" index="310" handler="9267984" comment="Legacy opcode, transformed handler is 0x485BF180" />
+  <OpcodeInfo value="9583">
+    <Senders>
+      <Sender addr="10074983" name="Script_LearnTalent" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="9585" index="312" handler="5576784" comment="Legacy opcode, transformed handler is 0x48279EBC" />
+  <OpcodeInfo value="9587">
+    <Senders>
+      <Sender addr="5620971" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="9595" index="317" handler="9918384" comment="Legacy opcode, transformed handler is 0x486FDE16" />
+  <OpcodeInfo value="9597" index="318" handler="5084512" comment="Legacy opcode, transformed handler is 0x482C1BC0" />
+  <OpcodeInfo value="9599">
+    <Senders>
+      <Sender addr="9844779" name="Send_CMSG_QUERY_TIME" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="9605" index="322" handler="5671104" comment="Legacy opcode, transformed handler is 0x477D0F58" />
+  <OpcodeInfo value="9607" index="323" handler="5638736" comment="Legacy opcode, transformed handler is 0x477A90EA" />
+  <OpcodeInfo value="9609" index="324" handler="5671104" comment="Legacy opcode, transformed handler is 0x47810F54" />
+  <OpcodeInfo value="9615">
+    <Senders>
+      <Sender addr="5616619" name="SendQuestGiverChooseReward" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="9619" index="329" handler="9267984" comment="Legacy opcode, transformed handler is 0x47BDF19E" />
+  <OpcodeInfo value="9621" index="330" handler="5953728" comment="Legacy opcode, transformed handler is 0x47915F48" />
+  <OpcodeInfo value="9623" index="331" handler="9267984" comment="Legacy opcode, transformed handler is 0x47C1F19A">
+    <Senders>
+      <Sender addr="9267103" name="Script_SetDungeonDifficulty" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="9627" index="333" handler="6255552" comment="Legacy opcode, transformed handler is 0x4797FA46" />
+  <OpcodeInfo value="9631" index="335" handler="5653072" comment="Legacy opcode, transformed handler is 0x4792C8D2" />
+  <OpcodeInfo value="9633">
+    <Senders>
+      <Sender addr="6211619" name="CGUnit_C__VehiclePrevSeat" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="9635">
+    <Senders>
+      <Sender addr="9225106" name="Script_RetrieveCorpse" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="9637">
+    <Senders>
+      <Sender addr="9909105" name="Script_QueryAuctionItems" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="9641" index="340" handler="9613312" comment="Legacy opcode, transformed handler is 0x479D36B4" />
+  <OpcodeInfo value="9647">
+    <Senders>
+      <Sender addr="9906848" />
+      <Sender addr="9907078" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="9649" index="344" handler="10411232" comment="Legacy opcode, transformed handler is 0x47B1638C" />
+  <OpcodeInfo value="9651" index="345" handler="9974480" comment="Legacy opcode, transformed handler is 0x47A8B97E" />
+  <OpcodeInfo value="9653">
+    <Senders>
+      <Sender addr="4229076" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="9655" index="347" handler="10357632" comment="Legacy opcode, transformed handler is 0x47B2922A" />
+  <OpcodeInfo value="9657" index="348" handler="5630128" comment="Legacy opcode, transformed handler is 0x47706F54" />
+  <OpcodeInfo value="9661" index="350" handler="5879008" comment="Legacy opcode, transformed handler is 0x47783B80" />
+  <OpcodeInfo value="9663" index="351" handler="10183856" comment="Legacy opcode, transformed handler is 0x47B7EB52" />
+  <OpcodeInfo value="9669" index="354" handler="9072816" comment="Legacy opcode, transformed handler is 0x47F0F788" />
+  <OpcodeInfo value="9673" index="356" handler="10112912" comment="Legacy opcode, transformed handler is 0x4804D664" />
+  <OpcodeInfo value="9675" index="357" handler="4812336" comment="Legacy opcode, transformed handler is 0x47B1F506" />
+  <OpcodeInfo value="9679">
+    <Senders>
+      <Sender addr="9883231" />
+      <Sender addr="9883691" />
+      <Sender addr="9895539" name="PH_SMSG_MAIL_LIST_RESULT" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="9681" index="360" handler="9915024" comment="Legacy opcode, transformed handler is 0x4809D15C">
+    <Senders>
+      <Sender addr="5601803" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="9683" index="361" handler="9894608" comment="Legacy opcode, transformed handler is 0x4807819E" />
+  <OpcodeInfo value="9685" index="362" handler="5578272" comment="Legacy opcode, transformed handler is 0x47CBA4E8" />
+  <OpcodeInfo value="9693">
+    <Senders>
+      <Sender addr="9773242" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="9695" index="367" handler="6107936" comment="Legacy opcode, transformed handler is 0x47D9B9E2" />
+  <OpcodeInfo value="9697" index="368" handler="10410160" comment="Legacy opcode, transformed handler is 0x47E15FAC" />
+  <OpcodeInfo value="9701" index="370" handler="9070400" comment="Legacy opcode, transformed handler is 0x47D0EE38" />
+  <OpcodeInfo value="9703" index="371" handler="9405616" comment="Legacy opcode, transformed handler is 0x47D40BAA" />
+  <OpcodeInfo value="9707">
+    <Senders>
+      <Sender addr="5599420" name="SendGuildBankQueryTabOpcode" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="9709">
+    <Senders>
+      <Sender addr="5605067" name="SendSellItemOpcode" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="9711">
+    <Senders>
+      <Sender addr="5638210" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="9713" index="376" handler="9267984" comment="Legacy opcode, transformed handler is 0x47DFF1FC" />
+  <OpcodeInfo value="9723" index="381" handler="4812240" comment="Legacy opcode, transformed handler is 0x47A1F4B6" />
+  <OpcodeInfo value="10240">
+    <Senders>
+      <Sender addr="6936884" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="10272">
+    <Senders>
+      <Sender addr="6935637" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="10273">
+    <Senders>
+      <Sender addr="6940932" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="10305">
+    <Senders>
+      <Sender addr="6938405" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="10336">
+    <Senders>
+      <Sender addr="6940437" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="10337">
+    <Senders>
+      <Sender addr="6932212" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="10368">
+    <Senders>
+      <Sender addr="6934772" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="10369">
+    <Senders>
+      <Sender addr="6939749" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="10400">
+    <Senders>
+      <Sender addr="6933877" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="10401">
+    <Senders>
+      <Sender addr="6932021" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="10432">
+    <Senders>
+      <Sender addr="6941909" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="10433">
+    <Senders>
+      <Sender addr="6940741" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="10464">
+    <Senders>
+      <Sender addr="6932900" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="10465">
+    <Senders>
+      <Sender addr="6937349" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="10497">
+    <Senders>
+      <Sender addr="6766020" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="10501">
+    <Senders>
+      <Sender addr="6836037" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="10528">
+    <Senders>
+      <Sender addr="6767701" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="10532">
+    <Senders>
+      <Sender addr="6760228" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="10533">
+    <Senders>
+      <Sender addr="6749467" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="10561">
+    <Senders>
+      <Sender addr="6768949" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="10593">
+    <Senders>
+      <Sender addr="6772933" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="10625">
+    <Senders>
+      <Sender addr="6757652" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="10656">
+    <Senders>
+      <Sender addr="6763668" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="10657">
+    <Senders>
+      <Sender addr="6802149" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="10660">
+    <Senders>
+      <Sender addr="6794741" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="10661">
+    <Senders>
+      <Sender addr="6764625" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="10692">
+    <Senders>
+      <Sender addr="6748731" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="10693">
+    <Senders>
+      <Sender addr="6749707" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="10721">
+    <Senders>
+      <Sender addr="6837268" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="10724">
+    <Senders>
+      <Sender addr="6797221" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="10725">
+    <Senders>
+      <Sender addr="6760753" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="10752">
+    <Senders>
+      <Sender addr="6942212" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="10753">
+    <Senders>
+      <Sender addr="6930580" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="10848">
+    <Senders>
+      <Sender addr="6931253" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="10880">
+    <Senders>
+      <Sender addr="6930692" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="10881">
+    <Senders>
+      <Sender addr="6940261" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="10912">
+    <Senders>
+      <Sender addr="6940069" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="10913">
+    <Senders>
+      <Sender addr="6931812" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="10945">
+    <Senders>
+      <Sender addr="6934372" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="10977">
+    <Senders>
+      <Sender addr="6937941" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="11012">
+    <Senders>
+      <Sender addr="6799893" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="11040">
+    <Senders>
+      <Sender addr="6789221" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="11041">
+    <Senders>
+      <Sender addr="6747403" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="11044">
+    <Senders>
+      <Sender addr="6838756" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="11073">
+    <Senders>
+      <Sender addr="6762481" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="11077">
+    <Senders>
+      <Sender addr="6765473" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="11105">
+    <Senders>
+      <Sender addr="6762116" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="11137">
+    <Senders>
+      <Sender addr="6815237" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="11141">
+    <Senders>
+      <Sender addr="6760849" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="11169">
+    <Senders>
+      <Sender addr="6747963" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="11200">
+    <Senders>
+      <Sender addr="6777013" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="11201">
+    <Senders>
+      <Sender addr="6827381" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="11236">
+    <Senders>
+      <Sender addr="6749169" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="11523" index="385" handler="5654528" comment="Legacy opcode, transformed handler is 0x4FF6D61E" />
+  <OpcodeInfo value="11527" index="387" handler="10183856" comment="Legacy opcode, transformed handler is 0x503FF2CA" />
+  <OpcodeInfo value="11529" index="388" handler="5581344" comment="Legacy opcode, transformed handler is 0x4FFFB834" />
+  <OpcodeInfo value="11531" index="389" handler="4812944" comment="Legacy opcode, transformed handler is 0x4FF1FEA6" />
+  <OpcodeInfo value="11533" index="390" handler="5575200" comment="Legacy opcode, transformed handler is 0x5003A030">
+    <Senders>
+      <Sender addr="5595220" name="CGPlayer_C__OnQuestGiverQuestDetails" />
+      <Sender addr="9718231" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="11537">
+    <Senders>
+      <Sender addr="5616315" name="CGPlayer_C__CompleteQuest" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="11539">
+    <Senders>
+      <Sender addr="5813566" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="11545" index="396" handler="5629616" comment="Legacy opcode, transformed handler is 0x501074B4" />
+  <OpcodeInfo value="11547">
+    <Senders>
+      <Sender addr="9231121" name="Script_SetAllowLowLevelRaid" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="11551" index="399" handler="9404320" comment="Legacy opcode, transformed handler is 0x504C0DA2" />
+  <OpcodeInfo value="11553" index="400" handler="5076528" comment="Legacy opcode, transformed handler is 0x4FD0046C" />
+  <OpcodeInfo value="11563">
+    <Senders>
+      <Sender addr="9231185" name="Script_SetAllowLowLevelRaid" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="11565" index="406" handler="9267984" comment="Legacy opcode, transformed handler is 0x501BF940" />
+  <OpcodeInfo value="11567" index="407" handler="5629536" comment="Legacy opcode, transformed handler is 0x4FE27492" />
+  <OpcodeInfo value="11569">
+    <Senders>
+      <Sender addr="9203168" name="Script_CancelSummon" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="11571" index="409" handler="4814112" comment="Legacy opcode, transformed handler is 0x4FDA034E" />
+  <OpcodeInfo value="11573" index="410" handler="5576576" comment="Legacy opcode, transformed handler is 0x4FEBA5A8" />
+  <OpcodeInfo value="11575" index="411" handler="5083984" comment="Legacy opcode, transformed handler is 0x4FE2217A" />
+  <OpcodeInfo value="11577">
+    <Senders>
+      <Sender addr="10223305" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="11579" index="413" handler="5574752" comment="Legacy opcode, transformed handler is 0x4FED9E86" />
+  <OpcodeInfo value="11581" index="414" handler="10183856" comment="Legacy opcode, transformed handler is 0x5039F2D0" />
+  <OpcodeInfo value="11583" index="415" handler="9615472" comment="Legacy opcode, transformed handler is 0x502F4692" />
+  <OpcodeInfo value="11585">
+    <Senders>
+      <Sender addr="9213227" name="CGGameUI__SendTarget" />
+      <Sender addr="9257110" name="CGGameUI__ClearTarget" />
+      <Sender addr="9273247" name="CGGameUI__EnterWorld" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="11589">
+    <Senders>
+      <Sender addr="8392736" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="11593">
+    <Senders>
+      <Sender addr="10273739" name="SendWorldStateUITimerUpdate" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="11595" index="421" handler="5630304" comment="Legacy opcode, transformed handler is 0x503E77B6" />
+  <OpcodeInfo value="11597" index="422" handler="6296112" comment="Legacy opcode, transformed handler is 0x504EA080" />
+  <OpcodeInfo value="11599">
+    <Senders>
+      <Sender addr="5605239" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="11601">
+    <Senders>
+      <Sender addr="10151462" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="11605" index="426" handler="5952864" comment="Legacy opcode, transformed handler is 0x505163A8" />
+  <OpcodeInfo value="11607" index="427" handler="5055920" comment="Legacy opcode, transformed handler is 0x5041B3FA" />
+  <OpcodeInfo value="11609" index="428" handler="6296112" comment="Legacy opcode, transformed handler is 0x505AA074" />
+  <OpcodeInfo value="11611">
+    <Senders>
+      <Sender addr="5604807" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="11613">
+    <Senders>
+      <Sender addr="9210841" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="11615" index="431" handler="9760128" comment="Legacy opcode, transformed handler is 0x50917BC2" />
+  <OpcodeInfo value="11617">
+    <Senders>
+      <Sender addr="9767410" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="11619">
+    <Senders>
+      <Sender addr="10094599" />
+      <Sender addr="10099350" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="11623" index="435" handler="6442192" comment="Legacy opcode, transformed handler is 0x5026DB4A" />
+  <OpcodeInfo value="11627" index="437" handler="9347680" comment="Legacy opcode, transformed handler is 0x505730D6" />
+  <OpcodeInfo value="11629" index="438" handler="9114128" comment="Legacy opcode, transformed handler is 0x5059A080" />
+  <OpcodeInfo value="11633">
+    <Senders>
+      <Sender addr="5604567" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="11639">
+    <Senders>
+      <Sender addr="10519163" name="Script_GetGMStatus" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="11641" index="444" handler="10410832" comment="Legacy opcode, transformed handler is 0x507969B4" />
+  <OpcodeInfo value="11643" index="445" handler="5630304" comment="Legacy opcode, transformed handler is 0x502E77C6" />
+  <OpcodeInfo value="11645">
+    <Senders>
+      <Sender addr="5601675" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="11647">
+    <Senders>
+      <Sender addr="10222868" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="11653" index="450" handler="5574128" comment="Legacy opcode, transformed handler is 0x4F7B9C88" />
+  <OpcodeInfo value="11655">
+    <Senders>
+      <Sender addr="5060571" name="Script_ShowFriends" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="11657" index="452" handler="10519248" comment="Legacy opcode, transformed handler is 0x4FCB1164" />
+  <OpcodeInfo value="11667" index="457" handler="5682096" comment="Legacy opcode, transformed handler is 0x4F87423E" />
+  <OpcodeInfo value="11675" index="461" handler="5610064" comment="Legacy opcode, transformed handler is 0x4F8E28D6" />
+  <OpcodeInfo value="11681" index="464" handler="9267984" comment="Legacy opcode, transformed handler is 0x4F8FF9CC" />
+  <OpcodeInfo value="11685">
+    <Senders>
+      <Sender addr="9767660" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="11687" index="467" handler="5585392" comment="Legacy opcode, transformed handler is 0x4F59C8AA" />
+  <OpcodeInfo value="11691" index="469" handler="5574352" comment="Legacy opcode, transformed handler is 0x4F5D9D86" />
+  <OpcodeInfo value="11693" index="470" handler="5629232" comment="Legacy opcode, transformed handler is 0x4F6473E0" />
+  <OpcodeInfo value="11697" index="472" handler="9731712" comment="Legacy opcode, transformed handler is 0x4FA70D2C" />
+  <OpcodeInfo value="11699" index="473" handler="5630560" comment="Legacy opcode, transformed handler is 0x4F66790E" />
+  <OpcodeInfo value="11701" index="474" handler="9880864" comment="Legacy opcode, transformed handler is 0x4FAD53C8">
+    <Senders>
+      <Sender addr="9884315" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="11703" index="475" handler="5630304" comment="Legacy opcode, transformed handler is 0x4F6A780A" />
+  <OpcodeInfo value="11707" index="477" handler="5654528" comment="Legacy opcode, transformed handler is 0x4F6ED6A6" />
+  <OpcodeInfo value="11709">
+    <Senders>
+      <Sender addr="5064200" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="11713" index="480" handler="9267984" comment="Legacy opcode, transformed handler is 0x4FEFF9EC" />
+  <OpcodeInfo value="11715">
+    <Senders>
+      <Sender addr="9216912" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="11717" index="482" handler="5578448" comment="Legacy opcode, transformed handler is 0x4FBBADA8" />
+  <OpcodeInfo value="11719">
+    <Senders>
+      <Sender addr="10358741" name="Script_AbandonSkill" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="11721" index="484" handler="9403856" comment="Legacy opcode, transformed handler is 0x4FFA0CA4" />
+  <OpcodeInfo value="11723" index="485" handler="10521072" comment="Legacy opcode, transformed handler is 0x500918C6" />
+  <OpcodeInfo value="11727" index="487" handler="9614384" comment="Legacy opcode, transformed handler is 0x4FFF4302" />
+  <OpcodeInfo value="11729" index="488" handler="10519248" comment="Legacy opcode, transformed handler is 0x5013119C" />
+  <OpcodeInfo value="11733" index="490" handler="9397168" comment="Legacy opcode, transformed handler is 0x5005F278" />
+  <OpcodeInfo value="11739">
+    <Senders>
+      <Sender addr="8391885" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="11745">
+    <Senders>
+      <Sender addr="9889301" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="11747" index="497" handler="5953376" comment="Legacy opcode, transformed handler is 0x4F9B665E" />
+  <OpcodeInfo value="11749" index="498" handler="9267984" comment="Legacy opcode, transformed handler is 0x4FD3FA08" />
+  <OpcodeInfo value="11753" index="500" handler="5055856" comment="Legacy opcode, transformed handler is 0x4F97B464" />
+  <OpcodeInfo value="11755" index="501" handler="10410192" comment="Legacy opcode, transformed handler is 0x4FE767C6" />
+  <OpcodeInfo value="11757" index="502" handler="8393328" comment="Legacy opcode, transformed handler is 0x4FCEA160" />
+  <OpcodeInfo value="11761" index="504" handler="9217472" comment="Legacy opcode, transformed handler is 0x4FDF34AC" />
+  <OpcodeInfo value="11763">
+    <Senders>
+      <Sender addr="5666543" />
+      <Sender addr="9200283" name="Script_RequestTimePlayed" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="11765" index="506" handler="5653536" comment="Legacy opcode, transformed handler is 0x4FACD308" />
+  <OpcodeInfo value="11771" index="509" handler="5671104" comment="Legacy opcode, transformed handler is 0x4FAF17A6" />
+  <OpcodeInfo value="11775" index="511" handler="5581040" comment="Legacy opcode, transformed handler is 0x4FB1B7D2" />
+  <OpcodeInfo value="13573">
+    <Senders>
+      <Sender addr="6922724" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="13581">
+    <Senders>
+      <Sender addr="6928676" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="13701">
+    <Senders>
+      <Sender addr="6918795" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="13709">
+    <Senders>
+      <Sender addr="6925508" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="15617">
+    <Senders>
+      <Sender addr="6925812" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="15621">
+    <Senders>
+      <Sender addr="6918593" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="15625">
+    <Senders>
+      <Sender addr="6924516" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="15629">
+    <Senders>
+      <Sender addr="6918875" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="15745">
+    <Senders>
+      <Sender addr="6920644" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="15749">
+    <Senders>
+      <Sender addr="6928564" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="15753">
+    <Senders>
+      <Sender addr="6929140" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="15757">
+    <Senders>
+      <Sender addr="6918443" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="16384">
+    <Senders>
+      <Sender addr="6740036" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="16385">
+    <Senders>
+      <Sender addr="6739652" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="16392">
+    <Senders>
+      <Sender addr="6737348" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="16393">
+    <Senders>
+      <Sender addr="6736033" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="16408">
+    <Senders>
+      <Sender addr="6729947" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="16409">
+    <Senders>
+      <Sender addr="6735905" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="16450">
+    <Senders>
+      <Sender addr="6728932" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="16451">
+    <Senders>
+      <Sender addr="6726827" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="16458">
+    <Senders>
+      <Sender addr="6727089" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="16459">
+    <Senders>
+      <Sender addr="6727457" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="16465">
+    <Senders>
+      <Sender addr="6729819" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="16473">
+    <Senders>
+      <Sender addr="6745924" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="17669" index="514" handler="10185472" comment="Legacy opcode, transformed handler is 0x28425118" />
+  <OpcodeInfo value="17671" index="515" handler="9928144" comment="Legacy opcode, transformed handler is 0x283C63EA" />
+  <OpcodeInfo value="17673" index="516" handler="9325152" comment="Legacy opcode, transformed handler is 0x28393074" />
+  <OpcodeInfo value="17681">
+    <Senders>
+      <Sender addr="9112686" />
+      <Sender addr="9117859" name="Spell_C_SpellFailed" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="17683" index="521" handler="5631264" comment="Legacy opcode, transformed handler is 0x2806D32E" />
+  <OpcodeInfo value="17689" index="524" handler="5653408" comment="Legacy opcode, transformed handler is 0x281129A4" />
+  <OpcodeInfo value="17693" index="526" handler="5952544" comment="Legacy opcode, transformed handler is 0x2819BA20" />
+  <OpcodeInfo value="17695" index="527" handler="9267984" comment="Legacy opcode, transformed handler is 0x284A5112" />
+  <OpcodeInfo value="17703">
+    <Senders>
+      <Sender addr="5614171" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="17707">
+    <Senders>
+      <Sender addr="8416672" name="Script_ReadyForAccountDataTimes" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="17711" index="535" handler="5639040" comment="Legacy opcode, transformed handler is 0x27E2F1B2" />
+  <OpcodeInfo value="17715" index="537" handler="9267984" comment="Legacy opcode, transformed handler is 0x281E513E" />
+  <OpcodeInfo value="17723">
+    <Senders>
+      <Sender addr="9251701" name="Script_NotifyInspect" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="17725" index="542" handler="6442192" comment="Legacy opcode, transformed handler is 0x280132F0" />
+  <OpcodeInfo value="17727" index="543" handler="5593088" comment="Legacy opcode, transformed handler is 0x27F23E22" />
+  <OpcodeInfo value="17729" index="544" handler="9099136" comment="Legacy opcode, transformed handler is 0x286DBDDC" />
+  <OpcodeInfo value="17731" index="545" handler="5878912" comment="Legacy opcode, transformed handler is 0x283A9ADE" />
+  <OpcodeInfo value="17735" index="547" handler="5580512" comment="Legacy opcode, transformed handler is 0x283A0D3A" />
+  <OpcodeInfo value="17737" index="548" handler="5952352" comment="Legacy opcode, transformed handler is 0x2845B9B4" />
+  <OpcodeInfo value="17739" index="549" handler="5084368" comment="Legacy opcode, transformed handler is 0x28367B26" />
+  <OpcodeInfo value="17741">
+    <Senders>
+      <Sender addr="9624812" name="Script_SetSavedInstanceExtend" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="17743">
+    <Senders>
+      <Sender addr="5103445" name="ComSat__SetCurrentSession" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="17745" index="552" handler="10350288" comment="Legacy opcode, transformed handler is 0x2890D51C" />
+  <OpcodeInfo value="17747" index="553" handler="10103120" comment="Legacy opcode, transformed handler is 0x288B0F9E" />
+  <OpcodeInfo value="17755" index="557" handler="4814320" comment="Legacy opcode, transformed handler is 0x28425C36" />
+  <OpcodeInfo value="17757" index="558" handler="4813552" comment="Legacy opcode, transformed handler is 0x28485930" />
+  <OpcodeInfo value="17759" index="559" handler="9405088" comment="Legacy opcode, transformed handler is 0x288C68E2" />
+  <OpcodeInfo value="17761" index="560" handler="9062096" comment="Legacy opcode, transformed handler is 0x284D2D4C" />
+  <OpcodeInfo value="17763">
+    <Senders>
+      <Sender addr="5087871" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="17765" index="562" handler="5574512" comment="Legacy opcode, transformed handler is 0x281BF5E8" />
+  <OpcodeInfo value="17767">
+    <Senders>
+      <Sender addr="5616155" name="CGPlayer_C__AcceptQuest" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="17769" index="564" handler="5607328" comment="Legacy opcode, transformed handler is 0x28207614" />
+  <OpcodeInfo value="17773" index="566" handler="9761472" comment="Legacy opcode, transformed handler is 0x2863D930" />
+  <OpcodeInfo value="17775" index="567" handler="9403952" comment="Legacy opcode, transformed handler is 0x285C64A2" />
+  <OpcodeInfo value="17777" index="568" handler="5671104" comment="Legacy opcode, transformed handler is 0x28296F2C" />
+  <OpcodeInfo value="17781" index="570" handler="10354736" comment="Legacy opcode, transformed handler is 0x2874E698" />
+  <OpcodeInfo value="17783" index="571" handler="9689184" comment="Legacy opcode, transformed handler is 0x2868BECA" />
+  <OpcodeInfo value="17785" index="572" handler="5630560" comment="Legacy opcode, transformed handler is 0x2830D0C4" />
+  <OpcodeInfo value="17789" index="574" handler="6108032" comment="Legacy opcode, transformed handler is 0x283C19E0" />
+  <OpcodeInfo value="17795" index="577" handler="5630304" comment="Legacy opcode, transformed handler is 0x2776CFFE" />
+  <OpcodeInfo value="17797" index="578" handler="6296112" comment="Legacy opcode, transformed handler is 0x2786F8C8" />
+  <OpcodeInfo value="17799">
+    <Senders>
+      <Sender addr="9201841" name="Script_ArenaTeamSetLeaderByName" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="17801" index="580" handler="10521568" comment="Legacy opcode, transformed handler is 0x27CB7274" />
+  <OpcodeInfo value="17805" index="582" handler="4814208" comment="Legacy opcode, transformed handler is 0x27785C10" />
+  <OpcodeInfo value="17809" index="584" handler="6296112" comment="Legacy opcode, transformed handler is 0x2792F8BC" />
+  <OpcodeInfo value="17811" index="585" handler="9061792" comment="Legacy opcode, transformed handler is 0x27BB2C2E" />
+  <OpcodeInfo value="17813" index="586" handler="9152944" comment="Legacy opcode, transformed handler is 0x27C29038" />
+  <OpcodeInfo value="17815" index="587" handler="5653536" comment="Legacy opcode, transformed handler is 0x278B2AAA">
+    <Senders>
+      <Sender addr="10351706" name="CGPetitionInfo__SetPetition" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="17821">
+    <Senders>
+      <Sender addr="5615897" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="17823" index="591" handler="5581440" comment="Legacy opcode, transformed handler is 0x27921102" />
+  <OpcodeInfo value="17825" index="592" handler="5681712" comment="Legacy opcode, transformed handler is 0x275998EC" />
+  <OpcodeInfo value="17829">
+    <Senders>
+      <Sender addr="5988635" name="CGUnit_C__CancelGrowthAura" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="17831" index="595" handler="5654528" comment="Legacy opcode, transformed handler is 0x275B2EBA" />
+  <OpcodeInfo value="17839">
+    <Senders>
+      <Sender addr="9231505" name="Script_SetAutoDeclineGuildInvites" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="17843" index="601" handler="5582720" comment="Legacy opcode, transformed handler is 0x2766162E" />
+  <OpcodeInfo value="17845">
+    <Senders>
+      <Sender addr="5623657" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="17847" index="603" handler="9098784" comment="Legacy opcode, transformed handler is 0x279FBCCA" />
+  <OpcodeInfo value="17851">
+    <Senders>
+      <Sender addr="9766663" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="17853" index="606" handler="9367456" comment="Legacy opcode, transformed handler is 0x27ADD640" />
+  <OpcodeInfo value="17857" index="608" handler="9998512" comment="Legacy opcode, transformed handler is 0x27FB778C" />
+  <OpcodeInfo value="17859" index="609" handler="9072880" comment="Legacy opcode, transformed handler is 0x27EB57CE" />
+  <OpcodeInfo value="17861">
+    <Senders>
+      <Sender addr="5625451" />
+      <Sender addr="5625595" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="17863" index="611" handler="5585312" comment="Legacy opcode, transformed handler is 0x27BA207A" />
+  <OpcodeInfo value="17865">
+    <Senders>
+      <Sender addr="5638476" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="17867" index="613" handler="9093600" comment="Legacy opcode, transformed handler is 0x27F3A8B6" />
+  <OpcodeInfo value="17869">
+    <Senders>
+      <Sender addr="9368778" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="17871" index="615" handler="9326064" comment="Legacy opcode, transformed handler is 0x27FB34C2" />
+  <OpcodeInfo value="17873">
+    <Senders>
+      <Sender addr="4230817" />
+      <Sender addr="5622556" />
+      <Sender addr="5661990" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="17877" index="618" handler="9752080" comment="Legacy opcode, transformed handler is 0x280BB4D8" />
+  <OpcodeInfo value="17879" index="619" handler="9919232" comment="Legacy opcode, transformed handler is 0x280C41CA" />
+  <OpcodeInfo value="17881" index="620" handler="9612592" comment="Legacy opcode, transformed handler is 0x280D93F4" />
+  <OpcodeInfo value="17887" index="623" handler="5953920" comment="Legacy opcode, transformed handler is 0x27D7C042" />
+  <OpcodeInfo value="17889" index="624" handler="9062208" comment="Legacy opcode, transformed handler is 0x27CD2E3C" />
+  <OpcodeInfo value="17891" index="625" handler="5671104" comment="Legacy opcode, transformed handler is 0x27976FBE" />
+  <OpcodeInfo value="17893" index="626" handler="9267984" comment="Legacy opcode, transformed handler is 0x27D45208" />
+  <OpcodeInfo value="17895" index="627" handler="8386560" comment="Legacy opcode, transformed handler is 0x27C4DEFA" />
+  <OpcodeInfo value="17897" index="628" handler="8393008" comment="Legacy opcode, transformed handler is 0x27CAF824" />
+  <OpcodeInfo value="17899" index="629" handler="5671104" comment="Legacy opcode, transformed handler is 0x279F6FB6" />
+  <OpcodeInfo value="17901" index="630" handler="5667824" comment="Legacy opcode, transformed handler is 0x27A562E0" />
+  <OpcodeInfo value="17903" index="631" handler="9991232" comment="Legacy opcode, transformed handler is 0x27E55B32" />
+  <OpcodeInfo value="17905" index="632" handler="9267984" comment="Legacy opcode, transformed handler is 0x27E051FC">
+    <Senders>
+      <Sender addr="9255804" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="17907" index="633" handler="5654528" comment="Legacy opcode, transformed handler is 0x27A72EEE" />
+  <OpcodeInfo value="17911" index="635" handler="5576832" comment="Legacy opcode, transformed handler is 0x27A9FF6A" />
+  <OpcodeInfo value="17913" index="636" handler="5084144" comment="Legacy opcode, transformed handler is 0x27A87AD4" />
+  <OpcodeInfo value="17915" index="637" handler="5671104" comment="Legacy opcode, transformed handler is 0x27AF6FA6" />
+  <OpcodeInfo value="17919">
+    <Senders>
+      <Sender addr="5047142" name="ClientServices__CharacterCreate" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="18441">
+    <Senders>
+      <Sender addr="6746053" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="18449">
+    <Senders>
+      <Sender addr="6735172" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="18456">
+    <Senders>
+      <Sender addr="6736929" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="18505">
+    <Senders>
+      <Sender addr="6736849" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="18520">
+    <Senders>
+      <Sender addr="6736260" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="19713">
+    <Senders>
+      <Sender addr="9346443" name="Script_ClearChannelWatch" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="19715" index="641" handler="5654528" comment="Legacy opcode, transformed handler is 0x2FF7361E" />
+  <OpcodeInfo value="19717" index="642" handler="9418496" comment="Legacy opcode, transformed handler is 0x3036A518" />
+  <OpcodeInfo value="19719">
+    <Senders>
+      <Sender addr="10135979" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="19721" index="644" handler="5574176" comment="Legacy opcode, transformed handler is 0x2FFFFC34" />
+  <OpcodeInfo value="19723" index="645" handler="5606112" comment="Legacy opcode, transformed handler is 0x2FFE78F6" />
+  <OpcodeInfo value="19725">
+    <Senders>
+      <Sender addr="5617211" />
+      <Sender addr="5642216" name="SendQuestGiverStatusMultipleQuery" />
+      <Sender addr="5678301" name="CGPlayer_C__OnGroupList" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="19727">
+    <Senders>
+      <Sender addr="5621372" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="19729" index="648" handler="5654528" comment="Legacy opcode, transformed handler is 0x3009360C" />
+  <OpcodeInfo value="19731">
+    <Senders>
+      <Sender addr="9628503" name="Script_ConvertToRaid" />
+      <Sender addr="9628721" name="Script_ConvertToParty" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="19735">
+    <Senders>
+      <Sender addr="9861968" name="Script_RepairAllItems" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="19737" index="652" handler="10519248" comment="Legacy opcode, transformed handler is 0x305B70D4" />
+  <OpcodeInfo value="19739" index="653" handler="6092032" comment="Legacy opcode, transformed handler is 0x3015E306" />
+  <OpcodeInfo value="19741" index="654" handler="5682096" comment="Legacy opcode, transformed handler is 0x3015A1B0" />
+  <OpcodeInfo value="19749" index="658" handler="5671104" comment="Legacy opcode, transformed handler is 0x2FDD76F8" />
+  <OpcodeInfo value="19755" index="661" handler="5587072" comment="Legacy opcode, transformed handler is 0x2FDE2EB6" />
+  <OpcodeInfo value="19757" index="662" handler="10124272" comment="Legacy opcode, transformed handler is 0x30296A20" />
+  <OpcodeInfo value="19759" index="663" handler="10186000" comment="Legacy opcode, transformed handler is 0x30285B42" />
+  <OpcodeInfo value="19761">
+    <Senders>
+      <Sender addr="5604939" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="19763">
+    <Senders>
+      <Sender addr="10517564" name="SendGMTicketUpdateText" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="19765" index="666" handler="5084752" comment="Legacy opcode, transformed handler is 0x2FE48478" />
+  <OpcodeInfo value="19767" index="667" handler="9072656" comment="Legacy opcode, transformed handler is 0x301F5E3A" />
+  <OpcodeInfo value="19773">
+    <Senders>
+      <Sender addr="9260797" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="19775" index="671" handler="5607648" comment="Legacy opcode, transformed handler is 0x2FF27F02" />
+  <OpcodeInfo value="19779" index="673" handler="10461616" comment="Legacy opcode, transformed handler is 0x3080900E" />
+  <OpcodeInfo value="19781" index="674" handler="10410624" comment="Legacy opcode, transformed handler is 0x3085C8D8" />
+  <OpcodeInfo value="19783">
+    <Senders>
+      <Sender addr="6126929" name="CGUnit_C__Disable" />
+      <Sender addr="9420387" name="CGPartyInfo__EnableMember" />
+      <Sender addr="9428359" />
+      <Sender addr="9618664" name="CGRaidInfo__EnableMember" />
+      <Sender addr="9632038" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="19787">
+    <Senders>
+      <Sender addr="5617035" name="Send_CMSG_QUESTGIVER_STATUS_QUERY" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="19789" index="678" handler="9267984" comment="Legacy opcode, transformed handler is 0x307C5960">
+    <Senders>
+      <Sender addr="9267410" name="Script_SetRaidDifficulty" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="19791">
+    <Senders>
+      <Sender addr="9907674" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="19795" index="681" handler="6442192" comment="Legacy opcode, transformed handler is 0x30533B1E" />
+  <OpcodeInfo value="19797" index="682" handler="8400656" comment="Legacy opcode, transformed handler is 0x30771D58" />
+  <OpcodeInfo value="19799">
+    <Senders>
+      <Sender addr="10193030" name="CGPlayer_C__TrainerBuySpell" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="19803" index="685" handler="10410688" comment="Legacy opcode, transformed handler is 0x3097C906" />
+  <OpcodeInfo value="19807" index="687" handler="5653152" comment="Legacy opcode, transformed handler is 0x305330E2">
+    <Senders>
+      <Sender addr="5637644" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="19809" index="688" handler="10183856" comment="Legacy opcode, transformed handler is 0x305E532C" />
+  <OpcodeInfo value="19813">
+    <Senders>
+      <Sender addr="10411019" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="19815" index="691" handler="10185392" comment="Legacy opcode, transformed handler is 0x3060592A" />
+  <OpcodeInfo value="19817" index="692" handler="9413792" comment="Legacy opcode, transformed handler is 0x305A9314" />
+  <OpcodeInfo value="19821" index="694" handler="5654528" comment="Legacy opcode, transformed handler is 0x30253670" />
+  <OpcodeInfo value="19823" index="695" handler="5671104" comment="Legacy opcode, transformed handler is 0x30237732" />
+  <OpcodeInfo value="19829" index="698" handler="5581248" comment="Legacy opcode, transformed handler is 0x302C1828" />
+  <OpcodeInfo value="19835">
+    <Senders>
+      <Sender addr="5621099" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="19837" index="702" handler="5576896" comment="Legacy opcode, transformed handler is 0x30340720" />
+  <OpcodeInfo value="19841" index="704" handler="5077776" comment="Legacy opcode, transformed handler is 0x2F7069AC" />
+  <OpcodeInfo value="19843" index="705" handler="5654528" comment="Legacy opcode, transformed handler is 0x2F77369E" />
+  <OpcodeInfo value="19847" index="707" handler="9367648" comment="Legacy opcode, transformed handler is 0x2FB3DEFA" />
+  <OpcodeInfo value="19849" index="708" handler="10183856" comment="Legacy opcode, transformed handler is 0x2FC65344" />
+  <OpcodeInfo value="19853" index="710" handler="10519248" comment="Legacy opcode, transformed handler is 0x2FCF7160" />
+  <OpcodeInfo value="19855" index="711" handler="9439328" comment="Legacy opcode, transformed handler is 0x2FBCF6F2" />
+  <OpcodeInfo value="19857" index="712" handler="6092032" comment="Legacy opcode, transformed handler is 0x2F8FE38C" />
+  <OpcodeInfo value="19863" index="715" handler="9062208" comment="Legacy opcode, transformed handler is 0x2FBF35CA" />
+  <OpcodeInfo value="19867" index="717" handler="10102064" comment="Legacy opcode, transformed handler is 0x2FD313B6" />
+  <OpcodeInfo value="19869" index="718" handler="9071168" comment="Legacy opcode, transformed handler is 0x2FC958C0" />
+  <OpcodeInfo value="19873" index="720" handler="9403008" comment="Legacy opcode, transformed handler is 0x2F92693C" />
+  <OpcodeInfo value="19875">
+    <Senders>
+      <Sender addr="6129140" name="CGUnit_C__Dismount" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="19877">
+    <Senders>
+      <Sender addr="9074219" name="Spell_C_CancelChannelSpell" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="19883">
+    <Senders>
+      <Sender addr="10222493" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="19887" index="727" handler="4788064" comment="Legacy opcode, transformed handler is 0x2F55FE12" />
+  <OpcodeInfo value="19889" index="728" handler="5953248" comment="Legacy opcode, transformed handler is 0x2F6DC58C" />
+  <OpcodeInfo value="19891" index="729" handler="5671104" comment="Legacy opcode, transformed handler is 0x2F67776E" />
+  <OpcodeInfo value="19903" index="735" handler="4812816" comment="Legacy opcode, transformed handler is 0x2F665EB2" />
+  <OpcodeInfo value="19905">
+    <Senders>
+      <Sender addr="5614891" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="19907" index="737" handler="5575040" comment="Legacy opcode, transformed handler is 0x2FB6005E" />
+  <OpcodeInfo value="19913">
+    <Senders>
+      <Sender addr="5645300" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="19915" index="741" handler="5671104" comment="Legacy opcode, transformed handler is 0x2FBF7796" />
+  <OpcodeInfo value="19917">
+    <Senders>
+      <Sender addr="10517819" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="19919" index="743" handler="6442192" comment="Legacy opcode, transformed handler is 0x2FCF3BA2" />
+  <OpcodeInfo value="19921" index="744" handler="5076416" comment="Legacy opcode, transformed handler is 0x2FC0648C" />
+  <OpcodeInfo value="19923" index="745" handler="9070640" comment="Legacy opcode, transformed handler is 0x2FFB56FE" />
+  <OpcodeInfo value="19925">
+    <Senders>
+      <Sender addr="5599939" name="CGPlayer_C__TalkToTrainer" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="19927" index="747" handler="5629824" comment="Legacy opcode, transformed handler is 0x2FCAD64A" />
+  <OpcodeInfo value="19931" index="749" handler="4199136" comment="Legacy opcode, transformed handler is 0x2FB901A6" />
+  <OpcodeInfo value="19933" index="750" handler="5630560" comment="Legacy opcode, transformed handler is 0x2FD4D920" />
+  <OpcodeInfo value="19937" index="752" handler="5574896" comment="Legacy opcode, transformed handler is 0x2F97FFEC" />
+  <OpcodeInfo value="19943" index="755" handler="9122976" comment="Legacy opcode, transformed handler is 0x2FD0239A" />
+  <OpcodeInfo value="19947" index="757" handler="5574832" comment="Legacy opcode, transformed handler is 0x2F9DFFA6" />
+  <OpcodeInfo value="19949">
+    <Senders>
+      <Sender addr="5095483" />
+      <Sender addr="5109573" name="ComSatClient_Init" />
+      <Sender addr="5109960" />
+      <Sender addr="9273610" name="CGGameUI__EnterWorld" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="19953">
+    <Senders>
+      <Sender addr="9201235" name="Script_ArenaTeamLeave" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="19957" index="762" handler="9936576" comment="Legacy opcode, transformed handler is 0x2FEE8DA8">
+    <Senders>
+      <Sender addr="9938618" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="19959" index="763" handler="5077776" comment="Legacy opcode, transformed handler is 0x2FA269FA" />
+  <OpcodeInfo value="19961">
+    <Senders>
+      <Sender addr="5621227" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="19963" index="765" handler="9615504" comment="Legacy opcode, transformed handler is 0x2FEBA776" />
+  <OpcodeInfo value="19965" index="766" handler="5671104" comment="Legacy opcode, transformed handler is 0x2FB577A0" />
+  <OpcodeInfo value="19967">
+    <Senders>
+      <Sender addr="5614315" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="20481">
+    <Senders>
+      <Sender addr="6739205" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="20544">
+    <Senders>
+      <Sender addr="6730107" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="20560">
+    <Senders>
+      <Sender addr="6738849" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="20561">
+    <Senders>
+      <Sender addr="6729723" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="20569">
+    <Senders>
+      <Sender addr="6737684" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="21765">
+    <Senders>
+      <Sender addr="6926180" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="21769">
+    <Senders>
+      <Sender addr="6918507" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="21773">
+    <Senders>
+      <Sender addr="6919291" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="21889">
+    <Senders>
+      <Sender addr="6921700" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="21897">
+    <Senders>
+      <Sender addr="6922404" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="21901">
+    <Senders>
+      <Sender addr="6923700" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="22528">
+    <Senders>
+      <Sender addr="6741060" name="Send_CMSG_LOADING_SCREEN_NOTIFY" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="22529">
+    <Senders>
+      <Sender addr="6744037" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="22537">
+    <Senders>
+      <Sender addr="6742436" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="22545">
+    <Senders>
+      <Sender addr="6742324" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="22592">
+    <Senders>
+      <Sender addr="6738916" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="22601">
+    <Senders>
+      <Sender addr="6740660" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="22609">
+    <Senders>
+      <Sender addr="6740788" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="23809">
+    <Senders>
+      <Sender addr="6925076" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="23821">
+    <Senders>
+      <Sender addr="6918171" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="23937">
+    <Senders>
+      <Sender addr="6923044" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="23941">
+    <Senders>
+      <Sender addr="6919025" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="25865">
+    <Senders>
+      <Sender addr="5626224" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="25867" index="773" handler="6256240" comment="Legacy opcode, transformed handler is 0x8083C86" />
+  <OpcodeInfo value="25869">
+    <Senders>
+      <Sender addr="9621549" name="Script_PromoteToLeader" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="25871" index="775" handler="5654528" comment="Legacy opcode, transformed handler is 0x8030E12" />
+  <OpcodeInfo value="25879" index="779" handler="9925120" comment="Legacy opcode, transformed handler is 0x84C380A" />
+  <OpcodeInfo value="25881" index="780" handler="9957648" comment="Legacy opcode, transformed handler is 0x852B714" />
+  <OpcodeInfo value="25883">
+    <Senders>
+      <Sender addr="9788998" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="25889" index="784" handler="10519248" comment="Legacy opcode, transformed handler is 0x823490C" />
+  <OpcodeInfo value="25891">
+    <Senders>
+      <Sender addr="9779497" name="Script_SetActionBarToggles" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="25895" index="787" handler="6140784" comment="Legacy opcode, transformed handler is 0x7E279AA" />
+  <OpcodeInfo value="25897" index="788" handler="5654528" comment="Legacy opcode, transformed handler is 0x7E10E34" />
+  <OpcodeInfo value="25901" index="790" handler="5671104" comment="Legacy opcode, transformed handler is 0x7E54EF0" />
+  <OpcodeInfo value="25903" index="791" handler="5630128" comment="Legacy opcode, transformed handler is 0x7E2AEE2" />
+  <OpcodeInfo value="25907" index="793" handler="5952448" comment="Legacy opcode, transformed handler is 0x7EB99EE" />
+  <OpcodeInfo value="25909">
+    <Senders>
+      <Sender addr="5616011" name="CGPlayer_C__QueryQuest" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="25911" index="795" handler="5609840" comment="Legacy opcode, transformed handler is 0x7EA5F9A" />
+  <OpcodeInfo value="25913">
+    <Senders>
+      <Sender addr="9232046" name="CGGameUI__StopCinematicInternal" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="25915" index="797" handler="5681712" comment="Legacy opcode, transformed handler is 0x7EF7856" />
+  <OpcodeInfo value="25919" index="799" handler="5671104" comment="Legacy opcode, transformed handler is 0x7F34EE2" />
+  <OpcodeInfo value="25921" index="800" handler="6296112" comment="Legacy opcode, transformed handler is 0x842D88C" />
+  <OpcodeInfo value="25923" index="801" handler="5591392" comment="Legacy opcode, transformed handler is 0x83617BE" />
+  <OpcodeInfo value="25927" index="803" handler="9625760" comment="Legacy opcode, transformed handler is 0x877A6FA" />
+  <OpcodeInfo value="25931" index="805" handler="9267984" comment="Legacy opcode, transformed handler is 0x8763166" />
+  <OpcodeInfo value="25935" index="807" handler="9731936" comment="Legacy opcode, transformed handler is 0x88145B2" />
+  <OpcodeInfo value="25937" index="808" handler="5873392" comment="Legacy opcode, transformed handler is 0x84C653C" />
+  <OpcodeInfo value="25943" index="811" handler="10183856" comment="Legacy opcode, transformed handler is 0x8902AFA" />
+  <OpcodeInfo value="25945">
+    <Senders>
+      <Sender addr="5067795" />
+      <Sender addr="5068219" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="25947" index="813" handler="6074560" comment="Legacy opcode, transformed handler is 0x8557706" />
+  <OpcodeInfo value="25957" index="818" handler="10354784" comment="Legacy opcode, transformed handler is 0x864C6D8" />
+  <OpcodeInfo value="25961" index="820" handler="9403616" comment="Legacy opcode, transformed handler is 0x85A4354" />
+  <OpcodeInfo value="25963" index="821" handler="5990480" comment="Legacy opcode, transformed handler is 0x8242EC6" />
+  <OpcodeInfo value="25965">
+    <Senders>
+      <Sender addr="10529333" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="25969" index="824" handler="5676016" comment="Legacy opcode, transformed handler is 0x829625C" />
+  <OpcodeInfo value="25971">
+    <Senders>
+      <Sender addr="6211856" name="CGUnit_C__VehicleNextSeat" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="25973">
+    <Senders>
+      <Sender addr="10517939" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="25977" index="828" handler="9958224" comment="Legacy opcode, transformed handler is 0x872B9B4" />
+  <OpcodeInfo value="25981" index="830" handler="9267984" comment="Legacy opcode, transformed handler is 0x86C3170" />
+  <OpcodeInfo value="25983">
+    <Senders>
+      <Sender addr="10411147" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="25985" index="832" handler="5671104" comment="Legacy opcode, transformed handler is 0x7794F5C" />
+  <OpcodeInfo value="25987" index="833" handler="9774928" comment="Legacy opcode, transformed handler is 0x7B5EDEE" />
+  <OpcodeInfo value="25989">
+    <Senders>
+      <Sender addr="5619595" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="25995" index="837" handler="9267984" comment="Legacy opcode, transformed handler is 0x7B631A6" />
+  <OpcodeInfo value="25999">
+    <Senders>
+      <Sender addr="5602235" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="26003">
+    <Senders>
+      <Sender addr="5599643" name="CGGameUI__OpenGossipWindow" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="26009" index="844" handler="5940288" comment="Legacy opcode, transformed handler is 0x7956AC4" />
+  <OpcodeInfo value="26021" index="850" handler="10117104" comment="Legacy opcode, transformed handler is 0x7A126A8" />
+  <OpcodeInfo value="26023" index="851" handler="9615584" comment="Legacy opcode, transformed handler is 0x7977F9A" />
+  <OpcodeInfo value="26025" index="852" handler="9409792" comment="Legacy opcode, transformed handler is 0x79A5BB4" />
+  <OpcodeInfo value="26027" index="853" handler="5574416" comment="Legacy opcode, transformed handler is 0x75DD5C6">
+    <Senders>
+      <Sender addr="10294355" name="Script_PingLocation_class34" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="26029">
+    <Senders>
+      <Sender addr="10518563" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="26033">
+    <Senders>
+      <Sender addr="5623115" name="CGPlayer_C__BuyPetition" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="26035" index="857" handler="9958016" comment="Legacy opcode, transformed handler is 0x7A8B92E" />
+  <OpcodeInfo value="26037" index="858" handler="9761984" comment="Legacy opcode, transformed handler is 0x7ABBB68" />
+  <OpcodeInfo value="26039" index="859" handler="9615408" comment="Legacy opcode, transformed handler is 0x7A77EDA">
+    <Senders>
+      <Sender addr="9620193" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="26041" index="860" handler="9957264" comment="Legacy opcode, transformed handler is 0x7B2B634" />
+  <OpcodeInfo value="26053" index="866" handler="6265040" comment="Legacy opcode, transformed handler is 0x7C65FA8" />
+  <OpcodeInfo value="26055">
+    <Senders>
+      <Sender addr="5052865" name="SendBugOpcode" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="26057">
+    <Senders>
+      <Sender addr="9693243" name="Script_HearthAndResurrectFromArea" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="26059" index="869" handler="9888480" comment="Legacy opcode, transformed handler is 0x7FFA9B6" />
+  <OpcodeInfo value="26061" index="870" handler="5654528" comment="Legacy opcode, transformed handler is 0x7C50ED0" />
+  <OpcodeInfo value="26063" index="871" handler="6442192" comment="Legacy opcode, transformed handler is 0x7CF13A2" />
+  <OpcodeInfo value="26067" index="873" handler="5654928" comment="Legacy opcode, transformed handler is 0x7C7105E" />
+  <OpcodeInfo value="26069" index="874" handler="6092144" comment="Legacy opcode, transformed handler is 0x7D3BC38" />
+  <OpcodeInfo value="26071">
+    <Senders>
+      <Sender addr="9933728" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="26075" index="877" handler="10183856" comment="Legacy opcode, transformed handler is 0x8142B76" />
+  <OpcodeInfo value="26083">
+    <Senders>
+      <Sender addr="9906772" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="26087" index="883" handler="9267984" comment="Legacy opcode, transformed handler is 0x7D2320A" />
+  <OpcodeInfo value="26089" index="884" handler="6255664" comment="Legacy opcode, transformed handler is 0x7AA3B24" />
+  <OpcodeInfo value="26091" index="885" handler="5952976" comment="Legacy opcode, transformed handler is 0x7A39CC6" />
+  <OpcodeInfo value="26093">
+    <Senders>
+      <Sender addr="5616779" name="SendPushQuestToParty" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="26095" index="887" handler="9920128" comment="Legacy opcode, transformed handler is 0x7E42572" />
+  <OpcodeInfo value="26097">
+    <Senders>
+      <Sender addr="5625323" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="26099" index="889" handler="9432816" comment="Legacy opcode, transformed handler is 0x7E0B5DE" />
+  <OpcodeInfo value="26101" index="890" handler="5655264" comment="Legacy opcode, transformed handler is 0x7AD11C8" />
+  <OpcodeInfo value="26105" index="892" handler="5593296" comment="Legacy opcode, transformed handler is 0x7B01FB4" />
+  <OpcodeInfo value="26107">
+    <Senders>
+      <Sender addr="10138675" />
+      <Sender addr="10144345" name="Script_CalendarContextInviteAvailable" />
+      <Sender addr="10144777" name="Script_CalendarContextInviteDecline" />
+      <Sender addr="10530196" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="26109" index="894" handler="5580384" comment="Legacy opcode, transformed handler is 0x7B3ED40" />
+  <OpcodeInfo value="26111" index="895" handler="5953520" comment="Legacy opcode, transformed handler is 0x7B79ED2" />
+  <OpcodeInfo value="27907" index="897" handler="5081168" comment="Legacy opcode, transformed handler is 0xFEE566E" />
+  <OpcodeInfo value="27909">
+    <Senders>
+      <Sender addr="9419163" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="27911" index="899" handler="6074432" comment="Legacy opcode, transformed handler is 0x10017E5A" />
+  <OpcodeInfo value="27917" index="902" handler="10183856" comment="Legacy opcode, transformed handler is 0x104A32C0" />
+  <OpcodeInfo value="27921" index="904" handler="10456896" comment="Legacy opcode, transformed handler is 0x10525D4C" />
+  <OpcodeInfo value="27923" index="905" handler="5585936" comment="Legacy opcode, transformed handler is 0x10060A1E" />
+  <OpcodeInfo value="27925" index="906" handler="5671104" comment="Legacy opcode, transformed handler is 0x100D56C8" />
+  <OpcodeInfo value="27927" index="907" handler="5940208" comment="Legacy opcode, transformed handler is 0x100F71FA" />
+  <OpcodeInfo value="27929">
+    <Senders>
+      <Sender addr="10516909" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="27931" index="909" handler="5576528" comment="Legacy opcode, transformed handler is 0x100DE556" />
+  <OpcodeInfo value="27933" index="910" handler="10183856" comment="Legacy opcode, transformed handler is 0x105A32B0" />
+  <OpcodeInfo value="27935" index="911" handler="5575680" comment="Legacy opcode, transformed handler is 0x1011E202" />
+  <OpcodeInfo value="27939">
+    <Senders>
+      <Sender addr="11759656" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="27941">
+    <Senders>
+      <Sender addr="10128217" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="27943" index="915" handler="9152704" comment="Legacy opcode, transformed handler is 0x101076FA" />
+  <OpcodeInfo value="27945" index="916" handler="9402656" comment="Legacy opcode, transformed handler is 0x101A4754" />
+  <OpcodeInfo value="27947">
+    <Senders>
+      <Sender addr="5636779" name="CGPlayer_C__ShopFromMerchant" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="27951">
+    <Senders>
+      <Sender addr="6291747" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="27955" index="921" handler="9267984" comment="Legacy opcode, transformed handler is 0x101E393E" />
+  <OpcodeInfo value="27959" index="923" handler="5593488" comment="Legacy opcode, transformed handler is 0xFEA27BA" />
+  <OpcodeInfo value="27961" index="924" handler="5681456" comment="Legacy opcode, transformed handler is 0xFF17F54" />
+  <OpcodeInfo value="27965" index="926" handler="10189264" comment="Legacy opcode, transformed handler is 0x103A47F0" />
+  <OpcodeInfo value="27967">
+    <Senders>
+      <Sender addr="9099872" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="27969" index="928" handler="5671104" comment="Legacy opcode, transformed handler is 0x1039571C" />
+  <OpcodeInfo value="27971" index="929" handler="5671104" comment="Legacy opcode, transformed handler is 0x1037571E" />
+  <OpcodeInfo value="27973" index="930" handler="9877728" comment="Legacy opcode, transformed handler is 0x107D8738">
+    <Senders>
+      <Sender addr="5601931" />
+      <Sender addr="9879445" name="PH_SMSG_STABLE_RESULT" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="27975" index="931" handler="5576496" comment="Legacy opcode, transformed handler is 0x1039E58A" />
+  <OpcodeInfo value="27977">
+    <Senders>
+      <Sender addr="5750677" name="CloseAllLootRolls" />
+      <Sender addr="5752974" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="27985" index="936" handler="9610960" comment="Legacy opcode, transformed handler is 0x1085751C" />
+  <OpcodeInfo value="27989">
+    <Senders>
+      <Sender addr="10517691" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="27991">
+    <Senders>
+      <Sender addr="9431751" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="27993" index="940" handler="5667408" comment="Legacy opcode, transformed handler is 0x10514894" />
+  <OpcodeInfo value="27995" index="941" handler="5952736" comment="Legacy opcode, transformed handler is 0x1053A326" />
+  <OpcodeInfo value="27999">
+    <Senders>
+      <Sender addr="5637939" />
+      <Sender addr="10229127" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="28001">
+    <Senders>
+      <Sender addr="5892288" name="CGGameObject_C__Use" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="28005">
+    <Senders>
+      <Sender addr="9776768" name="Send_CMSG_REQUEST_PET_INFO" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="28007" index="947" handler="5576944" comment="Legacy opcode, transformed handler is 0x1019E76A" />
+  <OpcodeInfo value="28009" index="948" handler="9925920" comment="Legacy opcode, transformed handler is 0x10624394" />
+  <OpcodeInfo value="28011" index="949" handler="9267984" comment="Legacy opcode, transformed handler is 0x10563986" />
+  <OpcodeInfo value="28013">
+    <Senders>
+      <Sender addr="9204459" name="Script_TogglePVP" />
+      <Sender addr="9204572" name="Script_SetPVP" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="28017" index="952" handler="9404576" comment="Legacy opcode, transformed handler is 0x10624F0C" />
+  <OpcodeInfo value="28019">
+    <Senders>
+      <Sender addr="5616907" name="CGPlayer_C__QuestLogRemoveQuest" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="28021" index="954" handler="9761872" comment="Legacy opcode, transformed handler is 0x106BC2B8" />
+  <OpcodeInfo value="28023" index="955" handler="5576368" comment="Legacy opcode, transformed handler is 0x1029E51A" />
+  <OpcodeInfo value="28025" index="956" handler="10183856" comment="Legacy opcode, transformed handler is 0x10763314" />
+  <OpcodeInfo value="28027" index="957" handler="9762256" comment="Legacy opcode, transformed handler is 0x106DC436" />
+  <OpcodeInfo value="28029">
+    <Senders>
+      <Sender addr="10526542" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="28035" index="961" handler="9113600" comment="Legacy opcode, transformed handler is 0xFABDE9E" />
+  <OpcodeInfo value="28037" index="962" handler="5631392" comment="Legacy opcode, transformed handler is 0xF7CBC38" />
+  <OpcodeInfo value="28041">
+    <Senders>
+      <Sender addr="5066060" name="FriendList__SendWho" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="28043">
+    <Senders>
+      <Sender addr="9207051" name="Script_SetTaxiBenchmarkMode" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="28045" index="966" handler="6442192" comment="Legacy opcode, transformed handler is 0xF911B60" />
+  <OpcodeInfo value="28047">
+    <Senders>
+      <Sender addr="10352316" name="Script_SignPetition" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="28051" index="969" handler="6442192" comment="Legacy opcode, transformed handler is 0xF931B5E" />
+  <OpcodeInfo value="28053" index="970" handler="8400912" comment="Legacy opcode, transformed handler is 0xFB6FE98" />
+  <OpcodeInfo value="28057">
+    <Senders>
+      <Sender addr="5617805" name="CGPlayer_C__OnLootResponse" />
+      <Sender addr="9255451" name="CGGameUI__CloseLoot" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="28061">
+    <Senders>
+      <Sender addr="9255985" name="CGGameUI__AcceptSpiritGuide" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="28063" index="975" handler="5579488" comment="Legacy opcode, transformed handler is 0xF91F162" />
+  <OpcodeInfo value="28065" index="976" handler="6125824" comment="Legacy opcode, transformed handler is 0xF6047BC" />
+  <OpcodeInfo value="28067">
+    <Senders>
+      <Sender addr="5915524" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="28069">
+    <Senders>
+      <Sender addr="9438022" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="28073">
+    <Senders>
+      <Sender addr="9772764" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="28079">
+    <Senders>
+      <Sender addr="4236166" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="28081" index="984" handler="9324800" comment="Legacy opcode, transformed handler is 0xFA117AC" />
+  <OpcodeInfo value="28085" index="986" handler="5576128" comment="Legacy opcode, transformed handler is 0xF6BE468" />
+  <OpcodeInfo value="28087" index="987" handler="5576256" comment="Legacy opcode, transformed handler is 0xF69E4EA" />
+  <OpcodeInfo value="28091" index="989" handler="9325248" comment="Legacy opcode, transformed handler is 0xFA71966" />
+  <OpcodeInfo value="28093" index="990" handler="5653536" comment="Legacy opcode, transformed handler is 0xF7512C0" />
+  <OpcodeInfo value="28099">
+    <Senders>
+      <Sender addr="9717803" name="Script_ConfirmAcceptQuest" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="28101" index="994" handler="5665504" comment="Legacy opcode, transformed handler is 0xFBD41B8" />
+  <OpcodeInfo value="28103">
+    <Senders>
+      <Sender addr="5600708" name="CGPlayer_C__TalkToBinder" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="28105" index="996" handler="9883008" comment="Legacy opcode, transformed handler is 0x10019C54" />
+  <OpcodeInfo value="28107" index="997" handler="9267984" comment="Legacy opcode, transformed handler is 0xFF639E6" />
+  <OpcodeInfo value="28111" index="999" handler="9926960" comment="Legacy opcode, transformed handler is 0x10044802" />
+  <OpcodeInfo value="28113" index="1000" handler="9761472" comment="Legacy opcode, transformed handler is 0x1007C18C" />
+  <OpcodeInfo value="28117" index="1002" handler="9325184" comment="Legacy opcode, transformed handler is 0x10051948" />
+  <OpcodeInfo value="28121">
+    <Senders>
+      <Sender addr="9199483" name="Script_ResetInstances" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="28123">
+    <Senders>
+      <Sender addr="9907241" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="28125" index="1006" handler="6296112" comment="Legacy opcode, transformed handler is 0xFDEE0F0" />
+  <OpcodeInfo value="28127">
+    <Senders>
+      <Sender addr="9201521" name="Script_ArenaTeamUninviteByName" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="28131" index="1009" handler="9267984" comment="Legacy opcode, transformed handler is 0xFCE3A0E" />
+  <OpcodeInfo value="28135">
+    <Senders>
+      <Sender addr="5079073" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="28137" index="1012" handler="5578544" comment="Legacy opcode, transformed handler is 0xF9FEE24" />
+  <OpcodeInfo value="28143" index="1015" handler="9152704" comment="Legacy opcode, transformed handler is 0xFD877B2" />
+  <OpcodeInfo value="28145">
+    <Senders>
+      <Sender addr="5650498" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="28147" index="1017" handler="9267984" comment="Legacy opcode, transformed handler is 0xFDE39FE" />
+  <OpcodeInfo value="28149">
+    <Senders>
+      <Sender addr="9621773" name="Script_PromoteToAssistant" />
+      <Sender addr="9621997" name="Script_DemoteAssistant" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="28151" index="1019" handler="9625440" comment="Legacy opcode, transformed handler is 0xFE7AE4A">
+    <Senders>
+      <Sender addr="9626928" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="28153" index="1020" handler="6296112" comment="Legacy opcode, transformed handler is 0xFBAE114" />
+  <OpcodeInfo value="28157" index="1022" handler="9325216" comment="Legacy opcode, transformed handler is 0xFED1980" />
+  <OpcodeInfo value="28159" index="1023" handler="5639040" comment="Legacy opcode, transformed handler is 0xFB2DA62" />
+  <OpcodeInfo value="29953">
+    <Senders>
+      <Sender addr="6920052" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="29957">
+    <Senders>
+      <Sender addr="6926949" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="29961">
+    <Senders>
+      <Sender addr="6929300" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="29965">
+    <Senders>
+      <Sender addr="6929429" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="30081">
+    <Senders>
+      <Sender addr="6927460" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="30085">
+    <Senders>
+      <Sender addr="6919067" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="30089">
+    <Senders>
+      <Sender addr="6919147" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="32009">
+    <Senders>
+      <Sender addr="6918539" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="32013">
+    <Senders>
+      <Sender addr="6918113" />
+    </Senders>
+  </OpcodeInfo>
+  <OpcodeInfo value="32141">
+    <Senders>
+      <Sender addr="6926516" />
+    </Senders>
+  </OpcodeInfo>
 </ArrayOfOpcodeInfo>
