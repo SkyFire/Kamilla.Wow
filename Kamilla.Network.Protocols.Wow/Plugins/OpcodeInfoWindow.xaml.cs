@@ -237,6 +237,18 @@ namespace Kamilla.Network.Protocols.Wow.Plugins
 
                 if (!string.IsNullOrEmpty(info.Comment))
                     builder.AppendLine(" Comment: " + info.Comment);
+
+                if (info.Senders != null && info.Senders.Length > 0)
+                {
+                    builder.AppendLine(" Senders:");
+                    foreach (var sender in info.Senders)
+                    {
+                        if (string.IsNullOrEmpty(sender.Name))
+                            builder.AppendLine("  0x" + sender.Address.ToString("X6"));
+                        else
+                            builder.AppendFormatLine("  0x{0:X6} - {1}", sender.Address, sender.Name);
+                    }
+                }
             }
 
             builder.AppendLine();

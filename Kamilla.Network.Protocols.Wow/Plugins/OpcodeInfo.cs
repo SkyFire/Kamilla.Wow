@@ -11,8 +11,17 @@ namespace Kamilla.Network.Protocols.Wow.Plugins
 {
     [Browsable(false), EditorBrowsable(EditorBrowsableState.Never)]
     [XmlRoot("OpcodeInfo")]
-    public class OpcodeInfo : IEquatable<OpcodeInfo>
+    public class OpcodeInfo
     {
+        public class OpcodeSenderInfo
+        {
+            [XmlAttribute("addr")]
+            public uint Address;
+
+            [XmlAttribute("name")]
+            public string Name;
+        }
+
         [XmlAttribute("value")]
         public uint Opcode;
 
@@ -31,15 +40,9 @@ namespace Kamilla.Network.Protocols.Wow.Plugins
         [XmlAttribute("comment")]
         public string Comment;
 
-        public bool Equals(OpcodeInfo other)
-        {
-            return this.Comment == other.Comment
-                && this.Constructor == other.Constructor
-                && this.Destructor == other.Destructor
-                && this.Handler == other.Handler
-                && this.Index == other.Index
-                && this.Opcode == other.Opcode;
-        }
+        [XmlArray("Senders")]
+        [XmlArrayItem("Sender")]
+        public OpcodeSenderInfo[] Senders;
     }
 
     sealed class OpcodeInfoPlugin : INetworkLogViewerPlugin
