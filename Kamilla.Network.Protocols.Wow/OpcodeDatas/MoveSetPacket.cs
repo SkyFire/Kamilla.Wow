@@ -12,7 +12,7 @@ namespace Kamilla.Network.Protocols.Wow.OpcodeDatas
     {
         public float NewValue { get; set; }
 
-        protected override TransferDirection TransferDirection
+        protected override TransferDirection Direction
         {
             get { return TransferDirection.ToClient; }
         }

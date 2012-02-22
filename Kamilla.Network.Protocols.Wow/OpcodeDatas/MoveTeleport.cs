@@ -8,7 +8,7 @@ namespace Kamilla.Network.Protocols.Wow.OpcodeDatas
             get { return WowOpcodes.SMSG_MOVE_UPDATE_TELEPORT; }
         }
 
-        protected override TransferDirection TransferDirection
+        protected override TransferDirection Direction
         {
             get { return TransferDirection.ToClient; }
         }

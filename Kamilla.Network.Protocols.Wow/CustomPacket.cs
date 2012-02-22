@@ -9,7 +9,7 @@ namespace Kamilla.Network.Protocols.Wow
     public class CustomPacket
     {
         private List<byte> Data;
-        public TransferDirection TransferDirection { get; set; }
+        public TransferDirection Direction { get; set; }
         public WowOpcodes Opcode { get; set; }
 
         // ctor
@@ -17,12 +17,12 @@ namespace Kamilla.Network.Protocols.Wow
         {
             this.Opcode = opcode;
             this.Data = new List<byte>();
-            this.TransferDirection = transferDirection;
+            this.Direction = transferDirection;
         }
 
         public WowPacket ToPacket()
         {
-            return new WowPacket(this.Data.ToArray(), TransferDirection, PacketFlags.Custom, WowPacketFlags.None,
+            return new WowPacket(this.Data.ToArray(), Direction, PacketFlags.Custom, WowPacketFlags.None,
                 DateTime.Now, (uint)Environment.TickCount, (uint)Opcode, 0);
         }
 

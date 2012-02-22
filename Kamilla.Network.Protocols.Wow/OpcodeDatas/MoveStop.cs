@@ -8,7 +8,7 @@ namespace Kamilla.Network.Protocols.Wow.OpcodeDatas
             get { return WowOpcodes.CMSG_MOVE_STOP; }
         }
 
-        protected override TransferDirection TransferDirection
+        protected override TransferDirection Direction
         {
             get { return TransferDirection.ToServer; }
         }
