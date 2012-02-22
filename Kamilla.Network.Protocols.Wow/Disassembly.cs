@@ -10,7 +10,7 @@ namespace Kamilla.Network.Protocols.Wow
         /// <summary>
         /// The unique client build number. This field is constant.
         /// </summary>
-        public const ushort ClientBuild = 15211;
+        public const ushort ClientBuild = 15314;
 
         /// <summary>
         /// A static class containing Connection-related constants.
@@ -23,19 +23,19 @@ namespace Kamilla.Network.Protocols.Wow
             public const long Current = 0x009BD044;
 
             /// <remarks>
-            /// Updated for client build 15211.
+            /// Updated for client build 15314.
             /// </remarks>
             public const long Offset_SessionKey = 0x0508;
             /// <remarks>
-            /// Updated for client build 15211.
+            /// Updated for client build 15314.
             /// </remarks>
             public const long SessionKey_Length = 0x0028;
             /// <remarks>
-            /// Updated for client build 15211.
+            /// Updated for client build 15314.
             /// </remarks>
             public const long Offset_OpcodeHandlers = 0x0560;
             /// <remarks>
-            /// Updated for client build 15211.
+            /// Updated for client build 15314.
             /// </remarks>
             public const long Offset_OpcodeHandlerStates = 0x2560;
         }
@@ -51,19 +51,19 @@ namespace Kamilla.Network.Protocols.Wow
             public const long Current = 0x00C9F7F0;
 
             /// <remarks>
-            /// Updated for client build 15211.
+            /// Updated for client build 15314.
             /// </remarks>
             public const long Offset_SessionKey = 0x050C;
             /// <remarks>
-            /// Updated for client build 15211.
+            /// Updated for client build 15314.
             /// </remarks>
             public const long SessionKey_Length = 0x0028;
             /// <remarks>
-            /// Updated for client build 15211.
+            /// Updated for client build 15314.
             /// </remarks>
             public const long Offset_OpcodeHandlers = 0x0568;
             /// <remarks>
-            /// Updated for client build 15211.
+            /// Updated for client build 15314.
             /// </remarks>
             public const long Offset_OpcodeHandlerStates = 0x4568;
         }
@@ -90,21 +90,21 @@ namespace Kamilla.Network.Protocols.Wow
         /// <param name="opcode">The uncondensed opcode.</param>
         /// <returns>The reqular opcode index. Value ranges in [0, 2048].</returns>
         /// <remarks>
-        /// Updated for client build 15211.
+        /// Updated for client build 15314.
         /// </remarks>
         public static uint CondenseOpcode(this WowOpcodes opcode)
         {
             var i = (uint)opcode;
-            return ((i & 0xFE) | ((i & 0x800 | (i >> 1) & 0x3000) >> 3)) >> 1;
+            return i & 1 | ((i & 8 | ((i & 0x1FC0 | (i >> 1) & 0x2000) >> 2)) >> 2);
         }
 
         /// <remarks>
-        /// Updated for client build 15211.
+        /// Updated for client build 15314.
         /// </remarks>
         public static bool IsRegularOpcode(this WowOpcodes opcode)
         {
             var i = (uint)opcode;
-            return (i & 0x9701) == 1281;
+            return (i & 0xA036) == 8228;
         }
 
         /// <summary>
@@ -113,12 +113,12 @@ namespace Kamilla.Network.Protocols.Wow
         /// <param name="opcode">The uncondensed JAM opcode.</param>
         /// <returns>The JAM opcode index. Value ranges in [0, 128].</returns>
         /// <remarks>
-        /// Updated for client build 15211.
+        /// Updated for client build 15314.
         /// </remarks>
         public static uint CondenseJamOpcode(this WowOpcodes opcode)
         {
             var i = (uint)opcode;
-            return i & 1 | ((i & 4 | (((i & 0xF0) | ((i & 0x200 | (i >> 1) & 0xC00) >> 1)) >> 1)) >> 1);
+            return (i & 2 | ((i & 8 | ((i & 0x1C0 | ((i & 0x1C00 | (i >> 1) & 0x2000) >> 1)) >> 2)) >> 1)) >> 1;
         }
 
         /// <summary>
@@ -127,11 +127,11 @@ namespace Kamilla.Network.Protocols.Wow
         /// <param name="opcode">The current opcode.</param>
         /// <returns>true if the current opcode is JAM opcode; othewise, false.</returns>
         /// <remarks>
-        /// Updated for client build 15211.
+        /// Updated for client build 15314.
         /// </remarks>
         public static bool IsJamOpcode(this WowOpcodes opcode)
         {
-            return ((uint)opcode & 0xE50A) == 1024;
+            return ((uint)opcode & 0xA235) == 8196;
         }
 
         /// <remarks>
