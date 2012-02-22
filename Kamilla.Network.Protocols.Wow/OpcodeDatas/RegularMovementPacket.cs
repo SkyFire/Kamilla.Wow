@@ -119,7 +119,7 @@ namespace Kamilla.Network.Protocols.Wow.OpcodeDatas
         /// <summary>
         /// Gets the packet transfer direction.
         /// </summary>
-        protected abstract TransferDirection TransferDirection { get; }
+        protected abstract TransferDirection Direction { get; }
 
         /// <summary>
         /// Gets the opcode that is used to transmit the packet.
@@ -143,7 +143,7 @@ namespace Kamilla.Network.Protocols.Wow.OpcodeDatas
         /// </returns>
         public override CustomPacket CreatePacket()
         {
-            return base.CreatePacket(this.Opcode, this.TransferDirection);
+            return base.CreatePacket(this.Opcode, this.Direction);
         }
 
         void VerifySequence(MovementStatusElements[] sequence)
@@ -225,7 +225,7 @@ namespace Kamilla.Network.Protocols.Wow.OpcodeDatas
                     break;
                 case MovementStatusElements.HaveFallDirection:
                     if (status.HaveFallData)
-                        status.HaveFallTransferDirection = reader.UnalignedReadBit();
+                        status.HaveFallDirection = reader.UnalignedReadBit();
                     break;
                 case MovementStatusElements.HaveTransportData:
                     status.HaveTransportData = reader.UnalignedReadBit();
@@ -279,7 +279,7 @@ namespace Kamilla.Network.Protocols.Wow.OpcodeDatas
                         status.SplineElevation = reader.ReadSingle();
                     break;
                 case MovementStatusElements.FallHorizontalSpeed:
-                    if (status.HaveFallTransferDirection)
+                    if (status.HaveFallDirection)
                         status.FallHorizontalSpeed = reader.ReadSingle();
                     break;
                 case MovementStatusElements.FallVerticalSpeed:
@@ -287,11 +287,11 @@ namespace Kamilla.Network.Protocols.Wow.OpcodeDatas
                         status.FallVerticalSpeed = reader.ReadSingle();
                     break;
                 case MovementStatusElements.FallCosAngle:
-                    if (status.HaveFallTransferDirection)
+                    if (status.HaveFallDirection)
                         status.FallCosAngle = reader.ReadSingle();
                     break;
                 case MovementStatusElements.FallSinAngle:
-                    if (status.HaveFallTransferDirection)
+                    if (status.HaveFallDirection)
                         status.FallSinAngle = reader.ReadSingle();
                     break;
                 case MovementStatusElements.TransportSeat:
@@ -433,7 +433,7 @@ namespace Kamilla.Network.Protocols.Wow.OpcodeDatas
                     break;
                 case MovementStatusElements.HaveFallDirection:
                     if (status.HaveFallData)
-                        writer.UnalignedWriteBit(status.HaveFallTransferDirection);
+                        writer.UnalignedWriteBit(status.HaveFallDirection);
                     break;
                 case MovementStatusElements.HaveTransportData:
                     writer.UnalignedWriteBit(status.HaveTransportData);
@@ -480,7 +480,7 @@ namespace Kamilla.Network.Protocols.Wow.OpcodeDatas
                         writer.WriteUInt32(status.FallTime);
                     break;
                 case MovementStatusElements.FallHorizontalSpeed:
-                    if (status.HaveFallTransferDirection)
+                    if (status.HaveFallDirection)
                         writer.WriteSingle(status.FallHorizontalSpeed);
                     break;
                 case MovementStatusElements.FallVerticalSpeed:
@@ -488,11 +488,11 @@ namespace Kamilla.Network.Protocols.Wow.OpcodeDatas
                         writer.WriteSingle(status.FallVerticalSpeed);
                     break;
                 case MovementStatusElements.FallCosAngle:
-                    if (status.HaveFallTransferDirection)
+                    if (status.HaveFallDirection)
                         writer.WriteSingle(status.FallCosAngle);
                     break;
                 case MovementStatusElements.FallSinAngle:
-                    if (status.HaveFallTransferDirection)
+                    if (status.HaveFallDirection)
                         writer.WriteSingle(status.FallSinAngle);
                     break;
                 case MovementStatusElements.TransportSeat:

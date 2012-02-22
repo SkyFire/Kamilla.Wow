@@ -3,7 +3,7 @@ namespace Kamilla.Network.Protocols.Wow.OpcodeDatas
 {
     public sealed class SplineGravityDisable : PackedGuidPacket
     {
-        public override TransferDirection TransferDirection
+        public override TransferDirection Direction
         {
             get { return TransferDirection.ToClient; }
         }

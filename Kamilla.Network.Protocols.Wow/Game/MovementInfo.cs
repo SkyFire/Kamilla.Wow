@@ -79,7 +79,7 @@ namespace Kamilla.Network.Protocols.Wow.Game
         public bool HaveTransportTime3;
         public bool HavePitch;
         public bool HaveFallData;
-        public bool HaveFallTransferDirection;
+        public bool HaveFallDirection;
         public bool HaveSplineElevation;
         public bool HaveSpline;
         public bool HaveSpline2;
@@ -145,7 +145,7 @@ namespace Kamilla.Network.Protocols.Wow.Game
                 builder.AppendLine(" Fall Time: " + FallTime);
                 builder.AppendLine(" Fall Vertical Speed: " + FallVerticalSpeed);
 
-                if (HaveFallTransferDirection)
+                if (HaveFallDirection)
                 {
                     builder.AppendLine("  Fall Cos Angle: " + FallCosAngle);
                     builder.AppendLine("  Fall Sin Angle: " + FallSinAngle);
@@ -288,7 +288,7 @@ namespace Kamilla.Network.Protocols.Wow.Game
                 haveOrientation = !Reader.UnalignedReadBit();
 
                 if (this.HaveFallData)
-                    this.HaveFallTransferDirection = Reader.UnalignedReadBit();
+                    this.HaveFallDirection = Reader.UnalignedReadBit();
 
                 this.HaveSplineElevation = !Reader.UnalignedReadBit();
             }
@@ -504,7 +504,7 @@ namespace Kamilla.Network.Protocols.Wow.Game
                 if (this.HaveFallData)
                 {
                     Reader.ReadUInt32(out this.FallTime);
-                    if (this.HaveFallTransferDirection)
+                    if (this.HaveFallDirection)
                     {
                         Reader
                             .ReadSingle(out this.FallSinAngle)
@@ -701,7 +701,7 @@ namespace Kamilla.Network.Protocols.Wow.Game
                     .UnalignedWriteBit(!(this.Orientation != 0.0f)); // !haveOrient
 
                 if (this.HaveFallData)
-                    Writer.UnalignedWriteBit(this.HaveFallTransferDirection);
+                    Writer.UnalignedWriteBit(this.HaveFallDirection);
 
                 Writer.UnalignedWriteBit(!this.HaveSplineElevation);
             }
@@ -903,7 +903,7 @@ namespace Kamilla.Network.Protocols.Wow.Game
                 if (this.HaveFallData)
                 {
                     Writer.WriteUInt32(this.FallTime);
-                    if (this.HaveFallTransferDirection)
+                    if (this.HaveFallDirection)
                     {
                         Writer
                             .WriteSingle(this.FallSinAngle)
@@ -992,8 +992,8 @@ namespace Kamilla.Network.Protocols.Wow.Game
                 builder.Append("Attacking Target, ");
             if (this.HaveFallData)
                 builder.Append("Fall Data, ");
-            if (this.HaveFallTransferDirection)
-                builder.Append("Fall TransferDirection, ");
+            if (this.HaveFallDirection)
+                builder.Append("Fall Direction, ");
             if (this.HaveGameObjectPosition)
                 builder.Append("GO Position, ");
             if (this.HaveGameObjectRotation)
@@ -1102,7 +1102,7 @@ namespace Kamilla.Network.Protocols.Wow.Game
                 {
                     builder.Append("Fall Time: ").Append(this.FallTime).AppendLine();
 
-                    if (this.HaveFallTransferDirection)
+                    if (this.HaveFallDirection)
                     {
                         builder
                             .Append("Fall Sin Angle: ").Append(this.FallSinAngle).AppendLine()
@@ -1145,7 +1145,7 @@ namespace Kamilla.Network.Protocols.Wow.Game
         public void SetStatus(MovementStatus status)
         {
             base.HaveFallData = status.HaveFallData;
-            base.HaveFallTransferDirection = status.HaveFallTransferDirection;
+            base.HaveFallDirection = status.HaveFallDirection;
             base.HavePitch = status.HavePitch;
             base.HaveSpline = status.HaveSpline;
             base.HaveSplineElevation = status.HaveSplineElevation;
