@@ -3,7 +3,7 @@ namespace Kamilla.Network.Protocols.Wow.OpcodeDatas
 {
     internal sealed class MoveSwimStop : RegularMovementPacket
     {
-        protected override TransferDirection TransferDirection
+        protected override TransferDirection Direction
         {
             get { return TransferDirection.ToServer; }
         }

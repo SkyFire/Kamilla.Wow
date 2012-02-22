@@ -12,7 +12,7 @@ namespace Kamilla.Network.Protocols.Wow.OpcodeDatas
         /// </summary>
         public uint ChangeCounter { get; set; }
 
-        protected sealed override TransferDirection TransferDirection
+        protected sealed override TransferDirection Direction
         {
             get { return TransferDirection.ToServer; }
         }

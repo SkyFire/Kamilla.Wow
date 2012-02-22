@@ -6,8 +6,8 @@ namespace Kamilla.Network.Protocols.Wow.OpcodeDatas
 {
     public sealed class ForceKnockBack : ForcePacket
     {
-        public float TransferDirectionCos { get; set; }
-        public float TransferDirectionSin { get; set; }
+        public float DirectionCos { get; set; }
+        public float DirectionSin { get; set; }
         public float HorizontalSpeed { get; set; }
         public float VerticalSpeed { get; set; }
 
@@ -28,10 +28,10 @@ namespace Kamilla.Network.Protocols.Wow.OpcodeDatas
             switch (index)
             {
                 case -2:
-                    this.TransferDirectionCos = reader.ReadSingle();
+                    this.DirectionCos = reader.ReadSingle();
                     break;
                 case -3:
-                    this.TransferDirectionSin = reader.ReadSingle();
+                    this.DirectionSin = reader.ReadSingle();
                     break;
                 case -4:
                     this.HorizontalSpeed = reader.ReadSingle();
@@ -50,10 +50,10 @@ namespace Kamilla.Network.Protocols.Wow.OpcodeDatas
             switch (index)
             {
                 case -2:
-                    writer.WriteSingle(this.TransferDirectionCos);
+                    writer.WriteSingle(this.DirectionCos);
                     break;
                 case -3:
-                    writer.WriteSingle(this.TransferDirectionSin);
+                    writer.WriteSingle(this.DirectionSin);
                     break;
                 case -4:
                     writer.WriteSingle(this.HorizontalSpeed);
@@ -72,8 +72,8 @@ namespace Kamilla.Network.Protocols.Wow.OpcodeDatas
             base.ToString(builder);
 
             builder
-                .AppendLine("TransferDirection Cos: " + TransferDirectionCos)
-                .AppendLine("TransferDirection Sin: " + TransferDirectionSin)
+                .AppendLine("Direction Cos: " + DirectionCos)
+                .AppendLine("Direction Sin: " + DirectionSin)
                 .AppendLine("Horizontal Speed: " + HorizontalSpeed)
                 .AppendLine("Vertical Speed: " + VerticalSpeed);
         }

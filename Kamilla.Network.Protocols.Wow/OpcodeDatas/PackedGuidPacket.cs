@@ -9,7 +9,7 @@ namespace Kamilla.Network.Protocols.Wow.OpcodeDatas
         public WowGuid Guid { get; set; }
 
         public abstract WowOpcodes Opcode { get; }
-        public abstract TransferDirection TransferDirection { get; }
+        public abstract TransferDirection Direction { get; }
 
         protected override int ByteXorValue
         {
@@ -43,7 +43,7 @@ namespace Kamilla.Network.Protocols.Wow.OpcodeDatas
 
         public sealed override CustomPacket CreatePacket()
         {
-            return base.CreatePacket(this.Opcode, this.TransferDirection);
+            return base.CreatePacket(this.Opcode, this.Direction);
         }
     }
 }
