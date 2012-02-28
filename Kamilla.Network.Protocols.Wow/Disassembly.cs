@@ -10,7 +10,7 @@ namespace Kamilla.Network.Protocols.Wow
         /// <summary>
         /// The unique client build number. This field is constant.
         /// </summary>
-        public const ushort ClientBuild = 15314;
+        public const ushort ClientBuild = 15354;
 
         /// <summary>
         /// A static class containing Connection-related constants.
@@ -18,24 +18,24 @@ namespace Kamilla.Network.Protocols.Wow
         public static class Connection
         {
             /// <remarks>
-            /// Updated for client build 15211.
+            /// Updated for client build 15354.
             /// </remarks>
-            public const long Current = 0x009BD044;
+            public const long Current = 0x009BCA0C;
 
             /// <remarks>
-            /// Updated for client build 15314.
+            /// Updated for client build 15354.
             /// </remarks>
             public const long Offset_SessionKey = 0x0508;
             /// <remarks>
-            /// Updated for client build 15314.
+            /// Updated for client build 15354.
             /// </remarks>
             public const long SessionKey_Length = 0x0028;
             /// <remarks>
-            /// Updated for client build 15314.
+            /// Updated for client build 15354.
             /// </remarks>
             public const long Offset_OpcodeHandlers = 0x0560;
             /// <remarks>
-            /// Updated for client build 15314.
+            /// Updated for client build 15354.
             /// </remarks>
             public const long Offset_OpcodeHandlerStates = 0x2560;
         }
@@ -51,19 +51,19 @@ namespace Kamilla.Network.Protocols.Wow
             public const long Current = 0x00C9F7F0;
 
             /// <remarks>
-            /// Updated for client build 15314.
+            /// Updated for client build 15354.
             /// </remarks>
             public const long Offset_SessionKey = 0x050C;
             /// <remarks>
-            /// Updated for client build 15314.
+            /// Updated for client build 15354.
             /// </remarks>
             public const long SessionKey_Length = 0x0028;
             /// <remarks>
-            /// Updated for client build 15314.
+            /// Updated for client build 15354.
             /// </remarks>
             public const long Offset_OpcodeHandlers = 0x0568;
             /// <remarks>
-            /// Updated for client build 15314.
+            /// Updated for client build 15354.
             /// </remarks>
             public const long Offset_OpcodeHandlerStates = 0x4568;
         }
@@ -72,9 +72,9 @@ namespace Kamilla.Network.Protocols.Wow
         /// Address of the current locale string of the client.
         /// </summary>
         /// <remarks>
-        /// Updated for client build 15211.
+        /// Updated for client build 15354.
         /// </remarks>
-        public const long Locale = 0x00971B34;
+        public const long Locale = 0x009714FC;
 
         /// <summary>
         /// Address of the current locale string of the Windows x64 client.
@@ -90,7 +90,7 @@ namespace Kamilla.Network.Protocols.Wow
         /// <param name="opcode">The uncondensed opcode.</param>
         /// <returns>The reqular opcode index. Value ranges in [0, 2048].</returns>
         /// <remarks>
-        /// Updated for client build 15314.
+        /// Updated for client build 15354.
         /// </remarks>
         public static uint CondenseOpcode(this WowOpcodes opcode)
         {
@@ -99,7 +99,7 @@ namespace Kamilla.Network.Protocols.Wow
         }
 
         /// <remarks>
-        /// Updated for client build 15314.
+        /// Updated for client build 15354.
         /// </remarks>
         public static bool IsRegularOpcode(this WowOpcodes opcode)
         {
@@ -113,7 +113,7 @@ namespace Kamilla.Network.Protocols.Wow
         /// <param name="opcode">The uncondensed JAM opcode.</param>
         /// <returns>The JAM opcode index. Value ranges in [0, 128].</returns>
         /// <remarks>
-        /// Updated for client build 15314.
+        /// Updated for client build 15354.
         /// </remarks>
         public static uint CondenseJamOpcode(this WowOpcodes opcode)
         {
@@ -127,7 +127,7 @@ namespace Kamilla.Network.Protocols.Wow
         /// <param name="opcode">The current opcode.</param>
         /// <returns>true if the current opcode is JAM opcode; othewise, false.</returns>
         /// <remarks>
-        /// Updated for client build 15314.
+        /// Updated for client build 15354.
         /// </remarks>
         public static bool IsJamOpcode(this WowOpcodes opcode)
         {
@@ -135,24 +135,24 @@ namespace Kamilla.Network.Protocols.Wow
         }
 
         /// <remarks>
-        /// Updated for client build 15211.
+        /// Updated for client build 15354.
         /// </remarks>
         public static uint CondenseAuthOpcode(this WowOpcodes opcode)
         {
             uint i = (uint)opcode;
-            return i & 1 | ((i & 0x20 | ((i & 0x200 | (i >> 2) & 0x400) >> 3)) >> 4);
+            return (i & 0x10 | (((i & 0xC0) | (i >> 3) & 0x100) >> 1)) >> 4;
         }
 
         /// <remarks>
-        /// Updated for client build 15211.
+        /// Updated for client build 15354.
         /// </remarks>
         public static bool IsAuthOpcode(this WowOpcodes opcode)
         {
-            return ((uint)opcode & 0xEDDE) == 264;
+            return ((uint)opcode & 0xF72F) == 5;
         }
 
         /// <remarks>
-        /// Updated for client build 15211.
+        /// Updated for client build 15354.
         /// </remarks>
         public static bool IsCompressedOpcode(this WowOpcodes opcode)
         {
@@ -160,7 +160,7 @@ namespace Kamilla.Network.Protocols.Wow
         }
 
         /// <remarks>
-        /// Updated for client build 15211.
+        /// Updated for client build 15354.
         /// </remarks>
         public static WowOpcodes MakeUncompressed(this WowOpcodes opcode)
         {
@@ -171,7 +171,7 @@ namespace Kamilla.Network.Protocols.Wow
         }
 
         /// <remarks>
-        /// Updated for client build 15211.
+        /// Updated for client build 15354.
         /// </remarks>
         public static uint GetHandlerByOpcode(uint transformedHandler, WowOpcodes opcode)
         {
