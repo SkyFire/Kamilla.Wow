@@ -118,72 +118,71 @@ namespace Kamilla.Network.Protocols.Wow.OpcodeDatas
 
         protected virtual void ReadMovementData()
         {
-#warning not implemented
-            //this.UnkByte = Reader.ReadByte();
-            //m_currentPosition = Reader.ReadVector3();
-            //m_tickCount = Reader.ReadUInt32();
-            //m_splineType = (SplineType)Reader.ReadByte();
+            this.UnkByte = Reader.ReadByte();
+            m_currentPosition = Reader.ReadVector3();
+            m_tickCount = Reader.ReadUInt32();
+            m_splineType = (SplineType)Reader.ReadByte();
 
-            //switch (m_splineType)
-            //{
-            //    case SplineType.Normal:
-            //        break;
-            //    case SplineType.Stop:
-            //        // client sets following values to:
-            //        // movementFlags = 0x1000;
-            //        // moveTime = 0;
-            //        // splinesCount = 1;
-            //        m_points = new Vector3[0];
-            //        return;
-            //    case SplineType.FacingSpot:
-            //        m_facingSpot = Reader.ReadVector3();
-            //        break;
-            //    case SplineType.FacingTarget:
-            //        m_facingTarget = Reader.ReadGuid();
-            //        break;
-            //    case SplineType.FacingAngle:
-            //        m_facingAngle = Reader.ReadSingle();
-            //        break;
-            //    default:
-            //        throw new Exception("Not updated SplineType switch in MonsterMove (Read)");
-            //}
+            switch (m_splineType)
+            {
+                case SplineType.Normal:
+                    break;
+                case SplineType.Stop:
+                    // client sets following values to:
+                    // movementFlags = 0x1000;
+                    // moveTime = 0;
+                    // splinesCount = 1;
+                    m_points = new Vector3[0];
+                    return;
+                case SplineType.FacingSpot:
+                    m_facingSpot = Reader.ReadVector3();
+                    break;
+                case SplineType.FacingTarget:
+                    m_facingTarget = Reader.ReadGuid();
+                    break;
+                case SplineType.FacingAngle:
+                    m_facingAngle = Reader.ReadSingle();
+                    break;
+                default:
+                    throw new Exception("Not updated SplineType switch in MonsterMove (Read)");
+            }
 
-            //m_splineFlags = (SplineFlags)Reader.ReadUInt32();
+            m_splineFlags = (SplineFlags)Reader.ReadUInt32();
 
-            //if ((m_splineFlags & SplineFlags.Animation) != 0)
-            //{
-            //    m_animEmote = Reader.ReadByte();
-            //    m_animTime = Reader.ReadUInt32();
-            //}
+            if ((m_splineFlags & SplineFlags.Animation) != 0)
+            {
+                m_animEmote = Reader.ReadByte();
+                m_animTime = Reader.ReadUInt32();
+            }
 
-            //m_moveTime = Reader.ReadUInt32();
+            m_moveTime = Reader.ReadUInt32();
 
-            //if ((m_splineFlags & SplineFlags.Parabolic) != 0)
-            //{
-            //    m_trajectorySingle = Reader.ReadSingle();
-            //    m_trajectoryUInt32 = Reader.ReadUInt32();
-            //}
+            if ((m_splineFlags & SplineFlags.Parabolic) != 0)
+            {
+                m_trajectorySingle = Reader.ReadSingle();
+                m_trajectoryUInt32 = Reader.ReadUInt32();
+            }
 
-            //uint pointCount = Reader.ReadUInt32();
-            //m_points = new Vector3[pointCount];
+            uint pointCount = Reader.ReadUInt32();
+            m_points = new Vector3[pointCount];
 
-            //if ((m_splineFlags & (SplineFlags.Flying | SplineFlags.CatMullRom)) != 0)
-            //{
-            //    for (uint i = 0; i < pointCount; ++i)
-            //        m_points[i] = Reader.ReadVector3();
-            //}
-            //else
-            //{
-            //    m_points[0] = Reader.ReadVector3();
+            if ((m_splineFlags & (SplineFlags.Flying | SplineFlags.CatMullRom)) != 0)
+            {
+                for (uint i = 0; i < pointCount; ++i)
+                    m_points[i] = Reader.ReadVector3();
+            }
+            else
+            {
+                m_points[0] = Reader.ReadVector3();
 
-            //    var packedAgainst = new Vector3();
-            //    packedAgainst.X = (m_currentPosition.X + m_points[0].X) * 0.5f;
-            //    packedAgainst.Y = (m_currentPosition.Y + m_points[0].Y) * 0.5f;
-            //    packedAgainst.Z = (m_currentPosition.Z + m_points[0].Z) * 0.5f;
+                var packedAgainst = new Vector3();
+                packedAgainst.X = (m_currentPosition.X + m_points[0].X) * 0.5f;
+                packedAgainst.Y = (m_currentPosition.Y + m_points[0].Y) * 0.5f;
+                packedAgainst.Z = (m_currentPosition.Z + m_points[0].Z) * 0.5f;
 
-            //    for (uint i = 1; i < pointCount; ++i)
-            //        m_points[i] = Reader.ReadUInt32().UnpackAgainst(ref packedAgainst);
-            //}
+                for (uint i = 1; i < pointCount; ++i)
+                    m_points[i] = Reader.ReadUInt32().UnpackAgainst(ref packedAgainst);
+            }
         }
 
         public override void Save(StreamHandler writer)
@@ -203,54 +202,53 @@ namespace Kamilla.Network.Protocols.Wow.OpcodeDatas
 
         protected virtual void MovementDataToString(StringBuilder builder)
         {
-#warning not implemented
-            //builder.AppendLine("Current Position: " + m_currentPosition);
-            //builder.AppendLine("Tick Count: " + m_tickCount);
-            //builder.AppendLine("Spline Type: " + m_splineType);
+            builder.AppendLine("Current Position: " + m_currentPosition);
+            builder.AppendLine("Tick Count: " + m_tickCount);
+            builder.AppendLine("Spline Type: " + m_splineType);
 
-            //switch (m_splineType)
-            //{
-            //    case SplineType.Normal:
-            //        break;
-            //    case SplineType.Stop:
-            //        // client sets following values to:
-            //        // movementFlags = 0x1000;
-            //        // moveTime = 0;
-            //        // splinesCount = 1;
-            //        return;
-            //    case SplineType.FacingSpot:
-            //        builder.AppendLine("Facing Spot: " + m_facingSpot);
-            //        break;
-            //    case SplineType.FacingTarget:
-            //        builder.AppendLine("Facing Target: " + m_facingTarget);
-            //        break;
-            //    case SplineType.FacingAngle:
-            //        builder.AppendLine("Facing Angle: " + m_facingAngle);
-            //        break;
-            //    default:
-            //        throw new Exception("Not updated SplineType switch in MonsterMove (ToString)");
-            //}
+            switch (m_splineType)
+            {
+                case SplineType.Normal:
+                    break;
+                case SplineType.Stop:
+                    // client sets following values to:
+                    // movementFlags = 0x1000;
+                    // moveTime = 0;
+                    // splinesCount = 1;
+                    return;
+                case SplineType.FacingSpot:
+                    builder.AppendLine("Facing Spot: " + m_facingSpot);
+                    break;
+                case SplineType.FacingTarget:
+                    builder.AppendLine("Facing Target: " + m_facingTarget);
+                    break;
+                case SplineType.FacingAngle:
+                    builder.AppendLine("Facing Angle: " + m_facingAngle);
+                    break;
+                default:
+                    throw new Exception("Not updated SplineType switch in MonsterMove (ToString)");
+            }
 
-            //builder.AppendLine("Spline Flags: " + m_splineFlags);
+            builder.AppendLine("Spline Flags: " + m_splineFlags);
 
-            //if ((m_splineFlags & SplineFlags.Animation) != 0)
-            //{
-            //    builder.AppendLine("Anim Emote: " + m_animEmote);
-            //    builder.AppendLine("Anim Time: " + m_animTime);
-            //}
+            if ((m_splineFlags & SplineFlags.Animation) != 0)
+            {
+                builder.AppendLine("Anim Emote: " + m_animEmote);
+                builder.AppendLine("Anim Time: " + m_animTime);
+            }
 
-            //builder.AppendLine("Move Time: " + m_moveTime);
+            builder.AppendLine("Move Time: " + m_moveTime);
 
-            //if ((m_splineFlags & SplineFlags.Parabolic) != 0)
-            //{
-            //    builder.AppendLine("Trajectory Float: " + m_trajectorySingle);
-            //    builder.AppendLine("Trajectory UInt32: " + m_trajectoryUInt32);
-            //}
+            if ((m_splineFlags & SplineFlags.Parabolic) != 0)
+            {
+                builder.AppendLine("Trajectory Vertical Speed: " + m_trajectorySingle);
+                builder.AppendLine("Trajectory UInt32: " + m_trajectoryUInt32);
+            }
 
-            //builder.AppendLine();
+            builder.AppendLine();
 
-            //foreach (var point in m_points)
-            //    builder.AppendLine("Point: " + point);
+            foreach (var point in m_points)
+                builder.AppendLine("Point: " + point);
         }
 
         public override CustomPacket CreatePacket()
@@ -273,17 +271,17 @@ namespace Kamilla.Network.Protocols.Wow.OpcodeDatas
         }
         private WowGuid m_transportGuid;
 
-        public byte TransportSeat
+        public sbyte TransportSeat
         {
             get { EnsureRead(1); return m_transportSeat; }
             set { m_transportSeat = value; }
         }
-        private byte m_transportSeat;
+        private sbyte m_transportSeat;
 
         protected override void ReadMovementData()
         {
             m_transportGuid = Reader.ReadPackedGuid();
-            m_transportSeat = Reader.ReadByte();
+            m_transportSeat = Reader.ReadSByte();
 
             base.ReadMovementData();
         }

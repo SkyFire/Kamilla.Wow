@@ -38,7 +38,7 @@ namespace Kamilla.Network.Protocols.Wow.Game
         SafeFall            = 0x08000000,
         Hover               = 0x10000000,
         CollisionDisabled   = 0x20000000,
-        OnTransport         = 0x40000000, // wtf?
+        OnTransport         = 0x40000000,
     }
 
     [Flags]
@@ -257,7 +257,22 @@ namespace Kamilla.Network.Protocols.Wow.Game
                         this.Spline.SplineMode = (SplineMode)Reader.UnalignedReadTinyInt(2);
                         this.Spline.HaveUnknown1 = Reader.UnalignedReadBit();
                         splinePoints = Reader.UnalignedReadInt(22);
-                        this.Spline.SplineType = (SplineType)Reader.UnalignedReadTinyInt(2);
+                        var type = Reader.UnalignedReadTinyInt(2);
+                        switch (type)
+                        {
+                            case 0:
+                                this.Spline.SplineType = SplineType.FacingSpot;
+                                break;
+                            case 1:
+                                this.Spline.SplineType = SplineType.Normal;
+                                break;
+                            case 2:
+                                this.Spline.SplineType = SplineType.FacingTarget;
+                                break;
+                            case 3:
+                                this.Spline.SplineType = SplineType.FacingAngle;
+                                break;
+                        }
                         if (this.Spline.SplineType == SplineType.FacingTarget)
                         {
                             fixed (byte* bytes = this.Spline.FacingTarget.Bytes)
@@ -664,8 +679,27 @@ namespace Kamilla.Network.Protocols.Wow.Game
                             .UnalignedWriteInt((uint)this.Spline.Flags, 25)
                             .UnalignedWriteInt((byte)this.Spline.SplineMode, 2)
                             .UnalignedWriteBit(this.Spline.HaveUnknown1)
-                            .UnalignedWriteInt((uint)this.Spline.Points.Count, 22)
-                            .UnalignedWriteInt((byte)this.Spline.SplineType, 2);
+                            .UnalignedWriteInt((uint)this.Spline.Points.Count, 22);
+
+                        byte v;
+                        switch (this.Spline.SplineType)
+                        {
+                            case SplineType.FacingSpot:
+                                v = 0;
+                                break;
+                            case SplineType.Normal:
+                                v = 1;
+                                break;
+                            case SplineType.FacingTarget:
+                                v = 2;
+                                break;
+                            case SplineType.FacingAngle:
+                                v = 3;
+                                break;
+                            default:
+                                throw new InvalidOperationException();
+                        }
+                        Writer.UnalignedWriteInt(v, 2);
 
                         if (this.Spline.SplineType == SplineType.FacingTarget)
                         {
