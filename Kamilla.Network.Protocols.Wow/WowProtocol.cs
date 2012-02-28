@@ -205,7 +205,7 @@ namespace Kamilla.Network.Protocols.Wow
 
         public override string CodeName
         {
-            get { return "WowLatest"; }
+            get { return "Wow15211"; }
         }
 
         public override Type OpcodesEnumType
