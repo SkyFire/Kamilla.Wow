@@ -17,27 +17,27 @@ namespace Kamilla.Network.Protocols.Wow.Game
         TurnRight       = 0x00000020,
         Falling         = 0x00000040,
         NoSpline        = 0x00000080,
-        Parabolic       = 0x00000100,
+        Flying          = 0x00000200,
+        CatMullRom      = 0x00000800,
+        SmoothPathing   = 0x00100000,
+        Animation       = 0x01000000,
+        Parabolic       = 0x02000000,
+
         WalkMode        = 0x00000200,
-        Flying          = 0x00000400,
         RotationFixed   = 0x00000800,
         FinalPoint      = 0x00001000,
         FinalTarget     = 0x00002000,
         FinalOrient     = 0x00004000,
-        CatMullRom      = 0x00008000,
         Cyclic          = 0x00010000,
         EnterCycle      = 0x00020000,
-        Animation       = 0x00040000,
         Unk4            = 0x00080000,
         Unk5            = 0x00100000,
         Unk6            = 0x00200000,
         Unk7            = 0x00400000,
         Unk8            = 0x00800000,
         InvertOrient    = 0x01000000,
-        SmoothPathing   = 0x02000000,
         Unk11           = 0x04000000,
         Unk12           = 0x08000000, // related monster move vectors
-        Unk13           = 0x10000000,
     }
 
     public enum SplineMode : byte
@@ -49,10 +49,11 @@ namespace Kamilla.Network.Protocols.Wow.Game
 
     public enum SplineType : byte
     {
+        Normal          = 0,
         Stop            = 1,
-        FacingSpot      = 0,
-        FacingTarget    = 2,
-        FacingAngle     = 3,
+        FacingSpot      = 2,
+        FacingTarget    = 3,
+        FacingAngle     = 4,
     }
     
     public class SplineInfo
