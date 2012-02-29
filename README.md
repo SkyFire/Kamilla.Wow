@@ -4,7 +4,7 @@ Disclaimer
 This repository is the *World of Warcraft* solution of **Kamilla** version **4**. This is complete re-write of **Kamilla** version **3**, featuring a slightly altered architecture, use of Windows Presentation Framework, and of course open source code under LGPLv3.
 ***IT'S UNDER HEAVY DEVELOPMENT RIGHT NOW, PLEASE WAIT TO USE IT.***
 
-Kamilla main repository is [here](https://github.com/Kamilla).
+Kamilla main repository is [here](https://github.com/LordJZ/Kamilla).
 
 What is Kamilla Project
 -----------------------
