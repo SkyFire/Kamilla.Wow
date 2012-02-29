@@ -244,9 +244,11 @@ namespace Kamilla.Network.Protocols.Wow.Plugins
                     foreach (var sender in info.Senders)
                     {
                         if (string.IsNullOrEmpty(sender.Name))
-                            builder.AppendLine("  0x" + sender.Address.ToString("X6"));
+                            builder.AppendFormatLine("  Function at 0x{0:X6} (code at 0x{1:X6})",
+                                sender.Function, sender.Address);
                         else
-                            builder.AppendFormatLine("  0x{0:X6} - {1}", sender.Address, sender.Name);
+                            builder.AppendFormatLine("  '{2}' at 0x{0:X6} (code at 0x{1:X6})",
+                                sender.Function, sender.Address, sender.Name);
                     }
                 }
             }
