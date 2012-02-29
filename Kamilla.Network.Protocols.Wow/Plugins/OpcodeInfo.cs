@@ -15,6 +15,9 @@ namespace Kamilla.Network.Protocols.Wow.Plugins
     {
         public class OpcodeSenderInfo
         {
+            [XmlAttribute("func")]
+            public uint Function;
+
             [XmlAttribute("addr")]
             public uint Address;
 
