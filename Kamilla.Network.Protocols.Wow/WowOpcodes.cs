@@ -259,7 +259,7 @@ namespace Kamilla.Network.Protocols.Wow
         MSG_CHANNEL_UPDATE                              = UNKNOWN_OPCODE, /* old 0x13A, */
         CMSG_CANCEL_CHANNELLING                         = UNKNOWN_OPCODE, /* old 0x13B, */
         SMSG_AI_REACTION                                = 11938, /* old 0x13C, */
-        CMSG_SET_SELECTION                              = UNKNOWN_OPCODE, /* old 0x13D, */
+        CMSG_SET_SELECTION                              = 21638, /* old 0x13D, */
         CMSG_DELETEEQUIPMENT_SET                        = UNKNOWN_OPCODE, /* old 0x13E, */
         CMSG_INSTANCE_LOCK_RESPONSE                     = 25124, /* old 0x13F, */
         CMSG_DEBUG_PASSIVE_AURA                         = UNKNOWN_OPCODE, /* old 0x140, */
