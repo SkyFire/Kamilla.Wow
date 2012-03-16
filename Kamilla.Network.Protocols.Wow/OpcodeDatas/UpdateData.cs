@@ -49,14 +49,6 @@ namespace Kamilla.Network.Protocols.Wow.OpcodeDatas
         {
             uint nUpdates = Reader.ReadUInt32();
 
-            if (!Reader.IsRead)
-            {
-                if ((UpdateTypes)Reader.ReadByte() == UpdateTypes.DestroyObjects)
-                    ReadObjectDestroyUpdate(Reader);
-                else
-                    Reader.Position -= 1;
-            }
-
             for (uint i = 0; i < nUpdates; ++i)
             {
                 var updateType = (UpdateTypes)Reader.ReadByte();
